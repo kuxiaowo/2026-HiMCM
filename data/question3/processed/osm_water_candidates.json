@@ -1,0 +1,3982 @@
+{
+  "scope": "Candidate features; area centroids approximate; duplicate/natural/operational status unverified, not blindly counted as artificial pumps",
+  "features": [
+    {
+      "osm_type": "node",
+      "osm_id": 2332810619,
+      "name": "",
+      "lon": 14.780121,
+      "lat": -19.1522094,
+      "tags": {
+        "man_made": "water_well"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 2332975756,
+      "name": "",
+      "lon": 14.5257077,
+      "lat": -19.3350734,
+      "tags": {
+        "man_made": "water_well"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 2332976057,
+      "name": "",
+      "lon": 14.4900798,
+      "lat": -19.3652823,
+      "tags": {
+        "man_made": "water_well"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 2351159678,
+      "name": "",
+      "lon": 14.582865,
+      "lat": -19.0961899,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 2351160175,
+      "name": "",
+      "lon": 14.6568843,
+      "lat": -19.1371505,
+      "tags": {
+        "man_made": "water_well"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 5044668283,
+      "name": "",
+      "lon": 16.129636,
+      "lat": -19.2395387,
+      "tags": {
+        "man_made": "water_well",
+        "note": "solar pump"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 7599152795,
+      "name": "",
+      "lon": 16.0592463,
+      "lat": -19.2140316,
+      "tags": {
+        "man_made": "water_well",
+        "pump": "powered"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 11235648223,
+      "name": "",
+      "lon": 15.9960374,
+      "lat": -19.1633603,
+      "tags": {
+        "amenity": "watering_place"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "node",
+      "osm_id": 13920556942,
+      "name": "",
+      "lon": 16.1317853,
+      "lat": -19.2383262,
+      "tags": {
+        "man_made": "water_well",
+        "pump": "powered"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 23937844,
+      "name": "Beisebvlakte",
+      "lon": 17.069126475757574,
+      "lat": -18.52486012121212,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Beisebvlakte",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 23937902,
+      "name": "",
+      "lon": 16.17533173529412,
+      "lat": -18.520146029411766,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 23938399,
+      "name": "",
+      "lon": 15.757335636363637,
+      "lat": -18.720284820454545,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 23939304,
+      "name": "Fisher's Pan",
+      "lon": 16.98079884267913,
+      "lat": -18.750160823364485,
+      "tags": {
+        "alt_name": "Fischer's Pan",
+        "intermittent": "yes",
+        "name": "Fisher's Pan",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 23949988,
+      "name": "Adamax Pan",
+      "lon": 15.669910551219512,
+      "lat": -18.92154890792683,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Adamax Pan",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 24043242,
+      "name": "",
+      "lon": 15.58252616060606,
+      "lat": -18.717592384848487,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 24043248,
+      "name": "Natukanaoka Pan",
+      "lon": 15.743035731707318,
+      "lat": -18.607210118292684,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Natukanaoka Pan",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 83343745,
+      "name": "Moringa",
+      "lon": 16.470260342105263,
+      "lat": -19.040123163157897,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Moringa",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 132015309,
+      "name": "Kalkheuwel",
+      "lon": 16.826669823076923,
+      "lat": -18.896490426923076,
+      "tags": {
+        "name": "Kalkheuwel",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 132015310,
+      "name": "Ombika",
+      "lon": 15.940702100000001,
+      "lat": -19.31539163076923,
+      "tags": {
+        "addr:street": "Okaukuejo Airstrip Road",
+        "name": "Ombika",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 132015311,
+      "name": "",
+      "lon": 16.131606036363635,
+      "lat": -19.238579263636364,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "salt": "no",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 132015312,
+      "name": "Chudob",
+      "lon": 16.92493124285714,
+      "lat": -18.858727242857142,
+      "tags": {
+        "intermittent": "no",
+        "name": "Chudob",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173743899,
+      "name": "",
+      "lon": 16.05648628181818,
+      "lat": -18.574597672727272,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173743901,
+      "name": "",
+      "lon": 16.0840532,
+      "lat": -18.55218923076923,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173755785,
+      "name": "",
+      "lon": 15.87678738888889,
+      "lat": -18.61088553888889,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173755788,
+      "name": "",
+      "lon": 15.847238652173914,
+      "lat": -18.512654230434784,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173755791,
+      "name": "",
+      "lon": 15.91589084047619,
+      "lat": -18.523748547619046,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173755792,
+      "name": "",
+      "lon": 15.880799005633802,
+      "lat": -18.542473891549296,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173763458,
+      "name": "",
+      "lon": 16.233254572,
+      "lat": -18.55278006,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173763560,
+      "name": "",
+      "lon": 15.306719817391304,
+      "lat": -19.057395517391306,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173914368,
+      "name": "Koinachas",
+      "lon": 16.928660082608697,
+      "lat": -18.81890789130435,
+      "tags": {
+        "intermittent": "no",
+        "name": "Koinachas",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173914371,
+      "name": "Tsumcor Waterhole",
+      "lon": 16.904076945833335,
+      "lat": -18.714811341666667,
+      "tags": {
+        "intermittent": "no",
+        "name": "Tsumcor Waterhole",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173914373,
+      "name": "King Nehale's Waterhole",
+      "lon": 16.93910486190476,
+      "lat": -18.807059457142856,
+      "tags": {
+        "intermittent": "no",
+        "name": "King Nehale's Waterhole",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173914377,
+      "name": "",
+      "lon": 16.898552709090907,
+      "lat": -18.78014260909091,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173914382,
+      "name": "",
+      "lon": 16.99668543888889,
+      "lat": -18.72094603888889,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 173914384,
+      "name": "",
+      "lon": 16.907770579999998,
+      "lat": -18.7919329,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 215065182,
+      "name": "Dolimietpuunt Waterhole",
+      "lon": 14.47315023888889,
+      "lat": -19.002171877777776,
+      "tags": {
+        "name": "Dolimietpuunt Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 215065184,
+      "name": "",
+      "lon": 14.472455614285716,
+      "lat": -19.00300470952381,
+      "tags": {
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 224458799,
+      "name": "Grunewald",
+      "lon": 15.63554538,
+      "lat": -19.126066520000002,
+      "tags": {
+        "name": "Grunewald",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 224458801,
+      "name": "Okaukuejo",
+      "lon": 15.915673415789474,
+      "lat": -19.180935205263157,
+      "tags": {
+        "name": "Okaukuejo",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 224458978,
+      "name": "",
+      "lon": 16.193217315625,
+      "lat": -19.205321828125,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 224621802,
+      "name": "",
+      "lon": 14.875217,
+      "lat": -18.721064736842106,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 224834159,
+      "name": "Olifantsbad",
+      "lon": 16.13185109230769,
+      "lat": -19.238802776923077,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Olifantsbad",
+        "natural": "water",
+        "salt": "no",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225090863,
+      "name": "Nuamses",
+      "lon": 16.485290353333333,
+      "lat": -18.96593992,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Nuamses",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225090864,
+      "name": "Goas",
+      "lon": 16.55782181129032,
+      "lat": -18.990258087096773,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Goas",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225109459,
+      "name": "Kamaseb",
+      "lon": 16.689399636363635,
+      "lat": -19.066497854545457,
+      "tags": {
+        "name": "Kamaseb",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225109472,
+      "name": "Agab",
+      "lon": 16.65694984109589,
+      "lat": -18.974030046575344,
+      "tags": {
+        "name": "Agab",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225220171,
+      "name": "Klein Namutoni",
+      "lon": 16.951247021052634,
+      "lat": -18.826928510526315,
+      "tags": {
+        "intermittent": "no",
+        "name": "Klein Namutoni",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225220172,
+      "name": "",
+      "lon": 16.887369734615387,
+      "lat": -18.967003365384617,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225322572,
+      "name": "",
+      "lon": 16.80904527272727,
+      "lat": -18.546800563636364,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225322573,
+      "name": "",
+      "lon": 16.80427119090909,
+      "lat": -18.551739472727274,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225322574,
+      "name": "",
+      "lon": 16.805732923076924,
+      "lat": -18.5564041,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225322575,
+      "name": "",
+      "lon": 16.8019378125,
+      "lat": -18.535193149999998,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225322582,
+      "name": "",
+      "lon": 16.758653322580646,
+      "lat": -18.5113035516129,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393785,
+      "name": "",
+      "lon": 16.851406827272726,
+      "lat": -18.546047263636364,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393786,
+      "name": "",
+      "lon": 16.766752654545453,
+      "lat": -18.630612427272727,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393787,
+      "name": "",
+      "lon": 16.848601041666665,
+      "lat": -18.634806583333333,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393788,
+      "name": "",
+      "lon": 16.77971665,
+      "lat": -18.514581258333333,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393789,
+      "name": "",
+      "lon": 16.921334723076924,
+      "lat": -18.57418826923077,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393790,
+      "name": "",
+      "lon": 17.11872816153846,
+      "lat": -18.583037446153845,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393792,
+      "name": "",
+      "lon": 16.796393476923075,
+      "lat": -18.5354637,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393795,
+      "name": "",
+      "lon": 16.792636778571428,
+      "lat": -18.51173635714286,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393797,
+      "name": "Stinkwater Waterhole",
+      "lon": 16.832642633333332,
+      "lat": -18.62557305,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Stinkwater Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393802,
+      "name": "Kameeldoring",
+      "lon": 16.989479139361702,
+      "lat": -18.617954910638296,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Kameeldoring",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393805,
+      "name": "",
+      "lon": 17.11994906129032,
+      "lat": -18.583711206451614,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393814,
+      "name": "",
+      "lon": 16.794010125,
+      "lat": -18.5370533875,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393815,
+      "name": "",
+      "lon": 17.044980369999998,
+      "lat": -18.5397871,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 225393816,
+      "name": "",
+      "lon": 16.78886734,
+      "lat": -18.52247629,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "seasonal": "no"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 226259409,
+      "name": "Jakkalswater Waterhole",
+      "lon": 14.657349291304348,
+      "lat": -19.136928417391303,
+      "tags": {
+        "name": "Jakkalswater Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 226259411,
+      "name": "",
+      "lon": 14.754859395454545,
+      "lat": -19.04791403030303,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "yes",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 226261255,
+      "name": "",
+      "lon": 14.859896960869566,
+      "lat": -18.966941626086957,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 226261257,
+      "name": "",
+      "lon": 14.808808586486487,
+      "lat": -19.02915469459459,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 226261259,
+      "name": "Leeukamp",
+      "lon": 14.815717158333333,
+      "lat": -19.021367695833334,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Leeukamp",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270802450,
+      "name": "Homob Waterhole",
+      "lon": 16.19288698695652,
+      "lat": -19.052924395652173,
+      "tags": {
+        "name": "Homob Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270803592,
+      "name": "",
+      "lon": 16.169502507894737,
+      "lat": -19.11747157631579,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270803593,
+      "name": "Kapupuhedi Waterhole",
+      "lon": 16.069961511764706,
+      "lat": -19.12377741764706,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Kapupuhedi Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270803594,
+      "name": "",
+      "lon": 16.16391452,
+      "lat": -19.121693565,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270803595,
+      "name": "",
+      "lon": 16.167654742307693,
+      "lat": -19.125044642307692,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270803596,
+      "name": "Gonob",
+      "lon": 16.14399487647059,
+      "lat": -19.033233870588237,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Gonob",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270804885,
+      "name": "Nebrowni Waterhole",
+      "lon": 15.996097420833332,
+      "lat": -19.1633152375,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Nebrowni Waterhole",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270804887,
+      "name": "",
+      "lon": 15.99581184736842,
+      "lat": -19.163123768421052,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270804888,
+      "name": "",
+      "lon": 15.982271107142859,
+      "lat": -19.164303574999998,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270806709,
+      "name": "",
+      "lon": 16.002362353703703,
+      "lat": -19.243447185185186,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270806710,
+      "name": "Gemsbokvlakte Waterhole",
+      "lon": 16.058644146153846,
+      "lat": -19.2133787,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Gemsbokvlakte Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270806712,
+      "name": "Gaseb Waterhole",
+      "lon": 15.983609724,
+      "lat": -19.204613276,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Gaseb Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270806715,
+      "name": "",
+      "lon": 16.05913198888889,
+      "lat": -19.21339023888889,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270806716,
+      "name": "",
+      "lon": 15.986601993103447,
+      "lat": -19.237988768965515,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270806718,
+      "name": "",
+      "lon": 15.978344609999999,
+      "lat": -19.186108595,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270806721,
+      "name": "",
+      "lon": 16.04435623448276,
+      "lat": -19.255870089655172,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270809992,
+      "name": "",
+      "lon": 16.068827126470588,
+      "lat": -19.191774226470585,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270809994,
+      "name": "",
+      "lon": 16.069121040909092,
+      "lat": -19.193260827272727,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270834915,
+      "name": "Eindpaal",
+      "lon": 15.530154042105263,
+      "lat": -19.212217489473684,
+      "tags": {
+        "name": "Eindpaal",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270842351,
+      "name": "",
+      "lon": 15.4410964125,
+      "lat": -18.984787975,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270842354,
+      "name": "Sonderkop Waterhole",
+      "lon": 15.328226563157894,
+      "lat": -18.96898592105263,
+      "tags": {
+        "name": "Sonderkop Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270842355,
+      "name": "",
+      "lon": 15.327566691666666,
+      "lat": -18.968019445833335,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270842356,
+      "name": "Arendsnes Waterhole",
+      "lon": 15.409059110000001,
+      "lat": -18.97744268,
+      "tags": {
+        "name": "Arendsnes Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270842357,
+      "name": "",
+      "lon": 15.503576657894735,
+      "lat": -18.976529736842103,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270842785,
+      "name": "Duiwelsvuur Waterhole",
+      "lon": 15.242292659999999,
+      "lat": -18.97486918,
+      "tags": {
+        "name": "Duiwelsvuur Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270842787,
+      "name": "",
+      "lon": 15.282348923529412,
+      "lat": -18.999146256862744,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270843096,
+      "name": "Tobieroen Waterhole",
+      "lon": 14.957521309999999,
+      "lat": -18.97154897,
+      "tags": {
+        "name": "Tobieroen Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270843097,
+      "name": "",
+      "lon": 15.158784919999999,
+      "lat": -18.97693912,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270843100,
+      "name": "",
+      "lon": 15.160400200000002,
+      "lat": -18.97643212,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270843101,
+      "name": "Bitterwater Waterhole",
+      "lon": 15.159690459999998,
+      "lat": -18.977129335,
+      "tags": {
+        "name": "Bitterwater Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270843286,
+      "name": "Olifantsrus Waterhole",
+      "lon": 14.85955706,
+      "lat": -18.96661437,
+      "tags": {
+        "name": "Olifantsrus Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270843288,
+      "name": "",
+      "lon": 14.891228205882353,
+      "lat": -18.968566752941175,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270848953,
+      "name": "",
+      "lon": 14.816385317142856,
+      "lat": -19.00827833142857,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "yes",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270848955,
+      "name": "",
+      "lon": 14.788367088888888,
+      "lat": -19.026787903703706,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270848956,
+      "name": "",
+      "lon": 14.818173603846153,
+      "lat": -19.02980915769231,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270850201,
+      "name": "",
+      "lon": 14.748641096363636,
+      "lat": -19.00473674181818,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270850202,
+      "name": "",
+      "lon": 14.765685082352942,
+      "lat": -18.985984233436533,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "yes",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270850203,
+      "name": "Okatjongeama",
+      "lon": 14.742843953333333,
+      "lat": -18.994426649999998,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Okatjongeama",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270850204,
+      "name": "",
+      "lon": 14.758835323529413,
+      "lat": -19.060303611764706,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270850205,
+      "name": "Okavao Waterhole",
+      "lon": 14.75858437368421,
+      "lat": -19.06067490526316,
+      "tags": {
+        "name": "Okavao Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270850990,
+      "name": "",
+      "lon": 14.73316617419355,
+      "lat": -19.075652261290323,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270850991,
+      "name": "",
+      "lon": 14.656886784210528,
+      "lat": -19.13715487894737,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270851538,
+      "name": "Pionierdam",
+      "lon": 14.622062305882352,
+      "lat": -19.175169088235293,
+      "tags": {
+        "name": "Pionierdam",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270851541,
+      "name": "Renosterflei Waterhole",
+      "lon": 14.53029021111111,
+      "lat": -19.174269283333334,
+      "tags": {
+        "name": "Renosterflei Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270851542,
+      "name": "Renostervlei Waterhole",
+      "lon": 14.529835615151516,
+      "lat": -19.174065987878787,
+      "tags": {
+        "name": "Renostervlei Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270851724,
+      "name": "Miernes Waterhole",
+      "lon": 14.491731340000001,
+      "lat": -19.20675722,
+      "tags": {
+        "name": "Miernes Waterhole",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270852736,
+      "name": "",
+      "lon": 14.433047035135136,
+      "lat": -19.071250756756754,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270852737,
+      "name": "Klippan Waterhole",
+      "lon": 14.433302083333333,
+      "lat": -19.073676516666666,
+      "tags": {
+        "name": "Klippan Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270852741,
+      "name": "",
+      "lon": 14.47566671818182,
+      "lat": -19.086597004545453,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270852743,
+      "name": "Klippan",
+      "lon": 14.433336197222221,
+      "lat": -19.074073177777777,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Klippan",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270852745,
+      "name": "Rateldraf Waterhole",
+      "lon": 14.486455942105264,
+      "lat": -19.08666517368421,
+      "tags": {
+        "name": "Rateldraf Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270855883,
+      "name": "Onangombati",
+      "lon": 14.656825971428573,
+      "lat": -18.861287150000003,
+      "tags": {
+        "name": "Onangombati",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270855889,
+      "name": "Duineveld Waterhole",
+      "lon": 14.610503224999999,
+      "lat": -18.951540944999998,
+      "tags": {
+        "name": "Duineveld Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270857365,
+      "name": "",
+      "lon": 14.874458955,
+      "lat": -18.72075936,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270858842,
+      "name": "",
+      "lon": 15.478156092957745,
+      "lat": -18.663169384507043,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270858843,
+      "name": "",
+      "lon": 15.334164908571429,
+      "lat": -18.74310053714286,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270858844,
+      "name": "",
+      "lon": 15.469575571428573,
+      "lat": -18.75672806857143,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 270859034,
+      "name": "Paradyspan",
+      "lon": 15.286796105,
+      "lat": -18.643632541,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Paradyspan",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 320578477,
+      "name": "",
+      "lon": 16.204211213333334,
+      "lat": -19.06137418666667,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506194,
+      "name": "",
+      "lon": 16.6161159,
+      "lat": -18.99966385,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506195,
+      "name": "",
+      "lon": 16.70417373076923,
+      "lat": -18.978863684615384,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506196,
+      "name": "",
+      "lon": 16.621483782352943,
+      "lat": -18.997512952941175,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506197,
+      "name": "",
+      "lon": 16.534429873913044,
+      "lat": -19.027797795652173,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506198,
+      "name": "",
+      "lon": 16.72222904,
+      "lat": -18.992565144,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506199,
+      "name": "Koinseb",
+      "lon": 16.638926763636363,
+      "lat": -19.039873224242424,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Koinseb",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506200,
+      "name": "",
+      "lon": 16.52860022,
+      "lat": -19.02685808,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506201,
+      "name": "",
+      "lon": 16.580385694,
+      "lat": -18.984813138,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506202,
+      "name": "",
+      "lon": 16.624024966666667,
+      "lat": -19.04307995,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506203,
+      "name": "",
+      "lon": 16.711994615873014,
+      "lat": -18.979680384126986,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506204,
+      "name": "",
+      "lon": 16.6373049,
+      "lat": -19.0002282875,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506205,
+      "name": "",
+      "lon": 16.5288599875,
+      "lat": -19.028905725,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506206,
+      "name": "",
+      "lon": 16.529359277777775,
+      "lat": -19.028158966666666,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382506207,
+      "name": "Tsam",
+      "lon": 16.739134110000002,
+      "lat": -19.057529870000003,
+      "tags": {
+        "name": "Tsam",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382684890,
+      "name": "",
+      "lon": 16.78070174,
+      "lat": -18.917512125,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382684893,
+      "name": "",
+      "lon": 16.895868442857143,
+      "lat": -18.853070914285716,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382684894,
+      "name": "",
+      "lon": 16.740917200000002,
+      "lat": -18.9405464,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382684898,
+      "name": "",
+      "lon": 16.743898299999998,
+      "lat": -18.94276198888889,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 382714836,
+      "name": "",
+      "lon": 16.9931533,
+      "lat": -18.730306300000002,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 390221116,
+      "name": "Rietfontein",
+      "lon": 16.342057564864866,
+      "lat": -19.036745643243243,
+      "tags": {
+        "intermittent": "no",
+        "name": "Rietfontein",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707789,
+      "name": "",
+      "lon": 16.455662245454548,
+      "lat": -19.017236363636364,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707792,
+      "name": "",
+      "lon": 16.44715432857143,
+      "lat": -19.01268865,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707796,
+      "name": "",
+      "lon": 16.226251575757576,
+      "lat": -19.05699744848485,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707800,
+      "name": "",
+      "lon": 15.915554368421052,
+      "lat": -19.204642542105262,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707804,
+      "name": "",
+      "lon": 16.450495583333332,
+      "lat": -18.977359500000002,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707809,
+      "name": "",
+      "lon": 16.216482530645163,
+      "lat": -19.063351672580644,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707819,
+      "name": "",
+      "lon": 16.44979585,
+      "lat": -18.9775794875,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 399707825,
+      "name": "",
+      "lon": 16.4450811,
+      "lat": -19.010793077777777,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 418622190,
+      "name": "Helio",
+      "lon": 16.488658675,
+      "lat": -19.0385005125,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Helio",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 418622191,
+      "name": "",
+      "lon": 16.54906925,
+      "lat": -18.997193709999998,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 466986531,
+      "name": "New Olifrantrus Waterhole",
+      "lon": 14.859657426923077,
+      "lat": -18.96998786923077,
+      "tags": {
+        "name": "New Olifrantrus Waterhole",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 468134680,
+      "name": "",
+      "lon": 15.53532873955224,
+      "lat": -18.967972081343284,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "yes",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 468233453,
+      "name": "",
+      "lon": 15.547758892753622,
+      "lat": -19.05953217826087,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "yes",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 471952877,
+      "name": "",
+      "lon": 15.323743517857142,
+      "lat": -18.97200709642857,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 471952878,
+      "name": "",
+      "lon": 15.322506403076924,
+      "lat": -18.974355158461538,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 471952879,
+      "name": "",
+      "lon": 15.3218993,
+      "lat": -18.97373332777778,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 471952880,
+      "name": "",
+      "lon": 15.321659886956523,
+      "lat": -18.974445282608695,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 471952881,
+      "name": "",
+      "lon": 15.046424,
+      "lat": -18.694906324137932,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 471952883,
+      "name": "",
+      "lon": 15.504646975,
+      "lat": -18.67096398,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 471952884,
+      "name": "",
+      "lon": 15.214675807142857,
+      "lat": -18.835687503571428,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490474461,
+      "name": "",
+      "lon": 16.993202542857144,
+      "lat": -18.727514857142857,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490474462,
+      "name": "",
+      "lon": 16.997720263636364,
+      "lat": -18.723903036363637,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490474463,
+      "name": "",
+      "lon": 16.996695929411764,
+      "lat": -18.718651905882354,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490474464,
+      "name": "",
+      "lon": 16.99556821,
+      "lat": -18.71735066,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490474465,
+      "name": "",
+      "lon": 16.997184563636363,
+      "lat": -18.71236318181818,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490486988,
+      "name": "",
+      "lon": 16.981062276923076,
+      "lat": -18.7175239,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490486989,
+      "name": "",
+      "lon": 16.978333135714287,
+      "lat": -18.719714457142857,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490490678,
+      "name": "",
+      "lon": 17.02925638235294,
+      "lat": -18.765507423529414,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490491306,
+      "name": "",
+      "lon": 17.03583311111111,
+      "lat": -18.769340377777777,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490491307,
+      "name": "",
+      "lon": 17.035471763636362,
+      "lat": -18.76885371818182,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490496072,
+      "name": "",
+      "lon": 16.035488733333334,
+      "lat": -18.644217049999998,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490502705,
+      "name": "",
+      "lon": 15.85121510625,
+      "lat": -18.56903539375,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 490502706,
+      "name": "",
+      "lon": 15.827471833333334,
+      "lat": -18.528644391666667,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 547602315,
+      "name": "Duikerdrink Waterhole",
+      "lon": 14.780070421621623,
+      "lat": -19.153183564864865,
+      "tags": {
+        "name": "Duikerdrink Waterhole",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 547604905,
+      "name": "",
+      "lon": 14.9578261,
+      "lat": -18.97171227368421,
+      "tags": {
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 547604908,
+      "name": "",
+      "lon": 15.0617440625,
+      "lat": -18.9799765,
+      "tags": {
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 547604910,
+      "name": "",
+      "lon": 15.063086440000001,
+      "lat": -18.979936959999996,
+      "tags": {
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 547604914,
+      "name": "",
+      "lon": 15.259716789473684,
+      "lat": -18.98819152631579,
+      "tags": {
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 547611432,
+      "name": "",
+      "lon": 15.609344626470588,
+      "lat": -19.064538379411765,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551123508,
+      "name": "Andoni Waterhole",
+      "lon": 16.772800308695654,
+      "lat": -18.519832843478262,
+      "tags": {
+        "intermittent": "no",
+        "name": "Andoni Waterhole",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551192158,
+      "name": "",
+      "lon": 16.12492651707317,
+      "lat": -19.107212153658537,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551192160,
+      "name": "",
+      "lon": 16.182372133333335,
+      "lat": -19.093172666666664,
+      "tags": {
+        "intermittent": "yes",
+        "landuse": "quarry",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551309688,
+      "name": "",
+      "lon": 15.617731238461538,
+      "lat": -19.107699115384612,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551309689,
+      "name": "",
+      "lon": 15.617293018181819,
+      "lat": -19.10750428181818,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551309690,
+      "name": "",
+      "lon": 15.617493463636363,
+      "lat": -19.10712987272727,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551431887,
+      "name": "",
+      "lon": 14.4900448,
+      "lat": -19.36559577586207,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 551567053,
+      "name": "",
+      "lon": 15.309970716666667,
+      "lat": -18.976055877777778,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 558910668,
+      "name": "",
+      "lon": 14.48154916,
+      "lat": -19.310771199999998,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 558910669,
+      "name": "",
+      "lon": 14.4810931,
+      "lat": -19.31009586,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 558910670,
+      "name": "",
+      "lon": 14.48093296,
+      "lat": -19.30986188,
+      "tags": {
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561931077,
+      "name": "Ozonjuitji m'Bari",
+      "lon": 15.503680084,
+      "lat": -18.976824472,
+      "tags": {
+        "intermittent": "no",
+        "name": "Ozonjuitji m'Bari",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561936245,
+      "name": "Ondongab",
+      "lon": 16.110553475,
+      "lat": -19.103670016666666,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Ondongab",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561936254,
+      "name": "Sueda",
+      "lon": 16.25227527894737,
+      "lat": -19.04283231578947,
+      "tags": {
+        "name": "Sueda",
+        "natural": "water",
+        "salt": "no",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561936258,
+      "name": "Charitsaub",
+      "lon": 16.265754884615383,
+      "lat": -19.04359143076923,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Charitsaub",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561936262,
+      "name": "Salvadora",
+      "lon": 16.268758910784314,
+      "lat": -19.034353023529412,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Salvadora",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561936277,
+      "name": "Noniams",
+      "lon": 16.565801282608696,
+      "lat": -19.009250178260867,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Noniams",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561936281,
+      "name": "Batia",
+      "lon": 16.70975978125,
+      "lat": -18.9514256625,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Batia",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561938107,
+      "name": "Ngobib",
+      "lon": 16.76927104,
+      "lat": -18.895478344444445,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Ngobib",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561946640,
+      "name": "",
+      "lon": 15.515634917910448,
+      "lat": -18.983435513432838,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "no",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561946646,
+      "name": "Charl Marais Dam",
+      "lon": 15.51381587948718,
+      "lat": -18.986288046153845,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Charl Marais Dam",
+        "natural": "water",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561948928,
+      "name": "Dinteri Seasonal Waterhole",
+      "lon": 14.423121660000001,
+      "lat": -19.20757778,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Dinteri Seasonal Waterhole",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561948930,
+      "name": "Aasvoëlbad",
+      "lon": 14.411677399999999,
+      "lat": -19.16533474,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Aasvoëlbad",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561948931,
+      "name": "",
+      "lon": 14.391433520000001,
+      "lat": -19.12999494,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561950846,
+      "name": "",
+      "lon": 14.47365422,
+      "lat": -19.0031255016,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561950848,
+      "name": "Onautinda Natural Waterhole",
+      "lon": 14.578414479710146,
+      "lat": -18.94872516956522,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Onautinda Natural Waterhole",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561950850,
+      "name": "Nomab",
+      "lon": 14.764308175471697,
+      "lat": -18.965397218867924,
+      "tags": {
+        "intermittent": "no",
+        "name": "Nomab",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561952681,
+      "name": "",
+      "lon": 15.501930179999999,
+      "lat": -18.73800902,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 561952682,
+      "name": "",
+      "lon": 15.618617253846155,
+      "lat": -18.78663991153846,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 562588769,
+      "name": "Okondeka (natural waterhole)",
+      "lon": 15.867793863636365,
+      "lat": -18.994766972727273,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Okondeka (natural waterhole)",
+        "natural": "water",
+        "tourism": "attraction",
+        "water": "waterhole"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 562606546,
+      "name": "",
+      "lon": 16.131307765714286,
+      "lat": -19.11610153142857,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 562606550,
+      "name": "",
+      "lon": 16.404221838235294,
+      "lat": -19.003048964705883,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 562933284,
+      "name": "",
+      "lon": 17.12944303095238,
+      "lat": -18.56601501190476,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 562959060,
+      "name": "",
+      "lon": 16.392310605555554,
+      "lat": -18.50585686111111,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 562962540,
+      "name": "",
+      "lon": 16.379442114,
+      "lat": -18.501901078,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season",
+        "wetland": "saltmarsh"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 564525920,
+      "name": "Onautinda",
+      "lon": 14.602122027999998,
+      "lat": -18.924525028,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Onautinda",
+        "natural": "water",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 565212013,
+      "name": "",
+      "lon": 15.835129816860466,
+      "lat": -18.560600665697674,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 625376487,
+      "name": "",
+      "lon": 16.885115159999998,
+      "lat": -18.85831089,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "landuse": "quarry",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 774723295,
+      "name": "",
+      "lon": 15.27166892295082,
+      "lat": -19.107204178688526,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 844870465,
+      "name": "",
+      "lon": 16.40530283529412,
+      "lat": -18.503998023529412,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "wet_season",
+        "wetland": "saltmarsh"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 844873117,
+      "name": "",
+      "lon": 16.36901138181818,
+      "lat": -18.50767406363636,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 844873118,
+      "name": "",
+      "lon": 16.378474964285715,
+      "lat": -18.512327414285714,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1067735089,
+      "name": "",
+      "lon": 15.948181123076923,
+      "lat": -19.171572761538464,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "no",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1130645798,
+      "name": "",
+      "lon": 15.955806855555558,
+      "lat": -18.523939166666665,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "tidal": "no",
+        "water": "river"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1130645799,
+      "name": "",
+      "lon": 15.969595400000001,
+      "lat": -18.525031109803923,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "tidal": "no",
+        "water": "river"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1184669991,
+      "name": "",
+      "lon": 14.7642578,
+      "lat": -18.961363473333332,
+      "tags": {
+        "intermittent": "no",
+        "natural": "water",
+        "water": "reservoir"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1222926773,
+      "name": "Mushara",
+      "lon": 16.886914429999997,
+      "lat": -18.587854985,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Mushara",
+        "natural": "water",
+        "seasonal": "yes"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1222926774,
+      "name": "",
+      "lon": 16.75557609285714,
+      "lat": -18.532698231428572,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "yes"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1222926775,
+      "name": "",
+      "lon": 16.7505125875,
+      "lat": -18.513768058333333,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "yes"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1222926776,
+      "name": "",
+      "lon": 16.75662276363636,
+      "lat": -18.512596736363637,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "seasonal": "yes"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1224578775,
+      "name": "",
+      "lon": 15.887341381818182,
+      "lat": -19.048554863636365,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "water": "pond"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1224578777,
+      "name": "Gobaub",
+      "lon": 16.42245395,
+      "lat": -19.31099828125,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Gobaub",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1224578778,
+      "name": "Charagas",
+      "lon": 16.29356968,
+      "lat": -19.27087317333333,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Charagas",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263724058,
+      "name": "",
+      "lon": 16.008396252173913,
+      "lat": -19.16631754347826,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263727559,
+      "name": "",
+      "lon": 16.081081785714286,
+      "lat": -19.118450255357143,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263727561,
+      "name": "",
+      "lon": 16.06065864852941,
+      "lat": -19.136324625,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263732008,
+      "name": "",
+      "lon": 16.3217911,
+      "lat": -19.04488281724138,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263732009,
+      "name": "",
+      "lon": 16.153654395652175,
+      "lat": -19.103962969565217,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263732011,
+      "name": "",
+      "lon": 16.027407869117646,
+      "lat": -19.149070686764706,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263736337,
+      "name": "",
+      "lon": 16.505887803448278,
+      "lat": -18.956216172413793,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263736339,
+      "name": "",
+      "lon": 16.541425982978723,
+      "lat": -18.94988515106383,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263740799,
+      "name": "",
+      "lon": 16.235830077272727,
+      "lat": -19.059740827272726,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263740800,
+      "name": "",
+      "lon": 16.256461482051282,
+      "lat": -19.062812869230772,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263740801,
+      "name": "",
+      "lon": 16.42692675744681,
+      "lat": -18.989958821276595,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1263785592,
+      "name": "",
+      "lon": 16.61177265,
+      "lat": -18.948758136666665,
+      "tags": {
+        "amenity": "watering_place",
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1285146587,
+      "name": "Natco",
+      "lon": 15.741151877777778,
+      "lat": -19.067602966666666,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Natco",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1351584564,
+      "name": "",
+      "lon": 15.02112036,
+      "lat": -18.668104772,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1351746005,
+      "name": "",
+      "lon": 15.005677676470588,
+      "lat": -18.629620717647057,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "salt": "yes",
+        "seasonal": "wet_season",
+        "tidal": "no",
+        "water": "lake"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1429060424,
+      "name": "Okotumare",
+      "lon": 15.953205092857143,
+      "lat": -18.656497707142854,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Okotumare",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1429060425,
+      "name": "Okahakana",
+      "lon": 15.591702146153846,
+      "lat": -18.886385476923074,
+      "tags": {
+        "name": "Okahakana",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1429060463,
+      "name": "Ubareb Pan",
+      "lon": 16.95672815862069,
+      "lat": -18.604259162068963,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Ubareb Pan",
+        "natural": "water",
+        "water": "pan"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1429060464,
+      "name": "Ubares Pan",
+      "lon": 16.98886594871795,
+      "lat": -18.611915025641025,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Ubares Pan",
+        "natural": "water",
+        "water": "pan"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1429060465,
+      "name": "Haob Pan",
+      "lon": 17.005735366666666,
+      "lat": -18.974527823076926,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Haob Pan",
+        "natural": "water",
+        "water": "pan"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1429075719,
+      "name": "Kwarikarib Pan",
+      "lon": 17.035317832258066,
+      "lat": -18.95574230645161,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Kwarikarib Pan",
+        "natural": "water",
+        "water": "pan"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1429075720,
+      "name": "Kamarib",
+      "lon": 17.074670266666665,
+      "lat": -18.95531366,
+      "tags": {
+        "intermittent": "yes",
+        "name": "Kamarib",
+        "natural": "water",
+        "water": "pan"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1433638371,
+      "name": "",
+      "lon": 16.022892335714285,
+      "lat": -18.58391825714286,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1433638372,
+      "name": "",
+      "lon": 16.030853788888887,
+      "lat": -18.58230766111111,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1433638373,
+      "name": "",
+      "lon": 16.0121767,
+      "lat": -18.580631858333334,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1433640687,
+      "name": "",
+      "lon": 15.95200424,
+      "lat": -18.520309333333334,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1433640688,
+      "name": "",
+      "lon": 15.959314718749999,
+      "lat": -18.52223174375,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1433640689,
+      "name": "",
+      "lon": 15.970577943478261,
+      "lat": -18.528351947826085,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water",
+        "tidal": "no",
+        "water": "river"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1456718272,
+      "name": "",
+      "lon": 16.607499,
+      "lat": -19.2969087,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1456718273,
+      "name": "",
+      "lon": 16.62464381875,
+      "lat": -19.26408380625,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1456718274,
+      "name": "",
+      "lon": 16.65393177857143,
+      "lat": -19.250045364285715,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1456718275,
+      "name": "",
+      "lon": 16.700966870588235,
+      "lat": -19.24387312352941,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1456718276,
+      "name": "Dungaries",
+      "lon": 16.78714272857143,
+      "lat": -19.17852377142857,
+      "tags": {
+        "name": "Dungaries",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1456718277,
+      "name": "Aikab",
+      "lon": 16.9811836,
+      "lat": -19.349316100000003,
+      "tags": {
+        "name": "Aikab",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552803894,
+      "name": "",
+      "lon": 16.124650425714286,
+      "lat": -19.107711022857142,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552803895,
+      "name": "",
+      "lon": 16.1274687875,
+      "lat": -19.124286346875,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552803896,
+      "name": "",
+      "lon": 16.205937462068967,
+      "lat": -19.077040289655173,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552805971,
+      "name": "",
+      "lon": 16.1847313,
+      "lat": -19.084727836363637,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552813906,
+      "name": "",
+      "lon": 16.188220564285714,
+      "lat": -19.112918242857145,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552874618,
+      "name": "Aus Waterhole",
+      "lon": 16.193363052941177,
+      "lat": -19.20529389411765,
+      "tags": {
+        "name": "Aus Waterhole",
+        "natural": "water",
+        "note": "The waterhole is artificially watered."
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552997140,
+      "name": "",
+      "lon": 16.408672135714287,
+      "lat": -18.993961992857145,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552997141,
+      "name": "",
+      "lon": 16.41537874210526,
+      "lat": -18.990754115789475,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552997142,
+      "name": "",
+      "lon": 16.486351404166665,
+      "lat": -18.976424654166667,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1552997143,
+      "name": "",
+      "lon": 16.535892789285715,
+      "lat": -18.957123075,
+      "tags": {
+        "intermittent": "yes",
+        "natural": "water"
+      },
+      "operating_state": "unknown",
+      "pump_type": "unknown_without_explicit_tags"
+    }
+  ]
+}
