@@ -1,14 +1,23 @@
-/output/gpcc_precipitation_analysis_monthly_1971_1975_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_1976_1980_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_1981_1985_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_1986_1990_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_1991_1995_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_1996_2000_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_2001_2005_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_2006_2010_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_2011_2015_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_2016_2020_v2025_025.nc.gz
-/output/gpcc_precipitation_analysis_monthly_2021_2024_v2025_025.nc.gz
+# Legacy global precipitation source archives (not used by the current model)
+/output/gpcc_precipitation_analysis_monthly_*.nc.gz
 
-# Local migration audit and recoverable old copies
-/tmp/project_sync/
+# Local migration audit, rendering scratch files, and tool caches
+/tmp/
+**/__pycache__/
+*.py[cod]
+
+# Reproducible LaTeX intermediate files; keep the final PDF and verification log
+/output/pdf/*.aux
+/output/pdf/*.out
+/output/pdf/*.toc
+/output/pdf/*.fls
+/output/pdf/*.fdb_latexmk
+/output/pdf/*.synctex.gz
+/output/pdf/*.xdv
+
+# Local editor settings and credentials
+/.vscode/
+/.idea/
+.env
+.env.*
+!.env.example

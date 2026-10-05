@@ -1,0 +1,19 @@
+{
+  "status": "static_source_checks_passed",
+  "sections": 6,
+  "subsections": 20,
+  "equations": 30,
+  "figures": 6,
+  "tables": 5,
+  "labels": 41,
+  "refs": 13,
+  "figure_pngs_visually_inspected": 6,
+  "model_results_independently_verified": true,
+  "no_external_files_required_for_latex": true,
+  "pdf_compilation": "verified_texlive_2026",
+  "compiler_log": "Local XeLaTeX compilation passed without warnings",
+  "source_sha256": "c596ff71701d5852746428bc1d8f31bb38bedaff515fc38b9c5f77ee76dd6398",
+  "warning": "Editor built-in preview has a separate platform environment error.",
+  "pdf_pages_visually_inspected": 15,
+  "pdf_verification": "q2_latex_compile_verification.json"
+}

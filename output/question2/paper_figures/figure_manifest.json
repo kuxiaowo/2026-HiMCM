@@ -1,0 +1,38 @@
+{
+  "status": "drawn_from_saved_solver_results",
+  "figures": 6,
+  "formats": [
+    "png",
+    "svg",
+    "tikz"
+  ],
+  "cost_example": {
+    "target_id": "ENP1_0000",
+    "ground_person_hours": 4.981330998281807,
+    "operator_person_hours": 4.271073764977391,
+    "flight_hours": 0.20612540185024536,
+    "ground_components": [
+      3.6921562946102338,
+      0.7891747036715738,
+      0.3333333333333333,
+      0.16666666666666666
+    ],
+    "operator_components": [
+      3.6921562946102338,
+      0,
+      0.4122508037004907,
+      0.16666666666666666
+    ]
+  },
+  "source_sha256": {
+    "output\\question2\\q2_model_inputs.json": "28dc7b194d6ca2043b835c319509722d68670549a35b71ce53076dad8c3185ba",
+    "output\\question2\\q2_results.json": "40b3aac1caa592fabe1a79246488f27e3a9aa3c72ea23ed2ec61f1a66514167b"
+  },
+  "script_sha256": "6ddce7bea52c01e7efb915ccfc7035eb43e7393162311ddbeaa3f55032e0a86d",
+  "notes": [
+    "map outlines simplified only for display; model geometry unchanged",
+    "weights remain information weights, not loss probabilities",
+    "TikZ embedded in the open standalone source; no external figures needed to compile",
+    "no new observations or resource scenarios"
+  ]
+}

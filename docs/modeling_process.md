@@ -275,10 +275,32 @@ build_question2.py复用有向道路图，27个道路/边界交点作为进入�
 LaTeX源文件已保存，内置编辑器已请求打开；本轮编译返回平台环境错误“Unable to find standard directories for platform”，因此PDF预览未验证。该错误不是已定位的正文公式错误；未安装外部TeX，Markdown框架可直接阅读。三级标题及数学分隔符的静态检查通过。
 
 
-## 15. 同步到GitHub仓库对应的本地目录
+## 15. 第二题删除重复评价章节
 
-2026-10-05用户提供实际仓库目录D:/Python/programs/GitHub/2026-HiMCM。核验origin为https://github.com/kuxiaowo/2026-HiMCM.git，原main工作区干净；创建并切换到developing后同步改动，没有提交或推送。
+2026-10-05按用户讨论精简第二题目录：删除独立2.7，保留2.1—2.6共6个二级、20个三级标题。服务容量及预算核验并入2.5.1求解说明；第四题集中处理敏感性与情景，第五题集中处理优缺点和适用条件。与第三题接口仅用结尾段落交代。Markdown、LaTeX源和上传说明同步更新，静态标题/数学分隔符核验通过，模型及数值未修改。
 
-源目录C:/Users/admin/Documents/ChatGPT/2026HiMCN的272个项目文件中，175个内容相同、26个新增、71个更新；未复制源.git与Python字节码缓存，保留目标独有内容、LICENSE、原Git远程与历史。所有272个文件在路径修订前逐个SHA-256相符，97个文件实际复制。覆盖前的目标副本保存在tmp/project_sync/backup_before_sync，审计及副本目录已加入.gitignore。
+## 16. 第二题正式正文与图表写作
 
-更新AGENTS、第二题Markdown/LaTeX框架及上传说明中的工作路径。以后全部项目成果只在D:/Python/programs/GitHub/2026-HiMCM修改。目标旧目录遗留的四张降水PNG/SVG移出当前输出目录并保存在迁移备查中；水源与降雨继续排除。源位置保留可恢复副本，不再作为当前工作目录。
+2026-10-05按用户“模型建立详写、其余简洁、图表配合”的要求，在当前打开的`docs/paper/question2_framework.tex`原地扩写正文，保持2.1—2.6、20个三级标题。详写同物种份额/AHP、共同15区熵权、进入修正、地面与无人机作业成本、响应门槛、容量、人时/机时预算、区域底线及完整LP，配置和后续接口较简洁。共30个编号公式、6幅图、5张表，Markdown正式稿同步生成。
+
+真实查阅PAWS（2016）Figure 5及社区巡护研究（2025）公开预印本Figure 3，参考流程与多面板表达。新增`build_question2_paper_figures.py`从保存结果原创绘制流程、权重构成、分区地图、路线/成本、预算对照和区域矩阵，输出PNG/SVG/TikZ并保存数据指纹；六幅PNG已目视检查。驻点/部署点/无人机简图为原创矢量符号。LaTeX内嵌TikZ，不依赖额外图文件；图件显示简化未改变模型几何。
+
+新增`write_question2_chapter.py`从JSON生成正式稿；旧`write_question2_report.py`改为核验—绘图—正式稿的复现入口。旧源码存为历史文本，并修复FLIGHT先替换破坏SCARCEFLIGHT的问题；紧缺机时正确为96.24。说明第二阶段仅最小化选定最优服务向量的人工，未声称全部同分解之间人工全局最优。基准三方案同57.26分，紧缺对照及未用预算如实展示。
+
+本轮只改写作及图表，模型输入和已求解数值不变；第三题人数、重点物种补全和生态效果未计算。现有conda环境用于绘图、生成及核验。内置编译器返回平台环境错误“Unable to find standard directories for platform”，PDF预览和整篇版式仍未验证；没有创建替代文档、单独PDF或安装TeX，保持现有编辑器。项目规则、框架索引、总计划和上传说明已同步，未提交推送。
+
+## 17. 本地TeX Live编译与版式核验
+
+2026-10-06按用户授权，使用已安装的`D:/texlive/2026/bin/windows/xelatex.exe`编译现有`docs/paper/question2_framework.tex`，生成[第二题PDF](../output/pdf/question2_framework.pdf)，不创建替代源文档，保持原编辑器。最终源文件连续编译两遍，交叉引用稳定，共15页A4；编译日志中LaTeX错误、未定义引用、缺字、Overfull与Underfull均为0，全部字体已嵌入。
+
+实际PDF核验发现驻点Unicode星号缺字，已在绘图脚本中用矢量路径替代；同时调整流程图标题与说明的间距、检查点标签位置，参考文献设为左对齐。随后重新生成PNG/SVG/TikZ和同源正式稿，再完成两遍编译。模型输入与求解结果指纹未改变，未重新定义保护需求或加入水源、降雨。
+
+已渲染全部15页并逐页检查正文、公式、图表与分页；中文文本提取正常，基准57.26和紧缺45.77等关键结果与已保存计算一致。编译及视觉核验记录保存于[编译核验JSON](../output/question2/q2_latex_compile_verification.json)，[章节核验JSON](../output/question2/q2_chapter_validation.json)同步为本机PDF已验证。日志在`output/pdf/question2_framework.log`及`tmp/latex_validation/`，全部成果位于项目内。
+
+内置编辑器编译仍返回独立的平台环境错误“Unable to find standard directories for platform”；这一状态与本机TeX Live成功编译分别记录。更新框架索引、计算备查、图件设计来源、总计划及上传说明；保留前述历史过程，不将过去的未验证状态改写为当时已成功。第三题人数与实际生态成效仍未计算，未提交推送。
+
+## 18. 成果提交与仓库同步
+
+2026-10-06用户要求提交上传全部产出。核对现有`kuxiaowo/2026-HiMCM`仓库，确认模型结果与本地一致；本地`developing`接续远程`main`历史，保留原有许可证和项目目录同步记录。提交范围为正式论文、PDF、六幅PNG/SVG/TikZ图、绘图与正文生成脚本、计算核验记录及项目说明；既有模型数据和历史备查成果保留。
+
+旧GPCC全球降水原始压缩包继续保留本地并忽略，不参与当前模型；新增临时缓存和LaTeX中间文件不入库。已跟踪的五个Python字节码和被正式核验取代的临时框架检查JSON仅从Git索引移除，本地文件保留。新增README提供成果入口；`.gitattributes`保留LaTeX源和关键模型JSON原始字节，避免上传换行转换导致已有指纹失配，数值内容未改动。凭据模式检查、新增脚本语法及成果指纹检查通过。按项目规则在`developing`提交、推送，并发起面向`main`的PR。
