@@ -1,6 +1,6 @@
 # 第二题计算备查
 
-当前主结果是条件性规划LP，不是现有部署评估或完整生态成效认证。正文见[第二题论文段落](../paper/question2_resource_allocation.md)。
+当前主结果是条件性规划LP，不是现有部署评估或完整生态成效认证。正文已按2.1—2.6扩写为[正式Markdown稿](../paper/question2_resource_allocation.md)及当前打开的[LaTeX源](../paper/question2_framework.tex)，含30个编号公式、6幅原创图、5张表。此次写作未更改模型参数与数值。
 
 ## 可复现过程
 
@@ -37,3 +37,23 @@
 ```
 
 假设入口：[q2_assumptions.json](../../data/modeling/q2_assumptions.json)。修改后重跑模型和报告；图表数值由实算生成，不手工改排名。原始资料未修改，未提交推送。
+
+现行`write_question2_report.py`依次运行独立核验、论文绘图及正式正文生成。旧简稿生成器仅保存在`scripts/modeling/archive/write_question2_report_legacy.py.txt`作历史备查，其FLIGHT/SCARCEFLIGHT替换顺序错误已经修正。正式稿直接读取JSON，不再使用该占位符替换方式。只更新写作时可以单独运行`write_question2_chapter.py`；更新图件后需重新生成正文以同步内嵌TikZ。
+
+论文图表从[图件脚本](../../scripts/modeling/build_question2_paper_figures.py)生成，来源记录见[图表设计参考](q2_figure_design_references.md)。该脚本不创建新数据或新求解情景。2026-10-06已使用本机TeX Live 2026 / XeLaTeX编译并核验[15页PDF](../../output/pdf/question2_framework.pdf)。内置编辑器仍返回“Unable to find standard directories for platform”，属于独立的预览环境错误。
+
+本轮[静态章节核验](../../output/question2/q2_chapter_validation.json)检查环境及括号、唯一标签与引用、章节/图表/公式计数、Markdown表格/图片/相对链接及文件指纹，已通过。指纹按Windows实际保存的字节计算，避免文本换行转换造成不同摘要；模型输入和结果指纹未改变。
+
+## 本地LaTeX编译与版式核验
+
+本机编译器为`D:/texlive/2026/bin/windows/xelatex.exe`。在项目根目录执行以下命令两遍以稳定交叉引用；PATH只在当前PowerShell进程中补充，不修改系统设置。
+
+```powershell
+$env:Path = 'D:/texlive/2026/bin/windows;' + $env:Path
+& 'D:/texlive/2026/bin/windows/xelatex.exe' -interaction=nonstopmode -halt-on-error -file-line-error -no-shell-escape -output-directory=output/pdf docs/paper/question2_framework.tex
+& 'D:/texlive/2026/bin/windows/xelatex.exe' -interaction=nonstopmode -halt-on-error -file-line-error -no-shell-escape -output-directory=output/pdf docs/paper/question2_framework.tex
+```
+
+本轮将驻点星号改为绘图路径，避免Unicode字符的字体依赖；调整流程图两行文字与检查点标签间距，参考文献采用左对齐。图件和同源正文已重新生成，模型输入与结果未更改。
+
+最终15页A4 PDF全部渲染并目视核验，字体全部嵌入，中文正文提取正常。最终日志中LaTeX错误、未定义引用、缺字、Overfull及Underfull均为0。详情和源文件/PDF指纹见[编译核验记录](../../output/question2/q2_latex_compile_verification.json)，编译日志保存在`output/pdf/question2_framework.log`；本轮仅验证排版和编译，不增加生态成效或人员需求结论。

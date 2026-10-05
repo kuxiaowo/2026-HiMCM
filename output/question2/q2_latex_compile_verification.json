@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-05T16:10:39.463486+00:00",
+  "compiler": "XeLaTeX / TeX Live 2026",
+  "compiler_path": "D:/texlive/2026/bin/windows/xelatex.exe",
+  "source": "docs\\paper\\question2_framework.tex",
+  "pdf": "output\\pdf\\question2_framework.pdf",
+  "pages": 15,
+  "compilation_passes_after_final_edit": 2,
+  "latex_errors": 0,
+  "undefined_references": 0,
+  "missing_glyphs": 0,
+  "overfull_boxes": 0,
+  "underfull_boxes": 0,
+  "embedded_font_count": 26,
+  "all_fonts_embedded": true,
+  "rendered_pages_visually_reviewed": 15,
+  "chinese_text_extraction_checked": true,
+  "source_sha256": "c596ff71701d5852746428bc1d8f31bb38bedaff515fc38b9c5f77ee76dd6398",
+  "pdf_sha256": "83f927573c9e05cf91e3d9ca0bb5d1a35048e5aebccc7035528080ee11ca36ca",
+  "editor_builtin_compiler": "still_unavailable: Unable to find standard directories for platform",
+  "model_inputs_and_results_unchanged": true
+}

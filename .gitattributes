@@ -1,0 +1,12 @@
+# Preserve exact bytes referenced by the existing SHA-256 verification records.
+docs/paper/question2_framework.tex -text
+output/question2/q2_model_inputs.json -text
+output/question2/q2_results.json -text
+output/question2/q2_model_inputs.json whitespace=cr-at-eol
+output/question2/q2_results.json whitespace=cr-at-eol
+
+# Generated formats contain intentional line-end whitespace.
+output/question2/paper_figures/*.svg whitespace=-blank-at-eol
+output/pdf/*.log whitespace=-blank-at-eol
+docs/paper/question2_framework.tex whitespace=-blank-at-eol
+scripts/modeling/write_question2_chapter.py whitespace=-blank-at-eol
