@@ -11,7 +11,6 @@ import numpy as np
 import networkx as nx
 from scipy.optimize import linprog
 from scipy import sparse
-from scipy.stats import gamma, norm
 from pyproj import Transformer
 from shapely.geometry import shape, Point, box, mapping
 from shapely.ops import transform
@@ -36,7 +35,7 @@ DEFAULT={
     'staff_reference':295,'protection_staff_fraction':.2,'effective_hours_month':120.,
     'response_staff_per_site':2.,'response_hours_day':8.,'days_month':30.,
     'drone_count':6.,'flight_hours_per_drone_day':2.,'drone_days_month':20.,
-    'animal_management_share':.7,
+    'management_weight_method':'entropy_information',
 }
 # Coordinates read from the project's fixed OSM snapshot. Sites are candidates,
 # not evidence of current ranger posts or staffing at visitor facilities.
@@ -73,6 +72,36 @@ def ahp():
     cr=float((ev[k].real-3)/2/.58)
     assert cr<.1 and np.all(q>0)
     return {'category_order':['huntable','protected','specially_protected'],'judgement_matrix':A.tolist(),'category_weights':q.tolist(),'lambda_max':float(ev[k].real),'CR':cr,'status':'explicit_team_judgement_not_statutory_or_expert_weights'}
+
+def management_weights(targets, surveyed_ids):
+    """Entropy information weights on common observed regional scope.
+
+    No min-max expansion: both columns are nonnegative responsibility measures.
+    Unknown animal regions are excluded from weight estimation, not filled zero.
+    CRITIC is saved as a methodological sensitivity, not a truth benchmark.
+    """
+    matrix=np.array([[sum(t['animal_component_raw'] for t in targets if t['region_id']==rid),
+                      sum(t['habitat_component_raw'] for t in targets if t['region_id']==rid)]
+                     for rid in surveyed_ids],dtype=float)
+    assert np.isfinite(matrix).all() and (matrix>=0).all() and (matrix.sum(axis=0)>0).all()
+    p=matrix/matrix.sum(axis=0)
+    entropy=-(p*np.log(np.maximum(p,1e-300))).sum(axis=0)/np.log(len(surveyed_ids))
+    information=np.maximum(0,1-entropy)
+    if information.sum()<=1e-12:raise ValueError('No interregional information to estimate entropy weights')
+    weights=information/information.sum()
+    span=matrix.max(axis=0)-matrix.min(axis=0)
+    z=np.divide(matrix-matrix.min(axis=0),span,out=np.zeros_like(matrix),where=span>0)
+    corr=np.corrcoef(z.T)
+    conflict=z.std(axis=0,ddof=1)*(1-corr).sum(axis=1)
+    alternative=conflict/conflict.sum()
+    return {'method':'entropy_information_weights','common_scope':surveyed_ids,
+            'raw_region_matrix':matrix.tolist(),'columns':['animal_responsibility_times_entry','fuel_habitat_responsibility'],
+            'normalisation':'positive regional values divided by same-column sum; no min-max expansion',
+            'entropy':entropy.tolist(),'information_divergence':information.tolist(),'weights':weights.tolist(),
+            'CRITIC_alternative':alternative.tolist(),'regional_correlation':float(corr[0,1]),
+            'excluded_regions':'PAN_MAIN and UNSURVEYED_OTHER animal data unknown, not imputed',
+            'interpretation':'data-information weights, not measured conservation importance or loss probabilities',
+            'limitations':['animal component still uses legal-category AHP judgement','fuel habitat is an exposure proxy pending multiyear fire data','weights depend on observed scope and chosen method']}
 
 def prepare(config,sites=None):
     sites=SITES if sites is None else sites
@@ -155,13 +184,15 @@ def prepare(config,sites=None):
         # an imputed zero animal value; retain unknown status at regional level.
         t['habitat_component_raw']=byid[rid]['fuel_proxy_baseline_area_wc2021_km2']/fuel_total*t['within_region_area_share']
     av=sum(t['animal_component_raw'] for t in targetrows);hv=sum(t['habitat_component_raw'] for t in targetrows)
+    objective_weights=management_weights(targetrows,[r['region_id'] for r in survey])
+    alpha=objective_weights['weights'][0]
     for t in targetrows:
         t['animal_component_share']=t['animal_component_raw']/av;t['habitat_component_share']=t['habitat_component_raw']/hv
-        t['objective_weight']=config['animal_management_share']*t['animal_component_share']+(1-config['animal_management_share'])*t['habitat_component_share']
+        t['objective_weight']=alpha*t['animal_component_share']+(1-alpha)*t['habitat_component_share']
     H=config['staff_reference']*config['protection_staff_fraction']*config['effective_hours_month']
     H0=len(sites)*config['response_staff_per_site']*config['response_hours_day']*config['days_month']
     U=config['drone_count']*config['flight_hours_per_drone_day']*config['drone_days_month']
-    result={'config':config,'AHP':aa,'bases':bases,'candidate_entry_count':len(entries),'graph_nodes':graph.number_of_nodes(),'graph_directed_arcs':graph.number_of_edges(),'targets':targetrows,'region_ids':[r for r,g in region_geom],'animal_values_15_regions':animals,'animal_unknown_regions':[r['region_id'] for r in base if r['region_kind']!='survey_stratum'],'human_budget':H,'response_reserved_hours':H0,'drone_budget':U,'scope':'daytime strategic monitoring of measured six taxa and fuel habitat; not complete park conservation certification','checks':{'region_area_shares_sum_to_one':True,'animal_values_sum_to_one':True,'objective_weights_sum_to_one':bool(abs(sum(t['objective_weight'] for t in targetrows)-1)<1e-9),'AHP_consistency_pass':True},'limitations':['Historical counts and assumed uniform within-region animal distribution','All management access to candidate roads assumed; signs, gates and seasonal closures need verification','Four camps and two gates are proposed sites, not observed ranger deployment','Area-grid representatives are inspection targets, not complete spatial coverage','Ground sorties independently return to a base; route chaining not optimised','Drone observation protocol is assumed equivalent only for screening; not arrest, firefighting or habitat restoration','Fire baseline assumes uniform exposure on fuel habitat; no multi-year fire probability estimated','Unknown rhino/bird/plant values remain outside measured objective; all reachable regions have a generic service floor','Only specified daytime response window is modelled; no 24-hour protection claim']}
+    result={'config':config,'AHP':aa,'management_weight_estimation':objective_weights,'bases':bases,'candidate_entry_count':len(entries),'graph_nodes':graph.number_of_nodes(),'graph_directed_arcs':graph.number_of_edges(),'targets':targetrows,'region_ids':[r for r,g in region_geom],'animal_values_15_regions':animals,'animal_unknown_regions':[r['region_id'] for r in base if r['region_kind']!='survey_stratum'],'human_budget':H,'response_reserved_hours':H0,'drone_budget':U,'scope':'daytime strategic monitoring of measured six taxa and fuel habitat; not complete park conservation certification','checks':{'region_area_shares_sum_to_one':True,'animal_values_sum_to_one':True,'objective_weights_sum_to_one':bool(abs(sum(t['objective_weight'] for t in targetrows)-1)<1e-9),'AHP_consistency_pass':True},'limitations':['Historical counts and assumed uniform within-region animal distribution','All management access to candidate roads assumed; signs, gates and seasonal closures need verification','Four camps and two gates are proposed sites, not observed ranger deployment','Area-grid representatives are inspection targets, not complete spatial coverage','Ground sorties independently return to a base; route chaining not optimised','Drone observation protocol is assumed equivalent only for screening; not arrest, firefighting or habitat restoration','Fire baseline assumes uniform exposure on fuel habitat; no multi-year fire probability estimated','Unknown rhino/bird/plant values remain outside measured objective; all reachable regions have a generic service floor','Only specified daytime response window is modelled; no 24-hour protection claim']}
     return result
 
 def solve(data, H=None,U=None,weights=None,fixed_service=None,minimum_person=False,ground_factor=1.,operator_factor=1.):
@@ -277,22 +308,13 @@ def figures(data,result,comparisons,scenarios,rows):
     ax.barh(yy,v,color='#235e83');ax.set_yticks(yy,[s['name'] for s in feasible]);ax.invert_yaxis();ax.set_xlim(0,max(v)*1.15);ax.set_xlabel('各情景自身需求权重下的规划服务分')
     for i,value in enumerate(v):ax.text(value+.5,i,f'{value:.2f}',va='center')
     ax.set_title('资源和作业假设敏感性（不同需求权重的分数不作因果比较）');save(fig,'q2_sensitivity')
-    rainfall=ROOT/'output/rainfall/gpcc_regional_monthly_1971_2024.json'
-    if rainfall.exists():
-        rain=json.loads(rainfall.read_text(encoding='utf-8'));series=np.asarray(rain['park_monthly_mm']);years=np.arange(1972,2025)
-        wet=np.array([series[(y-1971)*12-2:(y-1971)*12+4].sum() for y in years]);a,_,scale=gamma.fit(wet[:49],floc=0);spi=norm.ppf(np.clip(gamma.cdf(wet,a,scale=scale),1e-6,1-1e-6))
-        fig,axs=plt.subplots(1,2,figsize=(12,3.5),layout='constrained')
-        clim=np.array([series[:600][np.arange(600)%12==m].mean() for m in range(12)])
-        axs[0].bar(np.arange(1,13),clim,color=['#235e83' if m in [1,2,3,4,11,12] else '#aeb9c0' for m in range(1,13)])
-        axs[0].set_xticks(range(1,13));axs[0].set_xlabel('月份');axs[0].set_ylabel('全园面积加权月降水 / mm');axs[0].set_title('1971—2020固定气候基准')
-        axs[1].bar(years,spi,color=np.where(spi<0,'#bf7745','#235e83'));axs[1].axhline(0,color='black',linewidth=.6);axs[1].axhline(-1,color='#a62d24',linestyle='--',linewidth=.8);axs[1].set_xlabel('完整雨季结束年份');axs[1].set_ylabel('雨季SPI-6');axs[1].set_title('降水背景；不自动增加巡护需求')
-        save(fig,'q2_rainfall_context')
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     configpath=ROOT/'data/modeling/q2_assumptions.json';configpath.parent.mkdir(parents=True,exist_ok=True)
     if not configpath.exists():dump(configpath,{'status':'team_planning_assumptions_not_park_observations','parameters':DEFAULT})
     config=dict(DEFAULT,**json.loads(configpath.read_text(encoding='utf-8'))['parameters'])
+    config.pop('animal_management_share',None)
     dump(configpath,{'status':'team_planning_assumptions_not_park_observations','parameters':config})
     print('preparing graph and multi-point geography',flush=True);data=prepare(config);dump(OUT/'q2_model_inputs.json',data)
     csvout(OUT/'q2_targets.csv',data['targets'])
@@ -317,6 +339,9 @@ def main():
         {'name':'出行及作业人时增加25%','result':solve(data,ground_factor=1.25,operator_factor=1.25)}]
     for share in [.5,.9]:
         weights=np.array([share*t['animal_component_share']+(1-share)*t['habitat_component_share'] for t in data['targets']]);scenarios.append({'name':f'动物管理权重{share:.0%}','result':solve(data,weights=weights),'animal_management_share':share})
+    critic_alpha=data['management_weight_estimation']['CRITIC_alternative'][0]
+    critic_weights=np.array([critic_alpha*t['animal_component_share']+(1-critic_alpha)*t['habitat_component_share'] for t in data['targets']])
+    scenarios.append({'name':'CRITIC替代赋权','result':solve(data,weights=critic_weights),'animal_management_share':critic_alpha,'weights_change_score_definition':True})
     geographic_scenarios=[]
     fixed_weights=np.array([t['objective_weight'] for t in data['targets']])
     for title,key,value in [('道路速度20km/h','road_speed_kmh',20.),('道路速度40km/h','road_speed_kmh',40.),('响应期限3小时','response_limit_hours',3.)]:
@@ -347,7 +372,7 @@ def main():
     best_forward=max(successful_forward,key=lambda o:o['result']['score']) if successful_forward else None
     rows=regional_rows(data,optimum);csvout(OUT/'q2_regional_allocation.csv',rows)
     sourcefiles=[ROOT/'output/regions/region_base_data.json',ROOT/'output/model1/species_region_counts_2015.json',SOURCE/'park_edges.csv',SOURCE/'park_edges.geojson',SOURCE/'park_nodes.csv',ROOT/'data/regions/processed/model_regions.geojson',configpath]
-    report={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'scope':data['scope'],'model':'continuous LP; fixed daytime response posts; independent person/flight hours; area-weighted target service','optimum':optimum,'comparisons':comparisons,'scarce_budget_comparisons':scarce_comparisons,'scarce_budget_regions':scarce_rows,'scenarios':scenarios,'grid_sensitivity':grid_sensitivity,'forward_post_options':forward_options,'best_forward_post':best_forward,'regions':rows,'assumptions':config,'AHP':data['AHP'],'source_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sourcefiles},'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'checks':{'LP_optimal':True,'same_budget_baselines_feasible':True,'optimal_not_worse_than_baselines':True,'physical_resource_constraints_verified':True,'unknown_animal_values_remain_null':True,'rainfall_not_automatically_mapped_to_staff':True},'limitations':data['limitations']}
+    report={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'scope':data['scope'],'model':'continuous LP; fixed daytime response posts; independent person/flight hours; area-weighted target service','optimum':optimum,'comparisons':comparisons,'scarce_budget_comparisons':scarce_comparisons,'scarce_budget_regions':scarce_rows,'scenarios':scenarios,'grid_sensitivity':grid_sensitivity,'forward_post_options':forward_options,'best_forward_post':best_forward,'regions':rows,'assumptions':config,'AHP':data['AHP'],'management_weight_estimation':data['management_weight_estimation'],'excluded_factors':['water_supply','precipitation'],'source_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sourcefiles},'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'checks':{'LP_optimal':True,'same_budget_baselines_feasible':True,'optimal_not_worse_than_baselines':True,'physical_resource_constraints_verified':True,'unknown_animal_values_remain_null':True},'limitations':data['limitations']}
     dump(OUT/'q2_results.json',report);figures(data,optimum,comparisons,scenarios,rows)
     # Dedicated figures use the identical model with less human capacity.
     # Preserve filenames from the full-budget case and mark the scenario.

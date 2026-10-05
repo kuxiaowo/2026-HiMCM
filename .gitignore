@@ -9,3 +9,6 @@
 /output/gpcc_precipitation_analysis_monthly_2011_2015_v2025_025.nc.gz
 /output/gpcc_precipitation_analysis_monthly_2016_2020_v2025_025.nc.gz
 /output/gpcc_precipitation_analysis_monthly_2021_2024_v2025_025.nc.gz
+
+# Local migration audit and recoverable old copies
+/tmp/project_sync/

@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-05T08:05:52.151728+00:00",
+  "generated_at_utc": "2026-10-05T12:41:35.177289+00:00",
   "source_sha256": {
-    "output\\question1\\question1_baseline.json": "c75a33524cad205867402eaccfcad32cd7a85d841ab331c237140bc220074d89",
+    "output\\question1\\question1_baseline.json": "9a37c3e3ddc72e26a41508b5e71d1f88c5908e325c1101c165f5f40357cf029a",
     "output\\regions\\region_base_data.json": "81c3c1d9493f4948e2b64eb11c4bbaff6c94d64c04d0c9c12981efb27d3bb682",
     "output\\model1\\species_region_counts_2015.json": "206d158b1594bc306589a7060ba17b88d5b0159812738036b7d7fae34a4667fd",
     "data\\regions\\processed\\model_regions.geojson": "d665a51f56319afd1b514ecc2fdbfc3989d1be4a0767770e14d6abc238aad55d"
   },
-  "script_sha256": "26d56a4f75655da5514a8e7b2ec30011dc796ac1140845d3c8720c1b135c3220",
+  "script_sha256": "73e6f3ce1cbdd264a64923078c5d334a12ef6be32cd84f7c028695ea04c33696",
   "runtime_versions": {
     "python": "3.12.15",
     "numpy": "2.5.3",
@@ -265,14 +265,14 @@
       "unknown_fields": [],
       "is_empirical_success_probability": false
     },
-    "same_score_but_water_unknown": {
+    "same_score_but_habitat_unknown": {
       "status": "data_incomplete",
       "score_for_supplied_demand_scope": 90.0,
       "park_target": 80.0,
       "critical_target": 0.9,
       "failed_conditions": [],
       "unknown_fields": [
-        "safeguard:water_status_checked"
+        "safeguard:priority_habitat_checked"
       ],
       "is_empirical_success_probability": false
     }
