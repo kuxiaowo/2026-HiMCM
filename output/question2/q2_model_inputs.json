@@ -25,7 +25,7 @@
     "drone_count": 6.0,
     "flight_hours_per_drone_day": 2.0,
     "drone_days_month": 20.0,
-    "animal_management_share": 0.7
+    "management_weight_method": "entropy_information"
   },
   "AHP": {
     "category_order": [
@@ -58,6 +58,117 @@
     "lambda_max": 3.009202712714282,
     "CR": 0.007933373029553421,
     "status": "explicit_team_judgement_not_statutory_or_expert_weights"
+  },
+  "management_weight_estimation": {
+    "method": "entropy_information_weights",
+    "common_scope": [
+      "ENP1",
+      "ENP2",
+      "ENP3410",
+      "ENP5",
+      "ENP6",
+      "ENP7",
+      "ENP8",
+      "ENP9",
+      "ENP11",
+      "ENP12",
+      "ENP13",
+      "ENP14",
+      "ENP15",
+      "ENP16",
+      "ENP17"
+    ],
+    "raw_region_matrix": [
+      [
+        0.09485815388582423,
+        0.09798950011539581
+      ],
+      [
+        0.024108173943410017,
+        0.015269922839977641
+      ],
+      [
+        0.024581204324931306,
+        0.13167138717992388
+      ],
+      [
+        0.014593304684081234,
+        0.05625868060594043
+      ],
+      [
+        0.006691761065996974,
+        0.04086145496842582
+      ],
+      [
+        0.013514581545445818,
+        0.03081630278962217
+      ],
+      [
+        0.004727679541330023,
+        0.021619259391409847
+      ],
+      [
+        0.011249170674962592,
+        0.029637109548459765
+      ],
+      [
+        0.01794492629606802,
+        0.14383932088482315
+      ],
+      [
+        0.05024541320779796,
+        0.0779433176866102
+      ],
+      [
+        0.01863266872428247,
+        0.07942793790599538
+      ],
+      [
+        0.002462791030280465,
+        0.06280959818027007
+      ],
+      [
+        0.036659819764096165,
+        0.11096080592459208
+      ],
+      [
+        0.028107102936661146,
+        0.03710897692963605
+      ],
+      [
+        0.04444195106128387,
+        0.043371563669249505
+      ]
+    ],
+    "columns": [
+      "animal_responsibility_times_entry",
+      "fuel_habitat_responsibility"
+    ],
+    "normalisation": "positive regional values divided by same-column sum; no min-max expansion",
+    "entropy": [
+      0.8815962951638049,
+      0.9349888682068501
+    ],
+    "information_divergence": [
+      0.11840370483619511,
+      0.06501113179314988
+    ],
+    "weights": [
+      0.6455514014685299,
+      0.3544485985314701
+    ],
+    "CRITIC_alternative": [
+      0.44796833591460894,
+      0.5520316640853911
+    ],
+    "regional_correlation": 0.3264699356345915,
+    "excluded_regions": "PAN_MAIN and UNSURVEYED_OTHER animal data unknown, not imputed",
+    "interpretation": "data-information weights, not measured conservation importance or loss probabilities",
+    "limitations": [
+      "animal component still uses legal-category AHP judgement",
+      "fuel habitat is an exposure proxy pending multiyear fire data",
+      "weights depend on observed scope and chosen method"
+    ]
   },
   "bases": [
     {
@@ -136,7 +247,7 @@
       "habitat_component_raw": 0.0012036353365071657,
       "animal_component_share": 0.0035026663499132314,
       "habitat_component_share": 0.0012036353365243474,
-      "objective_weight": 0.002812957045896566
+      "objective_weight": 0.002687778029237156
     },
     {
       "target_id": "ENP1_0001",
@@ -161,7 +272,7 @@
       "habitat_component_raw": 0.003293328219551957,
       "animal_component_share": 0.00865199814222126,
       "habitat_component_share": 0.0032933282195989687,
-      "objective_weight": 0.007044397165434573
+      "objective_weight": 0.0067526250981550465
     },
     {
       "target_id": "ENP1_0002",
@@ -186,7 +297,7 @@
       "habitat_component_raw": 0.003756645995139678,
       "animal_component_share": 0.01042839493136609,
       "habitat_component_share": 0.003756645995193304,
-      "objective_weight": 0.008426870250514255
+      "objective_weight": 0.00806360287118582
     },
     {
       "target_id": "ENP1_0003",
@@ -211,7 +322,7 @@
       "habitat_component_raw": 0.000153473610363306,
       "animal_component_share": 0.0005451749700743415,
       "habitat_component_share": 0.00015347361036549683,
-      "objective_weight": 0.0004276645621616881
+      "objective_weight": 0.00040633697208267025
     },
     {
       "target_id": "ENP1_0004",
@@ -236,7 +347,7 @@
       "habitat_component_raw": 0.000947947665374387,
       "animal_component_share": 0.002862494304198567,
       "habitat_component_share": 0.0009479476653879188,
-      "objective_weight": 0.0022881303125553724
+      "objective_weight": 0.002183885931248996
     },
     {
       "target_id": "ENP1_0005",
@@ -261,7 +372,7 @@
       "habitat_component_raw": 0.005384854608574605,
       "animal_component_share": 0.01881529892645111,
       "habitat_component_share": 0.0053848546086514735,
-      "objective_weight": 0.01478616563111122
+      "objective_weight": 0.014054896760352084
     },
     {
       "target_id": "ENP1_0006",
@@ -286,7 +397,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.011826793649485514,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.009946613388119866
+      "objective_weight": 0.009605369454060224
     },
     {
       "target_id": "ENP1_0007",
@@ -311,7 +422,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.018517530226739038,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.014630128992197334
+      "objective_weight": 0.01392458382836299
     },
     {
       "target_id": "ENP1_0008",
@@ -336,7 +447,7 @@
       "habitat_component_raw": 0.0030647038182778467,
       "animal_component_share": 0.010498655179440378,
       "habitat_component_share": 0.003064703818321595,
-      "objective_weight": 0.008268469771104743
+      "objective_weight": 0.00786370153794071
     },
     {
       "target_id": "ENP1_0009",
@@ -361,7 +472,7 @@
       "habitat_component_raw": 0.00013619037318402755,
       "animal_component_share": 0.0005286785266034762,
       "habitat_component_share": 0.00013619037318597166,
-      "objective_weight": 0.00041093208057822484
+      "objective_weight": 0.00038956165068443707
     },
     {
       "target_id": "ENP1_0010",
@@ -386,7 +497,7 @@
       "habitat_component_raw": 0.004228645288037535,
       "animal_component_share": 0.012670332052709067,
       "habitat_component_share": 0.0042286452880978985,
-      "objective_weight": 0.010137826023325715
+      "objective_weight": 0.009678188009750979
     },
     {
       "target_id": "ENP1_0011",
@@ -411,7 +522,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.01723452307836327,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.013732023988334294
+      "objective_weight": 0.013096336765634872
     },
     {
       "target_id": "ENP1_0012",
@@ -436,7 +547,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.007530009240794582,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.006938864302036214
+      "objective_weight": 0.006831574257221665
     },
     {
       "target_id": "ENP1_0013",
@@ -461,7 +572,7 @@
       "habitat_component_raw": 0.0052443144561086985,
       "animal_component_share": 0.017296175918701744,
       "habitat_component_share": 0.0052443144561835605,
-      "objective_weight": 0.013680617479946287
+      "objective_weight": 0.01302441051361674
     },
     {
       "target_id": "ENP1_0014",
@@ -486,7 +597,7 @@
       "habitat_component_raw": 0.0037410989580963444,
       "animal_component_share": 0.011573833623465478,
       "habitat_component_share": 0.0037410989581497483,
-      "objective_weight": 0.009224013223870758
+      "objective_weight": 0.008797531798675453
     },
     {
       "target_id": "ENP1_0015",
@@ -511,7 +622,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.013921028940848346,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.011412578092073848
+      "objective_weight": 0.010957305981404354
     },
     {
       "target_id": "ENP1_0016",
@@ -536,7 +647,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.005786990581166331,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.005718751240296438
+      "objective_weight": 0.005706366118712849
     },
     {
       "target_id": "ENP1_0017",
@@ -561,7 +672,7 @@
       "habitat_component_raw": 0.005336160632451714,
       "animal_component_share": 0.013599047276547815,
       "habitat_component_share": 0.005336160632527887,
-      "objective_weight": 0.011120181283341836
+      "objective_weight": 0.010670278685750548
     },
     {
       "target_id": "ENP1_0018",
@@ -586,7 +697,7 @@
       "habitat_component_raw": 0.0003615040574833934,
       "animal_component_share": 0.0007050287686475048,
       "habitat_component_share": 0.0003615040574885538,
-      "objective_weight": 0.0006019713552998195
+      "objective_weight": 0.0005832669162162866
     },
     {
       "target_id": "ENP1_0019",
@@ -611,7 +722,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.012915702290439502,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.010708849436787658
+      "objective_weight": 0.010308315953299264
     },
     {
       "target_id": "ENP1_0020",
@@ -636,7 +747,7 @@
       "habitat_component_raw": 0.005559526111520661,
       "animal_component_share": 0.010755129983201698,
       "habitat_component_share": 0.005559526111600023,
-      "objective_weight": 0.009196448821721194
+      "objective_weight": 0.008913555472387803
     },
     {
       "target_id": "ENP1_0021",
@@ -661,7 +772,7 @@
       "habitat_component_raw": 0.00542760879727669,
       "animal_component_share": 0.013582300762229835,
       "habitat_component_share": 0.005427608797354169,
-      "objective_weight": 0.011135893172767135
+      "objective_weight": 0.010691881623823814
     },
     {
       "target_id": "ENP1_0022",
@@ -686,7 +797,7 @@
       "habitat_component_raw": 1.3872730336906552e-06,
       "animal_component_share": 2.159699929872166e-06,
       "habitat_component_share": 1.3872730337104584e-06,
-      "objective_weight": 1.9279718610236537e-06
+      "objective_weight": 1.8859142990596353e-06
     },
     {
       "target_id": "ENP1_0023",
@@ -711,7 +822,7 @@
       "habitat_component_raw": 0.0004012262536951212,
       "animal_component_share": 0.0005895998196943555,
       "habitat_component_share": 0.00040122625370084866,
-      "objective_weight": 0.0005330877498963034
+      "objective_weight": 0.0005228310732275816
     },
     {
       "target_id": "ENP1_0024",
@@ -736,7 +847,7 @@
       "habitat_component_raw": 0.005434600891628017,
       "animal_component_share": 0.0065915444352470575,
       "habitat_component_share": 0.005434600891705595,
-      "objective_weight": 0.00624446137218462
+      "objective_weight": 0.0061814674176587535
     },
     {
       "target_id": "ENP1_0025",
@@ -761,7 +872,7 @@
       "habitat_component_raw": 0.005395624822940391,
       "animal_component_share": 0.010549337783361553,
       "habitat_component_share": 0.005395624823017413,
-      "objective_weight": 0.009003223895258311
+      "objective_weight": 0.008722611447334098
     },
     {
       "target_id": "ENP1_0026",
@@ -786,7 +897,7 @@
       "habitat_component_raw": 3.4016550595124305e-07,
       "animal_component_share": 3.1785771816393645e-07,
       "habitat_component_share": 3.401655059560989e-07,
-      "objective_weight": 3.245500545015852e-07
+      "objective_weight": 3.2576468228320585e-07
     },
     {
       "target_id": "ENP2_0027",
@@ -811,7 +922,7 @@
       "habitat_component_raw": 4.496441819447884e-05,
       "animal_component_share": 0.00017143822184531452,
       "habitat_component_share": 4.49644181951207e-05,
-      "objective_weight": 0.00013349608075025637
+      "objective_weight": 0.000126609759390559
     },
     {
       "target_id": "ENP2_0028",
@@ -836,7 +947,7 @@
       "habitat_component_raw": 0.0015006080282141275,
       "animal_component_share": 0.006825799357057702,
       "habitat_component_share": 0.0015006080282355485,
-      "objective_weight": 0.005228241958411056
+      "objective_weight": 0.004938292753644753
     },
     {
       "target_id": "ENP2_0029",
@@ -861,7 +972,7 @@
       "habitat_component_raw": 0.0003286654548096199,
       "animal_component_share": 0.0016900047453281219,
       "habitat_component_share": 0.00032866545481431155,
-      "objective_weight": 0.0012816029581739787
+      "objective_weight": 0.0012074799416796759
     },
     {
       "target_id": "ENP2_0030",
@@ -886,7 +997,7 @@
       "habitat_component_raw": 0.00010862195543684558,
       "animal_component_share": 0.0003010436746073021,
       "habitat_component_share": 0.00010862195543839615,
-      "objective_weight": 0.00024331715885663033
+      "objective_weight": 0.0002328400659208673
     },
     {
       "target_id": "ENP2_0031",
@@ -911,7 +1022,7 @@
       "habitat_component_raw": 0.005124533874427217,
       "animal_component_share": 0.02096851103684865,
       "habitat_component_share": 0.005124533874500369,
-      "objective_weight": 0.016215317888144166
+      "objective_weight": 0.015352635536489682
     },
     {
       "target_id": "ENP2_0032",
@@ -936,7 +1047,7 @@
       "habitat_component_raw": 0.0034478803981485267,
       "animal_component_share": 0.013347976953550764,
       "habitat_component_share": 0.0034478803981977447,
-      "objective_weight": 0.010377947986944858
+      "objective_weight": 0.009838901604179651
     },
     {
       "target_id": "ENP2_0033",
@@ -961,7 +1072,7 @@
       "habitat_component_raw": 7.256759603361499e-05,
       "animal_component_share": 0.0002590724798193294,
       "habitat_component_share": 7.256759603465089e-05,
-      "objective_weight": 0.00020312101468392582
+      "objective_weight": 0.00019296608514257537
     },
     {
       "target_id": "ENP2_0034",
@@ -986,7 +1097,7 @@
       "habitat_component_raw": 0.002754755837034668,
       "animal_component_share": 0.00958635279784369,
       "habitat_component_share": 0.002754755837073992,
-      "objective_weight": 0.0075368737096127795
+      "objective_weight": 0.007164902829367019
     },
     {
       "target_id": "ENP2_0035",
@@ -1011,7 +1122,7 @@
       "habitat_component_raw": 0.0018873252776785432,
       "animal_component_share": 0.008222066815483578,
       "habitat_component_share": 0.0018873252777054845,
-      "objective_weight": 0.00632164435415015
+      "objective_weight": 0.0059767265553590425
     },
     {
       "target_id": "ENP3410_0036",
@@ -1036,7 +1147,7 @@
       "habitat_component_raw": 0.0005381014813943331,
       "animal_component_share": 0.0005855193445211386,
       "habitat_component_share": 0.0005381014814020144,
-      "objective_weight": 0.0005712939855854013
+      "objective_weight": 0.000568712149393208
     },
     {
       "target_id": "ENP3410_0037",
@@ -1061,7 +1172,7 @@
       "habitat_component_raw": 0.0020650608993804595,
       "animal_component_share": 0.0018794646780318333,
       "habitat_component_share": 0.002065060899409938,
-      "objective_weight": 0.0019351435444452648
+      "objective_weight": 0.001945248998592039
     },
     {
       "target_id": "ENP3410_0038",
@@ -1086,7 +1197,7 @@
       "habitat_component_raw": 0.0017663482464597281,
       "animal_component_share": 0.0010775591505571968,
       "habitat_component_share": 0.0017663482464849425,
-      "objective_weight": 0.0012841958793355205
+      "objective_weight": 0.0013216994802925446
     },
     {
       "target_id": "ENP3410_0039",
@@ -1111,7 +1222,7 @@
       "habitat_component_raw": 0.004511683226145814,
       "animal_component_share": 0.0024898506518704856,
       "habitat_component_share": 0.004511683226210218,
-      "objective_weight": 0.0030964004241724056
+      "objective_weight": 0.003206486374310478
     },
     {
       "target_id": "ENP3410_0040",
@@ -1136,7 +1247,7 @@
       "habitat_component_raw": 0.0030672920850361696,
       "animal_component_share": 0.0028407110283116717,
       "habitat_component_share": 0.003067292085079955,
-      "objective_weight": 0.0029086853453421566
+      "objective_weight": 0.002921022366336969
     },
     {
       "target_id": "ENP3410_0041",
@@ -1161,7 +1272,7 @@
       "habitat_component_raw": 5.532196350367994e-05,
       "animal_component_share": 2.38929575202926e-05,
       "habitat_component_share": 5.532196350446966e-05,
-      "objective_weight": 3.332165931554572e-05
+      "objective_weight": 3.5032924644621347e-05
     },
     {
       "target_id": "ENP3410_0042",
@@ -1186,7 +1297,7 @@
       "habitat_component_raw": 0.0026318110105557854,
       "animal_component_share": 0.0017115565817664175,
       "habitat_component_share": 0.0026318110105933543,
-      "objective_weight": 0.0019876329104144986
+      "objective_weight": 0.002037739474356504
     },
     {
       "target_id": "ENP3410_0043",
@@ -1211,7 +1322,7 @@
       "habitat_component_raw": 0.0009062248306321902,
       "animal_component_share": 0.0006696049276984947,
       "habitat_component_share": 0.0009062248306451264,
-      "objective_weight": 0.0007405908985824842
+      "objective_weight": 0.0007534745206825809
     },
     {
       "target_id": "ENP3410_0044",
@@ -1236,7 +1347,7 @@
       "habitat_component_raw": 0.002230191097070074,
       "animal_component_share": 0.0010728609712326181,
       "habitat_component_share": 0.0022301910971019097,
-      "objective_weight": 0.0014200600089934057
+      "objective_weight": 0.0014830750123852386
     },
     {
       "target_id": "ENP3410_0045",
@@ -1261,7 +1372,7 @@
       "habitat_component_raw": 0.0036537654733083437,
       "animal_component_share": 0.0019906652191389144,
       "habitat_component_share": 0.0036537654733605008,
-      "objective_weight": 0.00248959529540539
+      "objective_weight": 0.0025801487734650875
     },
     {
       "target_id": "ENP3410_0046",
@@ -1286,7 +1397,7 @@
       "habitat_component_raw": 0.004859114282793722,
       "animal_component_share": 0.0013705225635047662,
       "habitat_component_share": 0.004859114282863086,
-      "objective_weight": 0.002417100079312262
+      "objective_weight": 0.0026070490092798145
     },
     {
       "target_id": "ENP3410_0047",
@@ -1311,7 +1422,7 @@
       "habitat_component_raw": 7.962126592672315e-05,
       "animal_component_share": 1.9791471761106238e-05,
       "habitat_component_share": 7.962126592785973e-05,
-      "objective_weight": 3.774041001113229e-05
+      "objective_weight": 4.099805845393834e-05
     },
     {
       "target_id": "ENP3410_0048",
@@ -1336,7 +1447,7 @@
       "habitat_component_raw": 1.4016911050147957e-05,
       "animal_component_share": 1.036423488270344e-05,
       "habitat_component_share": 1.4016911050348046e-05,
-      "objective_weight": 1.1460037732996822e-05
+      "objective_weight": 1.1658920831214372e-05
     },
     {
       "target_id": "ENP3410_0049",
@@ -1361,7 +1472,7 @@
       "habitat_component_raw": 2.4797507514451268e-05,
       "animal_component_share": 9.446194248927636e-06,
       "habitat_component_share": 2.479750751480525e-05,
-      "objective_weight": 1.405158822869092e-05
+      "objective_weight": 1.4887445721635522e-05
     },
     {
       "target_id": "ENP3410_0050",
@@ -1386,7 +1497,7 @@
       "habitat_component_raw": 0.005124917498245437,
       "animal_component_share": 0.0028898039396168945,
       "habitat_component_share": 0.005124917498318594,
-      "objective_weight": 0.003560338007227404
+      "objective_weight": 0.003682036808057399
     },
     {
       "target_id": "ENP3410_0051",
@@ -1411,7 +1522,7 @@
       "habitat_component_raw": 0.003193546383036613,
       "animal_component_share": 0.001436551822636409,
       "habitat_component_share": 0.0031935463830822007,
-      "objective_weight": 0.0019636501907701466
+      "objective_weight": 0.0020593160822138363
     },
     {
       "target_id": "ENP3410_0052",
@@ -1436,7 +1547,7 @@
       "habitat_component_raw": 0.005477483106905182,
       "animal_component_share": 0.002102543931558411,
       "habitat_component_share": 0.005477483106983373,
-      "objective_weight": 0.0031150256841858993
+      "objective_weight": 0.003298786392416744
     },
     {
       "target_id": "ENP3410_0053",
@@ -1461,7 +1572,7 @@
       "habitat_component_raw": 0.005477483106905182,
       "animal_component_share": 0.0025265780638942027,
       "habitat_component_share": 0.005477483106983373,
-      "objective_weight": 0.0034118495768209536
+      "objective_weight": 0.003572522220816606
     },
     {
       "target_id": "ENP3410_0054",
@@ -1486,7 +1597,7 @@
       "habitat_component_raw": 0.005472680544189224,
       "animal_component_share": 0.0031406952910506586,
       "habitat_component_share": 0.005472680544267346,
-      "objective_weight": 0.003840290867015665
+      "objective_weight": 0.003967264195849369
     },
     {
       "target_id": "ENP3410_0055",
@@ -1511,7 +1622,7 @@
       "habitat_component_raw": 0.0023580708149347424,
       "animal_component_share": 0.0010867935437226717,
       "habitat_component_share": 0.002358070814968404,
-      "objective_weight": 0.0014681767250963912
+      "objective_weight": 0.0015373959908606331
     },
     {
       "target_id": "ENP3410_0056",
@@ -1536,7 +1647,7 @@
       "habitat_component_raw": 0.0020953155366407747,
       "animal_component_share": 0.0009343320995347888,
       "habitat_component_share": 0.0020953155366706853,
-      "objective_weight": 0.0012826271306755578
+      "objective_weight": 0.0013458410517458565
     },
     {
       "target_id": "ENP3410_0057",
@@ -1561,7 +1672,7 @@
       "habitat_component_raw": 0.005194657928682978,
       "animal_component_share": 0.0012069335623031978,
       "habitat_component_share": 0.005194657928757131,
-      "objective_weight": 0.002403250872239378
+      "objective_weight": 0.0026203768753225894
     },
     {
       "target_id": "ENP3410_0058",
@@ -1586,7 +1697,7 @@
       "habitat_component_raw": 0.002923779607729042,
       "animal_component_share": 0.0007685315320920321,
       "habitat_component_share": 0.0029237796077707786,
-      "objective_weight": 0.001415105954795656
+      "objective_weight": 0.0015324561920040118
     },
     {
       "target_id": "ENP3410_0059",
@@ -1611,7 +1722,7 @@
       "habitat_component_raw": 0.0028522291794871447,
       "animal_component_share": 0.0011873322555220251,
       "habitat_component_share": 0.00285222917952786,
-      "objective_weight": 0.0016868013327237755
+      "objective_weight": 0.0017774526369352488
     },
     {
       "target_id": "ENP3410_0060",
@@ -1636,7 +1747,7 @@
       "habitat_component_raw": 8.891802464192071e-05,
       "animal_component_share": 2.8849184653759837e-05,
       "habitat_component_share": 8.891802464319001e-05,
-      "objective_weight": 4.686983665058889e-05
+      "objective_weight": 5.014050080342449e-05
     },
     {
       "target_id": "ENP3410_0061",
@@ -1661,7 +1772,7 @@
       "habitat_component_raw": 0.002391090720286072,
       "animal_component_share": 0.0009126140014369635,
       "habitat_component_share": 0.0023910907203202043,
-      "objective_weight": 0.001356157017101936
+      "objective_weight": 0.0014366580024065346
     },
     {
       "target_id": "ENP3410_0062",
@@ -1686,7 +1797,7 @@
       "habitat_component_raw": 0.005026825687932535,
       "animal_component_share": 0.0011756289509100054,
       "habitat_component_share": 0.005026825688004293,
-      "objective_weight": 0.002330987972038292
+      "objective_weight": 0.002540680237042046
     },
     {
       "target_id": "ENP3410_0063",
@@ -1711,7 +1822,7 @@
       "habitat_component_raw": 0.0024614425539606073,
       "animal_component_share": 0.0007015817324757707,
       "habitat_component_share": 0.002461442553995744,
-      "objective_weight": 0.0012295399789317629
+      "objective_weight": 0.001325361934273967
     },
     {
       "target_id": "ENP3410_0064",
@@ -1736,7 +1847,7 @@
       "habitat_component_raw": 0.005251331844467108,
       "animal_component_share": 0.0009937789427325835,
       "habitat_component_share": 0.0052513318445420705,
-      "objective_weight": 0.00227104481327543
+      "objective_weight": 0.00250286260195255
     },
     {
       "target_id": "ENP3410_0065",
@@ -1761,7 +1872,7 @@
       "habitat_component_raw": 0.0034106255604988284,
       "animal_component_share": 0.0009495025923462095,
       "habitat_component_share": 0.0034106255605475147,
-      "objective_weight": 0.0016878394828066011
+      "objective_weight": 0.001821844179238774
     },
     {
       "target_id": "ENP3410_0066",
@@ -1786,7 +1897,7 @@
       "habitat_component_raw": 0.0054476198093316025,
       "animal_component_share": 0.0019050256468132313,
       "habitat_component_share": 0.005447619809409367,
-      "objective_weight": 0.0029678038955920725
+      "objective_weight": 0.0031606931829111983
     },
     {
       "target_id": "ENP3410_0067",
@@ -1811,7 +1922,7 @@
       "habitat_component_raw": 2.5237797151881938e-05,
       "animal_component_share": 6.4168480038701085e-06,
       "habitat_component_share": 2.5237797152242205e-05,
-      "objective_weight": 1.2063132748381738e-05
+      "objective_weight": 1.3087907052542666e-05
     },
     {
       "target_id": "ENP3410_0068",
@@ -1836,7 +1947,7 @@
       "habitat_component_raw": 0.0005043392132998628,
       "animal_component_share": 0.0001615610119954357,
       "habitat_component_share": 0.0005043392133070623,
-      "objective_weight": 0.0002643944723889237
+      "objective_weight": 0.00028305826505747986
     },
     {
       "target_id": "ENP3410_0069",
@@ -1861,7 +1972,7 @@
       "habitat_component_raw": 0.0004987085277569299,
       "animal_component_share": 8.962282419912428e-05,
       "habitat_component_share": 0.0004987085277640489,
-      "objective_weight": 0.00021234853526860167
+      "objective_weight": 0.00023462267850697224
     },
     {
       "target_id": "ENP3410_0070",
@@ -1886,7 +1997,7 @@
       "habitat_component_raw": 1.111202837727752e-05,
       "animal_component_share": 2.2785714620362692e-06,
       "habitat_component_share": 1.1112028377436144e-05,
-      "objective_weight": 4.928608536656232e-06
+      "objective_weight": 5.4095778858878786e-06
     },
     {
       "target_id": "ENP3410_0071",
@@ -1911,7 +2022,7 @@
       "habitat_component_raw": 1.9814647521985104e-05,
       "animal_component_share": 1.7007800627691794e-05,
       "habitat_component_share": 1.9814647522267956e-05,
-      "objective_weight": 1.7849854696064643e-05
+      "objective_weight": 1.8002683575766726e-05
     },
     {
       "target_id": "ENP3410_0072",
@@ -1936,7 +2047,7 @@
       "habitat_component_raw": 0.003537753103851611,
       "animal_component_share": 0.001647817771601317,
       "habitat_component_share": 0.0035377531039021124,
-      "objective_weight": 0.0022147983712915557
+      "objective_weight": 0.0023177027014504425
     },
     {
       "target_id": "ENP3410_0073",
@@ -1961,7 +2072,7 @@
       "habitat_component_raw": 0.0034523441065091097,
       "animal_component_share": 0.0022776613762408313,
       "habitat_component_share": 0.0034523441065583914,
-      "objective_weight": 0.002630066195336099
+      "objective_weight": 0.0026940260237210117
     },
     {
       "target_id": "ENP3410_0074",
@@ -1986,7 +2097,7 @@
       "habitat_component_raw": 0.00023182361797704744,
       "animal_component_share": 0.0001155604376997156,
       "habitat_component_share": 0.0002318236179803567,
-      "objective_weight": 0.00015043939178390793
+      "objective_weight": 0.0001567697590110005
     },
     {
       "target_id": "ENP3410_0075",
@@ -2011,7 +2122,7 @@
       "habitat_component_raw": 6.553275074022083e-05,
       "animal_component_share": 1.7008834116303016e-05,
       "habitat_component_share": 6.55327507411563e-05,
-      "objective_weight": 3.1566009103759e-05
+      "objective_weight": 3.4208068359240166e-05
     },
     {
       "target_id": "ENP3410_0076",
@@ -2036,7 +2147,7 @@
       "habitat_component_raw": 0.0007681609587321724,
       "animal_component_share": 0.0006093321497019576,
       "habitat_component_share": 0.0007681609587431378,
-      "objective_weight": 0.0006569807924143116
+      "objective_weight": 0.0006656287984730264
     },
     {
       "target_id": "ENP3410_0077",
@@ -2061,7 +2172,7 @@
       "habitat_component_raw": 0.005477483106905182,
       "animal_component_share": 0.0034569870816634892,
       "habitat_component_share": 0.005477483106983373,
-      "objective_weight": 0.004063135889259455
+      "objective_weight": 0.004173149066176528
     },
     {
       "target_id": "ENP3410_0078",
@@ -2086,7 +2197,7 @@
       "habitat_component_raw": 0.005477483106905182,
       "animal_component_share": 0.003734024481610318,
       "habitat_component_share": 0.005477483106983373,
-      "objective_weight": 0.0042570620692222345
+      "objective_weight": 0.0043519909479714
     },
     {
       "target_id": "ENP3410_0079",
@@ -2111,7 +2222,7 @@
       "habitat_component_raw": 0.005477483106905182,
       "animal_component_share": 0.0032531296176329105,
       "habitat_component_share": 0.005477483106983373,
-      "objective_weight": 0.00392043566443805
+      "objective_weight": 0.0040415485945717675
     },
     {
       "target_id": "ENP3410_0080",
@@ -2136,7 +2247,7 @@
       "habitat_component_raw": 0.005476321408388717,
       "animal_component_share": 0.0017856364607282149,
       "habitat_component_share": 0.0054763214084668915,
-      "objective_weight": 0.002892841945049818
+      "objective_weight": 0.0030937945680753805
     },
     {
       "target_id": "ENP3410_0081",
@@ -2161,7 +2272,7 @@
       "habitat_component_raw": 0.00025289639399989544,
       "animal_component_share": 4.1384370890733655e-05,
       "habitat_component_share": 0.0002528963940035055,
-      "objective_weight": 0.00010483797782456523
+      "objective_weight": 0.00011635451105561156
     },
     {
       "target_id": "ENP3410_0082",
@@ -2186,7 +2297,7 @@
       "habitat_component_raw": 0.000541795812847501,
       "animal_component_share": 0.000589550034013826,
       "habitat_component_share": 0.000541795812855235,
-      "objective_weight": 0.0005752237676662487
+      "objective_weight": 0.0005726236172502015
     },
     {
       "target_id": "ENP3410_0083",
@@ -2211,7 +2322,7 @@
       "habitat_component_raw": 0.0021891229999800458,
       "animal_component_share": 0.001236764605095869,
       "habitat_component_share": 0.0021891230000112955,
-      "objective_weight": 0.0015224721235704971
+      "objective_weight": 0.0015743267034733222
     },
     {
       "target_id": "ENP3410_0084",
@@ -2236,7 +2347,7 @@
       "habitat_component_raw": 0.0021153656410110157,
       "animal_component_share": 0.0013228777773934915,
       "habitat_component_share": 0.0021153656410412124,
-      "objective_weight": 0.0015606241364878079
+      "objective_weight": 0.0016037739900166248
     },
     {
       "target_id": "ENP3410_0085",
@@ -2261,7 +2372,7 @@
       "habitat_component_raw": 0.0020413862056957335,
       "animal_component_share": 0.0015583609616708937,
       "habitat_component_share": 0.0020413862057248743,
-      "objective_weight": 0.001703268534887088
+      "objective_weight": 0.0017295685824811485
     },
     {
       "target_id": "ENP3410_0086",
@@ -2286,7 +2397,7 @@
       "habitat_component_raw": 0.001967185366441088,
       "animal_component_share": 0.0006695642767555505,
       "habitat_component_share": 0.0019671853664691694,
-      "objective_weight": 0.0010588506036696363
+      "objective_weight": 0.001129504253429422
     },
     {
       "target_id": "ENP3410_0087",
@@ -2311,7 +2422,7 @@
       "habitat_component_raw": 0.000888669090279641,
       "animal_component_share": 0.00028502688345163896,
       "habitat_component_share": 0.0008886690902923267,
-      "objective_weight": 0.0004661195455038453
+      "objective_weight": 0.0004989870176807646
     },
     {
       "target_id": "ENP5_0088",
@@ -2336,7 +2447,7 @@
       "habitat_component_raw": 0.0001927407822019136,
       "animal_component_share": 0.0002503411118058808,
       "habitat_component_share": 0.00019274078220466495,
-      "objective_weight": 0.00023306101292551603
+      "objective_weight": 0.0002299247557037791
     },
     {
       "target_id": "ENP5_0089",
@@ -2361,7 +2472,7 @@
       "habitat_component_raw": 0.0028297151492780825,
       "animal_component_share": 0.003569259582804126,
       "habitat_component_share": 0.0028297151493184764,
-      "objective_weight": 0.0033473962527584313
+      "objective_weight": 0.003307129094803388
     },
     {
       "target_id": "ENP5_0090",
@@ -2386,7 +2497,7 @@
       "habitat_component_raw": 0.002683417992376198,
       "animal_component_share": 0.0018396552855651275,
       "habitat_component_share": 0.002683417992414504,
-      "objective_weight": 0.0020927840976199402
+      "objective_weight": 0.0021387257945010086
     },
     {
       "target_id": "ENP5_0091",
@@ -2411,7 +2522,7 @@
       "habitat_component_raw": 0.0003170206571086364,
       "animal_component_share": 0.00037097210527887336,
       "habitat_component_share": 0.00031702065711316184,
-      "objective_weight": 0.0003547866708291599
+      "objective_weight": 0.00035184909008779367
     },
     {
       "target_id": "ENP5_0092",
@@ -2436,7 +2547,7 @@
       "habitat_component_raw": 0.0056610943804502635,
       "animal_component_share": 0.003944084226786154,
       "habitat_component_share": 0.005661094380531075,
-      "objective_weight": 0.0044591872729096305
+      "objective_weight": 0.004552676069445346
     },
     {
       "target_id": "ENP5_0093",
@@ -2461,7 +2572,7 @@
       "habitat_component_raw": 0.005593278092531305,
       "animal_component_share": 0.004060705354474937,
       "habitat_component_share": 0.005593278092611148,
-      "objective_weight": 0.0045204771759158
+      "objective_weight": 0.004603923613654855
     },
     {
       "target_id": "ENP5_0094",
@@ -2486,7 +2597,7 @@
       "habitat_component_raw": 8.017223915815779e-05,
       "animal_component_share": 5.815711662805491e-05,
       "habitat_component_share": 8.017223915930224e-05,
-      "objective_weight": 6.476165338742911e-05
+      "objective_weight": 6.596034595575411e-05
     },
     {
       "target_id": "ENP5_0095",
@@ -2511,7 +2622,7 @@
       "habitat_component_raw": 0.0031482582597999933,
       "animal_component_share": 0.0025188174852194775,
       "habitat_component_share": 0.0031482582598449343,
-      "objective_weight": 0.0027076497176071147
+      "objective_weight": 0.0027419218856440334
     },
     {
       "target_id": "ENP5_0096",
@@ -2536,7 +2647,7 @@
       "habitat_component_raw": 0.0056610943804502635,
       "animal_component_share": 0.004929278751274373,
       "habitat_component_share": 0.005661094380531075,
-      "objective_weight": 0.005148823440051384
+      "objective_weight": 0.005188669775447837
     },
     {
       "target_id": "ENP5_0097",
@@ -2561,7 +2672,7 @@
       "habitat_component_raw": 0.0056610943804502635,
       "animal_component_share": 0.004449970449422514,
       "habitat_component_share": 0.005661094380531075,
-      "objective_weight": 0.004813307628755082
+      "objective_weight": 0.0048792516294518685
     },
     {
       "target_id": "ENP5_0098",
@@ -2586,7 +2697,7 @@
       "habitat_component_raw": 0.0005639101654891653,
       "animal_component_share": 0.0004446472606780107,
       "habitat_component_share": 0.000563910165497215,
-      "objective_weight": 0.00048042613212377204
+      "objective_weight": 0.0004869198301479698
     },
     {
       "target_id": "ENP5_0099",
@@ -2611,7 +2722,7 @@
       "habitat_component_raw": 0.005482731835366152,
       "animal_component_share": 0.0023443892576834576,
       "habitat_component_share": 0.005482731835444418,
-      "objective_weight": 0.0032858920310117456
+      "objective_weight": 0.003456770386082471
     },
     {
       "target_id": "ENP5_0100",
@@ -2636,7 +2747,7 @@
       "habitat_component_raw": 0.0056610943804502635,
       "animal_component_share": 0.002732498297315585,
       "habitat_component_share": 0.005661094380531075,
-      "objective_weight": 0.003611077122280232
+      "objective_weight": 0.003770535074676068
     },
     {
       "target_id": "ENP5_0101",
@@ -2661,7 +2772,7 @@
       "habitat_component_raw": 0.002975005825193047,
       "animal_component_share": 0.0013623719749199937,
       "habitat_component_share": 0.0029750058252355147,
-      "objective_weight": 0.0018461621300146502
+      "objective_weight": 0.0019339677831087389
     },
     {
       "target_id": "ENP5_0102",
@@ -2686,7 +2797,7 @@
       "habitat_component_raw": 0.000307520950887215,
       "animal_component_share": 0.00020625478179643633,
       "habitat_component_share": 0.0003075209508916048,
-      "objective_weight": 0.00023663463252498687
+      "objective_weight": 0.00024214843351086967
     },
     {
       "target_id": "ENP5_0103",
@@ -2711,7 +2822,7 @@
       "habitat_component_raw": 0.003961545279329307,
       "animal_component_share": 0.0016465092681453714,
       "habitat_component_share": 0.0039615452793858585,
-      "objective_weight": 0.0023410200715175177
+      "objective_weight": 0.0024670705378794467
     },
     {
       "target_id": "ENP5_0104",
@@ -2736,7 +2847,7 @@
       "habitat_component_raw": 0.004233504460110424,
       "animal_component_share": 0.0018917848939327812,
       "habitat_component_share": 0.004233504460170856,
-      "objective_weight": 0.002594300763804204
+      "objective_weight": 0.002721804112339589
     },
     {
       "target_id": "ENP5_0105",
@@ -2761,7 +2872,7 @@
       "habitat_component_raw": 0.0012454813953097766,
       "animal_component_share": 0.0005305316022776174,
       "habitat_component_share": 0.0012454813953275557,
-      "objective_weight": 0.000745016540192599
+      "objective_weight": 0.0007839445544445327
     },
     {
       "target_id": "ENP6_0106",
@@ -2786,7 +2897,7 @@
       "habitat_component_raw": 0.00014645819633014222,
       "animal_component_share": 2.5801696479686667e-05,
       "habitat_component_share": 0.0001464581963322329,
-      "objective_weight": 6.199864643545054e-05
+      "objective_weight": 6.856822375613421e-05
     },
     {
       "target_id": "ENP6_0107",
@@ -2811,7 +2922,7 @@
       "habitat_component_raw": 0.0026294878141625956,
       "animal_component_share": 0.000847964597480503,
       "habitat_component_share": 0.002629487814200131,
-      "objective_weight": 0.0013824215624963915
+      "objective_weight": 0.0014794230048980517
     },
     {
       "target_id": "ENP6_0108",
@@ -2836,7 +2947,7 @@
       "habitat_component_raw": 0.0027057138669424547,
       "animal_component_share": 0.0013120825802703582,
       "habitat_component_share": 0.0027057138669810783,
-      "objective_weight": 0.0017301719662835744
+      "objective_weight": 0.0018060532367145824
     },
     {
       "target_id": "ENP6_0109",
@@ -2861,7 +2972,7 @@
       "habitat_component_raw": 9.750205849661567e-06,
       "animal_component_share": 2.5078669063390836e-06,
       "habitat_component_share": 9.75020584980075e-06,
-      "objective_weight": 4.680568589377584e-06
+      "objective_weight": 5.074903794938959e-06
     },
     {
       "target_id": "ENP6_0110",
@@ -2886,7 +2997,7 @@
       "habitat_component_raw": 0.0002188925209381701,
       "animal_component_share": 6.983894792278293e-05,
       "habitat_component_share": 0.00021889252094129476,
-      "objective_weight": 0.00011455501982833647
+      "objective_weight": 0.0001226707779853026
     },
     {
       "target_id": "ENP6_0111",
@@ -2911,7 +3022,7 @@
       "habitat_component_raw": 0.005645692329703489,
       "animal_component_share": 0.0020786574381791707,
       "habitat_component_share": 0.005645692329784081,
-      "objective_weight": 0.003148767905660644
+      "objective_weight": 0.003342987956421386
     },
     {
       "target_id": "ENP6_0112",
@@ -2936,7 +3047,7 @@
       "habitat_component_raw": 0.005645692329703489,
       "animal_component_share": 0.002529648517450431,
       "habitat_component_share": 0.005645692329784081,
-      "objective_weight": 0.003464461661150526
+      "objective_weight": 0.0036341258796947526
     },
     {
       "target_id": "ENP6_0113",
@@ -2961,7 +3072,7 @@
       "habitat_component_raw": 5.2401910250460254e-05,
       "animal_component_share": 2.875525338903093e-05,
       "habitat_component_share": 5.2401910251208286e-05,
-      "objective_weight": 3.584925044768414e-05
+      "objective_weight": 3.7136777773784266e-05
     },
     {
       "target_id": "ENP6_0114",
@@ -2986,7 +3097,7 @@
       "habitat_component_raw": 8.36329112783641e-05,
       "animal_component_share": 2.614774610592487e-05,
       "habitat_component_share": 8.363291127955796e-05,
-      "objective_weight": 4.3393295658014804e-05
+      "objective_weight": 4.65232823380692e-05
     },
     {
       "target_id": "ENP6_0115",
@@ -3011,7 +3122,7 @@
       "habitat_component_raw": 0.005645692329703489,
       "animal_component_share": 0.0014426741777085425,
       "habitat_component_share": 0.005645692329784081,
-      "objective_weight": 0.0027035796233312046
+      "objective_weight": 0.0029324280713140466
     },
     {
       "target_id": "ENP6_0116",
@@ -3036,7 +3147,7 @@
       "habitat_component_raw": 0.005645692329703489,
       "animal_component_share": 0.002205714960122268,
       "habitat_component_share": 0.005645692329784081,
-      "objective_weight": 0.003237708171020812
+      "objective_weight": 0.003425010117778871
     },
     {
       "target_id": "ENP6_0117",
@@ -3061,7 +3172,7 @@
       "habitat_component_raw": 9.341654477043785e-05,
       "animal_component_share": 2.5594685476211518e-05,
       "habitat_component_share": 9.341654477177137e-05,
-      "objective_weight": 4.594124326487947e-05
+      "objective_weight": 4.963404845332126e-05
     },
     {
       "target_id": "ENP6_0118",
@@ -3086,7 +3197,7 @@
       "habitat_component_raw": 1.0973894743347953e-06,
       "animal_component_share": 2.9552023371948957e-07,
       "habitat_component_share": 1.0973894743504605e-06,
-      "objective_weight": 5.360810059087809e-07
+      "objective_weight": 5.797416622666314e-07
     },
     {
       "target_id": "ENP6_0119",
@@ -3111,7 +3222,7 @@
       "habitat_component_raw": 0.0055960334926937775,
       "animal_component_share": 0.003013250203329331,
       "habitat_component_share": 0.005596033492773661,
-      "objective_weight": 0.0037880851901626305
+      "objective_weight": 0.003928714120583374
     },
     {
       "target_id": "ENP6_0120",
@@ -3136,7 +3247,7 @@
       "habitat_component_raw": 0.005645692329703489,
       "animal_component_share": 0.0030195144987040863,
       "habitat_component_share": 0.005645692329784081,
-      "objective_weight": 0.003807367848028085
+      "objective_weight": 0.003950359550424807
     },
     {
       "target_id": "ENP6_0121",
@@ -3161,7 +3272,7 @@
       "habitat_component_raw": 0.0001314002890742866,
       "animal_component_share": 7.026954189943791e-05,
       "habitat_component_share": 0.00013140028907616234,
-      "objective_weight": 8.860876605245525e-05
+      "objective_weight": 9.193724956340951e-05
     },
     {
       "target_id": "ENP6_0122",
@@ -3186,7 +3297,7 @@
       "habitat_component_raw": 0.0005077880625579229,
       "animal_component_share": 0.00013747094577551012,
       "habitat_component_share": 0.0005077880625651716,
-      "objective_weight": 0.00024856608081240855
+      "objective_weight": 0.0002687293288338204
     },
     {
       "target_id": "ENP6_0123",
@@ -3211,7 +3322,7 @@
       "habitat_component_raw": 0.00044596560691415277,
       "animal_component_share": 0.00019607274649575458,
       "habitat_component_share": 0.0004459656069205189,
-      "objective_weight": 0.0002710406046231839
+      "objective_weight": 0.0002846469206563326
     },
     {
       "target_id": "ENP6_0124",
@@ -3236,7 +3347,7 @@
       "habitat_component_raw": 1.0954508671610269e-05,
       "animal_component_share": 2.9785578316126896e-06,
       "habitat_component_share": 1.0954508671766643e-05,
-      "objective_weight": 5.371343083658876e-06
+      "objective_weight": 5.80562242886116e-06
     },
     {
       "target_id": "ENP7_0125",
@@ -3261,7 +3372,7 @@
       "habitat_component_raw": 0.004657853829149447,
       "animal_component_share": 0.0035130996014171604,
       "habitat_component_share": 0.004657853829215937,
-      "objective_weight": 0.003856525869756793
+      "objective_weight": 0.003918856133123412
     },
     {
       "target_id": "ENP7_0126",
@@ -3286,7 +3397,7 @@
       "habitat_component_raw": 0.004911938834918126,
       "animal_component_share": 0.004878822712100043,
       "habitat_component_share": 0.004911938834988244,
-      "objective_weight": 0.004888757548966503
+      "objective_weight": 0.004890560675446562
     },
     {
       "target_id": "ENP7_0127",
@@ -3311,7 +3422,7 @@
       "habitat_component_raw": 0.00012884627892642295,
       "animal_component_share": 6.801809117213035e-05,
       "habitat_component_share": 0.00012884627892826222,
-      "objective_weight": 8.626654749896991e-05
+      "objective_weight": 8.957855707350042e-05
     },
     {
       "target_id": "ENP7_0128",
@@ -3336,7 +3447,7 @@
       "habitat_component_raw": 8.418619647221712e-07,
       "animal_component_share": 8.3436456372568e-07,
       "habitat_component_share": 8.418619647341887e-07,
-      "objective_weight": 8.366137840282327e-07
+      "objective_weight": 8.370220070057743e-07
     },
     {
       "target_id": "ENP7_0129",
@@ -3361,7 +3472,7 @@
       "habitat_component_raw": 0.005270343531791485,
       "animal_component_share": 0.006513294085555422,
       "habitat_component_share": 0.005270343531866719,
-      "objective_weight": 0.006140408919448811
+      "objective_weight": 0.006072732003756546
     },
     {
       "target_id": "ENP7_0130",
@@ -3386,7 +3497,7 @@
       "habitat_component_raw": 0.00533322170235012,
       "animal_component_share": 0.007891923711885433,
       "habitat_component_share": 0.005333221702426251,
-      "objective_weight": 0.007124313109047678
+      "objective_weight": 0.006984995370572969
     },
     {
       "target_id": "ENP7_0131",
@@ -3411,7 +3522,7 @@
       "habitat_component_raw": 0.0001250887514364546,
       "animal_component_share": 0.00015782358446734052,
       "habitat_component_share": 0.00012508875143824022,
-      "objective_weight": 0.00014800313455861041
+      "objective_weight": 0.00014622076877701424
     },
     {
       "target_id": "ENP7_0132",
@@ -3436,7 +3547,7 @@
       "habitat_component_raw": 5.808812068229995e-05,
       "animal_component_share": 9.385269917066267e-05,
       "habitat_component_share": 5.8088120683129157e-05,
-      "objective_weight": 8.312332562440261e-05
+      "objective_weight": 8.117599444868766e-05
     },
     {
       "target_id": "ENP7_0133",
@@ -3461,7 +3572,7 @@
       "habitat_component_raw": 0.004988921449523118,
       "animal_component_share": 0.0060918290448659955,
       "habitat_component_share": 0.004988921449594334,
-      "objective_weight": 0.005760956766284497
+      "objective_weight": 0.005700904993412241
     },
     {
       "target_id": "ENP7_0134",
@@ -3486,7 +3597,7 @@
       "habitat_component_raw": 0.005231853839868067,
       "animal_component_share": 0.005021424567909659,
       "habitat_component_share": 0.0052318538399427515,
-      "objective_weight": 0.005084553349519587
+      "objective_weight": 0.005096010928471786
     },
     {
       "target_id": "ENP7_0135",
@@ -3511,7 +3622,7 @@
       "habitat_component_raw": 0.00010791110746082586,
       "animal_component_share": 0.0001719838578417913,
       "habitat_component_share": 0.00010791110746236628,
-      "objective_weight": 0.00015276203272796378
+      "objective_weight": 0.00014927336126574736
     },
     {
       "target_id": "ENP7_0136",
@@ -3536,7 +3647,7 @@
       "habitat_component_raw": 9.54178427415967e-07,
       "animal_component_share": 8.273900206215874e-07,
       "habitat_component_share": 9.541784274295877e-07,
-      "objective_weight": 8.654265426639875e-07
+      "objective_weight": 8.72329993724721e-07
     },
     {
       "target_id": "ENP7_0137",
@@ -3561,7 +3672,7 @@
       "habitat_component_raw": 4.3930312366668404e-07,
       "animal_component_share": 3.85678002056374e-07,
       "habitat_component_share": 4.3930312367295505e-07,
-      "objective_weight": 4.0176553854134833e-07
+      "objective_weight": 4.046853512594508e-07
     },
     {
       "target_id": "ENP8_0138",
@@ -3586,7 +3697,7 @@
       "habitat_component_raw": 0.003670187385916686,
       "animal_component_share": 0.0023916648988182793,
       "habitat_component_share": 0.0036701873859690775,
-      "objective_weight": 0.002775221644963519
+      "objective_weight": 0.002844835402579849
     },
     {
       "target_id": "ENP8_0139",
@@ -3611,7 +3722,7 @@
       "habitat_component_raw": 0.004945612669837716,
       "animal_component_share": 0.0008945891867604345,
       "habitat_component_share": 0.004945612669908314,
-      "objective_weight": 0.0021098962317047986
+      "objective_weight": 0.002330468782980275
     },
     {
       "target_id": "ENP8_0140",
@@ -3636,7 +3747,7 @@
       "habitat_component_raw": 0.0041328025170060175,
       "animal_component_share": 0.003831107764708952,
       "habitat_component_share": 0.004132802517065013,
-      "objective_weight": 0.00392161619041577
+      "objective_weight": 0.003938043046865857
     },
     {
       "target_id": "ENP8_0141",
@@ -3661,7 +3772,7 @@
       "habitat_component_raw": 0.005496803257031644,
       "animal_component_share": 0.002349164061161922,
       "habitat_component_share": 0.005496803257110111,
-      "objective_weight": 0.003293455819946379
+      "objective_weight": 0.0034648403628484807
     },
     {
       "target_id": "ENP8_0142",
@@ -3686,7 +3797,7 @@
       "habitat_component_raw": 0.0015248815746995799,
       "animal_component_share": 0.0009869295136395839,
       "habitat_component_share": 0.0015248815747213474,
-      "objective_weight": 0.0011483151319641128
+      "objective_weight": 0.0011776058677671307
     },
     {
       "target_id": "ENP8_0143",
@@ -3711,7 +3822,7 @@
       "habitat_component_raw": 0.0018489719869182056,
       "animal_component_share": 0.0015818155765149823,
       "habitat_component_share": 0.0018489719869445994,
-      "objective_weight": 0.0016619624996438674
+      "objective_weight": 0.0016765087917804584
     },
     {
       "target_id": "ENP9_0144",
@@ -3736,7 +3847,7 @@
       "habitat_component_raw": 0.0009119725241183839,
       "animal_component_share": 0.0005541655431889774,
       "habitat_component_share": 0.0009119725241314023,
-      "objective_weight": 0.000661507637471705
+      "objective_weight": 0.0006809897261287963
     },
     {
       "target_id": "ENP9_0145",
@@ -3761,7 +3872,7 @@
       "habitat_component_raw": 0.001836465297039685,
       "animal_component_share": 0.0014308409311864715,
       "habitat_component_share": 0.0018364652970659003,
-      "objective_weight": 0.0015525282409503001
+      "objective_weight": 0.0015746139192026514
     },
     {
       "target_id": "ENP9_0146",
@@ -3786,7 +3897,7 @@
       "habitat_component_raw": 0.0017611198483659409,
       "animal_component_share": 0.0014567971267291553,
       "habitat_component_share": 0.0017611198483910807,
-      "objective_weight": 0.001548093943227733
+      "objective_weight": 0.0015646638889235073
     },
     {
       "target_id": "ENP9_0147",
@@ -3811,7 +3922,7 @@
       "habitat_component_raw": 0.002529057262016204,
       "animal_component_share": 0.0022970127530974145,
       "habitat_component_share": 0.002529057262052306,
-      "objective_weight": 0.002366626105783882
+      "objective_weight": 0.002379260604093399
     },
     {
       "target_id": "ENP9_0148",
@@ -3836,7 +3947,7 @@
       "habitat_component_raw": 0.005181709713107665,
       "animal_component_share": 0.005877846376973482,
       "habitat_component_share": 0.005181709713181634,
-      "objective_weight": 0.005669005377835927
+      "objective_weight": 0.005631101712106088
     },
     {
       "target_id": "ENP9_0149",
@@ -3861,7 +3972,7 @@
       "habitat_component_raw": 0.004193016582278169,
       "animal_component_share": 0.005873616745070637,
       "habitat_component_share": 0.004193016582338024,
-      "objective_weight": 0.005369436696250854
+      "objective_weight": 0.005277930372698301
     },
     {
       "target_id": "ENP9_0150",
@@ -3886,7 +3997,7 @@
       "habitat_component_raw": 0.0024858965247370425,
       "animal_component_share": 0.0013475977775664685,
       "habitat_component_share": 0.0024858965247725284,
-      "objective_weight": 0.0016890874017282866
+      "objective_weight": 0.0017510661732237846
     },
     {
       "target_id": "ENP9_0151",
@@ -3911,7 +4022,7 @@
       "habitat_component_raw": 0.005181709713107665,
       "animal_component_share": 0.00397939724781953,
       "habitat_component_share": 0.005181709713181634,
-      "objective_weight": 0.004340090987428161
+      "objective_weight": 0.004405555216164044
     },
     {
       "target_id": "ENP9_0152",
@@ -3936,7 +4047,7 @@
       "habitat_component_raw": 0.0027819960955625823,
       "animal_component_share": 0.0037955510987814,
       "habitat_component_share": 0.002781996095602295,
-      "objective_weight": 0.0034914845978276684
+      "objective_weight": 0.0034362979483700063
     },
     {
       "target_id": "ENP9_0153",
@@ -3961,7 +4072,7 @@
       "habitat_component_raw": 0.0006494992788454283,
       "animal_component_share": 0.0003266677201879155,
       "habitat_component_share": 0.0006494992788546999,
-      "objective_weight": 0.00042351718778795076
+      "objective_weight": 0.0004410949137190873
     },
     {
       "target_id": "ENP9_0154",
@@ -3986,7 +4097,7 @@
       "habitat_component_raw": 0.0013828811267589376,
       "animal_component_share": 0.0009627772249134391,
       "habitat_component_share": 0.0013828811267786781,
-      "objective_weight": 0.0010888083954730108
+      "objective_weight": 0.0011116824641671753
     },
     {
       "target_id": "ENP9_0155",
@@ -4011,7 +4122,7 @@
       "habitat_component_raw": 0.000741785582522061,
       "animal_component_share": 0.000734784151806063,
       "habitat_component_share": 0.00074178558253265,
-      "objective_weight": 0.0007368845810240391
+      "objective_weight": 0.0007372657991148169
     },
     {
       "target_id": "ENP11_0156",
@@ -4036,7 +4147,7 @@
       "habitat_component_raw": 0.0024308293768777,
       "animal_component_share": 0.0004432497079867833,
       "habitat_component_share": 0.0024308293769123995,
-      "objective_weight": 0.0010395236086644683
+      "objective_weight": 0.0011477445361071114
     },
     {
       "target_id": "ENP11_0157",
@@ -4061,7 +4172,7 @@
       "habitat_component_raw": 0.00047541913857461834,
       "animal_component_share": 0.00015042724243030003,
       "habitat_component_share": 0.0004754191385814049,
-      "objective_weight": 0.0002479248112756315
+      "objective_weight": 0.00026562016455514424
     },
     {
       "target_id": "ENP11_0158",
@@ -4086,7 +4197,7 @@
       "habitat_component_raw": 0.0013825965451669687,
       "animal_component_share": 0.00036747827212449624,
       "habitat_component_share": 0.001382596545186705,
-      "objective_weight": 0.000672013754043159
+      "objective_weight": 0.0007272855213550824
     },
     {
       "target_id": "ENP11_0159",
@@ -4111,7 +4222,7 @@
       "habitat_component_raw": 0.0012369463307832515,
       "animal_component_share": 0.0003271910082258609,
       "habitat_component_share": 0.0012369463308009089,
-      "objective_weight": 0.0006001176049983753
+      "objective_weight": 0.0006496525073191323
     },
     {
       "target_id": "ENP11_0160",
@@ -4136,7 +4247,7 @@
       "habitat_component_raw": 0.003923270925129087,
       "animal_component_share": 0.0010888693947933618,
       "habitat_component_share": 0.003923270925185091,
-      "objective_weight": 0.0019391898539108808
+      "objective_weight": 0.0020935190449161644
     },
     {
       "target_id": "ENP11_0161",
@@ -4161,7 +4272,7 @@
       "habitat_component_raw": 0.0009145762482173469,
       "animal_component_share": 0.00028397113875154844,
       "habitat_component_share": 0.0009145762482304024,
-      "objective_weight": 0.00047315267159520465
+      "objective_weight": 0.0005074882360331125
     },
     {
       "target_id": "ENP11_0162",
@@ -4186,7 +4297,7 @@
       "habitat_component_raw": 0.005015534722290483,
       "animal_component_share": 0.0007620415871549238,
       "habitat_component_share": 0.005015534722362079,
-      "objective_weight": 0.002038089527717071
+      "objective_weight": 0.002269686267792329
     },
     {
       "target_id": "ENP11_0163",
@@ -4211,7 +4322,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0011201702287584397,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.002321055218907397
+      "objective_weight": 0.0025390102346110268
     },
     {
       "target_id": "ENP11_0164",
@@ -4236,7 +4347,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0015953979471582606,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.0026537146217872716
+      "objective_weight": 0.002845794154240723
     },
     {
       "target_id": "ENP11_0165",
@@ -4261,7 +4372,7 @@
       "habitat_component_raw": 0.0010795043065535694,
       "animal_component_share": 0.00038224898139228993,
       "habitat_component_share": 0.0010795043065689792,
-      "objective_weight": 0.0005914255789452968
+      "objective_weight": 0.000629390154219772
     },
     {
       "target_id": "ENP11_0166",
@@ -4286,7 +4397,7 @@
       "habitat_component_raw": 0.005003882477003098,
       "animal_component_share": 0.0014930870391037336,
       "habitat_component_share": 0.005003882477074528,
-      "objective_weight": 0.002546325670494972
+      "objective_weight": 0.0027374835618231607
     },
     {
       "target_id": "ENP11_0167",
@@ -4311,7 +4422,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0018664407918038395,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.0028434446130391764
+      "objective_weight": 0.003020766242459693
     },
     {
       "target_id": "ENP11_0168",
@@ -4336,7 +4447,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.002217977118799383,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.003089520041936057
+      "objective_weight": 0.0032477010110187657
     },
     {
       "target_id": "ENP11_0169",
@@ -4361,7 +4472,7 @@
       "habitat_component_raw": 0.0008590486139671878,
       "animal_component_share": 0.00039038310727698407,
       "habitat_component_share": 0.0008590486139794507,
-      "objective_weight": 0.0005309827592877241
+      "objective_weight": 0.0005565009393077146
     },
     {
       "target_id": "ENP11_0170",
@@ -4386,7 +4497,7 @@
       "habitat_component_raw": 0.0040845890825772745,
       "animal_component_share": 0.0007740608868018438,
       "habitat_component_share": 0.004084589082635582,
-      "objective_weight": 0.0017672193455519655
+      "objective_weight": 0.0019474729662140285
     },
     {
       "target_id": "ENP11_0171",
@@ -4411,7 +4522,7 @@
       "habitat_component_raw": 0.003307419785530387,
       "animal_component_share": 0.001057983047233142,
       "habitat_component_share": 0.0033074197855776,
-      "objective_weight": 0.0017328140687364797
+      "objective_weight": 0.0018552927466245366
     },
     {
       "target_id": "ENP11_0172",
@@ -4436,7 +4547,7 @@
       "habitat_component_raw": 0.0033201664388952364,
       "animal_component_share": 0.001287200650179025,
       "habitat_component_share": 0.0033201664389426316,
-      "objective_weight": 0.0018970903868081072
+      "objective_weight": 0.00200778252486871
     },
     {
       "target_id": "ENP11_0173",
@@ -4461,7 +4572,7 @@
       "habitat_component_raw": 0.0001418130407655883,
       "animal_component_share": 7.661098345310656e-05,
       "habitat_component_share": 0.00014181304076761267,
-      "objective_weight": 9.61716006474584e-05
+      "objective_weight": 9.972176128960185e-05
     },
     {
       "target_id": "ENP11_0174",
@@ -4486,7 +4597,7 @@
       "habitat_component_raw": 0.002360450722932397,
       "animal_component_share": 0.0007207059026982706,
       "habitat_component_share": 0.0023604507229660924,
-      "objective_weight": 0.0012126293487786173
+      "objective_weight": 0.0013019111561914376
     },
     {
       "target_id": "ENP11_0175",
@@ -4511,7 +4622,7 @@
       "habitat_component_raw": 0.00220857002788328,
       "animal_component_share": 0.0006926590870819717,
       "habitat_component_share": 0.002208570027914807,
-      "objective_weight": 0.0011474323693318224
+      "objective_weight": 0.0012299715955586925
     },
     {
       "target_id": "ENP11_0176",
@@ -4536,7 +4647,7 @@
       "habitat_component_raw": 0.0006319220426154084,
       "animal_component_share": 0.0004695579532677028,
       "habitat_component_share": 0.0006319220426244291,
-      "objective_weight": 0.0005182671800747207
+      "objective_weight": 0.0005271076771920328
     },
     {
       "target_id": "ENP11_0177",
@@ -4561,7 +4672,7 @@
       "habitat_component_raw": 0.0006423731409633769,
       "animal_component_share": 0.00025588211415358613,
       "habitat_component_share": 0.0006423731409725468,
-      "objective_weight": 0.00037182942219927435
+      "objective_weight": 0.00039287331695455556
     },
     {
       "target_id": "ENP11_0178",
@@ -4586,7 +4697,7 @@
       "habitat_component_raw": 1.4749584061255913e-05,
       "animal_component_share": 8.925293330387962e-06,
       "habitat_component_share": 1.4749584061466462e-05,
-      "objective_weight": 1.0672580549711513e-05
+      "objective_weight": 1.0989705017458568e-05
     },
     {
       "target_id": "ENP11_0179",
@@ -4611,7 +4722,7 @@
       "habitat_component_raw": 0.004012923381401032,
       "animal_component_share": 0.0006358129374231835,
       "habitat_component_share": 0.004012923381458316,
-      "objective_weight": 0.0016489460706337234
+      "objective_weight": 0.001832825001397427
     },
     {
       "target_id": "ENP11_0180",
@@ -4636,7 +4747,7 @@
       "habitat_component_raw": 0.0037558752861162805,
       "animal_component_share": 0.0010923837525709397,
       "habitat_component_share": 0.003755875286169895,
-      "objective_weight": 0.0018914312126506265
+      "objective_weight": 0.0020364545938555256
     },
     {
       "target_id": "ENP11_0181",
@@ -4661,7 +4772,7 @@
       "habitat_component_raw": 0.004389721972247728,
       "animal_component_share": 0.0011764816772231019,
       "habitat_component_share": 0.00438972197231039,
-      "objective_weight": 0.0021404537657492883
+      "objective_weight": 0.002315410196561639
     },
     {
       "target_id": "ENP11_0182",
@@ -4686,7 +4797,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0013628784637778955,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.0024909509834210156
+      "objective_weight": 0.0026956908758757896
     },
     {
       "target_id": "ENP11_0183",
@@ -4711,7 +4822,7 @@
       "habitat_component_raw": 0.0022052219413967586,
       "animal_component_share": 0.0014494279984449017,
       "habitat_component_share": 0.0022052219414282377,
-      "objective_weight": 0.0016761661813399025
+      "objective_weight": 0.0017173181023139189
     },
     {
       "target_id": "ENP11_0184",
@@ -4736,7 +4847,7 @@
       "habitat_component_raw": 0.00198172240024295,
       "animal_component_share": 0.0003291869108965929,
       "habitat_component_share": 0.001981722400271239,
-      "objective_weight": 0.0008249475577089868
+      "objective_weight": 0.0009149257991289534
     },
     {
       "target_id": "ENP11_0185",
@@ -4761,7 +4872,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0017093065971038254,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.0027334506767491664
+      "objective_weight": 0.0029193280428524704
     },
     {
       "target_id": "ENP11_0186",
@@ -4786,7 +4897,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0004896774544366641,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.0018797102768821536
+      "objective_weight": 0.002131994740531823
     },
     {
       "target_id": "ENP11_0187",
@@ -4811,7 +4922,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0011668573752872998,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.002353736221477599
+      "objective_weight": 0.0025691491874832986
     },
     {
       "target_id": "ENP11_0188",
@@ -4836,7 +4947,7 @@
       "habitat_component_raw": 0.002208325623712019,
       "animal_component_share": 0.0012271907297940602,
       "habitat_component_share": 0.0022083256237435426,
-      "objective_weight": 0.001521531197978905
+      "objective_weight": 0.001574952617924777
     },
     {
       "target_id": "ENP11_0189",
@@ -4861,7 +4972,7 @@
       "habitat_component_raw": 2.6910294173503555e-05,
       "animal_component_share": 1.2122393189117434e-05,
       "habitat_component_share": 2.6910294173887698e-05,
-      "objective_weight": 1.6558763484548515e-05
+      "objective_weight": 1.73639439683914e-05
     },
     {
       "target_id": "ENP11_0190",
@@ -4886,7 +4997,7 @@
       "habitat_component_raw": 0.0019222662074466531,
       "animal_component_share": 0.0008552784515674141,
       "habitat_component_share": 0.0019222662074740934,
-      "objective_weight": 0.001175374778339418
+      "objective_weight": 0.001233470766298775
     },
     {
       "target_id": "ENP11_0191",
@@ -4911,7 +5022,7 @@
       "habitat_component_raw": 0.005069799233126763,
       "animal_component_share": 0.001851105325093882,
       "habitat_component_share": 0.005069799233199134,
-      "objective_weight": 0.0028167134975254577
+      "objective_weight": 0.0029919668699235694
     },
     {
       "target_id": "ENP11_0192",
@@ -4936,7 +5047,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.0015930299694859582,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.0026520570374166594
+      "objective_weight": 0.002844265502935722
     },
     {
       "target_id": "ENP11_0193",
@@ -4961,7 +5072,7 @@
       "habitat_component_raw": 0.002173176408107482,
       "animal_component_share": 0.001442963752628779,
       "habitat_component_share": 0.002173176408138504,
-      "objective_weight": 0.0016620275492816965
+      "objective_weight": 0.0017017866050041443
     },
     {
       "target_id": "ENP11_0194",
@@ -4986,7 +5097,7 @@
       "habitat_component_raw": 1.8598205256751081e-06,
       "animal_component_share": 3.395573839915525e-07,
       "habitat_component_share": 1.8598205257016569e-06,
-      "objective_weight": 7.956363265045839e-07
+      "objective_weight": 8.784125239697488e-07
     },
     {
       "target_id": "ENP11_0195",
@@ -5011,7 +5122,7 @@
       "habitat_component_raw": 0.002840068681131309,
       "animal_component_share": 0.0011263038253604848,
       "habitat_component_share": 0.002840068681171851,
-      "objective_weight": 0.0016404332821038947
+      "objective_weight": 0.0017337453767153105
     },
     {
       "target_id": "ENP11_0196",
@@ -5036,7 +5147,7 @@
       "habitat_component_raw": 0.005123120195848496,
       "animal_component_share": 0.002777592928429363,
       "habitat_component_share": 0.005123120195921629,
-      "objective_weight": 0.003481251108677043
+      "objective_weight": 0.0036089617812093454
     },
     {
       "target_id": "ENP11_0197",
@@ -5061,7 +5172,7 @@
       "habitat_component_raw": 0.0021259175740019807,
       "animal_component_share": 0.0013736897493144403,
       "habitat_component_share": 0.002125917574032328,
-      "objective_weight": 0.0015993580967298068
+      "objective_weight": 0.001640315847562072
     },
     {
       "target_id": "ENP11_0198",
@@ -5086,7 +5197,7 @@
       "habitat_component_raw": 0.0012585874261864193,
       "animal_component_share": 0.00010902926765368654,
       "habitat_component_share": 0.0012585874262043856,
-      "objective_weight": 0.0004538967152188963
+      "objective_weight": 0.0005164885458823993
     },
     {
       "target_id": "ENP11_0199",
@@ -5111,7 +5222,7 @@
       "habitat_component_raw": 0.00043013000075637053,
       "animal_component_share": 9.534160421206505e-05,
       "habitat_component_share": 0.0004301300007625106,
-      "objective_weight": 0.00019577812317719871
+      "objective_weight": 0.00021400688217396854
     },
     {
       "target_id": "ENP11_0200",
@@ -5136,7 +5247,7 @@
       "habitat_component_raw": 0.004975635248400673,
       "animal_component_share": 0.0012535153355881618,
       "habitat_component_share": 0.0049756352484717,
-      "objective_weight": 0.0023701513094532235
+      "objective_weight": 0.0025728155222758094
     },
     {
       "target_id": "ENP11_0201",
@@ -5161,7 +5272,7 @@
       "habitat_component_raw": 0.002075123591001439,
       "animal_component_share": 0.001135859511200365,
       "habitat_component_share": 0.0020751235910310612,
-      "objective_weight": 0.001417638735149574
+      "objective_weight": 0.0014687803479473062
     },
     {
       "target_id": "ENP11_0202",
@@ -5186,7 +5297,7 @@
       "habitat_component_raw": 0.0007594931957867372,
       "animal_component_share": 6.245189900032698e-05,
       "habitat_component_share": 0.0007594931957975789,
-      "objective_weight": 0.0002715642880395026
+      "objective_weight": 0.00030951720976867144
     },
     {
       "target_id": "ENP11_0203",
@@ -5211,7 +5322,7 @@
       "habitat_component_raw": 0.004843860422263623,
       "animal_component_share": 0.0011575303629983245,
       "habitat_component_share": 0.004843860422332769,
-      "objective_weight": 0.002263429380798658
+      "objective_weight": 0.0024641448862538495
     },
     {
       "target_id": "ENP11_0204",
@@ -5236,7 +5347,7 @@
       "habitat_component_raw": 0.0020216402303365423,
       "animal_component_share": 0.0009374022898330232,
       "habitat_component_share": 0.002021640230365401,
-      "objective_weight": 0.0012626736719927366
+      "objective_weight": 0.001321708908329372
     },
     {
       "target_id": "ENP11_0205",
@@ -5261,7 +5372,7 @@
       "habitat_component_raw": 0.0016888372576643184,
       "animal_component_share": 0.00035844280474438565,
       "habitat_component_share": 0.0016888372576884265,
-      "objective_weight": 0.0007575611406275979
+      "objective_weight": 0.0008299992540844428
     },
     {
       "target_id": "ENP11_0206",
@@ -5286,7 +5397,7 @@
       "habitat_component_raw": 0.001965467255164648,
       "animal_component_share": 0.000772575767147151,
       "habitat_component_share": 0.001965467255192705,
-      "objective_weight": 0.001130443213560817
+      "objective_weight": 0.0011953944832850175
     },
     {
       "target_id": "ENP11_0207",
@@ -5311,7 +5422,7 @@
       "habitat_component_raw": 3.116751882924361e-05,
       "animal_component_share": 8.475513713899123e-06,
       "habitat_component_share": 3.116751882968852e-05,
-      "objective_weight": 1.5283115248635944e-05
+      "objective_weight": 1.6518663125059628e-05
     },
     {
       "target_id": "ENP11_0208",
@@ -5336,7 +5447,7 @@
       "habitat_component_raw": 0.0008107254055305235,
       "animal_component_share": 0.0002876904430857963,
       "habitat_component_share": 0.0008107254055420965,
-      "objective_weight": 0.0004446009318226864
+      "objective_weight": 0.000473079452511392
     },
     {
       "target_id": "ENP12_0209",
@@ -5361,7 +5472,7 @@
       "habitat_component_raw": 0.0006037298128520984,
       "animal_component_share": 0.0012723930870497024,
       "habitat_component_share": 0.0006037298128607166,
-      "objective_weight": 0.0010717941047930066
+      "objective_weight": 0.0010353863266239522
     },
     {
       "target_id": "ENP12_0210",
@@ -5386,7 +5497,7 @@
       "habitat_component_raw": 0.0031971699545553893,
       "animal_component_share": 0.003563773709286528,
       "habitat_component_share": 0.0031971699546010286,
-      "objective_weight": 0.0034537925828808783
+      "objective_weight": 0.0034338315222218778
     },
     {
       "target_id": "ENP12_0211",
@@ -5411,7 +5522,7 @@
       "habitat_component_raw": 0.0032688819338871308,
       "animal_component_share": 0.004833943325610313,
       "habitat_component_share": 0.003268881933933794,
-      "objective_weight": 0.004364424908107357
+      "objective_weight": 0.004279209508714859
     },
     {
       "target_id": "ENP12_0212",
@@ -5436,7 +5547,7 @@
       "habitat_component_raw": 0.0033408098311228634,
       "animal_component_share": 0.004273393574058508,
       "habitat_component_share": 0.003340809831170553,
-      "objective_weight": 0.003993618451192121
+      "objective_weight": 0.003942840573378639
     },
     {
       "target_id": "ENP12_0213",
@@ -5461,7 +5572,7 @@
       "habitat_component_raw": 0.0030560954531331395,
       "animal_component_share": 0.0034429482978039594,
       "habitat_component_share": 0.003056095453176765,
-      "objective_weight": 0.003326892444415801
+      "objective_weight": 0.003305828849187938
     },
     {
       "target_id": "ENP12_0214",
@@ -5486,7 +5597,7 @@
       "habitat_component_raw": 0.0014054226477329427,
       "animal_component_share": 0.0015295386103918555,
       "habitat_component_share": 0.001405422647753005,
-      "objective_weight": 0.0014923038216002004
+      "objective_weight": 0.0014855458813791307
     },
     {
       "target_id": "ENP12_0215",
@@ -5511,7 +5622,7 @@
       "habitat_component_raw": 0.0028417859305610036,
       "animal_component_share": 0.007974172992506473,
       "habitat_component_share": 0.0028417859306015696,
-      "objective_weight": 0.0064344568739350015
+      "objective_weight": 0.0061550055912932295
     },
     {
       "target_id": "ENP12_0216",
@@ -5536,7 +5647,7 @@
       "habitat_component_raw": 0.005325585959731583,
       "animal_component_share": 0.010686304002362555,
       "habitat_component_share": 0.005325585959807606,
-      "objective_weight": 0.00907808858959607
+      "objective_weight": 0.008786205005056587
     },
     {
       "target_id": "ENP12_0217",
@@ -5561,7 +5672,7 @@
       "habitat_component_raw": 0.004595094920984365,
       "animal_component_share": 0.009816835569789165,
       "habitat_component_share": 0.0045950949210499595,
-      "objective_weight": 0.008250313375167403
+      "objective_weight": 0.007965996914948743
     },
     {
       "target_id": "ENP12_0218",
@@ -5586,7 +5697,7 @@
       "habitat_component_raw": 0.0018211277570435403,
       "animal_component_share": 0.0031599182774453664,
       "habitat_component_share": 0.0018211277570695367,
-      "objective_weight": 0.0027582811213326176
+      "objective_weight": 0.002685385853770936
     },
     {
       "target_id": "ENP12_0219",
@@ -5611,7 +5722,7 @@
       "habitat_component_raw": 0.0001324295955454987,
       "animal_component_share": 0.00020109621047331632,
       "habitat_component_share": 0.00013242959554738912,
-      "objective_weight": 0.00018049622599553816
+      "objective_weight": 0.00017675742504692129
     },
     {
       "target_id": "ENP12_0220",
@@ -5636,7 +5747,7 @@
       "habitat_component_raw": 0.004457301113370623,
       "animal_component_share": 0.00936694295808379,
       "habitat_component_share": 0.004457301113434251,
-      "objective_weight": 0.007894050404688928
+      "objective_weight": 0.0076267272869563
     },
     {
       "target_id": "ENP12_0221",
@@ -5661,7 +5772,7 @@
       "habitat_component_raw": 0.005325585959731583,
       "animal_component_share": 0.010910884808407767,
       "habitat_component_share": 0.005325585959807606,
-      "objective_weight": 0.009235295153827719
+      "objective_weight": 0.008931183459142006
     },
     {
       "target_id": "ENP12_0222",
@@ -5686,7 +5797,7 @@
       "habitat_component_raw": 0.0027294527180262507,
       "animal_component_share": 0.004688394140403622,
       "habitat_component_share": 0.0027294527180652135,
-      "objective_weight": 0.004100711713702099
+      "objective_weight": 0.003994050098650529
     },
     {
       "target_id": "ENP12_0223",
@@ -5711,7 +5822,7 @@
       "habitat_component_raw": 0.0003016296400165301,
       "animal_component_share": 0.0006616362485604635,
       "habitat_component_share": 0.00030162964002083584,
-      "objective_weight": 0.0005536342659985752
+      "objective_weight": 0.0005340324107015249
     },
     {
       "target_id": "ENP12_0224",
@@ -5736,7 +5847,7 @@
       "habitat_component_raw": 0.0052651140021476835,
       "animal_component_share": 0.006331942184882757,
       "habitat_component_share": 0.005265114002222842,
-      "objective_weight": 0.006011893730084782
+      "objective_weight": 0.0059538064306650755
     },
     {
       "target_id": "ENP12_0225",
@@ -5761,7 +5872,7 @@
       "habitat_component_raw": 0.005325585959731583,
       "animal_component_share": 0.00849056966231437,
       "habitat_component_share": 0.005325585959807606,
-      "objective_weight": 0.007541074551562341
+      "objective_weight": 0.007368745624585903
     },
     {
       "target_id": "ENP12_0226",
@@ -5786,7 +5897,7 @@
       "habitat_component_raw": 0.004429589486597882,
       "animal_component_share": 0.00636708458950978,
       "habitat_component_share": 0.0044295894866611145,
-      "objective_weight": 0.00578583605865518
+      "objective_weight": 0.005680342165643484
     },
     {
       "target_id": "ENP12_0227",
@@ -5811,7 +5922,7 @@
       "habitat_component_raw": 3.2466096068915444e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.2466096069378894e-06,
-      "objective_weight": 9.73982882081367e-07
+      "objective_weight": 1.150756225157942e-06
     },
     {
       "target_id": "ENP12_0228",
@@ -5836,7 +5947,7 @@
       "habitat_component_raw": 0.0001534521971948435,
       "animal_component_share": 7.374907073425721e-05,
       "habitat_component_share": 0.00015345219719703403,
-      "objective_weight": 9.766000867309026e-05
+      "objective_weight": 0.00010199973220756499
     },
     {
       "target_id": "ENP12_0229",
@@ -5861,7 +5972,7 @@
       "habitat_component_raw": 0.0014337080444701046,
       "animal_component_share": 0.0034067167839076846,
       "habitat_component_share": 0.0014337080444905706,
-      "objective_weight": 0.00281481416208255
+      "objective_weight": 0.002707386601330946
     },
     {
       "target_id": "ENP12_0230",
@@ -5886,7 +5997,7 @@
       "habitat_component_raw": 0.005325585959731583,
       "animal_component_share": 0.011174504949149476,
       "habitat_component_share": 0.005325585959807606,
-      "objective_weight": 0.009419829252346915
+      "objective_weight": 0.009101363810453147
     },
     {
       "target_id": "ENP12_0231",
@@ -5911,7 +6022,7 @@
       "habitat_component_raw": 0.005312215758678825,
       "animal_component_share": 0.007312231718737178,
       "habitat_component_share": 0.005312215758754657,
-      "objective_weight": 0.0067122269307424215
+      "objective_weight": 0.0066033288646808
     },
     {
       "target_id": "ENP12_0232",
@@ -5936,7 +6047,7 @@
       "habitat_component_raw": 0.005111959530010982,
       "animal_component_share": 0.0049077090865417144,
       "habitat_component_share": 0.005111959530083955,
-      "objective_weight": 0.004968984219604387
+      "objective_weight": 0.004980105370004693
     },
     {
       "target_id": "ENP12_0233",
@@ -5961,7 +6072,7 @@
       "habitat_component_raw": 0.0026993725940838986,
       "animal_component_share": 0.002601955501993823,
       "habitat_component_share": 0.002699372594122432,
-      "objective_weight": 0.0026311806296324056
+      "objective_weight": 0.0026364848537718194
     },
     {
       "target_id": "ENP12_0234",
@@ -5986,7 +6097,7 @@
       "habitat_component_raw": 0.00018561245395731373,
       "animal_component_share": 0.0004065229340094016,
       "habitat_component_share": 0.00018561245395996333,
-      "objective_weight": 0.0003402497899945701
+      "objective_weight": 0.0003282215239549639
     },
     {
       "target_id": "ENP12_0235",
@@ -6011,7 +6122,7 @@
       "habitat_component_raw": 0.0002498797374557753,
       "animal_component_share": 0.00038235695253292416,
       "habitat_component_share": 0.00024987973745934234,
-      "objective_weight": 0.00034261378801084963
+      "objective_weight": 0.0003354005893127409
     },
     {
       "target_id": "ENP12_0236",
@@ -6036,7 +6147,7 @@
       "habitat_component_raw": 4.5892124648289486e-05,
       "animal_component_share": 7.241188497532767e-05,
       "habitat_component_share": 4.5892124648944595e-05,
-      "objective_weight": 6.445595687741275e-05
+      "objective_weight": 6.301199309425071e-05
     },
     {
       "target_id": "ENP13_0237",
@@ -6061,7 +6172,7 @@
       "habitat_component_raw": 1.5394847394951802e-06,
       "animal_component_share": 3.7128548768382767e-07,
       "habitat_component_share": 1.5394847395171562e-06,
-      "objective_weight": 7.217452632338263e-07
+      "objective_weight": 7.85352075301663e-07
     },
     {
       "target_id": "ENP13_0238",
@@ -6086,7 +6197,7 @@
       "habitat_component_raw": 0.0029739697073342983,
       "animal_component_share": 0.0027590930413692433,
       "habitat_component_share": 0.0029739697073767513,
-      "objective_weight": 0.0028235560411714955
+      "objective_weight": 0.002835255774492719
     },
     {
       "target_id": "ENP13_0239",
@@ -6111,7 +6222,7 @@
       "habitat_component_raw": 0.0053509964010436525,
       "animal_component_share": 0.0027062329887194265,
       "habitat_component_share": 0.005350996401120038,
-      "objective_weight": 0.00349966201243961
+      "objective_weight": 0.0036436656736921315
     },
     {
       "target_id": "ENP13_0240",
@@ -6136,7 +6247,7 @@
       "habitat_component_raw": 0.00552824396525341,
       "animal_component_share": 0.0027394043360751213,
       "habitat_component_share": 0.005528243965332325,
-      "objective_weight": 0.0035760562248522824
+      "objective_weight": 0.0037279046341943617
     },
     {
       "target_id": "ENP13_0241",
@@ -6161,7 +6272,7 @@
       "habitat_component_raw": 0.002673768656692716,
       "animal_component_share": 0.0009111071235799181,
       "habitat_component_share": 0.0026737686567308836,
-      "objective_weight": 0.0014399055835252078
+      "objective_weight": 0.0015358800336906105
     },
     {
       "target_id": "ENP13_0242",
@@ -6186,7 +6297,7 @@
       "habitat_component_raw": 0.004262270027256512,
       "animal_component_share": 0.0032562400852807743,
       "habitat_component_share": 0.004262270027317355,
-      "objective_weight": 0.0035580490678917484
+      "objective_weight": 0.003612825988316337
     },
     {
       "target_id": "ENP13_0243",
@@ -6211,7 +6322,7 @@
       "habitat_component_raw": 0.005677759520739754,
       "animal_component_share": 0.004490911242683749,
       "habitat_component_share": 0.005677759520820804,
-      "objective_weight": 0.004846965726124866
+      "objective_weight": 0.004911587951538917
     },
     {
       "target_id": "ENP13_0244",
@@ -6236,7 +6347,7 @@
       "habitat_component_raw": 0.005677759520739754,
       "animal_component_share": 0.004492146850131569,
       "habitat_component_share": 0.005677759520820804,
-      "objective_weight": 0.00484783065133834
+      "objective_weight": 0.0049123855996585225
     },
     {
       "target_id": "ENP13_0245",
@@ -6261,7 +6372,7 @@
       "habitat_component_raw": 0.0026750615789258307,
       "animal_component_share": 0.001682156739256813,
       "habitat_component_share": 0.002675061578964017,
-      "objective_weight": 0.0019800281911689743
+      "objective_weight": 0.0020340904681661453
     },
     {
       "target_id": "ENP13_0246",
@@ -6286,7 +6397,7 @@
       "habitat_component_raw": 0.00499439939605348,
       "animal_component_share": 0.0034905992566085817,
       "habitat_component_share": 0.0049943993961247745,
-      "objective_weight": 0.003941739298463439
+      "objective_weight": 0.004023619108531525
     },
     {
       "target_id": "ENP13_0247",
@@ -6311,7 +6422,7 @@
       "habitat_component_raw": 0.005633761904278864,
       "animal_component_share": 0.004897886276544183,
       "habitat_component_share": 0.0056337619043592855,
-      "objective_weight": 0.005118648964888714
+      "objective_weight": 0.005158716361516711
     },
     {
       "target_id": "ENP13_0248",
@@ -6336,7 +6447,7 @@
       "habitat_component_raw": 0.005677759520739754,
       "animal_component_share": 0.0030024717639454274,
       "habitat_component_share": 0.005677759520820804,
-      "objective_weight": 0.0038050580910080406
+      "objective_weight": 0.0039507237600383055
     },
     {
       "target_id": "ENP13_0249",
@@ -6361,7 +6472,7 @@
       "habitat_component_raw": 0.0026628843832202514,
       "animal_component_share": 0.0013006451234452243,
       "habitat_component_share": 0.002662884383258264,
-      "objective_weight": 0.0017093169013891363
+      "objective_weight": 0.0017834889199505035
     },
     {
       "target_id": "ENP13_0250",
@@ -6386,7 +6497,7 @@
       "habitat_component_raw": 0.004494218053104387,
       "animal_component_share": 0.0031455836525993196,
       "habitat_component_share": 0.004494218053168541,
-      "objective_weight": 0.003550173972770086
+      "objective_weight": 0.00362360522581241
     },
     {
       "target_id": "ENP13_0251",
@@ -6411,7 +6522,7 @@
       "habitat_component_raw": 0.005677759520739754,
       "animal_component_share": 0.002552866200811374,
       "habitat_component_share": 0.005677759520820804,
-      "objective_weight": 0.0034903341968142033
+      "objective_weight": 0.00366048025864907
     },
     {
       "target_id": "ENP13_0252",
@@ -6436,7 +6547,7 @@
       "habitat_component_raw": 0.0026476204348501267,
       "animal_component_share": 0.0009233049295931391,
       "habitat_component_share": 0.002647620434887921,
-      "objective_weight": 0.0014405995811815739
+      "objective_weight": 0.0015344861438709584
     },
     {
       "target_id": "ENP13_0253",
@@ -6461,7 +6572,7 @@
       "habitat_component_raw": 0.004467564039953001,
       "animal_component_share": 0.0028823720460699033,
       "habitat_component_share": 0.004467564040016776,
-      "objective_weight": 0.0033579296442539652
+      "objective_weight": 0.003444241126727679
     },
     {
       "target_id": "ENP13_0254",
@@ -6486,7 +6597,7 @@
       "habitat_component_raw": 0.005647978857522514,
       "animal_component_share": 0.0012706096665363496,
       "habitat_component_share": 0.005647978857603138,
-      "objective_weight": 0.0025838204238563863
+      "objective_weight": 0.0028221620415648076
     },
     {
       "target_id": "ENP13_0255",
@@ -6511,7 +6622,7 @@
       "habitat_component_raw": 0.0025202522585602836,
       "animal_component_share": 0.0008505177132060895,
       "habitat_component_share": 0.00252025225859626,
-      "objective_weight": 0.0013514380768231407
+      "objective_weight": 0.0014423527827392168
     },
     {
       "target_id": "ENP13_0256",
@@ -6536,7 +6647,7 @@
       "habitat_component_raw": 0.00011442508732955406,
       "animal_component_share": 5.7952591292482835e-05,
       "habitat_component_share": 0.00011442508733118746,
-      "objective_weight": 7.489434010409423e-05
+      "objective_weight": 7.796918836897569e-05
     },
     {
       "target_id": "ENP13_0257",
@@ -6561,7 +6672,7 @@
       "habitat_component_raw": 6.79455869179839e-05,
       "animal_component_share": 2.0779619943177193e-05,
       "habitat_component_share": 6.794558691895381e-05,
-      "objective_weight": 3.4929410035910184e-05
+      "objective_weight": 3.749753083612282e-05
     },
     {
       "target_id": "ENP14_0258",
@@ -6586,7 +6697,7 @@
       "habitat_component_raw": 7.439588015653442e-05,
       "animal_component_share": 1.007819994695013e-05,
       "habitat_component_share": 7.43958801575964e-05,
-      "objective_weight": 2.9373504010144016e-05
+      "objective_weight": 3.2875511558408975e-05
     },
     {
       "target_id": "ENP14_0259",
@@ -6611,7 +6722,7 @@
       "habitat_component_raw": 3.0267891684749865e-05,
       "animal_component_share": 3.199408621558626e-06,
       "habitat_component_share": 3.0267891685181936e-05,
-      "objective_weight": 1.1319953540645621e-05
+      "objective_weight": 1.2793794507832743e-05
     },
     {
       "target_id": "ENP14_0260",
@@ -6636,7 +6747,7 @@
       "habitat_component_raw": 3.595680443656821e-05,
       "animal_component_share": 8.839319901039438e-06,
       "habitat_component_share": 3.5956804437081495e-05,
-      "objective_weight": 1.6974565261852056e-05
+      "objective_weight": 1.8451074290538358e-05
     },
     {
       "target_id": "ENP14_0261",
@@ -6661,7 +6772,7 @@
       "habitat_component_raw": 0.005507849706199262,
       "animal_component_share": 0.0007328242847489656,
       "habitat_component_share": 0.0055078497062778856,
-      "objective_weight": 0.002165331911207642
+      "objective_weight": 0.002425325353362034
     },
     {
       "target_id": "ENP14_0262",
@@ -6686,7 +6797,7 @@
       "habitat_component_raw": 0.0008880400363774421,
       "animal_component_share": 8.887783708691997e-05,
       "habitat_component_share": 0.0008880400363901188,
-      "objective_weight": 0.00032862649687787966
+      "objective_weight": 0.0003721397586292662
     },
     {
       "target_id": "ENP14_0263",
@@ -6711,7 +6822,7 @@
       "habitat_component_raw": 0.0017985743917826983,
       "animal_component_share": 0.00035882724050858314,
       "habitat_component_share": 0.001798574391808373,
-      "objective_weight": 0.0007907513858985201
+      "objective_weight": 0.0008691436005264701
     },
     {
       "target_id": "ENP14_0264",
@@ -6736,7 +6847,7 @@
       "habitat_component_raw": 0.005670535466001744,
       "animal_component_share": 0.00097985426984104,
       "habitat_component_share": 0.005670535466082691,
-      "objective_weight": 0.0023870586287135353
+      "objective_weight": 0.002642459646006813
     },
     {
       "target_id": "ENP14_0265",
@@ -6761,7 +6872,7 @@
       "habitat_component_raw": 0.0009986349534279217,
       "animal_component_share": 0.00012151541719255451,
       "habitat_component_share": 0.0009986349534421772,
-      "objective_weight": 0.0003846512780674414
+      "objective_weight": 0.00043240920756080635
     },
     {
       "target_id": "ENP14_0266",
@@ -6786,7 +6897,7 @@
       "habitat_component_raw": 0.0012773674927876492,
       "animal_component_share": 0.00022114716736109993,
       "habitat_component_share": 0.0012773674928058835,
-      "objective_weight": 0.000538013264994535
+      "objective_weight": 0.0005955229814554567
     },
     {
       "target_id": "ENP14_0267",
@@ -6811,7 +6922,7 @@
       "habitat_component_raw": 0.005664493210462619,
       "animal_component_share": 0.00044925081474376713,
       "habitat_component_share": 0.005664493210543479,
-      "objective_weight": 0.002013823533483681
+      "objective_weight": 0.002297786172936882
     },
     {
       "target_id": "ENP14_0268",
@@ -6836,7 +6947,7 @@
       "habitat_component_raw": 0.005161386202613864,
       "animal_component_share": 0.00039298730722826515,
       "habitat_component_share": 0.005161386202687542,
-      "objective_weight": 0.0018235069758660483
+      "objective_weight": 0.002083139612962816
     },
     {
       "target_id": "ENP14_0269",
@@ -6861,7 +6972,7 @@
       "habitat_component_raw": 0.004012645909451765,
       "animal_component_share": 0.0004942166047651913,
       "habitat_component_share": 0.004012645909509046,
-      "objective_weight": 0.001549745396188348
+      "objective_weight": 0.0017413189408637055
     },
     {
       "target_id": "ENP14_0270",
@@ -6886,7 +6997,7 @@
       "habitat_component_raw": 0.0055463669187305895,
       "animal_component_share": 0.0005986238793761537,
       "habitat_component_share": 0.005546366918809763,
-      "objective_weight": 0.002082946791206237
+      "objective_weight": 0.002352344465597233
     },
     {
       "target_id": "ENP14_0271",
@@ -6911,7 +7022,7 @@
       "habitat_component_raw": 0.0003649462303308521,
       "animal_component_share": 3.2577680718663244e-05,
       "habitat_component_share": 0.0003649462303360617,
-      "objective_weight": 0.0001322882456038828
+      "objective_weight": 0.00015038524732648753
     },
     {
       "target_id": "ENP14_0272",
@@ -6936,7 +7047,7 @@
       "habitat_component_raw": 0.0012781920910358677,
       "animal_component_share": 0.00015118464778782607,
       "habitat_component_share": 0.0012781920910541137,
-      "objective_weight": 0.0004892868807677125
+      "objective_weight": 0.0005506508565880971
     },
     {
       "target_id": "ENP14_0273",
@@ -6961,7 +7072,7 @@
       "habitat_component_raw": 0.005661228787431384,
       "animal_component_share": 0.00042926782406537355,
       "habitat_component_share": 0.005661228787512198,
-      "objective_weight": 0.001998856113099421
+      "objective_weight": 0.0022837290551304605
     },
     {
       "target_id": "ENP14_0274",
@@ -6986,7 +7097,7 @@
       "habitat_component_raw": 0.004374933815121501,
       "animal_component_share": 0.0003999674232334938,
       "habitat_component_share": 0.004374933815183953,
-      "objective_weight": 0.0015924573408186316
+      "objective_weight": 0.0018088886900700283
     },
     {
       "target_id": "ENP14_0275",
@@ -7011,7 +7122,7 @@
       "habitat_component_raw": 0.00023858933548532554,
       "animal_component_share": 1.6391365645232546e-05,
       "habitat_component_share": 0.00023858933548873138,
-      "objective_weight": 8.30507565982822e-05
+      "objective_weight": 9.514912465279857e-05
     },
     {
       "target_id": "ENP14_0276",
@@ -7036,7 +7147,7 @@
       "habitat_component_raw": 0.002103181917525601,
       "animal_component_share": 0.00018803694516112793,
       "habitat_component_share": 0.002103181917555624,
-      "objective_weight": 0.0007625804368794767
+      "objective_weight": 0.0008668573966109481
     },
     {
       "target_id": "ENP14_0277",
@@ -7061,7 +7172,7 @@
       "habitat_component_raw": 0.005475310284070975,
       "animal_component_share": 0.00020899894124135586,
       "habitat_component_share": 0.0054753102841491345,
-      "objective_weight": 0.0017888923441136896
+      "objective_weight": 0.0020756356161654027
     },
     {
       "target_id": "ENP14_0278",
@@ -7086,7 +7197,7 @@
       "habitat_component_raw": 0.004094819650172177,
       "animal_component_share": 0.0002463234107683981,
       "habitat_component_share": 0.00409481965023063,
-      "objective_weight": 0.0014008722826070678
+      "objective_weight": 0.0016104175092994193
     },
     {
       "target_id": "ENP14_0279",
@@ -7111,7 +7222,7 @@
       "habitat_component_raw": 0.0001370285792899397,
       "animal_component_share": 8.299112225216937e-06,
       "habitat_component_share": 0.00013702857929189576,
-      "objective_weight": 4.691795234522059e-05
+      "objective_weight": 5.3927091416704285e-05
     },
     {
       "target_id": "ENP14_0280",
@@ -7136,7 +7247,7 @@
       "habitat_component_raw": 0.0008943638950582658,
       "animal_component_share": 3.6650224216657356e-05,
       "habitat_component_share": 0.0008943638950710327,
-      "objective_weight": 0.00029396432547297
+      "objective_weight": 0.00034066563279227337
     },
     {
       "target_id": "ENP14_0281",
@@ -7161,7 +7272,7 @@
       "habitat_component_raw": 0.0013629005173979576,
       "animal_component_share": 8.053479078423958e-05,
       "habitat_component_share": 0.001362900517417413,
-      "objective_weight": 0.00046524450877419163
+      "objective_weight": 0.0005350675253941583
     },
     {
       "target_id": "ENP14_0282",
@@ -7186,7 +7297,7 @@
       "habitat_component_raw": 0.0001575882132368232,
       "animal_component_share": 1.1061965093353869e-05,
       "habitat_component_share": 0.00015758821323907276,
-      "objective_weight": 5.501983953706954e-05
+      "objective_weight": 6.299798839667835e-05
     },
     {
       "target_id": "ENP15_0283",
@@ -7211,7 +7322,7 @@
       "habitat_component_raw": 3.668986543841236e-05,
       "animal_component_share": 3.990556497201802e-05,
       "habitat_component_share": 3.6689865438936105e-05,
-      "objective_weight": 3.894085511209344e-05
+      "objective_weight": 3.8765764779218835e-05
     },
     {
       "target_id": "ENP15_0284",
@@ -7236,7 +7347,7 @@
       "habitat_component_raw": 0.00021048390430524586,
       "animal_component_share": 0.00028822648060412425,
       "habitat_component_share": 0.0002104839043082505,
-      "objective_weight": 0.00026490370771536215
+      "objective_weight": 0.00026067073338982593
     },
     {
       "target_id": "ENP15_0285",
@@ -7261,7 +7372,7 @@
       "habitat_component_raw": 0.002665902745895083,
       "animal_component_share": 0.004249049208600418,
       "habitat_component_share": 0.0026659027459331385,
-      "objective_weight": 0.003774105269800234
+      "objective_weight": 0.003687905163637946
     },
     {
       "target_id": "ENP15_0286",
@@ -7286,7 +7397,7 @@
       "habitat_component_raw": 0.004313109222433044,
       "animal_component_share": 0.005738975137564209,
       "habitat_component_share": 0.004313109222494614,
-      "objective_weight": 0.005311215363043331
+      "objective_weight": 0.005233578962273998
     },
     {
       "target_id": "ENP15_0287",
@@ -7311,7 +7422,7 @@
       "habitat_component_raw": 3.074959587259431e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.0749595873033255e-05,
-      "objective_weight": 9.224878761909978e-06
+      "objective_weight": 1.0899151162605716e-05
     },
     {
       "target_id": "ENP15_0288",
@@ -7336,7 +7447,7 @@
       "habitat_component_raw": 0.002685598319664624,
       "animal_component_share": 0.002535491823598173,
       "habitat_component_share": 0.0026855983197029607,
-      "objective_weight": 0.0025805237724296094
+      "objective_weight": 0.0025886968607729847
     },
     {
       "target_id": "ENP15_0289",
@@ -7361,7 +7472,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.0016136944000527589
+      "objective_weight": 0.0019065723951892728
     },
     {
       "target_id": "ENP15_0290",
@@ -7386,7 +7497,7 @@
       "habitat_component_raw": 0.0012536622501050127,
       "animal_component_share": 0.001114477969885603,
       "habitat_component_share": 0.0012536622501229085,
-      "objective_weight": 0.0011562332539567948
+      "objective_weight": 0.0011638116429533274
     },
     {
       "target_id": "ENP15_0291",
@@ -7411,7 +7522,7 @@
       "habitat_component_raw": 0.002697128643434781,
       "animal_component_share": 0.0034788878320633296,
       "habitat_component_share": 0.0026971286434732825,
-      "objective_weight": 0.0032443600754863155
+      "objective_weight": 0.0032017943832784884
     },
     {
       "target_id": "ENP15_0292",
@@ -7436,7 +7547,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.007944372932169411,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.007174755452571346
+      "objective_weight": 0.00703507347533989
     },
     {
       "target_id": "ENP15_0293",
@@ -7461,7 +7572,7 @@
       "habitat_component_raw": 0.002886053822329273,
       "animal_component_share": 0.0029061167102397145,
       "habitat_component_share": 0.002886053822370471,
-      "objective_weight": 0.0029000978438789415
+      "objective_weight": 0.002899005447751967
     },
     {
       "target_id": "ENP15_0294",
@@ -7486,7 +7597,7 @@
       "habitat_component_raw": 0.0027115828464690135,
       "animal_component_share": 0.002990207026128967,
       "habitat_component_share": 0.0027115828465077213,
-      "objective_weight": 0.0029066197722425933
+      "objective_weight": 0.002891449076145236
     },
     {
       "target_id": "ENP15_0295",
@@ -7511,7 +7622,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.006576233637867807,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.006217057946560223
+      "objective_weight": 0.006151869236499324
     },
     {
       "target_id": "ENP15_0296",
@@ -7536,7 +7647,7 @@
       "habitat_component_raw": 0.0040713048910984,
       "animal_component_share": 0.003175718902611712,
       "habitat_component_share": 0.004071304891156518,
-      "objective_weight": 0.003444394699175154
+      "objective_weight": 0.0034931581011158393
     },
     {
       "target_id": "ENP15_0297",
@@ -7561,7 +7672,7 @@
       "habitat_component_raw": 1.1373415819533499e-05,
       "animal_component_share": 1.1806499041611263e-05,
       "habitat_component_share": 1.1373415819695853e-05,
-      "objective_weight": 1.167657407503664e-05
+      "objective_weight": 1.1652993300555853e-05
     },
     {
       "target_id": "ENP15_0298",
@@ -7586,7 +7697,7 @@
       "habitat_component_raw": 5.639007789263549e-06,
       "animal_component_share": 5.4694529507763604e-06,
       "habitat_component_share": 5.639007789344045e-06,
-      "objective_weight": 5.520319402346665e-06
+      "objective_weight": 5.529551425680906e-06
     },
     {
       "target_id": "ENP15_0299",
@@ -7611,7 +7722,7 @@
       "habitat_component_raw": 0.002728960890640612,
       "animal_component_share": 0.001821218453628435,
       "habitat_component_share": 0.0027289608906795678,
-      "objective_weight": 0.002093541184743775
+      "objective_weight": 0.00214296648826875
     },
     {
       "target_id": "ENP15_0300",
@@ -7636,7 +7747,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.005183358442558213,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.0052420453098435075
+      "objective_weight": 0.005252696702096464
     },
     {
       "target_id": "ENP15_0301",
@@ -7661,7 +7772,7 @@
       "habitat_component_raw": 0.0035245186182729276,
       "animal_component_share": 0.0030932326254133158,
       "habitat_component_share": 0.0035245186183232398,
-      "objective_weight": 0.003222618423286293
+      "objective_weight": 0.003246101341166492
     },
     {
       "target_id": "ENP15_0302",
@@ -7686,7 +7797,7 @@
       "habitat_component_raw": 0.00030794426306906544,
       "animal_component_share": 0.00045388344472550905,
       "habitat_component_share": 0.00030794426307346134,
-      "objective_weight": 0.00041010169022989473
+      "objective_weight": 0.0004021555063181111
     },
     {
       "target_id": "ENP15_0303",
@@ -7711,7 +7822,7 @@
       "habitat_component_raw": 0.005314611216595668,
       "animal_component_share": 0.003968751878351477,
       "habitat_component_share": 0.0053146112166715335,
-      "objective_weight": 0.004372509679847494
+      "objective_weight": 0.004445789834639512
     },
     {
       "target_id": "ENP15_0304",
@@ -7736,7 +7847,7 @@
       "habitat_component_raw": 0.005378960411340253,
       "animal_component_share": 0.0034215293701675554,
       "habitat_component_share": 0.005378960411417037,
-      "objective_weight": 0.0040087586825424
+      "objective_weight": 0.00411533805946043
     },
     {
       "target_id": "ENP15_0305",
@@ -7761,7 +7872,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.0034479624953037175,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.004027268146765361
+      "objective_weight": 0.004132409416243517
     },
     {
       "target_id": "ENP15_0306",
@@ -7786,7 +7897,7 @@
       "habitat_component_raw": 0.0024505273457699306,
       "animal_component_share": 0.0014056787727836433,
       "habitat_component_share": 0.0024505273458049117,
-      "objective_weight": 0.001719133344690024
+      "objective_weight": 0.0017760238851686383
     },
     {
       "target_id": "ENP15_0307",
@@ -7811,7 +7922,7 @@
       "habitat_component_raw": 0.0001177843436436345,
       "animal_component_share": 0.00016225262550934388,
       "habitat_component_share": 0.00011778434364531587,
-      "objective_weight": 0.00014891214095013547
+      "objective_weight": 0.00014649090532353677
     },
     {
       "target_id": "ENP15_0308",
@@ -7836,7 +7947,7 @@
       "habitat_component_raw": 0.005031913817324043,
       "animal_component_share": 0.0035240310004072332,
       "habitat_component_share": 0.005031913817395874,
-      "objective_weight": 0.0039763958455038256
+      "objective_weight": 0.004058497951638543
     },
     {
       "target_id": "ENP15_0309",
@@ -7861,7 +7972,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.004604719706866151,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.004836998194859064
+      "objective_weight": 0.004879155655326475
     },
     {
       "target_id": "ENP15_0310",
@@ -7886,7 +7997,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.0023274234415469265,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.0032428908091356075
+      "objective_weight": 0.0034090438596906004
     },
     {
       "target_id": "ENP15_0311",
@@ -7911,7 +8022,7 @@
       "habitat_component_raw": 0.0023565244423376075,
       "animal_component_share": 0.0017900547073569696,
       "habitat_component_share": 0.002356524442371247,
-      "objective_weight": 0.001959995627861253
+      "objective_weight": 0.0019908391110432734
     },
     {
       "target_id": "ENP15_0312",
@@ -7936,7 +8047,7 @@
       "habitat_component_raw": 0.001207609938058336,
       "animal_component_share": 0.0009129881902769516,
       "habitat_component_share": 0.0012076099380755746,
-      "objective_weight": 0.0010013747146165384
+      "objective_weight": 0.0010174164558810657
     },
     {
       "target_id": "ENP15_0313",
@@ -7961,7 +8072,7 @@
       "habitat_component_raw": 0.005134231786585543,
       "animal_component_share": 0.00505724537143024,
       "habitat_component_share": 0.005134231786658833,
-      "objective_weight": 0.005080341295998818
+      "objective_weight": 0.005084533098413977
     },
     {
       "target_id": "ENP15_0314",
@@ -7986,7 +8097,7 @@
       "habitat_component_raw": 0.005378981333432411,
       "animal_component_share": 0.004327864882476984,
       "habitat_component_share": 0.005378981333509196,
-      "objective_weight": 0.004643199817786647
+      "objective_weight": 0.004700431635438724
     },
     {
       "target_id": "ENP15_0315",
@@ -8011,7 +8122,7 @@
       "habitat_component_raw": 0.0022596220739018185,
       "animal_component_share": 0.0011668616919999282,
       "habitat_component_share": 0.0022596220739340743,
-      "objective_weight": 0.001494689806580172
+      "objective_weight": 0.0015541890779072003
     },
     {
       "target_id": "ENP15_0316",
@@ -8036,7 +8147,7 @@
       "habitat_component_raw": 0.0014248416067852243,
       "animal_component_share": 0.0009766445402066655,
       "habitat_component_share": 0.0014248416068055637,
-      "objective_weight": 0.0011111036601863349
+      "objective_weight": 0.0011355073623285608
     },
     {
       "target_id": "ENP15_0317",
@@ -8061,7 +8172,7 @@
       "habitat_component_raw": 0.00512314440567105,
       "animal_component_share": 0.002731899788422608,
       "habitat_component_share": 0.005123144405744183,
-      "objective_weight": 0.00344927317361908
+      "objective_weight": 0.0035794730917781616
     },
     {
       "target_id": "ENP15_0318",
@@ -8086,7 +8197,7 @@
       "habitat_component_raw": 0.001977519478019948,
       "animal_component_share": 0.0018823969362060742,
       "habitat_component_share": 0.0019775194780481766,
-      "objective_weight": 0.0019109336987587048
+      "objective_weight": 0.0019161129878507586
     },
     {
       "target_id": "ENP15_0319",
@@ -8111,7 +8222,7 @@
       "habitat_component_raw": 1.0962088462850185e-05,
       "animal_component_share": 1.0098950973681074e-05,
       "habitat_component_share": 1.0962088463006668e-05,
-      "objective_weight": 1.0357892220478752e-05
+      "objective_weight": 1.0404888847112502e-05
     },
     {
       "target_id": "ENP16_0320",
@@ -8136,7 +8247,7 @@
       "habitat_component_raw": 0.0005573984402761613,
       "animal_component_share": 0.0008962067443844278,
       "habitat_component_share": 0.0005573984402841182,
-      "objective_weight": 0.0007945642531543349
+      "objective_weight": 0.000776116615825249
     },
     {
       "target_id": "ENP16_0321",
@@ -8161,7 +8272,7 @@
       "habitat_component_raw": 0.0006813140266296666,
       "animal_component_share": 0.001024046463300691,
       "habitat_component_share": 0.0006813140266393923,
-      "objective_weight": 0.0009212267323023013
+      "objective_weight": 0.0009025654314548179
     },
     {
       "target_id": "ENP16_0322",
@@ -8186,7 +8297,7 @@
       "habitat_component_raw": 0.0020225351377359396,
       "animal_component_share": 0.003025839447840735,
       "habitat_component_share": 0.002022535137764811,
-      "objective_weight": 0.002724848154817958
+      "objective_weight": 0.0026702196412337403
     },
     {
       "target_id": "ENP16_0323",
@@ -8211,7 +8322,7 @@
       "habitat_component_raw": 0.0040771852174379284,
       "animal_component_share": 0.007726234613191546,
       "habitat_component_share": 0.00407718521749613,
-      "objective_weight": 0.006631519794482921
+      "objective_weight": 0.006432834168915198
     },
     {
       "target_id": "ENP16_0324",
@@ -8236,7 +8347,7 @@
       "habitat_component_raw": 0.003420325472264942,
       "animal_component_share": 0.0023220927293168057,
       "habitat_component_share": 0.0034203254723137668,
-      "objective_weight": 0.002651562552215894
+      "objective_weight": 0.0027113597859334507
     },
     {
       "target_id": "ENP16_0325",
@@ -8261,7 +8372,7 @@
       "habitat_component_raw": 0.002152375051438661,
       "animal_component_share": 0.004168373405555519,
       "habitat_component_share": 0.002152375051469386,
-      "objective_weight": 0.003563573899329679
+      "objective_weight": 0.0034538056143079386
     },
     {
       "target_id": "ENP16_0326",
@@ -8286,7 +8397,7 @@
       "habitat_component_raw": 0.00407972823839036,
       "animal_component_share": 0.009718681524628087,
       "habitat_component_share": 0.004079728238448598,
-      "objective_weight": 0.00802699553877424
+      "objective_weight": 0.007719962435157339
     },
     {
       "target_id": "ENP16_0327",
@@ -8311,7 +8422,7 @@
       "habitat_component_raw": 0.0038125647062334633,
       "animal_component_share": 0.007220376917491681,
       "habitat_component_share": 0.003812564706287887,
-      "objective_weight": 0.006198033254130543
+      "objective_weight": 0.0060124826551720655
     },
     {
       "target_id": "ENP16_0328",
@@ -8336,7 +8447,7 @@
       "habitat_component_raw": 0.0022844193526029987,
       "animal_component_share": 0.0027115754757344227,
       "habitat_component_share": 0.0022844193526356084,
-      "objective_weight": 0.002583428638804778
+      "objective_weight": 0.002560170586547912
     },
     {
       "target_id": "ENP16_0329",
@@ -8361,7 +8472,7 @@
       "habitat_component_raw": 0.00407972823839036,
       "animal_component_share": 0.01004298387498996,
       "habitat_component_share": 0.004079728238448598,
-      "objective_weight": 0.00825400718402755
+      "objective_weight": 0.007929316271932985
     },
     {
       "target_id": "ENP16_0330",
@@ -8386,7 +8497,7 @@
       "habitat_component_raw": 0.0037692058823582887,
       "animal_component_share": 0.01055830247660586,
       "habitat_component_share": 0.0037692058824120938,
-      "objective_weight": 0.008521573498347729
+      "objective_weight": 0.008151916703499101
     },
     {
       "target_id": "ENP16_0331",
@@ -8411,7 +8522,7 @@
       "habitat_component_raw": 0.001964579668637309,
       "animal_component_share": 0.003250508770361528,
       "habitat_component_share": 0.0019645796686653533,
-      "objective_weight": 0.0028647300398526756
+      "objective_weight": 0.0027947130024544866
     },
     {
       "target_id": "ENP16_0332",
@@ -8436,7 +8547,7 @@
       "habitat_component_raw": 0.0025779795669501815,
       "animal_component_share": 0.005388648388276402,
       "habitat_component_share": 0.002577979566986982,
-      "objective_weight": 0.004545447741889575
+      "objective_weight": 0.004392410763634268
     },
     {
       "target_id": "ENP16_0333",
@@ -8461,7 +8572,7 @@
       "habitat_component_raw": 0.0016296379302897916,
       "animal_component_share": 0.003498483331805795,
       "habitat_component_share": 0.0016296379303130544,
-      "objective_weight": 0.0029378297113579724
+      "objective_weight": 0.00283607369837471
     },
     {
       "target_id": "ENP17_0334",
@@ -8486,7 +8597,7 @@
       "habitat_component_raw": 0.00012283388572016226,
       "animal_component_share": 0.00017022631001293676,
       "habitat_component_share": 0.00012283388572191571,
-      "objective_weight": 0.00015600858272563043
+      "objective_weight": 0.00015342813164197553
     },
     {
       "target_id": "ENP17_0335",
@@ -8511,7 +8622,7 @@
       "habitat_component_raw": 0.004200295195665795,
       "animal_component_share": 0.0096922737737651,
       "habitat_component_share": 0.004200295195725754,
-      "objective_weight": 0.008044680200353297
+      "objective_weight": 0.007745649663614198
     },
     {
       "target_id": "ENP17_0336",
@@ -8536,7 +8647,7 @@
       "habitat_component_raw": 0.00443449998772851,
       "animal_component_share": 0.010641626172505397,
       "habitat_component_share": 0.004434499987791812,
-      "objective_weight": 0.00877948831709132
+      "objective_weight": 0.008441518995425674
     },
     {
       "target_id": "ENP17_0337",
@@ -8561,7 +8672,7 @@
       "habitat_component_raw": 0.0016079528649506922,
       "animal_component_share": 0.0077880990818188535,
       "habitat_component_share": 0.0016079528649736456,
-      "objective_weight": 0.005934055216765291
+      "objective_weight": 0.0055975549165385025
     },
     {
       "target_id": "ENP17_0338",
@@ -8586,7 +8697,7 @@
       "habitat_component_raw": 0.00022567436138453513,
       "animal_component_share": 0.0003803750963451497,
       "habitat_component_share": 0.00022567436138775661,
-      "objective_weight": 0.00033396487585793177
+      "objective_weight": 0.0003255416376477133
     },
     {
       "target_id": "ENP17_0339",
@@ -8611,7 +8722,7 @@
       "habitat_component_raw": 0.004683770388586293,
       "animal_component_share": 0.012906775240841037,
       "habitat_component_share": 0.004683770388653153,
-      "objective_weight": 0.010439873785184671
+      "objective_weight": 0.009992142695265563
     },
     {
       "target_id": "ENP17_0340",
@@ -8636,7 +8747,7 @@
       "habitat_component_raw": 0.004683770388586293,
       "animal_component_share": 0.015442685150591391,
       "habitat_component_share": 0.004683770388653153,
-      "objective_weight": 0.01221501072200992
+      "objective_weight": 0.011629202891502837
     },
     {
       "target_id": "ENP17_0341",
@@ -8661,7 +8772,7 @@
       "habitat_component_raw": 0.0015949165459158722,
       "animal_component_share": 0.0062697236856414365,
       "habitat_component_share": 0.0015949165459386396,
-      "objective_weight": 0.004867281543730597
+      "objective_weight": 0.004612744846568869
     },
     {
       "target_id": "ENP17_0342",
@@ -8686,7 +8797,7 @@
       "habitat_component_raw": 0.0003185778735375001,
       "animal_component_share": 0.0004892930240749813,
       "habitat_component_share": 0.0003185778735420478,
-      "objective_weight": 0.0004380784789151012
+      "objective_weight": 0.000428783278220494
     },
     {
       "target_id": "ENP17_0343",
@@ -8711,7 +8822,7 @@
       "habitat_component_raw": 0.004683770388586293,
       "animal_component_share": 0.0088279476104592,
       "habitat_component_share": 0.004683770388653153,
-      "objective_weight": 0.007584694443917386
+      "objective_weight": 0.0073590498021240056
     },
     {
       "target_id": "ENP17_0344",
@@ -8736,7 +8847,7 @@
       "habitat_component_raw": 0.004683770388586293,
       "animal_component_share": 0.008582815948913393,
       "habitat_component_share": 0.004683770388653153,
-      "objective_weight": 0.007413102280835321
+      "objective_weight": 0.0072008047144688
     },
     {
       "target_id": "ENP17_0345",
@@ -8761,7 +8872,7 @@
       "habitat_component_raw": 0.0015459458187342561,
       "animal_component_share": 0.005330599701460256,
       "habitat_component_share": 0.0015459458187563244,
-      "objective_weight": 0.0041952035366490765
+      "objective_weight": 0.003989134436809161
     },
     {
       "target_id": "ENP17_0346",
@@ -8786,7 +8897,7 @@
       "habitat_component_raw": 0.00014553171739415646,
       "animal_component_share": 0.00029547416424270103,
       "habitat_component_share": 0.0001455317173962339,
-      "objective_weight": 0.0002504914301887609
+      "objective_weight": 0.0002423272740975913
     },
     {
       "target_id": "ENP17_0347",
@@ -8811,7 +8922,7 @@
       "habitat_component_raw": 0.0018281960062591696,
       "animal_component_share": 0.003895970405176184,
       "habitat_component_share": 0.001828196006285267,
-      "objective_weight": 0.003275638085508909
+      "objective_weight": 0.0031630506674100453
     },
     {
       "target_id": "ENP17_0348",
@@ -8836,7 +8947,7 @@
       "habitat_component_raw": 0.004683770388586293,
       "animal_component_share": 0.01270815124416036,
       "habitat_component_share": 0.004683770388653153,
-      "objective_weight": 0.010300836987508197
+      "objective_weight": 0.00986392069584307
     },
     {
       "target_id": "ENP17_0349",
@@ -8861,7 +8972,7 @@
       "habitat_component_raw": 0.001315006216187666,
       "animal_component_share": 0.004085449782753276,
       "habitat_component_share": 0.0013150062162064376,
-      "objective_weight": 0.0032543167127892245
+      "objective_weight": 0.0031034699432802215
     },
     {
       "target_id": "ENP17_0350",
@@ -8886,7 +8997,7 @@
       "habitat_component_raw": 4.602372269956149e-05,
       "animal_component_share": 0.00011580900630365938,
       "habitat_component_share": 4.602372270021847e-05,
-      "objective_weight": 9.48734212226271e-05
+      "objective_weight": 9.107371033229857e-05
     },
     {
       "target_id": "ENP17_0351",
@@ -8911,7 +9022,7 @@
       "habitat_component_raw": 0.0024261879038754647,
       "animal_component_share": 0.0051243780793489456,
       "habitat_component_share": 0.0024261879039100985,
-      "objective_weight": 0.004314921026717291
+      "objective_weight": 0.004168008353093265
     },
     {
       "target_id": "ENP17_0352",
@@ -8936,7 +9047,7 @@
       "habitat_component_raw": 0.00014106962626470303,
       "animal_component_share": 0.0003883629611679233,
       "habitat_component_share": 0.0001410696262667168,
-      "objective_weight": 0.00031417496069756134
+      "objective_weight": 0.00030071018518601717
     },
     {
       "target_id": "PAN_MAIN_0353",
@@ -10561,7 +10672,7 @@
       "habitat_component_raw": 1.6541868344661877e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.6541868344898011e-06,
-      "objective_weight": 4.962560503469404e-07
+      "objective_weight": 5.86324205194119e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0418",
@@ -10586,7 +10697,7 @@
       "habitat_component_raw": 4.673640411576398e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.6736404116431136e-05,
-      "objective_weight": 1.4020921234929342e-05
+      "objective_weight": 1.6565652939469448e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0419",
@@ -10611,7 +10722,7 @@
       "habitat_component_raw": 0.0026838932282875587,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.002683893228325871,
-      "objective_weight": 0.0008051679684977613
+      "objective_weight": 0.000951302193388208
     },
     {
       "target_id": "UNSURVEYED_OTHER_0420",
@@ -10636,7 +10747,7 @@
       "habitat_component_raw": 0.0018641678776212416,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0018641678776478525,
-      "objective_weight": 0.0005592503632943558
+      "objective_weight": 0.0006607516916596664
     },
     {
       "target_id": "UNSURVEYED_OTHER_0421",
@@ -10661,7 +10772,7 @@
       "habitat_component_raw": 0.0027134870113506523,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.002713487011389387,
-      "objective_weight": 0.0008140461034168163
+      "objective_weight": 0.0009617916683203156
     },
     {
       "target_id": "UNSURVEYED_OTHER_0422",
@@ -10686,7 +10797,7 @@
       "habitat_component_raw": 0.001568165086143471,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0015681650861658566,
-      "objective_weight": 0.00047044952584975703
+      "objective_weight": 0.00055583391705747
     },
     {
       "target_id": "UNSURVEYED_OTHER_0423",
@@ -10711,7 +10822,7 @@
       "habitat_component_raw": 0.0002033443476216474,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00020334434762455013,
-      "objective_weight": 6.1003304287365045e-05
+      "objective_weight": 7.207511903481787e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0424",
@@ -10736,7 +10847,7 @@
       "habitat_component_raw": 0.00023450097229694584,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00023450097230029332,
-      "objective_weight": 7.0350291690088e-05
+      "objective_weight": 8.311854098610606e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0425",
@@ -10761,7 +10872,7 @@
       "habitat_component_raw": 1.7867243689733496e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.786724368998855e-06,
-      "objective_weight": 5.360173106996566e-07
+      "objective_weight": 6.333019485536695e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0426",
@@ -10786,7 +10897,7 @@
       "habitat_component_raw": 0.00014763945748736063,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00014763945748946818,
-      "objective_weight": 4.429183724684046e-05
+      "objective_weight": 5.233059879508856e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0427",
@@ -10811,7 +10922,7 @@
       "habitat_component_raw": 6.729749850257634e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.729749850353701e-05,
-      "objective_weight": 2.0189249551061106e-05
+      "objective_weight": 2.3853504029252404e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0428",
@@ -10836,7 +10947,7 @@
       "habitat_component_raw": 8.41658876478542e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.416588764905566e-07,
-      "objective_weight": 2.52497662947167e-07
+      "objective_weight": 2.983248092136495e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0429",
@@ -10861,7 +10972,7 @@
       "habitat_component_raw": 0.00011656237777079036,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00011656237777245427,
-      "objective_weight": 3.4968713331736285e-05
+      "objective_weight": 4.13153714429422e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0430",
@@ -10886,7 +10997,7 @@
       "habitat_component_raw": 3.617927692485412e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.6179276925370576e-06,
-      "objective_weight": 1.0853783077611175e-06
+      "objective_weight": 1.2823694002079556e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0431",
@@ -10911,7 +11022,7 @@
       "habitat_component_raw": 5.8972227809235753e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.8972227810077575e-05,
-      "objective_weight": 1.7691668343023276e-05
+      "objective_weight": 2.0902623499560586e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0432",
@@ -10936,7 +11047,7 @@
       "habitat_component_raw": 9.43754403840703e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.437544038541751e-05,
-      "objective_weight": 2.8312632115625257e-05
+      "objective_weight": 3.345124258040154e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0433",
@@ -10961,7 +11072,7 @@
       "habitat_component_raw": 1.9979486794896984e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.997948679518219e-05,
-      "objective_weight": 5.993846038554658e-06
+      "objective_weight": 7.081701093930341e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0434",
@@ -10986,7 +11097,7 @@
       "habitat_component_raw": 0.00020045421790858622,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00020045421791144768,
-      "objective_weight": 6.0136265373434315e-05
+      "objective_weight": 7.105071660843454e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0435",
@@ -11011,7 +11122,7 @@
       "habitat_component_raw": 0.00015818232426470112,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00015818232426695916,
-      "objective_weight": 4.745469728008776e-05
+      "objective_weight": 5.606750314887423e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0436",
@@ -11036,7 +11147,7 @@
       "habitat_component_raw": 4.584846797603862e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.58484679766931e-06,
-      "objective_weight": 1.3754540393007933e-06
+      "objective_weight": 1.625092521915386e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0437",
@@ -11061,7 +11172,7 @@
       "habitat_component_raw": 1.0013310607219226e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.0013310607362166e-07,
-      "objective_weight": 3.00399318220865e-08
+      "objective_weight": 3.549203911439824e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0438",
@@ -11086,7 +11197,7 @@
       "habitat_component_raw": 2.698979939517575e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.6989799395561026e-07,
-      "objective_weight": 8.096939818668309e-08
+      "objective_weight": 9.566496570402126e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0439",
@@ -11111,7 +11222,7 @@
       "habitat_component_raw": 1.0444757246952459e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.0444757247101558e-06,
-      "objective_weight": 3.1334271741304676e-07
+      "objective_weight": 3.7021295682365633e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0440",
@@ -11136,7 +11247,7 @@
       "habitat_component_raw": 1.2504603335855769e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.2504603336034271e-05,
-      "objective_weight": 3.7513810008102818e-06
+      "objective_weight": 4.432239127649294e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0441",
@@ -11161,7 +11272,7 @@
       "habitat_component_raw": 9.236400328755397e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.236400328887246e-05,
-      "objective_weight": 2.770920098666174e-05
+      "objective_weight": 3.273829152049694e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0442",
@@ -11186,7 +11297,7 @@
       "habitat_component_raw": 0.00011918861495720793,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00011918861495890934,
-      "objective_weight": 3.575658448767281e-05
+      "objective_weight": 4.2246237533092433e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0443",
@@ -11211,7 +11322,7 @@
       "habitat_component_raw": 1.0150277072164489e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.0150277072309384e-05,
-      "objective_weight": 3.0450831216928157e-06
+      "objective_weight": 3.597751482986175e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0444",
@@ -11236,7 +11347,7 @@
       "habitat_component_raw": 0.00014751907362419808,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0001475190736263039,
-      "objective_weight": 4.425572208789118e-05
+      "objective_weight": 5.228792890350418e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0445",
@@ -11261,7 +11372,7 @@
       "habitat_component_raw": 7.805118508200646e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.805118508312064e-05,
-      "objective_weight": 2.3415355524936194e-05
+      "objective_weight": 2.7665133166432498e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0446",
@@ -11286,7 +11397,7 @@
       "habitat_component_raw": 4.394880203942401e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.394880204005138e-05,
-      "objective_weight": 1.3184640612015415e-05
+      "objective_weight": 1.5577591290233227e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0447",
@@ -11311,7 +11422,7 @@
       "habitat_component_raw": 1.0699112533562679e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.0699112533715408e-05,
-      "objective_weight": 3.2097337601146226e-06
+      "objective_weight": 3.792285443105913e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0448",
@@ -11336,7 +11447,7 @@
       "habitat_component_raw": 0.00011334753864683269,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00011334753864845071,
-      "objective_weight": 3.400426159453522e-05
+      "objective_weight": 4.0175876220935e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0449",
@@ -11361,7 +11472,7 @@
       "habitat_component_raw": 4.484794576922433e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.484794576986453e-05,
-      "objective_weight": 1.3454383730959362e-05
+      "objective_weight": 1.5896291525143857e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0450",
@@ -11386,7 +11497,7 @@
       "habitat_component_raw": 1.155295418457124e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.1552954184736158e-06,
-      "objective_weight": 3.465886255420848e-07
+      "objective_weight": 4.0949284196780145e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0451",
@@ -11411,7 +11522,7 @@
       "habitat_component_raw": 2.5671045784513087e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.567104578487954e-06,
-      "objective_weight": 7.701313735463863e-07
+      "objective_weight": 9.099066201287756e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0452",
@@ -11436,7 +11547,7 @@
       "habitat_component_raw": 4.856532334845611e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.856532334914938e-06,
-      "objective_weight": 1.4569597004744815e-06
+      "objective_weight": 1.721391079833368e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0453",
@@ -11461,7 +11572,7 @@
       "habitat_component_raw": 8.550483062269304e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.550483062391361e-07,
-      "objective_weight": 2.565144918717409e-07
+      "objective_weight": 3.030706738231691e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0454",
@@ -11486,7 +11597,7 @@
       "habitat_component_raw": 7.311691518389188e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.311691518493562e-05,
-      "objective_weight": 2.1935074555480688e-05
+      "objective_weight": 2.5916188116244797e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0455",
@@ -11511,7 +11622,7 @@
       "habitat_component_raw": 1.1562460729692292e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.1562460729857346e-07,
-      "objective_weight": 3.468738218957204e-08
+      "objective_weight": 4.0982980012730956e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0456",
@@ -11536,7 +11647,7 @@
       "habitat_component_raw": 3.7287420042209264e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.728742004274154e-05,
-      "objective_weight": 1.1186226012822464e-05
+      "objective_weight": 1.321647377700399e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0457",
@@ -11561,7 +11672,7 @@
       "habitat_component_raw": 4.545907871010559e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.5459078710754514e-05,
-      "objective_weight": 1.3637723613226356e-05
+      "objective_weight": 1.611290673955873e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0458",
@@ -11586,7 +11697,7 @@
       "habitat_component_raw": 0.00014231207951696082,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00014231207951899232,
-      "objective_weight": 4.2693623855697705e-05
+      "objective_weight": 5.044231713960596e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0459",
@@ -11611,7 +11722,7 @@
       "habitat_component_raw": 2.5880883998616856e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.58808839989863e-06,
-      "objective_weight": 7.764265199695891e-07
+      "objective_weight": 9.173443062196245e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0460",
@@ -11636,7 +11747,7 @@
       "habitat_component_raw": 1.5654140294957672e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.5654140295181132e-07,
-      "objective_weight": 4.69624208855434e-08
+      "objective_weight": 5.5485880888419665e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0461",
@@ -11661,7 +11772,7 @@
       "habitat_component_raw": 7.503365417766482e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.503365417873592e-05,
-      "objective_weight": 2.251009625362078e-05
+      "objective_weight": 2.6595573566347936e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0462",
@@ -11686,7 +11797,7 @@
       "habitat_component_raw": 1.0730663744925632e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.0730663745078811e-05,
-      "objective_weight": 3.2191991235236437e-06
+      "objective_weight": 3.8034687257556415e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0463",
@@ -11711,7 +11822,7 @@
       "habitat_component_raw": 0.00012123776475865583,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00012123776476038649,
-      "objective_weight": 3.637132942811595e-05
+      "objective_weight": 4.297255580840705e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0464",
@@ -11736,7 +11847,7 @@
       "habitat_component_raw": 3.056119591793458e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.056119591837084e-06,
-      "objective_weight": 9.168358775511253e-07
+      "objective_weight": 1.083237306271223e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0465",
@@ -11761,7 +11872,7 @@
       "habitat_component_raw": 2.7202415972182546e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.720241597257086e-05,
-      "objective_weight": 8.16072479177126e-06
+      "objective_weight": 9.64185821814782e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0466",
@@ -11786,7 +11897,7 @@
       "habitat_component_raw": 0.00024096442542947326,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.000240964425432913,
-      "objective_weight": 7.228932762987391e-05
+      "objective_weight": 8.540950289063695e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0467",
@@ -11811,7 +11922,7 @@
       "habitat_component_raw": 0.00011665196459170617,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00011665196459337137,
-      "objective_weight": 3.4995589378011415e-05
+      "objective_weight": 4.134712536606316e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0468",
@@ -11836,7 +11947,7 @@
       "habitat_component_raw": 5.94431057773742e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.944310577822274e-05,
-      "objective_weight": 1.7832931733466827e-05
+      "objective_weight": 2.1069525535448985e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0469",
@@ -11861,7 +11972,7 @@
       "habitat_component_raw": 7.863027322250081e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.863027322362325e-05,
-      "objective_weight": 2.3589081967086978e-05
+      "objective_weight": 2.7870390146259845e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0470",
@@ -11886,7 +11997,7 @@
       "habitat_component_raw": 0.00010023896193249446,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00010023896193392536,
-      "objective_weight": 3.0071688580177612e-05
+      "objective_weight": 3.552955957572923e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0471",
@@ -11911,7 +12022,7 @@
       "habitat_component_raw": 2.2971856435752297e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.2971856436080218e-06,
-      "objective_weight": 6.891556930824067e-07
+      "objective_weight": 8.142342319434766e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0472",
@@ -11936,7 +12047,7 @@
       "habitat_component_raw": 8.30179350643835e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.301793506556856e-06,
-      "objective_weight": 2.4905380519670573e-06
+      "objective_weight": 2.9425590736967368e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0473",
@@ -11961,7 +12072,7 @@
       "habitat_component_raw": 0.00014663970795488908,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00014663970795698235,
-      "objective_weight": 4.399191238709471e-05
+      "objective_weight": 5.1976238974416466e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0474",
@@ -11986,7 +12097,7 @@
       "habitat_component_raw": 2.4667952962000126e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.466795296235226e-05,
-      "objective_weight": 7.400385888705678e-06
+      "objective_weight": 8.743521356145985e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0475",
@@ -12011,7 +12122,7 @@
       "habitat_component_raw": 6.867273054983744e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.867273055081774e-05,
-      "objective_weight": 2.0601819165245325e-05
+      "objective_weight": 2.434095310106662e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0476",
@@ -12036,7 +12147,7 @@
       "habitat_component_raw": 0.00010327297270339462,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00010327297270486884,
-      "objective_weight": 3.098189181146066e-05
+      "objective_weight": 3.660496044141953e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0477",
@@ -12061,7 +12172,7 @@
       "habitat_component_raw": 2.912223323796286e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.9122233238378576e-05,
-      "objective_weight": 8.736669971513574e-06
+      "objective_weight": 1.0322334757449883e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0478",
@@ -12086,7 +12197,7 @@
       "habitat_component_raw": 2.3199300507794558e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.3199300508125727e-05,
-      "objective_weight": 6.959790152437719e-06
+      "objective_weight": 8.222959552015587e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0479",
@@ -12111,7 +12222,7 @@
       "habitat_component_raw": 7.442122951991101e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.4421229520973365e-06,
-      "objective_weight": 2.2326368856292014e-06
+      "objective_weight": 2.6378500504697882e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0480",
@@ -12136,7 +12247,7 @@
       "habitat_component_raw": 9.042700053616813e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.042700053745896e-07,
-      "objective_weight": 2.7128100161237693e-07
+      "objective_weight": 3.205172360990683e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0481",
@@ -12161,7 +12272,7 @@
       "habitat_component_raw": 9.060693062633875e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.060693062763216e-05,
-      "objective_weight": 2.7182079188289652e-05
+      "objective_weight": 3.211549957820236e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0482",
@@ -12186,7 +12297,7 @@
       "habitat_component_raw": 1.1688779346606302e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.1688779346773159e-06,
-      "objective_weight": 3.506633804031948e-07
+      "objective_weight": 4.1430714580073394e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0483",
@@ -12211,7 +12322,7 @@
       "habitat_component_raw": 0.00015771276645115917,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00015771276645341052,
-      "objective_weight": 4.7313829936023164e-05
+      "objective_weight": 5.5901069039932414e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0484",
@@ -12236,7 +12347,7 @@
       "habitat_component_raw": 0.00019185761088467008,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00019185761088740883,
-      "objective_weight": 5.755728326622266e-05
+      "objective_weight": 6.800366129663818e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0485",
@@ -12261,7 +12372,7 @@
       "habitat_component_raw": 1.4140224112985646e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.4140224113187497e-07,
-      "objective_weight": 4.24206723395625e-08
+      "objective_weight": 5.011982619840209e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0486",
@@ -12286,7 +12397,7 @@
       "habitat_component_raw": 3.415791193970674e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.4157911940194343e-06,
-      "objective_weight": 1.0247373582058304e-06
+      "objective_weight": 1.2107224015963255e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0487",
@@ -12311,7 +12422,7 @@
       "habitat_component_raw": 0.00023171760968574066,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0002317176096890484,
-      "objective_weight": 6.951528290671454e-05
+      "objective_weight": 8.213198200934541e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0488",
@@ -12336,7 +12447,7 @@
       "habitat_component_raw": 0.00011890544169729116,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00011890544169898852,
-      "objective_weight": 3.567163250969656e-05
+      "objective_weight": 4.214586716797191e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0489",
@@ -12361,7 +12472,7 @@
       "habitat_component_raw": 6.530471616190266e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.530471616283488e-05,
-      "objective_weight": 1.959141484885047e-05
+      "objective_weight": 2.314716512141227e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0490",
@@ -12386,7 +12497,7 @@
       "habitat_component_raw": 0.00015357934365010912,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00015357934365230145,
-      "objective_weight": 4.6073803095690444e-05
+      "objective_weight": 5.443598312094129e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0491",
@@ -12411,7 +12522,7 @@
       "habitat_component_raw": 5.336310177086788e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.3363101771629634e-05,
-      "objective_weight": 1.6008930531488892e-05
+      "objective_weight": 1.8914476636246336e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0492",
@@ -12436,7 +12547,7 @@
       "habitat_component_raw": 1.2469404886532686e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.2469404886710685e-05,
-      "objective_weight": 3.740821466013206e-06
+      "objective_weight": 4.419763086616068e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0493",
@@ -12461,7 +12572,7 @@
       "habitat_component_raw": 1.2861445859883567e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.2861445860067163e-05,
-      "objective_weight": 3.858433758020149e-06
+      "objective_weight": 4.558721460189184e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0494",
@@ -12486,7 +12597,7 @@
       "habitat_component_raw": 0.0001518178512871674,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0001518178512893346,
-      "objective_weight": 4.554535538680038e-05
+      "objective_weight": 5.38116246215638e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0495",
@@ -12511,7 +12622,7 @@
       "habitat_component_raw": 0.00012315844573422338,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00012315844573598147,
-      "objective_weight": 3.6947533720794445e-05
+      "objective_weight": 4.365333848843275e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0496",
@@ -12536,7 +12647,7 @@
       "habitat_component_raw": 3.9010586210735635e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.901058621129251e-05,
-      "objective_weight": 1.1703175863387754e-05
+      "objective_weight": 1.3827247610483724e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0497",
@@ -12561,7 +12672,7 @@
       "habitat_component_raw": 0.00038176799637564354,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0003817679963810932,
-      "objective_weight": 0.00011453039891432798
+      "objective_weight": 0.00013531713128144587
     },
     {
       "target_id": "UNSURVEYED_OTHER_0498",
@@ -12586,7 +12697,7 @@
       "habitat_component_raw": 7.832831583716194e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.832831583828006e-05,
-      "objective_weight": 2.349849475148402e-05
+      "objective_weight": 2.7763361774208723e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0499",
@@ -12611,7 +12722,7 @@
       "habitat_component_raw": 0.00020100010116152448,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00020100010116439374,
-      "objective_weight": 6.030003034931813e-05
+      "objective_weight": 7.124420416240309e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0500",
@@ -12636,7 +12747,7 @@
       "habitat_component_raw": 6.349788642142275e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.349788642232918e-05,
-      "objective_weight": 1.9049365926698756e-05
+      "objective_weight": 2.2506736852105046e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0501",
@@ -12661,7 +12772,7 @@
       "habitat_component_raw": 4.8342397684511596e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.834239768520168e-05,
-      "objective_weight": 1.4502719305560505e-05
+      "objective_weight": 1.713489510917072e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0502",
@@ -12686,7 +12797,7 @@
       "habitat_component_raw": 1.8375195445484254e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.837519544574656e-07,
-      "objective_weight": 5.5125586337239683e-08
+      "objective_weight": 6.513062273486721e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0503",
@@ -12711,7 +12822,7 @@
       "habitat_component_raw": 0.0002498444248782326,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00024984442488179906,
-      "objective_weight": 7.495332746453972e-05
+      "objective_weight": 8.855700625025484e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0504",
@@ -12736,7 +12847,7 @@
       "habitat_component_raw": 3.48147370574649e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.481473705796188e-05,
-      "objective_weight": 1.0444421117388565e-05
+      "objective_weight": 1.2340034758436227e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0505",
@@ -12761,7 +12872,7 @@
       "habitat_component_raw": 0.0001733567936261691,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00017335679362864376,
-      "objective_weight": 5.200703808859314e-05
+      "objective_weight": 6.144607254758207e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0506",
@@ -12786,7 +12897,7 @@
       "habitat_component_raw": 9.91725565555753e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.917255655699098e-06,
-      "objective_weight": 2.97517669670973e-06
+      "objective_weight": 3.5151573684408414e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0507",
@@ -12811,7 +12922,7 @@
       "habitat_component_raw": 2.866363014947786e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.866363014988703e-08,
-      "objective_weight": 8.59908904496611e-09
+      "objective_weight": 1.0159783535451851e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0508",
@@ -12836,7 +12947,7 @@
       "habitat_component_raw": 0.00039106038403987584,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0003910603840454582,
-      "objective_weight": 0.00011731811521363748
+      "objective_weight": 0.00013861080506609113
     },
     {
       "target_id": "UNSURVEYED_OTHER_0509",
@@ -12861,7 +12972,7 @@
       "habitat_component_raw": 2.775298924485235e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.775298924524852e-07,
-      "objective_weight": 8.325896773574558e-08
+      "objective_weight": 9.837008143037302e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0510",
@@ -12886,7 +12997,7 @@
       "habitat_component_raw": 0.00015112242750481533,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0001511224275069726,
-      "objective_weight": 4.533672825209178e-05
+      "objective_weight": 5.356513263652013e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0511",
@@ -12911,7 +13022,7 @@
       "habitat_component_raw": 8.339828775799178e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.339828775918229e-07,
-      "objective_weight": 2.501948632775469e-07
+      "objective_weight": 2.956040621616642e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0512",
@@ -12936,7 +13047,7 @@
       "habitat_component_raw": 3.671156595613662e-09,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.6711565956660675e-09,
-      "objective_weight": 1.1013469786998205e-09
+      "objective_weight": 1.3012363103234006e-09
     },
     {
       "target_id": "UNSURVEYED_OTHER_0513",
@@ -12961,7 +13072,7 @@
       "habitat_component_raw": 4.579921435482444e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.5799214355478215e-08,
-      "objective_weight": 1.3739764306643467e-08
+      "objective_weight": 1.6233467342141642e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0514",
@@ -12986,7 +13097,7 @@
       "habitat_component_raw": 2.8325544203889254e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.8325544204293598e-06,
-      "objective_weight": 8.49766326128808e-07
+      "objective_weight": 1.0039949445853073e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0515",
@@ -13011,7 +13122,7 @@
       "habitat_component_raw": 8.03771630071591e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.037716300830647e-05,
-      "objective_weight": 2.4113148902491944e-05
+      "objective_weight": 2.8489572782229756e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0516",
@@ -13036,7 +13147,7 @@
       "habitat_component_raw": 9.31957943819016e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.319579438323196e-08,
-      "objective_weight": 2.7958738314969593e-08
+      "objective_weight": 3.303311870816362e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0517",
@@ -13061,7 +13172,7 @@
       "habitat_component_raw": 3.2231152975637445e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.223115297609754e-07,
-      "objective_weight": 9.669345892829264e-08
+      "objective_weight": 1.1424287001431198e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0518",
@@ -13086,7 +13197,7 @@
       "habitat_component_raw": 1.5851135257998894e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.5851135258225167e-05,
-      "objective_weight": 4.7553405774675505e-06
+      "objective_weight": 5.6184126774106835e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0519",
@@ -13111,7 +13222,7 @@
       "habitat_component_raw": 6.73175591734142e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.731755917437516e-05,
-      "objective_weight": 2.019526775231255e-05
+      "objective_weight": 2.3860614505916586e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0520",
@@ -13136,7 +13247,7 @@
       "habitat_component_raw": 8.857618315121356e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.857618315247798e-06,
-      "objective_weight": 2.6572854945743396e-06
+      "objective_weight": 3.1395703981662636e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0521",
@@ -13161,7 +13272,7 @@
       "habitat_component_raw": 7.991964796753526e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.991964796867611e-08,
-      "objective_weight": 2.3975894390602836e-08
+      "objective_weight": 2.8327407217625704e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0522",
@@ -13186,7 +13297,7 @@
       "habitat_component_raw": 2.710141178637668e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.710141178676355e-08,
-      "objective_weight": 8.130423536029066e-09
+      "objective_weight": 9.606057426042607e-09
     },
     {
       "target_id": "UNSURVEYED_OTHER_0523",
@@ -13211,7 +13322,7 @@
       "habitat_component_raw": 4.679259165674205e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.679259165741001e-08,
-      "objective_weight": 1.4037777497223006e-08
+      "objective_weight": 1.658556853462434e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0524",
@@ -13236,7 +13347,7 @@
       "habitat_component_raw": 1.1669264035030548e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.1669264035197126e-08,
-      "objective_weight": 3.500779210559138e-09
+      "objective_weight": 4.136154283169309e-09
     },
     {
       "target_id": "UNSURVEYED_OTHER_0525",
@@ -13261,7 +13372,7 @@
       "habitat_component_raw": 1.4045167193208216e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.4045167193408709e-06,
-      "objective_weight": 4.213550158022613e-07
+      "objective_weight": 4.978289827843899e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0526",
@@ -13286,7 +13397,7 @@
       "habitat_component_raw": 3.841058636234737e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.841058636289568e-06,
-      "objective_weight": 1.1523175908868706e-06
+      "objective_weight": 1.3614578505100373e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0527",
@@ -13311,7 +13422,7 @@
       "habitat_component_raw": 2.978500818528873e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.978500818571391e-05,
-      "objective_weight": 8.935502455714175e-06
+      "objective_weight": 1.0557254408674661e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0528",
@@ -13336,7 +13447,7 @@
       "habitat_component_raw": 1.2458569765644517e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.2458569765822362e-05,
-      "objective_weight": 3.7375709297467094e-06
+      "objective_weight": 4.415922593202283e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0529",
@@ -13361,7 +13472,7 @@
       "habitat_component_raw": 1.6369003608057174e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.636900360829084e-05,
-      "objective_weight": 4.910701082487253e-06
+      "objective_weight": 5.801970388315266e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0530",
@@ -13386,7 +13497,7 @@
       "habitat_component_raw": 1.3906083265051469e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.3906083265249978e-05,
-      "objective_weight": 4.171824979574994e-06
+      "objective_weight": 4.928991724429785e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0531",
@@ -13411,7 +13522,7 @@
       "habitat_component_raw": 0.00018290517665874305,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.000182905176661354,
-      "objective_weight": 5.4871552998406206e-05
+      "objective_weight": 6.483048353176789e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0532",
@@ -13436,7 +13547,7 @@
       "habitat_component_raw": 5.957702815066816e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.9577028151518615e-05,
-      "objective_weight": 1.7873108445455588e-05
+      "objective_weight": 2.1116994132975717e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0533",
@@ -13461,7 +13572,7 @@
       "habitat_component_raw": 1.529419730511363e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.5294197305331953e-07,
-      "objective_weight": 4.588259191599587e-08
+      "objective_weight": 5.421006800538698e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0534",
@@ -13486,7 +13597,7 @@
       "habitat_component_raw": 1.7813306041387695e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.7813306041641978e-06,
-      "objective_weight": 5.343991812492595e-07
+      "objective_weight": 6.313901361672169e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0535",
@@ -13511,7 +13622,7 @@
       "habitat_component_raw": 1.6014948108158103e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.6014948108386715e-06,
-      "objective_weight": 4.804484432516016e-07
+      "objective_weight": 5.67647591257189e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0536",
@@ -13536,7 +13647,7 @@
       "habitat_component_raw": 4.371957668071683e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.3719576681340924e-05,
-      "objective_weight": 1.311587300440228e-05
+      "objective_weight": 1.5496342683090433e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0537",
@@ -13561,7 +13672,7 @@
       "habitat_component_raw": 6.29938172957569e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.299381729665613e-05,
-      "objective_weight": 1.8898145188996843e-05
+      "objective_weight": 2.232807025694725e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0538",
@@ -13586,7 +13697,7 @@
       "habitat_component_raw": 5.88844541767475e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.888445417758807e-05,
-      "objective_weight": 1.7665336253276424e-05
+      "objective_weight": 2.0871512258536662e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0539",
@@ -13611,7 +13722,7 @@
       "habitat_component_raw": 9.813100944785512e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.813100944925594e-05,
-      "objective_weight": 2.9439302834776787e-05
+      "objective_weight": 3.478239877176722e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0540",
@@ -13636,7 +13747,7 @@
       "habitat_component_raw": 0.00017523718985366135,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00017523718985616284,
-      "objective_weight": 5.257115695684886e-05
+      "objective_weight": 6.211257635511007e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0541",
@@ -13661,7 +13772,7 @@
       "habitat_component_raw": 1.0129623503890037e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.0129623504034636e-05,
-      "objective_weight": 3.038887051210391e-06
+      "objective_weight": 3.5904308546565165e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0542",
@@ -13686,7 +13797,7 @@
       "habitat_component_raw": 2.4689113742744355e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.468911374309679e-08,
-      "objective_weight": 7.406734122929038e-09
+      "objective_weight": 8.751021765224717e-09
     },
     {
       "target_id": "UNSURVEYED_OTHER_0543",
@@ -13711,7 +13822,7 @@
       "habitat_component_raw": 1.2829770685222228e-10,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.2829770685405371e-10,
-      "objective_weight": 3.8489312056216117e-11
+      "objective_weight": 4.5474942389220734e-11
     },
     {
       "target_id": "UNSURVEYED_OTHER_0544",
@@ -13736,7 +13847,7 @@
       "habitat_component_raw": 5.765492523878501e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.765492523960803e-05,
-      "objective_weight": 1.7296477571882412e-05
+      "objective_weight": 2.043570744961575e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0545",
@@ -13761,7 +13872,7 @@
       "habitat_component_raw": 5.997879334854942e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.9978793349405614e-05,
-      "objective_weight": 1.7993638004821688e-05
+      "objective_weight": 2.1259399244305484e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0546",
@@ -13786,7 +13897,7 @@
       "habitat_component_raw": 0.00016382384909495692,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0001638238490972955,
-      "objective_weight": 4.914715472918865e-05
+      "objective_weight": 5.806713371856744e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0547",
@@ -13811,7 +13922,7 @@
       "habitat_component_raw": 7.208736115352163e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.208736115455067e-05,
-      "objective_weight": 2.1626208346365204e-05
+      "objective_weight": 2.5551264133062427e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0548",
@@ -13836,7 +13947,7 @@
       "habitat_component_raw": 0.0001939648753194045,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00019396487532217333,
-      "objective_weight": 5.8189462596652006e-05
+      "objective_weight": 6.875057822227567e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0549",
@@ -13861,7 +13972,7 @@
       "habitat_component_raw": 1.272686837101547e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.2726868371197145e-05,
-      "objective_weight": 3.818060511359144e-06
+      "objective_weight": 4.5110206578653225e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0550",
@@ -13886,7 +13997,7 @@
       "habitat_component_raw": 6.297858707977242e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.297858708067143e-07,
-      "objective_weight": 1.889357612420143e-07
+      "objective_weight": 2.232267192823614e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0551",
@@ -13911,7 +14022,7 @@
       "habitat_component_raw": 0.00016383010675522842,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00016383010675756707,
-      "objective_weight": 4.9149032027270125e-05
+      "objective_weight": 5.8069351737480785e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0552",
@@ -13936,7 +14047,7 @@
       "habitat_component_raw": 1.544108713472697e-09,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.544108713494739e-09,
-      "objective_weight": 4.632326140484218e-10
+      "objective_weight": 5.473071694784416e-10
     },
     {
       "target_id": "UNSURVEYED_OTHER_0553",
@@ -13961,7 +14072,7 @@
       "habitat_component_raw": 1.9551206733588635e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.9551206733867726e-05,
-      "objective_weight": 5.8653620201603184e-06
+      "objective_weight": 6.929897826418457e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0554",
@@ -13986,7 +14097,7 @@
       "habitat_component_raw": 8.852762549061988e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.85276254918836e-05,
-      "objective_weight": 2.6558287647565085e-05
+      "objective_weight": 3.1378492786916996e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0555",
@@ -14011,7 +14122,7 @@
       "habitat_component_raw": 0.00028717788239615143,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00028717788240025085,
-      "objective_weight": 8.615336472007527e-05
+      "objective_weight": 0.00010178979794600426
     },
     {
       "target_id": "UNSURVEYED_OTHER_0556",
@@ -14036,7 +14147,7 @@
       "habitat_component_raw": 0.00016383681812836838,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00016383681813070714,
-      "objective_weight": 4.915104543921215e-05
+      "objective_weight": 5.807173057428451e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0557",
@@ -14061,7 +14172,7 @@
       "habitat_component_raw": 0.00022793350995743139,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00022793350996068513,
-      "objective_weight": 6.838005298820554e-05
+      "objective_weight": 8.079071316392374e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0558",
@@ -14086,7 +14197,7 @@
       "habitat_component_raw": 0.0002051504191001025,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.000205150419103031,
-      "objective_weight": 6.154512573090931e-05
+      "objective_weight": 7.271527853921308e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0559",
@@ -14111,7 +14222,7 @@
       "habitat_component_raw": 1.7341204077908173e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.7341204078155717e-05,
-      "objective_weight": 5.202361223446716e-06
+      "objective_weight": 6.146565482350509e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0560",
@@ -14136,7 +14247,7 @@
       "habitat_component_raw": 0.00026439111953099323,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0002643911195347674,
-      "objective_weight": 7.931733586043023e-05
+      "objective_weight": 9.37130617832647e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0561",
@@ -14161,7 +14272,7 @@
       "habitat_component_raw": 0.00011593997719053266,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0001159399771921877,
-      "objective_weight": 3.478199315765631e-05
+      "objective_weight": 4.109476242954154e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0562",
@@ -14186,7 +14297,7 @@
       "habitat_component_raw": 6.869679526101657e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.869679526199721e-08,
-      "objective_weight": 2.0609038578599165e-08
+      "objective_weight": 2.434948280421825e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0563",
@@ -14211,7 +14322,7 @@
       "habitat_component_raw": 5.9746116654049245e-09,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.974611665490212e-09,
-      "objective_weight": 1.7923834996470638e-09
+      "objective_weight": 2.117692731602778e-09
     },
     {
       "target_id": "UNSURVEYED_OTHER_0564",
@@ -14236,7 +14347,7 @@
       "habitat_component_raw": 1.0225029511262185e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.0225029511408145e-06,
-      "objective_weight": 3.067508853422444e-07
+      "objective_weight": 3.62424738026154e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0565",
@@ -14261,7 +14372,7 @@
       "habitat_component_raw": 1.109580324259783e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.1095803242756222e-05,
-      "objective_weight": 3.328740972826867e-06
+      "objective_weight": 3.932891908975884e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0566",
@@ -14286,7 +14397,7 @@
       "habitat_component_raw": 5.5313976137761395e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.5313976138551e-06,
-      "objective_weight": 1.6594192841565302e-06
+      "objective_weight": 1.9605961321512583e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0567",
@@ -14311,7 +14422,7 @@
       "habitat_component_raw": 6.307404884602067e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.307404884692104e-05,
-      "objective_weight": 1.8922214654076316e-05
+      "objective_weight": 2.2356508217496655e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0568",
@@ -14336,7 +14447,7 @@
       "habitat_component_raw": 2.154464587502326e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.154464587533081e-08,
-      "objective_weight": 6.463393762599244e-09
+      "objective_weight": 7.636469536367825e-09
     },
     {
       "target_id": "UNSURVEYED_OTHER_0569",
@@ -14361,7 +14472,7 @@
       "habitat_component_raw": 0.0002696013838151269,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0002696013838189754,
-      "objective_weight": 8.088041514569264e-05
+      "objective_weight": 9.555983265678082e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0570",
@@ -14386,7 +14497,7 @@
       "habitat_component_raw": 2.27746791429376e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.2774679143262706e-08,
-      "objective_weight": 6.832403742978813e-09
+      "objective_weight": 8.07245310433337e-09
     },
     {
       "target_id": "UNSURVEYED_OTHER_0571",
@@ -14411,7 +14522,7 @@
       "habitat_component_raw": 0.00012475473373434426,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.0001247547337361251,
-      "objective_weight": 3.742642012083754e-05
+      "objective_weight": 4.4219140532936265e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0572",
@@ -14436,7 +14547,7 @@
       "habitat_component_raw": 1.5772056469498158e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.5772056469723304e-06,
-      "objective_weight": 4.731616940916992e-07
+      "objective_weight": 5.590383311652632e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0573",
@@ -14461,7 +14572,7 @@
       "habitat_component_raw": 9.115653642421418e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.115653642551543e-07,
-      "objective_weight": 2.7346960927654634e-07
+      "objective_weight": 3.2310306583006855e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0574",
@@ -14486,7 +14597,7 @@
       "habitat_component_raw": 0.00019011807952563713,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00019011807952835105,
-      "objective_weight": 5.7035423858505327e-05
+      "objective_weight": 6.738708684431861e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0575",
@@ -14511,7 +14622,7 @@
       "habitat_component_raw": 9.584428705154379e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 9.584428705291196e-05,
-      "objective_weight": 2.8753286115873592e-05
+      "objective_weight": 3.397187322315257e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0576",
@@ -14536,7 +14647,7 @@
       "habitat_component_raw": 2.2013648485954088e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.201364848626833e-05,
-      "objective_weight": 6.6040945458805e-06
+      "objective_weight": 7.802706854522228e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0577",
@@ -14561,7 +14672,7 @@
       "habitat_component_raw": 1.897575455734672e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.8975754557617598e-05,
-      "objective_weight": 5.69272636728528e-06
+      "objective_weight": 6.725929609024715e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0578",
@@ -14586,7 +14697,7 @@
       "habitat_component_raw": 0.00011062762458054693,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00011062762458212613,
-      "objective_weight": 3.318828737463784e-05
+      "objective_weight": 3.9211806492000225e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0579",
@@ -14611,7 +14722,7 @@
       "habitat_component_raw": 4.4844558682280966e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.484455868292112e-05,
-      "objective_weight": 1.3453367604876338e-05
+      "objective_weight": 1.5895090976923663e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0580",
@@ -14636,7 +14747,7 @@
       "habitat_component_raw": 6.080556714785319e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 6.080556714872118e-05,
-      "objective_weight": 1.8241670144616357e-05
+      "objective_weight": 2.1552448058775425e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0581",
@@ -14661,7 +14772,7 @@
       "habitat_component_raw": 7.950707714779505e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.950707714893001e-05,
-      "objective_weight": 2.3852123144679005e-05
+      "objective_weight": 2.8181172068771717e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0582",
@@ -14686,7 +14797,7 @@
       "habitat_component_raw": 7.193646842352604e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.193646842455293e-05,
-      "objective_weight": 2.1580940527365882e-05
+      "objective_weight": 2.549778041638614e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0583",
@@ -14711,7 +14822,7 @@
       "habitat_component_raw": 7.923507001963532e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.92350700207664e-05,
-      "objective_weight": 2.3770521006229924e-05
+      "objective_weight": 2.8084759523403556e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0584",
@@ -14736,7 +14847,7 @@
       "habitat_component_raw": 2.9875781108873936e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.987578110930041e-05,
-      "objective_weight": 8.962734332790125e-06
+      "objective_weight": 1.0589428744224502e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0585",
@@ -14761,7 +14872,7 @@
       "habitat_component_raw": 2.6188596742863844e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.6188596743237683e-05,
-      "objective_weight": 7.856579022971306e-06
+      "objective_weight": 9.28251141314642e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0586",
@@ -14786,7 +14897,7 @@
       "habitat_component_raw": 8.125794748435215e-08,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.125794748551209e-08,
-      "objective_weight": 2.437738424565363e-08
+      "objective_weight": 2.880176560578356e-08
     },
     {
       "target_id": "UNSURVEYED_OTHER_0587",
@@ -14811,7 +14922,7 @@
       "habitat_component_raw": 3.159673246358722e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.159673246403826e-05,
-      "objective_weight": 9.47901973921148e-06
+      "objective_weight": 1.1199417540052167e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0588",
@@ -14836,7 +14947,7 @@
       "habitat_component_raw": 2.693937616887662e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.6939376169261177e-06,
-      "objective_weight": 8.081812850778355e-07
+      "objective_weight": 9.54862412850671e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0589",
@@ -14861,7 +14972,7 @@
       "habitat_component_raw": 5.20301093171671e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 5.203010931790983e-05,
-      "objective_weight": 1.560903279537295e-05
+      "objective_weight": 1.8441999329172326e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0590",
@@ -14886,7 +14997,7 @@
       "habitat_component_raw": 3.6680032257601096e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.6680032258124702e-06,
-      "objective_weight": 1.1004009677437412e-06
+      "objective_weight": 1.3001186027981418e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0591",
@@ -14911,7 +15022,7 @@
       "habitat_component_raw": 8.299940102987742e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 8.299940103106223e-06,
-      "objective_weight": 2.4899820309318672e-06
+      "objective_weight": 2.941902137441147e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0592",
@@ -14936,7 +15047,7 @@
       "habitat_component_raw": 0.0001337074892850765,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00013370748928698517,
-      "objective_weight": 4.011224678609556e-05
+      "objective_weight": 4.739243219093345e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0593",
@@ -14961,7 +15072,7 @@
       "habitat_component_raw": 4.6675718100753716e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 4.667571810142001e-06,
-      "objective_weight": 1.4002715430426004e-06
+      "objective_weight": 1.6544142866498294e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0594",
@@ -14986,7 +15097,7 @@
       "habitat_component_raw": 2.0586251440570624e-05,
       "animal_component_share": 0.0,
       "habitat_component_share": 2.058625144086449e-05,
-      "objective_weight": 6.175875432259348e-06
+      "objective_weight": 7.296767972230876e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0595",
@@ -15011,7 +15122,7 @@
       "habitat_component_raw": 0.00016859065456562835,
       "animal_component_share": 0.0,
       "habitat_component_share": 0.00016859065456803498,
-      "objective_weight": 5.0577196370410506e-05
+      "objective_weight": 5.97567212371432e-05
     },
     {
       "target_id": "UNSURVEYED_OTHER_0596",
@@ -15036,7 +15147,7 @@
       "habitat_component_raw": 3.108736291545524e-06,
       "animal_component_share": 0.0,
       "habitat_component_share": 3.108736291589901e-06,
-      "objective_weight": 9.326208874769704e-07
+      "objective_weight": 1.1018872217579601e-06
     },
     {
       "target_id": "UNSURVEYED_OTHER_0597",
@@ -15061,7 +15172,7 @@
       "habitat_component_raw": 7.762785828872945e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 7.762785828983759e-07,
-      "objective_weight": 2.328835748695128e-07
+      "objective_weight": 2.7515085577832497e-07
     },
     {
       "target_id": "UNSURVEYED_OTHER_0598",
@@ -15086,7 +15197,7 @@
       "habitat_component_raw": 1.5090522631488422e-07,
       "animal_component_share": 0.0,
       "habitat_component_share": 1.5090522631703838e-07,
-      "objective_weight": 4.5271567895111524e-08
+      "objective_weight": 5.348814597914858e-08
     }
   ],
   "region_ids": [

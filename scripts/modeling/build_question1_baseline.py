@@ -141,7 +141,7 @@ def main():
             "species_quality_flags": {s["species_code"]: quality_lookup.get((rid, s["species_code"]),
                                                ["outside_original_survey_unknown_not_zero"]) for s in core},
             "road_entry_index": None, "late_season_fire_exposure_index": None,
-            "rainy_season_anomaly": None, "rhino_priority_distribution": None,
+            "rhino_priority_distribution": None,
             "rare_plant_and_bird_value": None, "combined_demand": None,
             "deployed_protection_score": None,
             "status": "partial_baseline_not_final_priority_or_protection_score",

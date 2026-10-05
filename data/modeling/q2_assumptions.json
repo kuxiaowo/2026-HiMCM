@@ -26,6 +26,6 @@
     "drone_count": 6.0,
     "flight_hours_per_drone_day": 2.0,
     "drone_days_month": 20.0,
-    "animal_management_share": 0.7
+    "management_weight_method": "entropy_information"
   }
 }

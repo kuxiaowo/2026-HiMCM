@@ -216,14 +216,14 @@ def main():
         assert bound["lower"] <= animal_lookup[rid] <= bound["upper"]
     habitat_top = sorted(baseline["regions"], key=lambda r: -r["fuel_habitat_responsibility_share_2021"])
     metric_demo = dict(demands=[9, 1], services=[8.05 / 9, .95], critical_services={"rhino": .95},
-                       safeguards={"water_status_checked": True, "pan_monitoring": True}, scope_complete=True)
+                       safeguards={"priority_habitat_checked": True, "pan_monitoring": True}, scope_complete=True)
     # Entirely constructed examples explaining the definition; no park data.
     examples = {
         "complete_constructed_example": evaluate_protection_standard(**metric_demo),
         "same_score_but_critical_failure": evaluate_protection_standard(
             **dict(metric_demo, services=[8.3 / 9, .7], critical_services={"rhino": .7})),
-        "same_score_but_water_unknown": evaluate_protection_standard(
-            **dict(metric_demo, safeguards={"water_status_checked": None, "pan_monitoring": True})),
+        "same_score_but_habitat_unknown": evaluate_protection_standard(
+            **dict(metric_demo, safeguards={"priority_habitat_checked": None, "pan_monitoring": True})),
     }
     result = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -287,10 +287,10 @@ def main():
               "## 5. 保护判定的纯构造示例", "",
               "假设两目标需求为9/1，第二目标是重点对象；第一/三例服务为0.894444…/0.95，第二例为0.922222…/0.70。",
               "三个例子均为90分，所有值仅为公式演示，不是公园部署结果；每例重点服务与同一目标的总分输入一致。", "",
-              "| 示例 | 重点对象服务 | 水源检查状态 | 判定 |", "|---|---:|---|---|",
+              "| 示例 | 重点对象服务 | 重点生境检查状态 | 判定 |", "|---|---:|---|---|",
               "| 范围完整且底线齐全 | 0.95 | 已达标 | 满足规划标准 |",
               "| 同分但重点对象失守 | 0.70 | 已达标 | 未达标 |",
-              "| 同分但水源信息缺失 | 0.95 | 未知 | 资料不全，不能认证 |", "",
+              "| 同分但重点生境信息缺失 | 0.95 | 未知 | 资料不全，不能认证 |", "",
               "逐班次判定代码见`protection_metrics.py`。80分/重点0.90为团队阈值，尚未验证可达性。", "",
               "## 6. 图表", "",
               "![责任与条件性范围](question1_responsibility_comparison.png)", "",

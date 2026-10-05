@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "targets": 599,
+  "audited": [
+    "independent per-target service capacity",
+    "no service credited without response",
+    "no prohibited drone allocation",
+    "flight endurance",
+    "total person and flight budgets",
+    "regional service floors",
+    "regional totals reconcile",
+    "unknown animal values remain null",
+    "below-response-budget infeasible",
+    "15-region entropy weights independently recalculated",
+    "water supply and precipitation excluded from current scope"
+  ],
+  "not_verified": [
+    "actual incident loss reduction",
+    "real patrol access permissions and working speeds",
+    "full staffing/flight schedule",
+    "current unknown priority species and habitats"
+  ]
+}

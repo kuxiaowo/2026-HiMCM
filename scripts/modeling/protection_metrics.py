@@ -68,7 +68,7 @@ def evaluate_protection_standard(
     """Assess one shift against a declared planning standard.
 
     Call once per required shift. An average score cannot compensate for a
-    failed critical object or a missing water/habitat safeguard. The caller
+    failed critical object or a missing priority-habitat safeguard. The caller
     must explicitly declare whether the modeled scope is complete; omission
     of unknown objects must not certify full-park protection. Thresholds are
     team assumptions, not observed probabilities or official standards.
@@ -140,13 +140,13 @@ def check_metric_semantics() -> dict[str, bool]:
     aligned_coverage_required = pointwise["score"] == 0
     standard_input = dict(demands=[9, 1], services=[8.05 / 9, .95],
                           critical_services={"rhino": .95},
-                          safeguards={"water": True, "pan_monitoring": True},
+                          safeguards={"priority_habitat": True, "pan_monitoring": True},
                           scope_complete=True)
     valid_standard = evaluate_protection_standard(**standard_input)
     failed_critical = evaluate_protection_standard(
         **dict(standard_input, services=[8.3 / 9, .7], critical_services={"rhino": .7}))
     incomplete_standard = evaluate_protection_standard(
-        **dict(standard_input, safeguards={"water": None, "pan_monitoring": True}))
+        **dict(standard_input, safeguards={"priority_habitat": None, "pan_monitoring": True}))
     incomplete_scope = evaluate_protection_standard(
         **dict(standard_input, scope_complete=False))
     missing_demand = evaluate_protection_standard(
