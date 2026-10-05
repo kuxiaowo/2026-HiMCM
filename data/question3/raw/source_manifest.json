@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-10-05T13:48:24.604139+00:00",
+  "sources": [
+    {
+      "path": "data/question3/raw/koedoe_2016.html",
+      "url": "https://koedoe.co.za/index.php/koedoe/article/view/1329/1890",
+      "use": "2016 paper; 2013 field observations; coordinate/type table",
+      "status": "saved",
+      "bytes": 77562,
+      "sha256": "9d9fc99970a4330c3420518586d34061d5ca885182b6abf6194a2bb8063e91cf"
+    },
+    {
+      "path": "data/question3/raw/koedoe_table1.png",
+      "url": "https://koedoe.co.za/index.php/koedoe/article/viewFile/1329/1890/9949",
+      "use": "Table1; BH borehole, A artesian spring, C contact spring",
+      "status": "saved",
+      "bytes": 2256736,
+      "sha256": "5389af96c3f23005f15368296b7368acf1faf9309963e45ef68ecaef12ddda9e"
+    },
+    {
+      "path": "data/question3/raw/fire_strategy_2016.pdf",
+      "url": "https://www.meft.gov.na/files/downloads/66c_Fire%20Management_Strategy%20Final%20Version.pdf",
+      "use": "Etosha section: early dry May-July, late dry August-November; NOT staffing rates",
+      "status": "saved",
+      "bytes": 10438847,
+      "sha256": "34e0f9463cfe93e941f98ecbbeb879c12aa460ee7f94ba884be36a09ee0a9857"
+    },
+    {
+      "path": "data/question3/raw/meft_annual_2021_2022.pdf",
+      "url": "https://www.meft.gov.na/files/downloads/MEFT%20Annual%20Report%202021-2022.pdf",
+      "use": "Named Etosha waterhole solar conversion; supports pump maintenance rather than assumed water trucking",
+      "status": "saved",
+      "bytes": 4232971,
+      "sha256": "617a26d95ec3c5b15f5dbb4b6baaae2ecd4ac9143efbad77c6ed15a95266b793"
+    },
+    {
+      "path": "data/question3/raw/dryad_season_2024.html",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.4qrfj6qm3",
+      "use": "Primary study defines dry May-Oct/wet Nov-Apr; only NE study area, coordinates not used",
+      "status": "saved",
+      "bytes": 62187,
+      "sha256": "1d96ccf205fa39416d3d535cd588562e6e65cd2499357273d9602dbeea2ab806"
+    },
+    {
+      "path": "data/roads/raw/namibia-261003.osm.pbf",
+      "url": "https://download.geofabrik.de/africa/namibia-261003.osm.pbf",
+      "use": "Existing Q2 fixed OSM snapshot; water candidates only, not operational inventory",
+      "status": "existing",
+      "sha256": "a3ee257b82dd4e171b9c03770c19ceeb05006ba7aa03a3333d811a385eb4d35e",
+      "bytes": 54709969
+    }
+  ],
+  "table_transcription": "koedoe_water_points_2013.csv: names, BH/A/C, lat/lon from Table1 image; all 42 rows; 17 BH. No chemical values used."
+}
