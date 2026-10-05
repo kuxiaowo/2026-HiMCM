@@ -1,0 +1,827 @@
+PAGE 1
+ 
+Aerial Survey of Etosha National Park.  
+ 
+Internal Report to the Ministry of Environment 
+and Tourism. 
+ 
+ 
+by  
+ 
+ 
+J.W. Kilian 
+ 
+ 
+September 2015. 
+ 
+
+
+PAGE 2
+CONTENT 
+ 
+1. Introduction 
+ 
+ 
+2. Survey design and methodology 
+ 
+ 
+3. Results 
+ 
+ 
+4. Species distribution maps 
+ 
+ 
+5. Species population trends 
+ 
+ 
+6. Acknowledgements 
+
+PAGE 3
+1. INTRODUCTION. 
+Aerial stratified sample counts have been conducted since 1995 in Etosha. The 2015 
+aerial count of Etosha was conducted from 4 September till 21 September. Including the 
+latter survey, a total of eight comparable multi-species counts have been completed 
+since 1995. 
+The objectives of the 2015 count followed those of the 2012 count and were:  
+1.1 to provide comparable estimates and trend data for key species in support of 
+species and park management, 
+1.2 to obtain a population estimate for elephants in line with the MIKE program and in 
+support of CITES, 
+1.3 to update the population estimate of black rhino in support of the National strategy 
+for the species,  
+1.4 Additionally, the survey provides a comparable population estimate for black rhino 
+with the specialized helicopter block count.  
+1.5 The fixed-wing surveys and helicopter block counts can also be applied to provide 
+various levels of data in support of rhino security in Etosha.  
+1.6 Due to the security situation in Etosha, the Black rhinoceros survey data are not 
+reflected in this report. 
+2. SURVEY DESIGN AND METHODOLOGY. 
+2.1 Sampling.  
+The survey zone was 18 551 km 
+2 in extent, and covered the entire Etosha Park 
+excluding the main pan. Similar to past surveys, the area was stratified (Figure 1) 
+according to the expected distribution of wildlife in the dry season. All areas within 10 
+kilometers of perennial watering points were sampled at an intensity of 40%. The 
+sampling intensity of blocks 8 and 9 was set at 20% due to lower numbers of animals in 
+these areas. For this survey, it was decided to reduce the sampling intensity for block 6 
+to 20% due to low game numbers.  
+At a designed strip width of 500 meters at 300 feet above ground level, the transect 
+spacing was 1.25 km for 40% intensity, 2.5 km for 20% intensity and 5 km for 10% 
+intensity. All transects were orientated in a northerly direction, except block 10 (east- 
+west transects and block 14 (north-west).  
+
+PAGE 4
+Areas surveyed and actual flight paths flown are presented in Figure 2.    
+ 
+2.2 Calibration. 
+Only two observers were used in the entire survey. Calibration of the observers was 
+done at the Okaukuejo airfield according to standardized methodology. The calibrated 
+strip widths were calculated for each observer, and demarcated in the correct positions 
+on each wing strut.  
+2.3 Cockpit management. 
+The plane was equipped with 2 GARMIN 12 XL GPS’s. The recorder uploaded the flight 
+paths onto the GPS’s, which ensured accurate navigation by means of a moving map. 
+The recorder logged and took GPS positions of all animal observations from the left and 
+right observers, recorded  the aircraft height above ground level at regular intervals for 
+each transect, which allowed for the calculation of the average height for each block. 
+One data sheet was used per transect flown.  
+2.4 Data management. 
+At the end of the day’s flying, the raw datasheets were filed, track files and waypoints 
+were downloaded and backups made. OziExplorer software was used to up and 
+download waypoint and route files. ArcGIS was used to plot distribution maps of animal 
+distributions. The data in digital format and the original data files are kept at the Etosha 
+Ecological Institute.  
+2.5 Analysis. 
+Jolly’s Method number 2 for unequel -sized sampling blocks was applied to the data. All 
+data analyses were done in an Excel spreadsheet.  
+2.5 Aircraft and crew. 
+Only one team conducted the survey using a Cessna 182 (V5-ISE), which belong to the 
+Ministry of Environment and Tourism. All crew members were highly experienced in 
+flying and counting procedures, which contributed to a reduction in observer bias.  
+Pilot: Conrad Brain 
+Recorder: Werner Kilian 
+Left Observer: Johannes Kapner 
+Right observer: Markus  
+
+PAGE 5
+Figure 1.  Stratification and intensity of the 2015 aerial survey. 
+ 
+Survey blocks in red were sampled at 40% intensity, in blue at 20% and in light red at 
+10%.  
+Figure 2. Flight paths flown during 2015 aerial survey. 
+ 
+
+
+PAGE 6
+3. RESULTS. 
+Table 1 contains summary data for individual strata. Table 2 provides a summary of 
+population estimates and densities. Population estimates for individual species are 
+shown in Tables 3-13. Species distribution maps are shown in Figures 4 to13. The trend 
+in population estimates from 1995  till 2015 is reflected in Figures 14 to 23. 
+ 
+Table 1. Summarized data per individual stratum for the 2015 Etosha aerial 
+survey. 
+Block  
+Transect Spacing (km) 
+Area (km²) 
+Total Transect Length (km)  
+Average Height (ft agl) 
+Strip Width (m) 
+Block Width (km) 
+Possible Transects 
+Area Searched (km²) 
+Area of Block Searched (%)  
+ENP1  1.25  1728.118  1370.9  306 408 57.6  144  559.3  32.36552  
+ENP2 1.25 259.7612  202.5 307 409 24.3 61 82.9 31.91441  
+ENP3410  5.00  2396.1  467.6  309  412 137.6  344  192.6  8.039623  
+ENP5 1.25 1006.661  787.6 308 411 42.1 105 323.4 32.13053  
+ENP6  2.50  701.0328  280.0  304 405 35.0  88  113.5  16.18945  
+ENP7 1.25 600.6719  460.3 306 408 30.0 75 187.8 31.26431  
+ENP8  2.50  441.8536  158.1  301 401 25.0  63  63.4  14.35778  
+ENP9 2.50 665.4298  244.6 308 411 30.0 75 100.5 15.0984  
+ENP11 5.00 2811.934  541.9 312 416 141.2 353 225.4 8.016515  
+ENP12  1.25  1489.425  1193.3  309 412 46.2  116  491.6  33.00826  
+ENP13 1.25 1427.367  1141.9 318 424 50.0 125 484.2 33.92124  
+ENP14  5.00  1145.296  226.8  311  415 74.5  186  94.0  8.211701  
+ENP15 1.25 2038.162  1628.5 310 413 90.9 227 673.1 33.0258  
+ENP16  1.25  918.1365  728.3  316 421 41.3  103  306.9  33.42232  
+ENP17 1.25 921.1887  733.7 334 406 47.0 129 298.2 32.36725  
+  18551.14  10166.0      4196.9  22.62354  
+ 
+ 
+ 
+
+PAGE 7
+Table 2.Summary of species estimates and densities.   
+Species 
+No seen  
+Lower  
+Estimate  
+Upper 
+Variance 
+95% 
+Confidence 
+Interval  
+CI as % of 
+Population 
+Estimate  
+Density 
+(no/km²) 
+Ab Red Hartebeest 247  424  889  1354  35329  465  0.523  0.048  
+Am  Springbok 2930  7998  10317  12636  1549199.6  2319  0.2248  0.556  
+Ct Blue Wildebeest 1247  2822  4207  5592  417120.1  1385  0.3293  0.227  
+Db Black Rhino 317  1098  1280  1462  7166.7  182  0.1419  0.069  
+Eb Burchell's Zebra 4083  11338  14232  17126  1820077.6  2894  0.2033  0.767  
+Gc Giraffe 878  2638  3172  3706  62010.7  534  0.1684  0.171  
+La Elephant 890  2214  2911  3608  105660.2  697  0.2395  0.157  
+Og Oryx 886  3373  4108  4843  91792.8  735  0.1789  0.221  
+Sc Ostrich 783  2561  3695  4829  279615  1134  0.307  0.199  
+To  Eland  450  937  1321  1705  32017.0  384  29.05%  0.07  
+ 
+Table 3. Population estimate and related statistics for red hartebeest.  
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²)  
+ENP1  50  49  154  260  2720.8  105  68.24%  0.09  
+ENP2  9 9 28  51  123.6  23  81.49%  0.11  
+ENP3410  9 9 112  295  7970.8  183  163.09%  0.05  
+ENP5  50  64  155  247  1988.4  91  58.56%  0.15  
+ENP6  23  23  142  391  13282.2  249  175.23%  0.20  
+ENP7 14  14  22  102  1469.1  79  355.03%  0.04  
+ENP8            0.00  
+ENP9            0.00  
+ENP11            0.00  
+ENP12 7  7 21  44  125.1  19  88.83%  0.01  
+ENP13 14  14  41  86  481.4  44  107.44%  0.03  
+ENP14            0.00  
+ENP15 43  43  130  252  3701.1  122  93.37%  0.06  
+ENP16 28  28  84  204  3466.5  120  143.40%  0.09  
+ENP17            0.00  
+Total  247  424  889  1354  35329.0  465  52.30%  0.05  
+ 
+ 
+ 
+ 
+
+PAGE 8
+Table 4. Population estimate and related statistics for springbok. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate  
+Density 
+(no/km²) 
+ENP1  204  204  630  1080  49531.3  450  71.36%  0.36  
+ENP2  316  456  991  1526  66825.0  535  53.96%  3.82  
+ENP3410  72  72  896  1726  165080.5  831  92.78%  0.37  
+ENP5  222  227  690  1154  51584.1  464  67.18%  0.69  
+ENP6  18  18  11  236  3322.4  125  111.98%  0.02  
+ENP7  78  78  249  525  17692.3  276  110.57%  0.41  
+ENP8  81  81  534  1135  67961.6  601  112.57%  1.21  
+ENP9             0.00  
+ENP11  48  48  599  1316  122815.7  718  119.87%  0.21  
+ENP12 1282  2225  3884  5543  673687.7  1659  42.71%  2.61  
+ENP13 5  5 15  41  165.5  26  176.40%  0.01  
+ENP14            0.00  
+ENP15 256  376  776  1176  40024.4  400  51.58%  0.38  
+ENP16 343  343  1027  2127  290294.1  1100  107.13%  2.32  
+ENP17 5  5 15  45  215.0  30  191.65%  0.02  
+Total 2930  7998  10317  12636  1559199.6  2319  22.48%  0.56  
+ 
+Table 5. Population estimate and related statistics for blue wildebeest. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²)  
+ENP1  296  391  915  1438  67201.5  524  57.29%  0.53  
+ENP2  18  18  56  131  1305.2  75  132.40%  0.22  
+ENP3410  9 9 112  317  10075.2  205  183.36%  0.05  
+ENP5  33  33  103  244  4769.4  141  137.41%  0.10  
+ENP6  94  94  581  1212  85402.5  631  108.72%  0.83  
+ENP7  78  78  249  525  17692.3  276  110.57%  0.41  
+ENP8             0.00  
+ENP9             0.00  
+ENP11 2  2 25  74  581.0  49  197.92%  0.01  
+ENP12 288  288  872  1622  137357.8  749  85.85%  0.59  
+ENP13 15  15  44  122  1438.8  78  176.05%  0.03  
+ENP14            0.00  
+ENP15 298  332  903  1474  81620.1  571  6327.00%  0.44  
+ENP16 116  146  347  548  9676.3  201  57.83%  0.38  
+ENP17            0.00  
+Total 1247  2822  4207  5592  417120.1  1385  32.93%  0.23  
+ 
+
+PAGE 9
+Table 6. Population estimate and related statistics for black rhinoceros. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²) 
+ENP1  53  101  164  226  963.6  63  38.13  0.09  
+ENP2  21  37  66  95  194.5  29  43.18%  0.25  
+ENP3410  11  43  137  231  2112.2  94  68.69%  0.06  
+ENP5  15  17  47  76  206.1  29  62.84%  0.05  
+ENP6  2 2 12  26  61.3  17  136.84%  0.02  
+ENP7  13  19  42  64  120.6  23  54.78%  0.07  
+ENP8  2 2 28  67  293.0  39  141.56%  0.06  
+ENP9            0.00  
+ENP11  1 1 12  32  131.0  23  87.88%  0.004  
+ENP12 50  92  151  211  870.4  60  39.36%  0.101  
+ENP13 46  82  136  189  693.0  53  39.23%  0.095  
+ENP14           0.000  
+ENP15 58  115  176  237  932.7  61  34.75%  0.086  
+ENP16 31  54  93  132  368.5  39  42.23%  0.101  
+ENP17 14  14  43  73  219.8  30  69.21%  0.047  
+Total 317  1098  1280  1462  7166.7  182  14.19%  0.07  
+ 
+Table 7. Population estimate and related statistics for plains zebra. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²) 
+ENP1  985  2311  3043  3776  131352.1  732  24.07%  1.76  
+ENP2  264  535  828  1121  20095.5  293  35.42%  3.19  
+ENP3410  87  87  1082  2322  367837.6  1240  114.61%  0.45  
+ENP5  180  180  560  978  42013.7  419  74.77%  0.56  
+ENP6  46  46  284  754  47332.4  470  165.40%  0.41  
+ENP7  267  267  854  1571  119492.2  717  83.95%  1.42  
+ENP8  81  85  534  983  37972.9  449  84.14%  1.21  
+ENP9 4  4 26  83  641.4  56  213.16%  0.04  
+ENP11 49  49  611  1760  314899.7  1149  188.02%  0.22  
+ENP12 201  280  609  938  26433.9  329  53.96%  0.41  
+ENP13 370  695  1091  1486  38312.7  396  36.27%  0.76  
+ENP14 1  1 12  40  167.3  28  229.61%  0.01  
+ENP15 1083  1838  3282  4726  521547.5  1444  44.00%  1.61  
+ENP16 229  397  686  974  19997.4  289  42.11%  0.75  
+ENP17 236  236  730  1464  131981.3  734  100.60%  0.79  
+Total 4083  11338  14232  17126  1820078  2894  20.33%  0.77  
+ 
+
+PAGE 10
+Table 8. Population estimate and related statistics for Hartmann’s zebra. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²)  
+ENP1  295  346  869  1392  66931.8  523  60.18%  0.50  
+ENP2  2 2 6 14  14.7  8 133.92%  0.02  
+ENP3410               
+ENP5               
+ENP6               
+ENP7               
+ENP8               
+ENP9               
+ENP11               
+ENP12              
+ENP13              
+ENP14              
+ENP15              
+ENP16              
+ENP17               
+Total 297  348  875  1406  66946.5      0.05  
+ 
+Table 9. Population estimate and related statistics for giraffe. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²) 
+ENP1  187  406  578  750  7243.0  172  29.77%  0.33  
+ENP2  33  66  104  141  329.5  38  36.28%  0.40  
+ENP3410  36  218  448  678  12630.1  230  51.33%  0.19  
+ENP5  25  25  78  130  657.9  52  67.37%  0.08  
+ENP6             0.00  
+ENP7  44  44  141  237  2156.8  96  68.44%  0.23  
+ENP8  12  12  79  166  1425.1  87  110.03%  0.18  
+ENP9            0.00  
+ENP11 6  6 75  162  1791.1  87  115.81%  0.03  
+ENP12 86  173  261  348  1864.5  87  33.49%  0.18  
+ENP13 42  74  124  174  610.4  50  40.33%  0.09  
+ENP14 5  5 61  148  1628.1  87  143.26%  0.05  
+ENP15 132  132  400  677  19191.3  277  69.26%  0.20  
+ENP16 120  120  359  521  6282.2  162  45.04%  0.39  
+ENP17 150  275  464  623  6200.7  159  34.31%  0.50  
+Total 878  2638  3172  3706  62010.7  534  16.84%  0.17  
+ 
+
+PAGE 11
+Table 10. Population estimate and related statistics for elephant. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²) 
+ENP1  131  191  405  619  11210.2  214  52.87%  0.23  
+ENP2  29  29  91  161  1153.5  70  77.26%  0.35  
+ENP3410             0.00  
+ENP5  27  27  84  140  765.8  57  67.30%  0.08  
+ENP6  11  11  68  167  2088.0  99  145.27%  0.10  
+ENP7  50  50  160  286  3694.2  126  78.82%  0.27  
+ENP8             0.00  
+ENP9  41  41  271  537  14243.2  266  98.00%  0.41  
+ENP11             0.00  
+ENP12 99  99  300  502  10046.0  203  67.54%  0.20  
+ENP13 22  22  65  159  2158.9  94  144.78%  0.05  
+ENP14 1  1 12  40  161.6  27  225.66%  0.01  
+ENP15 181  287  549  810  17090.8  261  47.67%  0.27  
+ENP16 153  153  458  790  26462.5  332  72.51%  0.50  
+ENP17 145  188  448  709  16585.5  260  58.05%  0.49  
+Total 890  2214  2911  3608  105660.2  697  23.95%  0.16  
+ 
+Table 11. Population estimate and related statistics for gemsbok. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²)  
+ENP1  27  433  640  846  10436.9  206  32.28%  0.37  
+ENP2  104  169  326  484  5801.9  158  48.31%  1.25  
+ENP3410  43  254  535  815  18803.8  280  52.43%  0.22  
+ENP5  107  208  333  458  3750.8  125  37.58%  0.33  
+ENP6  30  79  185  292  2422.8  106  57.38%  0.26  
+ENP7  58  88  186  283  2217.7  98  52.65%  0.31  
+ENP8  39  39  257  524  13419.0  267  103.89%  0.58  
+ENP9  9 9 58  154  1846.7  96  164.67%  0.09  
+ENP11 17  74  212  350  4516.0  138  64.90%  0.08  
+ENP12 184  335  557  780  12163.4  223  39.99%  0.37  
+ENP13 63  97  186  275  1942.4  89  47.96%  0.13  
+ENP14 1  1 12  39  154.6  27  154.60%  0.01  
+ENP15 51  51  155  280  3948.0  126  81.31%  0.08  
+ENP16 78  78  234  395  6228.5  161  69.00%  0.25  
+ENP17 75  102  232  362  4140.3  130  56.07%  0.25  
+Total 886  3373  4108  4843  91792.8  735  17.89%  0.22  
+ 
+
+PAGE 12
+Table 12. Population estimate and related statistics for ostrich. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% 
+Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density 
+(no/km²) 
+ENP1  145  315  448  581  4302.8  133  29.59%  0.26  
+ENP2  36  45  113  181  1075.2  68  60.09%  0.44  
+ENP3410  43  303  535  767  12896.1  232  43.42%  0.22  
+ENP5  83  199  258  318  848.0  59  23.04%  0.26  
+ENP6  8 8 53  112  722.5  59  110.06%  0.08  
+ENP7  66  99  211  323  2933.6  112  53.21%  0.35  
+ENP8  24  24  158  301  3819.7  143  90.07%  0.36  
+ENP9  5 5 33  64  198.4  31  94.84%  0.05  
+ENP11  77  77  961  1951  233686.6  990  103.07%  0.34  
+ENP12 95  135  288  441  5716.7  153  53.09%  0.19  
+ENP13 32  45  94  144  596.1  49  52.31%  0.07  
+ENP14 3  3 37  79  387.9  43  116.54%  0.03  
+ENP15 47  58  142  227  1793.7  85  59.47%  0.07  
+ENP16 41  41  123  212  1910.9  89  72.71%  0.13  
+ENP17 78  78  241  430  8726.8  189  78.27%  0.26  
+Total 783  2561  3695  4829  279615.0  1134  30.70%  0.20  
+ 
+Table 13. Population estimate and related statistics for eland. 
+Block 
+No seen 
+Lower 
+Estimate 
+Upper 
+Variance 
+95% Confidence 
+Interval 
+CI as % of 
+Population 
+Estimate 
+Density (no/km²)  
+ENP1 57  57  168  280  3073.5  112  66.74%  0.10  
+ENP2            0.00  
+ENP3410  3 3 35  77  435.9  43  123.03%  0.01  
+ENP5 70  103  211  319  2810.0  108  51.30%  0.21  
+ENP6 31  31  95  208  3015.3  113  119.32%  0.13  
+ENP7            0.00  
+ENP8            0.00  
+ENP9            0.00  
+ENP11            0.00  
+ENP12  3 3 9 23  52.0  15  164.26%  0.01  
+ENP13  10  10  30  70  394.6  40  134.89%  0.02  
+ENP14             0.00  
+ENP15  2 2 6 16  23.4  10  163.85%  0.00  
+ENP16  8 8 24  50  166.9  26  110.13%  0.03  
+ENP17  117  120  350  580  12973.2  230  65.82%  0.38  
+Total  301  778  1103  1428  22944.8  325  29.46%  0.06  
+
+PAGE 13
+4. Species distribution maps. 
+Figure. 3. Spatial distribution of red hartebeest. 
+ 
+Figure 4. Spatial distribution of springbok . 
+ 
+
+
+PAGE 14
+ 
+Figure 5. Spatial distribution of blue wildebeest  
+ 
+Figure 6. Spatial distribution of black rhinoceros.  
+
+
+PAGE 15
+ 
+Figure 7. Spatial distribution of plains zebra.  
+ 
+Figure 8. Spatial distribution of Hartmann’s zebra.  
+
+
+PAGE 16
+ 
+Figure 9. Spatial distribution of giraffe.  
+Figure 10. Spatial distribution of elephant. 
+ 
+ 
+
+
+PAGE 17
+Figure 11. Spatial distribution of gemsbok. 
+ 
+Figure 12. Spatial distribution of ostrich. 
+ 
+ 
+
+
+PAGE 18
+Figure 13. Spatial distribution of eland. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 19
+5. Species population trends 
+Figure 14. Population trend for red hartebeest. 
+ 
+ 
+Figure 15. Population trend for springbok. 
+ 
+ 
+ 
+855 
+449 
+1299 
+1468 
+2024 
+1527 
+1338 
+889 
+0
+500 
+1000 
+1500 
+2000 
+2500 
+3000 
+1995 1998 2000 2002 2004 2005 2012 2015 
+13409 
+7596 
+16643 
+17811 18452 
+15550 
+12267 
+10317 
+5000 
+7000 
+9000 
+11000 
+13000 
+15000 
+17000 
+19000 
+21000 
+23000 
+25000 
+1995 1998 2000 2002 2004 2005 2012 2015 
+
+PAGE 20
+Figure 16. Population trend for blue wildebeest. 
+ 
+ 
+Figure 17. Population trend for black rhinoceros. 
+ 
+ 
+ 
+3081 
+3478 
+4802 4657 
+3840 
+4244 
+2482 
+4207 
+1000 
+2000 
+3000 
+4000 
+5000 
+6000 
+7000 
+1995 1998 2000 2002 2004 2005 2012 2015 
+272 
+189 
+424 
+629 
+498 
+807 
+862 
+1280 
+0
+300 
+600 
+900 
+1200 
+1500 
+1995 1998 2000 2002 2004 2005 2012 2015 
+
+PAGE 21
+Figure 18. Population trend for Burchell’s zebra. 
+ 
+ 
+ 
+Figure 19. Population trend for giraffe. 
+ 
+ 
+ 
+8250 
+16218 
+17906 
+15234 
+12982 
+16174 
+14232 
+5000 
+7000 
+9000 
+11000 
+13000 
+15000 
+17000 
+19000 
+21000 
+23000 
+1998 2000 2002 2004 2005 2012 2015 
+1837 
+1502 
+2740 
+3063 
+3833 
+3143 3293 3172 
+1000 
+1500 
+2000 
+2500 
+3000 
+3500 
+4000 
+4500 
+5000 
+1995 1998 2000 2002 2004 2005 2012 2015 
+
+PAGE 22
+Figure 20. Population trend for elephant. 
+ 
+ 
+ 
+Figure 21. Population trend for gemsbok. 
+ 
+ 
+ 
+1239 
+2201 
+2018 
+2417 
+1871 
+2611 
+2810 2911 
+750 
+1250 
+1750 
+2250 
+2750 
+3250 
+3750 
+4250 
+1995 1998 2000 2002 2004 2005 2012 2015 
+7637 
+3629 
+7827 
+6633 
+5057 
+5690 
+5298 
+4108 
+2000 
+3000 
+4000 
+5000 
+6000 
+7000 
+8000 
+9000 
+10000 
+1995 1998 2000 2002 2004 2005 2012 2015 
+
+PAGE 23
+Figure 22. Population trend for ostrich. 
+ 
+ 
+Figure 23. Population trend for eland. 
+ 
+The population trend shows an apparent decline for red hartebeest, Springbok and 
+gemsbok, an apparent increase in ostrich, and stable estimates for all other species 
+excluding black rhinoceros estimates which are not shown here. Climatically, Etosha is 
+a highly variable environment , where population fluctuations are expected to be the 
+norm.  Attempts to interpret possible population declines or increases should consider 
+1708 
+2265 
+2773 
+3246 
+2250 
+3345 
+1773 
+3695 
+1000 
+1500 
+2000 
+2500 
+3000 
+3500 
+4000 
+4500 
+5000 
+5500 
+1995 1998 2000 2002 2004 2005 2012 2015 
+1090 
+493 
+1186 
+1667 
+1026 1103 
+1757 
+1321 
+0
+500 
+1000 
+1500 
+2000 
+2500 
+3000 
+1995 1998 2000 2002 2004 2005 2012 2015 
+
+PAGE 24
+climatic fluctuations as well as other potential influential factors related to sample 
+counts, including aggregations, visibility of cryptic species and time of day inter alia.  
+6. ACKNOWLEDGEMENTS 
+The survey team is thanked for their outstanding conduct in completing this count in the 
+most professional manner. Wilderness Safaris is thanked for releasing Nad Brain as the 
+pilot for this survey. Under flying conditions that were hazardous at best, Nad Brain did 
+a stirling job as pilot, which again emphasized that there is no replacement for 
+experience.   
+Marthin Kasaona is thanked for his efforts and contribution in fuel management and 
+general logistics.  
+Claudine Cloete is thanked for assistance in entering data.  
+ 
+ 

@@ -1,0 +1,33 @@
+{
+  "audit_date": "2026-10-05",
+  "census_pdf_path": "data/species/raw/etosha_aerial_census_2015.pdf",
+  "census_pdf_sha256": "623796eaf5501a85891b701cb3f005e02533bea3d0b524a566618fd15d11a9a8",
+  "images": [
+    {
+      "pdf_page": 5,
+      "figure": 2,
+      "pdf_xobject": "R35.jpg",
+      "path": "data/regions/raw/source_audit/figure2_flight_paths_2015.jpg",
+      "width": 1125,
+      "height": 627,
+      "bytes": 136456,
+      "sha256": "60999808f60b12bca567946685f14f5f991cb8dabd5c5b96b140b2a0c3f38221"
+    },
+    {
+      "pdf_page": 5,
+      "figure": 1,
+      "pdf_xobject": "R34.jpg",
+      "path": "data/regions/raw/source_audit/figure1_stratification_2015.jpg",
+      "width": 1125,
+      "height": 627,
+      "bytes": 105459,
+      "sha256": "79b4f0f124f7e5b34adf1d236e1672519866e1c2dd329291dc146c0926efe0cb"
+    }
+  ],
+  "aed_map_url": "https://africanelephantdatabase.org/population_submissions/722/map",
+  "aed_map_path": "data/regions/raw/source_audit/aed_2015_map.geojson",
+  "aed_map_sha256": "de80a264c7270667971df02616730f17de6d20f67a998336ab6ee066ba0718b9",
+  "licence_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "declared_crs": null,
+  "assumed_crs_for_audit": "EPSG:4326"
+}

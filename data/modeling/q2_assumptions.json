@@ -1,0 +1,31 @@
+{
+  "status": "team_planning_assumptions_not_park_observations",
+  "parameters": {
+    "grid_km": 10.0,
+    "road_speed_kmh": 30.0,
+    "walking_speed_kmh": 4.0,
+    "entry_decay_hours": 2.0,
+    "drone_speed_kmh": 40.0,
+    "checks_per_month": 8.0,
+    "service_reference_area_km2": 100.0,
+    "team_size": 2.0,
+    "drone_team_size": 2.0,
+    "observation_hours": 0.16666666666666666,
+    "preparation_hours": 0.08333333333333333,
+    "dispatch_hours": 0.16666666666666666,
+    "response_limit_hours": 2.0,
+    "safe_flight_hours": 0.6,
+    "minimum_open_share": 0.6,
+    "minimum_reachable_service": 0.15,
+    "staff_reference": 295,
+    "protection_staff_fraction": 0.2,
+    "effective_hours_month": 120.0,
+    "response_staff_per_site": 2.0,
+    "response_hours_day": 8.0,
+    "days_month": 30.0,
+    "drone_count": 6.0,
+    "flight_hours_per_drone_day": 2.0,
+    "drone_days_month": 20.0,
+    "animal_management_share": 0.7
+  }
+}

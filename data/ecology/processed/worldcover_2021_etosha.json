@@ -1,0 +1,33 @@
+{
+  "created_at_utc": "2026-10-05T06:48:22.810610+00:00",
+  "fingerprint": {
+    "boundary_sha256": "4546c83e2d3b8cfbaaf010daf57b564d120461c5270ea7df998210214aa63241",
+    "source_sha256": {
+      "ESA_WorldCover_10m_2021_v200_S21E012": "d772ba3426c09cf00856d6ef6b781bdc45cbf617635c40c1f607e88e2d455f72",
+      "ESA_WorldCover_10m_2021_v200_S21E015": "7c4ccf1428d1c3142f6364c6cad08e60aac43938a9593b1bdfaf82eeac35c698"
+    },
+    "mask_rule": "pixel centre inside park; outside set to nodata=0"
+  },
+  "file": "data/ecology/processed/worldcover_2021_etosha.tif",
+  "sha256": "1068943a0cf8d0a7910881b2b908f450793c1604d30b8e902731b04eff06f423",
+  "bytes": 10170858,
+  "crs": "EPSG:4326",
+  "transform": [
+    8.333333333333333e-05,
+    0.0,
+    14.353166666666667,
+    0.0,
+    -8.333333333333333e-05,
+    -18.499666666666666
+  ],
+  "width": 33578,
+  "height": 11848,
+  "resolution_degrees": [
+    8.333333333333333e-05,
+    8.333333333333333e-05
+  ],
+  "nominal_resolution_metres": 10,
+  "nodata": 0,
+  "resampling": "none",
+  "boundary_rule": "pixel centre inside park; outside set to nodata=0"
+}

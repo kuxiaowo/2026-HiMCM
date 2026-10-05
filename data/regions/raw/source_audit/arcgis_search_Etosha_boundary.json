@@ -1,0 +1,142 @@
+{
+  "total": 2,
+  "start": 1,
+  "num": 100,
+  "nextStart": -1,
+  "results": [
+    {
+      "id": "ca759ef18b5a4064ae128d24eac149ab",
+      "owner": "BucknellGIS",
+      "created": 1614274897000,
+      "modified": 1614795104000,
+      "guid": null,
+      "name": null,
+      "title": "Protected Area - Etosha National Park",
+      "type": "Feature Service",
+      "typeKeywords": [
+        "ArcGIS Server",
+        "Data",
+        "Feature Access",
+        "Feature Service",
+        "Service",
+        "Singlelayer"
+      ],
+      "description": "<p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit;'>The World Database of Protected Areas (WDPA) is the most comprehensive global database of marine and terrestrial protected areas, updated on a monthly basis, and is one of the key global biodiversity data sets being widely used by scientists, businesses, governments, International secretariats and others to inform planning, policy decisions and management.</span></p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit;'>The WDPA is a joint project between UN Environment and the International Union for Conservation of Nature (IUCN). The compilation and management of the WDPA is carried out by UN Environment World Conservation Monitoring Centre (UNEP-WCMC), in collaboration with governments, non-governmental organisations, academia and industry. There are monthly updates of the data which are made available online through the Protected Planet website where the data is both viewable and downloadable.</span></p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit;'>Data and information on the world's protected areas compiled in the WDPA are used for reporting to the Convention on Biological Diversity on progress towards reaching the Aichi Biodiversity Targets (particularly Target 11), to the UN to track progress towards the 2030 Sustainable Development Goals, to some of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) core indicators, and other international assessments and reports including the Global Biodiversity Outlook, as well as for the publication of the United Nations List of Protected Areas. Every two years, UNEP-WCMC releases the Protected Planet Report on the status of the world's protected areas and recommendations on how to meet international goals and targets.</span></p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit;'>Many platforms are incorporating the WDPA to provide integrated information to diverse users, including businesses and governments, in a range of sectors including mining, oil and gas, and finance. For example, the WDPA is included in the Integrated Biodiversity Assessment Tool, an innovative decision support tool that gives users easy access to up-to-date information that allows them to identify biodiversity risks and opportunities within a project boundary.</span></p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit;'>The reach of the WDPA is further enhanced in services developed by other parties, such as the Global Forest Watch and the Digital Observatory for Protected Areas, which provide decision makers with access to monitoring and alert systems that allow whole landscapes to be managed better. Together, these applications of the WDPA demonstrate the growing value and significance of the Protected Planet initiative.</span></p>",
+      "tags": [
+        "World",
+        "Global",
+        "Protected Areas",
+        "Environment",
+        "ENST263",
+        "ENST263SPRING2021"
+      ],
+      "snippet": "The World Database on Protected Areas (WDPA) is the most comprehensive global database on terrestrial and marine protected areas. Update: February 2020.",
+      "thumbnail": "thumbnail/ago_downloaded.png",
+      "documentation": null,
+      "extent": [
+        [
+          -180,
+          -85.4119
+        ],
+        [
+          180,
+          83.73
+        ]
+      ],
+      "categories": [],
+      "spatialReference": null,
+      "accessInformation": null,
+      "classification": null,
+      "licenseInfo": null,
+      "culture": "en-us",
+      "properties": null,
+      "advancedSettings": null,
+      "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer",
+      "proxyFilter": null,
+      "access": "public",
+      "size": -1,
+      "subInfo": 0,
+      "appCategories": [],
+      "industries": [],
+      "languages": [],
+      "largeThumbnail": null,
+      "banner": null,
+      "screenshots": [],
+      "listed": false,
+      "numComments": 0,
+      "numRatings": 0,
+      "avgRating": 0,
+      "numViews": 989,
+      "scoreCompleteness": 83,
+      "groupDesignations": null,
+      "apiToken1ExpirationDate": -1,
+      "apiToken2ExpirationDate": -1,
+      "lastViewed": 1791176400000,
+      "source": "Bucknell GIS & Spatial Thinking"
+    },
+    {
+      "id": "9b566e2ebf4743f4a9277110b14789b4",
+      "owner": "kdierkes_wwf_community",
+      "created": 1738572920000,
+      "modified": 1738572951000,
+      "guid": null,
+      "name": null,
+      "title": "Etosha_boundaries",
+      "type": "Feature Service",
+      "typeKeywords": [
+        "ArcGIS Server",
+        "Data",
+        "Feature Access",
+        "Feature Service",
+        "Multilayer",
+        "Service",
+        "Hosted Service"
+      ],
+      "description": null,
+      "tags": [],
+      "snippet": "Boundaries of Etosha NP 1907 and 1958",
+      "thumbnail": "thumbnail/ago_downloaded.png",
+      "documentation": null,
+      "extent": [
+        [
+          11.737425826467158,
+          -28.005823568789214
+        ],
+        [
+          23.2979168980927,
+          -16.963489854256956
+        ]
+      ],
+      "categories": [],
+      "spatialReference": "102100",
+      "accessInformation": null,
+      "classification": null,
+      "licenseInfo": null,
+      "culture": "en-us",
+      "properties": null,
+      "advancedSettings": null,
+      "url": "https://services.arcgis.com/6cwZ3ahONdhhnVyL/arcgis/rest/services/Etosha_boundaries/FeatureServer",
+      "proxyFilter": null,
+      "access": "public",
+      "size": -1,
+      "subInfo": 0,
+      "appCategories": [],
+      "industries": [],
+      "languages": [],
+      "largeThumbnail": null,
+      "banner": null,
+      "screenshots": [],
+      "listed": false,
+      "numComments": 0,
+      "numRatings": 0,
+      "avgRating": 0,
+      "numViews": 89,
+      "scoreCompleteness": 45,
+      "groupDesignations": null,
+      "apiToken1ExpirationDate": -1,
+      "apiToken2ExpirationDate": -1,
+      "lastViewed": 1791111600000,
+      "source": "World Wide Fund for Nature Hub Community"
+    }
+  ]
+}

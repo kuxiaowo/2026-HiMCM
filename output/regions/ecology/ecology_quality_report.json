@@ -1,0 +1,132 @@
+{
+  "generated_at_utc": "2026-10-05T06:59:07.583875+00:00",
+  "product": "ESA WorldCover 2021 v200 (2.0.0)",
+  "source_manifest": "data/ecology/raw/worldcover_2021_source_manifest.json",
+  "crop": {
+    "created_at_utc": "2026-10-05T06:48:22.810610+00:00",
+    "fingerprint": {
+      "boundary_sha256": "4546c83e2d3b8cfbaaf010daf57b564d120461c5270ea7df998210214aa63241",
+      "source_sha256": {
+        "ESA_WorldCover_10m_2021_v200_S21E012": "d772ba3426c09cf00856d6ef6b781bdc45cbf617635c40c1f607e88e2d455f72",
+        "ESA_WorldCover_10m_2021_v200_S21E015": "7c4ccf1428d1c3142f6364c6cad08e60aac43938a9593b1bdfaf82eeac35c698"
+      },
+      "mask_rule": "pixel centre inside park; outside set to nodata=0"
+    },
+    "file": "data/ecology/processed/worldcover_2021_etosha.tif",
+    "sha256": "1068943a0cf8d0a7910881b2b908f450793c1604d30b8e902731b04eff06f423",
+    "bytes": 10170858,
+    "crs": "EPSG:4326",
+    "transform": [
+      8.333333333333333e-05,
+      0.0,
+      14.353166666666667,
+      0.0,
+      -8.333333333333333e-05,
+      -18.499666666666666
+    ],
+    "width": 33578,
+    "height": 11848,
+    "resolution_degrees": [
+      8.333333333333333e-05,
+      8.333333333333333e-05
+    ],
+    "nominal_resolution_metres": 10,
+    "nodata": 0,
+    "resampling": "none",
+    "boundary_rule": "pixel centre inside park; outside set to nodata=0"
+  },
+  "area_statistics": {
+    "area_method": "WGS84 ellipsoidal pixel quadrilateral area, calculated per latitude row; each cell assigned by centre point",
+    "vector_area_method": "densify lon/lat straight segments to <=0.001 degree, then pyproj.Geod.geometry_area_perimeter on oriented WGS84 rings",
+    "resampling_for_statistics": "none",
+    "pixel_area_min_m2": 80.7033730968833,
+    "pixel_area_max_m2": 81.17190890014172,
+    "valid_coverage_denominator": "all region-assigned native cells including nodata; independent vector/raster discrepancy reported",
+    "class_share_denominator": "valid classified area, not whole region area",
+    "fuel_proxy_share_denominators": "share_valid uses valid classified area; share_region uses complete assigned footprint including nodata, so use valid_coverage alongside it",
+    "fuel_proxy_definition": "WorldCover classes 10/20/30 (tree/shrub/grass), minus explicit region_type=main_pan",
+    "fuel_proxy_limitation": "Habitat proxy, not measured fuel load or predicted fire probability; wetlands/cropland excluded in baseline",
+    "salt_pan_rule": "Only independently mapped main_pan is excluded explicitly; class 60 is never synonymous with salt pan"
+  },
+  "native_grid_sample_verification": {
+    "method": "fixed-seed native-pixel crop/source equality; exterior cells required nodata=0",
+    "seed": 20261005,
+    "sample_count": 400,
+    "inside_park_samples": 281,
+    "outside_park_samples": 119,
+    "inside_samples_per_source_tile": {
+      "ESA_WorldCover_10m_2021_v200_S21E012": 47,
+      "ESA_WorldCover_10m_2021_v200_S21E015": 234
+    },
+    "mismatch_count": 0
+  },
+  "software": {
+    "python": "3.12.15",
+    "rasterio": "1.5.2",
+    "gdal": "3.12.2",
+    "geopandas": "1.2.0",
+    "pyproj": "3.8.0",
+    "numpy": "2.5.3"
+  },
+  "whole_park": {
+    "region_id": "PARK",
+    "region_type": "whole_park",
+    "region_kind": "whole_park",
+    "survey_id": null,
+    "aed_stratum_id": null,
+    "area_km2": 22906.862607017367,
+    "raster_footprint_area_km2": 22906.914054135883,
+    "raster_vs_vector_area_relative_error": 2.245926008948018e-06,
+    "valid_area_km2": 22906.914054135883,
+    "nodata_area_km2": 0.0,
+    "valid_coverage": 1.0,
+    "valid_pixel_count": 282932920,
+    "wc_10_area_km2": 3.112213161368396,
+    "wc_10_share_valid": 0.00013586348444898804,
+    "wc_20_area_km2": 8954.177979925631,
+    "wc_20_share_valid": 0.3908941186387757,
+    "wc_30_area_km2": 8806.087244416534,
+    "wc_30_share_valid": 0.38442922619804304,
+    "wc_40_area_km2": 16.061446449017843,
+    "wc_40_share_valid": 0.0007011615100602311,
+    "wc_50_area_km2": 4.550151863467094,
+    "wc_50_share_valid": 0.00019863661481043344,
+    "wc_60_area_km2": 5055.444190334444,
+    "wc_60_share_valid": 0.22069512193510302,
+    "wc_70_area_km2": 0.0,
+    "wc_70_share_valid": 0.0,
+    "wc_80_area_km2": 30.250182535933465,
+    "wc_80_share_valid": 0.0013205699582424435,
+    "wc_90_area_km2": 37.230645449489224,
+    "wc_90_share_valid": 0.0016253016605162127,
+    "wc_95_area_km2": 0.0,
+    "wc_95_share_valid": 0.0,
+    "wc_100_area_km2": 0.0,
+    "wc_100_share_valid": 0.0,
+    "fuel_proxy_codes": "10|20|30",
+    "fuel_proxy_before_pan_mask_km2": 17763.377437503532,
+    "fuel_proxy_before_pan_mask_share_valid": 0.7754592083212677,
+    "fuel_proxy_before_pan_mask_share_region": 0.7754592083212677,
+    "main_pan_excluded_from_fuel": false,
+    "fuel_proxy_area_km2": 17763.377437503532,
+    "fuel_proxy_share_valid": 0.7754592083212677,
+    "fuel_proxy_share_region": 0.7754592083212677
+  },
+  "region_count": 17,
+  "region_partition_geometry": {
+    "missing_park_area_km2": 6.437144932306182e-09,
+    "overlap_union_area_km2": 9.67728505611376e-08,
+    "geodesic_sum_minus_union_area_km2": -3.21197509765625e-09,
+    "outside_park_area_km2": 8.32558142215305e-08,
+    "statistics_clip_rule": "all supplied region geometries clipped to park before centre-cell assignment",
+    "area_note": "True geometric overlap uses pairwise intersections; geodesic sum-minus-union can differ because long rings have different segmentation"
+  },
+  "region_class_area_sum_check_km2": 5.093170329928398e-11,
+  "region_assigned_valid_area_fraction": 1.0000000000000022,
+  "limitations": [
+    "2021 class map is historical static habitat proxy",
+    "Centre-rule boundary pixels; area discrepancy reported",
+    "Class 60 is bare / sparse vegetation, not an independent salt-pan map",
+    "Fuel proxy is not observed fuel load"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "generated_at_utc": "2026-10-05T08:07:24.363219+00:00",
+  "status": "passed",
+  "regions": 17,
+  "surveyed_animal_regions": 15,
+  "outside_animal_unknown": 2,
+  "metric_semantic_checks": 11,
+  "threshold_and_invalid_input_checks": true,
+  "current_source_and_script_hashes_match": true,
+  "regional_csv_sums_and_envelopes_valid": true,
+  "constructed_examples_all_90_points": true,
+  "local_markdown_links_checked": 39,
+  "broken_links": [],
+  "image_sizes": {
+    "question1_animal_responsibility_map.png": [
+      2160,
+      1044
+    ],
+    "question1_responsibility_comparison.png": [
+      2340,
+      1404
+    ]
+  },
+  "figures_visually_reviewed": true,
+  "output_sha256": {
+    "question1_analysis.json": "7ba05419a29bc80eadac4b34a0726cb6d6ab2d2803933bad46e5720eb15dd490",
+    "question1_animal_responsibility_map.png": "86df2fe01fad77874628365d577fef9beacbfa4a8d18ccda83d590bca30743d9",
+    "question1_animal_responsibility_map.svg": "22d7becc0fc97ac158a01b585dd5bd73b4ba73f00bf5add93b02623b4d9f31bf",
+    "question1_baseline.json": "c75a33524cad205867402eaccfcad32cd7a85d841ab331c237140bc220074d89",
+    "question1_regional_indicators.csv": "d30ae6d6c5dcfe425e5589932f704634ebea87eb4494dc53098b4d2efb2b7b3d",
+    "question1_responsibility_comparison.png": "b9ed3ddbed7f2cb5e776583204d894e5b6a97cf8c0221ac2b78d0d8d09cf7559",
+    "question1_responsibility_comparison.svg": "1f9304ac2e78e656b359fbb6be893dada0de7e6d6cb02b2f2ce7f1e979c75977",
+    "第一问补充实算.md": "8f3c3ec70522083cac52e153ba9234e596804e0e9f5be217e7e87e73fa809cbb",
+    "第一题基线实算.md": "a9c11468891929b19fbe33745b1f07d630cd32ba2e594e83e119f4d8a13562d3"
+  },
+  "limitation": "Validation of data processing and model semantics, not empirical effectiveness, optimized deployment, or a staffing estimate.",
+  "documentation_revision_validated_at_utc": "2026-10-05T08:26:11.788158+00:00",
+  "first_question_sections": 3,
+  "first_question_characters": 2380,
+  "documentation_sha256": {
+    "docs/paper/question1_protection_definition.md": "2187c18585af272566de1a794fb23f5c112138d21001b28b677e6e3c0e718c58",
+    "docs/modeling_notes/protection_metrics_and_validation.md": "885e8e4b3e76485edc183e7373420785d1da9fb081b65112b671304c553d4fae",
+    "docs/整体建模计划.md": "5ca553c8e5cad548ed76b1c437c620e267919b2f877e11a0bb126d934f711cdf",
+    "docs/q1_q2_q3_model_framework.md": "0271bd52953e6631f656c949f4dcc603cc60ea25dfac22a716cd7ae04bfca84a"
+  }
+}

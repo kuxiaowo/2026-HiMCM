@@ -1,0 +1,171 @@
+{
+  "scope": "September 2022 only; not annual/multiyear or harmful-fire probability",
+  "date_window_doy": [
+    244,
+    273
+  ],
+  "native_pixel_area_km2": 0.21465867329647767,
+  "fuel_proxy": "nearest-resampled WorldCover 10/20/30; main pan masked; no claim of rare plant value",
+  "QA": "land + valid data, nonnegative burn date, exclude shortened mapping",
+  "regions": [
+    {
+      "region_id": "ENP1",
+      "fuel_area_native_sample_km2": 1728.0023200366452,
+      "QA_valid_fuel_area_km2": 1728.0023200366452,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP2",
+      "fuel_area_native_sample_km2": 271.1139043734513,
+      "QA_valid_fuel_area_km2": 271.1139043734513,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP3410",
+      "fuel_area_native_sample_km2": 2332.910461386119,
+      "QA_valid_fuel_area_km2": 2332.910461386119,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP5",
+      "fuel_area_native_sample_km2": 993.0110226695057,
+      "QA_valid_fuel_area_km2": 993.0110226695057,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP6",
+      "fuel_area_native_sample_km2": 724.4730223756121,
+      "QA_valid_fuel_area_km2": 724.4730223756121,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP7",
+      "fuel_area_native_sample_km2": 542.442467420199,
+      "QA_valid_fuel_area_km2": 542.442467420199,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP8",
+      "fuel_area_native_sample_km2": 382.95107316091617,
+      "QA_valid_fuel_area_km2": 382.95107316091617,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP9",
+      "fuel_area_native_sample_km2": 522.2645521303301,
+      "QA_valid_fuel_area_km2": 511.3169597922098,
+      "QA_fuel_coverage_fraction": 0.9790382244143034,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP11",
+      "fuel_area_native_sample_km2": 2551.218332128637,
+      "QA_valid_fuel_area_km2": 2537.0508596910695,
+      "QA_fuel_coverage_fraction": 0.9944467816575515,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP12",
+      "fuel_area_native_sample_km2": 1375.962095830422,
+      "QA_valid_fuel_area_km2": 1361.1506473729648,
+      "QA_fuel_coverage_fraction": 0.9892355694227768,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP13",
+      "fuel_area_native_sample_km2": 1404.9410167254464,
+      "QA_valid_fuel_area_km2": 1404.9410167254464,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP14",
+      "fuel_area_native_sample_km2": 1109.1413649229,
+      "QA_valid_fuel_area_km2": 1109.1413649229,
+      "QA_fuel_coverage_fraction": 1.0,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP15",
+      "fuel_area_native_sample_km2": 1952.5352923047608,
+      "QA_valid_fuel_area_km2": 1943.5196280263087,
+      "QA_fuel_coverage_fraction": 0.9953825857519789,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP16",
+      "fuel_area_native_sample_km2": 661.1487137531512,
+      "QA_valid_fuel_area_km2": 655.7822469207392,
+      "QA_fuel_coverage_fraction": 0.9918831168831168,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": 0.0,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "ENP17",
+      "fuel_area_native_sample_km2": 771.6979305008372,
+      "QA_valid_fuel_area_km2": 771.4832718275408,
+      "QA_fuel_coverage_fraction": 0.9997218358831712,
+      "september_2022_burned_fuel_area_km2": 14.167472437567525,
+      "single_month_burned_fraction": 0.018363939899833055,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "PAN_MAIN",
+      "fuel_area_native_sample_km2": 0.0,
+      "QA_valid_fuel_area_km2": 0.0,
+      "QA_fuel_coverage_fraction": null,
+      "september_2022_burned_fuel_area_km2": 0.0,
+      "single_month_burned_fraction": null,
+      "not_multiyear_risk": true
+    },
+    {
+      "region_id": "UNSURVEYED_OTHER",
+      "fuel_area_native_sample_km2": 349.2496614533692,
+      "QA_valid_fuel_area_km2": 348.6056854334797,
+      "QA_fuel_coverage_fraction": 0.9981561155500921,
+      "september_2022_burned_fuel_area_km2": 36.70663313369768,
+      "single_month_burned_fraction": 0.10529556650246305,
+      "not_multiyear_risk": true
+    }
+  ],
+  "limitations": [
+    "single month, strong season/year dependence",
+    "fuel class nearest resampling at MODIS resolution is approximate",
+    "planned versus harmful fires not distinguished",
+    "no rainfall-to-fire causal relationship fitted"
+  ]
+}

@@ -1,0 +1,17 @@
+name: himcn-regions
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - geopandas==1.2.0
+      - shapely==2.1.2
+      - pyproj==3.8.0
+      - pyogrio==0.13.0
+      - pandas==3.0.6
+      - numpy==2.5.3
+      - matplotlib==3.11.2
+      - Pillow==12.3.0
+      - rasterio==1.5.2
+      - requests==2.34.2

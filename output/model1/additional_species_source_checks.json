@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "files": [
+    {
+      "name": "namibia_elephant_cites_cop20_2025_query",
+      "url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf?gtranslate=zh-CN",
+      "status": 403,
+      "final_url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf?gtranslate=zh-CN",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5712
+    },
+    {
+      "name": "nature_conservation_regulations_gn115_2026",
+      "url": "https://www.lac.org.na/laws/2026/8877.pdf",
+      "error": "HTTPSConnectionPool(host='www.lac.org.na', port=443): Max retries exceeded with url: /laws/2026/8877.pdf (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "name": "african_elephant_database_etosha_2015",
+      "url": "https://forest.africanelephantdatabase.org/population_submissions/722",
+      "error": "HTTPSConnectionPool(host='forest.africanelephantdatabase.org', port=443): Max retries exceeded with url: /population_submissions/722 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'forest.africanelephantdatabase.org'. (_ssl.c:1010)\")))"
+    }
+  ]
+}

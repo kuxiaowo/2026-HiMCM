@@ -1,0 +1,74 @@
+{
+  "scope": "Single full MODIS tile h19v10, September 2022; no park or region clipping.",
+  "Burn_Date": {
+    "path": "data\\fire\\raw\\MCD64A1.A2022244.h19v10.061.2022316091731_Burn_Date.tif",
+    "shape": [
+      2400,
+      2400
+    ],
+    "min": -2,
+    "max": 273,
+    "tag_GDAL_NODATA": "-1",
+    "pixel_scale": [
+      463.3127165279168,
+      463.31271652791656,
+      0.0
+    ],
+    "counts": {
+      "-2": 1258371,
+      "-1": 4985,
+      "0": 4264043
+    },
+    "positive_pixels": 232601,
+    "decoded_array_dtype": "int32",
+    "tiff_bits_per_sample": [
+      16
+    ],
+    "tiff_sample_format": [
+      2
+    ]
+  },
+  "QA": {
+    "path": "data\\fire\\raw\\MCD64A1.A2022244.h19v10.061.2022316091731_QA.tif",
+    "shape": [
+      2400,
+      2400
+    ],
+    "min": 0,
+    "max": 131,
+    "tag_GDAL_NODATA": null,
+    "pixel_scale": [
+      463.3127165279168,
+      463.31271652791656,
+      0.0
+    ],
+    "counts": {
+      "0": 1258371,
+      "1": 4985,
+      "3": 4478966,
+      "7": 1027,
+      "11": 13664,
+      "35": 175,
+      "67": 2477,
+      "71": 5,
+      "99": 18,
+      "131": 312
+    },
+    "positive_pixels": 4501629,
+    "decoded_array_dtype": "uint8",
+    "tiff_bits_per_sample": [
+      8
+    ],
+    "tiff_sample_format": [
+      1
+    ]
+  },
+  "consistency_checks": {
+    "negative_burn_date_pixels": 1263356,
+    "positive_burn_date_without_valid_land_QA": 0,
+    "zero_burn_date_without_valid_land_QA": 0,
+    "valid_land_pixels": 4496644,
+    "valid_land_with_shortened_mapping": 1032,
+    "valid_unburned_with_special_QA": 2987
+  }
+}

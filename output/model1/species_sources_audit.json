@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-05",
+  "checks": [
+    {
+      "source": "namibia_nature_conservation_ordinance",
+      "url": "https://www.meft.gov.na/files/files/Nature%20Conservation%20Ordinance%204%20Of%201975.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "saved_path": "C:\\Users\\admin\\Documents\\ChatGPT\\2026HiMCN\\data\\species\\raw\\namibia_nature_conservation_ordinance.pdf",
+      "bytes": 517506
+    },
+    {
+      "source": "etosha_2015_census_catalogue",
+      "url": "https://the-eis.com/elibrary/search/23915",
+      "error": "HTTPSConnectionPool(host='the-eis.com', port=443): Max retries exceeded with url: /elibrary/search/23915 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    }
+  ],
+  "law_review": {
+    "source_url": "https://namibiatradeportal.gov.na/application/files/3617/2986/2681/Nature_Conservation_Ordinance_4_of_1975.pdf",
+    "local_pdf": "data/species/raw/nature_conservation_annotated_tradeportal.pdf",
+    "reviewed_pages": [
+      78,
+      79,
+      80,
+      83,
+      84
+    ],
+    "numeric_weights_are_not_statutory": true,
+    "2026_complete_amendment_audit": false
+  },
+  "annotated_law_check": {
+    "url": "https://www.lac.org.na/laws/annoSTAT/Nature%20Conservation%20Ordinance%204%20of%201975.pdf",
+    "status": "not_retrieved",
+    "reason": "Network connection failed; no text read from this copy."
+  },
+  "catalogue_search_evidence": {
+    "url": "https://the-eis.com/elibrary/search/23915",
+    "status": "Search index excerpt retrieved; direct page/PDF not retrieved",
+    "finding": "2015 census catalogue excerpt explicitly says black rhinoceros survey data are not reflected in the report due to the security situation. No animal counts extracted.",
+    "subsequent_finding": "section 1.6 says data omitted, tables include it; numeric block sum 1107 versus total 1280"
+  },
+  "previous_law_review": {
+    "local_pdf": "data/species/raw/namibia_nature_conservation_ordinance.pdf",
+    "pdf_pages": 61,
+    "relevant_pages_inspected": [
+      57,
+      58,
+      60,
+      61
+    ],
+    "schedules_reviewed": [
+      3,
+      4,
+      9
+    ],
+    "version_limit": "Uploaded compilation lists amendments through 2003; 2026 current consolidation not verified",
+    "findings": "Schedules contain specially protected game, protected game, and protected plants. Legal classes support model categories, not a statutory numerical ecological value scale."
+  },
+  "latest_feasibility_review": {
+    "date": "2026-10-05",
+    "status": "historical_coarse_scale_feasible",
+    "report": "output/model1/species_data_feasibility.md",
+    "dataset": "output/model1/species_region_counts_2015.json",
+    "statistical_units": 15,
+    "species_tables": 11,
+    "region_species_rows": 165,
+    "recommended_core_species": [
+      "蓝角马",
+      "平原斑马",
+      "长颈鹿",
+      "非洲草原象",
+      "南非剑羚",
+      "鸵鸟"
+    ],
+    "counts_are_2015_dry_season_estimates_not_2026_census": true,
+    "raw_stratum_gis_obtained": false,
+    "current_plant_density_table_obtained": false,
+    "full_2026_law_amendment_audit_completed": false,
+    "legal_numeric_weights_exist": false,
+    "elephant_crosscheck": {
+      "url": "https://africanelephantdatabase.org/population_submissions/722",
+      "result": "2015 elephant total 2911 and all 15 stratum estimates agree, including explicit database zeros",
+      "independent_survey": false,
+      "database_area_rounding_note": "rounded stratum areas sum to 18549 km2; use source PDF areas"
+    },
+    "sources": [
+      {
+        "name": "etosha_aerial_census_2015",
+        "url": "https://rhinoresourcecenter.com/wp-content/uploads/2022/01/1642693511.pdf",
+        "status": 200,
+        "local_file": "C:\\Users\\admin\\Documents\\ChatGPT\\2026HiMCN\\data\\species\\raw\\etosha_aerial_census_2015.pdf",
+        "bytes": 2003584,
+        "sha256": "623796eaf5501a85891b701cb3f005e02533bea3d0b524a566618fd15d11a9a8"
+      },
+      {
+        "name": "namibia_elephant_cites_cop20_2025",
+        "url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf",
+        "status": 403,
+        "content_type": "text/html; charset=UTF-8"
+      },
+      {
+        "name": "nature_conservation_annotated_tradeportal",
+        "url": "https://namibiatradeportal.gov.na/application/files/3617/2986/2681/Nature_Conservation_Ordinance_4_of_1975.pdf",
+        "status": 200,
+        "local_file": "C:\\Users\\admin\\Documents\\ChatGPT\\2026HiMCN\\data\\species\\raw\\nature_conservation_annotated_tradeportal.pdf",
+        "bytes": 973189,
+        "sha256": "5f1af8cc3d39226876b3464d23ffcd85e1268fcfa001dd54c5cda669aa2ada11"
+      },
+      {
+        "name": "nature_conservation_faolex_2025",
+        "url": "https://faolex.fao.org/docs/pdf/nam18007.pdf",
+        "status": 200,
+        "local_file": "C:\\Users\\admin\\Documents\\ChatGPT\\2026HiMCN\\data\\species\\raw\\nature_conservation_faolex_2025.pdf",
+        "bytes": 938509,
+        "sha256": "aea319c38fcb8b8e711d31fb3e6897142b6954ee252b8b39a35ac633929564b0"
+      },
+      {
+        "name": "namibia_elephant_cites_cop20_2025_query",
+        "url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf?gtranslate=zh-CN",
+        "status": 403,
+        "final_url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf?gtranslate=zh-CN",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 5712
+      },
+      {
+        "name": "nature_conservation_regulations_gn115_2026",
+        "url": "https://www.lac.org.na/laws/2026/8877.pdf",
+        "error": "HTTPSConnectionPool(host='www.lac.org.na', port=443): Max retries exceeded with url: /laws/2026/8877.pdf (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+      },
+      {
+        "name": "african_elephant_database_etosha_2015",
+        "url": "https://forest.africanelephantdatabase.org/population_submissions/722",
+        "error": "HTTPSConnectionPool(host='forest.africanelephantdatabase.org', port=443): Max retries exceeded with url: /population_submissions/722 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'forest.africanelephantdatabase.org'. (_ssl.c:1010)\")))"
+      }
+    ],
+    "plant_occurrence_evidence": {
+      "taxon": "Moringa ovalifolia",
+      "law_schedule": 9,
+      "government_source": "https://www.meft.gov.na/national-parks/etosha-national-park/217/",
+      "research_source": "https://academicjournals.org/journal/AJFS/article-full-text/D35946859661",
+      "supports": "confirmed sites/occurrence, not whole-park population or density"
+    },
+    "newer_census_lead": {
+      "year": 2023,
+      "source": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf?gtranslate=zh-CN",
+      "retrieval": "indexed reference/text only; PDF download 403; original stratum report not obtained"
+    },
+    "quality_conflicts": {
+      "black_rhino": "section 1.6 says data omitted, tables include it; numeric block sum 1107 versus total 1280",
+      "eland": "summary 1321, individual-table total 1103, numeric block sum 928",
+      "springbok": "ENP6 estimate 11 below observed 18 and lower CI 18; ENP16 printed density inconsistent",
+      "other_fields": "blue wildebeest CI% typo; red hartebeest and oryx sampling-expansion diagnostics need review"
+    }
+  }
+}

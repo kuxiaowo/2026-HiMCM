@@ -1,0 +1,307 @@
+{
+  "audit_date": "2026-10-05",
+  "scope": "Public source metadata and local road report; not complete ecological dataset acquisition",
+  "checks": [
+    {
+      "key": "etosha_map",
+      "url": "https://www.etoshanationalpark.org/map",
+      "resolved_url": "https://www.etoshanationalpark.org/map",
+      "status": 200,
+      "page_excerpt": "Etosha National Park Map & Distances Skip to content Facebook Instagram ETOSHA Maps & Distances ETOSHA MAP Download Printable Version MAP OF ETOSHA WEST Download Printable Version MAP OF ETOSHA EAST Download Printable Version Distances Between Camps This is measured using the main routes or most direct route to the camps. This number is an estimate. Page load link This website uses cookies to optimise your online user experience. Some of the cookies we use are essential for the site to work. By continuing to use our site you agree to us using cookies in accordance with our Cookie Policy. OK Go to Top",
+      "relevant_snippets": [
+        "National Park Map & Distances Skip to content Facebook Instagram ETOSHA Maps & Distances ETOSHA MAP Download Printable Version MAP OF ETOSHA WEST Download Printable Version MAP OF ETOSHA EAST Download Printable Version Distances Between Camps This is measured using the main routes or most direct route to the camps. This number is an estimate. Page load link This website uses cookies to optimise your online user experience. Some of the cookies we "
+      ]
+    },
+    {
+      "key": "worldcover_collection",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-worldcover",
+      "resolved_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-worldcover",
+      "status": 200,
+      "id": "esa-worldcover",
+      "title": "ESA WorldCover",
+      "description": "The European Space Agency (ESA) [WorldCover](https://esa-worldcover.org/en) product provides global land cover maps for the years 2020 and 2021 at 10 meter resolution based on the combination of [Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) radar data and [Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) imagery. The discrete classification maps provide 11 classes defined using the Land Cover Classification System (LCCS) developed by the United Nations (UN) Food and Agriculture Organization (FAO). The map images are stored in [cloud-optimized GeoTIFF](https://www.cogeo.org/) format.\n\nThe WorldCover product is developed by a consortium of European service providers and research organizations. [VITO](https://remotesensing.vito.be/) (Belgium) is the prime contractor of the WorldCover consortium together with [Brockmann Consult](https://www.bro",
+      "extent": {
+        "spatial": {
+          "bbox": [
+            [
+              -180,
+              -60,
+              180,
+              82.75
+            ]
+          ]
+        },
+        "temporal": {
+          "interval": [
+            [
+              "2020-01-01T00:00:00Z",
+              "2021-12-31T23:59:59Z"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "key": "worldcover_download_docs",
+      "url": "https://esa-worldcover.org/en/data-access",
+      "resolved_url": "https://esa-worldcover.org/en/data-access",
+      "status": 200,
+      "page_excerpt": "DATA | WORLDCOVER WORLDCOVER Menu DATA USAGE WorldCover products Two versions of the WorldCover products are available: WorldCover 2020 produced using v100 of the algorithm WorldCover 2021 produced using v200 of the algorithm Since the WorldCover maps for 2020 and 2021 were generated with different algorithm versions (v100 and v200, respectively), changes between the maps include both changes in real land cover and changes due to the used algorithms. WorldCover Annual Composites Since June 2023 you can also access the WorldCover annual composites, a set of yearly median and percentiles composites at 10m resolution , derived from the Copernicus Sentinel-1 and Sentinel-2 archives, for the years 2020 and 2021. The products can be visualized and explored using the WorldCover viewer . WMS layers are also available from the Terrascope WMS service. WMTS WMS Gamma0 layers: esa-worldcover-s1vvvhratio-10m-2020-v1_vvvhratio, esa-worldcover-s1vvvhratio-10m-2021-v2_vvvhratio RGB layers: esa-worldcover-s2rgbnir-10m-2020-v1_tcc, esa-worldcover-s2rgbnir-10m-2021-v2_tcc FALSE COLOR layers: esa-worldcover-s2rgbnir-10m-2020-v1_fcc, esa-worldcover-s2rgbnir-10m-2021-v2_fcc NDVI layers: esa-worldcover-n",
+      "relevant_snippets": [
+        "represented only as RGB images. WMTS WMS Layer: WORLDCOVER_2020_MAP Layer: WORLDCOVER_2021_MAP DATA DOWNLOAD The ESA WorldCover products are delivered in 3x3 degree tiles as Cloud Optimized GeoTIFFs (COGs) in EPSG:4326 projection (geographic latitude/longitude CRS). There are 2651 tiles. Each tile contains 2 data layers: Map : Land cover map with 11 classes, a total of approximately 117 GB InputQuality : Three band GeoTIFF providing three per pix",
+        "o access the WorldCover annual composites, a set of yearly median and percentiles composites at 10m resolution , derived from the Copernicus Sentinel-1 and Sentinel-2 archives, for the years 2020 and 2021. The products can be visualized and explored using the WorldCover viewer . WMS layers are also available from the Terrascope WMS service. WMTS WMS Gamma0 layers: esa-worldcover-s1vvvhratio-10m-2020-v1_vvvhratio, esa-worldcover-s1vvvhratio-10m-20",
+        " WorldCover products are available: WorldCover 2020 produced using v100 of the algorithm WorldCover 2021 produced using v200 of the algorithm Since the WorldCover maps for 2020 and 2021 were generated with different algorithm versions (v100 and v200, respectively), changes between the maps include both changes in real land cover and changes due to the used algorithms. WorldCover Annual Composites Since June 2023 you can also access the WorldCover",
+        "nu DATA USAGE WorldCover products Two versions of the WorldCover products are available: WorldCover 2020 produced using v100 of the algorithm WorldCover 2021 produced using v200 of the algorithm Since the WorldCover maps for 2020 and 2021 were generated with different algorithm versions (v100 and v200, respectively), changes between the maps include both changes in real land cover and changes due to the used algorithms. WorldCover Annual Composit"
+      ]
+    },
+    {
+      "key": "burned_area_collection",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-64A1-061",
+      "resolved_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-64A1-061",
+      "status": 200,
+      "id": "modis-64A1-061",
+      "title": "MODIS Burned Area Monthly",
+      "description": "The Terra and Aqua combined MCD64A1 Version 6.1 Burned Area data product is a monthly, global gridded 500 meter (m) product containing per-pixel burned-area and quality information. The MCD64A1 burned-area mapping approach employs 500 m Moderate Resolution Imaging Spectroradiometer (MODIS) Surface Reflectance imagery coupled with 1 kilometer (km) MODIS active fire observations. The algorithm uses a burn sensitive Vegetation Index (VI) to create dynamic thresholds that are applied to the composite data. The VI is derived from MODIS shortwave infrared atmospherically corrected surface reflectance bands 5 and 7 with a measure of temporal texture. The algorithm identifies the date of burn for the 500 m grid cells within each individual MODIS tile. The date is encoded in a single data layer as the ordinal day of the calendar year on which the burn occurred with values assigned to unburned lan",
+      "extent": {
+        "spatial": {
+          "bbox": [
+            [
+              -180,
+              -90,
+              180,
+              90
+            ]
+          ]
+        },
+        "temporal": {
+          "interval": [
+            [
+              "2000-11-01T00:00:00Z",
+              null
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "key": "nasa_burned_area_metadata",
+      "url": "https://cmr.earthdata.nasa.gov/search/collections.json?short_name=MCD64A1&version=061&page_size=1",
+      "resolved_url": "https://cmr.earthdata.nasa.gov/search/collections.json?short_name=MCD64A1&version=061&page_size=1",
+      "status": 200,
+      "entries": [
+        {
+          "title": "MODIS/Terra+Aqua Direct Broadcast Burned Area Monthly L3 Global 500m SIN Grid V061",
+          "short_name": "MCD64A1",
+          "version_id": "061",
+          "links": [
+            {
+              "length": "1.8MB",
+              "rel": "http://esipfed.org/ns/fedsearch/1.1/data#",
+              "hreflang": "en-US",
+              "href": "https://search.earthdata.nasa.gov/search/granules?p=C2565786756-LPCLOUD"
+            },
+            {
+              "rel": "http://esipfed.org/ns/fedsearch/1.1/data#",
+              "hreflang": "en-US",
+              "href": "https://appeears.earthdatacloud.nasa.gov/"
+            },
+            {
+              "rel": "http://esipfed.org/ns/fedsearch/1.1/metadata#",
+              "hreflang": "en-US",
+              "href": "https://doi.org/10.5067/MODIS/MCD64A1.061"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "nasa_burned_area_docs",
+      "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd64a1-061",
+      "resolved_url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd64a1-061",
+      "status": 403
+    }
+  ],
+  "local_raster_checks": [
+    {
+      "collection": "esa-worldcover",
+      "bbox": [
+        14.3531694,
+        -19.4869573,
+        17.1512752,
+        -18.4997326
+      ],
+      "query_parameters": {
+        "collections": "esa-worldcover",
+        "bbox": "14.3531694,-19.4869573,17.1512752,-18.4997326",
+        "limit": 10,
+        "datetime": "2021-01-01T00:00:00Z/2021-12-31T23:59:59Z"
+      },
+      "search_status": 200,
+      "returned_items": 2,
+      "next_page_exists": false,
+      "items": [
+        {
+          "id": "ESA_WorldCover_10m_2021_v200_S21E015",
+          "datetime": null,
+          "bbox": [
+            15.0,
+            -21.0,
+            18.0,
+            -18.0
+          ],
+          "asset_keys": [
+            "map",
+            "input_quality",
+            "tilejson",
+            "rendered_preview"
+          ]
+        },
+        {
+          "id": "ESA_WorldCover_10m_2021_v200_S21E012",
+          "datetime": null,
+          "bbox": [
+            12.0,
+            -21.0,
+            15.0,
+            -18.0
+          ],
+          "asset_keys": [
+            "map",
+            "input_quality",
+            "tilejson",
+            "rendered_preview"
+          ]
+        }
+      ],
+      "tested_asset_key": "map",
+      "unsigned_asset_url": "https://ai4edataeuwest.blob.core.windows.net/esa-worldcover/v200/2021/map/ESA_WorldCover_10m_2021_v200_S21E015_Map.tif",
+      "sign_status": 200,
+      "asset_status": 206,
+      "first_16_bytes_hex": "49492a00c00000004744414c5f535452",
+      "content_range": "bytes 0-31/61578491"
+    },
+    {
+      "collection": "modis-64A1-061",
+      "bbox": [
+        14.3531694,
+        -19.4869573,
+        17.1512752,
+        -18.4997326
+      ],
+      "query_parameters": {
+        "collections": "modis-64A1-061",
+        "bbox": "14.3531694,-19.4869573,17.1512752,-18.4997326",
+        "limit": 2,
+        "sortby": "-datetime"
+      },
+      "search_status": 200,
+      "returned_items": 2,
+      "next_page_exists": true,
+      "items": [
+        {
+          "id": "MCD64A1.A2025182.h19v10.061.2025258125653",
+          "datetime": null,
+          "bbox": [
+            10.154266,
+            -20.0,
+            21.283555,
+            -10.0
+          ],
+          "asset_keys": [
+            "QA",
+            "hdf",
+            "Last_Day",
+            "Burn_Date",
+            "First_Day",
+            "Burn_Date_Uncertainty",
+            "tilejson",
+            "rendered_preview"
+          ]
+        },
+        {
+          "id": "MCD64A1.A2025152.h19v10.061.2025220180937",
+          "datetime": null,
+          "bbox": [
+            10.154266,
+            -20.0,
+            21.283555,
+            -10.0
+          ],
+          "asset_keys": [
+            "QA",
+            "hdf",
+            "Last_Day",
+            "Burn_Date",
+            "First_Day",
+            "Burn_Date_Uncertainty",
+            "tilejson",
+            "rendered_preview"
+          ]
+        }
+      ],
+      "tested_asset_key": "Burn_Date",
+      "unsigned_asset_url": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD64A1/19/10/2025182/MCD64A1.A2025182.h19v10.061.2025258125653_Burn_Date.tif",
+      "sign_status": 200,
+      "asset_status": 206,
+      "first_16_bytes_hex": "49492a00c00000004744414c5f535452",
+      "content_range": "bytes 0-31/565676"
+    }
+  ],
+  "burned_area_monthly_coverage_check": {
+    "collection": "modis-64A1-061",
+    "period": "2021-2024",
+    "search_status": 200,
+    "returned_items": 46,
+    "unique_months": 46,
+    "year_item_counts": {
+      "2021": 12,
+      "2022": 12,
+      "2023": 11,
+      "2024": 11
+    },
+    "missing_months": [
+      "2023-09",
+      "2024-07"
+    ],
+    "next_page_exists": false,
+    "note": "Monthly catalogue presence verified. Full QA-valid pixel coverage and all asset downloads not verified."
+  },
+  "species_feasibility_review": {
+    "status": "historical_coarse_scale_feasible",
+    "report": "output/model1/species_data_feasibility.md",
+    "dataset": "output/model1/species_region_counts_2015.json",
+    "statistical_units": 15,
+    "species_tables": 11,
+    "region_species_rows": 165,
+    "counts_are_2015_dry_season_estimates_not_2026_census": true,
+    "raw_stratum_gis_obtained": false,
+    "current_plant_density_table_obtained": false,
+    "full_2026_law_amendment_audit_completed": false
+  },
+  "fire_application_review": {
+    "date": "2026-10-05",
+    "status": "source_catalogue_and_sample_verified_not_region_computed",
+    "nasa_cmr_period": "2016-2025",
+    "nasa_cmr_unique_months": 120,
+    "nasa_cmr_missing_months": [],
+    "sample_period": "2022-09",
+    "sample_tile": "h19v10",
+    "burn_date_negative_codes_preserved": true,
+    "burn_date_nodata": "-1",
+    "actual_native_pixel_m": 463.3127165279168,
+    "core_input": "multi_year_mean_late_dry_season_burn_fraction",
+    "baseline_season_months": [
+      9,
+      10
+    ],
+    "recent_burn_state": "auxiliary_not_main_score",
+    "poaching_proxy": "reuse_road_graph_shortest_travel_time_with_entry_sources_distinct_from_patrol_bases",
+    "plan": "output/model1/fire_data_application.md",
+    "catalogue_audit": "output/model1/fire_catalogue_audit.json",
+    "nasa_audit": "output/model1/fire_nasa_fallback_check.json",
+    "sample_audit": "output/model1/fire_sample_encoding_audit.json",
+    "full_period_QA_verified": false,
+    "region_fire_indices_computed": false,
+    "resource_effectiveness_calibrated": false
+  }
+}

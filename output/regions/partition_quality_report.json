@@ -1,0 +1,234 @@
+{
+  "status": "completed_spatial_partition_v1_not_completed_resource_model",
+  "executed_at_utc": "2026-10-05T06:58:08.868485+00:00",
+  "source_map_crs": "not declared by AED endpoint; WGS84 longitude/latitude assumed from coordinates and park match",
+  "metric_crs": "+proj=laea +lat_0=-19 +lon_0=15.75 +datum=WGS84 +units=m +no_defs",
+  "metric_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"World Geodetic System 1984\",ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]],ID[\"EPSG\",6326]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8901]]],CONVERSION[\"unknown\",METHOD[\"Lambert Azimuthal Equal Area\",ID[\"EPSG\",9820]],PARAMETER[\"Latitude of natural origin\",-19,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",15.75,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+  "edge_interpretation": "Straight line segments in EPSG:4326 coordinates, as used by rasterio; source edges densified to max 0.001 degree before LAEA reprojection",
+  "area_conventions": {
+    "area_km2": "WGS84 ellipsoidal area of final geometry",
+    "area_laea_km2": "local Lambert azimuthal equal-area plane, used for overlay, topology QA and additive totals",
+    "survey_area_report_km2": "2015 Table 1, used only as historical animal density denominator; never forced onto geometry"
+  },
+  "counts": {
+    "survey_statistical_units": 15,
+    "supplementary_spatial_units": 2,
+    "total_model_units": 17,
+    "actual_geometry_components": 191
+  },
+  "areas": {
+    "park_laea_km2": 22906.862606247912,
+    "park_geodesic_km2": 22906.862607017334,
+    "park_geodesic_original_vertices_reference_only_km2": 22904.736845647803,
+    "report_survey_total_km2": 18551.1375,
+    "raw_strata_sum_laea_km2": 19096.58017600355,
+    "raw_strata_union_laea_km2": 18466.18515980725,
+    "raw_overlapping_excess_laea_km2": 630.3950161963005,
+    "corrected_survey_total_laea_km2": 18371.93851221174,
+    "main_pan_approx_laea_km2": 4166.148349798149,
+    "other_unsurveyed_residual_laea_km2": 368.7757442379208,
+    "final_all_regions_sum_laea_km2": 22906.86260624785,
+    "final_all_regions_sum_geodesic_km2": 22906.86260700863,
+    "coverage_percent_laea": 99.99999999999967
+  },
+  "topology_checks": {
+    "all_geometries_valid": true,
+    "no_empty_regions": true,
+    "unique_region_ids": true,
+    "coverage_gap_laea_m2": 0.0,
+    "outside_park_laea_m2": 0.0,
+    "sum_minus_union_overlap_laea_m2": 0,
+    "max_pair_overlap_laea_m2": 4.2890282797694585e-07,
+    "area_tolerance_m2": 1.0,
+    "saved_geojson_all_valid": true,
+    "saved_geojson_park_symmetric_difference_m2": 8.6914159323493e-05,
+    "saved_geojson_overlap_m2": 0,
+    "against_original_park_lonlat_gap_geodesic_km2": 6.404504462580008e-09,
+    "against_original_park_lonlat_outside_geodesic_km2": 1.8647583201527596e-09
+  },
+  "repair_rules": {
+    "geographic_segmentize_max_degrees": 0.001,
+    "source_micro_component_threshold_km2": 0.1,
+    "source_micro_component_destination": "unsurveyed residual, never deletion from park coverage",
+    "enclave": "ENP9 subtracted from ENP11, directly confirmed by report Figure 1",
+    "other_overlap_rule": "smaller Table 1 area has priority; a reproducible boundary repair assumption, not a claim of true ownership",
+    "other_overlap_priority": [
+      "ENP2",
+      "ENP8",
+      "ENP7",
+      "ENP9",
+      "ENP6",
+      "ENP16",
+      "ENP17",
+      "ENP5",
+      "ENP14",
+      "ENP13",
+      "ENP12",
+      "ENP1",
+      "ENP15",
+      "ENP3410",
+      "ENP11"
+    ],
+    "outside_park": "clip to current OSM boundary, do not silently assign removed area to another census unit",
+    "gaps": "all remaining gaps kept as unsurveyed; no nearest-region expansion and no animal imputation",
+    "pan_extraction": "negative buffer of residual; keep largest core; positive buffer; intersect original residual; Figure 1 structural review",
+    "pan_opening_radius_m": 500,
+    "geometry_area_not_adjusted_to_report": true
+  },
+  "original_overlap_pairs_laea": [
+    {
+      "region_a": "ENP9",
+      "region_b": "ENP11",
+      "overlap_laea_km2": 580.4221088348213
+    },
+    {
+      "region_a": "ENP3410",
+      "region_b": "ENP12",
+      "overlap_laea_km2": 13.069860484740742
+    },
+    {
+      "region_a": "ENP5",
+      "region_b": "ENP11",
+      "overlap_laea_km2": 8.763434911017285
+    },
+    {
+      "region_a": "ENP3410",
+      "region_b": "ENP5",
+      "overlap_laea_km2": 6.364670648206998
+    },
+    {
+      "region_a": "ENP6",
+      "region_b": "ENP7",
+      "overlap_laea_km2": 5.583327734589701
+    },
+    {
+      "region_a": "ENP13",
+      "region_b": "ENP14",
+      "overlap_laea_km2": 3.139609858125499
+    },
+    {
+      "region_a": "ENP2",
+      "region_b": "ENP5",
+      "overlap_laea_km2": 2.844968890440739
+    },
+    {
+      "region_a": "ENP13",
+      "region_b": "ENP15",
+      "overlap_laea_km2": 2.2964061086710443
+    },
+    {
+      "region_a": "ENP6",
+      "region_b": "ENP11",
+      "overlap_laea_km2": 2.163365057409569
+    },
+    {
+      "region_a": "ENP1",
+      "region_b": "ENP3410",
+      "overlap_laea_km2": 1.9301319254295246
+    },
+    {
+      "region_a": "ENP3410",
+      "region_b": "ENP8",
+      "overlap_laea_km2": 1.3429155873668046
+    },
+    {
+      "region_a": "ENP7",
+      "region_b": "ENP11",
+      "overlap_laea_km2": 1.1706012869769957
+    },
+    {
+      "region_a": "ENP14",
+      "region_b": "ENP15",
+      "overlap_laea_km2": 1.1371517727770806
+    },
+    {
+      "region_a": "ENP2",
+      "region_b": "ENP3410",
+      "overlap_laea_km2": 0.1607621328236205
+    },
+    {
+      "region_a": "ENP1",
+      "region_b": "ENP2",
+      "overlap_laea_km2": 0.07286336880798919
+    },
+    {
+      "region_a": "ENP3410",
+      "region_b": "ENP6",
+      "overlap_laea_km2": 0.015100033234953413
+    },
+    {
+      "region_a": "ENP3410",
+      "region_b": "ENP7",
+      "overlap_laea_km2": 0.0021198950914339547
+    }
+  ],
+  "area_difference_over_5_percent_units": [
+    "ENP8",
+    "ENP9"
+  ],
+  "pan_sensitivity": [
+    {
+      "opening_radius_m": 250,
+      "main_pan_laea_km2": 4173.227159498528,
+      "remaining_residual_laea_km2": 361.69693453751563,
+      "symmetric_difference_vs_500m_km2": 7.078810089277259
+    },
+    {
+      "opening_radius_m": 500,
+      "main_pan_laea_km2": 4166.148349798149,
+      "remaining_residual_laea_km2": 368.7757442378945,
+      "symmetric_difference_vs_500m_km2": 0.0
+    },
+    {
+      "opening_radius_m": 1000,
+      "main_pan_laea_km2": 4163.301686883653,
+      "remaining_residual_laea_km2": 371.62240715239,
+      "symmetric_difference_vs_500m_km2": 2.846669688320658
+    }
+  ],
+  "overlap_priority_sensitivity": {
+    "alternative_order": [
+      "ENP11",
+      "ENP3410",
+      "ENP15",
+      "ENP1",
+      "ENP12",
+      "ENP13",
+      "ENP14",
+      "ENP5",
+      "ENP17",
+      "ENP16",
+      "ENP6",
+      "ENP9",
+      "ENP7",
+      "ENP8",
+      "ENP2"
+    ],
+    "ENP9_ENP11_constraint_in_both": true,
+    "max_absolute_region_area_change_km2": 22.88556070689726,
+    "max_relative_region_area_change_percent": 1.2348906012990246,
+    "full_per_region_results": "output/regions/region_geometry_changes.csv"
+  },
+  "historical_species_link_checks": {
+    "source_rows_preserved": 165,
+    "joined_rows": 187,
+    "core_joined_rows": 102,
+    "unsurveyed_species_rows_kept_null": 22,
+    "duplicate_region_species_keys": 0,
+    "unmatched_original_rows": 0,
+    "report_area_denominator_preserved": true
+  },
+  "neighbors": {
+    "rows": 45,
+    "near_distance_m": 500,
+    "purpose": "descriptive neighborhood only; multipart parent region and residual cannot be routing nodes; use road graph for travel"
+  },
+  "limitations": [
+    "Generalized public map coordinates, not verified original survey GIS; the source has about 300 m coordinate quantization and some larger shape discrepancies.",
+    "ENP8 and ENP9 geometry area differs materially from report area. Use report area for historical density and examine spatial-factor sensitivity before interpreting close rankings.",
+    "PAN_MAIN is a morphology-and-report-guided approximate spatial unit, not an observed land-cover polygon. UNSURVEYED_OTHER includes genuine unknown areas and mapping slivers.",
+    "2015 species estimates and 2021 land cover have different dates; neither is a 2026 measurement.",
+    "Animal quantities in supplementary units are null, not zero. Full-park allocation requires an explicit treatment of missing value later.",
+    "Missing subregional rainfall does not change the partition; use park-wide climate scenarios if needed."
+  ]
+}

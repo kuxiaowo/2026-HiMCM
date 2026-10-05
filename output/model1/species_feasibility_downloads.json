@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-05",
+  "files": [
+    {
+      "name": "etosha_aerial_census_2015",
+      "url": "https://rhinoresourcecenter.com/wp-content/uploads/2022/01/1642693511.pdf",
+      "status": 200,
+      "local_file": "C:\\Users\\admin\\Documents\\ChatGPT\\2026HiMCN\\data\\species\\raw\\etosha_aerial_census_2015.pdf",
+      "bytes": 2003584,
+      "sha256": "623796eaf5501a85891b701cb3f005e02533bea3d0b524a566618fd15d11a9a8"
+    },
+    {
+      "name": "namibia_elephant_cites_cop20_2025",
+      "url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "name": "nature_conservation_annotated_tradeportal",
+      "url": "https://namibiatradeportal.gov.na/application/files/3617/2986/2681/Nature_Conservation_Ordinance_4_of_1975.pdf",
+      "status": 200,
+      "local_file": "C:\\Users\\admin\\Documents\\ChatGPT\\2026HiMCN\\data\\species\\raw\\nature_conservation_annotated_tradeportal.pdf",
+      "bytes": 973189,
+      "sha256": "5f1af8cc3d39226876b3464d23ffcd85e1268fcfa001dd54c5cda669aa2ada11"
+    },
+    {
+      "name": "nature_conservation_faolex_2025",
+      "url": "https://faolex.fao.org/docs/pdf/nam18007.pdf",
+      "status": 200,
+      "local_file": "C:\\Users\\admin\\Documents\\ChatGPT\\2026HiMCN\\data\\species\\raw\\nature_conservation_faolex_2025.pdf",
+      "bytes": 938509,
+      "sha256": "aea319c38fcb8b8e711d31fb3e6897142b6954ee252b8b39a35ac633929564b0"
+    }
+  ]
+}

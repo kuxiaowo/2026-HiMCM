@@ -1,0 +1,232 @@
+{
+  "retrieved_at_utc": "2026-10-05T06:47:31.640983+00:00",
+  "product": "ESA WorldCover 2021 v200 (2.0.0)",
+  "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "query_parameters": {
+    "collections": "esa-worldcover",
+    "bbox": "14.3531694,-19.4869573,17.1512752,-18.4997326",
+    "datetime": "2021-01-01T00:00:00Z/2021-12-31T23:59:59Z",
+    "limit": 100
+  },
+  "documentation_url": "https://esa-worldcover.org/en/data-access",
+  "license": "CC BY 4.0 (attribute ESA WorldCover project / 2021 product)",
+  "selection": "Only 3x3-degree COG tiles intersecting the park bounding box; not global download",
+  "tiles": [
+    {
+      "item_id": "ESA_WorldCover_10m_2021_v200_S21E012",
+      "bbox": [
+        12.0,
+        -21.0,
+        15.0,
+        -18.0
+      ],
+      "product_version": "2.0.0",
+      "download_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S21E012_Map.tif",
+      "catalogue_asset_url": "https://ai4edataeuwest.blob.core.windows.net/esa-worldcover/v200/2021/map/ESA_WorldCover_10m_2021_v200_S21E012_Map.tif",
+      "file": "data/ecology/raw/ESA_WorldCover_10m_2021_v200_S21E012_Map.tif",
+      "asset_metadata": {
+        "proj:shape": [
+          36000,
+          36000
+        ],
+        "proj:transform": [
+          8.333333333333333e-05,
+          0.0,
+          12.0,
+          0.0,
+          -8.333333333333333e-05,
+          -18.0
+        ],
+        "raster:bands": [
+          {
+            "name": "Band1",
+            "nodata": 0,
+            "sampling": "area",
+            "data_type": "uint8",
+            "description": "Classification values",
+            "spatial_resolution": 10
+          }
+        ],
+        "classification:classes": [
+          {
+            "value": 10,
+            "color-hint": "006400",
+            "description": "Tree cover"
+          },
+          {
+            "value": 20,
+            "color-hint": "FFBB22",
+            "description": "Shrubland"
+          },
+          {
+            "value": 30,
+            "color-hint": "FFFF4C",
+            "description": "Grassland"
+          },
+          {
+            "value": 40,
+            "color-hint": "F096FF",
+            "description": "Cropland"
+          },
+          {
+            "value": 50,
+            "color-hint": "FA0000",
+            "description": "Built-up"
+          },
+          {
+            "value": 60,
+            "color-hint": "B4B4B4",
+            "description": "Bare / sparse vegetation"
+          },
+          {
+            "value": 70,
+            "color-hint": "F0F0F0",
+            "description": "Snow and ice"
+          },
+          {
+            "value": 80,
+            "color-hint": "0064C8",
+            "description": "Permanent water bodies"
+          },
+          {
+            "value": 90,
+            "color-hint": "0096A0",
+            "description": "Herbaceous wetland"
+          },
+          {
+            "value": 95,
+            "color-hint": "00CF75",
+            "description": "Mangroves"
+          },
+          {
+            "value": 100,
+            "color-hint": "FAE6A0",
+            "description": "Moss and lichen"
+          }
+        ]
+      },
+      "bytes": 55723540,
+      "sha256": "d772ba3426c09cf00856d6ef6b781bdc45cbf617635c40c1f607e88e2d455f72",
+      "crs": "EPSG:4326",
+      "transform": [
+        8.333333333333333e-05,
+        0.0,
+        12.0,
+        0.0,
+        -8.333333333333333e-05,
+        -18.0
+      ],
+      "width": 36000,
+      "height": 36000,
+      "nodata": 0.0
+    },
+    {
+      "item_id": "ESA_WorldCover_10m_2021_v200_S21E015",
+      "bbox": [
+        15.0,
+        -21.0,
+        18.0,
+        -18.0
+      ],
+      "product_version": "2.0.0",
+      "download_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S21E015_Map.tif",
+      "catalogue_asset_url": "https://ai4edataeuwest.blob.core.windows.net/esa-worldcover/v200/2021/map/ESA_WorldCover_10m_2021_v200_S21E015_Map.tif",
+      "file": "data/ecology/raw/ESA_WorldCover_10m_2021_v200_S21E015_Map.tif",
+      "asset_metadata": {
+        "proj:shape": [
+          36000,
+          36000
+        ],
+        "proj:transform": [
+          8.333333333333333e-05,
+          0.0,
+          15.0,
+          0.0,
+          -8.333333333333333e-05,
+          -18.0
+        ],
+        "raster:bands": [
+          {
+            "name": "Band1",
+            "nodata": 0,
+            "sampling": "area",
+            "data_type": "uint8",
+            "description": "Classification values",
+            "spatial_resolution": 10
+          }
+        ],
+        "classification:classes": [
+          {
+            "value": 10,
+            "color-hint": "006400",
+            "description": "Tree cover"
+          },
+          {
+            "value": 20,
+            "color-hint": "FFBB22",
+            "description": "Shrubland"
+          },
+          {
+            "value": 30,
+            "color-hint": "FFFF4C",
+            "description": "Grassland"
+          },
+          {
+            "value": 40,
+            "color-hint": "F096FF",
+            "description": "Cropland"
+          },
+          {
+            "value": 50,
+            "color-hint": "FA0000",
+            "description": "Built-up"
+          },
+          {
+            "value": 60,
+            "color-hint": "B4B4B4",
+            "description": "Bare / sparse vegetation"
+          },
+          {
+            "value": 70,
+            "color-hint": "F0F0F0",
+            "description": "Snow and ice"
+          },
+          {
+            "value": 80,
+            "color-hint": "0064C8",
+            "description": "Permanent water bodies"
+          },
+          {
+            "value": 90,
+            "color-hint": "0096A0",
+            "description": "Herbaceous wetland"
+          },
+          {
+            "value": 95,
+            "color-hint": "00CF75",
+            "description": "Mangroves"
+          },
+          {
+            "value": 100,
+            "color-hint": "FAE6A0",
+            "description": "Moss and lichen"
+          }
+        ]
+      },
+      "bytes": 61578491,
+      "sha256": "7c4ccf1428d1c3142f6364c6cad08e60aac43938a9593b1bdfaf82eeac35c698",
+      "crs": "EPSG:4326",
+      "transform": [
+        8.333333333333333e-05,
+        0.0,
+        15.0,
+        0.0,
+        -8.333333333333333e-05,
+        -18.0
+      ],
+      "width": 36000,
+      "height": 36000,
+      "nodata": 0.0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "overture_release": "2026-09-23.1",
+  "overture_road_features": 1162,
+  "overture_total_road_length_km": 3538.722996225633,
+  "overture_length_by_class_km": {
+    "unclassified": 887.8730191768598,
+    "track": 1740.7255445811631,
+    "path": 9.154384963179073,
+    "service": 93.14697059249511,
+    "tertiary": 616.9365372495955,
+    "residential": 6.079117871005648,
+    "primary": 139.3306406275492,
+    "footway": 2.845887569671087,
+    "unknown": 0.36600371672345444,
+    "secondary": 42.26488987739229
+  },
+  "source_dataset_feature_mentions": {
+    "OpenStreetMap": 1313,
+    "TomTom": 5
+  },
+  "licenses_in_feature_sources": {
+    "ODbL-1.0": 1318
+  },
+  "nonoverlap_with_osm_all_highways_km": {
+    "20": 0.26100950280158564,
+    "50": 0.14701811403658208
+  },
+  "segments_with_more_than_100m_nonoverlap_at_50m": 1,
+  "nonoverlap_is_review_candidate_not_certified_missing_road": true,
+  "independence_note": "Most local Overture sources are also OpenStreetMap; not independent proof of completeness."
+}

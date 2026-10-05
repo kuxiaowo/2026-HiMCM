@@ -1,0 +1,1012 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:89025854",
+        "lon": 17.0432667,
+        "lat": -18.8034459,
+        "barrier": "gate",
+        "name": "Von Lindequist Gate",
+        "access": "customers",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0432667,
+          -18.8034459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:259475112",
+        "lon": 15.4471747,
+        "lat": -19.2411054,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4471747,
+          -19.2411054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:288792175",
+        "lon": 16.5871288,
+        "lat": -18.9335051,
+        "barrier": "gate",
+        "name": "",
+        "access": "yes",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5871288,
+          -18.9335051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:977756935",
+        "lon": 16.129709,
+        "lat": -19.2392335,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.129709,
+          -19.2392335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1253853873",
+        "lon": 15.916722,
+        "lat": -19.1782636,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.916722,
+          -19.1782636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1253853890",
+        "lon": 15.919757,
+        "lat": -19.1774013,
+        "barrier": "gate",
+        "name": "",
+        "access": "private",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.919757,
+          -19.1774013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1293391986",
+        "lon": 15.9398313,
+        "lat": -19.3318463,
+        "barrier": "gate",
+        "name": "Entrance Gate Ongava Camp",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9398313,
+          -19.3318463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1299335341",
+        "lon": 17.1666654,
+        "lat": -18.6205867,
+        "barrier": "gate",
+        "name": "Vetenary Control Gate",
+        "access": "",
+        "motor_vehicle": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1666654,
+          -18.6205867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1846614139",
+        "lon": 16.9348724,
+        "lat": -18.8083515,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.9348724,
+          -18.8083515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1846614222",
+        "lon": 16.9414176,
+        "lat": -18.8105609,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.9414176,
+          -18.8105609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1847239463",
+        "lon": 17.0454499,
+        "lat": -18.8038937,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0454499,
+          -18.8038937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1848895589",
+        "lon": 17.0453666,
+        "lat": -18.8030346,
+        "barrier": "gate",
+        "name": "Onguma Private Game Reserve",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0453666,
+          -18.8030346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:1851700220",
+        "lon": 17.1490184,
+        "lat": -18.643929,
+        "barrier": "swing_gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1490184,
+          -18.643929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2332806277",
+        "lon": 15.9400971,
+        "lat": -19.3312847,
+        "barrier": "gate",
+        "name": "Ombika Gate",
+        "access": "customers",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9400971,
+          -19.3312847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2332811639",
+        "lon": 15.9195943,
+        "lat": -19.178677,
+        "barrier": "gate",
+        "name": "",
+        "access": "no",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9195943,
+          -19.178677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2332811821",
+        "lon": 15.9191315,
+        "lat": -19.179289,
+        "barrier": "gate",
+        "name": "",
+        "access": "customers",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9191315,
+          -19.179289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2332814483",
+        "lon": 14.4175839,
+        "lat": -19.2411145,
+        "barrier": "gate",
+        "name": "Veterinary Gate Werda",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4175839,
+          -19.2411145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2332815609",
+        "lon": 14.4726789,
+        "lat": -19.298123,
+        "barrier": "gate",
+        "name": "Gate Hobatere Concession",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4726789,
+          -19.298123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2337091209",
+        "lon": 16.465564,
+        "lat": -19.0338568,
+        "barrier": "gate",
+        "name": "",
+        "access": "customers",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.465564,
+          -19.0338568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2337091257",
+        "lon": 16.4711281,
+        "lat": -19.0345394,
+        "barrier": "gate",
+        "name": "",
+        "access": "customers",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4711281,
+          -19.0345394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2339309039",
+        "lon": 16.586404,
+        "lat": -18.9333063,
+        "barrier": "gate",
+        "name": "",
+        "access": "yes",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.586404,
+          -18.9333063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2341116944",
+        "lon": 16.7446981,
+        "lat": -18.5013484,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.7446981,
+          -18.5013484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2341117213",
+        "lon": 16.808005,
+        "lat": -18.558561,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.808005,
+          -18.558561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2343133796",
+        "lon": 16.8746839,
+        "lat": -18.6932849,
+        "barrier": "gate",
+        "name": "King Nahale Gate",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8746839,
+          -18.6932849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:2343133800",
+        "lon": 16.8751787,
+        "lat": -18.6937283,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8751787,
+          -18.6937283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:3222295971",
+        "lon": 15.1065081,
+        "lat": -19.226377,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1065081,
+          -19.226377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:4616784558",
+        "lon": 14.8610189,
+        "lat": -18.9723154,
+        "barrier": "gate",
+        "name": "",
+        "access": "permissive",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.8610189,
+          -18.9723154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:4624302919",
+        "lon": 14.8610214,
+        "lat": -18.9724431,
+        "barrier": "cattle_grid",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.8610214,
+          -18.9724431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:4723861578",
+        "lon": 15.832398,
+        "lat": -18.9906613,
+        "barrier": "gate",
+        "name": "",
+        "access": "yes",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.832398,
+          -18.9906613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:4723880672",
+        "lon": 15.308457,
+        "lat": -18.9765942,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.308457,
+          -18.9765942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5323219774",
+        "lon": 14.4860794,
+        "lat": -19.3147121,
+        "barrier": "gate",
+        "name": "Staff Access gate",
+        "access": "permissive",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4860794,
+          -19.3147121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5323219805",
+        "lon": 14.486732,
+        "lat": -19.3146739,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.486732,
+          -19.3146739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5323219806",
+        "lon": 14.4816264,
+        "lat": -19.3147368,
+        "barrier": "gate",
+        "name": "Galton Gate",
+        "access": "",
+        "motor_vehicle": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4816264,
+          -19.3147368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5325761886",
+        "lon": 14.505874,
+        "lat": -19.3175077,
+        "barrier": "gate",
+        "name": "unmaned gate",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.505874,
+          -19.3175077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5325761888",
+        "lon": 14.5342168,
+        "lat": -19.2814306,
+        "barrier": "gate",
+        "name": "unmaned gate",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5342168,
+          -19.2814306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5418157935",
+        "lon": 16.7442325,
+        "lat": -18.500941,
+        "barrier": "gate",
+        "name": "Nehale Iya Mpingana Gate",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.7442325,
+          -18.500941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5425906970",
+        "lon": 14.9574373,
+        "lat": -18.6209147,
+        "barrier": "gate",
+        "name": "Management Entrance Gate",
+        "access": "forestry",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9574373,
+          -18.6209147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:5433773039",
+        "lon": 15.9403385,
+        "lat": -19.3287651,
+        "barrier": "cattle_grid",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9403385,
+          -19.3287651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:6226553780",
+        "lon": 17.0432615,
+        "lat": -18.8033787,
+        "barrier": "gate",
+        "name": "Von Lindequist Gate",
+        "access": "customers",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0432615,
+          -18.8033787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:6226745982",
+        "lon": 16.2719241,
+        "lat": -19.0621851,
+        "barrier": "yes",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2719241,
+          -19.0621851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:6535575951",
+        "lon": 15.9189293,
+        "lat": -19.1795762,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9189293,
+          -19.1795762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:8040008504",
+        "lon": 17.089486,
+        "lat": -18.6650393,
+        "barrier": "swing_gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.089486,
+          -18.6650393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:8040008548",
+        "lon": 17.1569912,
+        "lat": -18.6400834,
+        "barrier": "swing_gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1569912,
+          -18.6400834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:8041651596",
+        "lon": 17.1365269,
+        "lat": -18.6185638,
+        "barrier": "swing_gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1365269,
+          -18.6185638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:8042226455",
+        "lon": 17.0426138,
+        "lat": -18.8033292,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0426138,
+          -18.8033292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:8042226456",
+        "lon": 17.0428653,
+        "lat": -18.8032912,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0428653,
+          -18.8032912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:11971853918",
+        "lon": 14.4307091,
+        "lat": -19.0736875,
+        "barrier": "gate",
+        "name": "",
+        "access": "",
+        "motor_vehicle": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4307091,
+          -19.0736875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:13960711166",
+        "lon": 16.2310167,
+        "lat": -19.0535426,
+        "barrier": "yes",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2310167,
+          -19.0535426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:13960711201",
+        "lon": 16.2718496,
+        "lat": -19.0619693,
+        "barrier": "yes",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2718496,
+          -19.0619693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:13960711223",
+        "lon": 16.0475847,
+        "lat": -19.2095355,
+        "barrier": "yes",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0475847,
+          -19.2095355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:13960711249",
+        "lon": 16.4040602,
+        "lat": -18.995228,
+        "barrier": "yes",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4040602,
+          -18.995228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:13960711254",
+        "lon": 16.2296163,
+        "lat": -19.0550316,
+        "barrier": "yes",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2296163,
+          -19.0550316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "osm:14006851006",
+        "lon": 16.6983499,
+        "lat": -18.9378949,
+        "barrier": "yes",
+        "name": "",
+        "access": "",
+        "motor_vehicle": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6983499,
+          -18.9378949
+        ]
+      }
+    }
+  ]
+}

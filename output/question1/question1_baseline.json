@@ -1,0 +1,1032 @@
+{
+  "generated_at_utc": "2026-10-05T08:05:42.119363+00:00",
+  "scope": "Q1 quantitative definition plus historical baseline; not Q2/Q3 optimization",
+  "sources_sha256": {
+    "output\\regions\\region_base_data.json": "81c3c1d9493f4948e2b64eb11c4bbaff6c94d64c04d0c9c12981efb27d3bb682",
+    "output\\model1\\species_region_counts_2015.json": "206d158b1594bc306589a7060ba17b88d5b0159812738036b7d7fae34a4667fd"
+  },
+  "script_sha256": "bcee45814be8e6051a510d788a45c6be08957abdf8be31a3fd14265e31343a23",
+  "metric_script_sha256": "93e331b521b1ad475a999f130af5ffc96fc88a52bbe4b19fc91b015f22ad1bc6",
+  "species": [
+    {
+      "code": "Ct",
+      "name_zh": "蓝角马",
+      "law_class_in_reviewed_compilation": "protected_game",
+      "weight_is_team_assumption": true,
+      "weight": 2,
+      "survey_total": 4207.0
+    },
+    {
+      "code": "Eb",
+      "name_zh": "平原斑马",
+      "law_class_in_reviewed_compilation": "specially_protected_game",
+      "weight_is_team_assumption": true,
+      "weight": 3,
+      "survey_total": 14232.0
+    },
+    {
+      "code": "Gc",
+      "name_zh": "长颈鹿",
+      "law_class_in_reviewed_compilation": "specially_protected_game",
+      "weight_is_team_assumption": true,
+      "weight": 3,
+      "survey_total": 3172.0
+    },
+    {
+      "code": "La",
+      "name_zh": "非洲草原象",
+      "law_class_in_reviewed_compilation": "specially_protected_game",
+      "weight_is_team_assumption": true,
+      "weight": 3,
+      "survey_total": 2911.0
+    },
+    {
+      "code": "Og",
+      "name_zh": "南非剑羚",
+      "law_class_in_reviewed_compilation": "huntable_game",
+      "weight_is_team_assumption": true,
+      "weight": 1,
+      "survey_total": 4108.0
+    },
+    {
+      "code": "Sc",
+      "name_zh": "鸵鸟",
+      "law_class_in_reviewed_compilation": "protected_game_birds",
+      "weight_is_team_assumption": true,
+      "weight": 2,
+      "survey_total": 3695.0
+    }
+  ],
+  "direct_count_species_contributions": {
+    "Ct": 0.10406025452341788,
+    "Eb": 0.5280433357656109,
+    "Gc": 0.1176892538679397,
+    "La": 0.10800549117577946,
+    "Og": 0.050805743473045006,
+    "Sc": 0.09139592119420706
+  },
+  "balanced_species_contributions": {
+    "Ct": 0.14285714285714285,
+    "Eb": 0.21428571428571427,
+    "Gc": 0.21428571428571427,
+    "La": 0.21428571428571427,
+    "Og": 0.07142857142857142,
+    "Sc": 0.14285714285714285
+  },
+  "regions": [
+    {
+      "region_id": "ENP1",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 1763.884013232535,
+      "survey_area_report_2015_km2": 1728.118,
+      "animal_responsibility_share_2015": 0.17419679657610218,
+      "animal_responsibility_rank_among_15_survey_units": 1,
+      "animal_responsibility_per_survey_km2": 0.00010080144791970351,
+      "density_rank_among_15_survey_units": 2,
+      "direct_weighted_count_share_alternative": 0.19100387103157426,
+      "direct_weighted_count_rank_alternative": 1,
+      "fuel_habitat_responsibility_share_2021": 0.09798950011539581,
+      "fuel_proxy_baseline_area_km2": 1725.9185618162096,
+      "fuel_proxy_raw_area_km2": 1725.9185618162096,
+      "tree_share": 5.95579778630291e-07,
+      "shrub_share": 0.41033476194202334,
+      "grass_share": 0.5681452067095287,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [
+          "sampling_expansion_crosscheck_requires_review"
+        ],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP2",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 269.18058749365116,
+      "survey_area_report_2015_km2": 259.7612,
+      "animal_responsibility_share_2015": 0.03813017856772792,
+      "animal_responsibility_rank_among_15_survey_units": 10,
+      "animal_responsibility_per_survey_km2": 0.0001467893533280872,
+      "density_rank_among_15_survey_units": 1,
+      "direct_weighted_count_share_alternative": 0.04616792609174221,
+      "direct_weighted_count_rank_alternative": 10,
+      "fuel_habitat_responsibility_share_2021": 0.015269922839977648,
+      "fuel_proxy_baseline_area_km2": 268.9537474523554,
+      "fuel_proxy_raw_area_km2": 268.9537474523554,
+      "tree_share": 0.0,
+      "shrub_share": 0.12895034302728345,
+      "grass_share": 0.8702112616275725,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP3410",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 2405.6692714354785,
+      "survey_area_report_2015_km2": 2396.1,
+      "animal_responsibility_share_2015": 0.08034598633465087,
+      "animal_responsibility_rank_among_15_survey_units": 6,
+      "animal_responsibility_per_survey_km2": 3.353198377974662e-05,
+      "density_rank_among_15_survey_units": 12,
+      "direct_weighted_count_share_alternative": 0.07938706605488702,
+      "direct_weighted_count_rank_alternative": 3,
+      "fuel_habitat_responsibility_share_2021": 0.13167138717992366,
+      "fuel_proxy_baseline_area_km2": 2319.1677774281625,
+      "fuel_proxy_raw_area_km2": 2319.1677774281625,
+      "tree_share": 1.1422663854338016e-06,
+      "shrub_share": 0.25679844469806906,
+      "grass_share": 0.7072251428061203,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP5",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 994.5693469249248,
+      "survey_area_report_2015_km2": 1006.661,
+      "animal_responsibility_share_2015": 0.039147003731762206,
+      "animal_responsibility_rank_among_15_survey_units": 9,
+      "animal_responsibility_per_survey_km2": 3.888797095721619e-05,
+      "density_rank_among_15_survey_units": 10,
+      "direct_weighted_count_share_alternative": 0.039835759427136797,
+      "direct_weighted_count_rank_alternative": 11,
+      "fuel_habitat_responsibility_share_2021": 0.0562586806059404,
+      "fuel_proxy_baseline_area_km2": 990.9010762044537,
+      "fuel_proxy_raw_area_km2": 990.9010762044537,
+      "tree_share": 0.0,
+      "shrub_share": 0.16483804678786956,
+      "grass_share": 0.8315736065926672,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP6",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 724.3314136075037,
+      "survey_area_report_2015_km2": 701.0328,
+      "animal_responsibility_share_2015": 0.034276565818842565,
+      "animal_responsibility_rank_among_15_survey_units": 12,
+      "animal_responsibility_per_survey_km2": 4.8894382429527644e-05,
+      "density_rank_among_15_survey_units": 9,
+      "direct_weighted_count_share_alternative": 0.031030090159169892,
+      "direct_weighted_count_rank_alternative": 12,
+      "fuel_habitat_responsibility_share_2021": 0.04086145496842579,
+      "fuel_proxy_baseline_area_km2": 719.7051062590614,
+      "fuel_proxy_raw_area_km2": 719.7051062590614,
+      "tree_share": 0.0,
+      "shrub_share": 0.21156133967889554,
+      "grass_share": 0.7820560010625108,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP7",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 578.2355918880318,
+      "survey_area_report_2015_km2": 600.6719,
+      "animal_responsibility_share_2015": 0.05400878850688271,
+      "animal_responsibility_rank_among_15_survey_units": 8,
+      "animal_responsibility_per_survey_km2": 8.99139588632042e-05,
+      "density_rank_among_15_survey_units": 5,
+      "direct_weighted_count_share_alternative": 0.056531901999826856,
+      "direct_weighted_count_rank_alternative": 7,
+      "fuel_habitat_responsibility_share_2021": 0.030816302789622194,
+      "fuel_proxy_baseline_area_km2": 542.7768171949384,
+      "fuel_proxy_raw_area_km2": 542.7768171949384,
+      "tree_share": 0.0,
+      "shrub_share": 0.11633295778521573,
+      "grass_share": 0.8221652757696453,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP8",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 385.082546373341,
+      "survey_area_report_2015_km2": 441.8536,
+      "animal_responsibility_share_2015": 0.023954381161963096,
+      "animal_responsibility_rank_among_15_survey_units": 13,
+      "animal_responsibility_per_survey_km2": 5.421338914509941e-05,
+      "density_rank_among_15_survey_units": 8,
+      "direct_weighted_count_share_alternative": 0.02983044139653957,
+      "direct_weighted_count_rank_alternative": 13,
+      "fuel_habitat_responsibility_share_2021": 0.02161925939140981,
+      "fuel_proxy_baseline_area_km2": 380.7865233766111,
+      "fuel_proxy_raw_area_km2": 380.7865233766111,
+      "tree_share": 0.0,
+      "shrub_share": 0.16141840970989832,
+      "grass_share": 0.8274335263490221,
+      "geometry_area_difference_flag": "True",
+      "species_quality_flags": {
+        "Ct": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "Eb": [],
+        "Gc": [],
+        "La": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP9",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 572.3639995566231,
+      "survey_area_report_2015_km2": 665.4298,
+      "animal_responsibility_share_2015": 0.022624774588301682,
+      "animal_responsibility_rank_among_15_survey_units": 14,
+      "animal_responsibility_per_survey_km2": 3.400024253242293e-05,
+      "density_rank_among_15_survey_units": 11,
+      "direct_weighted_count_share_alternative": 0.012553025712059561,
+      "direct_weighted_count_rank_alternative": 14,
+      "fuel_habitat_responsibility_share_2021": 0.029637109548459713,
+      "fuel_proxy_baseline_area_km2": 522.0073316837986,
+      "fuel_proxy_raw_area_km2": 522.0073316837986,
+      "tree_share": 0.0,
+      "shrub_share": 0.5908706335020165,
+      "grass_share": 0.32098265840467377,
+      "geometry_area_difference_flag": "True",
+      "species_quality_flags": {
+        "Ct": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "Eb": [],
+        "Gc": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP11",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 2809.470863178253,
+      "survey_area_report_2015_km2": 2811.934,
+      "animal_responsibility_share_2015": 0.055955813436399215,
+      "animal_responsibility_rank_among_15_survey_units": 7,
+      "animal_responsibility_per_survey_km2": 1.9899404977641442e-05,
+      "density_rank_among_15_survey_units": 14,
+      "direct_weighted_count_share_alternative": 0.0524629902172972,
+      "direct_weighted_count_rank_alternative": 9,
+      "fuel_habitat_responsibility_share_2021": 0.14383932088482326,
+      "fuel_proxy_baseline_area_km2": 2533.48525649994,
+      "fuel_proxy_raw_area_km2": 2533.48525649994,
+      "tree_share": 9.242448838240633e-06,
+      "shrub_share": 0.5670407919618291,
+      "grass_share": 0.3347646765036444,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP12",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 1464.3136498436747,
+      "survey_area_report_2015_km2": 1489.425,
+      "animal_responsibility_share_2015": 0.09931534375467845,
+      "animal_responsibility_rank_among_15_survey_units": 3,
+      "animal_responsibility_per_survey_km2": 6.6680325464309e-05,
+      "density_rank_among_15_survey_units": 7,
+      "direct_weighted_count_share_alternative": 0.07899130563834919,
+      "direct_weighted_count_rank_alternative": 4,
+      "fuel_habitat_responsibility_share_2021": 0.07794331768661034,
+      "fuel_proxy_baseline_area_km2": 1372.8391165016515,
+      "fuel_proxy_raw_area_km2": 1372.8391165016515,
+      "tree_share": 1.3746588185939402e-05,
+      "shrub_share": 0.4406078661733151,
+      "grass_share": 0.4968905277179144,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP13",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 1399.2293709088808,
+      "survey_area_report_2015_km2": 1427.367,
+      "animal_responsibility_share_2015": 0.03795091097464275,
+      "animal_responsibility_rank_among_15_survey_units": 11,
+      "animal_responsibility_per_survey_km2": 2.658805407063688e-05,
+      "density_rank_among_15_survey_units": 13,
+      "direct_weighted_count_share_alternative": 0.05320504099830565,
+      "direct_weighted_count_rank_alternative": 8,
+      "fuel_habitat_responsibility_share_2021": 0.07942793790599546,
+      "fuel_proxy_baseline_area_km2": 1398.9881793182485,
+      "fuel_proxy_raw_area_km2": 1398.9881793182485,
+      "tree_share": 5.778392242015616e-08,
+      "shrub_share": 0.7284141352610246,
+      "grass_share": 0.2714193442524211,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP14",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 1107.4973114279728,
+      "survey_area_report_2015_km2": 1145.296,
+      "animal_responsibility_share_2015": 0.006824063999186512,
+      "animal_responsibility_rank_among_15_survey_units": 15,
+      "animal_responsibility_per_survey_km2": 5.958340899808008e-06,
+      "density_rank_among_15_survey_units": 15,
+      "direct_weighted_count_share_alternative": 0.0042173219387313405,
+      "direct_weighted_count_rank_alternative": 15,
+      "fuel_habitat_responsibility_share_2021": 0.06280959818026999,
+      "fuel_proxy_baseline_area_km2": 1106.2843593638606,
+      "fuel_proxy_raw_area_km2": 1106.2843593638606,
+      "tree_share": 0.00032692157284054457,
+      "shrub_share": 0.8817376568613692,
+      "grass_share": 0.1168612796539092,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [
+          "ci_percentage_inconsistent"
+        ],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP15",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 2062.8559871057746,
+      "survey_area_report_2015_km2": 2038.162,
+      "animal_responsibility_share_2015": 0.15569948715934784,
+      "animal_responsibility_rank_among_15_survey_units": 2,
+      "animal_responsibility_per_survey_km2": 7.63921058087374e-05,
+      "density_rank_among_15_survey_units": 6,
+      "direct_weighted_count_share_alternative": 0.1847459094450697,
+      "direct_weighted_count_rank_alternative": 2,
+      "fuel_habitat_responsibility_share_2021": 0.11096080592459209,
+      "fuel_proxy_baseline_area_km2": 1954.3860755878088,
+      "fuel_proxy_raw_area_km2": 1954.3860755878088,
+      "tree_share": 1.1417349073294463e-05,
+      "shrub_share": 0.6424782447611934,
+      "grass_share": 0.3049177913574023,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [
+          "ci_percentage_inconsistent"
+        ],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP16",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 909.4403216695301,
+      "survey_area_report_2015_km2": 918.1365,
+      "animal_responsibility_share_2015": 0.08890296515548511,
+      "animal_responsibility_rank_among_15_survey_units": 4,
+      "animal_responsibility_per_survey_km2": 9.682979072881332e-05,
+      "density_rank_among_15_survey_units": 3,
+      "direct_weighted_count_share_alternative": 0.07028457647451673,
+      "direct_weighted_count_rank_alternative": 5,
+      "fuel_habitat_responsibility_share_2021": 0.03710897692963603,
+      "fuel_proxy_baseline_area_km2": 653.6115810106622,
+      "fuel_proxy_raw_area_km2": 653.6115810106622,
+      "tree_share": 0.0011305241325543184,
+      "shrub_share": 0.4802057888427271,
+      "grass_share": 0.23734095757298684,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "ENP17",
+      "region_kind": "survey_stratum",
+      "geometry_area_km2": 925.8142381847515,
+      "survey_area_report_2015_km2": 921.1887,
+      "animal_responsibility_share_2015": 0.0886669402340269,
+      "animal_responsibility_rank_among_15_survey_units": 5,
+      "animal_responsibility_per_survey_km2": 9.625274412726393e-05,
+      "density_rank_among_15_survey_units": 4,
+      "direct_weighted_count_share_alternative": 0.06975277341479402,
+      "direct_weighted_count_rank_alternative": 6,
+      "fuel_habitat_responsibility_share_2021": 0.043371563669249595,
+      "fuel_proxy_baseline_area_km2": 763.9164063863851,
+      "fuel_proxy_raw_area_km2": 763.9164063863851,
+      "tree_share": 0.0017660117459306973,
+      "shrub_share": 0.6211478205926523,
+      "grass_share": 0.20220381550836203,
+      "geometry_area_difference_flag": "False",
+      "species_quality_flags": {
+        "Ct": [
+          "blank_count_with_source_zero_density",
+          "baseline_zero_is_explicit_nondetection_assumption"
+        ],
+        "Eb": [],
+        "Gc": [],
+        "La": [],
+        "Og": [],
+        "Sc": []
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "PAN_MAIN",
+      "region_kind": "main_pan",
+      "geometry_area_km2": 4166.148349940353,
+      "survey_area_report_2015_km2": null,
+      "animal_responsibility_share_2015": null,
+      "animal_responsibility_rank_among_15_survey_units": null,
+      "animal_responsibility_per_survey_km2": null,
+      "density_rank_among_15_survey_units": null,
+      "direct_weighted_count_share_alternative": null,
+      "direct_weighted_count_rank_alternative": null,
+      "fuel_habitat_responsibility_share_2021": 0.0,
+      "fuel_proxy_baseline_area_km2": 0.0,
+      "fuel_proxy_raw_area_km2": 150.07642276514693,
+      "tree_share": 0.0,
+      "shrub_share": 0.0014212598179600385,
+      "grass_share": 0.034601143359565004,
+      "geometry_area_difference_flag": null,
+      "species_quality_flags": {
+        "Ct": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Eb": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Gc": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "La": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Og": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Sc": [
+          "outside_original_survey_unknown_not_zero"
+        ]
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    },
+    {
+      "region_id": "UNSURVEYED_OTHER",
+      "region_kind": "unsurveyed_residual",
+      "geometry_area_km2": 368.7757442373505,
+      "survey_area_report_2015_km2": null,
+      "animal_responsibility_share_2015": null,
+      "animal_responsibility_rank_among_15_survey_units": null,
+      "animal_responsibility_per_survey_km2": null,
+      "density_rank_among_15_survey_units": null,
+      "direct_weighted_count_share_alternative": null,
+      "direct_weighted_count_rank_alternative": null,
+      "fuel_habitat_responsibility_share_2021": 0.02041486137966826,
+      "fuel_proxy_baseline_area_km2": 359.5730986542548,
+      "fuel_proxy_raw_area_km2": 359.5730986542548,
+      "tree_share": 3.643824800035928e-05,
+      "shrub_share": 0.5859277628447579,
+      "grass_share": 0.38920528550907696,
+      "geometry_area_difference_flag": null,
+      "species_quality_flags": {
+        "Ct": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Eb": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Gc": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "La": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Og": [
+          "outside_original_survey_unknown_not_zero"
+        ],
+        "Sc": [
+          "outside_original_survey_unknown_not_zero"
+        ]
+      },
+      "road_entry_index": null,
+      "late_season_fire_exposure_index": null,
+      "rainy_season_anomaly": null,
+      "rhino_priority_distribution": null,
+      "rare_plant_and_bird_value": null,
+      "combined_demand": null,
+      "deployed_protection_score": null,
+      "status": "partial_baseline_not_final_priority_or_protection_score"
+    }
+  ],
+  "weight_sensitivity": [
+    {
+      "scenario": "equal_categories",
+      "category_weights_huntable_protected_special": [
+        1,
+        1,
+        1
+      ],
+      "values": {
+        "ENP1": 0.17161565980230972,
+        "ENP2": 0.04091278991342092,
+        "ENP3410": 0.08648465237127206,
+        "ENP5": 0.04469376837797859,
+        "ENP6": 0.04013260834794473,
+        "ENP7": 0.053498295429463986,
+        "ENP8": 0.02795797428564346,
+        "ENP9": 0.019661967625400796,
+        "ENP11": 0.06403434989922524,
+        "ENP12": 0.1081560977521853,
+        "ENP13": 0.03654257283070497,
+        "ENP14": 0.006188482599730917,
+        "ENP15": 0.13935155036271174,
+        "ENP16": 0.08190752047032127,
+        "ENP17": 0.07886170993168629
+      },
+      "ranks": {
+        "ENP1": 1,
+        "ENP15": 2,
+        "ENP12": 3,
+        "ENP3410": 4,
+        "ENP16": 5,
+        "ENP17": 6,
+        "ENP11": 7,
+        "ENP7": 8,
+        "ENP5": 9,
+        "ENP2": 10,
+        "ENP6": 11,
+        "ENP13": 12,
+        "ENP8": 13,
+        "ENP9": 14,
+        "ENP14": 15
+      },
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP3410",
+        "ENP16"
+      ],
+      "max_rank_change_from_baseline": 2
+    },
+    {
+      "scenario": "compressed_categories",
+      "category_weights_huntable_protected_special": [
+        1,
+        1.5,
+        2
+      ],
+      "values": {
+        "ENP1": 0.17342245554396446,
+        "ENP2": 0.03896496197143582,
+        "ENP3410": 0.08218758614563723,
+        "ENP5": 0.040811033125627116,
+        "ENP6": 0.036033378577573216,
+        "ENP7": 0.05385564058365709,
+        "ENP8": 0.025155459099067207,
+        "ENP9": 0.02173593249943142,
+        "ENP11": 0.058379374375247026,
+        "ENP12": 0.1019675699539305,
+        "ENP13": 0.037528409531461415,
+        "ENP14": 0.006633389579349834,
+        "ENP15": 0.15079510612035701,
+        "ENP16": 0.08680433174993595,
+        "ENP17": 0.08572537114332471
+      },
+      "ranks": {
+        "ENP1": 1,
+        "ENP15": 2,
+        "ENP12": 3,
+        "ENP16": 4,
+        "ENP17": 5,
+        "ENP3410": 6,
+        "ENP11": 7,
+        "ENP7": 8,
+        "ENP5": 9,
+        "ENP2": 10,
+        "ENP13": 11,
+        "ENP6": 12,
+        "ENP8": 13,
+        "ENP9": 14,
+        "ENP14": 15
+      },
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP16",
+        "ENP17"
+      ],
+      "max_rank_change_from_baseline": 0
+    },
+    {
+      "scenario": "baseline_categories",
+      "category_weights_huntable_protected_special": [
+        1,
+        2,
+        3
+      ],
+      "values": {
+        "ENP1": 0.17419679657610218,
+        "ENP2": 0.03813017856772792,
+        "ENP3410": 0.08034598633465087,
+        "ENP5": 0.039147003731762206,
+        "ENP6": 0.034276565818842565,
+        "ENP7": 0.05400878850688271,
+        "ENP8": 0.023954381161963096,
+        "ENP9": 0.022624774588301682,
+        "ENP11": 0.055955813436399215,
+        "ENP12": 0.09931534375467845,
+        "ENP13": 0.03795091097464275,
+        "ENP14": 0.006824063999186512,
+        "ENP15": 0.15569948715934784,
+        "ENP16": 0.08890296515548511,
+        "ENP17": 0.0886669402340269
+      },
+      "ranks": {
+        "ENP1": 1,
+        "ENP15": 2,
+        "ENP12": 3,
+        "ENP16": 4,
+        "ENP17": 5,
+        "ENP3410": 6,
+        "ENP11": 7,
+        "ENP7": 8,
+        "ENP5": 9,
+        "ENP2": 10,
+        "ENP13": 11,
+        "ENP6": 12,
+        "ENP8": 13,
+        "ENP9": 14,
+        "ENP14": 15
+      },
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP16",
+        "ENP17"
+      ],
+      "max_rank_change_from_baseline": 0
+    },
+    {
+      "scenario": "emphasized_categories",
+      "category_weights_huntable_protected_special": [
+        1,
+        3,
+        5
+      ],
+      "values": {
+        "ENP1": 0.17490074296895466,
+        "ENP2": 0.0373712845643571,
+        "ENP3410": 0.07867180468829964,
+        "ENP5": 0.03763424973733955,
+        "ENP6": 0.032679463310905606,
+        "ENP7": 0.05414801389163327,
+        "ENP8": 0.02286249212823209,
+        "ENP9": 0.02343281285091102,
+        "ENP11": 0.05375257621926485,
+        "ENP12": 0.09690422902808567,
+        "ENP13": 0.03833500319571669,
+        "ENP14": 0.00699740438085622,
+        "ENP15": 0.16015801537661226,
+        "ENP16": 0.09081081370598433,
+        "ENP17": 0.09134109395284705
+      },
+      "ranks": {
+        "ENP1": 1,
+        "ENP15": 2,
+        "ENP12": 3,
+        "ENP17": 4,
+        "ENP16": 5,
+        "ENP3410": 6,
+        "ENP7": 7,
+        "ENP11": 8,
+        "ENP13": 9,
+        "ENP5": 10,
+        "ENP2": 11,
+        "ENP6": 12,
+        "ENP9": 13,
+        "ENP8": 14,
+        "ENP14": 15
+      },
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP17",
+        "ENP16"
+      ],
+      "max_rank_change_from_baseline": 2
+    }
+  ],
+  "leave_one_species_out_sensitivity": [
+    {
+      "omitted_species": "Ct",
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP17",
+        "ENP16",
+        "ENP3410"
+      ],
+      "max_rank_change": 3
+    },
+    {
+      "omitted_species": "Eb",
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP16",
+        "ENP17"
+      ],
+      "max_rank_change": 2
+    },
+    {
+      "omitted_species": "Gc",
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP16",
+        "ENP17"
+      ],
+      "max_rank_change": 3
+    },
+    {
+      "omitted_species": "La",
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP3410",
+        "ENP12",
+        "ENP11"
+      ],
+      "max_rank_change": 3
+    },
+    {
+      "omitted_species": "Og",
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP16",
+        "ENP17"
+      ],
+      "max_rank_change": 2
+    },
+    {
+      "omitted_species": "Sc",
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP16",
+        "ENP17"
+      ],
+      "max_rank_change": 6
+    }
+  ],
+  "checks": {
+    "surveyed_responsibilities_sum_to_one": true,
+    "source_species_totals_match": true,
+    "outside_survey_animals_remain_unknown": true,
+    "species_population_scale_does_not_dominate_score": true,
+    "metric_semantics": {
+      "monitoring_without_response_is_not_effective_protection": true,
+      "zero_demand_is_not_automatic_100_points": true,
+      "unknown_demand_is_not_silently_zero": true,
+      "same_scale_used_for_deployment_comparison": true,
+      "demand_weighted_aggregation": true,
+      "discovery_and_response_must_cover_same_targets": true,
+      "complete_scope_with_all_floors_can_pass": true,
+      "high_park_score_cannot_hide_critical_failure": true,
+      "unknown_safeguard_cannot_certify_protection": true,
+      "partial_scope_cannot_certify_full_park": true,
+      "unknown_demand_cannot_generate_full_score": true
+    }
+  },
+  "planning_target_assumptions": {
+    "park_score_minimum_each_shift": 80,
+    "critical_target_service_minimum": 0.9,
+    "not_a_problem_requirement_or_real_success_probability": true
+  },
+  "limitations": [
+    "2015 counts are historical survey estimates, not 2026 populations",
+    "Six selected taxa do not represent full biodiversity or all poaching targets",
+    "Black rhino remains a critical object despite conflicting public count tables",
+    "Fuel-habitat area is not rare-plant value, harmful-fire probability or loss",
+    "Null threat/distribution fields cannot be interpreted as zero or omitted from full-park claims",
+    "No staffing estimate, causal resource-effect calibration or optimized deployment was computed"
+  ]
+}

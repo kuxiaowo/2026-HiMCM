@@ -1,0 +1,74 @@
+{
+  "created_at_utc": "2026-10-05T06:58:08.868485+00:00",
+  "python": "3.12.15",
+  "software_versions": {
+    "geopandas": "1.2.0",
+    "shapely": "2.1.2",
+    "pyproj": "3.8.0",
+    "pyogrio": "0.13.0",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0",
+    "rasterio": "1.5.2",
+    "requests": "2.34.2"
+  },
+  "conda_environment_used": "himcn-roads",
+  "environment_recipe": "environment-regions.yml",
+  "reproduce": [
+    "conda env create -f environment-regions.yml",
+    "conda run -n himcn-regions python scripts/regions/build_model_regions.py",
+    "conda run -n himcn-regions python scripts/regions/prepare_ecology.py --offline --regions data/regions/processed/model_regions.geojson"
+  ],
+  "sources": [
+    {
+      "path": "data/regions/raw/source_audit/aed_2015_map.geojson",
+      "sha256": "de80a264c7270667971df02616730f17de6d20f67a998336ab6ee066ba0718b9"
+    },
+    {
+      "path": "data/regions/raw/source_audit/figure1_stratification_2015.jpg",
+      "sha256": "79b4f0f124f7e5b34adf1d236e1672519866e1c2dd329291dc146c0926efe0cb"
+    },
+    {
+      "path": "output/model1/species_region_counts_2015.json",
+      "sha256": "206d158b1594bc306589a7060ba17b88d5b0159812738036b7d7fae34a4667fd"
+    },
+    {
+      "path": "data/roads/processed/park_boundary.geojson",
+      "sha256": "4546c83e2d3b8cfbaaf010daf57b564d120461c5270ea7df998210214aa63241"
+    },
+    {
+      "path": "scripts/regions/build_model_regions.py",
+      "sha256": "08cb180c28f75fc5580da9bcd0b6589763842df4d13e3377a7e7f96a979c512d"
+    }
+  ],
+  "aed_source_url": "https://africanelephantdatabase.org/population_submissions/722/map",
+  "aed_license": "CC BY-NC-SA 4.0; source attribution and noncommercial/share-alike terms retained",
+  "boundary_attribution": "OpenStreetMap contributors; ODbL 1.0, see roads provenance",
+  "outputs": [
+    {
+      "path": "data/regions/processed/model_regions.geojson",
+      "sha256": "d665a51f56319afd1b514ecc2fdbfc3989d1be4a0767770e14d6abc238aad55d"
+    },
+    {
+      "path": "data/regions/processed/model_region_parts.geojson",
+      "sha256": "31fe67534050404ef3d59cdd03b5e6e325610d4963906f98134b3221f2787840"
+    },
+    {
+      "path": "output/regions/region_catalog.csv",
+      "sha256": "55c5d235a8e8fc27273b617fce62120f54a85b4024724dd13ceb0874044f77c7"
+    },
+    {
+      "path": "output/regions/region_geometry_changes.csv",
+      "sha256": "5e58dd4fdbe8c856158a9d0466f36e75287ca17fe76c9962a8a9922fa96e312c"
+    },
+    {
+      "path": "output/regions/partition_quality_report.json",
+      "sha256": "594f9d577dc4b2509fafa45c04aa7d5d2a98d4d2302ee91993ec8cbb112e2c8f"
+    },
+    {
+      "path": "output/regions/etosha_model_regions.gpkg",
+      "sha256": "cfafb5c8ae682dbd6a3acdc43597665173af4de22a40a7f84f261746a8c33ad9"
+    }
+  ]
+}

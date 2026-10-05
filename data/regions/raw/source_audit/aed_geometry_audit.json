@@ -1,0 +1,248 @@
+{
+  "assumed_crs": "EPSG:4326 inferred from lon lat magnitudes, not declared in endpoint",
+  "rows": [
+    {
+      "id": "ENP1",
+      "parts": 1,
+      "area_geodesic_km2": 1775.4634481190506,
+      "report_area_km2": 1728.118,
+      "difference_percent": 2.7397115312178144,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        14.356782099999998,
+        -19.293957926666668,
+        14.902831193333332,
+        -18.901991993333333
+      ]
+    },
+    {
+      "id": "ENP2",
+      "parts": 1,
+      "area_geodesic_km2": 270.4311543014922,
+      "report_area_km2": 259.7612,
+      "difference_percent": 4.107601251261639,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        14.537897393333333,
+        -18.904695206666666,
+        14.764967313333333,
+        -18.750612046666667
+      ]
+    },
+    {
+      "id": "ENP7",
+      "parts": 1,
+      "area_geodesic_km2": 578.1811030370834,
+      "report_area_km2": 600.6719,
+      "difference_percent": -3.744273198549264,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        15.38670638,
+        -19.083107286666667,
+        15.665137353333334,
+        -18.89928878
+      ]
+    },
+    {
+      "id": "ENP8",
+      "parts": 1,
+      "area_geodesic_km2": 386.4543762181679,
+      "report_area_km2": 441.8536,
+      "difference_percent": -12.537913866002693,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        15.38670638,
+        -19.25611294,
+        15.602963446666667,
+        -19.083107286666667
+      ]
+    },
+    {
+      "id": "ENP12",
+      "parts": 1,
+      "area_geodesic_km2": 1466.8785634512167,
+      "report_area_km2": 1489.425,
+      "difference_percent": -1.513767833142543,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        15.79218838,
+        -19.39397682,
+        16.246328220000002,
+        -18.847927726666665
+      ]
+    },
+    {
+      "id": "ENP14",
+      "parts": 1,
+      "area_geodesic_km2": 1121.5959899136958,
+      "report_area_km2": 1145.296,
+      "difference_percent": -2.0693349218284363,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        16.519352766666668,
+        -19.48318286,
+        17.12757576666667,
+        -19.0452623
+      ]
+    },
+    {
+      "id": "ENP17",
+      "parts": 1,
+      "area_geodesic_km2": 947.0502447912984,
+      "report_area_km2": 921.1887,
+      "difference_percent": 2.8074101203475754,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        16.70587448666667,
+        -18.718173486666668,
+        17.157311113333336,
+        -18.499213206666667
+      ]
+    },
+    {
+      "id": "ENP3410",
+      "parts": 3,
+      "area_geodesic_km2": 2443.496584928076,
+      "report_area_km2": 2396.1,
+      "difference_percent": 1.97807207245424,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        14.564929526666665,
+        -19.2885515,
+        15.803001233333333,
+        -18.64248351333333
+      ]
+    },
+    {
+      "id": "ENP15",
+      "parts": 1,
+      "area_geodesic_km2": 2066.7114304799647,
+      "report_area_km2": 2038.162,
+      "difference_percent": 1.4007439290873114,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        16.224702513333334,
+        -19.26151936666667,
+        17.092433993333334,
+        -18.910101633333333
+      ]
+    },
+    {
+      "id": "ENP9",
+      "parts": 1,
+      "area_geodesic_km2": 581.3633841879198,
+      "report_area_km2": 665.4298,
+      "difference_percent": -12.633401120911659,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        15.440770646666667,
+        -18.856037366666666,
+        15.689466273333334,
+        -18.63167066
+      ]
+    },
+    {
+      "id": "ENP5",
+      "parts": 1,
+      "area_geodesic_km2": 999.766095074207,
+      "report_area_km2": 1006.661,
+      "difference_percent": -0.6849281859327983,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        14.759560886666666,
+        -18.89928878,
+        15.1677461,
+        -18.61545138
+      ]
+    },
+    {
+      "id": "ENP6",
+      "parts": 1,
+      "area_geodesic_km2": 729.91651669418,
+      "report_area_km2": 701.0328,
+      "difference_percent": 4.120166231049405,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        15.048804713333332,
+        -19.088513713333334,
+        15.392112806666667,
+        -18.89928878
+      ]
+    },
+    {
+      "id": "ENP16",
+      "parts": 1,
+      "area_geodesic_km2": 910.8372134882026,
+      "report_area_km2": 918.1365,
+      "difference_percent": -0.7950110372256569,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        16.678842353333334,
+        -18.945243406666666,
+        17.07891792666667,
+        -18.718173486666668
+      ]
+    },
+    {
+      "id": "ENP13",
+      "parts": 2,
+      "area_geodesic_km2": 1401.9151995648908,
+      "report_area_km2": 1427.367,
+      "difference_percent": -1.7831293868436848,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        16.232812153333334,
+        -19.43452502,
+        16.722093766666667,
+        -19.123655486666667
+      ]
+    },
+    {
+      "id": "ENP11",
+      "parts": 2,
+      "area_geodesic_km2": 3414.6492412068787,
+      "report_area_km2": 2811.934,
+      "difference_percent": 21.434188754319216,
+      "valid": true,
+      "validity": "Valid Geometry",
+      "bounds": [
+        15.032585433333333,
+        -18.901991993333333,
+        16.3841921,
+        -18.499213206666667
+      ]
+    }
+  ],
+  "union_area_km2": 18464.479878627506,
+  "sum_parts_area_km2": 19094.710545456324,
+  "sum_report_area_km2": 18551.1375,
+  "union_bounds": [
+    14.356782099999998,
+    -19.48318286,
+    17.157311113333336,
+    -18.499213206666667
+  ],
+  "park_bounds": [
+    14.3531694,
+    -19.4869573,
+    17.1512752,
+    -18.4997326
+  ],
+  "park_area_km2": 22904.736845647803,
+  "strata_outside_park_km2": 94.10630017478668,
+  "park_uncovered_km2": 4534.586072564587
+}

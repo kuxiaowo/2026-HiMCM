@@ -1,0 +1,104 @@
+{
+  "source_snapshot": "2026-10-03T20:20:50Z",
+  "boundary_osm_relation_id": 2982497,
+  "projected_crs": "EPSG:32733",
+  "park_area_km2": 22897.100933120488,
+  "all_highway_way_count": 985,
+  "all_highway_length_km": 3538.356804736133,
+  "motor_candidate_way_count": 871,
+  "motor_candidate_length_km": 3471.3677886046053,
+  "motor_length_by_highway_km": {
+    "track": 1723.8223283958298,
+    "unclassified": 887.7893896624385,
+    "tertiary": 616.9118493729056,
+    "primary": 101.32157127495738,
+    "service": 93.14697059091338,
+    "secondary": 42.264889877392285,
+    "residential": 6.079117871005647,
+    "tertiary_link": 0.031671559162731885
+  },
+  "motor_length_by_surface_km": {
+    "gravel": 1215.276769586138,
+    "UNKNOWN": 899.3745137552905,
+    "ground": 595.8513423641809,
+    "dirt": 514.1009026506686,
+    "unpaved": 208.30585352374675,
+    "asphalt": 29.584035314488855,
+    "compacted": 7.22693090566532,
+    "paving_stones": 1.2070926603008847,
+    "fine_gravel": 0.22961832054440942,
+    "sand": 0.2107295235812824
+  },
+  "motor_length_by_group_km": {
+    "gravel": 1215.5063879066824,
+    "earth_sand": 1110.162974538431,
+    "surface_unknown": 899.3745137552905,
+    "other_unpaved": 215.53278442941212,
+    "paved": 30.791127974789735
+  },
+  "motor_surface_unknown_length_fraction": 0.25908361444951206,
+  "motor_access_review_way_count": 193,
+  "motor_maxspeed_missing_way_count": 715,
+  "graphs": {
+    "park_motor_candidate_graph": {
+      "nodes": 1447,
+      "edges": 1900,
+      "components": 20,
+      "length_km": 3471.3677886046053,
+      "largest_component_km": 3439.1298082055764,
+      "largest_component_length_fraction": 0.9907131763724789,
+      "top_10_component_lengths_km": [
+        3439.1298082055764,
+        13.091836000146307,
+        8.990893636137498,
+        1.9448694055675166,
+        1.344889430580582,
+        1.224686831059339,
+        0.9659636976587318,
+        0.5955531416072778,
+        0.5832464105533833,
+        0.5790517972989081
+      ],
+      "original_vertex_segments": 31439
+    },
+    "buffer_5km_motor_candidate_graph": {
+      "nodes": 3986,
+      "edges": 5272,
+      "components": 37,
+      "length_km": 5888.258695901059,
+      "largest_component_km": 5744.606278774751,
+      "largest_component_length_fraction": 0.9756035825623105,
+      "top_10_component_lengths_km": [
+        5744.606278774751,
+        59.33860225043274,
+        21.44974871497482,
+        8.990893636137498,
+        8.306653482493596,
+        6.443335883496191,
+        4.8547812989681125,
+        4.371684621562431,
+        3.5802202202885223,
+        3.498567503008381
+      ],
+      "original_vertex_segments": 65715
+    }
+  },
+  "reference_3551km_length_ratio": 0.9775747081398494,
+  "reference_length_is_not_a_completeness_test": true,
+  "boundary_projection_note": "WGS84 boundary segmentized to <=0.001 degrees before UTM projection to retain near-boundary roads.",
+  "topology_rule": "Shared OSM node IDs only. No geometric snapping or inferred missing roads.",
+  "routing_status": "Candidate motor network; access, barriers, season and actual speed require modelling assumptions.",
+  "arcgis_crosscheck": {
+    "features": 985,
+    "osm_ids_also_in_current_park_extract": 980,
+    "osm_ids_not_in_current_park_extract": [
+      "1212728068",
+      "1300078918",
+      "270822359",
+      "406425323",
+      "551187102"
+    ],
+    "source_is_also_osm": true,
+    "license_and_method_not_documented": true
+  }
+}

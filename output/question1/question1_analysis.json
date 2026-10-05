@@ -1,0 +1,299 @@
+{
+  "generated_at_utc": "2026-10-05T08:05:52.151728+00:00",
+  "source_sha256": {
+    "output\\question1\\question1_baseline.json": "c75a33524cad205867402eaccfcad32cd7a85d841ab331c237140bc220074d89",
+    "output\\regions\\region_base_data.json": "81c3c1d9493f4948e2b64eb11c4bbaff6c94d64c04d0c9c12981efb27d3bb682",
+    "output\\model1\\species_region_counts_2015.json": "206d158b1594bc306589a7060ba17b88d5b0159812738036b7d7fae34a4667fd",
+    "data\\regions\\processed\\model_regions.geojson": "d665a51f56319afd1b514ecc2fdbfc3989d1be4a0767770e14d6abc238aad55d"
+  },
+  "script_sha256": "26d56a4f75655da5514a8e7b2ec30011dc796ac1140845d3c8720c1b135c3220",
+  "runtime_versions": {
+    "python": "3.12.15",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "geopandas": "1.2.0"
+  },
+  "historical_six_taxa_top5_share": 0.6067815328796404,
+  "historical_six_taxa_top2_share": 0.32989628373545,
+  "fuel_habitat_top5": [
+    {
+      "region_id": "ENP11",
+      "share": 0.14383932088482326
+    },
+    {
+      "region_id": "ENP3410",
+      "share": 0.13167138717992366
+    },
+    {
+      "region_id": "ENP15",
+      "share": 0.11096080592459209
+    },
+    {
+      "region_id": "ENP1",
+      "share": 0.09798950011539581
+    },
+    {
+      "region_id": "ENP13",
+      "share": 0.07942793790599546
+    }
+  ],
+  "conditional_count_interval_envelopes": {
+    "ENP1": {
+      "lower": 0.0731367849849452,
+      "upper": 0.4243226889602484
+    },
+    "ENP2": {
+      "lower": 0.012855626219003224,
+      "upper": 0.1217745935360335
+    },
+    "ENP3410": {
+      "lower": 0.02272832638454139,
+      "upper": 0.2325828962925301
+    },
+    "ENP5": {
+      "lower": 0.011893194567249814,
+      "upper": 0.1335815898372221
+    },
+    "ENP6": {
+      "lower": 0.004086526719298382,
+      "upper": 0.13779410271947928
+    },
+    "ENP7": {
+      "lower": 0.011946675630095953,
+      "upper": 0.19285714352624256
+    },
+    "ENP8": {
+      "lower": 0.0024455896554560173,
+      "upper": 0.08751159950118485
+    },
+    "ENP9": {
+      "lower": 0.0022448122590680115,
+      "upper": 0.08586125820616719
+    },
+    "ENP11": {
+      "lower": 0.004266820132639122,
+      "upper": 0.16580187495512336
+    },
+    "ENP12": {
+      "lower": 0.029307010417760935,
+      "upper": 0.28429122181257294
+    },
+    "ENP13": {
+      "lower": 0.013577789253035322,
+      "upper": 0.12477356222414311
+    },
+    "ENP14": {
+      "lower": 0.00036767701642996753,
+      "upper": 0.036238874279876265
+    },
+    "ENP15": {
+      "lower": 0.049522714711678066,
+      "upper": 0.39012808481726774
+    },
+    "ENP16": {
+      "lower": 0.02212216440717055,
+      "upper": 0.256314466483051
+    },
+    "ENP17": {
+      "lower": 0.02798191002830807,
+      "upper": 0.24770640180283823
+    }
+  },
+  "envelope_semantics": "Extrema over rectangular source-CI-endpoint scenarios; conditional on fixed nondetection zeros. Not a joint 95% CI, not a population forecast, not simultaneously attainable across regions.",
+  "nondetection_fixed_zero_cells": [
+    {
+      "region_id": "ENP3410",
+      "species_code": "La"
+    },
+    {
+      "region_id": "ENP6",
+      "species_code": "Gc"
+    },
+    {
+      "region_id": "ENP8",
+      "species_code": "Ct"
+    },
+    {
+      "region_id": "ENP8",
+      "species_code": "La"
+    },
+    {
+      "region_id": "ENP9",
+      "species_code": "Ct"
+    },
+    {
+      "region_id": "ENP9",
+      "species_code": "Gc"
+    },
+    {
+      "region_id": "ENP11",
+      "species_code": "La"
+    },
+    {
+      "region_id": "ENP14",
+      "species_code": "Ct"
+    },
+    {
+      "region_id": "ENP17",
+      "species_code": "Ct"
+    }
+  ],
+  "nondetection_sensitivity": [
+    {
+      "fraction_of_survey_species_total_added_to_nondetected_units": 0.01,
+      "allocation_basis": "original_survey_area_among_zero_baseline_rows",
+      "scenario_not_population_estimate": true,
+      "added_counts_by_species": {
+        "Ct": 42.07,
+        "Gc": 31.720000000000002,
+        "La": 29.11
+      },
+      "values": {
+        "ENP1": 0.17320738362974275,
+        "ENP2": 0.037975464877955334,
+        "ENP3410": 0.08090846070875561,
+        "ENP5": 0.03899898061262402,
+        "ENP6": 0.03512012802932669,
+        "ENP7": 0.053714148988727624,
+        "ENP8": 0.024264382535763317,
+        "ENP9": 0.023756997580119933,
+        "ENP11": 0.0569531782775042,
+        "ENP12": 0.0986289458028031,
+        "ENP13": 0.037805804203448,
+        "ENP14": 0.007284931847208953,
+        "ENP15": 0.1547282143914622,
+        "ENP16": 0.0882123715753985,
+        "ENP17": 0.0884406069391598
+      },
+      "ranks": {
+        "ENP1": 1,
+        "ENP15": 2,
+        "ENP12": 3,
+        "ENP17": 4,
+        "ENP16": 5,
+        "ENP3410": 6,
+        "ENP11": 7,
+        "ENP7": 8,
+        "ENP5": 9,
+        "ENP2": 10,
+        "ENP13": 11,
+        "ENP6": 12,
+        "ENP8": 13,
+        "ENP9": 14,
+        "ENP14": 15
+      },
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP17",
+        "ENP16"
+      ],
+      "max_rank_change": 1
+    },
+    {
+      "fraction_of_survey_species_total_added_to_nondetected_units": 0.05,
+      "allocation_basis": "original_survey_area_among_zero_baseline_rows",
+      "scenario_not_population_estimate": true,
+      "added_counts_by_species": {
+        "Ct": 210.35000000000002,
+        "Gc": 158.60000000000002,
+        "La": 145.55
+      },
+      "values": {
+        "ENP1": 0.16943819145313535,
+        "ENP2": 0.03738607939310738,
+        "ENP3410": 0.08305122022915465,
+        "ENP5": 0.0384350830159071,
+        "ENP6": 0.038333698354980454,
+        "ENP7": 0.05259171272908919,
+        "ENP8": 0.025445340150240348,
+        "ENP9": 0.028070228025141846,
+        "ENP11": 0.06075266338647559,
+        "ENP12": 0.09601409646232555,
+        "ENP13": 0.03725301650365847,
+        "ENP14": 0.009040618887294441,
+        "ENP15": 0.15102812765665968,
+        "ENP16": 0.0855815388893543,
+        "ENP17": 0.0875783848634756
+      },
+      "ranks": {
+        "ENP1": 1,
+        "ENP15": 2,
+        "ENP12": 3,
+        "ENP17": 4,
+        "ENP16": 5,
+        "ENP3410": 6,
+        "ENP11": 7,
+        "ENP7": 8,
+        "ENP5": 9,
+        "ENP6": 10,
+        "ENP2": 11,
+        "ENP13": 12,
+        "ENP9": 13,
+        "ENP8": 14,
+        "ENP14": 15
+      },
+      "top5": [
+        "ENP1",
+        "ENP15",
+        "ENP12",
+        "ENP17",
+        "ENP16"
+      ],
+      "max_rank_change": 2
+    }
+  ],
+  "constructed_standard_examples_not_park_observations": {
+    "complete_constructed_example": {
+      "status": "meets_planning_standard",
+      "score_for_supplied_demand_scope": 90.0,
+      "park_target": 80.0,
+      "critical_target": 0.9,
+      "failed_conditions": [],
+      "unknown_fields": [],
+      "is_empirical_success_probability": false
+    },
+    "same_score_but_critical_failure": {
+      "status": "below_standard",
+      "score_for_supplied_demand_scope": 90.0,
+      "park_target": 80.0,
+      "critical_target": 0.9,
+      "failed_conditions": [
+        "critical:rhino"
+      ],
+      "unknown_fields": [],
+      "is_empirical_success_probability": false
+    },
+    "same_score_but_water_unknown": {
+      "status": "data_incomplete",
+      "score_for_supplied_demand_scope": 90.0,
+      "park_target": 80.0,
+      "critical_target": 0.9,
+      "failed_conditions": [],
+      "unknown_fields": [
+        "safeguard:water_status_checked"
+      ],
+      "is_empirical_success_probability": false
+    }
+  },
+  "checks": {
+    "baseline_matches_current_sources_and_metric_code": true,
+    "conditional_envelopes_attained_by_explicit_scenarios": true,
+    "baseline_inside_all_envelopes": true,
+    "nondetection_reserve_counts_conserved": true,
+    "metric_semantics": {
+      "monitoring_without_response_is_not_effective_protection": true,
+      "zero_demand_is_not_automatic_100_points": true,
+      "unknown_demand_is_not_silently_zero": true,
+      "same_scale_used_for_deployment_comparison": true,
+      "demand_weighted_aggregation": true,
+      "discovery_and_response_must_cover_same_targets": true,
+      "complete_scope_with_all_floors_can_pass": true,
+      "high_park_score_cannot_hide_critical_failure": true,
+      "unknown_safeguard_cannot_certify_protection": true,
+      "partial_scope_cannot_certify_full_park": true,
+      "unknown_demand_cannot_generate_full_score": true
+    }
+  }
+}

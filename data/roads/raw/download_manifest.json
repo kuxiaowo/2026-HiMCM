@@ -1,0 +1,30 @@
+[
+  {
+    "file": "namibia-261003.osm.pbf",
+    "url": "https://download.geofabrik.de/africa/namibia-261003.osm.pbf",
+    "bytes": 54709969,
+    "sha256": "a3ee257b82dd4e171b9c03770c19ceeb05006ba7aa03a3333d811a385eb4d35e",
+    "retrieved_utc": "2026-10-05T03:29:03.724653+00:00"
+  },
+  {
+    "file": "hdx_roads_metadata.json",
+    "url": "https://production-raw-data-api.s3.amazonaws.com/ISO3/NAM/roads/hotosm_nam_roads_osm_metadata.json",
+    "bytes": 10393,
+    "sha256": "265d6fe8ba23593e0e1c5a21dbeb0f0572dcffc41ebe0c4304eeed6f1e3bb388",
+    "retrieved_utc": "2026-10-05T03:28:45.170721+00:00"
+  },
+  {
+    "file": "arcgis_etosha_roads_item.json",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/f9f78bd6acef4c44902431c929337817?f=json",
+    "bytes": 1267,
+    "sha256": "d3f98d039fd18c40edb16073eb6db530ee724cbfd686ab34a7a7190298997901",
+    "retrieved_utc": "2026-10-05T03:28:45.214412+00:00"
+  },
+  {
+    "file": "arcgis_etosha_roads_service.json",
+    "url": "https://services7.arcgis.com/sLjbwe0PF2weuK4o/arcgis/rest/services/Etosha_Road_Clip/FeatureServer?f=json",
+    "bytes": 3111,
+    "sha256": "41264bf06a3b42dd57542720f1c47802a41aaa572109f54e425cc1281e14544a",
+    "retrieved_utc": "2026-10-05T03:28:45.788883+00:00"
+  }
+]

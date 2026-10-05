@@ -1,0 +1,17 @@
+[
+  {
+    "radius_m": 250,
+    "main_pan_approx_area_km2": 4172.977962892804,
+    "other_residual_area_km2": 361.5901883196857
+  },
+  {
+    "radius_m": 500,
+    "main_pan_approx_area_km2": 4165.901832356275,
+    "other_residual_area_km2": 368.66631885621484
+  },
+  {
+    "radius_m": 1000,
+    "main_pan_approx_area_km2": 4163.054731335813,
+    "other_residual_area_km2": 371.51341987667473
+  }
+]

@@ -1,0 +1,476 @@
+{
+  "source_name": "osm",
+  "snapshot_label": "2026-09-08",
+  "dataset_source": "OpenStreetMap (Geofabrik NAM 2026-09-08)",
+  "generated_utc": "2026-09-09T23:56:00Z",
+  "oex_version": "0.4.13",
+  "license_label": "Open Database License (ODC-ODbL)",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "pcode_source_date": "2025-07-29",
+  "boundary": "geoBoundaries CGAZ ADM0",
+  "metadata": {
+    "feature_count": 97318,
+    "geometry_types": {
+      "LINESTRING": 94719,
+      "POINT": 2444,
+      "POLYGON": 155
+    },
+    "bbox": [
+      11.7396943,
+      -29.1252569,
+      25.2651022,
+      -16.8611908
+    ],
+    "columns": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percent": 0.0,
+        "distinct_count": 97318,
+        "top_values": []
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "null_count": 87814,
+        "null_percent": 90.23,
+        "distinct_count": 4797,
+        "top_values": []
+      },
+      {
+        "name": "name_en",
+        "type": "VARCHAR",
+        "null_count": 97311,
+        "null_percent": 99.99,
+        "distinct_count": 6,
+        "top_values": [
+          {
+            "value": "Johan Conradie Bridge",
+            "count": 2
+          },
+          {
+            "value": "Schoenlein Street",
+            "count": 1
+          },
+          {
+            "value": "Omeg Alley",
+            "count": 1
+          },
+          {
+            "value": "Church Street",
+            "count": 1
+          },
+          {
+            "value": "Carlo's shuttle",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "highway",
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percent": 0.0,
+        "distinct_count": 45,
+        "top_values": [
+          {
+            "value": "track",
+            "count": 46240
+          },
+          {
+            "value": "service",
+            "count": 16642
+          },
+          {
+            "value": "residential",
+            "count": 15207
+          },
+          {
+            "value": "path",
+            "count": 4835
+          },
+          {
+            "value": "unclassified",
+            "count": 3480
+          }
+        ]
+      },
+      {
+        "name": "surface",
+        "type": "VARCHAR",
+        "null_count": 56162,
+        "null_percent": 57.71,
+        "distinct_count": 33,
+        "top_values": [
+          {
+            "value": "unpaved",
+            "count": 24350
+          },
+          {
+            "value": "asphalt",
+            "count": 5452
+          },
+          {
+            "value": "ground",
+            "count": 3729
+          },
+          {
+            "value": "gravel",
+            "count": 2552
+          },
+          {
+            "value": "sand",
+            "count": 1839
+          }
+        ]
+      },
+      {
+        "name": "smoothness",
+        "type": "VARCHAR",
+        "null_count": 94651,
+        "null_percent": 97.26,
+        "distinct_count": 9,
+        "top_values": [
+          {
+            "value": "horrible",
+            "count": 1440
+          },
+          {
+            "value": "good",
+            "count": 384
+          },
+          {
+            "value": "very_bad",
+            "count": 305
+          },
+          {
+            "value": "bad",
+            "count": 192
+          },
+          {
+            "value": "very_horrible",
+            "count": 148
+          }
+        ]
+      },
+      {
+        "name": "width",
+        "type": "VARCHAR",
+        "null_count": 97042,
+        "null_percent": 99.72,
+        "distinct_count": 16,
+        "top_values": [
+          {
+            "value": "3",
+            "count": 136
+          },
+          {
+            "value": "2",
+            "count": 45
+          },
+          {
+            "value": "4",
+            "count": 33
+          },
+          {
+            "value": "1",
+            "count": 23
+          },
+          {
+            "value": "0.5",
+            "count": 9
+          }
+        ]
+      },
+      {
+        "name": "lanes",
+        "type": "VARCHAR",
+        "null_count": 94499,
+        "null_percent": 97.1,
+        "distinct_count": 6,
+        "top_values": [
+          {
+            "value": "2",
+            "count": 1935
+          },
+          {
+            "value": "1",
+            "count": 589
+          },
+          {
+            "value": "4",
+            "count": 194
+          },
+          {
+            "value": "3",
+            "count": 98
+          },
+          {
+            "value": "0",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "name": "oneway",
+        "type": "VARCHAR",
+        "null_count": 92070,
+        "null_percent": 94.61,
+        "distinct_count": 2,
+        "top_values": [
+          {
+            "value": "yes",
+            "count": 3966
+          },
+          {
+            "value": "no",
+            "count": 1282
+          }
+        ]
+      },
+      {
+        "name": "bridge",
+        "type": "VARCHAR",
+        "null_count": 96091,
+        "null_percent": 98.74,
+        "distinct_count": 4,
+        "top_values": [
+          {
+            "value": "yes",
+            "count": 1222
+          },
+          {
+            "value": "low_water_crossing",
+            "count": 3
+          },
+          {
+            "value": "viaduct",
+            "count": 1
+          },
+          {
+            "value": "suspension_bridge",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "layer",
+        "type": "VARCHAR",
+        "null_count": 95984,
+        "null_percent": 98.63,
+        "distinct_count": 4,
+        "top_values": [
+          {
+            "value": "1",
+            "count": 1213
+          },
+          {
+            "value": "-1",
+            "count": 119
+          },
+          {
+            "value": "-5",
+            "count": 1
+          },
+          {
+            "value": "3",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "source",
+        "type": "VARCHAR",
+        "null_count": 97318,
+        "null_percent": 100.0,
+        "distinct_count": 0,
+        "top_values": []
+      },
+      {
+        "name": "adm0_pcode",
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percent": 0.0,
+        "distinct_count": 1,
+        "top_values": [
+          {
+            "value": "NAM",
+            "count": 97318
+          }
+        ]
+      },
+      {
+        "name": "adm0_name",
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percent": 0.0,
+        "distinct_count": 1,
+        "top_values": [
+          {
+            "value": "Namibia",
+            "count": 97318
+          }
+        ]
+      },
+      {
+        "name": "adm1_pcode",
+        "type": "VARCHAR",
+        "null_count": 135,
+        "null_percent": 0.14,
+        "distinct_count": 14,
+        "top_values": [
+          {
+            "value": "NA06",
+            "count": 22613
+          },
+          {
+            "value": "NA02",
+            "count": 12464
+          },
+          {
+            "value": "NA13",
+            "count": 11837
+          },
+          {
+            "value": "NA03",
+            "count": 7638
+          },
+          {
+            "value": "NA07",
+            "count": 7148
+          }
+        ]
+      },
+      {
+        "name": "adm1_name",
+        "type": "VARCHAR",
+        "null_count": 135,
+        "null_percent": 0.14,
+        "distinct_count": 14,
+        "top_values": [
+          {
+            "value": "Khomas",
+            "count": 22613
+          },
+          {
+            "value": "Erongo",
+            "count": 12464
+          },
+          {
+            "value": "Otjozondjupa",
+            "count": 11837
+          },
+          {
+            "value": "Hardap",
+            "count": 7638
+          },
+          {
+            "value": "Kunene",
+            "count": 7148
+          }
+        ]
+      },
+      {
+        "name": "adm2_pcode",
+        "type": "VARCHAR",
+        "null_count": 135,
+        "null_percent": 0.14,
+        "distinct_count": 106,
+        "top_values": [
+          {
+            "value": "NA0608",
+            "count": 11555
+          },
+          {
+            "value": "NA0607",
+            "count": 3703
+          },
+          {
+            "value": "NA0609",
+            "count": 3123
+          },
+          {
+            "value": "NA0301",
+            "count": 2950
+          },
+          {
+            "value": "NA1304",
+            "count": 2553
+          }
+        ]
+      },
+      {
+        "name": "adm2_name",
+        "type": "VARCHAR",
+        "null_count": 135,
+        "null_percent": 0.14,
+        "distinct_count": 106,
+        "top_values": [
+          {
+            "value": "Windhoek Rural",
+            "count": 11555
+          },
+          {
+            "value": "Windhoek East",
+            "count": 3703
+          },
+          {
+            "value": "Windhoek West",
+            "count": 3123
+          },
+          {
+            "value": "Gibeon",
+            "count": 2950
+          },
+          {
+            "value": "Omatako",
+            "count": 2553
+          }
+        ]
+      },
+      {
+        "name": "adm3_pcode",
+        "type": "VARCHAR",
+        "null_count": 97318,
+        "null_percent": 100.0,
+        "distinct_count": 0,
+        "top_values": []
+      },
+      {
+        "name": "adm3_name",
+        "type": "VARCHAR",
+        "null_count": 97318,
+        "null_percent": 100.0,
+        "distinct_count": 0,
+        "top_values": []
+      },
+      {
+        "name": "adm4_pcode",
+        "type": "VARCHAR",
+        "null_count": 97318,
+        "null_percent": 100.0,
+        "distinct_count": 0,
+        "top_values": []
+      },
+      {
+        "name": "adm4_name",
+        "type": "VARCHAR",
+        "null_count": 97318,
+        "null_percent": 100.0,
+        "distinct_count": 0,
+        "top_values": []
+      },
+      {
+        "name": "name_latin",
+        "type": "VARCHAR",
+        "null_count": 87813,
+        "null_percent": 90.23,
+        "distinct_count": 4797,
+        "top_values": []
+      }
+    ],
+    "summary": "97,318 features. geometry types: 94,719 LINESTRING, 2,444 POINT, 155 POLYGON. 15 of 23 columns are >=50% null (name, name_en, surface, smoothness, width, lanes, oneway, bridge, layer, source, adm3_pcode, adm3_name, adm4_pcode, adm4_name, name_latin).",
+    "temporal": null
+  }
+}
