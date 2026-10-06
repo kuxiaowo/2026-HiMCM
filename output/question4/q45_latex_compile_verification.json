@@ -1,0 +1,17 @@
+{
+  "status": "unavailable",
+  "documents": [
+    "docs/paper/question4_sensitivity.tex",
+    "docs/paper/question5_evaluation.tex"
+  ],
+  "editor_builtin_error": "Unable to find standard directories for platform",
+  "historical_compiler_path": "D:/texlive/2026/bin/windows/xelatex.exe",
+  "historical_path_exists": false,
+  "current_texlive_directory": "E:/texlive/2026",
+  "current_xelatex_exists": false,
+  "current_lualatex_version_exit_code": 1,
+  "pdf_generated": true,
+  "sources_preserved": true,
+  "pdf_reading_copies_generated": true,
+  "pdf_render_method": "Chromium + MathJax SVG; not native LaTeX compilation"
+}

@@ -1,0 +1,238 @@
+{
+  "status": "explicit_team_scenario_assumptions_not_local_calibration",
+  "scope": "four task prototypes per park; no real park partition or GIS routing; no whole-park staff estimate",
+  "evidence_date": "2026-10-06",
+  "common": {
+    "effective_hours_month": 120.0,
+    "fixed_staff": 11,
+    "response_limit_hours": 2.0,
+    "dispatch_hours": 0.16666666666666666,
+    "preparation_hours": 0.08333333333333333,
+    "team_size": 2.0,
+    "response_staff_per_site": 2.0,
+    "hours_day": 8.0,
+    "days_month": 30.0,
+    "service_floor": 0.15,
+    "target_score": 95.0,
+    "conditional_drone_hours": 16.0,
+    "drone_speed_kmh": 40.0,
+    "drone_safe_flight_hours": 0.6
+  },
+  "inherited_constants": "120 effective hours, 2-person teams, 2-hour response and 15% floor are demonstration assumptions; none is a local official standard",
+  "source_support": "primary sources support objects, habitats, season mechanisms and permissions ONLY; all numeric network edges, task weights, checks, speeds, extra work and budgets are synthetic",
+  "parks": [
+    {
+      "park": "chitwan",
+      "park_label": "奇特旺",
+      "bases": [
+        "A",
+        "B"
+      ],
+      "targets": [
+        {
+          "id": "J1",
+          "label": "林地重点对象",
+          "weight": 0.3,
+          "checks": 24.0,
+          "walk_km": 0.5,
+          "walk_speed": 3.0,
+          "observation": 0.25,
+          "drone": false
+        },
+        {
+          "id": "J2",
+          "label": "开阔草地对象",
+          "weight": 0.3,
+          "checks": 24.0,
+          "walk_km": 1.0,
+          "walk_speed": 4.0,
+          "observation": 0.25,
+          "drone": true
+        },
+        {
+          "id": "J3",
+          "label": "社区边界核查",
+          "weight": 0.25,
+          "checks": 20.0,
+          "walk_km": 0.0,
+          "walk_speed": 4.0,
+          "observation": 0.25,
+          "drone": false
+        },
+        {
+          "id": "J4",
+          "label": "河岸湿地核查",
+          "weight": 0.15,
+          "checks": 12.0,
+          "walk_km": 0.4,
+          "walk_speed": 3.0,
+          "observation": 0.25,
+          "drone": false
+        }
+      ],
+      "edges": [
+        [
+          "A",
+          "J1",
+          12,
+          20,
+          10
+        ],
+        [
+          "B",
+          "J1",
+          20,
+          20,
+          10
+        ],
+        [
+          "A",
+          "J2",
+          20,
+          25,
+          10
+        ],
+        [
+          "B",
+          "J2",
+          12,
+          25,
+          12.5
+        ],
+        [
+          "A",
+          "J3",
+          5,
+          20,
+          10
+        ],
+        [
+          "B",
+          "J4",
+          18,
+          15,
+          0
+        ],
+        [
+          "J2",
+          "J4",
+          25,
+          20,
+          7.142857142857143
+        ],
+        [
+          "A",
+          "B",
+          35,
+          25,
+          12.5
+        ]
+      ],
+      "ground_extra_normal": 48.0,
+      "ground_extra_stress": 72.0
+    },
+    {
+      "park": "yellowstone",
+      "park_label": "黄石",
+      "bases": [
+        "A",
+        "B"
+      ],
+      "targets": [
+        {
+          "id": "J1",
+          "label": "道路动物交互",
+          "weight": 0.35,
+          "checks": 30.0,
+          "walk_km": 0.0,
+          "walk_speed": 4.0,
+          "observation": 0.25,
+          "drone": false
+        },
+        {
+          "id": "J2",
+          "label": "开阔谷地监测",
+          "weight": 0.25,
+          "checks": 24.0,
+          "walk_km": 0.3,
+          "walk_speed": 4.0,
+          "observation": 0.25,
+          "drone": false
+        },
+        {
+          "id": "J3",
+          "label": "游览节点核查",
+          "weight": 0.25,
+          "checks": 16.0,
+          "walk_km": 0.0,
+          "walk_speed": 4.0,
+          "observation": 0.5,
+          "drone": false
+        },
+        {
+          "id": "J4",
+          "label": "偏远生境核查",
+          "weight": 0.15,
+          "checks": 10.0,
+          "walk_km": 1.2,
+          "walk_speed": 3.0,
+          "observation": 0.5,
+          "drone": false
+        }
+      ],
+      "edges": [
+        [
+          "A",
+          "J1",
+          24,
+          40,
+          30
+        ],
+        [
+          "B",
+          "J1",
+          30,
+          40,
+          12
+        ],
+        [
+          "B",
+          "J2",
+          28,
+          35,
+          12
+        ],
+        [
+          "A",
+          "J3",
+          8,
+          30,
+          20
+        ],
+        [
+          "B",
+          "J4",
+          30,
+          30,
+          8
+        ],
+        [
+          "J2",
+          "J4",
+          10,
+          15,
+          10
+        ],
+        [
+          "A",
+          "B",
+          60,
+          40,
+          20
+        ]
+      ],
+      "ground_extra_normal": 72.0,
+      "ground_extra_stress": 72.0
+    }
+  ]
+}

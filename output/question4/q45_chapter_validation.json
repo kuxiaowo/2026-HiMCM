@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "chapters": [
+    {
+      "chapter": 4,
+      "approved_headings_match": true,
+      "local_links_valid": true,
+      "tex_references_valid": true,
+      "tikz_self_contained": true
+    },
+    {
+      "chapter": 5,
+      "approved_headings_match": true,
+      "local_links_valid": true,
+      "tex_references_valid": true,
+      "tikz_self_contained": true
+    }
+  ],
+  "Q2_Q3_sources_preserved": true,
+  "figures_visually_reviewed": 2,
+  "pdf_compilation_confirmed": false,
+  "pdf_reading_copies_generated": true,
+  "pdf_render_method": "Chromium + MathJax SVG; not native LaTeX compilation"
+}

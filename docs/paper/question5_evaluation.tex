@@ -1,0 +1,36 @@
+\documentclass[UTF8,fontset=fandol,12pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array}
+\usepackage{graphicx,xcolor,tikz,caption,placeins,hyperref}
+\usetikzlibrary{arrows.meta}
+\hypersetup{hidelinks}
+\captionsetup{font=small,labelfont=bf,labelsep=quad}
+\setcounter{secnumdepth}{3}
+\setcounter{section}{4}
+\renewcommand{\theequation}{5-\arabic{equation}}
+\renewcommand{\thefigure}{5-\arabic{figure}}
+\renewcommand{\thetable}{5-\arabic{table}}
+\allowdisplaybreaks
+\setlength{\parskip}{0.25em}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\emergencystretch=2em
+\begin{document}
+
+\section{模型评价}
+
+\subsection{模型优点}
+
+模型将地面监测、无人机飞行及其配套人工共同纳入预算，并以路网与响应期限约束有效服务，能够区分资源不足和地理不可达。紧缺预算下，优化方案45.77分，高于需求比例38.24分和面积均衡31.30分，支持其在相同条件下改善战略配置的作用。第三、四题沿用相同服务定义，把季节任务转为人时并反求人力，便于解释为何峰值月份或技术减少会提高人员需求。
+
+变量单位和工作量来源明确，保存的输入、解向量及独立核验使结论可复算。第四题97个保存可行方案均通过容量、必要任务、预算和汇总检查。上述证据支持所建模型内的资源规划与数值一致性。
+
+\subsection{模型局限}
+
+动物、生境和道路资料年份不同，重点对象及当前完整水点清单仍有缺失；区内均匀分布、服务频次及人机筛查等价也需要现场校准。因而人员结果只针对选定对象、既定响应范围和历史水点样本，不能视为全园真实最低编制。
+
+月度连续工时与独立往返简化了整数派遣、岗位资格、驻点迁移和并发响应，工作总量足够不保证具体日程可行。服务分衡量规定监测能力，不等于动物存活率或生态损失下降；维持第二题最优分也不能证明原服务标准具有生态充分性。实际应用应先补齐现行台账与作业日志，再校准成本、频次和技术适用条件，并用独立成效资料检验保护效果。
+
+\end{document}

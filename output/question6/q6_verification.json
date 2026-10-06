@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "case_count": 7,
+  "case_checks": [
+    {
+      "case": "C0",
+      "routing": "Floyd-Warshall verified",
+      "objective": "independent fractional knapsack verified",
+      "constraints": "passed"
+    },
+    {
+      "case": "C1",
+      "routing": "Floyd-Warshall verified",
+      "objective": "independent fractional knapsack verified",
+      "constraints": "passed"
+    },
+    {
+      "case": "C2",
+      "routing": "Floyd-Warshall verified",
+      "objective": "independent fractional knapsack verified",
+      "constraints": "passed"
+    },
+    {
+      "case": "C3",
+      "routing": "Floyd-Warshall verified",
+      "objective": "independent fractional knapsack verified",
+      "constraints": "passed"
+    },
+    {
+      "case": "Y0",
+      "routing": "Floyd-Warshall verified",
+      "objective": "independent fractional knapsack verified",
+      "constraints": "passed"
+    },
+    {
+      "case": "Y1",
+      "routing": "Floyd-Warshall verified",
+      "objective": "independent fractional knapsack verified",
+      "constraints": "passed"
+    },
+    {
+      "case": "Y2",
+      "routing": "Floyd-Warshall verified",
+      "objective": "independent fractional knapsack verified",
+      "constraints": "passed"
+    }
+  ],
+  "max_independent_objective_difference_hours": 2.2737367544323206e-13,
+  "scope": "numerical and structural verification; not local calibration or ecological validation",
+  "result_sha256": "e04fc7fdd60738000fb3ced19842fa30fdadb3ae9347168ceee9055612ba07b1"
+}

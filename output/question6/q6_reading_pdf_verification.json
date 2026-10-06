@@ -1,0 +1,11 @@
+{
+  "status": "reading_pdf_created",
+  "pages": 6,
+  "format": "ReportLab reading preview, not LaTeX compilation",
+  "source_sha256": "c9d4ef384ff5e9a8ae589185a59fe607d616d075549e4400f000812a3f6988cf",
+  "pdf_sha256": "9c20dcabf211be68cb586d50aa73b3a93cc7a2a66d1434d180e203fa8aeb3504",
+  "extracted_text_contains_results": true,
+  "latex_compilation_status": "unverified: built-in compiler platform directories error; local TeX installation lacks formats",
+  "rendered_pages_visually_reviewed": 6,
+  "visual_quality": "passed: formulas, three figures and three tables readable; no overlaps or clipping"
+}

@@ -1,0 +1,61 @@
+{
+  "chapters": [
+    {
+      "chapter": 4,
+      "sections": 3,
+      "subsections": 6,
+      "equations": 3,
+      "figures": 2,
+      "tables": 4,
+      "labels": {
+        "eq:resource": "4-1",
+        "eq:water": "4-2",
+        "eq:profile": "4-3",
+        "fig:resources": "4-1",
+        "fig:joint": "4-2",
+        "tab:travel": "4-1",
+        "tab:standards": "4-2",
+        "tab:schedule": "4-3",
+        "tab:adaptation": "4-4"
+      },
+      "md_sha256": "f7c2b22ac74a42bda434ef5f5a1a5867f48b5b5eca1097e0f45817ea666f14f9",
+      "tex_sha256": "d3f8f3de4330f4907bfd442055a848791528863dc225d3d63a68f73b0cbaaa56"
+    },
+    {
+      "chapter": 5,
+      "sections": 2,
+      "subsections": 0,
+      "equations": 0,
+      "figures": 0,
+      "tables": 0,
+      "labels": {},
+      "md_sha256": "35a391017bb22389f8b46d7cfedc25694a16612fd56e9b93742e9d3e3b12dfe3",
+      "tex_sha256": "715984d209b3d433f72f2ca8912c5291ce1c9f92797fdb0581969beffd8ec2bc"
+    }
+  ],
+  "source_sha256": {
+    "output\\question4\\q4_results.json": "66038ab6e9dd4605716049f59c013b2338434575026fe33665592d01221c2e32",
+    "output\\question4\\q4_independent_verification.json": "6364a8e7523f04f28d1a8cd88e10450ab75df22dd94bf74fd48c9b539945081d"
+  },
+  "notes": [
+    "compact approved hierarchy retained",
+    "all figures inline TikZ in standalone sources",
+    "no external ecological validation claimed"
+  ],
+  "pdf_compilation_confirmed": false,
+  "pdf_reading_copies": [
+    {
+      "chapter": 4,
+      "path": "output\\pdf\\question4_sensitivity.pdf",
+      "pages": 4,
+      "visual_review": "passed_all_final_pages"
+    },
+    {
+      "chapter": 5,
+      "path": "output\\pdf\\question5_evaluation.pdf",
+      "pages": 1,
+      "visual_review": "passed_all_final_pages"
+    }
+  ],
+  "pdf_render_method": "Chromium + MathJax SVG reading copy from synchronized Markdown"
+}

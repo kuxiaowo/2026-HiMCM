@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "independently_checked_feasible_solutions": 97,
+  "saved_cases": 101,
+  "source_fingerprints_unchanged": true,
+  "policy_profiles_checked": true,
+  "water_dates_and_workload_checked": true,
+  "scope": "numerical consistency and model feasibility; not external ecological or roster validation"
+}
