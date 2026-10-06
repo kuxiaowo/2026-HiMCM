@@ -1,0 +1,107 @@
+{
+  "download_date": "2026-10-06",
+  "wdpca_release": "October2026",
+  "chitwan_boundary_source": "UNEP-WCMC WDPCA site805",
+  "chitwan_boundary_validation": "failed area consistency: rep_area932, published gis_area1213.00265952, DNPWC report952.63; computed polygon used only for conditional migration trial",
+  "osm_snapshot": "2026-10-04T20:20:21Z",
+  "landcover_year": 2021,
+  "landcover_algorithm": "v200",
+  "nps_boundary_catalog_update": "2025-12-18",
+  "yellowstone_road_records": 2007,
+  "yellowstone_poi_records": 1425,
+  "sources": [
+    {
+      "file": "data/question6/raw/chitwan_wdpca.json",
+      "url": "https://data-gis.unep-wcmc.org/server/rest/services/ProtectedPlanet/WDPCA/FeatureServer/1/query?where=site_id%3D805&outFields=*&outSR=4326&f=json",
+      "bytes": 256788,
+      "sha256": "c945bd4b362587f5ae89f29c9eb1690014cff5381f4f3e6101d8e8ffea97d108"
+    },
+    {
+      "file": "data/question6/raw/icimod_nepal_pa.geojson",
+      "url": "https://geoapps.icimod.org/icimodarcgis/rest/services/Nepal/BaseMap/MapServer/3/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+      "bytes": 5370363,
+      "sha256": "b798981a6e4903bf99e393e7d2f46ef2000fac490b108ab9a95ac7399e4a7a37"
+    },
+    {
+      "file": "data/question6/raw/nepal-latest.osm.pbf",
+      "url": "https://download.geofabrik.de/asia/nepal-latest.osm.pbf",
+      "bytes": 414519125,
+      "sha256": "4313820204be1e5a38088789b5fd7552a5097674d0089a8d436e90631643af82"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_boundary.zip",
+      "url": "https://irma.nps.gov/DataStore/DownloadFile/754058?Reference=2316784",
+      "bytes": 1050153,
+      "sha256": "79e8588dda20fd7a88333ad0067a6a9a2cc28d642e15cf039724120cc605b020"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_roads.geojson",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Roads/MapServer/0/query?where=UNITCODE%3D%27YELL%27&outFields=*&outSR=4326&f=geojson&resultRecordCount=2000",
+      "bytes": 2717367,
+      "sha256": "b9da9cdb8478195d04b90bd3dc64607dc93a960eeb490b5047cdd587f37e91d5"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_roads_page2.geojson",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Roads/MapServer/0/query?where=UNITCODE%3D%27YELL%27&outFields=*&outSR=4326&f=geojson&resultRecordCount=2000&resultOffset=2000",
+      "bytes": 8734,
+      "sha256": "891fc2c44f73977b19faf349320654e135aedcc9d979d8a68dd5c109b2d94ea0"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_pois.geojson",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?where=UNITCODE%3D%27YELL%27&outFields=*&outSR=4326&f=geojson&resultRecordCount=2000",
+      "bytes": 1400730,
+      "sha256": "a800bd260f7e7aabf2740537a9199712fb6f1214b15099ae1e8b94096fa4f0a0"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E081_Map.tif",
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27E081_Map.tif",
+      "bytes": 104848806,
+      "sha256": "53ec713abf379327c053e255d0d5936f81c3ad491ba3b89954c81ba8fa5ee053"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E084_Map.tif",
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27E084_Map.tif",
+      "bytes": 104225123,
+      "sha256": "43dd6237600f5a36b8dcd92228ee12fce3db386a07ac7f95defb90e806a21847"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N42W111_Map.tif",
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N42W111_Map.tif",
+      "bytes": 105959600,
+      "sha256": "8d6c9e00d9c88f29c126b8ed04d096f5428e9e72fa4f46c0d66950b54bfad66b"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N42W114_Map.tif",
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N42W114_Map.tif",
+      "bytes": 81282877,
+      "sha256": "67708bd9ec880170eb21b94a630fe6dcb0515d5c7f08d4db49f3fff30c422760"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N45W111_Map.tif",
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N45W111_Map.tif",
+      "bytes": 57817056,
+      "sha256": "7e73ab61b848b287b74cea64139d00e64af52f1efec94703fb3c5fcb41a49e66"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N45W114_Map.tif",
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N45W114_Map.tif",
+      "bytes": 70304858,
+      "sha256": "4d9bfcd5c0d91e46204a49993993b52521d0a6d4673db87cc5b77164698423a7"
+    }
+  ],
+  "licenses": {
+    "osm": "ODbL 1.0; © OpenStreetMap contributors",
+    "worldcover": "CC BY4.0; © ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+    "wdpca_attribution": "UNEP-WCMC and IUCN (2026), Protected Planet: WDPCA, October2026, Cambridge, UK"
+  },
+  "unavailable_sources": [
+    {
+      "url": "https://geoportal.ntnc.org.np/layers/ntnc:Chitwan_National_Park/",
+      "reason": "TLS hostname mismatch and HTTP502; not used in calculations"
+    },
+    {
+      "url": "https://giwmscdntwo.gov.np/media/pages/files/Final%20Report_GIS%20Database_v4olikj.pdf",
+      "reason": "connection failure; not used in calculations"
+    }
+  ]
+}

@@ -1,0 +1,1437 @@
+{
+ "isCoGoEnabled": false,
+ "extent": {
+  "ymin": -20520831.68660583,
+  "xmin": -20037507.067161843,
+  "ymax": 22165023.587148983,
+  "xmax": 20037507.067161843,
+  "spatialReference": {
+   "falseM": -100000,
+   "xyTolerance": 0.001,
+   "mUnits": 10000,
+   "zUnits": 10000,
+   "latestWkid": 3857,
+   "zTolerance": 0.001,
+   "wkid": 102100,
+   "xyUnits": 10000,
+   "mTolerance": 0.001,
+   "falseX": -20037700,
+   "falseY": -30241100,
+   "falseZ": -100000
+  }
+ },
+ "isDataBranchVersioned": false,
+ "supportsApplyEditsWithGlobalIds": false,
+ "maxRecordCount": 2000,
+ "infoInEstimates": [
+  "extent",
+  "count"
+ ],
+ "datesInUnknownTimezone": false,
+ "ownershipBasedAccessControlForFeatures": null,
+ "type": "Feature Layer",
+ "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+ "relationships": [],
+ "cimVersion": "3.7.0",
+ "isDataArchived": false,
+ "id": 1,
+ "archivingInfo": {
+  "startArchivingMoment": -1,
+  "supportsQueryWithHistoricMoment": false
+ },
+ "spatialReference": {
+  "falseM": -100000,
+  "xyTolerance": 0.001,
+  "mUnits": 10000,
+  "zUnits": 10000,
+  "latestWkid": 3857,
+  "zTolerance": 0.001,
+  "wkid": 102100,
+  "xyUnits": 10000,
+  "mTolerance": 0.001,
+  "falseX": -20037700,
+  "falseY": -30241100,
+  "falseZ": -100000
+ },
+ "supportsStatistics": true,
+ "supportedExportFormats": "sqlite,filegdb,shapefile,csv,geojson,kml,excel,featureCollection",
+ "hasLastEditTime": false,
+ "standardMaxRecordCount": 4000,
+ "isDataVersioned": false,
+ "hasGeometryProperties": true,
+ "templates": [],
+ "supportsAdvancedQueries": true,
+ "parentLayer": null,
+ "currentVersion": 12.1,
+ "canScaleSymbols": false,
+ "hasZ": false,
+ "advancedEditingCapabilities": {
+  "supportsSessionBasedAddAttachments": true,
+  "supportsAsyncApplyEdits": true,
+  "supportsApplyEditsbyUploadID": true,
+  "supportsSessionBasedUpdateFeatures": true,
+  "supportsSessionBasedDeleteAttachments": true,
+  "supportsDivideCombineGroupedObjects": true,
+  "supportsDeleteAssociations": true,
+  "supportsSessionBasedUpdateAttachments": true,
+  "supportedSqlFormatsInCalculate": ["standard"],
+  "supportedApplyEditsUploadIDFormats": "JSON,PBF",
+  "supportsSessionBasedDeleteFeatures": true,
+  "supportsSessionBasedAddFeatures": true
+ },
+ "supportsQuantizationEditMode": true,
+ "objectIdField": "objectid",
+ "name": "WDPCA_poly_latest",
+ "allowTrueCurvesUpdates": true,
+ "displayField": "name",
+ "supportsCalculate": true,
+ "fields": [
+  {
+   "modelName": "objectid",
+   "nullable": false,
+   "editable": false,
+   "defaultValue": null,
+   "domain": null,
+   "name": "objectid",
+   "alias": "objectid",
+   "type": "esriFieldTypeOID"
+  },
+  {
+   "modelName": "site_id",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "site_id",
+   "alias": "SITE_ID",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "modelName": "site_pid",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "site_pid",
+   "length": 52,
+   "alias": "SITE_PID",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "site_type",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "site_type",
+   "length": 65536,
+   "alias": "SITE_TYPE",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "name_eng",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "name_eng",
+   "length": 65536,
+   "alias": "NAME_ENG",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "name",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "name",
+   "length": 65536,
+   "alias": "NAME",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "desig",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "desig",
+   "length": 65536,
+   "alias": "DESIG",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "desig_eng",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "desig_eng",
+   "length": 65536,
+   "alias": "DESIG_ENG",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "desig_type",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "desig_type",
+   "length": 65536,
+   "alias": "DESIG_TYPE",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "iucn_cat",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "iucn_cat",
+   "length": 65536,
+   "alias": "IUCN_CAT",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "int_crit",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "int_crit",
+   "length": 65536,
+   "alias": "INT_CRIT",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "realm",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "realm",
+   "length": 20,
+   "alias": "REALM",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "rep_m_area",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "rep_m_area",
+   "alias": "REP_M_AREA",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "modelName": "gis_m_area",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "gis_m_area",
+   "alias": "GIS_M_AREA",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "modelName": "rep_area",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "rep_area",
+   "alias": "REP_AREA",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "modelName": "gis_area",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "gis_area",
+   "alias": "GIS_AREA",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "modelName": "no_take",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "no_take",
+   "length": 65536,
+   "alias": "NO_TAKE",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "no_tk_area",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "no_tk_area",
+   "alias": "NO_TK_AREA",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "modelName": "status",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "status",
+   "length": 65536,
+   "alias": "STATUS",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "status_yr",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "status_yr",
+   "alias": "STATUS_YR",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "modelName": "gov_type",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "gov_type",
+   "length": 65536,
+   "alias": "GOV_TYPE",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "verif",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "verif",
+   "length": 65536,
+   "alias": "VERIF",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "inlnd_wtrs",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "inlnd_wtrs",
+   "length": 65536,
+   "alias": "INLND_WTRS",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "own_type",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "own_type",
+   "length": 65536,
+   "alias": "OWN_TYPE",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "mang_auth",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "mang_auth",
+   "length": 65536,
+   "alias": "MANG_AUTH",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "mang_plan",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "mang_plan",
+   "length": 65536,
+   "alias": "MANG_PLAN",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "cons_obj",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "cons_obj",
+   "length": 65536,
+   "alias": "CONS_OBJ",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "supp_info",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "supp_info",
+   "length": 65536,
+   "alias": "SUPP_INFO",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "metadataid",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "metadataid",
+   "alias": "METADATAID",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "modelName": "prnt_iso3",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "prnt_iso3",
+   "length": 65536,
+   "alias": "PRNT_ISO3",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "iso3",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "iso3",
+   "length": 65536,
+   "alias": "ISO3",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "govsubtype",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "govsubtype",
+   "length": 65536,
+   "alias": "GOVSUBTYPE",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "ownsubtype",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "ownsubtype",
+   "length": 65536,
+   "alias": "OWNSUBTYPE",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "oecm_asmt",
+   "nullable": true,
+   "editable": true,
+   "defaultValue": null,
+   "domain": null,
+   "name": "oecm_asmt",
+   "length": 65536,
+   "alias": "OECM_ASMT",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "modelName": "st_area(shape)",
+   "nullable": true,
+   "editable": false,
+   "defaultValue": null,
+   "domain": null,
+   "name": "Shape__Area",
+   "alias": "st_area(shape)",
+   "type": "esriFieldTypeDouble",
+   "required": true
+  },
+  {
+   "modelName": "st_length(shape)",
+   "nullable": true,
+   "editable": false,
+   "defaultValue": null,
+   "domain": null,
+   "name": "Shape__Length",
+   "alias": "st_length(shape)",
+   "type": "esriFieldTypeDouble",
+   "required": true
+  }
+ ],
+ "maxRecordCountFactor": 1,
+ "dateFieldsTimeReference": {
+  "timeZoneIANA": "Etc/UTC",
+  "respectsDaylightSaving": false,
+  "timeZone": "UTC"
+ },
+ "bigIntegerRestrictedTo53Bits": true,
+ "hasM": false,
+ "allowGeometryUpdates": true,
+ "preferredTimeReference": null,
+ "useStandardizedQueries": true,
+ "sourceSpatialReference": {
+  "falseM": -100000,
+  "xyTolerance": 8.9831528411952199E-9,
+  "mUnits": 10000,
+  "zUnits": 10000,
+  "latestWkid": 4326,
+  "zTolerance": 0.001,
+  "wkid": 4326,
+  "xyUnits": 999999999.99999988,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "falseZ": -100000
+ },
+ "globalIdField": "",
+ "description": "",
+ "syncCanReturnChanges": false,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "geometryProperties": {
+  "shapeAreaFieldName": "Shape__Area",
+  "shapeLengthFieldName": "Shape__Length",
+  "units": "esriMeters"
+ },
+ "supportsRollbackOnFailureParameter": true,
+ "isDataReplicaTracked": false,
+ "standardMaxRecordCountNoGeometry": 32000,
+ "indexes": [
+  {
+   "name": "r1981_sde_rowid_uk",
+   "isUnique": true,
+   "description": "",
+   "isAscending": true,
+   "fields": "objectid"
+  },
+  {
+   "name": "wdpca_poly_latest_id_idx",
+   "isUnique": false,
+   "description": "",
+   "isAscending": true,
+   "fields": "site_id,site_pid"
+  },
+  {
+   "name": "a1461_ix1",
+   "isUnique": true,
+   "description": "",
+   "isAscending": true,
+   "fields": "shape"
+  }
+ ],
+ "editFieldsInfo": null,
+ "supportsDatumTransformation": true,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "minScale": 0,
+ "hasAttachments": false,
+ "advancedQueryCapabilities": {
+  "supportsSqlExpression": true,
+  "supportsQueryWithResultType": true,
+  "supportsUseEstimateForExceedsLimit": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsQueryWithCacheHint": false,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsCurrentUserQueries": true,
+  "fullTextSearchCapabilities": {
+   "supportsSqlExpressionInFullText": true,
+   "supportsOperator": false,
+   "supportsSearchOperator": true
+  },
+  "supportsQueryWithLodSR": false,
+  "supportsPagination": true,
+  "supportsMaxRecordCountFactor": false,
+  "fullTextSearchableFields": [],
+  "supportsStatistics": true,
+  "supportsTrueCurve": true,
+  "supportsOrderBy": true,
+  "supportsFullTextSearch": true,
+  "supportsQueryWithDistance": true,
+  "supportsLod": false,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsReturningQueryExtent": true,
+  "supportsReturningGeometryEnvelope": true,
+  "supportedCurveTypes": [
+   "esriGeometryCircularArc",
+   "esriGeometryEllipticArc",
+   "esriGeometryBezier3Curve"
+  ],
+  "supportsDistinct": true,
+  "supportsReturningGeometryCentroid": true,
+  "supportsQueryAnalytic": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true
+ },
+ "subtypeField": "",
+ "supportsValidateSQL": true,
+ "serviceItemId": "66db02d9d633438ea32ce163ff2e690a",
+ "supportsCoordinatesQuantization": true,
+ "types": [
+  {
+   "templates": [
+    {
+     "name": "OECM, Terrestrial",
+     "description": "",
+     "drawingTool": "esriFeatureEditToolPolygon",
+     "prototype": {"attributes": {
+      "desig": null,
+      "site_type": "OECM",
+      "supp_info": null,
+      "inlnd_wtrs": null,
+      "no_tk_area": null,
+      "oecm_asmt": null,
+      "desig_eng": null,
+      "rep_area": null,
+      "no_take": null,
+      "int_crit": null,
+      "mang_plan": null,
+      "site_pid": null,
+      "desig_type": null,
+      "gis_m_area": null,
+      "iucn_cat": null,
+      "rep_m_area": null,
+      "name_eng": null,
+      "mang_auth": null,
+      "gis_area": null,
+      "status_yr": null,
+      "own_type": null,
+      "govsubtype": null,
+      "prnt_iso3": null,
+      "ownsubtype": null,
+      "verif": null,
+      "metadataid": null,
+      "gov_type": null,
+      "cons_obj": null,
+      "site_id": null,
+      "name": null,
+      "realm": "Terrestrial",
+      "status": null,
+      "iso3": null
+     }}
+    },
+    {
+     "name": "OECM, Coastal",
+     "description": "",
+     "drawingTool": "esriFeatureEditToolPolygon",
+     "prototype": {"attributes": {
+      "desig": null,
+      "site_type": "OECM",
+      "supp_info": null,
+      "inlnd_wtrs": null,
+      "no_tk_area": null,
+      "oecm_asmt": null,
+      "desig_eng": null,
+      "rep_area": null,
+      "no_take": null,
+      "int_crit": null,
+      "mang_plan": null,
+      "site_pid": null,
+      "desig_type": null,
+      "gis_m_area": null,
+      "iucn_cat": null,
+      "rep_m_area": null,
+      "name_eng": null,
+      "mang_auth": null,
+      "gis_area": null,
+      "status_yr": null,
+      "own_type": null,
+      "govsubtype": null,
+      "prnt_iso3": null,
+      "ownsubtype": null,
+      "verif": null,
+      "metadataid": null,
+      "gov_type": null,
+      "cons_obj": null,
+      "site_id": null,
+      "name": null,
+      "realm": "Coastal",
+      "status": null,
+      "iso3": null
+     }}
+    },
+    {
+     "name": "OECM, Marine",
+     "description": "",
+     "drawingTool": "esriFeatureEditToolPolygon",
+     "prototype": {"attributes": {
+      "desig": null,
+      "site_type": "OECM",
+      "supp_info": null,
+      "inlnd_wtrs": null,
+      "no_tk_area": null,
+      "oecm_asmt": null,
+      "desig_eng": null,
+      "rep_area": null,
+      "no_take": null,
+      "int_crit": null,
+      "mang_plan": null,
+      "site_pid": null,
+      "desig_type": null,
+      "gis_m_area": null,
+      "iucn_cat": null,
+      "rep_m_area": null,
+      "name_eng": null,
+      "mang_auth": null,
+      "gis_area": null,
+      "status_yr": null,
+      "own_type": null,
+      "govsubtype": null,
+      "prnt_iso3": null,
+      "ownsubtype": null,
+      "verif": null,
+      "metadataid": null,
+      "gov_type": null,
+      "cons_obj": null,
+      "site_id": null,
+      "name": null,
+      "realm": "Marine",
+      "status": null,
+      "iso3": null
+     }}
+    }
+   ],
+   "name": "WDOECM - Terrestrial",
+   "domains": {},
+   "id": "OECM"
+  },
+  {
+   "templates": [
+    {
+     "name": "PA, Terrestrial",
+     "description": "",
+     "drawingTool": "esriFeatureEditToolPolygon",
+     "prototype": {"attributes": {
+      "desig": null,
+      "site_type": "PA",
+      "supp_info": null,
+      "inlnd_wtrs": null,
+      "no_tk_area": null,
+      "oecm_asmt": null,
+      "desig_eng": null,
+      "rep_area": null,
+      "no_take": null,
+      "int_crit": null,
+      "mang_plan": null,
+      "site_pid": null,
+      "desig_type": null,
+      "gis_m_area": null,
+      "iucn_cat": null,
+      "rep_m_area": null,
+      "name_eng": null,
+      "mang_auth": null,
+      "gis_area": null,
+      "status_yr": null,
+      "own_type": null,
+      "govsubtype": null,
+      "prnt_iso3": null,
+      "ownsubtype": null,
+      "verif": null,
+      "metadataid": null,
+      "gov_type": null,
+      "cons_obj": null,
+      "site_id": null,
+      "name": null,
+      "realm": "Terrestrial",
+      "status": null,
+      "iso3": null
+     }}
+    },
+    {
+     "name": "PA, Coastal",
+     "description": "",
+     "drawingTool": "esriFeatureEditToolPolygon",
+     "prototype": {"attributes": {
+      "desig": null,
+      "site_type": "PA",
+      "supp_info": null,
+      "inlnd_wtrs": null,
+      "no_tk_area": null,
+      "oecm_asmt": null,
+      "desig_eng": null,
+      "rep_area": null,
+      "no_take": null,
+      "int_crit": null,
+      "mang_plan": null,
+      "site_pid": null,
+      "desig_type": null,
+      "gis_m_area": null,
+      "iucn_cat": null,
+      "rep_m_area": null,
+      "name_eng": null,
+      "mang_auth": null,
+      "gis_area": null,
+      "status_yr": null,
+      "own_type": null,
+      "govsubtype": null,
+      "prnt_iso3": null,
+      "ownsubtype": null,
+      "verif": null,
+      "metadataid": null,
+      "gov_type": null,
+      "cons_obj": null,
+      "site_id": null,
+      "name": null,
+      "realm": "Coastal",
+      "status": null,
+      "iso3": null
+     }}
+    },
+    {
+     "name": "PA, Marine",
+     "description": "",
+     "drawingTool": "esriFeatureEditToolPolygon",
+     "prototype": {"attributes": {
+      "desig": null,
+      "site_type": "PA",
+      "supp_info": null,
+      "inlnd_wtrs": null,
+      "no_tk_area": null,
+      "oecm_asmt": null,
+      "desig_eng": null,
+      "rep_area": null,
+      "no_take": null,
+      "int_crit": null,
+      "mang_plan": null,
+      "site_pid": null,
+      "desig_type": null,
+      "gis_m_area": null,
+      "iucn_cat": null,
+      "rep_m_area": null,
+      "name_eng": null,
+      "mang_auth": null,
+      "gis_area": null,
+      "status_yr": null,
+      "own_type": null,
+      "govsubtype": null,
+      "prnt_iso3": null,
+      "ownsubtype": null,
+      "verif": null,
+      "metadataid": null,
+      "gov_type": null,
+      "cons_obj": null,
+      "site_id": null,
+      "name": null,
+      "realm": "Marine",
+      "status": null,
+      "iso3": null
+     }}
+    }
+   ],
+   "name": "WDPA - Terrestrial",
+   "domains": {},
+   "id": "PA"
+  }
+ ],
+ "capabilities": "Query,Extract",
+ "maxScale": 0,
+ "supportsAppend": true,
+ "supportsExceedsLimitStatistics": true,
+ "defaultVisibility": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsAsync": true,
+  "supportsLinearRegression": true,
+  "supportsPercentileAnalytic": false
+ },
+ "supportedTrueCurvePbfFeatureEncodings": [
+  "esriCompressedShapeBuffer",
+  "esriDefault"
+ ],
+ "hasMetadata": true,
+ "supportedAppendFormats": "FILEGDB,PBF,CSV",
+ "tileMaxRecordCount": 4000,
+ "typeIdField": "site_type",
+ "supportsASyncCalculate": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "drawingInfo": {
+  "renderer": {
+   "uniqueValueGroups": [{
+    "heading": "",
+    "classes": [
+     {
+      "symbol": {
+       "outline": {
+        "color": [
+         217,
+         177,
+         67,
+         255
+        ],
+        "width": 0.69999999999999996,
+        "style": "esriSLSSolid",
+        "type": "esriSLS"
+       },
+       "color": [
+        217,
+        177,
+        67,
+        127
+       ],
+       "style": "esriSFSSolid",
+       "type": "esriSFS"
+      },
+      "values": [[
+       "OECM",
+       "Terrestrial"
+      ]],
+      "description": "WDOECM - Terrestrial",
+      "label": "WDOECM - Terrestrial"
+     },
+     {
+      "symbol": {
+       "outline": {
+        "color": [
+         217,
+         177,
+         67,
+         255
+        ],
+        "width": 0.69999999999999996,
+        "style": "esriSLSSolid",
+        "type": "esriSLS"
+       },
+       "color": [
+        217,
+        177,
+        67,
+        127
+       ],
+       "style": "esriSFSSolid",
+       "type": "esriSFS"
+      },
+      "values": [[
+       "OECM",
+       "Coastal"
+      ]],
+      "description": "WDOECM - Coastal",
+      "label": "WDOECM - Coastal"
+     },
+     {
+      "symbol": {
+       "outline": {
+        "color": [
+         217,
+         177,
+         67,
+         255
+        ],
+        "width": 0.69999999999999996,
+        "style": "esriSLSSolid",
+        "type": "esriSLS"
+       },
+       "color": [
+        217,
+        177,
+        67,
+        127
+       ],
+       "style": "esriSFSSolid",
+       "type": "esriSFS"
+      },
+      "values": [[
+       "OECM",
+       "Marine"
+      ]],
+      "description": "WDOECM - Marine",
+      "label": "WDOECM - Marine"
+     },
+     {
+      "symbol": {
+       "outline": {
+        "color": [
+         56,
+         168,
+         0,
+         255
+        ],
+        "width": 0.69999999999999996,
+        "style": "esriSLSSolid",
+        "type": "esriSLS"
+       },
+       "color": [
+        55,
+        166,
+        0,
+        127
+       ],
+       "style": "esriSFSSolid",
+       "type": "esriSFS"
+      },
+      "values": [[
+       "PA",
+       "Terrestrial"
+      ]],
+      "description": "WDPA - Terrestrial",
+      "label": "WDPA - Terrestrial"
+     },
+     {
+      "symbol": {
+       "outline": {
+        "color": [
+         0,
+         77,
+         168,
+         255
+        ],
+        "width": 0.69999999999999996,
+        "style": "esriSLSSolid",
+        "type": "esriSLS"
+       },
+       "color": [
+        0,
+        77,
+        168,
+        127
+       ],
+       "style": "esriSFSSolid",
+       "type": "esriSFS"
+      },
+      "values": [[
+       "PA",
+       "Coastal"
+      ]],
+      "description": "WDPA - Coastal",
+      "label": "WDPA - Coastal"
+     },
+     {
+      "symbol": {
+       "outline": {
+        "color": [
+         0,
+         77,
+         168,
+         255
+        ],
+        "width": 0.69999999999999996,
+        "style": "esriSLSSolid",
+        "type": "esriSLS"
+       },
+       "color": [
+        0,
+        77,
+        168,
+        127
+       ],
+       "style": "esriSFSSolid",
+       "type": "esriSFS"
+      },
+      "values": [[
+       "PA",
+       "Marine"
+      ]],
+      "description": "WDPA - Marine",
+      "label": "WDPA - Marine"
+     }
+    ]
+   }],
+   "field1": "site_type",
+   "authoringInfo": {"colorRamp": {
+    "colorRamps": [
+     {
+      "toColor": [
+       212,
+       224,
+       252,
+       255
+      ],
+      "fromColor": [
+       212,
+       224,
+       252,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       199,
+       252,
+       179,
+       255
+      ],
+      "fromColor": [
+       199,
+       252,
+       179,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       252,
+       179,
+       179,
+       255
+      ],
+      "fromColor": [
+       252,
+       179,
+       179,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       252,
+       189,
+       252,
+       255
+      ],
+      "fromColor": [
+       252,
+       189,
+       252,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       252,
+       233,
+       187,
+       255
+      ],
+      "fromColor": [
+       252,
+       233,
+       187,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       179,
+       252,
+       233,
+       255
+      ],
+      "fromColor": [
+       179,
+       252,
+       233,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       182,
+       189,
+       252,
+       255
+      ],
+      "fromColor": [
+       182,
+       189,
+       252,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       252,
+       212,
+       234,
+       255
+      ],
+      "fromColor": [
+       252,
+       212,
+       234,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       232,
+       252,
+       210,
+       255
+      ],
+      "fromColor": [
+       232,
+       252,
+       210,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       189,
+       246,
+       252,
+       255
+      ],
+      "fromColor": [
+       189,
+       246,
+       252,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       252,
+       179,
+       216,
+       255
+      ],
+      "fromColor": [
+       252,
+       179,
+       216,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       252,
+       209,
+       192,
+       255
+      ],
+      "fromColor": [
+       252,
+       209,
+       192,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     },
+     {
+      "toColor": [
+       239,
+       252,
+       179,
+       255
+      ],
+      "fromColor": [
+       239,
+       252,
+       179,
+       255
+      ],
+      "type": "algorithmic",
+      "algorithm": "esriCIELabAlgorithm"
+     }
+    ],
+    "type": "multipart"
+   }},
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        217,
+        177,
+        67,
+        255
+       ],
+       "width": 0.69999999999999996,
+       "style": "esriSLSSolid",
+       "type": "esriSLS"
+      },
+      "color": [
+       217,
+       177,
+       67,
+       127
+      ],
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+     },
+     "label": "WDOECM - Terrestrial",
+     "value": "OECM,Terrestrial"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        217,
+        177,
+        67,
+        255
+       ],
+       "width": 0.69999999999999996,
+       "style": "esriSLSSolid",
+       "type": "esriSLS"
+      },
+      "color": [
+       217,
+       177,
+       67,
+       127
+      ],
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+     },
+     "label": "WDOECM - Coastal",
+     "value": "OECM,Coastal"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        217,
+        177,
+        67,
+        255
+       ],
+       "width": 0.69999999999999996,
+       "style": "esriSLSSolid",
+       "type": "esriSLS"
+      },
+      "color": [
+       217,
+       177,
+       67,
+       127
+      ],
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+     },
+     "label": "WDOECM - Marine",
+     "value": "OECM,Marine"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        56,
+        168,
+        0,
+        255
+       ],
+       "width": 0.69999999999999996,
+       "style": "esriSLSSolid",
+       "type": "esriSLS"
+      },
+      "color": [
+       55,
+       166,
+       0,
+       127
+      ],
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+     },
+     "label": "WDPA - Terrestrial",
+     "value": "PA,Terrestrial"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        0,
+        77,
+        168,
+        255
+       ],
+       "width": 0.69999999999999996,
+       "style": "esriSLSSolid",
+       "type": "esriSLS"
+      },
+      "color": [
+       0,
+       77,
+       168,
+       127
+      ],
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+     },
+     "label": "WDPA - Coastal",
+     "value": "PA,Coastal"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        0,
+        77,
+        168,
+        255
+       ],
+       "width": 0.69999999999999996,
+       "style": "esriSLSSolid",
+       "type": "esriSLS"
+      },
+      "color": [
+       0,
+       77,
+       168,
+       127
+      ],
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+     },
+     "label": "WDPA - Marine",
+     "value": "PA,Marine"
+    }
+   ],
+   "type": "uniqueValue",
+   "fieldDelimiter": ",",
+   "field2": "realm"
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "geometryField": {
+  "modelName": "shape",
+  "nullable": true,
+  "editable": true,
+  "defaultValue": null,
+  "domain": null,
+  "name": "shape",
+  "alias": "shape",
+  "type": "esriFieldTypeGeometry"
+ },
+ "copyrightText": "",
+ "geometryType": "esriGeometryPolygon"
+}

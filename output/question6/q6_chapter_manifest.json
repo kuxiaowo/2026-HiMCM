@@ -1,11 +1,10 @@
 {
   "source": "docs/paper/question6_adaptation.tex",
-  "section_count": 3,
-  "equation_count": 6,
-  "figure_count": 3,
-  "table_count": 3,
-  "source_sha256": "8cdfd5232f04112f338a59d68b7073600e6a61923089ec8c95111ef52f010312",
-  "model_results_sha256": "e04fc7fdd60738000fb3ced19842fa30fdadb3ae9347168ceee9055612ba07b1",
-  "figures_embedded": true,
-  "external_latex_project_dependencies": false
+  "source_sha256": "a4e301299b14e8c479ef6dabc6b7d6a39f48ec1fddd04e4601339f00e54c8ff8",
+  "results_sha256": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
+  "equations": 6,
+  "figures": 3,
+  "tables": 4,
+  "figure_geometry_embedded": true,
+  "status": "real spatial inputs; assumptions distinguished; source compilation pending"
 }

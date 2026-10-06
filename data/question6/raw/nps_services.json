@@ -1,0 +1,86 @@
+{
+ "currentVersion": 11.5,
+ "folders": [],
+ "services": [
+  {
+   "name": "NationalDatasets/NPS_Public_Buildings_Geographic",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Buildings_Geographic",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Buildings",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Buildings",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_ParkingLots_Geographic",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_ParkingLots_Geographic",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_ParkingLots",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_ParkingLots",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_POIs_Geographic",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_POIs_Geographic",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_POIs",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_POIs",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Roads_Geographic",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Roads_Geographic",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Roads",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Roads",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Trails_Geographic",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Trails_Geographic",
+   "type": "MapServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Trails",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "NationalDatasets/NPS_Public_Trails",
+   "type": "MapServer"
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "currentVersion": 11.5,
+ "cimVersion": "3.5.0",
+ "id": 0,
+ "name": "Roads",
+ "type": "Feature Layer",
+ "description": "The National Park Service public Roads dataset provides geographic representations of publicly accessible roadways across NPS units. These line features depict official visitor\u2011use travel corridors, including park approach roads, scenic drives, facility access roads, and other designated public routes commonly used for navigation, trip planning, mapping, and recreation information.This dataset is derived from the authoritative internal NPS Roads dataset maintained by park units and regional GIS programs. Only features appropriate for public distribution are included; restricted, administrative, service\u2011only, or operational road segments have been removed. All spatial features are stored in NAD83 and undergo review prior to release.The dataset supports a broad range of public uses, including digital navigation tools, trip planning applications, mapping services, research, and cartographic products. It provides a consistent, nationwide representation of visitor\u2011oriented road networks across the National Park Service.",
+ "geometryType": "esriGeometryPolyline",
+ "sourceSpatialReference": {
+  "wkid": 104145,
+  "latestWkid": 6318,
+  "xyTolerance": 8.983152841195215E-9,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "xyUnits": 9.999999999999999E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "spatialReference": {
+  "wkid": 102100,
+  "latestWkid": 3857,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -20037700,
+  "falseY": -30241100,
+  "xyUnits": 10000,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "Road data are contributed, reviewed, and maintained by individual park units and regional GIS programs across the National Park Service. The National Geospatial Program coordinates service\u2011wide data standards, quality assurance, and publication of this public dataset.\nFor more information about NPS geospatial data, visit the NPS Integrated Resource Management Applications (IRMA) Data Store or the NPS public geospatial resources.",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 15000000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSLS",
+    "style": "esriSLSSolid",
+    "color": [
+     78,
+     78,
+     78,
+     255
+    ],
+    "width": 0.2
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": -1.8519457804734983E7,
+  "ymin": 1714258.1654140828,
+  "xmax": 1.62212525196902E7,
+  "ymax": 1.04983081137295E7,
+  "zmin": 0,
+  "zmax": 0,
+  "mmin": -9.999E35,
+  "mmax": -9.999E35,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -20037700,
+   "falseY": -30241100,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "RDNAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "RDMAINTAINER",
+   "type": "esriFieldTypeString",
+   "alias": "RDMAINTAINER",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "RDNAME",
+   "type": "esriFieldTypeString",
+   "alias": "RDNAME",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "RDALTNAME",
+   "type": "esriFieldTypeString",
+   "alias": "RDALTNAME",
+   "length": 1073741822,
+   "domain": null
+  },
+  {
+   "name": "MAPLABEL",
+   "type": "esriFieldTypeString",
+   "alias": "MAPLABEL",
+   "length": 100,
+   "domain": null
+  },
+  {
+   "name": "RDSTATUS",
+   "type": "esriFieldTypeString",
+   "alias": "RDSTATUS",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "RDCLASS",
+   "type": "esriFieldTypeString",
+   "alias": "RDCLASS",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "RDSURFACE",
+   "type": "esriFieldTypeString",
+   "alias": "RDSURFACE",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "RDONEWAY",
+   "type": "esriFieldTypeString",
+   "alias": "RDONEWAY",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "RDLANES",
+   "type": "esriFieldTypeInteger",
+   "alias": "RDLANES",
+   "domain": null
+  },
+  {
+   "name": "RTENUMBER",
+   "type": "esriFieldTypeString",
+   "alias": "RTENUMBER",
+   "length": 25,
+   "domain": null
+  },
+  {
+   "name": "SEASONAL",
+   "type": "esriFieldTypeString",
+   "alias": "SEASONAL",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "SEASDESC",
+   "type": "esriFieldTypeString",
+   "alias": "SEASDESC",
+   "length": 1073741822,
+   "domain": null
+  },
+  {
+   "name": "RDHICLEAR",
+   "type": "esriFieldTypeString",
+   "alias": "RDHICLEAR",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "ISEXTANT",
+   "type": "esriFieldTypeString",
+   "alias": "ISEXTANT",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "PUBLICDISPLAY",
+   "type": "esriFieldTypeString",
+   "alias": "PUBLICDISPLAY",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "DATAACCESS",
+   "type": "esriFieldTypeString",
+   "alias": "DATAACCESS",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "ACCESSNOTES",
+   "type": "esriFieldTypeString",
+   "alias": "ACCESSNOTES",
+   "length": 1073741822,
+   "domain": null
+  },
+  {
+   "name": "ORIGINATOR",
+   "type": "esriFieldTypeString",
+   "alias": "ORIGINATOR",
+   "length": 1073741822,
+   "domain": null
+  },
+  {
+   "name": "UNITCODE",
+   "type": "esriFieldTypeString",
+   "alias": "UNITCODE",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "UNITNAME",
+   "type": "esriFieldTypeString",
+   "alias": "UNITNAME",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "UNITTYPE",
+   "type": "esriFieldTypeString",
+   "alias": "UNITTYPE",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "GROUPCODE",
+   "type": "esriFieldTypeString",
+   "alias": "GROUPCODE",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "GROUPNAME",
+   "type": "esriFieldTypeString",
+   "alias": "GROUPNAME",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "REGIONCODE",
+   "type": "esriFieldTypeString",
+   "alias": "REGIONCODE",
+   "length": 4,
+   "domain": null
+  },
+  {
+   "name": "CREATEDATE",
+   "type": "esriFieldTypeDate",
+   "alias": "CREATEDATE",
+   "length": 8,
+   "precision": 1,
+   "domain": null
+  },
+  {
+   "name": "EDITDATE",
+   "type": "esriFieldTypeDate",
+   "alias": "EDITDATE",
+   "length": 8,
+   "precision": 1,
+   "domain": null
+  },
+  {
+   "name": "LINETYPE",
+   "type": "esriFieldTypeString",
+   "alias": "LINETYPE",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "MAPMETHOD",
+   "type": "esriFieldTypeString",
+   "alias": "MAPMETHOD",
+   "length": 1073741822,
+   "domain": null
+  },
+  {
+   "name": "MAPSOURCE",
+   "type": "esriFieldTypeString",
+   "alias": "MAPSOURCE",
+   "length": 1073741822,
+   "domain": null
+  },
+  {
+   "name": "SOURCEDATE",
+   "type": "esriFieldTypeDate",
+   "alias": "SOURCEDATE",
+   "length": 8,
+   "precision": 1,
+   "domain": null
+  },
+  {
+   "name": "XYACCURACY",
+   "type": "esriFieldTypeString",
+   "alias": "XYACCURACY",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "ROUTEID",
+   "type": "esriFieldTypeString",
+   "alias": "ROUTEID",
+   "length": 25,
+   "domain": null
+  },
+  {
+   "name": "GEOMETRYID",
+   "type": "esriFieldTypeString",
+   "alias": "GEOMETRYID",
+   "length": 38,
+   "domain": null
+  },
+  {
+   "name": "FEATUREID",
+   "type": "esriFieldTypeString",
+   "alias": "FEATUREID",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "FACLOCID",
+   "type": "esriFieldTypeString",
+   "alias": "FACLOCID",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "FACASSETID",
+   "type": "esriFieldTypeString",
+   "alias": "FACASSETID",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "IMLOCID",
+   "type": "esriFieldTypeString",
+   "alias": "IMLOCID",
+   "length": 25,
+   "domain": null
+  },
+  {
+   "name": "OBSERVABLE",
+   "type": "esriFieldTypeString",
+   "alias": "OBSERVABLE",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "OPENTOPUBLIC",
+   "type": "esriFieldTypeString",
+   "alias": "OPENTOPUBLIC",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "ALTLANGNAME",
+   "type": "esriFieldTypeString",
+   "alias": "ALTLANGNAME",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "ALTLANG",
+   "type": "esriFieldTypeString",
+   "alias": "ALTLANG",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "NOTES",
+   "type": "esriFieldTypeString",
+   "alias": "NOTES",
+   "length": 1073741822,
+   "domain": null
+  },
+  {
+   "name": "Shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "Shape.STLength()",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape.STLength()",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "Shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "R61_pk",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "S45_idx",
+   "fields": "Shape",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "maxSelectionCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "hasZ": true,
+ "hasM": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true,
+  "supportsCurrentUserQueries": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeLengthFieldName": "Shape.STLength()",
+  "units": "esriDecimalDegrees",
+  "mapUnits": {"uwkid": 9102}
+ },
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

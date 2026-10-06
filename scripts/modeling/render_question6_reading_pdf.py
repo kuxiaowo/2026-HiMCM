@@ -14,13 +14,13 @@ DISPLAY=[
  [r'P_t^{(p)}=100\sum_jw_j^{(p)}s_{jt}^{(p)},\qquad \sum_jw_j^{(p)}=1.'],
  [r'r_{jt}=\mathbf{1}\{\delta+T_{jt}^{+}+v_{jt}\leq\overline{T}_j\}',
   r'a_{jt}=n_j(T_{jt}^{+}+T_{jt}^{-}+2v_{jt}+\tau_j+\pi_j).'],
- [r'C_{jt}s_{jt}\leq x_{jt}/a_{jt}+h_{jt}/b_{jt}',
-  r'0\leq s_{jt}\leq r_{jt},\qquad h_{jt}=0\quad(m_{jt}=0)',
-  r'x_{jt},h_{jt}\geq0',
-  r'\sum_jh_{jt}\leq U_t',
-  r'H_t=H_{0t}+L_t+\sum_j(x_{jt}+\gamma_{jt}h_{jt})\leq H_t^{\max}.'],
- [r'H_0=2\times2\times8\times30=960,\qquad N_t=\lceil H_t^{\min}/120\rceil.'],
- [r'P_t^{\mathrm{geo}}=100\sum_jw_jr_{jt}.']
+ [r'\min H_t=H_{0t}+L_t+\sum_j(x_{jt}+\gamma_{jt}h_{jt})',
+  r'C_{jt}s_{jt}\leq x_{jt}/a_{jt}+h_{jt}/b_{jt}',
+  r'\ell r_{jt}\leq s_{jt}\leq r_{jt},\qquad x_{jt},h_{jt}\geq0',
+  r'h_{jt}=0\ (m_{jt}=0),\qquad \sum_jh_{jt}\leq U_t',
+  r'100\sum_jw_js_{jt}\geq\eta'],
+ [r'H_0=K\times2\times8\times30=480K,\qquad N=\lceil H^{\min}/120\rceil.'],
+ [r'P_t^{\mathrm{geo}}=100\sum_jw_jr_{jt},\qquad\eta=0.90P_{\mathrm{base}}^{\mathrm{geo}}.']
 ]
 
 def render_math():
@@ -61,7 +61,7 @@ def render_pdf():
     styles.add(ParagraphStyle(name='Q6H2',fontName='Q6Hei',fontSize=14,leading=22,spaceBefore=13,spaceAfter=8,keepWithNext=True))
     styles.add(ParagraphStyle(name='Q6H3',fontName='Q6Hei',fontSize=12,leading=20,spaceBefore=9,spaceAfter=6,keepWithNext=True))
     styles.add(ParagraphStyle(name='Q6Caption',fontName='Q6Song',fontSize=10.5,leading=15,alignment=TA_CENTER,spaceAfter=10))
-    styles.add(ParagraphStyle(name='Q6Cell',fontName='Q6Song',fontSize=12,leading=17,wordWrap='CJK'))
+    styles.add(ParagraphStyle(name='Q6Cell',fontName='Q6Song',fontSize=10.5,leading=15,wordWrap='CJK'))
     mapping=json.loads((TMP/'math_images.json').read_text(encoding='utf-8'))
     def inline(s):
         # Protect inline formulas before escaping the remaining prose.
@@ -111,7 +111,7 @@ def render_pdf():
             tablelines=[]
             while i<len(lines) and lines[i].strip().startswith('| '):tablelines.append(lines[i].strip());i+=1
             rows=[[v.strip() for v in s.strip('|').split('|')] for s in tablelines if not set(s.replace('|','').replace(' ',''))<=set('-:')]
-            n=len(rows[0]);cw={3:[65,(width-65)/2,(width-65)/2],5:[55,42,width-55-42-55-95,55,95],6:[38,width-38-40-86-87-38,40,86,87,38]}[n]
+            n=len(rows[0]);cw={3:[130,(width-130)/2,(width-130)/2],5:[55,42,width-55-42-55-95,55,95],6:[32,width-32-62-62-75-50,62,62,75,50]}[n]
             matrix=[[Paragraph(inline(cell),styles['Q6Cell']) for cell in row] for row in rows]
             table=Table(matrix,colWidths=cw,repeatRows=1,hAlign='CENTER')
             table.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('LINEABOVE',(0,0),(-1,0),1,colors.HexColor('#235e83')),
@@ -130,7 +130,7 @@ def render_pdf():
     reader=PdfReader(PDF)
     report=dict(status='reading_pdf_created',pages=len(reader.pages),format='ReportLab reading preview, not LaTeX compilation',
       source_sha256=hashlib.sha256(MD.read_bytes()).hexdigest(),pdf_sha256=hashlib.sha256(PDF.read_bytes()).hexdigest(),
-      extracted_text_contains_results=all(s in ''.join(p.extract_text() for p in reader.pages) for s in ['1265.01','1834.56','1740.58']),
+      extracted_text_contains_results=all(f"{s['polygon_area_km2']:.2f}" in ''.join(p.extract_text() for p in reader.pages) for s in json.loads((ROOT/'output/question6/q6_results.json').read_text(encoding='utf8'))['parks'].values()),
       latex_compilation_status='unverified: built-in compiler platform directories error; local TeX installation lacks formats')
     (ROOT/'output/question6/q6_reading_pdf_verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Reading PDF saved:',len(reader.pages),'pages.')

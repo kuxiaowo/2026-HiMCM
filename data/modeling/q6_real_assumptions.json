@@ -1,0 +1,43 @@
+{
+  "config": {
+    "effective_hours_month": 120,
+    "vehicle_speed_kmh": 30,
+    "walk_speed_kmh": 4,
+    "dispatch_hours": 0.16666666666666666,
+    "observation_hours": 0.16666666666666666,
+    "preparation_hours": 0.08333333333333333,
+    "team_size": 2,
+    "response_limit_hours": 2,
+    "checks_per_100km2_month": 8,
+    "service_floor": 0.15,
+    "baseline_target_fraction": 0.9,
+    "response_staff_per_site": 2,
+    "hours_day": 8,
+    "days_month": 30,
+    "drone_budget": 0,
+    "raster_resolution_m": 100
+  },
+  "actual_inputs": [
+    "NPS Yellowstone boundary, roads and POIs",
+    "UNEP-WCMC WDPCA October2026 Chitwan polygon; OSM roads and mapped place anchors",
+    "ESA WorldCover 2021 v200"
+  ],
+  "assumed_inputs": [
+    "service frequency",
+    "travel speeds",
+    "dispatch and observation times",
+    "response deadline",
+    "two or three candidate bases",
+    "base reserve",
+    "service target and floor"
+  ],
+  "limitations": [
+    "Chitwan published GIS area differs materially from reported/legal area: geographic boundary calibration failed",
+    "no species distribution weights invented",
+    "no measured patrol speeds or local authorised response graph",
+    "Euclidean off-road travel ignores terrain and river detours",
+    "NPS public roads exclude operational roads; OSM incomplete",
+    "100m nearest-neighbour sampling of 10m land cover; sensitivity evaluated"
+  ],
+  "archive": "output/question6/archive/synthetic_20261006"
+}
