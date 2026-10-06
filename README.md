@@ -1,15 +1,16 @@
 # 2026 HiMCM 数学建模项目
 
-当前研究对象为埃托沙国家公园。第二题已完成条件性资源配置模型、正式论文正文、图表及本地PDF编译；第三题人员需求及实际生态成效尚未计算。
+当前研究对象为埃托沙国家公园。第一题已完成一页LaTeX稿及PDF；第二题已完成条件性资源配置模型、正式论文正文、图表及本地PDF编译；第三题人员需求及实际生态成效尚未计算。
 
 ## 当前成果入口
 
+- [第一题一页PDF](output/pdf/question1_protection_definition.pdf)、[LaTeX源文件](docs/paper/question1_protection_definition.tex)：12磅正文，三个小节、一张表和两组公式；[编译核验](output/question1/q1_latex_compile_verification.json)。
 - [第二题正式PDF](output/pdf/question2_framework.pdf)：15页，30个编号公式、6幅图和5张表。
 - [LaTeX源文件](docs/paper/question2_framework.tex)、[Markdown同步正文](docs/paper/question2_resource_allocation.md)、[第二题结构索引](docs/paper/question2_framework.md)。
 - [模型结果](output/question2/q2_results.json)、[模型输入](output/question2/q2_model_inputs.json)、[独立模型核验](output/question2/q2_verification.json)。
 - [PDF编译与版式核验](output/question2/q2_latex_compile_verification.json)、[章节核验](output/question2/q2_chapter_validation.json)。
 - [整体建模计划](docs/整体建模计划.md)、[计算说明](docs/modeling_notes/question2_calculation_notes.md)、[项目状态与上传说明](docs/项目状态与上传说明.md)。
-- [第一题正文](docs/paper/question1_protection_definition.md)、[第三题精简方案](docs/第三题精简方案.md)。
+- [第一题详细方法底稿](docs/paper/question1_protection_definition.md)、[第三题精简方案](docs/第三题精简方案.md)。
 
 ## 模型范围
 
