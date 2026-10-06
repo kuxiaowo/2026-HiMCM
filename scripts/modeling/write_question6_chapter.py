@@ -251,4 +251,6 @@ def main():
     (OUT/'q6_chapter_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Q6 LaTeX and synchronised Markdown saved; three figures embedded.')
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    raise SystemExit('Historical synthetic prototype retired; use question6_real scripts. Original retained in output/question6/archive/synthetic_20261006/scripts.')
+    main()

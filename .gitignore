@@ -21,3 +21,9 @@
 .env
 .env.*
 !.env.example
+
+# Q6 source files larger than 100 MB; retain locally, reproduce from source URLs
+/data/question6/raw/nepal-latest.osm.pbf
+/data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E081_Map.tif
+/data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E084_Map.tif
+/data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N42W111_Map.tif

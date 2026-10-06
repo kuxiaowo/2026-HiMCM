@@ -1,0 +1,8 @@
+﻿case,park,scenario,geo_cap,fixed_staff,fixed_score,fixed_feasible,target,target_feasible,target_hours,target_staff,target_drone_hours,reason,response_reserved_hours
+C0,chitwan,非季风、地面,100.0,11,100.0,True,95.0,True,1265.0133333333333,11,0.0,,960.0
+C1,chitwan,条件授权无人机,100.0,11,100.0,True,95.0,True,1243.4133333333334,11,7.199999999999999,,960.0
+C2,chitwan,季风通行压力,85.0,11,75.8913043478261,True,95.0,False,,,,geographic_limit,960.0
+C3,chitwan,季风＋前置驻点,100.0,11,,False,95.0,True,1834.56,16,0.0,,1440.0
+Y0,yellowstone,常规道路,100.0,11,98.35960591133005,True,95.0,True,1304.8444444444444,11,0.0,,960.0
+Y1,yellowstone,冬季通行压力,60.0,11,60.0,True,95.0,False,,,,geographic_limit,960.0
+Y2,yellowstone,冬季＋前置驻点,100.0,11,,False,95.0,True,1740.5777777777778,15,0.0,,1440.0

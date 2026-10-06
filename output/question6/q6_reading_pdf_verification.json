@@ -1,11 +1,29 @@
 {
   "status": "reading_pdf_created",
-  "pages": 6,
+  "pages": 7,
   "format": "ReportLab reading preview, not LaTeX compilation",
-  "source_sha256": "c9d4ef384ff5e9a8ae589185a59fe607d616d075549e4400f000812a3f6988cf",
-  "pdf_sha256": "9c20dcabf211be68cb586d50aa73b3a93cc7a2a66d1434d180e203fa8aeb3504",
+  "source_sha256": "db4d274e7f1e8c7ea1dc5ceae88e93fbea81263a346af1895dbf3c3c287102f4",
+  "pdf_sha256": "f3e66641f91c8eec50f8925bab957c92de2ae8dc9da609bf9e6d8df016b745c8",
   "extracted_text_contains_results": true,
   "latex_compilation_status": "unverified: built-in compiler platform directories error; local TeX installation lacks formats",
-  "rendered_pages_visually_reviewed": 6,
-  "visual_quality": "passed: formulas, three figures and three tables readable; no overlaps or clipping"
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "status": "passed",
+    "checks": [
+      "paragraphs and equations legible",
+      "table repeated headers",
+      "three figures checked",
+      "corrected figure3 annotation clipping",
+      "no content or footer collisions"
+    ]
+  },
+  "latex_source_compilation_verified": false
 }

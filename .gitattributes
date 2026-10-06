@@ -50,3 +50,18 @@ output/question2/q2_verification.json whitespace=cr-at-eol
 scripts/modeling/build_question3.py whitespace=cr-at-eol
 scripts/modeling/prepare_question3.py whitespace=cr-at-eol
 data/question3/raw/*.json whitespace=cr-at-eol
+
+# Preserve Q6 source/data fingerprints when cloning on Windows.
+data/modeling/q6_real_assumptions.json -text whitespace=cr-at-eol
+data/question6/** -text whitespace=cr-at-eol
+docs/paper/question6_adaptation.tex -text whitespace=cr-at-eol
+docs/paper/question6_adaptation.md -text whitespace=cr-at-eol
+docs/modeling_notes/question6_calculation_notes.md -text whitespace=cr-at-eol
+output/question6/** -text whitespace=cr-at-eol
+scripts/modeling/*question6*.py -text whitespace=cr-at-eol
+output/pdf/question6_adaptation_reading.pdf binary
+output/question6/**/*.pdf binary
+output/question6/**/*.svg whitespace=-blank-at-eol,cr-at-eol
+# Downloaded evidence retains the publisher's whitespace and extraction layout.
+data/question6/raw/*.html whitespace=-blank-at-eol,-space-before-tab,cr-at-eol
+data/question6/raw/*_extracted.txt whitespace=-blank-at-eol,-space-before-tab,cr-at-eol

@@ -1,0 +1,69 @@
+[
+  {
+    "file": "nepal-latest.osm.pbf",
+    "url": "https://download.geofabrik.de/asia/nepal-latest.osm.pbf",
+    "error": "HTTPSConnectionPool(host='download.geofabrik.de', port=443): Read timed out. (read timeout=60)"
+  },
+  {
+    "file": "yellowstone_tracts.zip",
+    "url": "https://irma.nps.gov/DataStore/DownloadFile/754059?Reference=2316784",
+    "status": 200,
+    "bytes": 1118640,
+    "sha256": "1572d377b7b8c1756f0c08b7f4f4476771d58e94151350ceb9f3e6220152b9b2",
+    "type": "application/zip"
+  },
+  {
+    "file": "yellowstone_roads.geojson",
+    "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Roads/MapServer/0/query?where=UNITCODE%3D%27YELL%27&outFields=*&outSR=4326&f=geojson&resultRecordCount=2000",
+    "status": 200,
+    "bytes": 2717367,
+    "sha256": "b9da9cdb8478195d04b90bd3dc64607dc93a960eeb490b5047cdd587f37e91d5",
+    "type": "application/geo+json; charset=UTF-8"
+  },
+  {
+    "file": "yellowstone_pois.geojson",
+    "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?where=UNITCODE%3D%27YELL%27&outFields=*&outSR=4326&f=geojson&resultRecordCount=2000",
+    "status": 200,
+    "bytes": 1400730,
+    "sha256": "a800bd260f7e7aabf2740537a9199712fb6f1214b15099ae1e8b94096fa4f0a0",
+    "type": "application/geo+json; charset=UTF-8"
+  },
+  {
+    "file": "roads_meta.json",
+    "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Roads/MapServer/0?f=pjson",
+    "status": "cached",
+    "bytes": 11743,
+    "sha256": "594ba67d6647514930e00d3119debe252e7a419d500c0b2f30be7ed4d76165a9"
+  },
+  {
+    "file": "pois_meta.json",
+    "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0?f=pjson",
+    "status": "cached",
+    "bytes": 102320,
+    "sha256": "3d13b85e0475faa386a4b1527e53dc7796925a59899b829a43ea6c06bb66f12c"
+  },
+  {
+    "file": "nps_services.json",
+    "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets?f=pjson",
+    "status": "cached",
+    "bytes": 1851,
+    "sha256": "401792a50dd8c1745ddcd4bfb050ce8e4548e63c7b51954978075a18c738ed1f"
+  },
+  {
+    "file": "chitwan_infrastructure.pdf",
+    "url": "https://giwmscdntwo.gov.np/media/pages/files/Final%20Report_GIS%20Database_v4olikj.pdf",
+    "error": "HTTPSConnectionPool(host='giwmscdntwo.gov.np', port=443): Max retries exceeded with url: /media/pages/files/Final%20Report_GIS%20Database_v4olikj.pdf (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+  },
+  {
+    "file": "yellowstone_boundary.zip",
+    "url": "https://irma.nps.gov/DataStore/DownloadFile/754058?Reference=2316784",
+    "status": "cached",
+    "bytes": 1050153,
+    "sha256": "79e8588dda20fd7a88333ad0067a6a9a2cc28d642e15cf039724120cc605b020"
+  },
+  {
+    "file": "ntnc_http.html",
+    "url": "http://geoportal.ntnc.org.np/layers/ntnc:Chitwan_National_Park/",
+    "error": "502 Server Error: Bad Gateway for url: http://geoportal.ntnc.org.np/layers/ntnc:Chitwan_National_Park/"
+  }
+]

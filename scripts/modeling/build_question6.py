@@ -143,4 +143,6 @@ def main():
         writer=csv.DictWriter(file,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
     for row in rows:print(row)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    raise SystemExit('Historical synthetic prototype retired; use question6_real scripts. Original retained in output/question6/archive/synthetic_20261006/scripts.')
+    main()

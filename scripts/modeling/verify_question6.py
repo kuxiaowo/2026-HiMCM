@@ -84,4 +84,6 @@ def main():
     (OUT/'q6_verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('All 7 cases: independent routing, objectives, constraints and staffing rounding passed.')
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    raise SystemExit('Historical synthetic prototype retired; use question6_real scripts. Original retained in output/question6/archive/synthetic_20261006/scripts.')
+    main()

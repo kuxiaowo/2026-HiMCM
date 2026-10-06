@@ -1,14 +1,14 @@
 {
   "figures": [
     "fig1_adaptation_flow",
-    "fig2_prototype_networks",
-    "fig3_adaptation_results"
+    "fig2_real_maps",
+    "fig3_real_results"
   ],
+  "source": "q6_results.json and actual processed GeoJSON",
   "formats": [
     "png",
     "svg",
     "tikz"
   ],
-  "results_sha256": "e04fc7fdd60738000fb3ced19842fa30fdadb3ae9347168ceee9055612ba07b1",
-  "warning": "diagram is an abstract task network, not a real geospatial map"
+  "land_cover_attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium"
 }

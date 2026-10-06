@@ -1,51 +1,216 @@
 {
-  "status": "passed",
-  "case_count": 7,
-  "case_checks": [
+  "status": "numerical_checks_passed_boundary_calibration_pending",
+  "checks": [
     {
       "case": "C0",
-      "routing": "Floyd-Warshall verified",
-      "objective": "independent fractional knapsack verified",
-      "constraints": "passed"
+      "passed": true,
+      "independent_hours": 1085.1484009583687,
+      "lp_difference": -2.0463630789890885e-12
     },
     {
       "case": "C1",
-      "routing": "Floyd-Warshall verified",
-      "objective": "independent fractional knapsack verified",
-      "constraints": "passed"
+      "passed": true,
+      "reason": "analytically infeasible: target above response cap"
     },
     {
       "case": "C2",
-      "routing": "Floyd-Warshall verified",
-      "objective": "independent fractional knapsack verified",
-      "constraints": "passed"
+      "passed": true,
+      "independent_hours": 1550.3908246609876,
+      "lp_difference": -1.3642420526593924e-12
     },
     {
       "case": "C3",
-      "routing": "Floyd-Warshall verified",
-      "objective": "independent fractional knapsack verified",
-      "constraints": "passed"
+      "passed": true,
+      "independent_hours": 1069.5567558793318,
+      "lp_difference": -1.3642420526593924e-12
     },
     {
       "case": "Y0",
-      "routing": "Floyd-Warshall verified",
-      "objective": "independent fractional knapsack verified",
-      "constraints": "passed"
+      "passed": true,
+      "independent_hours": 1541.6290119633736,
+      "lp_difference": 2.2737367544323206e-12
     },
     {
       "case": "Y1",
-      "routing": "Floyd-Warshall verified",
-      "objective": "independent fractional knapsack verified",
-      "constraints": "passed"
+      "passed": true,
+      "reason": "analytically infeasible: target above response cap"
     },
     {
       "case": "Y2",
-      "routing": "Floyd-Warshall verified",
-      "objective": "independent fractional knapsack verified",
-      "constraints": "passed"
+      "passed": true,
+      "independent_hours": 1973.2284242749029,
+      "lp_difference": 9.094947017729282e-13
+    },
+    {
+      "case": "Y3",
+      "passed": true,
+      "independent_hours": 1467.9709481460475,
+      "lp_difference": 6.821210263296962e-13
+    },
+    {
+      "case": "Cfine",
+      "passed": true,
+      "independent_hours": 1085.0248877523743,
+      "lp_difference": -4.092726157978177e-12
+    },
+    {
+      "case": "Yfine",
+      "passed": true,
+      "independent_hours": 1543.732857937644,
+      "lp_difference": -2.2737367544323206e-12
     }
   ],
-  "max_independent_objective_difference_hours": 2.2737367544323206e-13,
-  "scope": "numerical and structural verification; not local calibration or ecological validation",
-  "result_sha256": "e04fc7fdd60738000fb3ced19842fa30fdadb3ae9347168ceee9055612ba07b1"
+  "data_quality_checks": {
+    "chitwan_boundary_area": {
+      "passed": false,
+      "published_reported_area_km2": 932.0,
+      "official_report_area_km2": 952.63,
+      "computed_gis_area_km2": 1214.0634646073454,
+      "reason": "Published GIS boundary area is inconsistent with reported/legal area; restrict results to published-polygon migration trial"
+    },
+    "yellowstone_public_road_records": {
+      "passed": true,
+      "count": 2007
+    }
+  },
+  "method": "independent greedy area-service allocation; score/floor/response/integer checks; raster-area vs vector-area check",
+  "real_data_files": [
+    {
+      "file": "data/question6/processed/chitwan_boundary.geojson",
+      "bytes": 250462,
+      "sha256": "2ad7a23c4b34f23fe6eb3b380c2e7fa3bb64197bd2af8dcced97d9f6a7428864"
+    },
+    {
+      "file": "data/question6/processed/chitwan_osm_boundaries.geojson",
+      "bytes": 85144,
+      "sha256": "f1a169776e9be936e9427fa7fa046aa670e05aa06264a20030ad7dde161d321b"
+    },
+    {
+      "file": "data/question6/processed/chitwan_osm_boundary.geojson",
+      "bytes": 49179,
+      "sha256": "751844d81a653fdbca7e4129ec949418fe9ae82fea3407fe7a969382fab46c0a"
+    },
+    {
+      "file": "data/question6/processed/chitwan_pois.geojson",
+      "bytes": 9681,
+      "sha256": "58947a6c0fab04679f11ba80fa1c4eb3e27779f175607be06a38cd5b0e5d2146"
+    },
+    {
+      "file": "data/question6/processed/chitwan_roads.geojson",
+      "bytes": 30017890,
+      "sha256": "646bcb11009610181df2ed64557d384bc8222eef98351fe885aa0b0d5a06a466"
+    },
+    {
+      "file": "data/question6/processed/chitwan_wdpca_boundary.geojson",
+      "bytes": 250377,
+      "sha256": "249355e92f7e649fc2e25e9c7943872473f2851126ec36df723e3d9135a86741"
+    },
+    {
+      "file": "data/question6/processed/chitwan_worldcover_100m.tif",
+      "bytes": 14084,
+      "sha256": "b472a3d49770640fbca4e2077c93ed16343d5f2876ddfa7bd4e8ae93aed64a16"
+    },
+    {
+      "file": "data/question6/processed/chitwan_worldcover_50m.tif",
+      "bytes": 44204,
+      "sha256": "d74c52c036fb863f13789c9f87bd51fb59d1b2bee7aacc929f897cf5a3abac1a"
+    },
+    {
+      "file": "data/question6/processed/yellowstone_boundary.geojson",
+      "bytes": 304609,
+      "sha256": "d617b3b5bcd6d1368bdb7e4a58526b566e7155516ade523a9f329fd8e3c5a324"
+    },
+    {
+      "file": "data/question6/processed/yellowstone_pois.geojson",
+      "bytes": 1520798,
+      "sha256": "dc30a004f4a3e72c62ebd532c8b8477c231e0be0fdb568f4d856caffeae2ab1e"
+    },
+    {
+      "file": "data/question6/processed/yellowstone_roads.geojson",
+      "bytes": 2939241,
+      "sha256": "dcce98a8591fe6032360de5d0416c3e4d54dc3d64c362ea136bfd1d4fbcbde07"
+    },
+    {
+      "file": "data/question6/processed/yellowstone_worldcover_100m.tif",
+      "bytes": 148106,
+      "sha256": "a95c2dc4e37464b3c7c43f72942b774c4eb5ee28f336bf35a174cd9530e0d3a1"
+    },
+    {
+      "file": "data/question6/processed/yellowstone_worldcover_50m.tif",
+      "bytes": 502778,
+      "sha256": "271d3ac9d4f08526fa141489d3bd338aef587b8b0f51b3c2a418b5924167980e"
+    },
+    {
+      "file": "data/question6/raw/icimod_nepal_pa.geojson",
+      "bytes": 5370363,
+      "sha256": "b798981a6e4903bf99e393e7d2f46ef2000fac490b108ab9a95ac7399e4a7a37"
+    },
+    {
+      "file": "data/question6/raw/nepal-latest.osm.pbf",
+      "bytes": 414519125,
+      "sha256": "4313820204be1e5a38088789b5fd7552a5097674d0089a8d436e90631643af82"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E081_Map.tif",
+      "bytes": 104848806,
+      "sha256": "53ec713abf379327c053e255d0d5936f81c3ad491ba3b89954c81ba8fa5ee053"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E084_Map.tif",
+      "bytes": 104225123,
+      "sha256": "43dd6237600f5a36b8dcd92228ee12fce3db386a07ac7f95defb90e806a21847"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N42W111_Map.tif",
+      "bytes": 105959600,
+      "sha256": "8d6c9e00d9c88f29c126b8ed04d096f5428e9e72fa4f46c0d66950b54bfad66b"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N42W114_Map.tif",
+      "bytes": 81282877,
+      "sha256": "67708bd9ec880170eb21b94a630fe6dcb0515d5c7f08d4db49f3fff30c422760"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N45W111_Map.tif",
+      "bytes": 57817056,
+      "sha256": "7e73ab61b848b287b74cea64139d00e64af52f1efec94703fb3c5fcb41a49e66"
+    },
+    {
+      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N45W114_Map.tif",
+      "bytes": 70304858,
+      "sha256": "4d9bfcd5c0d91e46204a49993993b52521d0a6d4673db87cc5b77164698423a7"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_boundary.geojson",
+      "bytes": 304609,
+      "sha256": "d617b3b5bcd6d1368bdb7e4a58526b566e7155516ade523a9f329fd8e3c5a324",
+      "note": "Corrected exploratory derived conversion; current model uses processed NPS boundary and original ZIP"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_boundary.zip",
+      "bytes": 1050153,
+      "sha256": "79e8588dda20fd7a88333ad0067a6a9a2cc28d642e15cf039724120cc605b020"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_pois.geojson",
+      "bytes": 1400730,
+      "sha256": "a800bd260f7e7aabf2740537a9199712fb6f1214b15099ae1e8b94096fa4f0a0"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_roads.geojson",
+      "bytes": 2717367,
+      "sha256": "b9da9cdb8478195d04b90bd3dc64607dc93a960eeb490b5047cdd587f37e91d5"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_roads_page2.geojson",
+      "bytes": 8734,
+      "sha256": "891fc2c44f73977b19faf349320654e135aedcc9d979d8a68dd5c109b2d94ea0"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_tracts.zip",
+      "bytes": 1118640,
+      "sha256": "1572d377b7b8c1756f0c08b7f4f4476771d58e94151350ceb9f3e6220152b9b2"
+    }
+  ],
+  "limits": "Chitwan boundary-area consistency failed; no field validation of speeds, patrol demand, permissions, species coverage or ecological outcome"
 }

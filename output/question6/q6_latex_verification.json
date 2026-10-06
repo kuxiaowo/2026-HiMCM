@@ -1,13 +1,15 @@
 {
   "status": "source_static_checks_passed_compile_unverified",
-  "source_sha256": "8cdfd5232f04112f338a59d68b7073600e6a61923089ec8c95111ef52f010312",
+  "source_sha256": "faae7811eec562120b1f4bfe1a03b9d8d24c553a0b6c196727e65d22253d3c48",
+  "unique_labels": 13,
   "undefined_source_labels": 0,
-  "unique_labels": 12,
   "figures": 3,
-  "tables": 3,
+  "tables": 4,
+  "bibliography_entries": 12,
+  "environment_and_brace_checks": "passed",
   "self_contained": true,
   "builtin_compiler": "Unable to find standard directories for platform",
-  "local_xelatex_available": false,
-  "local_lualatex": "I cannot find lualatex.fmt",
-  "source_modified_to_suppress_errors": false
+  "source_compilation_verified": false,
+  "reading_pdf": "ReportLab preview; all seven pages visually inspected",
+  "data_quality_limit": "Chitwan published GIS area does not match reported/legal area; separately disclosed"
 }
