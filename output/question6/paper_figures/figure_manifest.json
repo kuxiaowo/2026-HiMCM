@@ -1,0 +1,14 @@
+{
+  "figures": [
+    "fig1_adaptation_flow",
+    "fig2_prototype_networks",
+    "fig3_adaptation_results"
+  ],
+  "formats": [
+    "png",
+    "svg",
+    "tikz"
+  ],
+  "results_sha256": "e04fc7fdd60738000fb3ced19842fa30fdadb3ae9347168ceee9055612ba07b1",
+  "warning": "diagram is an abstract task network, not a real geospatial map"
+}

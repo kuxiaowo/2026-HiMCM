@@ -1,0 +1,18 @@
+{
+  "source_sha256": "66038ab6e9dd4605716049f59c013b2338434575026fe33665592d01221c2e32",
+  "figures": [
+    "fig1_resource_sensitivity",
+    "fig2_joint_resources"
+  ],
+  "formats": [
+    "png",
+    "svg",
+    "tikz"
+  ],
+  "style": "same vector canvas and palette as Q2",
+  "notes": [
+    "no infeasible case shown as zero score",
+    "same service target and 120h/person/month",
+    "lines join computed samples; no confidence intervals"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "retrieved_at": "2026-10-05T16:52:35.916702+00:00",
+  "sources": [
+    {
+      "file": "data/question6/raw/chitwan_unesco.html",
+      "url": "https://whc.unesco.org/en/list/284",
+      "publisher": "UNESCO",
+      "use": "Protected objects and habitats; no numerical planning weights",
+      "status": "archived",
+      "sha256": "03c59e7a818d945c7220a052617274a62fafd79a1da870ea128137febeb881b6",
+      "bytes": 175622,
+      "final_url": "https://whc.unesco.org/en/list/284"
+    },
+    {
+      "file": "data/question6/raw/chitwan_management_2013_2017.pdf",
+      "url": "https://faolex.fao.org/docs/pdf/nep220147.pdf",
+      "publisher": "Chitwan National Park; FAO FAOLEX archive",
+      "use": "Historical management plan, 2013-2017; monsoon, threats and management",
+      "status": "archived",
+      "sha256": "3bd0ae269769bd6012e7f8dca6ee49018d442dc96af503605de5d472e2c9470a",
+      "bytes": 6126174,
+      "final_url": "https://faolex.fao.org/docs/pdf/nep220147.pdf"
+    },
+    {
+      "file": "data/question6/raw/chitwan_unesco_decision_2025.html",
+      "url": "https://whc.unesco.org/en/decisions/8736/",
+      "publisher": "UNESCO",
+      "use": "2025 decision: anti-poaching and causes of rhino mortality",
+      "status": "archived",
+      "sha256": "c46560dbc43c95ee3a549d3d317cfa424a6278696d44128ded4419688310a6e2",
+      "bytes": 127900,
+      "final_url": "https://whc.unesco.org/en/decisions/8736/"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_rules.html",
+      "url": "https://www.nps.gov/yell/learn/management/lawsandpolicies.htm",
+      "publisher": "US National Park Service",
+      "use": "Written approval exception for UAS; public and official road access differ",
+      "status": "archived",
+      "sha256": "c3ca3f1980ca21e62172acb6388c549a692ed42fae4cd701c61135065eebd15f",
+      "bytes": 235519,
+      "final_url": "https://www.nps.gov/yell/learn/management/lawsandpolicies.htm"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_conditions.html",
+      "url": "https://www.nps.gov/yell/planyourvisit/conditions.htm",
+      "publisher": "US National Park Service",
+      "use": "Seasonal public road access and snow travel; not a ranger mobility log",
+      "status": "archived",
+      "sha256": "6bdcea58b2688a583ba8a8a254e4bd0d833d4e4ab544e159a5e4cb17a4c1448c",
+      "bytes": 83826,
+      "final_url": "https://www.nps.gov/yell/planyourvisit/conditions.htm"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_visitor_use.html",
+      "url": "https://www.nps.gov/yell/learn/management/visitor-use.htm",
+      "publisher": "US National Park Service",
+      "use": "Spatial concentration of visitation and monitoring evidence",
+      "status": "archived",
+      "sha256": "54fdba8cb5aba29987cc9f1931f996cadf1fc0dac98014deda7f872b78c5f555",
+      "bytes": 86207,
+      "final_url": "https://www.nps.gov/yell/learn/management/visitor-use.htm"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_reports.html",
+      "url": "https://www.nps.gov/yell/learn/science-publications-reports.htm",
+      "publisher": "US National Park Service",
+      "use": "Calibration sources: wildlife monitoring, GIS and visitor use reports",
+      "status": "archived",
+      "sha256": "222cae3452765f767406af8b52d1d1a79a70d42a812920a0d7b92678acc79e3a",
+      "bytes": 199552,
+      "final_url": "https://www.nps.gov/yell/learn/science-publications-reports.htm"
+    },
+    {
+      "file": "data/question6/raw/yellowstone_wolf.html",
+      "url": "https://www.nps.gov/yell/learn/management/wolf.htm",
+      "publisher": "US National Park Service",
+      "use": "Species-specific monitoring and visitor interaction",
+      "status": "archived",
+      "sha256": "a7d404e3f1a46c7e002bac9e591b5f4d184771a93b30b958a3e2d8f5a8642f0e",
+      "bytes": 156616,
+      "final_url": "https://www.nps.gov/yell/learn/management/wolf.htm"
+    }
+  ]
+}

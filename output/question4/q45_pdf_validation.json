@@ -1,0 +1,31 @@
+{
+  "method": "Chromium + MathJax SVG reading copy from synchronized Markdown",
+  "latex_compilation_confirmed": false,
+  "documents": [
+    {
+      "chapter": 4,
+      "pdf": "output\\pdf\\question4_sensitivity.pdf",
+      "pages": 4,
+      "pdf_sha256": "e3b9294799aadb50ad0b6e0533f05d024e2e4ea2c92897c6a9447948b1893c46",
+      "md_sha256": "41b6b01d5668e03a2413149c0d0b9bc70ae5eea81957591cf533a6aea818d063",
+      "chinese_text_extractable": true,
+      "all_fonts_embedded": true,
+      "font_count": 47,
+      "visual_review": "passed_all_final_pages",
+      "rendered_pages_visually_reviewed": 4
+    },
+    {
+      "chapter": 5,
+      "pdf": "output\\pdf\\question5_evaluation.pdf",
+      "pages": 1,
+      "pdf_sha256": "f75fd6ed074f603c69e7f0724cc65e8f6ce544f35e5d41c7d50cf987b508c86d",
+      "md_sha256": "fb51bdb53fbd14a300b72897aa553a9ce527ce57575fa33588cd893afd09a2a6",
+      "chinese_text_extractable": true,
+      "all_fonts_embedded": true,
+      "font_count": 3,
+      "visual_review": "passed_all_final_pages",
+      "rendered_pages_visually_reviewed": 1
+    }
+  ],
+  "passed": true
+}

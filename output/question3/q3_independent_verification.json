@@ -1,0 +1,618 @@
+{
+  "passed": true,
+  "checks": {
+    "all_input_code_hashes_current": true,
+    "source_transcription_unchanged": true,
+    "source_image_unchanged": true,
+    "17_BH_only": true,
+    "120h_fixed": true,
+    "target_equals_saved_Q2_optimum": true,
+    "weights_sum_one": true,
+    "month1_CSV_region_labor_totals": true,
+    "month2_CSV_region_labor_totals": true,
+    "month3_CSV_region_labor_totals": true,
+    "month4_CSV_region_labor_totals": true,
+    "month5_CSV_region_labor_totals": true,
+    "month6_CSV_region_labor_totals": true,
+    "month7_CSV_region_labor_totals": true,
+    "month8_CSV_region_labor_totals": true,
+    "month9_CSV_region_labor_totals": true,
+    "month10_CSV_region_labor_totals": true,
+    "month11_CSV_region_labor_totals": true,
+    "month12_CSV_region_labor_totals": true,
+    "year_plan_max_not_sum": true,
+    "saved_model_verification_passed": true
+  },
+  "saved_solutions_audited": 84,
+  "solutions": [
+    {
+      "name": "month1_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month1_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month1_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month2_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month2_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month2_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month3_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month3_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month3_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month4_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month4_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month4_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month5_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month5_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month5_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month6_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month6_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month6_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month7_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month7_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month7_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "month8_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month8_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month8_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month9_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month9_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month9_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month10_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month10_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month10_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month11_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6620.662555199724,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month11_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6620.662555199724,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month11_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6620.662555199724,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "month12_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month12_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "month12_fixed_plan",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "low_month1_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5383.198969440685,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "low_month1_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5383.198969440685,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "low_month5_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5761.128340634346,
+      "flight_hours": 160.90964660003294
+    },
+    {
+      "name": "low_month5_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5761.128340634346,
+      "flight_hours": 160.90964660003294
+    },
+    {
+      "name": "low_month8_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6041.973078822806,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "low_month8_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6041.973078822806,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "low_month11_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5944.8884458176035,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "low_month11_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5944.8884458176035,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "low_drought_month1_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5383.198969440685,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "low_drought_month1_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5383.198969440685,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "low_drought_month5_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5989.297606644752,
+      "flight_hours": 160.90964660003294
+    },
+    {
+      "name": "low_drought_month5_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5989.297606644752,
+      "flight_hours": 160.90964660003294
+    },
+    {
+      "name": "low_drought_month8_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "low_drought_month8_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "low_drought_month11_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5944.8884458176035,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "low_drought_month11_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5944.8884458176035,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "base_month1_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "base_month1_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "base_month5_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "base_month5_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6270.142344833211,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "base_month8_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "base_month8_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6831.8318212101285,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "base_month11_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6620.662555199724,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "base_month11_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6620.662555199724,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "base_drought_month1_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "base_drought_month1_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5497.283602445887,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "base_drought_month5_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6828.480876854021,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "base_drought_month5_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6828.480876854021,
+      "flight_hours": 177.4759099796165
+    },
+    {
+      "name": "base_drought_month8_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 7390.170353230938,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "base_drought_month8_fixed59",
+      "passed": true,
+      "score": 54.96753686271383,
+      "person_hours": 7079.99999989799,
+      "flight_hours": 199.75042512505547
+    },
+    {
+      "name": "base_drought_month11_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6620.662555199724,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "base_drought_month11_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 6620.662555199724,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "high_month1_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5776.452868456292,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "high_month1_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5776.452868456292,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "high_month5_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 7390.170353230938,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "high_month5_fixed59",
+      "passed": true,
+      "score": 54.96753686271383,
+      "person_hours": 7079.99999989799,
+      "flight_hours": 199.75042512505547
+    },
+    {
+      "name": "high_month8_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 8546.057382462257,
+      "flight_hours": 240.0
+    },
+    {
+      "name": "high_month8_fixed59",
+      "passed": true,
+      "score": 37.14347366664559,
+      "person_hours": 7079.999999962184,
+      "flight_hours": 207.51286574482162
+    },
+    {
+      "name": "high_month11_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 8055.718850441447,
+      "flight_hours": 240.0
+    },
+    {
+      "name": "high_month11_fixed59",
+      "passed": true,
+      "score": 47.277529957674936,
+      "person_hours": 7079.9999999328475,
+      "flight_hours": 233.66383768145806
+    },
+    {
+      "name": "high_drought_month1_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5776.452868456292,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "high_drought_month1_fixed59",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 5776.452868456292,
+      "flight_hours": 144.34338322044937
+    },
+    {
+      "name": "high_drought_month5_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 8084.508885251748,
+      "flight_hours": 210.60843673878367
+    },
+    {
+      "name": "high_drought_month5_fixed59",
+      "passed": true,
+      "score": 46.32547114853938,
+      "person_hours": 7079.999999937189,
+      "flight_hours": 164.59644542393278
+    },
+    {
+      "name": "high_drought_month8_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 9240.395914483066,
+      "flight_hours": 240.0
+    },
+    {
+      "name": "high_drought_month8_fixed59",
+      "passed": true,
+      "score": 13.800628791712764,
+      "person_hours": 7079.999999979076,
+      "flight_hours": 165.70380166093437
+    },
+    {
+      "name": "high_drought_month11_inverse",
+      "passed": true,
+      "score": 57.260161284231835,
+      "person_hours": 8055.718850441447,
+      "flight_hours": 240.0
+    },
+    {
+      "name": "high_drought_month11_fixed59",
+      "passed": true,
+      "score": 47.277529957674936,
+      "person_hours": 7079.9999999328475,
+      "flight_hours": 233.66383768145806
+    }
+  ],
+  "limits": "Checks saved feasibility, units and totals; relies on HiGHS optimal status for LP optimality; does not validate assumed frequencies or detailed schedules."
+}

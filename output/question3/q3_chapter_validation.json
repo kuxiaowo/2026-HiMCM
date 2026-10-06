@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "checks": {
+    "outline_matches_approved_5_sections_13_titles": true,
+    "25_numbered_equations": true,
+    "equation_numbers_sequential": true,
+    "latex_environment_counts_match": true,
+    "unique_labels": true,
+    "all_formula_figure_table_references_resolved": true,
+    "six_valid_source_and_design_references": true,
+    "no_template_tokens": true,
+    "all_local_links_exist": true,
+    "original_scientific_inputs_unchanged": true,
+    "figure_data_fingerprints_match": true,
+    "25_math_blocks_balanced": true,
+    "four_figures_four_tables": true,
+    "all_12_figure_outputs_exist": true,
+    "water_figure_total_matches_saved_solution": true,
+    "key_numbers_present_in_synced_sources": true,
+    "peak_staff_57_and_stress_62": true,
+    "fixed_120_effective_hours": true,
+    "saved_independent_LP_verification_passed": true,
+    "no_math_render_errors": true,
+    "no_broken_figures_or_horizontal_overflow": true,
+    "PDF_A4_and_10_pages": true,
+    "PDF_key_results_in_prose": true,
+    "all_final_pages_rendered": true
+  },
+  "missing_local_links": [],
+  "pages": 10,
+  "body_pages": 9,
+  "reference_pages": 1,
+  "visual_review": {
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": true,
+    "method": "manual full-page images plus final 10-page contact sheet",
+    "corrections": [
+      "display equations rendered as indivisible SVG images",
+      "table and note kept together",
+      "reference list kept together",
+      "formula lead-in kept with its equation",
+      "axis labels and workload legend adjusted"
+    ]
+  },
+  "latex_compilation": {
+    "status": "platform_error",
+    "diagnostic": "Unable to find standard directories for platform"
+  },
+  "pdf_export_method": "Chromium + MathJax 3.2.2 SVG from synchronized Markdown",
+  "source_model_recomputed": false,
+  "file_sha256": {
+    "docs/paper/question3_framework.tex": "c519572a0af8db92562d92e06f3415ec53d494783df849bef70b462992a132fa",
+    "docs/paper/question3_seasonal_staffing.md": "174e72519752a934fc0284a328f3dc71e543d5d777db46240e47a25118299542",
+    "output/pdf/question3_framework.pdf": "60f0032936803c7427df837a2247df29702d54daa22d14c4d5a51560a4190efb"
+  }
+}

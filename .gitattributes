@@ -11,3 +11,42 @@ output/question2/paper_figures/*.svg whitespace=-blank-at-eol
 output/pdf/*.log whitespace=-blank-at-eol
 docs/paper/question2_framework.tex whitespace=-blank-at-eol
 scripts/modeling/write_question2_chapter.py whitespace=-blank-at-eol
+
+# Preserve Q3 evidence and dependency fingerprints across checkouts.
+data/modeling/q2_assumptions.json -text
+data/modeling/q3_assumptions.json -text
+data/question3/processed/water_points.json -text
+data/question3/raw/koedoe_water_points_2013.csv -text
+output/question2/q2_model_inputs.json -text
+output/question2/q2_results.json -text
+output/question2/q2_verification.json -text
+scripts/modeling/build_question3.py -text
+scripts/modeling/prepare_question3.py -text
+
+data/modeling/q2_assumptions.json whitespace=cr-at-eol
+data/modeling/q3_assumptions.json whitespace=cr-at-eol
+data/question3/processed/water_points.json whitespace=cr-at-eol
+data/question3/raw/koedoe_water_points_2013.csv whitespace=cr-at-eol
+output/question2/q2_model_inputs.json whitespace=cr-at-eol
+output/question2/q2_results.json whitespace=cr-at-eol
+output/question2/q2_verification.json whitespace=cr-at-eol
+scripts/modeling/build_question3.py whitespace=cr-at-eol
+scripts/modeling/prepare_question3.py whitespace=cr-at-eol
+
+data/question3/raw/* -text
+data/question3/raw/*.html whitespace=-blank-at-eol,-space-before-tab,cr-at-eol
+output/question3/*.svg whitespace=-blank-at-eol
+data/modeling/q2_assumptions.json whitespace=cr-at-eol
+data/modeling/q3_assumptions.json whitespace=cr-at-eol
+data/question3/processed/water_points.json whitespace=cr-at-eol
+data/question3/raw/fire_strategy_2016.pdf whitespace=cr-at-eol
+data/question3/raw/koedoe_table1.png whitespace=cr-at-eol
+data/question3/raw/koedoe_water_points_2013.csv whitespace=cr-at-eol
+data/question3/raw/meft_annual_2021_2022.pdf whitespace=cr-at-eol
+data/roads/raw/namibia-261003.osm.pbf whitespace=cr-at-eol
+output/question2/q2_model_inputs.json whitespace=cr-at-eol
+output/question2/q2_results.json whitespace=cr-at-eol
+output/question2/q2_verification.json whitespace=cr-at-eol
+scripts/modeling/build_question3.py whitespace=cr-at-eol
+scripts/modeling/prepare_question3.py whitespace=cr-at-eol
+data/question3/raw/*.json whitespace=cr-at-eol
