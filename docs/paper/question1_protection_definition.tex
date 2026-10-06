@@ -1,0 +1,66 @@
+\documentclass[UTF8,fontset=fandol,12pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,hyperref}
+\hypersetup{hidelinks}
+\ctexset{
+  section={format=\large\bfseries,beforeskip=0pt,afterskip=6pt},
+  subsection={format=\normalsize\bfseries,beforeskip=6pt,afterskip=3pt}
+}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{2pt}
+\linespread{1.0}
+\pagestyle{plain}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.06}
+\renewcommand{\theequation}{1-\arabic{equation}}
+\setlength{\abovedisplayskip}{5pt}
+\setlength{\belowdisplayskip}{5pt}
+\emergencystretch=2em
+\begin{document}
+\fontsize{12}{16}\selectfont
+
+\section{保护优先事项与保护的量化定义}
+
+本研究面向埃托沙国家公园全园，以15个动物调查区、主盐沼及其他调查外区域构成的17个分区为规划单元，保护对象包括重点动物、植物及其生境。
+
+\subsection{主要挑战与管理优先级}
+
+依据原题的威胁描述、潜在损失及可干预程度，暂将\textbf{偷猎与非法进入}列为首要挑战，\textbf{有害野火与生境扰动}列为第二类挑战。重点动物侧重反偷猎，草、灌、林侧重有害火监测；盐沼、鸟类及珍稀植物保留专项评价。该顺序是管理假设，可随物种、区域和季节调整，不能视为实测风险排名；人兽冲突、疾病等资料不足，也不等于风险不存在。
+
+\subsection{区域保护责任与威胁代理}
+
+表1-1概括现有数据及其用途。资料年份不同，构成规划基线，而非同年实测状态。分区面积统一核验；数量与密度不重复加权。
+
+{\centering\textbf{表1-1\quad 核心因素与量化依据}\par}\vspace{3pt}
+\noindent\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.35cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+因素 & 数据及处理 \\
+\midrule
+动物责任 & 2015年航空调查：按同物种区域份额与法规保护类别的AHP权重量化。\\
+生境责任 & 2021年WorldCover：草、灌、林面积占全园同类可燃生境总面积的份额。\\
+道路条件 & 2026年有向路网：Dijkstra计算进入时间及驻点到场时间；二者分别表征进入便利度与响应可达性。\\
+\bottomrule
+\end{tabularx}
+\par\vspace{2pt}
+
+令$n_{is}$为区$i$的物种$s$数量，$N_s$为调查范围内该物种总数，$q_s$为其保护类别判断权重，$A_i^F$为可燃生境面积，则
+\begin{equation}
+V_i^A=\frac{\sum_s q_s(n_{is}/N_s)}{\sum_s q_s},
+\qquad
+V_i^F=\frac{A_i^F}{\sum_i A_i^F}.
+\label{eq:q1_responsibility}
+\end{equation}
+AHP数值属于团队判断，而非法定权重。进入指数$E_j=\exp(-T_j^E/\tau_E)$仅为人为进入代理，并非偷猎概率。多年可靠火暴露尚缺，火侧暂用可燃生境等暴露假设；单月过火样例不代表多年风险。缺测动物及重点生境保持未知；盐沼燃料为零不等于生态价值为零。当前模型排除水源与降雨。
+
+\subsection{“受到保护”的可测定义}
+
+定义保护为：重点对象按规定标准接受监测，异常可核查，合格队伍能及时响应。对检查单元$j$及时期$t$，$d_{jt}\in[0,1]$为规定合格检查的完成比例，$r_{jt}\in\{0,1\}$表示是否满足到场期限，定义有效服务$s_{jt}=d_{jt}r_{jt}$。动物责任乘进入指数与可燃生境责任分别归一化，再以共同有数据区的熵权组合为固定需求权重$w_j$，得到
+\begin{equation}
+P_t=100\sum_j w_js_{jt},
+\qquad \sum_j w_j=1,
+\qquad 0\le s_{jt}\le r_{jt}\le1.
+\label{eq:q1_protection}
+\end{equation}
+同一需求与标准下，$P_t$提高表示监测服务能力增强；全园均分仍须配合重点对象服务底线。实际成效另以非法动物损失率、重点种群状态、有害非计划火影响及生境状态检验，并控制监测努力和季节差异。检出事件增加、计划烧除均不自动代表保护失败。代表点检查不等于连续覆盖，已知对象评分也不能代替缺失对象的评价。服务频次、响应期限及资源约束由第二题具体确定。
+
+\end{document}
