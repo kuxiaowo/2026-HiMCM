@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Basic Assumptions and Justifications}{3}{section.2}%
+\contentsline {section}{\numberline {3}Data Description and Symbol Definitions}{4}{section.3}%
+\contentsline {section}{\numberline {4}Protection Priorities and a Measurable Standard}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Priorities and evidence}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}What effective inspection completion measures}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Resource Allocation with Ground Teams and Drones}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Planning units and resource assumptions}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Animal responsibility, habitat and access}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Weights, routes and response eligibility}{7}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Service capacity and the allocation model}{8}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Solution checks and regional allocation}{8}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Strategic comparisons and response posts}{9}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Seasonal Service and Workforce Requirements}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Target, months and additional tasks}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Borehole maintenance as ground-only work}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Shared monthly constraints}{12}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Forward service and inverse workforce models}{12}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Normal-season results and feasibility}{13}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Drought work and service-standard sensitivity}{13}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Sensitivity and Scenario Analysis}{14}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Screening protocol and grid sensitivity}{14}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Weight sensitivity}{15}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Strengths, Limitations and Practical Use}{16}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Strengths}{16}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Weaknesses and Limitations}{16}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Adaptation to Parks on Other Continents}{17}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Shared structure and local data}{17}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Conditional trials and expected deployment changes}{17}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}A local historical-priority trial}{18}{subsection.9.3}%
+\contentsline {section}{Appendix: supplementary results}{19}{subsection.9.3}%
+\contentsline {section}{Letter to IMMC}{20}{lstnumber.-1.14}%
+\contentsline {section}{References}{21}{lstnumber.-1.14}%
+\contentsline {section}{Report on Use of AI}{22}{lstnumber.-1.14}%

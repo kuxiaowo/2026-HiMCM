@@ -4,7 +4,7 @@ The same geometric primitives drive PNG/SVG and TikZ. No new observations,
 weights or resource scenarios are introduced by this presentation script.
 """
 from __future__ import annotations
-import hashlib, json, re
+import hashlib, json, re, time, uuid
 from pathlib import Path
 import numpy as np
 import matplotlib
@@ -79,7 +79,17 @@ class Canvas:
                 chunks=[' -- '.join('(%.4f,%.4f)'%tuple(p) for p in ring[:-1])+' -- cycle' for ring in rings]
                 tikz.append('\\path[even odd rule,fill=%s,draw=%s,line width=%gpt] %s;'%(tc(fill),tc(edge),lw,' '.join(chunks)))
         tikz.append(r'\end{tikzpicture}')
-        fig.savefig(OUT/(name+'.png'),dpi=240,facecolor='white');fig.savefig(OUT/(name+'.svg'),facecolor='white');plt.close(fig)
+        for extension in ['png','svg']:
+            temporary=OUT/(name+'.'+uuid.uuid4().hex+'.tmp.'+extension)
+            fig.savefig(temporary,dpi=240,facecolor='white')
+            for attempt in range(8):
+                try:
+                    temporary.replace(OUT/(name+'.'+extension))
+                    break
+                except PermissionError:
+                    if attempt==7:raise
+                    time.sleep(.25*(attempt+1))
+        plt.close(fig)
         (OUT/(name+'.tikz')).write_text('\n'.join(tikz)+'\n',encoding='utf-8')
 
 def flow():
@@ -199,9 +209,10 @@ def results(report):
         c.text(x,bottom-.38,b['name'],9)
     cap=report['optimum']['geographic_score_upper_bound'];y=bottom+height*cap/ymax
     c.line([(left,y),(7.85,y)],RED,.9,dashed=True);c.text(4.43,6.7,f'固定响应条件上限 {cap:.2f}',9,c=RED)
-    c.rect(1.5,.46,.25,.16,BLUE);c.text(1.85,.54,'基准7080人时',9,ha='left');c.rect(4.7,.46,.25,.16,GOLD);c.text(5.05,.54,'紧缺4248人时',9,ha='left')
-    maxh=7080.;xl=9.75;ww=6.4
-    for y,label,r in [(5.3,'基准',report['optimum']),(3.67,'紧缺',report['scarce_budget_comparisons'][-1]['result'])]:
+    base_budget=report['optimum']['human_budget'];reduced_budget=report['scarce_budget_comparisons'][-1]['result']['human_budget']
+    c.rect(1.5,.46,.25,.16,BLUE);c.text(1.85,.54,f'基准{base_budget:.0f}人时',9,ha='left');c.rect(4.7,.46,.25,.16,GOLD);c.text(5.05,.54,f'减员{reduced_budget:.0f}人时',9,ha='left')
+    maxh=base_budget;xl=9.75;ww=6.4
+    for y,label,r in [(5.3,'基准',report['optimum']),(3.67,'减员',report['scarce_budget_comparisons'][-1]['result'])]:
         fixed=r['response_reserved_hours'];mobile=r['ground_hours']+r['drone_operator_hours'];idle=max(0,r['human_budget']-fixed-mobile)
         c.text(xl-.2,y,label,10,ha='right');start=xl
         for val,col in [(fixed,GREY),(mobile,BLUE),(idle,'#e4eaf0')]:
@@ -217,7 +228,7 @@ def results(report):
 def regional(report):
     rows=sorted(report['regions'],key=lambda r:-r['demand_weight']);scarce={r['region_id']:r for r in report['scarce_budget_regions']}
     c=Canvas(17,10.5);c.text(8.5,10.13,'分区需求、服务和监测人工的对应关系',12,bold=True)
-    columns=[('需求权重\n%',lambda r:r['demand_weight']*100,20,BLUE),('基准服务\n%',lambda r:r['service_completion_fraction']*100,100,BLUE),('紧缺服务\n%',lambda r:scarce[r['region_id']]['service_completion_fraction']*100,100,GOLD),('基准人工\n人时',lambda r:r['allocated_monitoring_person_hours'],500,BLUE),('紧缺人工\n人时',lambda r:scarce[r['region_id']]['allocated_monitoring_person_hours'],500,GOLD)]
+    columns=[('需求权重\n%',lambda r:r['demand_weight']*100,20,BLUE),('基准服务\n%',lambda r:r['service_completion_fraction']*100,100,BLUE),('减员服务\n%',lambda r:scarce[r['region_id']]['service_completion_fraction']*100,100,GOLD),('基准人工\n人时',lambda r:r['allocated_monitoring_person_hours'],500,BLUE),('减员人工\n人时',lambda r:scarce[r['region_id']]['allocated_monitoring_person_hours'],500,GOLD)]
     x0=3.4;cell=2.45;top=8.88;dy=.46
     for j,(name,func,mx,col) in enumerate(columns):c.text(x0+j*cell+cell/2,9.53,name,9.5,bold=True)
     for i,r in enumerate(rows):

@@ -1,0 +1,11 @@
+warning: in the working copy of 'docs/modeling_notes/question2_calculation_notes.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/paper/question1_protection_definition.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/build_question2.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/build_question2_paper_figures.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/build_question3_paper_figures.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/validate_question3_chapter.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/verify_question2.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/verify_question3.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/write_question3_chapter.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/write_question3_report.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/modeling/write_question45_chapters.py', LF will be replaced by CRLF the next time Git touches it

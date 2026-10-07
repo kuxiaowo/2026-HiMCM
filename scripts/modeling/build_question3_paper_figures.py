@@ -33,7 +33,7 @@ def pipeline(result):
     boxes = [(.2,4.8,5.1,.9,BLUE,'第二题固定基线','权重、成本、响应范围与机队'),
              (.2,3.3,5.1,.9,TEAL,'月度附加服务','火险点次 + 水点地面运维'),
              (6.1,3.85,4.45,1.2,PALE,'共同可行范围','容量、机时与区域底线'),
-             (11.4,4.8,5.4,.9,BLUE,'固定59人','每月最高基准服务分'),
+             (11.4,4.8,5.4,.9,BLUE,f"固定{result['fixed_reference_staff']}人",'每月最高基准服务分'),
              (11.4,2.9,5.4,.9,GOLD,'固定57.26分目标','每月最少总人时')]
     for x,y,w,h,col,title,detail in boxes:
         c.rect(x,y,w,h,col)
@@ -87,7 +87,7 @@ def water_map(data, water, ass):
     c.line([(.85,6.9),(.85,7.35)],INK,.8,arrow=True);c.text(.85,7.55,'N',8)
     c.line([(.55,2.15),(.55+50000*scale,2.15)],INK,1.2);c.text(.55+25000*scale,1.93,'50 km',8.5)
     c.circle(3.05,2.13,.075,TEAL);c.text(3.25,2.13,'17处BH钻井',9,ha='left')
-    c.star(5.4,2.13,.11,BLUE);c.text(5.62,2.13,'候选驻点',9,ha='left')
+    c.star(6.05,2.13,.11,BLUE);c.text(6.28,2.13,'候选驻点',9,ha='left')
     travel=sum(r['round_travel_hours'] for r in rows)
     total=f*n*(travel+len(rows)*(p['water_onsite_hours_visit']+prep))
     c.rect(.4,.75,7.4,.74,PALE)
@@ -122,9 +122,8 @@ def monthly(result):
     for val in [0,2000,4000,6000,8000]:
         y=bottom+height*val/ymax;c.line([(left,y),(right,y)],'#e0e6ea',.35);c.text(left-.17,y,str(val),8.5,ha='right',c=GREY)
     c.text(.3,6.0,'人时\n/月',8)
-    ref=result['fixed_reference_staff']*120; y=bottom+height*ref/ymax
-    c.line([(left,y),(right,y)],RED,.9,dashed=True)
-    c.text(right,7.96,'参考59人预算：7080人时/月',9,c=RED,ha='right')
+    ref=result['fixed_reference_staff']*120
+    c.text(right,7.96,f"参考{result['fixed_reference_staff']}人预算：{ref:.0f}人时/月（高于图示范围）",9,c=RED,ha='right')
     centers=[]
     for i,r in enumerate(rows):
         x=left+width*(i+.5)/12;centers.append(x);start=bottom
@@ -137,9 +136,9 @@ def monthly(result):
     fy=lambda v:y0+h2*(v-40)/22
     for val in [40,50,60]:
         y=fy(val);c.line([(left,y),(right,y)],'#e0e6ea',.35);c.text(left-.17,y,str(val),8.5,ha='right',c=GREY)
-    for val,col in [(59,RED),(result['annual_fixed_staff_base_scenario'],BLUE)]:
+    for val,col in [(result['annual_fixed_staff_base_scenario'],BLUE)]:
         y=fy(val);c.line([(left,y),(right,y)],col,.8,dashed=True)
-    c.text(right,3.03,'参考配置59人 / 全年固定57人',8.5,ha='right',c=GREY)
+    c.text(right,3.03,f"参考配置{result['fixed_reference_staff']}人 / 常规全年需求{result['annual_fixed_staff_base_scenario']}人",8.5,ha='right',c=GREY)
     xy=[(x,fy(r['required_staff'])) for x,r in zip(centers,rows)]
     c.line(xy,BLUE,1.5)
     for i,((x,y),r) in enumerate(zip(xy,rows)):
@@ -155,7 +154,7 @@ def drought(result):
     stress=next(v for v in item['solutions'] if v['period']['month']==8)
     rr=[regular,stress['inverse']]
     c=Canvas(17,6.7);c.text(4.7,6.31,'(a) 峰值月：保持目标所需人时',11,bold=True)
-    c.text(12.9,6.31,'(b) 峰值月：固定59人的服务分',11,bold=True)
+    c.text(12.9,6.31,f"(b) 峰值月：固定{result['fixed_reference_staff']}人的服务分",11,bold=True)
     left=1.6; width=6.7; mx=8000
     for y,label,r in [(4.65,'常规季节',rr[0]),(3.28,'异常干旱',rr[1])]:
         c.text(left-.17,y,label,9,ha='right');start=left
@@ -165,8 +164,7 @@ def drought(result):
         c.text(left,y+.59,f"{r['total_person_hours']:.2f} 人时 → {r['required_staff']}人",9,ha='left')
     for val in [0,4000,8000]:
         x=left+width*val/mx;c.text(x,2.36,str(val),8,c=GREY)
-    x=left+width*7080/mx;c.line([(x,2.78),(x,5.0)],RED,.9,dashed=True)
-    c.text(4.7,1.97,'竖线：59人预算7080人时',9,c=RED)
+    c.text(4.7,1.97,f"参考{result['fixed_reference_staff']}人预算{result['fixed_reference_staff']*120}人时，均有余量",9,c=RED)
     for i,(col,label) in enumerate([(GREY,'响应'),(BLUE,'监测'),(GOLD,'火险'),(TEAL,'水点')]):
         xx=.95+i*1.87;c.rect(xx,1.32,.18,.13,col);c.text(xx+.27,1.385,label,8,ha='left')
     base=52.; maximum=60.; bot=2.07; hh=3.25; xl=10.3; xr=16.4
@@ -180,7 +178,7 @@ def drought(result):
         c.rect(x-.46,bot,.92,yy(score)-bot,col);c.text(x,yy(score)+.17,f'{score:.2f}',10,c=col,bold=True);c.text(x,bot-.32,label,9)
     c.text(13.2,1.4,'纵轴从52分起；虚线为目标',8.5,c=GREY)
     c.rect(.5,.35,16,.68,PALE)
-    c.text(8.5,.68,'水点人时422.34 → 980.68；较参考59人追加3人，可维持原服务目标',9.5)
+    c.text(8.5,.68,'水点人时422.34 → 980.68；所需人数57 → 62；177人参考配置仍可维持目标',9.5)
     c.save('fig4_drought_workload_and_service')
 
 

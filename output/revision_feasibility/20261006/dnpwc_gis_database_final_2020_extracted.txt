@@ -1,0 +1,1264 @@
+PDF PAGE 1
+0 
+ 
+ 
+FINAL REPORT  
+ 
+ 
+ 
+ 
+ 
+Submitted to: 
+Department of National Parks and Wildlife Conservation (DNPWC) 
+Ministry of Forest and Environment 
+Government of Nepal 
+Babarmahal, Kathmandu, Nepal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+By: 
+Bhola Nath Dhakal, PhD 
+GIS Consultant 
+Kirtipur-2, Kathmandu  
+Tel: 9841381007 
+ 
+(Bhadra 24th, 2077) 
+ 
+
+PDF PAGE 2
+1 
+ 
+Background 
+Nepal is endowed with rich and varied biodiversity. Altitudinal variances in 
+short distance give Nepal's biogeography variety that range from lush moist forests 
+and sparse alpine deserts to luxurious g rasslands in lowland Tarai. The 
+mountainous country also shelters some of the world's most rare animals. 
+Sagarmatha (Mt. Everest) National Park and Chitwan National Park with typical 
+natural, cultural and landscape characteristics were listed as World Heri tage sites 
+in 1979 and 1984, respectively. 
+Nepal has established a good network of protected areas. There are twelve 
+national parks, one wildlife reserve, one hunting reserve, six conservation areas 
+and thirteen buffer zones in and around national parks an d reserves in Nepal 
+(Figure 1). Within the coverage of protected areas in the country, conservation area 
+covers highest part which is 44.82 % of total protected areas where as national park 
+occupies 34.3 %, buffer zone area occupies 15.52 and hunting reser ve and wildlife 
+reserve cover 3.85 and 0.51 % respectively (Table 1). Not only the protected areas 
+were established, Government of Nepal has intensified the protection measures 
+too. 
+Table 1: Categories of Protected Areas in Nepal 
+Categories of PAs No. of PAs Covered  Area (sq km) Percentage 
+National Parks (NP) 12 11,806.02 34.30 
+Conservation Areas (CA) 6 15,425.95 44.82 
+Wildlife Reserves (WR) 1 175.00 0.51 
+Hunting Reserve (HR) 1 1325.00 3.85 
+Buffer Zone (BZ) 13 5,687.78 16.52 
+Total 34,419.75 23.39 
+Source: DNPWC/MoFSC, 2020 
+A Geographical Information System (GIS) is a system of hardware, software 
+and procedures to facilitate the management, manipulation, analysis, modeling, 
+
+PDF PAGE 3
+2 
+ 
+representation and display of geo‐referenced data to solve complex problems 
+regarding planning and management of resources. A GIS plays an important role as 
+a tool for environmental management, with the current greater concern for 
+sustainable use of resources, and conservation and monitoring of biodiversity.  In 
+this direction, the GIS based database on exis ting area coverage within and around 
+the protected areas by different administrative tiers has to be identified and created 
+on thematic map and tabular form of database.  
+ 
+Objectives: 
+The prime objective of this study is to generate the GIS based database o n 
+existing area coverage of protected areas by local level. However specific 
+objectives were; 
+ Support DNPWC in GIS Database management 
+ Prepare local level database and maps on area coverage by all PAs of Nepal 
+(including BZ) 
+ 
+Methodology: 
+ Collected and comp iled the existing GIS related protected area coverage 
+data base from the department as well as relevant sources  (DoS and 
+MoFAGA). 
+ Verified with field offices by consultation to field staffs as per required and 
+updated with central level information of Nepal Gazette records. 
+ Updated on final database and prepared report with fact figure on 
+distribution of protected areas of Nepal by Province, District, 
+Nagarpalika/Gaunpalika and Ward Level. 
+Output: 
+ Province, District, Nagarpalika/Gaunpalika and Ward Level Ar ea Coverage 
+Database on Protected Areas of Nepal with maps showing each 
+administrative level boundary for all PAs including BZ. 
+ 
+
+PDF PAGE 4
+3 
+ 
+ 
+Figure 1: Location of Protected Areas of Nepal by Physigraphic Zones and Provinces 
+
+
+PDF PAGE 5
+4 
+ 
+Coverage Area Database on Protected Areas of Nepal by  
+Province, District, Palika and Ward Level (2077) 
+ 
+ 
+ 
+
+
+PDF PAGE 6
+5 
+ 
+ 
+ 
+Annapurna Conservation Area (ACA) 
+SN District Palika Type Ward_N Area_Sqkm Remarks 
+1 Kaski Annapurna  Gaunpalika 8 12.66 CA 
+2 Kaski Annapurna  Gaunpalika 10 19.96 CA 
+3 Kaski Annapurna  Gaunpalika 11 257.47 CA 
+4 Kaski Madi Annapurna Gaunpalika 2 277.32 CA 
+5 Kaski Madi Annapurna Gaunpalika 1 88.63 CA 
+6 Kaski Annapurna Kaski Gaunpalika 9 29.44 CA 
+7 Kaski Machhapuchchhre Gaunpalika 3 8.99 CA 
+8 Kaski Machhapuchchhre Gaunpalika 5 13.88 CA 
+9 Kaski Machhapuchchhre Gaunpalika 2 50.23 CA 
+10 Kaski Machhapuchchhre Gaunpalika 8 19.89 CA 
+11 Kaski Machhapuchchhre Gaunpalika 9 138.66 CA 
+12 Kaski Machhapuchchhre Gaunpalika 7 12.02 CA 
+13 Kaski Machhapuchchhre Gaunpalika 4 6.87 CA 
+14 Kaski Annapurna Kaski Gaunpalika 7 43.41 CA 
+15 Kaski Annapurna Kaski Gaunpalika 6 6.54 CA 
+16 Kaski Madi Annapurna Gaunpalika 6 25.76 CA 
+17 Kaski Madi Annapurna Gaunpalika 7 1.32 CA 
+18 Kaski Madi Annapurna Gaunpalika 3 12.54 CA 
+19 Kaski Madi Annapurna Gaunpalika 10 5.72 CA 
+20 Kaski Madi Annapurna Gaunpalika 11 9.41 CA 
+21 Kaski Madi Annapurna Gaunpalika 8 37.03 CA 
+22 Kaski Machhapuchchhre Gaunpalika 1 269.95 CA 
+23 Kaski Pokhara Mahanagarpalika 19 13.27 CA 
+24 Lamjung Kwholasothar Gaunpalika 5 15.42 CA 
+25 Lamjung Kwholasothar Gaunpalika 4 70.16 CA 
+26 Lamjung Kwholasothar Gaunpalika 6 9.97 CA 
+27 Lamjung Marsyangdi Gaunpalika 2 48.68 CA 
+28 Lamjung Marsyangdi Gaunpalika 1 7.35 CA 
+29 Lamjung Marsyangdi Gaunpalika 3 99.58 CA 
+30 Lamjung Marsyangdi Gaunpalika 4 81.66 CA 
+31 Lamjung Kwholasothar Gaunpalika 3 6.36 CA 
+32 Lamjung Marsyangdi Gaunpalika 9 6.18 CA 
+33 Lamjung Kwholasothar Gaunpalika 8 6.16 CA 
+34 Manang Chame Gaunpalika 2 4.39 CA 
+35 Manang Chame Gaunpalika 1 15.68 CA 
+36 Manang Chame Gaunpalika 4 43.91 CA 
+37 Manang Chame Gaunpalika 3 9.19 CA 
+
+PDF PAGE 7
+6 
+ 
+38 Manang Chame Gaunpalika 5 4.38 CA 
+39 Manang Nashong Gaunpalika 9 101.02 CA 
+40 Manang Nashong Gaunpalika 1 16.30 CA 
+41 Manang Nashong Gaunpalika 3 34.24 CA 
+42 Manang Nashong Gaunpalika 4 4.69 CA 
+43 Manang Narphu Gaunpalika 2 175.65 CA 
+44 Manang Narphu Gaunpalika 1 13.20 CA 
+45 Manang Narphu Gaunpalika 3 289.72 CA 
+46 Manang Narphu Gaunpalika 5 153.46 CA 
+47 Manang Narphu Gaunpalika 4 191.65 CA 
+48 Manang Nashong Gaunpalika 6 193.79 CA 
+49 Manang Nashong Gaunpalika 7 52.55 CA 
+50 Manang Nashong Gaunpalika 5 5.92 CA 
+51 Manang Nashong Gaunpalika 8 18.71 CA 
+52 Manang Neshyang Gaunpalika 5 66.49 CA 
+53 Manang Neshyang Gaunpalika 9 175.48 CA 
+54 Manang Neshyang Gaunpalika 6 45.29 CA 
+55 Manang Neshyang Gaunpalika 4 43.02 CA 
+56 Manang Neshyang Gaunpalika 1 145.79 CA 
+57 Manang Neshyang Gaunpalika 7 15.84 CA 
+58 Manang Neshyang Gaunpalika 8 147.18 CA 
+59 Manang Neshyang Gaunpalika 3 30.48 CA 
+60 Manang Neshyang Gaunpalika 2 13.55 CA 
+61 Mustang Dalome Gaunpalika 1 318.46 CA 
+62 Mustang Dalome Gaunpalika 5 492.45 CA 
+63 Mustang Dalome Gaunpalika 2 199.53 CA 
+64 Mustang Dalome Gaunpalika 3 18.19 CA 
+65 Mustang Dalome Gaunpalika 4 293.25 CA 
+66 Mustang Gharapjhong Gaunpalika 5 112.41 CA 
+67 Mustang Gharapjhong Gaunpalika 1 48.58 CA 
+68 Mustang Gharapjhong Gaunpalika 2 16.45 CA 
+69 Mustang Gharapjhong Gaunpalika 3 70.84 CA 
+70 Mustang Gharapjhong Gaunpalika 4 63.34 CA 
+71 Mustang Lomanthang Gaunpalika 4 78.66 CA 
+72 Mustang Lomanthang Gaunpalika 5 278.34 CA 
+73 Mustang Lomanthang Gaunpalika 1 293.34 CA 
+74 Mustang Lomanthang Gaunpalika 3 17.61 CA 
+75 Mustang Lomanthang Gaunpalika 2 46.85 CA 
+76 Mustang Barhagaun Muktikshetra Gaunpalika 3 482.65 CA 
+77 Mustang Barhagaun Muktikshetra Gaunpalika 5 223.37 CA 
+78 Mustang Barhagaun Muktikshetra Gaunpalika 2 49.18 CA 
+
+PDF PAGE 8
+7 
+ 
+79 Mustang Barhagaun Muktikshetra Gaunpalika 1 58.56 CA 
+80 Mustang Barhagaun Muktikshetra Gaunpalika 4 57.33 CA 
+81 Mustang Thasang Gaunpalika 1 80.98 CA 
+82 Mustang Thasang Gaunpalika 2 78.82 CA 
+83 Mustang Thasang Gaunpalika 5 45.15 CA 
+84 Mustang Thasang Gaunpalika 4 58.26 CA 
+85 Mustang Thasang Gaunpalika 3 21.52 CA 
+86 Myagdi Annapurna  Gaunpalika 4 315.82 CA 
+87 Myagdi Annapurna  Gaunpalika 6 41.80 CA 
+88 Myagdi Annapurna  Gaunpalika 5 43.21 CA 
+Total Area 7629.00   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 9
+8 
+ 
+ 
+ 
+
+
+PDF PAGE 10
+9 
+ 
+ 
+Api Nampa Conservation Area (ANCA) 
+SN District Palika Type Ward_N Area_Sqkm Remarks 
+1 Darchula Apihimal Gaunpalika 2 80.69 CA 
+2 Darchula Apihimal Gaunpalika 3 169.33 CA 
+3 Darchula Apihimal Gaunpalika 4 10.77 CA 
+4 Darchula Apihimal Gaunpalika 6 105.29 CA 
+5 Darchula Apihimal Gaunpalika 1 240.15 CA 
+6 Darchula Apihimal Gaunpalika 5 7.71 CA 
+7 Darchula Byas Gaunpalika 4 13.72 CA 
+8 Darchula Byas Gaunpalika 5 10.52 CA 
+9 Darchula Byas Gaunpalika 6 6.32 CA 
+10 Darchula Byas Gaunpalika 2 179.31 CA 
+11 Darchula Byas Gaunpalika 3 64.06 CA 
+12 Darchula Byas Gaunpalika 1 565.31 CA 
+13 Darchula Dunhu Gaunpalika 3 6.47 CA 
+14 Darchula Dunhu Gaunpalika 4 13.50 CA 
+15 Darchula Dunhu Gaunpalika 5 19.55 CA 
+16 Darchula Dunhu Gaunpalika 2 16.71 CA 
+17 Darchula Dunhu Gaunpalika 1 9.12 CA 
+18 Darchula Mahakali Nagarpalika 3 7.45 CA 
+19 Darchula Mahakali Nagarpalika 2 15.07 CA 
+20 Darchula Mahakali Nagarpalika 1 19.12 CA 
+21 Darchula Marma Gaunpalika 2 24.01 CA 
+22 Darchula Marma Gaunpalika 3 23.76 CA 
+23 Darchula Marma Gaunpalika 6 19.74 CA 
+24 Darchula Marma Gaunpalika 5 13.21 CA 
+25 Darchula Marma Gaunpalika 4 19.60 CA 
+26 Darchula Marma Gaunpalika 1 107.73 CA 
+27 Darchula Naugad Gaunpalika 5 4.52 CA 
+28 Darchula Naugad Gaunpalika 1 61.50 CA 
+29 Darchula Naugad Gaunpalika 2 23.79 CA 
+30 Darchula Naugad Gaunpalika 3 14.23 CA 
+31 Darchula Naugad Gaunpalika 4 30.74 CA 
+Total Area 1903.00   
+ 
+ 
+
+PDF PAGE 11
+10 
+ 
+ 
+ 
+
+
+PDF PAGE 12
+11 
+ 
+ 
+Banke National Park (BaNP) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Dang Babai Gaunpalika 7 40.64 BZ 
+343.00 
+2 Dang Babai Gaunpalika 1 17.74 BZ 
+3 Banke Baijanath Gaunpalika 1 6.82 BZ 
+4 Banke Baijanath Gaunpalika 2 0.10 BZ 
+5 Banke Baijanath Gaunpalika 3 4.08 BZ 
+6 Banke Baijanath Gaunpalika 4 6.64 BZ 
+8 Dang Dangisharan Gaunpalika 1 21.91 BZ 
+9 Salyan Kalimati Gaunpalika 7 38.92 BZ 
+10 Salyan Kalimati Gaunpalika 5 38.01 BZ 
+11 Salyan Kalimati Gaunpalika 2 40.49 BZ 
+12 Banke Kohalpur Nagarpalika 2 10.65 BZ 
+13 Banke Kohalpur Nagarpalika 1 0.57 BZ 
+14 Banke Kohalpur Nagarpalika 10 1.23 BZ 
+15 Banke Kohalpur Nagarpalika 11 1.93 BZ 
+16 Banke Kohalpur Nagarpalika 12 6.87 BZ 
+17 Banke Kohalpur Nagarpalika 13 0.04 BZ 
+18 Banke Kohalpur Nagarpalika 13 17.48 BZ 
+19 Banke Rapti sonari Gaunpalika 1 53.61 BZ 
+20 Banke Rapti sonari Gaunpalika 9 14.31 BZ 
+21 Banke Rapti sonari Gaunpalika 8 12.70 BZ 
+22 Banke Rapti sonari Gaunpalika 2 8.27 BZ 
+23 Banke Baijanath Gaunpalika 1 28.25 Park 
+550.00 
+24 Banke Baijanath Gaunpalika 3 0.14 Park 
+25 Banke Baijanath Gaunpalika 4 5.17 Park 
+26 Banke Rapti sonari Gaunpalika 1 121.69 Park 
+27 Banke Rapti sonari Gaunpalika 2 188.66 Park 
+28 Banke Rapti sonari Gaunpalika 9 54.37 Park 
+29 Banke Rapti sonari Gaunpalika 8 78.08 Park 
+30 Banke Kohalpur Nagarpalika 2 4.13 Park 
+31 Banke Kohalpur Nagarpalika 13 69.50 Park 
+All Total 893.00     
+ 
+
+PDF PAGE 13
+12 
+ 
+ 
+ 
+
+
+PDF PAGE 14
+13 
+ 
+Bardia National Park (BNP) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Banke Baijanath Gaunpalika 1 3.14 BZ 
+507.00 
+2 Bardia Bansagadhi Nagarpalika 2 32.63 BZ 
+3 Bardia Bansagadhi Nagarpalika 1 18.88 BZ 
+4 Bardia Bansagadhi Nagarpalika 4 6.01 BZ 
+5 Bardia Bansagadhi Nagarpalika 8 15.42 BZ 
+6 Bardia Bansagadhi Nagarpalika 9 13.63 BZ 
+7 Surkhet Barahtal Gaunpalika 1 38.82 BZ 
+8 Surkhet Barahtal Gaunpalika 3 50.13 BZ 
+9 Bardia Barbardiya Nagarpalika 8 7.31 BZ 
+10 Bardia Barbardiya Nagarpalika 9 30.51 BZ 
+11 Bardia Barbardiya Nagarpalika 7 14.78 BZ 
+12 Bardia Barbardiya Nagarpalika 1 42.90 BZ 
+13 Surkhet Bheriganga Nagarpalika 4 16.09 BZ 
+14 Surkhet Bheriganga Nagarpalika 2 19.50 BZ 
+15 Surkhet Bheriganga Nagarpalika 1 27.42 BZ 
+16 Surkhet Bheriganga Nagarpalika 3 11.73 BZ 
+17 Surkhet Bheriganga Nagarpalika 5 10.80 BZ 
+18 Bardia Geruwa Gaunpalika 4 12.82 BZ 
+19 Bardia Geruwa Gaunpalika 6 15.42 BZ 
+20 Bardia Geruwa Gaunpalika 5 10.91 BZ 
+21 Bardia Geruwa Gaunpalika 1 12.62 BZ 
+22 Bardia Geruwa Gaunpalika 3 10.17 BZ 
+23 Bardia Geruwa Gaunpalika 2 9.54 BZ 
+24 Bardia Madhuwan Nagarpalika 1 11.91 BZ 
+25 Bardia Thakurbaba Nagarpalika 3 11.46 BZ 
+26 Bardia Thakurbaba Nagarpalika 2 12.12 BZ 
+27 Bardia Thakurbaba Nagarpalika 1 4.76 BZ 
+28 Bardia Thakurbaba Nagarpalika 6 7.33 BZ 
+29 Bardia Thakurbaba Nagarpalika 7 5.83 BZ 
+30 Bardia Thakurbaba Nagarpalika 8 10.09 BZ 
+31 Bardia Thakurbaba Nagarpalika 9 7.15 BZ 
+32 Bardia Thakurbaba Nagarpalika 4 5.18 BZ 
+33 Bardia 
+National 
+Park NP   968.00 Park 968.00 
+All Total 1475.00     
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 15
+14 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 16
+15 
+ 
+Chitwan National Park (CNP) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Nawalparasi_W Bardaghat Nagarpalika 16 7.80 BZ 
+729.37 
+2 Chitwan Bharatpur Mahanagarpalika 13 7.94 BZ 
+3 Chitwan Bharatpur Mahanagarpalika 9 0.94 BZ 
+4 Chitwan Bharatpur Mahanagarpalika 23 12.84 BZ 
+5 Chitwan Bharatpur Mahanagarpalika 24 5.22 BZ 
+6 Chitwan Bharatpur Mahanagarpalika 27 17.71 BZ 
+7 Chitwan Bharatpur Mahanagarpalika 17 3.54 BZ 
+8 Chitwan Bharatpur Mahanagarpalika 28 12.70 BZ 
+9 Chitwan Bharatpur Mahanagarpalika 22 8.52 BZ 
+10 Chitwan Bharatpur Mahanagarpalika 14 0.96 BZ 
+11 Chitwan Bharatpur Mahanagarpalika 26 9.98 BZ 
+12 Chitwan Bharatpur Mahanagarpalika 6 2.61 BZ 
+13 Chitwan Bharatpur Mahanagarpalika 18 1.46 BZ 
+14 Chitwan Bharatpur Mahanagarpalika 25 6.21 BZ 
+15 Chitwan Bharatpur Mahanagarpalika 8 60.58 BZ 
+16 Nawalparasi_E Binayee 
+Tribeni 
+Gaunpalika 1 18.42 BZ 
+17 Nawalparasi_E Binayee 
+Tribeni 
+Gaunpalika 2 2.64 BZ 
+18 Nawalparasi_E Binayee 
+Tribeni 
+Gaunpalika 7 1.18 BZ 
+19 Nawalparasi_E Binayee 
+Tribeni 
+Gaunpalika 6 9.38 BZ 
+20 Nawalparasi_E Devchuli Nagarpalika 1 2.63 BZ 
+21 Nawalparasi_E Devchuli Nagarpalika 4 0.13 BZ 
+22 Nawalparasi_E Devchuli Nagarpalika 2 0.48 BZ 
+23 Nawalparasi_E Devchuli Nagarpalika 14 1.02 BZ 
+24 Nawalparasi_E Devchuli Nagarpalika 17 6.97 BZ 
+25 Nawalparasi_E Devchuli Nagarpalika 16 0.48 BZ 
+26 Nawalparasi_E Devchuli Nagarpalika 13 1.36 BZ 
+27 Nawalparasi_E Devchuli Nagarpalika 15 1.44 BZ 
+28 Nawalparasi_E Gaidakot Nagarpalika 16 1.88 BZ 
+29 Nawalparasi_E Gaidakot Nagarpalika 17 2.17 BZ 
+30 Nawalparasi_E Gaidakot Nagarpalika 13 1.89 BZ 
+31 Nawalparasi_E Gaidakot Nagarpalika 12 0.79 BZ 
+32 Nawalparasi_E Gaidakot Nagarpalika 11 2.05 BZ 
+33 Nawalparasi_E Gaidakot Nagarpalika 10 2.53 BZ 
+34 Nawalparasi_E Kawasoti Nagarpalika 14 4.60 BZ 
+35 Nawalparasi_E Kawasoti Nagarpalika 7 4.56 BZ 
+36 Nawalparasi_E Kawasoti Nagarpalika 8 4.30 BZ 
+37 Nawalparasi_E Kawasoti Nagarpalika 17 7.89 BZ 
+38 Nawalparasi_E Kawasoti Nagarpalika 13 5.88 BZ 
+39 Nawalparasi_E Kawasoti Nagarpalika 11 3.03 BZ 
+40 Nawalparasi_E Kawasoti Nagarpalika 15 8.00 BZ 
+41 Nawalparasi_E Kawasoti Nagarpalika 10 3.34 BZ 
+42 Nawalparasi_E Kawasoti Nagarpalika 9 0.00 BZ 
+
+PDF PAGE 17
+16 
+ 
+43 Nawalparasi_E Kawasoti Nagarpalika 9 0.32 BZ 
+44 Nawalparasi_E Kawasoti Nagarpalika 12 6.18 BZ 
+45 Chitwan Khairahani Nagarpalika 10 9.76 BZ 
+46 Chitwan Khairahani Nagarpalika 13 11.08 BZ 
+47 Chitwan Khairahani Nagarpalika 12 10.16 BZ 
+48 Chitwan Khairahani Nagarpalika 11 6.36 BZ 
+49 Chitwan Khairahani Nagarpalika 7 0.25 BZ 
+50 Nawalparasi_E Madhyabindu Nagarpalika 1 1.94 BZ 
+51 Nawalparasi_E Madhyabindu Nagarpalika 2 10.51 BZ 
+52 Nawalparasi_E Madhyabindu Nagarpalika 3 3.72 BZ 
+53 Nawalparasi_E Madhyabindu Nagarpalika 4 2.76 BZ 
+54 Nawalparasi_E Madhyabindu Nagarpalika 5 4.68 BZ 
+55 Nawalparasi_E Madhyabindu Nagarpalika 15 7.98 BZ 
+56 Nawalparasi_E Madhyabindu Nagarpalika 12 13.61 BZ 
+57 Chitwan Madi Nagarpalika 9 69.35 BZ 
+58 Chitwan Madi Nagarpalika 4 18.73 BZ 
+59 Chitwan Madi Nagarpalika 5 13.80 BZ 
+60 Chitwan Madi Nagarpalika 1 13.43 BZ 
+61 Chitwan Madi Nagarpalika 2 13.09 BZ 
+62 Chitwan Madi Nagarpalika 6 28.13 BZ 
+63 Chitwan Madi Nagarpalika 7 19.66 BZ 
+64 Chitwan Madi Nagarpalika 8 31.92 BZ 
+65 Chitwan Madi Nagarpalika 3 9.80 BZ 
+66 Makwanpur Manahari Gaunpalika 6 13.91 BZ 
+67 Chitwan Rapti Nagarpalika 1 7.26 BZ 
+68 Chitwan Rapti Nagarpalika 2 0.78 BZ 
+69 Chitwan Rapti Nagarpalika 6 7.84 BZ 
+70 Chitwan Rapti Nagarpalika 3 3.02 BZ 
+71 Chitwan Ratnanagar Nagarpalika 9 5.57 BZ 
+72 Chitwan Ratnanagar Nagarpalika 1 1.29 BZ 
+73 Chitwan Ratnanagar Nagarpalika 7 5.29 BZ 
+74 Chitwan Ratnanagar Nagarpalika 6 8.82 BZ 
+75 Chitwan Ratnanagar Nagarpalika 5 4.60 BZ 
+76 Chitwan Ratnanagar Nagarpalika 8 3.86 BZ 
+77 Chitwan Ratnanagar Nagarpalika 4 0.81 BZ 
+78 Nawalparasi_W Susta Gaunpalika 1 3.73 BZ 
+79 Parsa Thori Gaunpalika 3 24.54 BZ 
+80 Parsa Thori Gaunpalika 1 33.41 BZ 
+81 Parsa Thori Gaunpalika 2 39.33 BZ 
+1 Chitwan Chitwan National Park 0 711.98 Park 
+952.63 2 Nawalparasi_E Chitwan National Park 0 74.38 Park 
+3 Parsa Chitwan National Park 0 115.14 Park 
+4 Makwanpur Chitwan NP National Park 0 51.13 Park 
+All Total 1682.00     
+ 
+
+PDF PAGE 18
+17 
+ 
+ 
+ 
+ 
+ 
+ 
+Dhorpatan Hunting Reserve (DHR) 
+S
+N District Palika Type Ward_N Area_Sqkm Remarks 
+1 Rukum Dhorpatan HR Hunting Reserve 0 564.22 HR 
+2 Myagdi Dhorpatan HR Hunting Reserve 0 192.81 HR 
+3 Baglung Dhorpatan HR Hunting Reserve 0 338.04 HR 
+4 Rukum_E Putha Uttarganga Gaunpalika 5 68.23 HR 
+5 Rukum_E Putha Uttarganga Gaunpalika 11 52.73 HR 
+6 Rukum_E Putha Uttarganga Gaunpalika 10 68.45 HR 
+7 Rukum_E Putha Uttarganga Gaunpalika 1 7.70 HR 
+8 Rukum_E Putha Uttarganga Gaunpalika 2 18.77 HR 
+9 Baglung Taman Khola Gaunpalika 2 14.04 HR 
+Total Area 1325.00   
+ 
+
+
+PDF PAGE 19
+18 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 20
+19 
+ 
+ 
+Gaurishankar Conservation Area (GCA) 
+SN District Palika Type Ward_N Area_Sqkm Remarks 
+1 Sindhupalchok Barhabise Nagarpalika 1 11.86 CA 
+2 Sindhupalchok Barhabise Nagarpalika 2 25.80 CA 
+3 Sindhupalchok Bhotekoshi Gaunpalika 1 49.98 CA 
+4 Sindhupalchok Bhotekoshi Gaunpalika 5 48.56 CA 
+5 Sindhupalchok Bhotekoshi Gaunpalika 4 84.38 CA 
+6 Sindhupalchok Bhotekoshi Gaunpalika 2 71.14 CA 
+7 Sindhupalchok Bhotekoshi Gaunpalika 3 20.55 CA 
+8 Dolakha Bigu Gaunpalika 3 11.93 CA 
+9 Dolakha Bigu Gaunpalika 6 66.12 CA 
+10 Dolakha Bigu Gaunpalika 7 36.80 CA 
+11 Dolakha Bigu Gaunpalika 5 38.41 CA 
+12 Dolakha Bigu Gaunpalika 4 26.61 CA 
+13 Dolakha Bigu Gaunpalika 1 401.85 CA 
+14 Dolakha Bigu Gaunpalika 2 14.96 CA 
+15 Dolakha Gaurishankar Gaunpalika 6 21.56 CA 
+16 Dolakha Gaurishankar Gaunpalika 9 320.84 CA 
+17 Dolakha Gaurishankar Gaunpalika 8 103.37 CA 
+18 Dolakha Gaurishankar Gaunpalika 7 112.85 CA 
+19 Dolakha Gaurishankar Gaunpalika 5 46.54 CA 
+20 Ramechhap Gokulganga Gaunpalika 1 76.81 CA 
+21 Dolakha Jiri Nagarpalika 1 105.66 CA 
+22 Sindhupalchok Jugal Gaunpalika 3 98.11 CA 
+24 Dolakha Kalinchok Gaunpalika 1 37.76 CA 
+25 Sindhupalchok Tripurasundari Gaunpalika 1 16.81 CA 
+26 Ramechhap Umakunda Gaunpalika 1 329.73 CA 
+Total 2179.00   
+ 
+ 
+ 
+
+PDF PAGE 21
+20 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Kanchanjunga Conservation Area (KCA) 
+SN District Palika Type Ward_N Area_Sqkm Remarks 
+1 Taplejung Phaktanglung Gaunpalika 5 218.92 CA 
+2 Taplejung Sirijangha Gaunpalika 8 312.55 CA 
+3 Taplejung Phaktanglung Gaunpalika 6 805.04 CA 
+4 Taplejung Phaktanglung Gaunpalika 7 698.48 CA 
+Total 2035.00   
+ 
+
+
+PDF PAGE 22
+21 
+ 
+ 
+ 
+
+
+PDF PAGE 23
+22 
+ 
+Khaptad National Park (KNP) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Achham Chaurpati Gaunpalika 6 9.11 BZ 
+216.00 
+2 Bajura Chhededaha Gaunpalika 2 5.23 BZ 
+3 Bajura Chhededaha Gaunpalika 1 14.24 BZ 
+4 Bajhang Khaptadchhanna Gaunpalika 7 4.28 BZ 
+5 Bajhang Khaptadchhanna Gaunpalika 3 5.06 BZ 
+6 Bajhang Khaptadchhanna Gaunpalika 1 3.95 BZ 
+7 Bajhang Khaptadchhanna Gaunpalika 2 1.82 BZ 
+8 Bajhang Khaptadchhanna Gaunpalika 2 0.09 BZ 
+9 Bajhang Khaptadchhanna Gaunpalika 4 7.17 BZ 
+10 Bajhang Khaptadchhanna Gaunpalika 4 9.12 BZ 
+11 Bajhang Khaptadchhanna Gaunpalika 6 3.82 BZ 
+12 Doti Purbichauki Gaunpalika 3 15.38 BZ 
+13 Doti Purbichauki Gaunpalika 2 7.02 BZ 
+14 Doti Purbichauki Gaunpalika 5 15.14 BZ 
+15 Achham Sanphebagar Nagarpalika 9 17.82 BZ 
+16 Achham Sanphebagar Nagarpalika 11 17.67 BZ 
+17 Achham Sanphebagar Nagarpalika 14 9.38 BZ 
+18 Achham Sanphebagar Nagarpalika 12 11.98 BZ 
+19 Doti Sayal Gaunpalika 4 12.50 BZ 
+20 Doti Sayal Gaunpalika 3 21.21 BZ 
+21 Bajhang Thalara Gaunpalika 8 7.82 BZ 
+22 Bajhang Thalara Gaunpalika 7 4.86 BZ 
+23 Bajhang Thalara Gaunpalika 5 5.48 BZ 
+24 Bajhang Thalara Gaunpalika 3 5.83 BZ 
+1 Doti Khaptad NP National Park 0 101.01 Park 
+225.00 2 Bajura Khaptad NP National Park 0 8.05 Park 
+3 Bajhang Khaptad NP National Park 0 74.63 Park 
+4 Achham Khaptad NP National Park 0 41.31 Park 
+All Total 441.00     
+ 
+
+PDF PAGE 24
+23 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Krishnasar Conservation Area (KrCA) 
+SN District Palika Type Ward_N Area_Sqkm Remarks 
+1 Bardia Gulariya Nagarpalika 1 0.31 CA 
+2 Bardia Gulariya Nagarpalika 2 6.43 CA 
+3 Bardia Gulariya Nagarpalika 3 4.28 CA 
+4 Bardia Gulariya Nagarpalika 4 5.93 CA 
+Total 16.95   
+ 
+
+
+PDF PAGE 25
+24 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 26
+25 
+ 
+Koshi Tappu Wildlife Reserve (KTWR) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Sunsari Barah Nagarpalika 11 10.49 BZ 
+173.00 
+2 Sunsari Barah Nagarpalika 8 0.74 BZ 
+3 Sunsari Barah Nagarpalika 10 7.35 BZ 
+4 Sunsari Barah Nagarpalika 9 26.66 BZ 
+5 Udayapur Belaka Nagarpalika 1 2.84 BZ 
+6 Udayapur Belaka Nagarpalika 2 8.71 BZ 
+7 Saptari 
+Hanumannagar 
+Kankalani Nagarpalika 1 20.14 BZ 
+8 Saptari Kanchanrup Nagarpalika 3 2.95 BZ 
+9 Saptari Kanchanrup Nagarpalika 1 24.32 BZ 
+10 Saptari Kanchanrup Nagarpalika 7 1.11 BZ 
+11 Saptari Kanchanrup Nagarpalika 6 3.00 BZ 
+12 Saptari Kanchanrup Nagarpalika 4 5.05 BZ 
+13 Saptari Kanchanrup Nagarpalika 8 0.62 BZ 
+14 Saptari Kanchanrup Nagarpalika 5 6.01 BZ 
+15 Saptari Kanchanrup Nagarpalika 2 2.02 BZ 
+16 Sunsari Koshi Gaunpalika 1 2.06 BZ 
+17 Sunsari Koshi Gaunpalika 2 8.24 BZ 
+18 Sunsari Koshi Gaunpalika 7 8.44 BZ 
+19 Sunsari Koshi Gaunpalika 8 5.91 BZ 
+20 Sunsari Koshi Gaunpalika 4 5.58 BZ 
+21 Sunsari Koshi Gaunpalika 3 6.41 BZ 
+22 Sunsari Koshi Gaunpalika 6 3.67 BZ 
+23 Saptari Saptakoshi Gaunpalika 6 2.45 BZ 
+24 Saptari Saptakoshi Gaunpalika 7 1.53 BZ 
+25 Saptari Saptakoshi Gaunpalika 8 1.53 BZ 
+26 Saptari Saptakoshi Gaunpalika 9 1.63 BZ 
+27 Saptari Saptakoshi Gaunpalika 11 1.57 BZ 
+28 Saptari Saptakoshi Gaunpalika 10 1.01 BZ 
+29 Saptari Saptakoshi Gaunpalika 10 0.95 BZ 
+1 Sunsari Koshi Tappu Wildlife Reserve 0 81.96 Core 
+175.00 2 Udayapur Koshi Tappu Wildlife Reserve 99 6.59 Core 
+3 Saptari Koshi Tappu Wildlife Reserve 0 86.45 Core 
+All Total 175.00     
+ 
+
+PDF PAGE 27
+26 
+ 
+ 
+
+
+PDF PAGE 28
+27 
+ 
+Lamtang National Park (LNP) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Nuwakot Dupcheshwar Gaunpalika 2 5.12 BZ 
+420.00 
+2 Nuwakot Dupcheshwar Gaunpalika 1 28.57 BZ 
+3 Nuwakot Dupcheshwar Gaunpalika 6 1.26 BZ 
+4 Nuwakot Dupcheshwar Gaunpalika 7 13.14 BZ 
+5 Sindhupalchok Helambu Gaunpalika 1 57.41 BZ 
+6 Sindhupalchok Helambu Gaunpalika 6 7.74 BZ 
+7 Sindhupalchok Helambu Gaunpalika 2 1.62 BZ 
+8 Sindhupalchok Jugal Gaunpalika 2 55.11 BZ 
+9 Sindhupalchok Jugal Gaunpalika 3 25.76 BZ 
+10 Rasuwa Kalika Gaunpalika 2 5.77 BZ 
+11 Rasuwa Kalika Gaunpalika 1 19.67 BZ 
+12 Rasuwa Kalika Gaunpalika 4 1.25 BZ 
+13 Rasuwa Kalika Gaunpalika 3 2.42 BZ 
+14 Rasuwa Kalika Gaunpalika 5 2.86 BZ 
+15 Rasuwa Kispang Gaunpalika 5 0.42 BZ 
+16 Rasuwa Naukunda Gaunpalika 3 17.21 BZ 
+17 Rasuwa Naukunda Gaunpalika 5 2.50 BZ 
+18 Rasuwa Naukunda Gaunpalika 6 13.52 BZ 
+19 Rasuwa Naukunda Gaunpalika 4 8.52 BZ 
+20 Rasuwa Naukunda Gaunpalika 1 24.62 BZ 
+21 Sindhupalchok 
+Panchpokhari 
+Thangpal Gaunpalika 2 27.92 BZ 
+22 Sindhupalchok 
+Panchpokhari 
+Thangpal Gaunpalika 3 16.89 BZ 
+23 Sindhupalchok 
+Panchpokhari 
+Thangpal Gaunpalika 7 3.53 BZ 
+24 Sindhupalchok 
+Panchpokhari 
+Thangpal Gaunpalika 5 20.07 BZ 
+25 Sindhupalchok 
+Panchpokhari 
+Thangpal Gaunpalika 4 14.26 BZ 
+26 Nuwakot Tadi Gaunpalika 2 5.48 BZ 
+27 Nuwakot Tadi Gaunpalika 1 26.46 BZ 
+28 Rasuwa Uttargaya Gaunpalika 4 7.26 BZ 
+29 Rasuwa Uttargaya Gaunpalika 5 2.62 BZ 
+30 Rasuwa Uttargaya Gaunpalika 2 1.02 BZ 
+1 Rasuwa Gosaikunda Gaunpalika 6 68.75 Park 
+1710.00 
+2 Rasuwa Gosaikunda Gaunpalika 4 491.96 Park 
+3 Rasuwa Gosaikunda Gaunpalika 5 128.62 Park 
+4 Rasuwa Gosaikunda Gaunpalika 2 153.72 Park 
+5 Rasuwa Gosaikunda Gaunpalika 3 53.23 Park 
+
+PDF PAGE 29
+28 
+ 
+6 Sindhupalchok Helambu Gaunpalika 1 116.25 Park 
+7 Sindhupalchok Jugal Gaunpalika 2 120.54 Park 
+8 Sindhupalchok Jugal Gaunpalika 3 196.56 Park 
+9 Nuwakot Lamtang NP 
+National 
+Park 0 86.96 Park 
+10 Rasuwa Naukunda Gaunpalika 2 48.75 Park 
+11 Sindhupalchok 
+Panchpokhari 
+Thangpal Gaunpalika 2 89.47 Park 
+12 Sindhupalchok 
+Panchpokhari 
+Thangpal Gaunpalika 3 155.19 Park 
+All Total 2130.00   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 30
+29 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 31
+30 
+ 
+Makalu Barun National Park (MBNP) and its Buffer Zone 
+ 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Sankhuwasabha Bhotkhola Gaunpalika 4 33.25 BZ 
+830.00 
+2 Sankhuwasabha Bhotkhola Gaunpalika 3 82.30 BZ 
+3 Sankhuwasabha Bhotkhola Gaunpalika 2 59.14 BZ 
+4 Sankhuwasabha Bhotkhola Gaunpalika 1 14.08 BZ 
+5 Solukhumbu Mahakulung Gaunpalika 3 86.83 BZ 
+6 Solukhumbu Mahakulung Gaunpalika 2 44.56 BZ 
+7 Solukhumbu Mahakulung Gaunpalika 1 14.36 BZ 
+8 Sankhuwasabha Makalu Gaunpalika 6 22.33 BZ 
+9 Sankhuwasabha Makalu Gaunpalika 3 58.63 BZ 
+10 Sankhuwasabha Makalu Gaunpalika 2 67.34 BZ 
+11 Sankhuwasabha Makalu Gaunpalika 1 35.48 BZ 
+12 Sankhuwasabha Silichong Gaunpalika 5 39.49 BZ 
+13 Sankhuwasabha Silichong Gaunpalika 4 29.90 BZ 
+14 Sankhuwasabha Silichong Gaunpalika 3 72.90 BZ 
+15 Sankhuwasabha Silichong Gaunpalika 2 57.99 BZ 
+16 Sankhuwasabha Silichong Gaunpalika 1 111.43 BZ 
+1 Sankhuwasabha Bhotkhola Gaunpalika 99 84.03 Park 
+1500.00 
+2 Sankhuwasabha Bhotkhola Gaunpalika 99 4.32 Park 
+3 Sankhuwasabha Bhotkhola Gaunpalika 99 13.57 Park 
+4 Solukhumbu Mahakulung Gaunpalika 99 88.85 Park 
+5 Solukhumbu Mahakulung Gaunpalika 99 355.66 Park 
+6 Sankhuwasabha Makalu Gaunpalika 99 331.38 Park 
+7 Sankhuwasabha Makalu Gaunpalika 99 396.99 Park 
+8 Sankhuwasabha Silichong Gaunpalika 99 29.70 Park 
+9 Sankhuwasabha Silichong Gaunpalika 99 93.64 Park 
+10 Sankhuwasabha Silichong Gaunpalika 99 101.87 Park 
+All Total 2330.00     
+ 
+ 
+
+PDF PAGE 32
+31 
+ 
+ 
+ 
+Manaslu Conservation Area (MCA) 
+S
+N 
+Distric
+t Palika Type Ward_N Area_Sqkm Remarks 
+1 Gorkha Chum Nubri Gaunpalika 5 121.90 CA 
+2 Gorkha Chum Nubri Gaunpalika 7 320.17 CA 
+3 Gorkha Chum Nubri Gaunpalika 6 208.84 CA 
+4 Gorkha Chum Nubri Gaunpalika 2 201.88 CA 
+5 Gorkha Chum Nubri Gaunpalika 4 205.34 CA 
+6 Gorkha Chum Nubri Gaunpalika 1 345.10 CA 
+7 Gorkha Chum Nubri Gaunpalika 3 259.77 CA 
+Total 1663.00   
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 33
+32 
+ 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 34
+33 
+ 
+Parsa National Park (PNP) and its Buffer Zone 
+ 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Makwanpur Hetauda Nagarpalika 14 16.77 BZ 
+285.00 
+2 Makwanpur Hetauda Nagarpalika 13 22.09 BZ 
+3 Makwanpur Hetauda Nagarpalika 12 16.59 BZ 
+4 Bara Jirabhawani Gaunpalika 1 1.37 BZ 
+5 Bara Jirabhawani Gaunpalika 1 0.52 BZ 
+6 Bara Jitpur Simara Upamahanagarpalika 21 14.04 BZ 
+7 Bara Jitpur Simara Upamahanagarpalika 22 24.75 BZ 
+8 Bara Jitpur Simara Upamahanagarpalika 7 0.93 BZ 
+9 Bara Jitpur Simara Upamahanagarpalika 6 1.00 BZ 
+10 Bara Jitpur Simara Upamahanagarpalika 2 14.12 BZ 
+11 Bara Jitpur Simara Upamahanagarpalika 3 7.73 BZ 
+12 Makwanpur Manahari Gaunpalika 1 17.89 BZ 
+13 Makwanpur Manahari Gaunpalika 3 17.78 BZ 
+14 Makwanpur Manahari Gaunpalika 8 1.09 BZ 
+15 Makwanpur Manahari Gaunpalika 2 17.93 BZ 
+16 Makwanpur Manahari Gaunpalika 4 29.04 BZ 
+17 Makwanpur Manahari Gaunpalika 5 26.98 BZ 
+18 Makwanpur Manahari Gaunpalika 9 23.77 BZ 
+19 Parsa Thori Gaunpalika 4 15.36 BZ 
+20 Parsa Thori Gaunpalika 5 15.25 BZ 
+1 Parsa National Park National Park 0 627.39 Park 627.39 
+All Total 912.39     
+ 
+ 
+ 
+
+PDF PAGE 35
+34 
+ 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 36
+35 
+ 
+Rara National Park (RNP) and its Buffer Zone 
+ 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Mugu Chhayanath Rara Nagarpalika 4 4.52 BZ 
+198.00 
+2 Mugu Chhayanath Rara Nagarpalika 5 3.38 BZ 
+3 Mugu Chhayanath Rara Nagarpalika 6 2.03 BZ 
+4 Mugu Chhayanath Rara Nagarpalika 1 1.72 BZ 
+5 Mugu Chhayanath Rara Nagarpalika 2 0.46 BZ 
+6 Mugu Chhayanath Rara Nagarpalika 3 18.85 BZ 
+7 Mugu Chhayanath Rara Nagarpalika 7 11.27 BZ 
+8 Mugu Chhayanath Rara Nagarpalika 9 10.98 BZ 
+9 Mugu Chhayanath Rara Nagarpalika 9 0.09 BZ 
+10 Mugu Chhayanath Rara Nagarpalika 8 3.78 BZ 
+11 Jumla Kanakasundari Gaunpalika 3 13.92 BZ 
+12 Jumla Kanakasundari Gaunpalika 1 12.19 BZ 
+13 Jumla Kanakasundari Gaunpalika 2 24.71 BZ 
+14 Mugu Khatyad Gaunpalika 1 36.86 BZ 
+15 Mugu Soru Gaunpalika 8 53.25 BZ 
+16 Mugu Chhayanath Rara Nagarpalika 8 17.46 Park 
+106.00 
+17 Mugu Chhayanath Rara Nagarpalika 9 51.76 Park 
+18 Mugu Chhayanath Rara Nagarpalika 7 4.36 Park 
+19 Jumla Kanakasundari Gaunpalika 2 26.89 Park 
+20 Mugu Khatyad Gaunpalika 1 4.70 Park 
+21 Mugu Soru Gaunpalika 8 0.82 Park 
+All Total 304.00   
+ 
+ 
+
+PDF PAGE 37
+36 
+ 
+ 
+
+
+PDF PAGE 38
+37 
+ 
+Shuklaphanta National Park (ShNP) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Kanchanpur Bedkot Nagarpalika 3 3.09 BZ 
+243.50 
+2 Kanchanpur Bedkot Nagarpalika 10 9.01 BZ 
+3 Kanchanpur Bedkot Nagarpalika 9 4.86 BZ 
+4 Kanchanpur Bedkot Nagarpalika 1 10.93 BZ 
+5 Kanchanpur Belauri Nagarpalika 9 6.80 BZ 
+6 Kanchanpur Beldandi Gaunpalika 4 2.08 BZ 
+7 Kanchanpur Beldandi Gaunpalika 1 4.45 BZ 
+8 Kanchanpur Beldandi Gaunpalika 2 7.53 BZ 
+9 Kanchanpur Beldandi Gaunpalika 5 10.22 BZ 
+10 Kanchanpur Bhimdatta Nagarpalika 17 2.43 BZ 
+11 Kanchanpur Bhimdatta Nagarpalika 13 5.45 BZ 
+12 Kanchanpur Bhimdatta Nagarpalika 14 3.07 BZ 
+13 Kanchanpur Bhimdatta Nagarpalika 15 3.52 BZ 
+14 Kanchanpur Bhimdatta Nagarpalika 16 3.29 BZ 
+15 Kanchanpur Bhimdatta Nagarpalika 18 6.58 BZ 
+16 Kanchanpur Bhimdatta Nagarpalika 19 6.12 BZ 
+17 Kanchanpur Laljhadi Gaunpalika 3 4.45 BZ 
+18 Kanchanpur Laljhadi Gaunpalika 4 18.36 BZ 
+19 Kanchanpur Laljhadi Gaunpalika 6 6.53 BZ 
+20 Kanchanpur Mahakali Nagarpalika 3 6.24 BZ 
+21 Kanchanpur Mahakali Nagarpalika 2 3.48 BZ 
+22 Kanchanpur Mahakali Nagarpalika 4 3.16 BZ 
+23 Kanchanpur Mahakali Nagarpalika 1 11.56 BZ 
+24 Kanchanpur Mahakali Nagarpalika 7 6.48 BZ 
+25 Kanchanpur Mahakali Nagarpalika 6 3.18 BZ 
+26 Kanchanpur Mahakali Nagarpalika 8 3.60 BZ 
+27 Kanchanpur Mahakali Nagarpalika 9 3.45 BZ 
+28 Kanchanpur Mahakali Nagarpalika 5 2.94 BZ 
+29 Kanchanpur Mahakali Nagarpalika 10 4.39 BZ 
+30 Kanchanpur Shuklaphanta Nagarpalika 12 12.76 BZ 
+31 Kanchanpur Shuklaphanta Nagarpalika 10 4.71 BZ 
+32 Kanchanpur Shuklaphanta Nagarpalika 6 2.34 BZ 
+33 Kanchanpur Shuklaphanta Nagarpalika 1 9.66 BZ 
+34 Kanchanpur Shuklaphanta Nagarpalika 2 6.47 BZ 
+35 Kanchanpur Shuklaphanta Nagarpalika 4 4.15 BZ 
+36 Kanchanpur Shuklaphanta Nagarpalika 7 28.01 BZ 
+37 Kanchanpur Shuklaphanta Nagarpalika 3 3.18 BZ 
+38 Kanchanpur Shuklaphanta Nagarpalika 5 4.96 BZ 
+39 Kanchanpur Shuklaphanta NP National Park 0 305.00  Park 305.00 
+
+PDF PAGE 39
+38 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 40
+39 
+ 
+Shivapuri Nagarjun National Park (SNNP) and its Buffer Zone 
+ 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Kathmandu Budhanilkantha  Nagarpalika 2 1.40 BZ 
+118.61 
+2 Kathmandu Budhanilkantha  Nagarpalika 4 1.14 BZ 
+3 Kathmandu Budhanilkantha  Nagarpalika 5 1.13 BZ 
+4 Kathmandu Budhanilkantha  Nagarpalika 1 1.24 BZ 
+5 Kathmandu Budhanilkantha  Nagarpalika 3 0.15 BZ 
+6 Dhading Dhunibesi  Nagarpalika 1 0.19 BZ 
+7 Dhading Dhunibesi  Nagarpalika 2 1.72 BZ 
+8 Dhading Dhunibesi  Nagarpalika 1 3.66 BZ 
+9 Kathmandu Gokarneswor  Nagarpalika 3 3.83 BZ 
+10 Kathmandu Gokarneswor  Nagarpalika 1 1.58 BZ 
+11 Kathmandu Gokarneswor  Nagarpalika 2 2.60 BZ 
+12 Kathmandu Kageswori 
+Manohara  Nagarpalika 1 6.27 BZ 
+13 Nuwakot Kakani  Gaunpalika 5 8.13 BZ 
+14 Nuwakot Kakani  Gaunpalika 2 1.20 BZ 
+15 Nuwakot Kakani  Gaunpalika 1 4.30 BZ 
+16 Sindhupalchok Melamchi  Nagarpalika 3 4.16 BZ 
+17 Sindhupalchok Melamchi  Nagarpalika 1 1.22 BZ 
+18 Sindhupalchok Melamchi  Nagarpalika 2 2.44 BZ 
+19 Kathmandu Nagarjun  Nagarpalika 2 0.44 BZ 
+20 Kathmandu Nagarjun  Nagarpalika 6 0.89 BZ 
+21 Kathmandu Nagarjun  Nagarpalika 8 1.28 BZ 
+22 Kathmandu Nagarjun  Nagarpalika 3 1.19 BZ 
+23 Kathmandu Nagarjun  Nagarpalika 1 0.35 BZ 
+24 Kathmandu Shankarapur  Nagarpalika 8 0.92 BZ 
+25 Kathmandu Shankarapur  Nagarpalika 3 3.90 BZ 
+26 Kathmandu Shankarapur  Nagarpalika 4 1.17 BZ 
+
+PDF PAGE 41
+40 
+ 
+27 Nuwakot Shivapuri  Gaunpalika 1 9.80 BZ 
+28 Nuwakot Shivapuri  Gaunpalika 2 2.93 BZ 
+29 Nuwakot Shivapuri  Gaunpalika 5 5.45 BZ 
+30 Nuwakot Shivapuri  Gaunpalika 7 5.70 BZ 
+31 Nuwakot Shivapuri  Gaunpalika 4 7.00 BZ 
+32 Nuwakot Shivapuri  Gaunpalika 6 7.17 BZ 
+33 Nuwakot Shivapuri  Gaunpalika 8 5.23 BZ 
+34 Kathmandu Tarkeswor  Gaunpalika 5 2.13 BZ 
+35 Kathmandu Tarkeswor  Nagarpalika 3 5.32 BZ 
+36 Kathmandu Tarkeswor  Nagarpalika 2 2.72 BZ 
+37 Kathmandu Tarkeswor  Nagarpalika 1 2.10 BZ 
+38 Kathmandu Tarkeswor  Nagarpalika 4 0.39 BZ 
+39 Kathmandu Tokha  Nagarpalika 1 3.85 BZ 
+40 Kathmandu Tokha  Nagarpalika 2 2.32 BZ 
+41 Dhading National Park NP 0 10.87 Park 
+159.00 42 Kathmandu National Park NP 0 103.54 Park 
+43 Nuwakot National Park NP 0 34.72 Park 
+44 Sindhupalchok National Park NP 0 9.87 Park 
+All Total 277.61     
+ 
+ 
+
+PDF PAGE 42
+41 
+ 
+ 
+ 
+ 
+ 
+Sagarmatha National Park (SNP) and its Buffer Zone 
+ 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Solukhumbhu Khumbupasanglahmu Gaunpalika 2 44.18 BZ 275.00 
+2 Solukhumbhu Khumbupasanglahmu Gaunpalika 3 230.82 BZ 
+3 Solukhumbhu Khumbupasanglahmu Gaunpalika 4 711.16 Park 1148.00 
+4 Solukhumbhu Khumbupasanglahmu Gaunpalika 5 436.84 Park 
+All Total 1423.00     
+ 
+
+
+PDF PAGE 43
+42 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 44
+43 
+ 
+Shey Phoksundo National Park (SPNP) and its Buffer Zone 
+SN District Palika Type Ward_N Area_Sqkm Remarks Total 
+1 Dolpa Dolpo Buddha Gaunpalika 3 106.37 BZ 
+1416.29 
+2 Dolpa Dolpo Buddha Gaunpalika 1 204.15 BZ 
+3 Dolpa Dolpo Buddha Gaunpalika 2 48.03 BZ 
+4 Dolpa Jagadulla Gaunpalika 4 47.00 BZ 
+5 Dolpa Jagadulla Gaunpalika 6 19.68 BZ 
+6 Dolpa Jagadulla Gaunpalika 5 12.11 BZ 
+7 Dolpa Jagadulla Gaunpalika 2 2.42 BZ 
+8 Dolpa Jagadulla Gaunpalika 3 1.16 BZ 
+9 Dolpa Jagadulla Gaunpalika 1 0.93 BZ 
+10 Dolpa Jagadulla Gaunpalika 0 100.79 BZ 
+11 Mugu Mugum Karmarong Gaunpalika 4 46.88 BZ 
+12 Mugu Mugum Karmarong Gaunpalika 1 49.43 BZ 
+13 Mugu Mugum Karmarong Gaunpalika 3 37.45 BZ 
+14 Mugu Mugum Karmarong Gaunpalika 1 43.65 BZ 
+15 Dolpa Shey Phoksundo Gaunpalika 5 39.72 BZ 
+16 Dolpa Shey Phoksundo Gaunpalika 7 4.47 BZ 
+17 Dolpa Shey Phoksundo Gaunpalika 6 9.36 BZ 
+18 Dolpa Shey Phoksundo Gaunpalika 8 6.10 BZ 
+19 Dolpa Shey Phoksundo Gaunpalika 9 5.78 BZ 
+20 Dolpa Shey Phoksundo Gaunpalika 4 28.98 BZ 
+21 Dolpa Shey Phoksundo Gaunpalika 1 7.45 BZ 
+22 Dolpa Shey Phoksundo Gaunpalika 2 11.49 BZ 
+23 Dolpa Shey Phoksundo Gaunpalika 3 9.72 BZ 
+24 Dolpa Shey Phoksundo Gaunpalika 0 346.75 BZ 
+25 Dolpa Thuli Bheri Nagarpalika 10 12.62 BZ 
+26 Dolpa Thuli Bheri Nagarpalika 11 59.12 BZ 
+27 Dolpa Tripurasundari Nagarpalika 7 47.36 BZ 
+28 Dolpa Tripurasundari Nagarpalika 8 36.05 BZ 
+29 Dolpa Tripurasundari Nagarpalika 1 43.58 BZ 
+30 Dolpa Tripurasundari Nagarpalika 2 27.69 BZ 
+31 Dolpa Jagadulla Park 99 593.41 Park 
+3487.72 
+32 Mugu Mugum Karmarong Park 1 843.50 Park 
+33 Dolpa Shey Phoksundo Park 99 888.22 Park 
+34 Dolpa Shey Phoksundo Park 99 786.20 Park 
+35 Dolpa Shey Phoksundo Park 99 307.76 Park 
+36 Dolpa Thuli Bheri Park 99 36.92 Park 
+37 Dolpa Tripurasundari Park 1 5.97 Park 
+38 Dolpa Tripurasundari Park 2 25.74 Park 
+All Total 4904.00     
+
+PDF PAGE 45
+44 
+ 
+ 
+Area of PAs according to Nepal Gazette 
+SN 
+ Protected Areas 
+Area(km2)  
+Buffer Zone 
+ 
+Total NP/WR/HR/CA 
+1 Chitwan National Park (CNP) 952.63 729.37 1,682.00 
+2 Lamtang National Park (LNP) 1,710 420 2,130.00 
+3 Sagarmatha National Park (SNP) 1,148 275 1,423.00 
+4 Rara National Park (RNP) 106 198 304.00 
+5 Shey Phoksundo National Park (SPNP) 3,555 1349 4,904.00 
+6 Khaptad National Park (KNP) 225 216 441.00 
+7 Bardia National Park (BNP) 968 507 1,475.00 
+8 Makalu Barun National Park (MBNP) 1,500 830 2,330.00 
+9 Shivapuri Nagarjun National Park (SNNP) 159 118.61 277.61 
+10 Banke National Park (BaNP) 550 343 893.00 
+11 Shuklaphanta National Park (ShNP) 305 243.5 548.50 
+12 Parsa National Park (PNP) 627.39 285.3 912.69 
+13 Koshi Tappu Wildlife Reserve (KTWR) 175 173 348.00 
+14 Dhorpatan Hunting Reserve (DHR) 1,325 
+  
+  
+  
+  
+  
+  
+  
+1,325.00 
+15 Annapurna Conservation Area (ACA) 7,629 7,629.00 
+16 Kanchanjunga Conservation Area (KCA) 2,035 2,035.00 
+17 Manaslu Conservation Area (MCA) 1,663 1,663.00 
+18 Api Nampa Conservation Area (ANCA) 1,903 1,903.00 
+19 Gaurishankar Conservation Area (GCA) 2,179 2,179.00 
+20 Krishnasar Conservation Area (KrCA) 16.95 16.95 
+  Total  28731.97 5687.78 34419.8 
+ 
+
+PDF PAGE 46
+45 
+ 
+ 
+Distribution of Protected Areas of Nepal by Provinces and Districts 
+Province 1 
+Protected Areas Districts Core Area BZ Area 
+Kanchanjunga CA Taplejung 2,035.00 NA 
+Koshi Tappu WR Sunsari 84.50 83.54 
+Udayapur 7.01 11.35 
+Makalu Barun NP Sankhuwasabha 1053.78 684.14 
+Solukhumbu 446.22 145.86 
+Sagarmatha NP Solukhumbu 1,148.00 275.00 
+        NA= Not Applicable 
+Province 2  
+Protected Areas Districts Core Area BZ Area 
+Koshi Tappu WR Saptari 83.49 78.11 
+Parsa NP Parsa 436.69 32.31 
+Bara 117.80 60.84 
+Chitwan NP Parsa 115.31 96.15 
+ 
+Bagmati Province  
+Protected Areas Districts Core Area BZ Area 
+Chitwan NP Chitwan 712.13 456.53 
+Makwanpur 51.17 13.92 
+Parsa NP Makwanpur 72.90 192.15 
+Shivapuri Nagarjun NP 
+Dhading 10.87 5.51 
+Kathmandu 103.54 48.31 
+Nuwakot 34.72 56.89 
+Sindhupalchok 9.87 7.90 
+Lamtang NP 
+Nuwakot 73.19 89.96 
+Rasuwa 968.19 97.43 
+Sindhupalchok 668.62 232.61 
+Gaurishankar CA 
+Dolakha 1346.99 NA 
+Ramechhap 405.59 NA 
+Sindhupalchok 426.42 NA 
+ 
+
+PDF PAGE 47
+46 
+ 
+Gandaki Province  
+Protected Areas Districts Core Area BZ Area 
+Chitwan NP Nawalparasi 74.02 151.24 
+Manaslu CA Gorkha 1663.00 NA 
+Annapurna CA 
+Mustang 3504.15 NA 
+Manang 2011.52 NA 
+Kaski 1361.28 NA 
+Myagdi 400.83 NA 
+Lamjung 351.22 NA 
+Dhorpatan HR Baglung 352.06 NA 
+Myagdi 192.80 NA 
+Province 5  
+Protected Areas Districts Core Area BZ Area 
+Bardia NP Bardia 968.00 329.38 
+Banke 0 3.14 
+Banke NP 
+Banke 547.06 139.69 
+Bardia 0 18.11 
+Dang 2.94 76.04 
+Krishnasar CA Bardia 16.95 NA 
+Dhorpatan HR Rukum_East 780.13 NA 
+Chitwan NP Nawalparasi_West 0 11.52 
+Karnali Province  
+Protected Areas Districts Core Area BZ Area 
+Rara NP Mugu 79.11 147.18 
+Jumla 26.89 50.82 
+Shey Phoksundo NP Dolpa 2723.07 1165.99 
+Mugu 831.93 183.01 
+Bardia NP Surkhet 0.00 174.48 
+Banke NP Salyan 0.00 109.16 
+ 
+Sudur Paschim Province 
+Protected Areas Districts Core Area BZ Area 
+Api Nampa CA Darchula 1903.00 NA 
+Khaptad NP 
+Achham 68.70 39.65 
+Bajhang 61.86 71.55 
+Bajura 20.26 7.73 
+Doti 74.18 97.07 
+Shukla Phanta NP Kanchanpur 305.00 243.50 
+ 

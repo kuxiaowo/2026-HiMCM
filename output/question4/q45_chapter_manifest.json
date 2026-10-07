@@ -18,8 +18,8 @@
         "tab:schedule": "4-3",
         "tab:adaptation": "4-4"
       },
-      "md_sha256": "f7c2b22ac74a42bda434ef5f5a1a5867f48b5b5eca1097e0f45817ea666f14f9",
-      "tex_sha256": "d3f8f3de4330f4907bfd442055a848791528863dc225d3d63a68f73b0cbaaa56"
+      "md_sha256": "ae02d02a7dee5cda7148b799ef03260494f3d1e4df652c5df41b9541a20f0627",
+      "tex_sha256": "0fa3ef6782b5c9057101ac6effeb7a2a4225b45b8a157b6022a4d44420e4602d"
     },
     {
       "chapter": 5,
@@ -29,33 +29,24 @@
       "figures": 0,
       "tables": 0,
       "labels": {},
-      "md_sha256": "35a391017bb22389f8b46d7cfedc25694a16612fd56e9b93742e9d3e3b12dfe3",
-      "tex_sha256": "715984d209b3d433f72f2ca8912c5291ce1c9f92797fdb0581969beffd8ec2bc"
+      "md_sha256": "63cf9a3de46a62719ced1a08dee29da2441de8f2bfc8a7ed03859940c784a560",
+      "tex_sha256": "6bd9050a7f5bc896a2de82a3b887038953e1ca92fbb96c9d41adc3a4325cbe03"
     }
   ],
   "source_sha256": {
-    "output\\question4\\q4_results.json": "66038ab6e9dd4605716049f59c013b2338434575026fe33665592d01221c2e32",
-    "output\\question4\\q4_independent_verification.json": "6364a8e7523f04f28d1a8cd88e10450ab75df22dd94bf74fd48c9b539945081d"
+    "output\\question4\\q4_results.json": "f035f23d927710a06d45fab44da1fb99d9c0ff071fe9de535ad4a9742b0232b6",
+    "output\\question4\\q4_independent_verification.json": "404879ed6fcb70c2b7120ea86d6a9b9ea1ddbb6d3e4f62393e90508f237f79bb"
   },
   "notes": [
     "compact approved hierarchy retained",
     "all figures inline TikZ in standalone sources",
     "no external ecological validation claimed"
   ],
-  "pdf_compilation_confirmed": false,
-  "pdf_reading_copies": [
-    {
-      "chapter": 4,
-      "path": "output\\pdf\\question4_sensitivity.pdf",
-      "pages": 4,
-      "visual_review": "passed_all_final_pages"
-    },
-    {
-      "chapter": 5,
-      "path": "output\\pdf\\question5_evaluation.pdf",
-      "pages": 1,
-      "visual_review": "passed_all_final_pages"
-    }
-  ],
-  "pdf_render_method": "Chromium + MathJax SVG reading copy from synchronized Markdown"
+  "pdf_compilation_confirmed": true,
+  "status": "passed_numerical_source_compilation_and_visual_checks",
+  "pdfs": {
+    "question4_sensitivity": "output/pdf/skill_checked_20261007/question4_sensitivity.pdf",
+    "question5_evaluation": "output/pdf/skill_checked_20261007/question5_evaluation.pdf"
+  },
+  "validation": "output/full_paper/revision_delivery_validation.json"
 }

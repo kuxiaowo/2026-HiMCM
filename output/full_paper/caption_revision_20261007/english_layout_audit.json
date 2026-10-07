@@ -1,0 +1,512 @@
+{
+  "passed": true,
+  "pdf_sha256": "0cbaa36931ac334130ad35004a91e9e721cb91ee00ae6ff04292320661233b0b",
+  "objects": [
+    {
+      "key": "fig:workflow",
+      "type": "figure",
+      "number": 1,
+      "page": 3,
+      "caption_tokens": 8,
+      "first_reference_page": 3,
+      "placement": "H",
+      "bbox": [
+        59.529778427965056,
+        423.6630412424643,
+        535.7502508689099,
+        565.3953247070312
+      ],
+      "height_bp": 141.73228346456693
+    },
+    {
+      "key": "tab:terms",
+      "type": "table",
+      "number": 1,
+      "page": 4,
+      "caption_tokens": 10,
+      "first_reference_page": 4,
+      "placement": "H",
+      "bbox": [
+        42.52000045776367,
+        279.3840026855469,
+        552.7559814453125,
+        408.93701171875
+      ],
+      "height_bp": 129.55300903320312
+    },
+    {
+      "key": "tab:priorities",
+      "type": "table",
+      "number": 2,
+      "page": 4,
+      "caption_tokens": 9,
+      "first_reference_page": 4,
+      "placement": "H",
+      "bbox": [
+        42.52000045776367,
+        626.926025390625,
+        552.7559814453125,
+        713.93798828125
+      ],
+      "height_bp": 87.011962890625
+    },
+    {
+      "key": "tab:parameters",
+      "type": "table",
+      "number": 3,
+      "page": 5,
+      "caption_tokens": 8,
+      "first_reference_page": 5,
+      "placement": "H",
+      "bbox": [
+        42.52000045776367,
+        652.4949951171875,
+        552.7559814453125,
+        797.2899780273438
+      ],
+      "height_bp": 144.79498291015625
+    },
+    {
+      "key": "fig:etosha",
+      "type": "figure",
+      "number": 2,
+      "page": 6,
+      "caption_tokens": 9,
+      "first_reference_page": 6,
+      "placement": "H",
+      "bbox": [
+        59.529778427965056,
+        526.353286863312,
+        535.7502508689099,
+        702.101318359375
+      ],
+      "height_bp": 175.74803149606305
+    },
+    {
+      "key": "fig:costs",
+      "type": "figure",
+      "number": 3,
+      "page": 7,
+      "caption_tokens": 12,
+      "first_reference_page": 7,
+      "placement": "H",
+      "bbox": [
+        59.529778427965056,
+        597.6091467189038,
+        535.7502508689099,
+        756.3493041992188
+      ],
+      "height_bp": 158.7401574803149
+    },
+    {
+      "key": "fig:deployment",
+      "type": "figure",
+      "number": 4,
+      "page": 9,
+      "caption_tokens": 15,
+      "first_reference_page": 8,
+      "placement": "H",
+      "bbox": [
+        59.529778427965056,
+        42.43531811331201,
+        535.7502508689099,
+        218.183349609375
+      ],
+      "height_bp": 175.748031496063
+    },
+    {
+      "key": "tab:regions",
+      "type": "table",
+      "number": 4,
+      "page": 9,
+      "caption_tokens": 13,
+      "first_reference_page": 9,
+      "placement": "H",
+      "bbox": [
+        120.52000427246094,
+        367.1579895019531,
+        474.7560119628906,
+        641.9660034179688
+      ],
+      "height_bp": 274.8080139160156
+    },
+    {
+      "key": "tab:comparison",
+      "type": "table",
+      "number": 5,
+      "page": 10,
+      "caption_tokens": 12,
+      "first_reference_page": 10,
+      "placement": "!htbp",
+      "bbox": [
+        130.9669952392578,
+        167.21800231933594,
+        464.3089904785156,
+        239.78399658203125
+      ],
+      "height_bp": 72.56599426269531
+    },
+    {
+      "key": "tab:forward",
+      "type": "table",
+      "number": 6,
+      "page": 10,
+      "caption_tokens": 10,
+      "first_reference_page": 10,
+      "placement": "H",
+      "bbox": [
+        124.23899841308594,
+        345.2409973144531,
+        471.0360107421875,
+        432.2539978027344
+      ],
+      "height_bp": 87.01300048828125
+    },
+    {
+      "key": "tab:season",
+      "type": "table",
+      "number": 7,
+      "page": 11,
+      "caption_tokens": 12,
+      "first_reference_page": 10,
+      "placement": "H",
+      "bbox": [
+        168.01199340820312,
+        58.137001037597656,
+        427.2640075683594,
+        145.1490020751953
+      ],
+      "height_bp": 87.01200103759766
+    },
+    {
+      "key": "tab:water",
+      "type": "table",
+      "number": 8,
+      "page": 11,
+      "caption_tokens": 12,
+      "first_reference_page": 11,
+      "placement": "H",
+      "bbox": [
+        146.0780029296875,
+        661.625,
+        449.1969909667969,
+        734.1920166015625
+      ],
+      "height_bp": 72.5670166015625
+    },
+    {
+      "key": "fig:monthly",
+      "type": "figure",
+      "number": 5,
+      "page": 13,
+      "caption_tokens": 10,
+      "first_reference_page": 12,
+      "placement": "H",
+      "bbox": [
+        59.529778427965056,
+        42.43515471210631,
+        535.7502508689099,
+        240.8603515625
+      ],
+      "height_bp": 198.4251968503937
+    },
+    {
+      "key": "tab:monthly",
+      "type": "table",
+      "number": 9,
+      "page": 13,
+      "caption_tokens": 11,
+      "first_reference_page": 13,
+      "placement": "H",
+      "bbox": [
+        110.7249984741211,
+        466.3970031738281,
+        484.54998779296875,
+        553.4100341796875
+      ],
+      "height_bp": 87.01303100585938
+    },
+    {
+      "key": "tab:standards",
+      "type": "table",
+      "number": 10,
+      "page": 14,
+      "caption_tokens": 10,
+      "first_reference_page": 13,
+      "placement": "H",
+      "bbox": [
+        116.68000030517578,
+        71.28800201416016,
+        478.59600830078125,
+        143.85400390625
+      ],
+      "height_bp": 72.56600189208984
+    },
+    {
+      "key": "fig:joint",
+      "type": "figure",
+      "number": 6,
+      "page": 14,
+      "caption_tokens": 11,
+      "first_reference_page": 14,
+      "placement": "H",
+      "bbox": [
+        59.529778427965056,
+        359.0351110743726,
+        535.7502508689099,
+        517.7752685546875
+      ],
+      "height_bp": 158.7401574803149
+    },
+    {
+      "key": "tab:protocol",
+      "type": "table",
+      "number": 11,
+      "page": 15,
+      "caption_tokens": 11,
+      "first_reference_page": 14,
+      "placement": "H",
+      "bbox": [
+        116.93399810791016,
+        69.2959976196289,
+        478.3420104980469,
+        170.75299072265625
+      ],
+      "height_bp": 101.45699310302734
+    },
+    {
+      "key": "tab:grid",
+      "type": "table",
+      "number": 12,
+      "page": 15,
+      "caption_tokens": 10,
+      "first_reference_page": 15,
+      "placement": "H",
+      "bbox": [
+        177.7030029296875,
+        300.90802001953125,
+        417.572998046875,
+        373.4739990234375
+      ],
+      "height_bp": 72.56597900390625
+    },
+    {
+      "key": "tab:weights",
+      "type": "table",
+      "number": 13,
+      "page": 16,
+      "caption_tokens": 11,
+      "first_reference_page": 15,
+      "placement": "H",
+      "bbox": [
+        100.79000091552734,
+        71.28800201416016,
+        494.4859924316406,
+        158.3000030517578
+      ],
+      "height_bp": 87.01200103759766
+    },
+    {
+      "key": "tab:limits",
+      "type": "table",
+      "number": 14,
+      "page": 16,
+      "caption_tokens": 9,
+      "first_reference_page": 16,
+      "placement": "H",
+      "bbox": [
+        42.52000045776367,
+        499.0350036621094,
+        552.7559814453125,
+        701.614013671875
+      ],
+      "height_bp": 202.57901000976562
+    },
+    {
+      "key": "fig:transfer",
+      "type": "figure",
+      "number": 7,
+      "page": 17,
+      "caption_tokens": 10,
+      "first_reference_page": 17,
+      "placement": "H",
+      "bbox": [
+        59.529778427965056,
+        270.3347838394285,
+        535.7502508689099,
+        417.7363586425781
+      ],
+      "height_bp": 147.40157480314963
+    },
+    {
+      "key": "tab:transferdata",
+      "type": "table",
+      "number": 15,
+      "page": 17,
+      "caption_tokens": 11,
+      "first_reference_page": 17,
+      "placement": "H",
+      "bbox": [
+        143.00299072265625,
+        538.0360107421875,
+        452.27301025390625,
+        625.0479736328125
+      ],
+      "height_bp": 87.011962890625
+    },
+    {
+      "key": "tab:transfercases",
+      "type": "table",
+      "number": 16,
+      "page": 18,
+      "caption_tokens": 11,
+      "first_reference_page": 18,
+      "placement": "H",
+      "bbox": [
+        142.52700805664062,
+        93.66799926757812,
+        452.7489929199219,
+        238.46400451660156
+      ],
+      "height_bp": 144.79600524902344
+    },
+    {
+      "key": "tab:wolf",
+      "type": "table",
+      "number": 17,
+      "page": 19,
+      "caption_tokens": 11,
+      "first_reference_page": 18,
+      "placement": "H",
+      "bbox": [
+        117.20199584960938,
+        132.47999572753906,
+        478.0740051269531,
+        205.0469970703125
+      ],
+      "height_bp": 72.56700134277344
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "float_count": 0,
+      "graphic_ratio": 0.0
+    },
+    {
+      "page": 2,
+      "float_count": 0,
+      "graphic_ratio": 0.0
+    },
+    {
+      "page": 3,
+      "float_count": 1,
+      "graphic_ratio": 0.1872658555310446
+    },
+    {
+      "page": 4,
+      "float_count": 2,
+      "graphic_ratio": 0.28613964125901586
+    },
+    {
+      "page": 5,
+      "float_count": 1,
+      "graphic_ratio": 0.19131249203398448
+    },
+    {
+      "page": 6,
+      "float_count": 1,
+      "graphic_ratio": 0.23220966085849537
+    },
+    {
+      "page": 7,
+      "float_count": 1,
+      "graphic_ratio": 0.2097377581947699
+    },
+    {
+      "page": 8,
+      "float_count": 0,
+      "graphic_ratio": 0.0
+    },
+    {
+      "page": 9,
+      "float_count": 2,
+      "graphic_ratio": 0.5953037744563716
+    },
+    {
+      "page": 10,
+      "float_count": 2,
+      "graphic_ratio": 0.21084608422538134
+    },
+    {
+      "page": 11,
+      "float_count": 2,
+      "graphic_ratio": 0.21084611446672916
+    },
+    {
+      "page": 12,
+      "float_count": 0,
+      "graphic_ratio": 0.0
+    },
+    {
+      "page": 13,
+      "float_count": 2,
+      "graphic_ratio": 0.3771394394709635
+    },
+    {
+      "page": 14,
+      "float_count": 2,
+      "graphic_ratio": 0.30561665109489655
+    },
+    {
+      "page": 15,
+      "float_count": 2,
+      "graphic_ratio": 0.22993040087304578
+    },
+    {
+      "page": 16,
+      "float_count": 2,
+      "graphic_ratio": 0.38262636508951964
+    },
+    {
+      "page": 17,
+      "float_count": 2,
+      "graphic_ratio": 0.309722320216889
+    },
+    {
+      "page": 18,
+      "float_count": 1,
+      "graphic_ratio": 0.1913138428141873
+    },
+    {
+      "page": 19,
+      "float_count": 1,
+      "graphic_ratio": 0.09588021343898168
+    },
+    {
+      "page": 20,
+      "float_count": 0,
+      "graphic_ratio": 0.0
+    },
+    {
+      "page": 21,
+      "float_count": 0,
+      "graphic_ratio": 0.0
+    },
+    {
+      "page": 22,
+      "float_count": 0,
+      "graphic_ratio": 0.0
+    }
+  ],
+  "issues": [],
+  "max_graphic_ratio": 0.5953037744563716,
+  "original_scanner": "original_layout_final.log",
+  "adapter_changes": [
+    "English Figure/Table identification",
+    "Grouping within actual source float instead of individual vector bands",
+    "Same caption tokenizer and same 2/3 threshold"
+  ],
+  "caption_policy": "one concise sentence, explanations in body (explicit user override)",
+  "no_silent_rule_relaxation": true
+}

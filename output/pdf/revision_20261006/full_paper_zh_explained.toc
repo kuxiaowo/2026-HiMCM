@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {1}引言}{3}{section.1}%
+\contentsline {section}{\numberline {2}基本假设与理由}{3}{section.2}%
+\contentsline {section}{\numberline {3}数据说明与符号定义}{4}{section.3}%
+\contentsline {section}{\numberline {4}保护优先事项与可测量标准}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}优先事项与证据}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}服务评分衡量什么}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}地面队伍与无人机的资源配置}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}规划单元与资源假设}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}动物责任、生境与进入条件}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}权重、路线与响应资格}{11}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}服务容量与配置模型}{14}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}求解核验与分区配置}{17}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}方案比较与响应驻点}{19}{subsection.5.6}%
+\contentsline {section}{\numberline {6}季节性服务与人员需求}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}目标、月份与额外任务}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}只能由地面完成的钻井运维}{22}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}月度共享约束}{24}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}正向服务模型与反向人力模型}{26}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}常规季节结果与可行性}{27}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}干旱工作与服务标准敏感性}{29}{subsection.6.6}%
+\contentsline {section}{\numberline {7}敏感性与情景分析}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}检查协议与网格尺度补充检验}{31}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}权重变化与共同评价}{31}{subsection.7.2}%
+\contentsline {section}{\numberline {8}模型优势、限制与实际使用}{32}{section.8}%
+\contentsline {subsection}{\numberline {8.1}模型能够支持什么}{32}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}实用的校准步骤}{32}{subsection.8.2}%
+\contentsline {section}{\numberline {9}向其他洲公园的迁移}{33}{section.9}%
+\contentsline {subsection}{\numberline {9.1}共享结构与当地数据}{33}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}条件试算与预期配置变化}{35}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}黄石本地历史生态责任情景}{36}{subsection.9.3}%
+\contentsline {section}{致IMMC的信件}{37}{table.caption.23}%
+\contentsline {section}{参考文献}{39}{table.caption.23}%
+\contentsline {section}{AI使用报告}{40}{table.caption.23}%

@@ -1,0 +1,31 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\path[use as bounding box] (0,0) rectangle (16.8,5.6);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (8.4000,5.2000) {ENP1\_0000: personnel time for one check};
+\draw[draw={rgb,1:red,0.87843;green,0.90196;blue,0.91765},line width=0.4pt] (3.2000,2.4500) -- (3.2000,4.7000);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (3.2000,2.2000) {0};
+\draw[draw={rgb,1:red,0.87843;green,0.90196;blue,0.91765},line width=0.4pt] (7.4909,2.4500) -- (7.4909,4.7000);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (7.4909,2.2000) {2};
+\draw[draw={rgb,1:red,0.87843;green,0.90196;blue,0.91765},line width=0.4pt] (11.7818,2.4500) -- (11.7818,4.7000);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (11.7818,2.2000) {4};
+\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (3.0000,4.1500) {Ground crew};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.2000,3.9300) rectangle (11.1214,4.3700);
+\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (11.1214,3.9300) rectangle (12.8145,4.3700);
+\path[fill={rgb,1:red,0.25490;green,0.59608;blue,0.54902},draw=none,line width=0.6pt] (12.8145,3.9300) rectangle (13.5296,4.3700);
+\path[fill={rgb,1:red,0.51373;green,0.56863;blue,0.61569},draw=none,line width=0.6pt] (13.5296,3.9300) rectangle (13.8872,4.3700);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (14.0672,4.1500) {4.981};
+\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (3.0000,3.1000) {Drone crew};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.2000,2.8800) rectangle (11.1214,3.3200);
+\path[fill={rgb,1:red,0.25490;green,0.59608;blue,0.54902},draw=none,line width=0.6pt] (11.1214,2.8800) rectangle (12.0058,3.3200);
+\path[fill={rgb,1:red,0.51373;green,0.56863;blue,0.61569},draw=none,line width=0.6pt] (12.0058,2.8800) rectangle (12.3634,3.3200);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (12.5434,3.1000) {4.271};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (0.4000,1.4500) rectangle (0.6200,1.6100);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (0.7400,1.5300) {Road travel};
+\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.5000,1.4500) rectangle (4.7200,1.6100);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (4.8400,1.5300) {Off-road walk};
+\path[fill={rgb,1:red,0.25490;green,0.59608;blue,0.54902},draw=none,line width=0.6pt] (8.6000,1.4500) rectangle (8.8200,1.6100);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (8.9400,1.5300) {Observe / fly};
+\path[fill={rgb,1:red,0.51373;green,0.56863;blue,0.61569},draw=none,line width=0.6pt] (12.7000,1.4500) rectangle (12.9200,1.6100);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (13.0400,1.5300) {Preparation};
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (8.4000,0.9500) {Two-person teams; drone flight adds 0.206 flight-hours per check.};
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{12}{14.16}\selectfont}] at (8.4000,0.3500) {Person-hours and flight-hours use separate budgets.};
+\end{tikzpicture}

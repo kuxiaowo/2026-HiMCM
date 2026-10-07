@@ -1,0 +1,60 @@
+{
+  "figures": [
+    {
+      "name": "fig1_framework_pipeline",
+      "width_cm": 16.8,
+      "height_cm": 4.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "primitive_count": 24
+    },
+    {
+      "name": "fig2_etosha_demand_response",
+      "width_cm": 16.8,
+      "height_cm": 6.2,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "primitive_count": 2433
+    },
+    {
+      "name": "fig3_route_costs",
+      "width_cm": 16.8,
+      "height_cm": 5.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "primitive_count": 28
+    },
+    {
+      "name": "fig4_monthly_workload",
+      "width_cm": 16.8,
+      "height_cm": 7.0,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "primitive_count": 104
+    },
+    {
+      "name": "fig5_resource_joint",
+      "width_cm": 16.8,
+      "height_cm": 5.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "primitive_count": 88
+    },
+    {
+      "name": "fig6_transfer_maps",
+      "width_cm": 16.8,
+      "height_cm": 6.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "primitive_count": 427
+    }
+  ],
+  "label_overlap_pairs": {
+    "fig1_framework_pipeline": [],
+    "fig2_etosha_demand_response": [],
+    "fig3_route_costs": [],
+    "fig4_monthly_workload": [],
+    "fig5_resource_joint": [],
+    "fig6_transfer_maps": []
+  }
+}

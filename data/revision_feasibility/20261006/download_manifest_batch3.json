@@ -1,0 +1,32 @@
+[
+  {
+    "requested_url": "https://www.traffic.org/site/assets/files/28130/iucn_traffic_cop20_full_analyses_ver_4.pdf",
+    "file": "data/revision_feasibility/20261006/iucn_traffic_cop20_analyses_v4.pdf",
+    "accessed_utc": "2026-10-06T13:33:43.645256+00:00",
+    "status": 200,
+    "final_url": "https://www.traffic.org/site/assets/files/28130/iucn_traffic_cop20_full_analyses_ver_4.pdf",
+    "content_type": "application/pdf",
+    "bytes": 9429008,
+    "sha256": "3d386d95064dc21fa9ae43fc3a9358d8cd53a9552aff528dceb7476e98216895"
+  },
+  {
+    "requested_url": "https://datadryad.org/dataset/doi:10.5061/dryad.4xgxd2583",
+    "file": "data/revision_feasibility/20261006/dryad_rwanda_patrol.html",
+    "accessed_utc": "2026-10-06T13:33:43.645256+00:00",
+    "status": 200,
+    "final_url": "https://datadryad.org/dataset/doi:10.5061/dryad.4xgxd2583",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 44005,
+    "sha256": "412c644fffd43d4f76edbd249df06836807b7db4632e534fb4a9e2416927e1a5"
+  },
+  {
+    "requested_url": "https://www.nczoo.org/blog/front-lines-scaling-smart-conservation-technology-protect-rhinos-namibia",
+    "file": "data/revision_feasibility/20261006/namibia_smart_nczoo_2020.html",
+    "accessed_utc": "2026-10-06T13:33:43.646256+00:00",
+    "status": 200,
+    "final_url": "https://www.nczoo.org/blog/front-lines-scaling-smart-conservation-technology-protect-rhinos-namibia",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 211882,
+    "sha256": "f4d1c9245bae817fc855293b8cb322679c1359dd901003c28f36498d28c40ef0"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "current_documents_verified": 8,
+  "current_total_pages": 88,
+  "English_pdf_pages": 22,
+  "current_model_input_fingerprints_match": true,
+  "local_entry_links_checked": 72,
+  "one_sentence_captions": 24,
+  "PDF_sha256": "0cbaa36931ac334130ad35004a91e9e721cb91ee00ae6ff04292320661233b0b",
+  "source_sha256": "45cbd0d21e7f5d64b3478f3dbdbf5cf5103b99a03c200b605bb54490bb266fa4"
+}

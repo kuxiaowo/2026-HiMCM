@@ -1,9 +1,11 @@
 {
-  "version": "2026-10-05_preliminary",
+  "version": "2026-10-06_sync_60percent_30uav",
   "scope": "Q2 daytime screening plus additional fire screening and ground borehole maintenance; not measured conservation outcomes or full-park staffing",
   "target_rule": "retain_Q2_optimum_score",
   "effective_person_hours_month": 120,
-  "fixed_reference_staff": 59,
+  "fixed_reference_staff": 177,
+  "staff_reference_rule": "295 department staff times 60 percent monthly protection-task availability; not simultaneous headcount",
+  "fleet_rule": "inherit Q2 30-aircraft inventory and 1200 aggregate flight hours/month; aircraft inventory is not simultaneous crew demand",
   "standard_month_days": 30,
   "dry_months": [5, 6, 7, 8, 9, 10],
   "early_fire_months": [5, 6, 7],

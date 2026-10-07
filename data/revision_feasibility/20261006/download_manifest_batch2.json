@@ -1,0 +1,89 @@
+[
+  {
+    "requested_url": "https://the-eis.com/elibrary/search/23915",
+    "file": "data/revision_feasibility/20261006/eis_2015.html",
+    "accessed_utc": "2026-10-06T13:24:11.242415+00:00",
+    "error": "HTTPSConnectionPool(host='the-eis.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+    "requested_url": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Etosha%20NP_Aerial%20census%202015.pdf",
+    "file": "data/revision_feasibility/20261006/etosha_aerial_2015_eis.pdf",
+    "accessed_utc": "2026-10-06T13:24:11.243433+00:00",
+    "error": "HTTPSConnectionPool(host='the-eis.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+    "requested_url": "https://link.springer.com/article/10.1186/s40462-019-0176-2",
+    "file": "data/revision_feasibility/20261006/rhino_movement_2019.html",
+    "accessed_utc": "2026-10-06T13:24:11.243433+00:00",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1186/s40462-019-0176-2",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 445311,
+    "sha256": "78c73dd2a72c564cfb02b32ce4ab813368a459dc9f4ebdef12d539d64b13e1a6",
+    "relevant_links": [
+      "/content/pdf/10.1186/s40462-019-0176-2.pdf",
+      "#icon-eds-i-download-medium",
+      "/content/pdf/10.1186/s40462-019-0176-2.pdf",
+      "#icon-eds-i-download-medium",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Habitat%20use%20and%20spatial%20organisation%20of%20relocated%20black%20rhinos%20in%20namibia&amp;journal=Mammalia&amp;doi=10.1515%2Fmamm.2010.012&amp;volume=74&amp;pages=35-42&amp;publication_year=2010&amp;author=Gottert%2CT&amp;author=Schone%2CJ&amp;author=Zinner%2CD&amp;author=Hodges%2CJK&amp;author=Boer%2CM",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Comparison%20of%20four%20different%20radio%20transmitter%20attachments%20on%20black%20rhino%20in%20madikwe%20game%20reserve&amp;journal=Pachyderm&amp;volume=26&amp;pages=14-24&amp;publication_year=1998&amp;author=Hofmeyr%2CM",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Hot%20under%20the%20collar%3A%20the%20failure%20of%20radio-collars%20on%20black%20rhinoceros%20diceros%20bicornis&amp;journal=Oryx&amp;doi=10.1046%2Fj.1365-3008.2001.00196.x&amp;volume=35&amp;pages=284-8&amp;publication_year=2001&amp;author=Alibhai%2CSK&amp;author=Jewell%2CZ",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Rationale%20for%20ongoing%20radio-collaring%20of%20black%20rhinos%20-%20a%20response%20to%20alibhai%20and%20jewell&amp;journal=Oryx&amp;doi=10.1046%2Fj.1365-3008.2001.00197.x&amp;volume=35&amp;pages=289-90&amp;publication_year=2001&amp;author=du%20Toit%2CR",
+      "http://scholar.google.com/scholar_lookup?&amp;title=A%20new%20method%20for%20implanting%20radio%20transmitters%20into%20the%20horns%20of%20black%20and%20white%20rhinoceros&amp;journal=Pachyderm&amp;volume=30&amp;pages=81-6&amp;publication_year=2001&amp;author=Shrader%2CA&amp;author=Beauchamp%2CB",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Reserve%20size%2C%20release%20density%20and%20translocation%20success%3A%20Black%20rhinoceros%20movements%2C%20association%2C%20injury%20and%20death%20after%20release&amp;journal=J%20Wildl%20Manag&amp;doi=10.2193%2F2007-398&amp;volume=72&amp;pages=1059-68&amp;publication_year=2008&amp;author=Linklater%2CW&amp;author=Swaisgood%2CR",
+      "http://scholar.google.com/scholar_lookup?&amp;title=A%20web%20app%20for%20population%20viability%20and%20harvesting%20analyses&amp;journal=Nat%20Resour%20Model&amp;doi=10.1111%2Fnrm.12120&amp;volume=30&amp;issue=2&amp;publication_year=2017&amp;author=Getz%2CWM&amp;author=Muellerklein%2COC&amp;author=Salter%2CRM&amp;author=Carlson%2CCJ&amp;author=Lyons%2CAJ&amp;author=Seidel%2CDP",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Rhino%20management%20challenges%3A%20spatial%20and%20social%20ecology%20for%20habitat%20and%20population%20management&amp;publication_year=2017&amp;author=Linklater%2CW&amp;author=Shrader%2CA",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Role%20of%20delinquent%20young%20%C3%B6rphanm%CC%88ale%20elephants%20in%20high%20mortality%20of%20white%20rhinoceros%20in%20pilanesberg%20national%20park&amp;journal=Koedoe&amp;doi=10.4102%2Fkoedoe.v44i1.188&amp;volume=44&amp;pages=85-94&amp;publication_year=2001&amp;author=Slotow%2CR&amp;author=van%20Dyk%2CG",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Black%20rhinoceros%20%28Diceros%20bicornis%3A%20Rhinocerotidae%29%20calf%20succumbs%20after%20lion%20predation%20attempt%3A%20implications%20for%20conservation%20management&amp;journal=Afr%20Zool&amp;doi=10.3377%2F004.044.0216&amp;volume=42&amp;pages=283-7&amp;publication_year=2009&amp;author=Plotz%2CR&amp;author=Linklater%2CW",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Black%20rhinoceros%20are%20slow%20to%20colonize%20a%20harvested%20neighbour%E2%80%99s%20range&amp;journal=S%20Afr%20J%20Wildl%20Res&amp;doi=10.3957%2F056.040.0107&amp;volume=40&amp;pages=58-63&amp;publication_year=2010&amp;author=Linklater%2CW&amp;author=Hutcheson%2CI",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Standardising%20Home%20Range%20Studies%20for%20Improved%20Management%20of%20the%20Critically%20Endangered%20Black%20Rhinoceros&amp;journal=PLOS%20ONE&amp;doi=10.1371%2Fjournal.pone.0150571&amp;volume=11&amp;issue=3&amp;publication_year=2016&amp;author=Plotz%2CRoan%20D.&amp;author=Grecian%2CW.%20James&amp;author=Kerley%2CGraham%20I.H.&amp;author=Linklater%2CWayne%20L.",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Realization%20of%20poaching%20effects%20on%20rhinoceroses%20in%20Kruger%20National%20Park%2C%20South%20Africa&amp;journal=African%20Journal%20of%20Wildlife%20Research&amp;doi=10.3957%2F056.048.013001&amp;volume=48&amp;issue=1&amp;publication_year=2018&amp;author=Ferreira%2CSam%20M.&amp;author=Greaver%2CCathy&amp;author=Nhleko%2CZoliswa&amp;author=Simms%2CChenay",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Ecology%20and%20Behaviour%20of%20the%20Black%20Rhinoceros%20%28Diceros%20Bicornis%20L.%29%3A%20A%20Field%20Study&amp;publication_year=1969&amp;author=Schenkel%2CR&amp;author=Schenkel-Hulliger%2CL",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Seasonal%20variation%20in%20the%20feeding%20ecology%20of%20black%20rhinoceros%20%28Diceros%20bicornis%20L%2C%29%20in%20laikipia&amp;journal=Kenya%20Afr%20J%20Ecol&amp;doi=10.1111%2Fj.1365-2028.1994.tb00565.x&amp;volume=32&amp;pages=142-57&amp;publication_year=1994&amp;author=Oloo%2CTW&amp;author=Brett%2CR&amp;author=Young%2CTP",
+      "http://scholar.google.com/scholar_lookup?&amp;title=A%20comparison%20of%20faecal%20analysis%20with%20backtracking%20to%20determine%20the%20diet%20composition%20and%20species%20preference%20of%20the%20black%20rhinoceros%20%28Diceros%20bicornis%20minor%29&amp;journal=European%20Journal%20of%20Wildlife%20Research&amp;doi=10.1007%2Fs10344-009-0264-5&amp;volume=55&amp;issue=5&amp;pages=505-515&amp;publication_year=2009&amp;author=van%20Lieverloo%2CRuud%20J.&amp;author=Schuiling%2CBjorn%20F.&amp;author=de%20Boer%2CWillem%20F.&amp;author=Lent%2CPeter%20C.&amp;author=de%20Jong%2CChristine%20B.&amp;author=Brown%2CDerek&amp;author=Prins%2CHerbert%20H.%20T.",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Effects%20of%20browse%20availability%20and%20quality%20on%20black%20rhino%20%28Diceros%20bicornis%20michaeli%29%20diet%20in%20nairobi%20national%20park%2C%20kenya&amp;journal=Afr%20J%20Ecol&amp;doi=10.1046%2Fj.1365-2028.2000.00213.x&amp;volume=38&amp;issue=1&amp;pages=62-71&amp;publication_year=2000&amp;author=Muya%2CS&amp;author=Oguge%2CN",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Ranging%20behaviour%20and%20habitat%20usage%20in%20black%20rhinoceros%2C%20Diceros%20bicornis%2C%20in%20a%20kenyan%20sanctuary&amp;journal=Afr%20J%20Ecol&amp;doi=10.1046%2Fj.1365-2028.2000.00235.x&amp;volume=38&amp;issue=2&amp;pages=163-72&amp;publication_year=2000&amp;author=Tatman%2CSC&amp;author=Stevens-Wood%2CB&amp;author=Smith%2CVB",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Censusing%20and%20monitoring%20black%20rhino%20%28Diceros%20bicornis%29%20using%20an%20objective%20spoor%20%28footprint%29%20identification%20technique&amp;journal=J%20Zool&amp;doi=10.1017%2FS0952836901000516&amp;volume=254&amp;pages=1-16&amp;publication_year=2001&amp;author=Jewell%2CZC&amp;author=Alibhai%2CSK&amp;author=Law%2CPR",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Using%20shape%20and%20size%20to%20quantify%20variation%20in%20footprints%20for%20individual%20identification%3A%20Case%20study%20with%20white%20rhinoceros%20%28Ceratotherium%20simum%29&amp;journal=Wildl%20Soc%20Bull&amp;doi=10.1002%2Fwsb.250&amp;volume=37&amp;pages=433-8&amp;publication_year=2013&amp;author=Law%2CPR&amp;author=Jewell%2CZ&amp;author=Alibhai%2CS",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Home%20range%2C%20behaviour%2C%20and%20recruitment%20rates%20of%20two%20black%20rhinoceros%20populations&amp;journal=East%20Afr%20Wildl%20J&amp;doi=10.1111%2Fj.1365-2028.1967.tb00768.x&amp;volume=5&amp;pages=133-50&amp;publication_year=1967&amp;author=Goddard%2CJ",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Influence%20of%20vegetation%20types%20on%20sizes%20of%20home%20ranges%20of%20black%20rhinoceros%2C%20hluhluwe%20game%20reserve%2C%20zululand&amp;journal=Lammergeyer&amp;volume=12&amp;pages=48-55&amp;publication_year=1969&amp;author=Hitchins%2CPM",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Ranging%20patterns%20in%20white%20rhinoceros%2C%20Ceratotherium%20simum%20simum%3A%20implications%20for%20mating%20strategies&amp;journal=Anim%20Behav&amp;doi=10.1016%2Fj.anbehav.2006.12.011&amp;volume=74&amp;pages=349-56&amp;publication_year=2007&amp;author=White%2CAM&amp;author=Swaisgood%2CRR&amp;author=Czekala%2CN",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Science%20and%20management%20in%20a%20conservation%20crisis%3A%20a%20case%20study%20with%20rhinoceros&amp;journal=Conserv%20Biol&amp;doi=10.1046%2Fj.1523-1739.2003.01449.x&amp;volume=17&amp;pages=968-76&amp;publication_year=2003&amp;author=Linklater%2CW",
+      "http://scholar.google.com/scholar_lookup?&amp;title=The%20black%20rhinoceros%20%28Diceros%20bicornis%20L%29&amp;journal=Afr%20J%20Ecol&amp;doi=10.1111%2Fj.1365-2028.1963.tb00178.x&amp;volume=1&amp;issue=1&amp;pages=54-62&amp;publication_year=1963&amp;author=Ritchie%2CA",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Notes%20on%20the%20ecology%20and%20behaviour%20of%20the%20black%20rhinoceros%20diceros%20bicornis%20linn.%201758%20in%20south%20west%20africa&amp;journal=Madoqua&amp;volume=1&amp;issue=3&amp;pages=5-53&amp;publication_year=1971&amp;author=Joubert%2CE&amp;author=Eloff%2CF",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Ecological%20engineering%20by%20a%20mega-grazer%3A%20white%20rhino%20impacts%20on%20a%20south%20african%20savanna&amp;journal=Ecosystems&amp;doi=10.1007%2Fs10021-007-9109-9&amp;volume=11&amp;issue=1&amp;pages=101-12&amp;publication_year=2008&amp;author=Waldram%2CMS&amp;author=Bond%2CWJ&amp;author=Stock%2CWD",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Rebrowsing%20by%20elephants%20three%20years%20after%20simulated%20browsing%20on%20five%20woody%20plant%20species%20in%20northern%20botswana&amp;journal=S%20Afr%20J%20Wildl%20Res&amp;volume=36&amp;issue=1&amp;pages=99-102&amp;publication_year=2006&amp;author=Makhabu%2CSW&amp;author=Skarpe%2CC",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Browsing%20lawns%3F%20responses%20of%20acacia%20nigrescens%20to%20ungulate%20browsing%20in%20an%20african%20savanna&amp;journal=Ecology&amp;doi=10.1890%2F0012-9658%282007%2988%5B200%3ABLROAN%5D2.0.CO%3B2&amp;volume=88&amp;issue=1&amp;pages=200-9&amp;publication_year=2007&amp;author=Fornara%2CD&amp;author=Toit%2CJD",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Revisiting%20the%20browsing%20lawn%20concept%3A%20Evolutionary%20interactions%20or%20pruning%20herbivores%3F&amp;journal=Perspect%20Plant%20Ecol%20Evol%20Syst&amp;doi=10.1016%2Fj.ppees.2011.04.004&amp;volume=13&amp;issue=3&amp;pages=207-15&amp;publication_year=2011&amp;author=Cromsigt%2CJP&amp;author=Kuijper%2CDP",
+      "http://scholar.google.com/scholar_lookup?&amp;title=An%20ecoregion-based%20approach%20to%20protecting%20half%20the%20terrestrial%20realm&amp;journal=BioScience&amp;doi=10.1093%2Fbiosci%2Fbix014&amp;volume=67&amp;issue=6&amp;pages=534-45&amp;publication_year=2017&amp;author=Dinerstein%2CE&amp;author=Olson%2CD&amp;author=Joshi%2CA&amp;author=Vynne%2CC&amp;author=Burgess%2CND&amp;author=Wikramanayake%2CE&amp;author=Hahn%2CN&amp;author=Palminteri%2CS&amp;author=Hedao%2CP&amp;author=Noss%2CR",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Optimal%20foraging%2C%20the%20marginal%20value%20theorem&amp;journal=Theoretical%20Population%20Biology&amp;doi=10.1016%2F0040-5809%2876%2990040-X&amp;volume=9&amp;issue=2&amp;pages=129-136&amp;publication_year=1976&amp;author=Charnov%2CEric%20L.",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Foraging%20Theory&amp;publication_year=1986&amp;author=Stephens%2CDW&amp;author=Krebs%2CJR",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Memory%20keeps%20you%20at%20home%3A%20a%20mechanistic%20model%20for%20home%20range%20emergence&amp;journal=Oikos&amp;doi=10.1111%2Fj.1600-0706.2008.17003.x&amp;volume=118&amp;issue=5&amp;pages=641-52&amp;publication_year=2009&amp;author=Van%20Moorter%2CB&amp;author=Visscher%2CD&amp;author=Benhamou%2CS&amp;author=B%C3%B6rger%2CL&amp;author=Boyce%2CMS&amp;author=Gaillard%2CJ-M",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Relationships%20between%20ndvi%2C%20canopy%20structure%2C%20and%20photosynthesis%20in%20three%20californian%20vegetation%20types&amp;journal=Ecol%20Appl&amp;doi=10.2307%2F1942049&amp;volume=5&amp;issue=1&amp;pages=28-41&amp;publication_year=1995&amp;author=Gamon%2CJA&amp;author=Field%2CCB&amp;author=Goulden%2CML&amp;author=Griffin%2CKL&amp;author=Hartley%2CAE&amp;author=Joel%2CG&amp;author=Penuelas%2CJ&amp;author=Valentini%2CR",
+      "http://scholar.google.com/scholar_lookup?&amp;title=Responses%20of%20spectral%20indices%20to%20variations%20in%20vegetation%20cover%20and%20soil%20background&amp;journal=Photogramm%20Eng%20Remote%20Sens&amp;volume=64&amp;pages=915-22&amp;publication_year=1998&amp;author=Todd%2CSW&amp;author=Hoffer%2CRM"
+    ]
+  },
+  {
+    "requested_url": "https://dronecenter.bard.edu/interview-joe-noci/",
+    "file": "data/revision_feasibility/20261006/namibia_drone_interview_2014.html",
+    "accessed_utc": "2026-10-06T13:24:11.243433+00:00",
+    "status": 200,
+    "final_url": "https://dronecenter.bard.edu/interview-joe-noci/",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 78541,
+    "sha256": "4bc34fd45cc298a74c26de146259469a29a4c3d7b968962fe822c73e766fc302",
+    "relevant_links": []
+  },
+  {
+    "requested_url": "https://chitwannationalpark.gov.np/reports/publications.html",
+    "file": "data/revision_feasibility/20261006/chitwan_publications.html",
+    "accessed_utc": "2026-10-06T13:24:11.244415+00:00",
+    "error": "HTTPSConnectionPool(host='chitwannationalpark.gov.np', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+    "requested_url": "https://chitwannationalpark.gov.np/",
+    "file": "data/revision_feasibility/20261006/chitwan_home.html",
+    "accessed_utc": "2026-10-06T13:24:11.244415+00:00",
+    "error": "HTTPSConnectionPool(host='chitwannationalpark.gov.np', port=443): Read timed out. (read timeout=10)"
+  }
+]

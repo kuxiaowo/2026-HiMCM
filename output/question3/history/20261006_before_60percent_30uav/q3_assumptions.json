@@ -1,0 +1,29 @@
+{
+  "version": "2026-10-05_preliminary",
+  "scope": "Q2 daytime screening plus additional fire screening and ground borehole maintenance; not measured conservation outcomes or full-park staffing",
+  "target_rule": "retain_Q2_optimum_score",
+  "effective_person_hours_month": 120,
+  "fixed_reference_staff": 59,
+  "standard_month_days": 30,
+  "dry_months": [5, 6, 7, 8, 9, 10],
+  "early_fire_months": [5, 6, 7],
+  "late_fire_months": [8, 9, 10, 11],
+  "water_inventory_rule": "Koedoe_2016_Table1_BH_only_2013_sample_not_complete_current_inventory",
+  "water_team_size": 2,
+  "water_preparation_hours_visit": 0.08333333333333333,
+  "water_travel_rule": "independent_return_trip_from_best_Q2_candidate_post_directed_road_graph_plus_offroad_walking",
+  "fire_rule": "additional_separate_screening_sorties_per_100km2_fuel_habitat_on_response_reachable_targets; all_required; no_fire_suppression_or_prescribed_burning_hours",
+  "scenarios": {
+    "low": {"water_wet_visits_month": 1, "water_dry_visits_month": 2, "water_drought_visits_month": 4, "water_onsite_hours_visit": 0.25, "water_drought_onsite_hours_visit": 0.5, "extra_fire_early_checks_per_100km2": 1, "extra_fire_late_checks_per_100km2": 2},
+    "base": {"water_wet_visits_month": 2, "water_dry_visits_month": 4, "water_drought_visits_month": 8, "water_onsite_hours_visit": 0.5, "water_drought_onsite_hours_visit": 1, "extra_fire_early_checks_per_100km2": 2, "extra_fire_late_checks_per_100km2": 4},
+    "high": {"water_wet_visits_month": 4, "water_dry_visits_month": 8, "water_drought_visits_month": 12, "water_onsite_hours_visit": 1, "water_drought_onsite_hours_visit": 1.5, "extra_fire_early_checks_per_100km2": 4, "extra_fire_late_checks_per_100km2": 8}
+  },
+  "evidence_status": {
+    "dry_window": "research-based seasonal classification; not observed drought in 2026",
+    "fire_windows": "official 2016 Etosha fire strategy; not incident forecasts",
+    "water_points": "coordinates and BH/A/C labels manually transcribed from original Table1; May2013 survey",
+    "frequencies_and_visit_durations": "team planning assumptions expressed as 30-day maximum service gaps; no actual operational logs available",
+    "abnormal_drought": "conditional workload stress scenario applied to dry months; no SPI or precipitation prediction",
+    "route_sharing": "no shared-trip credit; separate sorties avoid double-counting completed work but can overestimate travel"
+  }
+}

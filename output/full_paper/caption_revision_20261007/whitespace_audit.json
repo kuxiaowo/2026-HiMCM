@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "nominal_target_bp": 90,
+  "tolerance_bp": 4,
+  "appendix_page": 19,
+  "main_solution_pages": 16,
+  "pages": [
+    {
+      "page": 1,
+      "bottom_gap_bp": 171.49441408172368,
+      "section_or_document_end_exception": true,
+      "passed": true
+    },
+    {
+      "page": 2,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": true,
+      "passed": true
+    },
+    {
+      "page": 3,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 4,
+      "bottom_gap_bp": 16.164519062192426,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 5,
+      "bottom_gap_bp": 7.190581073911176,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 6,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 7,
+      "bottom_gap_bp": 28.065825214536176,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 8,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 9,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 10,
+      "bottom_gap_bp": 4.982573261411176,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 11,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 12,
+      "bottom_gap_bp": 61.068571796567426,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 13,
+      "bottom_gap_bp": 79.22653078094243,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 14,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 15,
+      "bottom_gap_bp": 46.393461933286176,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 16,
+      "bottom_gap_bp": 57.380522480161176,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 17,
+      "bottom_gap_bp": 0,
+      "section_or_document_end_exception": false,
+      "passed": true
+    },
+    {
+      "page": 18,
+      "bottom_gap_bp": 261.7454516793799,
+      "section_or_document_end_exception": true,
+      "passed": true
+    },
+    {
+      "page": 19,
+      "bottom_gap_bp": 332.4458606149268,
+      "section_or_document_end_exception": true,
+      "passed": true
+    },
+    {
+      "page": 20,
+      "bottom_gap_bp": 33.878508320004926,
+      "section_or_document_end_exception": true,
+      "passed": true
+    },
+    {
+      "page": 21,
+      "bottom_gap_bp": 224.78451417937993,
+      "section_or_document_end_exception": true,
+      "passed": true
+    },
+    {
+      "page": 22,
+      "bottom_gap_bp": 289.7183520700049,
+      "section_or_document_end_exception": true,
+      "passed": true
+    }
+  ],
+  "exception_reason": "Required distinct document components and final solution page may end naturally; no filler or enlarged body leading introduced."
+}

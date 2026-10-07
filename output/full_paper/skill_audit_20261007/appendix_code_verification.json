@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "listing_matches_delivered_source": true,
+  "source": "scripts/modeling/reproduce_baseline_for_paper.py",
+  "source_sha256": "f4ba6cc7c40377083eb76e11bf99a68a20df673155869b74f79aaf6e4dbb9ef3",
+  "run_verified_values": {
+    "score": 57.26,
+    "total_person_hours": 5286.11,
+    "drone_flight_hours": 144.34
+  },
+  "self_contained_TeX": "filecontents* embeds the exact source; no additional project input file needed for compilation"
+}

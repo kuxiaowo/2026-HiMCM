@@ -1,0 +1,104 @@
+{
+  "scope": "Retrospective suitability comparison, not a claim of newly performed experiments for rejected methods.",
+  "chosen_scope_authorized": true,
+  "candidates": {
+    "Q1": [
+      [
+        "责任与明确服务代理",
+        "采用",
+        "分物种份额与透明类别偏好，明确服务和生态结果的区别"
+      ],
+      [
+        "实测事件率模型",
+        "未采用",
+        "需要一致努力下的事件及损失记录，当前未取得"
+      ],
+      [
+        "人口生态动力模型",
+        "未采用",
+        "与用户不预测种群的范围不符"
+      ]
+    ],
+    "Q2": [
+      [
+        "路网约束连续LP",
+        "采用",
+        "可解释的容量与双预算，并保留评分后全局最少人工"
+      ],
+      [
+        "整数巡护调度",
+        "未采用",
+        "缺每日资质、时间窗与并发任务台账"
+      ],
+      [
+        "地理阈值均衡/需求比例",
+        "已计算对照",
+        "在相同预算与底线下比较完成率"
+      ]
+    ],
+    "Q3": [
+      [
+        "服务需求逆向LP",
+        "采用",
+        "保持同一目标并计入额外季节任务"
+      ],
+      [
+        "复杂轮班/排队模型",
+        "未采用",
+        "用户明确不建立复杂轮班，且到达过程未校准"
+      ],
+      [
+        "预测动物/降雨再定员",
+        "未采用",
+        "缺预测依据且超出本轮范围"
+      ]
+    ],
+    "Q4": [
+      [
+        "固定条件情景与重新求解",
+        "采用",
+        "区分服务标准变化、预算变化与离散近似"
+      ],
+      [
+        "概率蒙特卡洛风险",
+        "未采用",
+        "不能虚构事件概率或效率分布"
+      ]
+    ],
+    "Q5": [
+      [
+        "模型特定证据及局限审计",
+        "采用",
+        "把计算正确、执行可行、生态有效分开"
+      ],
+      [
+        "按通用评分生成生态认证",
+        "未采用",
+        "任务代理不支持认证"
+      ]
+    ],
+    "Q6": [
+      [
+        "本地真实地理+条件任务试算",
+        "采用",
+        "重建几何、路线、任务与固定目标"
+      ],
+      [
+        "直接搬用埃托沙权重/人数",
+        "未采用",
+        "当地对象、权限和任务不同"
+      ],
+      [
+        "黄石本地历史生态优先层",
+        "独立扩展已计算",
+        "明确历史范围及原面积评分的取舍"
+      ]
+    ]
+  },
+  "reflection_log": [
+    "LP coefficients are deterministic planning proxies; sensitivity replaces unsupported probabilities.",
+    "Monthly labor is not a roster.",
+    "Historical data are not current abundance.",
+    "Q6 floors are per cell, Q2 floors per reporting region; migration changes this scale explicitly."
+  ]
+}

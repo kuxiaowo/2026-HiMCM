@@ -1,0 +1,196 @@
+{
+  "wolf_zip_sha256": "3836eaeb11eee25e3844a91d0fdee310a5536c9b54fe6a558d65eeaed6748866",
+  "year2022_features": 10,
+  "rows": [
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/8_mile_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.81372414843325,
+        44.890659830249795,
+        -110.51694897730818,
+        45.05237953009153
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 265927303.5,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/8_mile_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/cougar_creek_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -111.14897210685545,
+        44.63185886752733,
+        -110.86557703453492,
+        45.086269616216086
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 734292748.5,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/cougar_creek_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/firehole_river_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -111.22086168130016,
+        44.15398040212917,
+        -110.64028296467016,
+        44.56228036948483
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 959922530.0,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/firehole_river_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/junction_butte_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.5298640330844,
+        44.83021868022065,
+        -110.13147416779016,
+        45.02633371897857
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 341931839.5,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/junction_butte_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/lupine_creek_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.69254490915148,
+        44.88462164380384,
+        -110.56143416351752,
+        45.01147428930987
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 42706408.0,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/lupine_creek_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/mollies_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.35188142516968,
+        44.53344625246424,
+        -110.05282424175647,
+        44.7456344820789
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 338657042.0,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/mollies_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/rescue_creek_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.60853302810702,
+        44.84326847598274,
+        -110.37501897077377,
+        45.00329369450585
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 139965689.0,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/rescue_creek_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/shrimp_lake_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.17673280580878,
+        44.79956963989857,
+        -110.00141399703645,
+        44.96016350792877
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 151289214.0,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/shrimp_lake_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/wapiti_lake_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.9536185863406,
+        44.46106494138957,
+        -110.39007663316376,
+        45.0049375158099
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 1672612907.0,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/wapiti_lake_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    },
+    {
+      "file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/willow_creek_95_mcp_2022.shp",
+      "crs": "EPSG:26912",
+      "valid": true,
+      "bounds": [
+        -110.5298640330844,
+        44.83021868022065,
+        -110.13147416779016,
+        45.02633371897857
+      ],
+      "source_properties": {
+        "level": 0.95,
+        "what": "estimate",
+        "area": 341931839.5,
+        "source_file": "1995_2022-mcps/2022_Wolf Territory Shapefiles/mcp_outputs/willow_creek_95_mcp_2022.shp",
+        "year": 2022,
+        "interpretation": "historical 95% minimum convex polygon; not population density or current distribution"
+      }
+    }
+  ]
+}

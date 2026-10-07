@@ -1,24 +1,66 @@
 {
-  "passed": true,
-  "chapters": [
-    {
-      "chapter": 4,
-      "approved_headings_match": true,
-      "local_links_valid": true,
-      "tex_references_valid": true,
-      "tikz_self_contained": true
+  "status": "passed_numerical_source_compilation_and_visual_checks",
+  "chapters": {
+    "question4_sensitivity": {
+      "source": "docs/paper/question4_sensitivity.tex",
+      "source_sha256": "79f49b4a7ab04e8eac2643af80449a4f0b8182fa6a91554b878195c40e3310e9",
+      "pdf": "output/pdf/skill_checked_20261007/question4_sensitivity.pdf",
+      "pdf_sha256": "1e2ca978e1b4ced832fb2e932ab7f83f14d820732076f7fc9c24ed837574fb40",
+      "pages": 4,
+      "figures": 2,
+      "tables": 4,
+      "numbered_equations": 3,
+      "bibliography_entries": 0,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question4_sensitivity.pdf",
+        "pdf_sha256": "1e2ca978e1b4ced832fb2e932ab7f83f14d820732076f7fc9c24ed837574fb40",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question4_sensitivity",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
     },
-    {
-      "chapter": 5,
-      "approved_headings_match": true,
-      "local_links_valid": true,
-      "tex_references_valid": true,
-      "tikz_self_contained": true
+    "question5_evaluation": {
+      "source": "docs/paper/question5_evaluation.tex",
+      "source_sha256": "1899173d12ec02ea6a3a5fcc9ceeb8dfb637b102d075775e8da0bffe40cb5c41",
+      "pdf": "output/pdf/skill_checked_20261007/question5_evaluation.pdf",
+      "pdf_sha256": "2a56064b451d0d84c95c3573d95d75c520bfc02a1eff505d803286840fa403bc",
+      "pages": 1,
+      "figures": 0,
+      "tables": 0,
+      "numbered_equations": 0,
+      "bibliography_entries": 0,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question5_evaluation.pdf",
+        "pdf_sha256": "2a56064b451d0d84c95c3573d95d75c520bfc02a1eff505d803286840fa403bc",
+        "reviewed_pages": [
+          1
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question5_evaluation",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
     }
-  ],
-  "Q2_Q3_sources_preserved": true,
-  "figures_visually_reviewed": 2,
-  "pdf_compilation_confirmed": false,
-  "pdf_reading_copies_generated": true,
-  "pdf_render_method": "Chromium + MathJax SVG; not native LaTeX compilation"
+  }
 }

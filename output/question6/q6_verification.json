@@ -146,26 +146,6 @@
       "sha256": "b798981a6e4903bf99e393e7d2f46ef2000fac490b108ab9a95ac7399e4a7a37"
     },
     {
-      "file": "data/question6/raw/nepal-latest.osm.pbf",
-      "bytes": 414519125,
-      "sha256": "4313820204be1e5a38088789b5fd7552a5097674d0089a8d436e90631643af82"
-    },
-    {
-      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E081_Map.tif",
-      "bytes": 104848806,
-      "sha256": "53ec713abf379327c053e255d0d5936f81c3ad491ba3b89954c81ba8fa5ee053"
-    },
-    {
-      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N27E084_Map.tif",
-      "bytes": 104225123,
-      "sha256": "43dd6237600f5a36b8dcd92228ee12fce3db386a07ac7f95defb90e806a21847"
-    },
-    {
-      "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N42W111_Map.tif",
-      "bytes": 105959600,
-      "sha256": "8d6c9e00d9c88f29c126b8ed04d096f5428e9e72fa4f46c0d66950b54bfad66b"
-    },
-    {
       "file": "data/question6/raw/worldcover/ESA_WorldCover_10m_2021_v200_N42W114_Map.tif",
       "bytes": 81282877,
       "sha256": "67708bd9ec880170eb21b94a630fe6dcb0515d5c7f08d4db49f3fff30c422760"
@@ -183,8 +163,7 @@
     {
       "file": "data/question6/raw/yellowstone_boundary.geojson",
       "bytes": 304609,
-      "sha256": "d617b3b5bcd6d1368bdb7e4a58526b566e7155516ade523a9f329fd8e3c5a324",
-      "note": "Corrected exploratory derived conversion; current model uses processed NPS boundary and original ZIP"
+      "sha256": "d617b3b5bcd6d1368bdb7e4a58526b566e7155516ade523a9f329fd8e3c5a324"
     },
     {
       "file": "data/question6/raw/yellowstone_boundary.zip",

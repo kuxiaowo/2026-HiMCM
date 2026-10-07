@@ -33,7 +33,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "month1_fixed59",
+      "name": "month1_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5497.283602445887,
@@ -54,7 +54,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "month2_fixed59",
+      "name": "month2_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5497.283602445887,
@@ -75,7 +75,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "month3_fixed59",
+      "name": "month3_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5497.283602445887,
@@ -96,7 +96,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "month4_fixed59",
+      "name": "month4_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5497.283602445887,
@@ -117,7 +117,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "month5_fixed59",
+      "name": "month5_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6270.142344833211,
@@ -138,7 +138,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "month6_fixed59",
+      "name": "month6_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6270.142344833211,
@@ -159,7 +159,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "month7_fixed59",
+      "name": "month7_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6270.142344833211,
@@ -180,7 +180,7 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "month8_fixed59",
+      "name": "month8_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6831.8318212101285,
@@ -201,7 +201,7 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "month9_fixed59",
+      "name": "month9_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6831.8318212101285,
@@ -222,7 +222,7 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "month10_fixed59",
+      "name": "month10_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6831.8318212101285,
@@ -243,7 +243,7 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "month11_fixed59",
+      "name": "month11_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6620.662555199724,
@@ -264,7 +264,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "month12_fixed59",
+      "name": "month12_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5497.283602445887,
@@ -285,7 +285,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "low_month1_fixed59",
+      "name": "low_month1_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5383.198969440685,
@@ -299,7 +299,7 @@
       "flight_hours": 160.90964660003294
     },
     {
-      "name": "low_month5_fixed59",
+      "name": "low_month5_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5761.128340634346,
@@ -313,7 +313,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "low_month8_fixed59",
+      "name": "low_month8_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6041.973078822806,
@@ -327,7 +327,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "low_month11_fixed59",
+      "name": "low_month11_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5944.8884458176035,
@@ -341,7 +341,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "low_drought_month1_fixed59",
+      "name": "low_drought_month1_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5383.198969440685,
@@ -355,7 +355,7 @@
       "flight_hours": 160.90964660003294
     },
     {
-      "name": "low_drought_month5_fixed59",
+      "name": "low_drought_month5_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5989.297606644752,
@@ -369,7 +369,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "low_drought_month8_fixed59",
+      "name": "low_drought_month8_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6270.142344833211,
@@ -383,7 +383,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "low_drought_month11_fixed59",
+      "name": "low_drought_month11_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5944.8884458176035,
@@ -397,7 +397,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "base_month1_fixed59",
+      "name": "base_month1_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5497.283602445887,
@@ -411,7 +411,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "base_month5_fixed59",
+      "name": "base_month5_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6270.142344833211,
@@ -425,7 +425,7 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "base_month8_fixed59",
+      "name": "base_month8_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6831.8318212101285,
@@ -439,7 +439,7 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "base_month11_fixed59",
+      "name": "base_month11_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6620.662555199724,
@@ -453,7 +453,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "base_drought_month1_fixed59",
+      "name": "base_drought_month1_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5497.283602445887,
@@ -467,7 +467,7 @@
       "flight_hours": 177.4759099796165
     },
     {
-      "name": "base_drought_month5_fixed59",
+      "name": "base_drought_month5_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6828.480876854021,
@@ -481,11 +481,11 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "base_drought_month8_fixed59",
+      "name": "base_drought_month8_fixed177",
       "passed": true,
-      "score": 54.96753686271383,
-      "person_hours": 7079.99999989799,
-      "flight_hours": 199.75042512505547
+      "score": 57.260161284231835,
+      "person_hours": 7390.170353230938,
+      "flight_hours": 210.60843673878367
     },
     {
       "name": "base_drought_month11_inverse",
@@ -495,7 +495,7 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "base_drought_month11_fixed59",
+      "name": "base_drought_month11_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 6620.662555199724,
@@ -509,7 +509,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "high_month1_fixed59",
+      "name": "high_month1_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5776.452868456292,
@@ -523,39 +523,39 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "high_month5_fixed59",
+      "name": "high_month5_fixed177",
       "passed": true,
-      "score": 54.96753686271383,
-      "person_hours": 7079.99999989799,
-      "flight_hours": 199.75042512505547
+      "score": 57.260161284231835,
+      "person_hours": 7390.170353230938,
+      "flight_hours": 210.60843673878367
     },
     {
       "name": "high_month8_inverse",
       "passed": true,
       "score": 57.260161284231835,
-      "person_hours": 8546.057382462257,
-      "flight_hours": 240.0
+      "person_hours": 8513.549305984772,
+      "flight_hours": 276.87349025711796
     },
     {
-      "name": "high_month8_fixed59",
+      "name": "high_month8_fixed177",
       "passed": true,
-      "score": 37.14347366664559,
-      "person_hours": 7079.999999962184,
-      "flight_hours": 207.51286574482162
+      "score": 57.260161284231835,
+      "person_hours": 8513.549305984772,
+      "flight_hours": 276.87349025711796
     },
     {
       "name": "high_month11_inverse",
       "passed": true,
       "score": 57.260161284231835,
-      "person_hours": 8055.718850441447,
-      "flight_hours": 240.0
+      "person_hours": 8023.210773963963,
+      "flight_hours": 276.87349025711796
     },
     {
-      "name": "high_month11_fixed59",
+      "name": "high_month11_fixed177",
       "passed": true,
-      "score": 47.277529957674936,
-      "person_hours": 7079.9999999328475,
-      "flight_hours": 233.66383768145806
+      "score": 57.260161284231835,
+      "person_hours": 8023.210773963963,
+      "flight_hours": 276.87349025711796
     },
     {
       "name": "high_drought_month1_inverse",
@@ -565,7 +565,7 @@
       "flight_hours": 144.34338322044937
     },
     {
-      "name": "high_drought_month1_fixed59",
+      "name": "high_drought_month1_fixed177",
       "passed": true,
       "score": 57.260161284231835,
       "person_hours": 5776.452868456292,
@@ -579,39 +579,39 @@
       "flight_hours": 210.60843673878367
     },
     {
-      "name": "high_drought_month5_fixed59",
+      "name": "high_drought_month5_fixed177",
       "passed": true,
-      "score": 46.32547114853938,
-      "person_hours": 7079.999999937189,
-      "flight_hours": 164.59644542393278
+      "score": 57.260161284231835,
+      "person_hours": 8084.508885251748,
+      "flight_hours": 210.60843673878367
     },
     {
       "name": "high_drought_month8_inverse",
       "passed": true,
       "score": 57.260161284231835,
-      "person_hours": 9240.395914483066,
-      "flight_hours": 240.0
+      "person_hours": 9207.887838005583,
+      "flight_hours": 276.87349025711796
     },
     {
-      "name": "high_drought_month8_fixed59",
+      "name": "high_drought_month8_fixed177",
       "passed": true,
-      "score": 13.800628791712764,
-      "person_hours": 7079.999999979076,
-      "flight_hours": 165.70380166093437
+      "score": 57.260161284231835,
+      "person_hours": 9207.887838005583,
+      "flight_hours": 276.87349025711796
     },
     {
       "name": "high_drought_month11_inverse",
       "passed": true,
       "score": 57.260161284231835,
-      "person_hours": 8055.718850441447,
-      "flight_hours": 240.0
+      "person_hours": 8023.210773963963,
+      "flight_hours": 276.87349025711796
     },
     {
-      "name": "high_drought_month11_fixed59",
+      "name": "high_drought_month11_fixed177",
       "passed": true,
-      "score": 47.277529957674936,
-      "person_hours": 7079.9999999328475,
-      "flight_hours": 233.66383768145806
+      "score": 57.260161284231835,
+      "person_hours": 8023.210773963963,
+      "flight_hours": 276.87349025711796
     }
   ],
   "limits": "Checks saved feasibility, units and totals; relies on HiGHS optimal status for LP optimality; does not validate assumed frequencies or detailed schedules."

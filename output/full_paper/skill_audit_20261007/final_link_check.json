@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "entry_documents": 6,
+  "relative_links_checked": 102,
+  "broken_links": [],
+  "current_documents_source_and_PDF_fingerprints": "passed",
+  "all_archive_source_bytes_still_current": true,
+  "source_entries_checked": 415,
+  "original_skill_checker_copy_byte_identical": true,
+  "score_totals_checked": true,
+  "archive_sha256": "826f15df436a706fd1eb4ae4da24b3a0739faad1b8afc6633878e03db3a11701"
+}

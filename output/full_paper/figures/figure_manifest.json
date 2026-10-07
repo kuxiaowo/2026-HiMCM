@@ -1,0 +1,176 @@
+{
+  "figures": [
+    {
+      "name": "fig1_framework_pipeline",
+      "width_cm": 16.8,
+      "height_cm": 4.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "overlapping_labels": [],
+      "primitive_count": 24
+    },
+    {
+      "name": "fig2_etosha_demand_response",
+      "width_cm": 16.8,
+      "height_cm": 6.2,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "overlapping_labels": [],
+      "primitive_count": 2433
+    },
+    {
+      "name": "fig3_route_costs",
+      "width_cm": 16.8,
+      "height_cm": 5.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "overlapping_labels": [],
+      "primitive_count": 28
+    },
+    {
+      "name": "fig4_monthly_workload",
+      "width_cm": 16.8,
+      "height_cm": 7.0,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "overlapping_labels": [],
+      "primitive_count": 104
+    },
+    {
+      "name": "fig5_resource_joint",
+      "width_cm": 16.8,
+      "height_cm": 5.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "overlapping_labels": [],
+      "primitive_count": 88
+    },
+    {
+      "name": "fig6_transfer_maps",
+      "width_cm": 16.8,
+      "height_cm": 6.6,
+      "minimum_font_pt": 12,
+      "outside_labels": [],
+      "overlapping_labels": [],
+      "primitive_count": 427
+    }
+  ],
+  "formats": [
+    "png",
+    "svg",
+    "tikz"
+  ],
+  "physical_width_cm": 16.8,
+  "minimum_font_pt": 12,
+  "font_family": "Times New Roman",
+  "route_costs": {
+    "target_id": "ENP1_0000",
+    "ground_person_hours": 4.981330998281807,
+    "drone_operator_person_hours": 4.271073764977391,
+    "flight_hours": 0.20612540185024536,
+    "ground_components": [
+      3.6921562946102338,
+      0.7891747036715738,
+      0.3333333333333333,
+      0.16666666666666666
+    ],
+    "drone_components": [
+      3.6921562946102338,
+      0.0,
+      0.4122508037004907,
+      0.16666666666666666
+    ]
+  },
+  "resource_joint": {
+    "staff_rows": [
+      45,
+      55,
+      57,
+      62,
+      67,
+      177
+    ],
+    "flight_capacity_columns": [
+      0,
+      80,
+      160,
+      200,
+      240,
+      1200.0
+    ],
+    "scores": [
+      [
+        20.30051114226017,
+        33.76505378016724,
+        37.18850937527439,
+        37.18850937527439,
+        37.18850937527441,
+        37.18850937527441
+      ],
+      [
+        44.71811943845297,
+        51.976140350405025,
+        55.21981514622988,
+        55.70396369118586,
+        55.705974074201876,
+        55.705974074201876
+      ],
+      [
+        47.742314185910175,
+        54.07944051472514,
+        56.974250844922345,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835
+      ],
+      [
+        53.62239009616451,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835
+      ],
+      [
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835
+      ],
+      [
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835,
+        57.260161284231835
+      ]
+    ]
+  },
+  "chitwan_scope": "Published boundary used for illustration; boundary calibration unresolved.",
+  "verified_context": {
+    "q2_representative_person_hours": 5286.114336435482,
+    "q3_annual_base_staff": 57,
+    "q3_annual_base_drought_staff": 62,
+    "q3_monthly_chart_scope": "base seasonal scenario, not abnormal drought"
+  },
+  "builder_sha256": "dcd1eebe8ef69896e3d114bba06866e65ecb94d63aaa773d2d7e1d5e5e5efcb4",
+  "visual_review": {
+    "status": "pending"
+  },
+  "source_sha256": {
+    "output/question2/q2_model_inputs.json": "8b3f4a69c9db5be0a8c993c0b6b35437cd432d5821b41d69a514521dc576a740",
+    "output/question2/q2_results.json": "b00a7204922cbec249757da4c242ef4bb1220f266f5e088c927cfcdaef95969a",
+    "output/question3/q3_results.json": "74499f3967b7645a5942b6d9d1095ae633f367e695dfc92d310e745402adbdc4",
+    "output/question4/q4_results.json": "f035f23d927710a06d45fab44da1fb99d9c0ff071fe9de535ad4a9742b0232b6",
+    "output/question6/q6_results.json": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
+    "data/regions/processed/model_regions.geojson": "d665a51f56319afd1b514ecc2fdbfc3989d1be4a0767770e14d6abc238aad55d",
+    "data/roads/processed/park_edges.geojson": "56345cf6d609b21ee75159249cba2ce70e50341bc8e06f6144f37d53437a767e",
+    "data/question6/processed/chitwan_boundary.geojson": "2ad7a23c4b34f23fe6eb3b380c2e7fa3bb64197bd2af8dcced97d9f6a7428864",
+    "data/question6/processed/chitwan_roads.geojson": "646bcb11009610181df2ed64557d384bc8222eef98351fe885aa0b0d5a06a466",
+    "data/question6/processed/yellowstone_boundary.geojson": "d617b3b5bcd6d1368bdb7e4a58526b566e7155516ade523a9f329fd8e3c5a324",
+    "data/question6/processed/yellowstone_roads.geojson": "dcce98a8591fe6032360de5d0416c3e4d54dc3d64c362ea136bfd1d4fbcbde07"
+  }
+}

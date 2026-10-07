@@ -1,0 +1,85 @@
+{
+  "raw_exit_code": 1,
+  "remaining_raw_messages": [
+    {
+      "page": 7,
+      "gap_y": [
+        227,
+        252
+      ],
+      "owner": [
+        "fig:etosha"
+      ],
+      "verdict": "two drawing bands inside one figure, not two adjacent figures"
+    },
+    {
+      "page": 7,
+      "gap_y": [
+        257,
+        276
+      ],
+      "owner": [
+        "fig:etosha"
+      ],
+      "verdict": "two drawing bands inside one figure, not two adjacent figures"
+    },
+    {
+      "page": 8,
+      "gap_y": [
+        236,
+        253
+      ],
+      "owner": [
+        "fig:costs"
+      ],
+      "verdict": "two drawing bands inside one figure, not two adjacent figures"
+    },
+    {
+      "page": 8,
+      "gap_y": [
+        266,
+        302
+      ],
+      "owner": [
+        "fig:costs"
+      ],
+      "verdict": "two drawing bands inside one figure, not two adjacent figures"
+    },
+    {
+      "page": 9,
+      "gap_y": [
+        619,
+        640
+      ],
+      "owner": [
+        "fig:deployment"
+      ],
+      "verdict": "two drawing bands inside one figure, not two adjacent figures"
+    },
+    {
+      "page": 14,
+      "gap_y": [
+        196,
+        218
+      ],
+      "owner": [
+        "fig:monthly"
+      ],
+      "verdict": "two drawing bands inside one figure, not two adjacent figures"
+    },
+    {
+      "page": 19,
+      "gap_y": [
+        225,
+        244
+      ],
+      "owner": [
+        "fig:transfer"
+      ],
+      "verdict": "two drawing bands inside one figure, not two adjacent figures"
+    }
+  ],
+  "all_adjudicated_as_same_figure_bands": true,
+  "english_reference_and_object_checks": "english_layout_audit.json",
+  "original_skill_script_unmodified": true
+}

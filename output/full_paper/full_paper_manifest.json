@@ -1,0 +1,95 @@
+{
+  "status": "passed_source_numerical_typography_compilation_and_visual_checks",
+  "language": "English",
+  "team_control_number": "510105201001220151",
+  "source": "docs/paper/full_paper.tex",
+  "planned_total_pages": 25,
+  "letter_pages_planned": 1,
+  "references_and_AI_included_in_page_limit": true,
+  "body_font_points": 12,
+  "heading_font_points": 22,
+  "subheading_font_points": 16,
+  "title_font_points": 14,
+  "caption_font_points": 12,
+  "symbol_table_font_points": 12,
+  "margin_cm": 1.5,
+  "side_margin_points": 42.519685039370074,
+  "vertical_margin_points": 42.519685039370074,
+  "figures": 7,
+  "bibliography_entries": 17,
+  "tables": 17,
+  "numbered_equations": 19,
+  "source_sha256": "45cbd0d21e7f5d64b3478f3dbdbf5cf5103b99a03c200b605bb54490bb266fa4",
+  "input_sha256": {
+    "output/question2/q2_results.json": "036a376f93e0d5713908c57ebb7ed055dafe88f886ca931acaf7cb859d3662ec",
+    "output/question2/q2_model_inputs.json": "8b3f4a69c9db5be0a8c993c0b6b35437cd432d5821b41d69a514521dc576a740",
+    "output/question3/q3_results.json": "3e8e7f10322aa7792a5d4d550f731ec7fca4db7c72516837d4c995bd4e2abbc2",
+    "output/question4/q4_results.json": "bb57f6f8ea9c126bb64e1cda4b259707109bffef30884624a2baa73a84aba9cb",
+    "output/question6/q6_results.json": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
+    "output/full_paper/weight_sensitivity_supplement.json": "eb95867b1c941dd7bd546cf350eb16683335c52dbf9392cbf4ca136cde284254",
+    "output/revision_feasibility/20261006/revision_results.json": "678b998ad8b370f0f61fad7db845bec914e28240b4d829ece475b43e60c752b1"
+  },
+  "contents": [
+    "summary",
+    "contents",
+    "study design and terms",
+    "questions 1--6",
+    "one-page nontechnical letter",
+    "references",
+    "AI-use report"
+  ],
+  "scope_limits": [
+    "Q2 excludes water/rainfall; Q3 water work separate",
+    "Q6 Chitwan boundary fails area calibration",
+    "workforce equivalents are conditional monthly task estimates"
+  ],
+  "actual_total_pages": 22,
+  "pdf": "output/pdf/caption_revision_20261007/full_paper.pdf",
+  "validation": "output/full_paper/caption_revision_20261007/typography_and_document_validation.json",
+  "page_limit": 25,
+  "layout": "Continuous within top-level sections; flexible figure/table placement",
+  "revision_history": "output/full_paper/history/before_multispecies_revision_20261006.zip",
+  "layout_validation": "output/full_paper/full_paper_layout_validation.json",
+  "supplemental_weight_results": "output/full_paper/weight_sensitivity_supplement.json",
+  "metric_name": "Effective Inspection Completion Rate",
+  "metric_display_unit": "percent",
+  "numerical_model_changed": false,
+  "post_compile_validation": "completed_for_user_short_caption_revision",
+  "previous_verified_pages": 22,
+  "revised_at_utc": "2026-10-06T15:47:06.242367+00:00",
+  "revision_date": "2026-10-07",
+  "revision_script": "scripts/modeling/revise_multispecies_paper.py",
+  "pdf_sha256": "0cbaa36931ac334130ad35004a91e9e721cb91ee00ae6ff04292320661233b0b",
+  "letter_pages_actual": [
+    20
+  ],
+  "revision_validation": "output/full_paper/caption_revision_20261007/caption_revision_validation.json",
+  "visual_review": "output/full_paper/revision_visual_review.json",
+  "implementation_report": "docs/modeling_notes/caption_revision_20261007.md",
+  "review": "output/full_paper/caption_revision_20261007/caption_revision_validation.json",
+  "header_font_points": 12,
+  "style_authority": "output/full_paper/caption_revision_20261007/style_contract.json",
+  "audit": "output/full_paper/skill_audit_20261007",
+  "numerical_revision_20261006": true,
+  "last_audited_at_utc": "2026-10-06T19:02:02.007390+00:00",
+  "main_solution_pages": 16,
+  "main_solution_page_range": [
+    3,
+    18
+  ],
+  "appendix_pages": [
+    19
+  ],
+  "contest_counted_pages": 19,
+  "references_pages": [
+    21
+  ],
+  "AI_report_pages": [
+    22
+  ],
+  "caption_policy": "One concise sentence; explanations in body (user override)",
+  "current_edition_validation": "output/full_paper/caption_revision_20261007/caption_revision_validation.json",
+  "prior_document_support_archive": "output/full_paper/skill_audit_20261007/review_support.zip",
+  "previous_review_note": "Nine-dimension review was for the pre-caption-revision edition; numerical model and result fingerprints remain unchanged.",
+  "prior_support_archive_scope": "Numerical reproduction remains applicable; bundled manuscripts in the older ZIP predate the short-caption edition."
+}

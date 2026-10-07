@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "archive": "output/full_paper/skill_audit_20261007/review_support.zip",
+  "sha256": "826f15df436a706fd1eb4ae4da24b3a0739faad1b8afc6633878e03db3a11701",
+  "bytes": 87142053,
+  "entries": 417,
+  "source_entries_checked": 415,
+  "CRC_check": "passed",
+  "all_entry_SHA256_match": true,
+  "duplicate_or_unsafe_paths": false,
+  "replay_root": "tmp/skill_audit_20261007/package_replay_01",
+  "saved_input_replay": [
+    {
+      "script": "reproduce_baseline_for_paper.py",
+      "exit_code": 0,
+      "log": "tmp/skill_audit_20261007/package_reproduce_baseline_for_paper.log"
+    },
+    {
+      "script": "verify_question2.py",
+      "exit_code": 0,
+      "log": "tmp/skill_audit_20261007/package_verify_question2.log"
+    },
+    {
+      "script": "verify_question3.py",
+      "exit_code": 0,
+      "log": "tmp/skill_audit_20261007/package_verify_question3.log"
+    },
+    {
+      "script": "verify_question4.py",
+      "exit_code": 0,
+      "log": "tmp/skill_audit_20261007/package_verify_question4.log"
+    },
+    {
+      "script": "verify_question6_real.py",
+      "exit_code": 0,
+      "log": "tmp/skill_audit_20261007/package_verify_question6_real.log"
+    }
+  ],
+  "verified_at_utc": "2026-10-06T19:02:33.094805+00:00",
+  "scope": "Saved input baseline LP re-solved and Q2/Q3/Q4/Q6 independent saved-solution checks in extracted archive; not a global-raw rebuild or a fresh visual review."
+}

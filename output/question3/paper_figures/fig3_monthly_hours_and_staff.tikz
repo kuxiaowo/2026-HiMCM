@@ -20,8 +20,7 @@
 \draw[draw={rgb,1:red,0.87843;green,0.90196;blue,0.91765},line width=0.35pt] (1.7000,7.6000) -- (16.4000,7.6000);
 \node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.5}{10.03}\selectfont}] at (1.5300,7.6000) {8000};
 \node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8}{9.44}\selectfont}] at (0.3000,6.0000) {人时\\/月};
-\draw[draw={rgb,1:red,0.63922;green,0.23137;blue,0.20392},line width=0.9pt,dashed] (1.7000,7.2148) -- (16.4000,7.2148);
-\node[anchor=east,align=right,text={rgb,1:red,0.63922;green,0.23137;blue,0.20392},font={\fontsize{9}{10.62}\selectfont}] at (16.4000,7.9600) {参考59人预算：7080人时/月};
+\node[anchor=east,align=right,text={rgb,1:red,0.63922;green,0.23137;blue,0.20392},font={\fontsize{9}{10.62}\selectfont}] at (16.4000,7.9600) {参考177人预算：21240人时/月（高于图示范围）};
 \path[fill={rgb,1:red,0.51373;green,0.56863;blue,0.61569},draw=none,line width=0.6pt] (1.9625,4.2500) rectangle (2.6625,5.4560);
 \path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (1.9625,5.4560) rectangle (2.6625,6.4636);
 \path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (1.9625,6.4636) rectangle (2.6625,6.4636);
@@ -101,9 +100,8 @@
 \node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.5}{10.03}\selectfont}] at (1.5300,1.8864) {50};
 \draw[draw={rgb,1:red,0.87843;green,0.90196;blue,0.91765},line width=0.35pt] (1.7000,2.7727) -- (16.4000,2.7727);
 \node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.5}{10.03}\selectfont}] at (1.5300,2.7727) {60};
-\draw[draw={rgb,1:red,0.63922;green,0.23137;blue,0.20392},line width=0.8pt,dashed] (1.7000,2.6841) -- (16.4000,2.6841);
 \draw[draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=0.8pt,dashed] (1.7000,2.5068) -- (16.4000,2.5068);
-\node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.5}{10.03}\selectfont}] at (16.4000,3.0300) {参考配置59人 / 全年固定57人};
+\node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.5}{10.03}\selectfont}] at (16.4000,3.0300) {参考配置177人 / 常规全年需求57人};
 \draw[draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=1.5pt] (2.3125,1.5318) -- (3.5375,1.5318) -- (4.7625,1.5318) -- (5.9875,1.5318) -- (7.2125,2.1523) -- (8.4375,2.1523) -- (9.6625,2.1523) -- (10.8875,2.5068) -- (12.1125,2.5068) -- (13.3375,2.5068) -- (14.5625,2.4182) -- (15.7875,1.5318);
 \path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (2.3125,1.5318) circle (0.0450);
 \node[anchor=center,align=center,text={rgb,1:red,0.13725;green,0.36863;blue,0.51373},font={\fontsize{8.5}{10.03}\selectfont}] at (2.3125,1.3118) {46};

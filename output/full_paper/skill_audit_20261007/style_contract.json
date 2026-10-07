@@ -1,0 +1,19 @@
+{
+  "authority": "User 2026-10-07 instruction: captions/symbols 12pt, body/headings retained.",
+  "body_pt": 12,
+  "heading_pt": 22,
+  "subheading_pt": 16,
+  "caption_pt": 12,
+  "symbol_pt": 12,
+  "header_pt": 12,
+  "font_family": "Times New Roman; previously specified Arial caption retained",
+  "class": "Existing article source retained under user template instructions; cumcmthesis not substituted.",
+  "page_limit_total_user": 25,
+  "solution_limit_problem": 20,
+  "counted_limit_problem": 24,
+  "nonapplicable_generic_targets": [
+    "Chinese teaching document page count is not an English submission limit.",
+    "Do not create five redundant charts for definition or evaluation questions.",
+    "No training/CV/residual diagnostics: model is deterministic optimization, not statistical prediction."
+  ]
+}

@@ -19,7 +19,7 @@ BODY4=r'''
 
 \subsubsection{人员减少对保护服务的影响}
 
-保持机时预算240及地理条件不变，改变保护岗位数，分别求固定人员下的最高服务与目标下的最少人工：
+保持当前机时预算1200及地理条件不变，改变保护岗位数，分别求固定人员下的最高服务与目标下的最少人工：
 \begin{equation}
 \begin{aligned}
 P_t^*(N,U)&=\max_{\substack{\mathbf z_t\in\mathcal F_t(U)\\H_t(\mathbf z_t)\le120N}}100\sum_jw_js_{jt},\\
@@ -29,13 +29,13 @@ H_t^{\mathrm{crit}}(U)&=\min_{\substack{\mathbf z_t\in\mathcal F_t(U)\\100\sum_j
 \end{equation}
 其中\(\mathcal F_t(U)\)沿用服务容量、技术适用性、区域底线及必要任务约束；第二题比较关闭新增季节任务。共享响应2880人时不随人员同比削减。低预算下若连必要任务与底线都无法完成，报告无解，不以零分代替。
 
-图\ref{fig:resources}(a)显示两种工作范围的差别。在240机时条件下，第二题基准服务的全局最少人工为@Q2_H@人时，按有效工时换算需@Q2_N@个同口径岗位；中档峰值月需@PEAK_H@人时，即@PEAK_N@人。峰值月减至56人时只有@N56_SCORE@分。新增工作使人员阈值提高，即使基准服务分相同，也不能将第二题剩余预算直接视为全年可减员空间。本节反求允许同分服务向量重新选择，与第二题固定服务向量的代表人工消耗口径不同。
+图\ref{fig:resources}(a)显示两种工作范围的差别。在1200机时条件下，第二题基准服务的全局最少人工为@Q2_H@人时，按有效工时换算需@Q2_N@个同口径岗位；中档峰值月需@PEAK_H@人时，即@PEAK_N@人。峰值月减至56人时只有@N56_SCORE@分。新增工作使人员阈值提高，即使基准服务分相同，也不能将第二题剩余预算直接视为全年可减员空间。本节反求与修订后的第二题采用相同口径，均允许同分服务向量重新选择。
 
 @FIG_RESOURCES@
 
 \subsubsection{无人机减少与人力替代}
 
-按每架每月40机时的设定，将机时上限由240逐步降至0，保留无人机配套人工及地面响应。图\ref{fig:resources}(b)中，峰值所需人数依次随设备减少而增加：240机时需57人，160机时需58人，120机时需60人，设备停用需67人。机时减半时最少人工为@U120_H@人时，比59人的7080人时预算略高，因而仍不能严格保持目标。
+按每架每月40机时的设定，将机时上限由1200逐步降至0，保留无人机配套人工及地面响应。图\ref{fig:resources}(b)中，峰值所需人数依次随设备减少而增加：240机时需57人，160机时需58人，120机时需60人，设备停用需67人。其中120机时属于仅3架等价的低设备情景，需@U120_H@人时，比59人的7080人时预算略高；当前177人和1200机时基准则有充足余量。
 
 这表明地面检查能够在技术不足时补充服务，但要付出更多人工；响应与水点运维仍不能由飞行机时替代。资源充足时，设备变化可能只增加工作量而不改变分数。因此同时报告服务分和所需人工，比只比较总分更能体现技术的作用。上述人数针对选定任务与既定响应范围，不代表公园实际编制。
 
@@ -47,7 +47,7 @@ H_t^{\mathrm{crit}}(U)&=\min_{\substack{\mathbf z_t\in\mathcal F_t(U)\\100\sum_j
 
 @TAB_TRAVEL@
 
-相比之下，作业人工增加25\%后仍为57.26分，但代表方案消耗升至@COST_H@人时，说明评分达到上限会遮盖成本变化。前者需改善通行或响应布局，后者需保留人工余量。速度和成本变化是明确的压力设定，并非本园实际运行速度或耗时的统计区间。
+相比之下，作业人工增加25\%后仍为57.26分，但最少人工升至@COST_H@人时，说明评分达到上限会遮盖成本变化。前者需改善通行或响应布局，后者需保留人工余量。速度和成本变化是明确的压力设定，并非本园实际运行速度或耗时的统计区间。
 
 \subsubsection{季节服务要求的影响}
 
@@ -61,7 +61,7 @@ W_t=f_tn_W\left[\sum_{\ell\in\mathcal L}T_\ell^{\mathrm{rt}}+
 
 @TAB_STANDARDS@
 
-同时改变服务要求的低、中、高档组合，正常季节峰值为51、57、72人；所设异常干旱运维压力下为53、62、78人。这些是不同管理规则下的结果，不能当置信区间。若只按样本平均成本把水点工作量增至2、3倍，中档峰值为61、64人；该检验揭示完整台账的重要性，不表示已查明新增水点数量和路线。赋权与格网对照另存计算附件，不能以不同评分口径的分数直接判断保护改善。
+同时改变服务要求的低、中、高档组合，正常季节峰值为51、57、71人；所设异常干旱运维压力下为53、62、77人。这些是不同管理规则下的结果，不能当置信区间。若只按样本平均成本把水点工作量增至2、3倍，中档峰值为61、64人；该检验揭示完整台账的重要性，不表示已查明新增水点数量和路线。赋权与格网对照另存计算附件，不能以不同评分口径的分数直接判断保护改善。
 
 \subsection{情景分析与策略调整}
 
@@ -96,11 +96,13 @@ s_j^{\mathrm{ret}}=
 BODY5=r'''
 \section{模型评价}
 
+以下从工作量解释、计算核验和现场适用条件三个方面评价模型，明确其能支持的规划判断及仍需补充的证据。
+
 \subsection{模型优点}
 
-模型将地面监测、无人机飞行及其配套人工共同纳入预算，并以路网与响应期限约束有效服务，能够区分资源不足和地理不可达。紧缺预算下，优化方案45.77分，高于需求比例38.24分和面积均衡31.30分，支持其在相同条件下改善战略配置的作用。第三、四题沿用相同服务定义，把季节任务转为人时并反求人力，便于解释为何峰值月份或技术减少会提高人员需求。
+模型将地面监测、无人机飞行及其配套人工共同纳入预算，并以路网与响应期限约束有效服务，能够区分资源不足和地理不可达。当前21240人时、1200机时及减员40%情景下，三种配置均为57.26分，瓶颈在响应范围。第四题另在明确的低预算情景中比较保留规则和重新配置，不能沿用旧基准的提升幅度。第三、四题沿用相同服务定义，把季节任务转为人时并反求人力，便于解释为何峰值月份或技术减少会提高人员需求。
 
-变量单位和工作量来源明确，保存的输入、解向量及独立核验使结论可复算。第四题97个保存可行方案均通过容量、必要任务、预算和汇总检查。上述证据支持所建模型内的资源规划与数值一致性。
+变量单位和工作量来源明确，保存的输入、解向量及独立核验使结论可复算。第四题@AUDITED@个保存可行方案均通过容量、必要任务、预算和汇总检查。上述证据支持所建模型内的资源规划与数值一致性。
 
 \subsection{模型局限}
 
@@ -175,17 +177,17 @@ def chapter(number,title,body,numbers,blocks,stem):
 def main():
     r=json.loads((OUT/'q4_results.json').read_text(encoding='utf-8'))
     audit=json.loads((OUT/'q4_independent_verification.json').read_text(encoding='utf-8'))
-    assert audit['passed'] and audit['independently_checked_feasible_solutions']==97
+    assert audit['passed']
     inverse={(v['scope'],v['drone_budget']):v for v in r['technology_sensitivity']}
     resource={(v['scope'],v['staff']):v for v in r['resource_sensitivity']}
     joint={(v['staff'],v['drone_budget']):v for v in r['joint_peak_scenarios']}
     old={v['name']:v['result'] for v in r['q2_saved_scenarios']}
     policy={v['scenario']:v for v in r['policy_comparisons']}
     f=lambda v:f'{v:.2f}'
-    numbers={'Q2_H':f(inverse['q2_monitoring',240]['total_person_hours']),
-             'Q2_N':inverse['q2_monitoring',240]['required_staff'],
-             'PEAK_H':f(inverse['q3_peak_base',240]['total_person_hours']),
-             'PEAK_N':inverse['q3_peak_base',240]['required_staff'],
+    numbers={'AUDITED':audit['independently_checked_feasible_solutions'],'Q2_H':f(inverse['q2_monitoring',1200]['total_person_hours']),
+             'Q2_N':inverse['q2_monitoring',1200]['required_staff'],
+             'PEAK_H':f(inverse['q3_peak_base',1200]['total_person_hours']),
+             'PEAK_N':inverse['q3_peak_base',1200]['required_staff'],
              'N56_SCORE':f(resource['q3_peak_base',56]['score']),
              'U120_H':f(inverse['q3_peak_base',120]['total_person_hours']),
              'ROAD20_SCORE':f(old['道路速度20km/h']['score']),
@@ -202,7 +204,7 @@ def main():
         v=old[key];travel.append([label,f(v['score']),f(v['geographic_score_upper_bound']),f(v['total_person_hours'])])
     blocks['TAB_TRAVEL']=table('tab:travel','通行与作业成本情景（第二题工作范围）',
                               ['情景','服务分','地理上限','使用人时'],travel,
-                              note='注：沿用第二题固定服务向量的代表成本；道路情景保持基准评价权重。')
+                              note='注：各情景先求最优总分，再在保持该分数的方案中最小化总人工；道路情景保持基准评价权重。')
     names={'fire_rate':r'额外火险频次 \(k_t\)','water_visits':r'水点月访问次数 \(f_t\)',
            'water_onsite_hours':r'现场耗时 \(\tau_t\)/小时'}
     rows=[]
@@ -227,7 +229,7 @@ def main():
         ['情景','保留规则','重新配置','增加分数'],rows,
         note='注：同一情景采用相同预算、权重和必要任务；技术方式在两种方案中均允许改变。')
     manifests=[chapter(4,'敏感性与情景分析',BODY4,numbers,blocks,'question4_sensitivity'),
-               chapter(5,'模型评价',BODY5,{}, {},'question5_evaluation')]
+               chapter(5,'模型评价',BODY5,numbers, {},'question5_evaluation')]
     manifest={'chapters':manifests,'source_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [OUT/'q4_results.json',OUT/'q4_independent_verification.json']},
               'notes':['compact approved hierarchy retained','all figures inline TikZ in standalone sources','no external ecological validation claimed'],
               'pdf_compilation_confirmed':False}

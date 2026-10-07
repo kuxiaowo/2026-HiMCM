@@ -12,8 +12,13 @@ def audit(data,result, ground_factor=1., operator_factor=1.):
     ts=data['targets'];x=np.asarray(result['x']);h=np.asarray(result['h']);s=np.asarray(result['s'])
     checks=np.array([t['planned_checks_month'] for t in ts]);g=np.array([t['ground_hours_per_check'] or 1 for t in ts])*ground_factor
     u=np.array([t['flight_hours_per_check'] or 1 for t in ts]);op=np.array([t['operator_hours_per_check']/t['flight_hours_per_check'] if t['drone_allowed'] else 0 for t in ts])*operator_factor
+    efficiency=result.get('drone_efficiency',1.);ground_share=result.get('minimum_ground_share',0.)
     assert np.min(x)>-1e-7 and np.min(h)>-1e-7 and np.min(s)>-1e-7 and np.max(s)<=1+1e-7
-    assert np.all(checks*s<=x/g+h/u+1e-6)
+    assert np.all(checks*s<=x/g+efficiency*h/u+1e-6)
+    assert np.all(ground_share*checks*s<=x/g+1e-6)
+    if 'two_stage' in result:
+        assert not result['two_stage']['service_vector_fixed']
+        assert abs(result['score']-result['two_stage']['first_stage_score'])<1e-6
     for j,t in enumerate(ts):
         if not t['response_eligible']:assert abs(s[j])+abs(x[j])+abs(h[j])<1e-6
         if not t['drone_allowed']:assert abs(h[j])<1e-6

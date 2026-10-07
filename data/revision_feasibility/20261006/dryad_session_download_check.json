@@ -1,0 +1,9 @@
+{
+  "requested_url": "https://datadryad.org/downloads/file_stream/4813216",
+  "accessed_utc": "2026-10-06T13:40:48.057034+00:00",
+  "status": 403,
+  "bytes": 118,
+  "content_type": "text/html",
+  "method": "normal public web session and dataset Referer; no credentials",
+  "response_excerpt": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+}

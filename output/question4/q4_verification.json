@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "feasible_solution_checks": 97,
+  "feasible_solution_checks": 127,
   "infeasible_cases": 4,
   "all_monotonicity_checks_passed": true,
   "Q2_Q3_sources_preserved": true,
@@ -272,6 +272,50 @@
       "minimum_region_floor_margin": -7.860465750519907e-19
     },
     {
+      "case_id": "q2_monitoring_N106",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 0.0,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "q2_monitoring_N177",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 0.0,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
       "case_id": "q3_peak_base_N40",
       "passed": true,
       "checks": {
@@ -492,6 +536,50 @@
       "minimum_region_floor_margin": -7.860465750519907e-19
     },
     {
+      "case_id": "q3_peak_base_N106",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "q3_peak_base_N177",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
       "case_id": "q2_monitoring_inverse_U0",
       "passed": true,
       "checks": {
@@ -646,6 +734,50 @@
       "minimum_region_floor_margin": -7.860465750519907e-19
     },
     {
+      "case_id": "q2_monitoring_inverse_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "target_met": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 0.0,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "q2_monitoring_inverse_U1200",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "target_met": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 0.0,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
       "case_id": "q3_peak_base_inverse_U0",
       "passed": true,
       "checks": {
@@ -779,6 +911,50 @@
     },
     {
       "case_id": "q3_peak_base_inverse_U240",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "target_met": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "q3_peak_base_inverse_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "target_met": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "q3_peak_base_inverse_U1200",
       "passed": true,
       "checks": {
         "base_capacity": true,
@@ -1130,6 +1306,50 @@
       "minimum_region_floor_margin": -1.214306433183765e-17
     },
     {
+      "case_id": "joint_N45_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -1.214306433183765e-17
+    },
+    {
+      "case_id": "joint_N45_U1200",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -1.214306433183765e-17
+    },
+    {
       "case_id": "joint_N50_U0",
       "passed": true,
       "checks": {
@@ -1241,6 +1461,50 @@
     },
     {
       "case_id": "joint_N50_U240",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -1.214306433183765e-17
+    },
+    {
+      "case_id": "joint_N50_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -1.214306433183765e-17
+    },
+    {
+      "case_id": "joint_N50_U1200",
       "passed": true,
       "checks": {
         "base_capacity": true,
@@ -1394,6 +1658,50 @@
       "minimum_region_floor_margin": -7.860465750519907e-19
     },
     {
+      "case_id": "joint_N55_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N55_U1200",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
       "case_id": "joint_N57_U0",
       "passed": true,
       "checks": {
@@ -1505,6 +1813,50 @@
     },
     {
       "case_id": "joint_N57_U240",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N57_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N57_U1200",
       "passed": true,
       "checks": {
         "base_capacity": true,
@@ -1658,6 +2010,50 @@
       "minimum_region_floor_margin": -7.860465750519907e-19
     },
     {
+      "case_id": "joint_N59_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N59_U1200",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
       "case_id": "joint_N62_U0",
       "passed": true,
       "checks": {
@@ -1790,6 +2186,50 @@
       "minimum_region_floor_margin": -7.860465750519907e-19
     },
     {
+      "case_id": "joint_N62_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N62_U1200",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
       "case_id": "joint_N67_U0",
       "passed": true,
       "checks": {
@@ -1901,6 +2341,226 @@
     },
     {
       "case_id": "joint_N67_U240",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N67_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N67_U1200",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U0",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U80",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U120",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U160",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U200",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U240",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U600",
+      "passed": true,
+      "checks": {
+        "base_capacity": true,
+        "mandatory_fire_capacity": true,
+        "service_bounds": true,
+        "nonnegative_hours": true,
+        "forbidden_drone_zero": true,
+        "unreachable_ground_zero": true,
+        "regional_floors": true,
+        "UAV_budget": true,
+        "score_recalculation": true,
+        "labor_recalculation": true,
+        "integer_staff_suffices": true,
+        "one_fewer_staff_insufficient_for_THIS_labor": true,
+        "staff_budget": true
+      },
+      "maximum_base_check_shortfall": 8.881784197001252e-16,
+      "maximum_fire_check_shortfall": 4.440892098500626e-16,
+      "minimum_region_floor_margin": -7.860465750519907e-19
+    },
+    {
+      "case_id": "joint_N177_U1200",
       "passed": true,
       "checks": {
         "base_capacity": true,

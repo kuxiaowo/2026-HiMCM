@@ -1,0 +1,9 @@
+{
+  "requested_url": "https://datadryad.org/downloads/file_stream/4813216",
+  "status": 403,
+  "bytes": 118,
+  "content_type": "text/html",
+  "accessed_utc": "2026-10-06T13:45:55.036857+00:00",
+  "method": "normal public website download with User-Agent, same-origin Referer and AJAX headers",
+  "complete_csv_obtained": false
+}

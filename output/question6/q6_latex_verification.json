@@ -1,15 +1,40 @@
 {
-  "status": "source_static_checks_passed_compile_unverified",
-  "source_sha256": "faae7811eec562120b1f4bfe1a03b9d8d24c553a0b6c196727e65d22253d3c48",
+  "status": "compiled_six_pages_and_source_checks_passed",
+  "source": "docs/paper/question6_adaptation.tex",
+  "source_sha256": "7b9a5fe57056718c3514a0f1c62b8e766a6097cd00590f98e1560acbb6d66561",
+  "results_sha256": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
+  "pdf": "output/pdf/revision_20261006/question6_adaptation.pdf",
+  "pdf_sha256": "e3043cb5be36b90e626b084da20a2ce18261e293a21ebb490d0aad86dee486a1",
+  "pages": 6,
   "unique_labels": 13,
   "undefined_source_labels": 0,
+  "equations": 6,
   "figures": 3,
   "tables": 4,
-  "bibliography_entries": 12,
+  "bibliography_entries": 14,
   "environment_and_brace_checks": "passed",
   "self_contained": true,
-  "builtin_compiler": "Unable to find standard directories for platform",
-  "source_compilation_verified": false,
-  "reading_pdf": "ReportLab preview; all seven pages visually inspected",
-  "data_quality_limit": "Chitwan published GIS area does not match reported/legal area; separately disclosed"
+  "builtin_compiler": "unavailable: Unable to find standard directories for platform",
+  "compiler": "D:/texlive/2026/bin/windows/xelatex.exe",
+  "source_compilation_verified": true,
+  "visual_review": {
+    "status": "passed",
+    "pdf_sha256": "e3043cb5be36b90e626b084da20a2ce18261e293a21ebb490d0aad86dee486a1",
+    "pdf": "output/pdf/revision_20261006/question6_adaptation.pdf",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "render_dpi": 300,
+    "contact_sheets": "tmp/pdfs/revision_20261006/question6_adaptation",
+    "notes": [
+      "No clipped text, overlapping glyphs or missing-glyph boxes observed; figures/tables readable; no orphan heading observed."
+    ]
+  },
+  "data_quality_limit": "Chitwan boundary-area consistency remains unresolved; conditional trial only",
+  "model_inputs_or_results_changed": false
 }

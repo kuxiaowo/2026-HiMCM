@@ -1,0 +1,325 @@
+{
+  "audit_date_local": "2026-10-07",
+  "problem_source": "output/2026数模训练.pdf",
+  "problem_text": "                                             2026 IM2C\n                                     Protecting Wildlife at Scale\n\n\n\n\nNational parks, including large wildlife reserves, play a critical role in protecting endangered\nplant and animal species, yet often their size and terrain make continuous monitoring difficult.\nReserves such as Etosha National Park in Namibia span thousands of square kilometers and\ninclude open savanna, salt pans, waterholes, road networks, and multiple access points. Despite\nthe presence of trained rangers, limited personnel and resources make it challenging to prevent\nillegal activities such as poaching and unauthorized entry. Technologies, including, but not\nlimited to aerial drones, satellites, fixed monitoring systems, and AI-assisted detection, offer\nopportunities to support ranger efforts. However, these tools also require coordination, staffing,\nand thoughtful deployment to be effective. Conservation organizations must decide how to\nbalance human patrols and technology to provide meaningful protection across space and time.\n\nThe International Mission for Monitoring Conservation (IMMC) has asked your team to develop\na modeling approach to help guide protection strategies for large wildlife reserves and national\nparks, beginning with Etosha National Park as a case study.\nYour Task\n\nThe IMMC seeks a modeling-based approach to inform protection planning for Etosha National\nPark, a large and complex wildlife reserve. Your work should consider how limited human and\ntechnological resources can be coordinated to protect wildlife across the park over time, and\nhow “protection” can be defined and measured in a realistic, practical, and quantitative way.\n\nRequirements\n\n   1. Conservation priorities and defining protection\n      Identify and prioritize the major conservation challenges faced by the park, noting that\n      risks may differ by species, habitat, location, or type of threat including both human-\n      driven and natural threats (for example, poaching, habitat disruption such as forest fires,\n      or human–wildlife interaction). Using these priorities, clearly define what it means, in\n      practical terms, for wildlife in the park to be “protected”. Your definition may vary across\n      species or regions and should be quantitatively measurable within your modeling\n      approach.\n\n        | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\f2. Resource allocation model\n   Develop a mathematical model to allocate protection resources, including both existing\n   resources and those newly identified by your team, such as personnel, patrols, monitoring\n   technologies, or other interventions, to address your identified conservation priorities.\n   Your modeling approach should account for limited resources, geographic considerations,\n   and uncertainty, and should emphasize strategic deployment rather than complete\n   coverage.\n3. Protection over time and staffing need\n   Use your modeling approach to analyze how well the park is protected over time and to\n   estimate the number of human personnel required to maintain your chosen level of\n   protection. A detailed cost analysis is not required, but consideration of resource use,\n   feasibility, and practicality is expected.\n4. Sensitivity and scenario analysis\n   Investigate how changes in assumptions or available resources affect your strategy. For\n   example, consider how reduced personnel, fewer technological assets, or altered patrol\n   schedules influence protection.\n5. Model strengths and limitations\n   Discuss the strengths and limitations of your approach, including assumptions that may\n   restrict its applicability.\n6. Adaptation to other protected areas\n   Demonstrate how your modeling approach can be adapted for use at two other national\n   parks or wildlife reserves located on different continents. The IMMC asks your team to\n   provide an adaptation plan that addresses the following:\n   • Which components of your model structure would remain unchanged?\n   • Which inputs or parameters would need to be modified (for example, terrain and\n      mobility, access points, road networks, threat types, species priorities, or detection\n      capabilities)?\n   • What types of data would be required to calibrate these modified inputs?\n   • How you would expect protection metrics and recommended resource deployments to\n      shift under the new conditions?\n7. Communication Deliverable: Letter to the IMMC\n   Write a two-page, non-technical letter to the IMMC clearly communicating your\n   approach, recommendations, and key insights. Your letter should be accessible to\n   decision-makers without technical backgrounds. One of the two pages may contain, if\n   you choose, one visual graphic to help communicate your strategy.\n\n\n\n\n    | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\fSubmission Format\n\nYour PDF submission paper must be typed and in English with at least 12-point font size using\npage size: A4 with margins at least 1.5cm (OR) page size: Letter with margins at least 0.6in. For\ndetailed information about IM2C submission guidelines and the general expectations for each\nportion of your solution please review the Full Submission Guidelines.\n\nYour PDF submission should consist of:\n       •   One-page Summary Sheet.\n       •   One-page Table of Contents.\n       •   Letter to the IMMC (maximum two pages, nontechnical)\n       •   Complete solution (maximum 20 pages)\n       •   Reference List.\n       •   AI Use Report (if used).\n       •   The following items do not count toward the 24-page limit: Reference List,\n           Appendices and AI Use Report (if used).\n\n\nNote on AI/LLM usage: There is no specific required minimum page length for a complete\nIM2C submission. We permit the careful use of AI such as ChatGPT, although their use is not\nnecessary to create a solution to this problem. Teams that use any generative AI tools must\nfollow the IM2C AI use policy and include an AI Use Report at the end of the PDF submission. If\nno AI Use Report is included, the team is affirming that no generative AI or large language\nmodel tools were used at any stage of the work. The AI Use Report does not count toward the\n24-page limit.\n\nNote on presenting your solution: Teams may find it helpful to include visual or structured\nelements to support and clearly communicate essential aspects of their modeling approach and\nproposed solutions. Examples include: a map or table summarizing protection metric(s) across\nthe park over time; an illustration of how resources such as patrols, personnel, or monitoring\ntechnologies are allocated; at least one sensitivity or robustness analysis; or a brief comparison\nidentifying which components of the model remain unchanged and which must be modified\nwhen adapting the approach to other reserves. Any such elements that teams wish the judges to\nconsider should be included within the main solution document and therefore count toward the\n24-page limit.\n\n\n\n\n        | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\fEtosha National Park Maps\nhttps://www.etoshanationalpark.org/map\n\nhttps://www.etoshanationalpark.org/media/Etosha-Map-2025.jpg\n\n\n\n\nGlossary\n\nWildlife: animals and plants that grow independently of people, usually in natural conditions.\n\n\n\n\n       | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\f                                         2026 IM2C\n      Protecting Wildlife at Scale – Background information for Etosha National Park\n\nThe following information is provided to help teams start to understand and explore qualitative\nand quantitative aspects of Etosha National Park. All values are approximate* and are intended\nto support modeling, not to constrain assumptions. Teams may refine or add data as long as all\nadditions and sources are clearly justified within their solution. It is expected that teams may\nencounter more specific data, alternative estimates, or sources that do not fully agree, and that\nsuch differences will be thoughtfully incorporated into their modeling choices.\n\nEtosha National Park — Reference Dataset\n\n      Category            Approximate Values                               Notes\n                                                      Etosha is one of the largest wildlife reserves in\nPark Area              22,935 km²\n                                                      Africa.\n                                                      Typical pre-pandemic order of magnitude\nAnnual Visitors        ~200,000\n                                                      estimate.\n                                                      Including gravel and dirt routes for\nLength of Roads        3,551 km of roads\n                                                      access/patrol.\n\nWildlife (Examples)\n\n  Species / Group           Status or Feature                              Notes\nMammal Species          114 species                    Includes large and small mammals.\nBird Species            More than 400 species          Resident and migratory bird species.\n                                                       Etosha contains a large black rhino\nBlack Rhinoceros        Endangered\n                                                       population; poaching is an ongoing issue.\n                                                       ~2,500 elephants estimated in the broader\nElephants               Abundant\n                                                       surrounding ecosystem.\nLions              Present                             Part of key predator community.\nLeopards, Cheetahs Present (less common)               Part of key predator community.\n                   Zebras, springbok, oryx,\nPlains Herbivores                                      Common prey species\n                   kudu, etc.\n\nHuman Resources & Management\n\n  Resource Type               Approx. Value                                 Notes\nPark Staff                                             Ministry of Environment and Tourism staff\n                        295 personnel\n(Ministry)                                             stationed in Etosha.\n                                                       Park boundary fencing supports\nFence Perimeter         ~850 km\n                                                       management.\n\n\n\n        | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\fThreat Context (Reference)\n\n      Issue                                  Description\nPoaching Pressure Reports suggest significant rhino poaching since 2022.\nNatural Events    Wildfires have impacted large portions of the park in recent years.\n\n\nGeographic/Physical Features\n\n     Feature       Approx. Value / Description                    Notes\nEtosha Pan         ~4,800 km² salt pan          Central, seasonally dramatic feature.\nMain Terrain Types Savanna, salt pan, grassland Ecosystem influences animal movement.\nWaterholes         86 (natural & man-made)      Important sites for wildlife aggregation.\n\n*Values as well as information on this page was obtained from a variety of sources, including but\nnot limited to information published by the Republic of Namibia’s Ministry of Environment,\nForestry & Tourism.\n\n\n\n\n       | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\f2026 IM2C Full Submission Guidelines\n\nTeams may use any inanimate source of data, materials, computers, software, references,\nwebsites, books, etc. Be sure to credit all sources used.\n\nTeams may not use any person (other than team members) to discuss or obtain ideas for solving\ntheir problem nor may they seek help in obtaining an answer from the teams' advisor or\nanyone else. Any team that discusses the problem with anyone in a position to supply them with\ninformation reflecting experience or professional expertise will be disqualified. The relevant\nissue is one of intent: each team of students is expected to develop all of its substantive analysis\nwithout the help of others.\n\nPartial solutions are acceptable. There is no passing or failing cutoff score, nor will numerical\nscores be assigned. The IM2C judges are primarily interested in a teams' approach and methods.\n\nThe solution must consist entirely of written text and possibly figures, charts, or other written\nmaterial only. No non paper support such as computer disks or applications will be accepted.\n\nEach page of the solution should contain the team control number and the page number at\nthe top of the page; we suggest using a page header on each page for example: Team # 2024000\npage 6 of 13.\n\nThe names of the students, advisor, or institution must not appear on any page of the solution.\nThe solution must not contain any identifying information other than the team Control Number.\n\nTeams should keep in mind the following guidelines while preparing their solution papers:\n\n   ●   Conciseness and organization are extremely important. Key statements should present\n       major ideas and results.\n   ●   Present a clarification or restatement of the problem as appropriate.\n   ●   Present a clear exposition of all variables, assumptions, and hypotheses.\n   ●   Present an analysis of the problem, motivating or justifying the modeling to be used.\n   ●   Include a design of the model. Discuss how the model could be tested.\n   ●   Discuss any apparent strengths or weaknesses to your model or approach.\n   ●   Incorporate lengthy derivations, computations, or illustrative examples in appendices.\n       Summarize these in the main report. Results must be explicitly stated in the body of the\n       report.\n\nYour PDF solution should include:\n\n   ● One page Summary Sheet.\n\n       The Audience for the summary sheet is anyone unfamiliar with the problem. Hence, in\n       your own words briefly outline the problem, the main solution approach, and your\n       conclusion.\n\n\n\n        | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\f   To write a good summary, imagine that a reader may choose whether to read the body of\n   the paper based on your summary. Thus, a summary should clearly describe your\n   approach to the problem and, most prominently, what your most important conclusions\n   were. The summary should inspire a reader to learn the details of your work. Your\n   concise presentation of the summary should inspire a reader to learn the details of your\n   work.\n\n● One page Table of Contents.\n\n   This allows the reader to easily find various parts of your solution, especially if they\n   chose not to read though in order (as is typical when reading long reports).\n\n● (No more than) two-page Letter to the IMMC with your recommendations.\n   Write a letter of no more than two pages addressed to the IMMC that clearly\n   communicates your modeling approach, recommendations, and key insights. The purpose\n   of this letter is to summarize the most important aspects of your work for decision makers\n   without technical backgrounds, highlighting your conclusions, rationale, and implications\n   rather than detailed mathematical analysis.\n\n\n● Twenty-page (maximum) report communicating the essential aspects of your solution.\n\n● The specifications of a complete solution:\n     ● A4, margins at least 1.5cm (OR) Letter, margins at least 0.6in\n     ● Papers must be typed and in English.\n     ● At least 12-point font size.\n     ● Note that (excluding references, appendices and AI Use Report see below)\n         you have a maximum of 24 pages to communicate your solution. Your\n         summary sheet, letter to the decision makers, visual graphic, and your table of\n         contents all count towards the 24-page limit (excluding references, appendices\n         and AI Use Report) of your solution.\n         Compliance: Failure to meet these specifications or attempts to circumvent them\n         may result in a lower designation or disqualification.\n\n● Reference List, Appendices, and AI Use Report.\n\n   A list of references, any appendices, and the AI Use Report, do not count toward the 24-\n   page limit and should appear after your completed solution. You should not make use of\n   unauthorized images and materials whose use is restricted by copyright laws. Ensure you\n   cite the sources of all ideas and materials (data, images, etc.) so it is clear to the reader\n   what ideas and mathematical work was completed by your team and where you are\n   building in ideas of others.\n\n\n   | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\f                                                                                                          v22026\n                 Use of Large Language Models and Generative AI Tools in the IM C              2\n\n\nThis policy is motivated by the rise of artificial intelligence (AI) tools, including large language models\n(LLMs), generative AI, mathematics software, translation software, code-copilots, auto-complete\ntechnologies, and other AI-assisted technologies. The policy aims to provide greater transparency and\nguidance to teams, advisors, and judges. This policy applies to all aspects of student work, from research\nand development of models (including code creation) to the written report, even translations from a teams’\npreferred language into English. Since these emerging technologies are quickly evolving, IM2C will refine\nthis policy as appropriate.\n\nTeams must be open and honest about all their uses of AI tools, including embedded AI (e.g.,\nmathematics software, translation software, code-copilots, and other AI assisted auto-complete\ntechnologies, etc.). The more transparent a team and its submission are, the more likely it is that their\nwork can be fully trusted, appreciated, and correctly used by others. These disclosures aid in\nunderstanding the development of intellectual work and in the proper acknowledgement of contributions.\nWithout open and clear citations and references of the role of AI tools, it is more likely that questionable\npassages and work could be identified as plagiarism and disqualified.\n\nSolving the problems does not require the use of AI tools, although their responsible use is permitted.\nIM2C recognizes the value of AI tools as productivity tools that can help teams in preparing their\nsubmission; to generate initial ideas for a structure, for example, or when summarizing, paraphrasing,\nlanguage polishing etc. There are many tasks in model development where human creativity and\nteamwork is essential, and where a reliance on AI tools introduces risks. Therefore, we advise caution\nwhen using these technologies for tasks such as model selection and building, assisting in the creation of\ncode, interpreting data and results of models, and drawing scientific conclusions.\n\nIt is important to note that AI tools have limitations and are unable to replace human creativity and critical\nthinking. IM2C advises teams to be aware of these risks if they choose to use AI tools:\n\n     • Objectivity: Previously published content containing racist, sexist, or other biases can arise in AI-\n        generated text, and some important viewpoints may not be represented.\n     • Accuracy: AI tools can ‘hallucinate’ i.e. generate false content, especially when used outside of\n        their domain or when dealing with complex or ambiguous topics. They can generate content that\n        is linguistically but not scientifically plausible, they can get facts wrong, and they have been\n        shown to generate citations that don’t exist. Some AI tools are only trained on content published\n        before a particular date and therefore present an incomplete picture.\n     • Contextual understanding: AI tools cannot apply human understanding to the context of a piece of\n        text, especially when dealing with idiomatic expressions, sarcasm, humor, or metaphorical\n        language. This can lead to errors or misinterpretations in the generated content.\n\nTraining data: AI tools require a large amount of high-quality training data to achieve optimal\nperformance. In some domains or languages, however, such data may not be readily available, thus\nlimiting the usefulness of any output.\n\n\n\n\n            | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\fGuidance for teams\n\nTeams are required to:\n\n     1. Clearly indicate the use of AI tools, including large language models (LLMs), generative AI,\n         mathematics software, translation software, code-copilots, auto-complete technologies, and other\n         AI-assisted technologies in their report, including which model was used and for what purpose.\n         Please use inline citations and the reference section. Also append the Report on Use of AI\n         Tools (described below) after your 24-page solution.\n     2. Verify the accuracy, validity, and appropriateness of the content and any citations generated by\n         AI tools and correct any errors or inconsistencies.\n     3. Provide citation and references, following guidance provided here. Double-check citations to\n         ensure they are accurate and are properly referenced.\n     4. Be conscious of the potential for plagiarism since AI tools may reproduce substantial text from\n         other sources. Check the original sources to be sure you are not plagiarizing someone else’s\n         work.\n\n                                  IM2C will take appropriate action\n                           when we identify submissions likely prepared with\n                                     undisclosed use of such tools.\n\nCitation and Referencing Directions\n\nThink carefully about how to document and reference whatever tools the team may choose to use. A\nvariety of style guides are beginning to incorporate policies for the citation and referencing of AI tools.\nUse inline citations and list all AI tools used in the reference section of your 24-page solution.\n\nWhether or not a team chooses to use AI tools, the main solution report is still limited to 24 pages. If a\nteam chooses to utilize AI, following the end of your report, add a new section titled Report on Use of AI.\nThis new section has no page limit and will not be counted as part of the 24-page solution. Examples (this\nis not exhaustive – adapt these examples to your situation):\n\n                                         Report on Use of AI Tools\n\n   1. Baidu Fanyi, Baidu Translate (Sep 10, 2025 version)\n      Uploaded entire paper written in Mandarin to be translated into English.\n\n   2. OpenAI ChatGPT (Nov 5, 2023 version, ChatGPT-4)\n      Query: <insert the exact wording you input into the AI tool>\n      Output: <insert the complete output from the AI tool>\n\n   3. OpenAI Ernie (Nov 5, 2023 version, Ernie 4.0)\n      Query: <insert the exact wording you input into the AI tool>\n      Output: <insert the complete output from the AI tool>\n\n   4. GitHub CoPilot (Jan 16, 2024 version)\n      Auto-completions for code used in preparing our models.\n\n            | ©2026 by The International Mathematical Modeling Challenge, IM2C | www.immchallenge.org |\n\f",
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "评价与定义",
+      "rephrased": "识别保护挑战及可量化保护标准",
+      "section": "4",
+      "evidence": "输出范围、历史责任与服务定义"
+    },
+    {
+      "id": "Q2",
+      "type": "约束优化",
+      "rephrased": "配置人力和技术并考虑地理与不确定性",
+      "section": "5",
+      "evidence": "两阶段LP、道路响应、技术及预算情景"
+    },
+    {
+      "id": "Q3",
+      "type": "逆向工作量规划",
+      "rephrased": "分析时间变化并反求维持目标所需人员",
+      "section": "6",
+      "evidence": "季节任务、共享预算、120小时/人月"
+    },
+    {
+      "id": "Q4",
+      "type": "敏感性与情景",
+      "rephrased": "改变资源、标准及巡访日期检验策略",
+      "section": "7",
+      "evidence": "独立约束检验、技术、网格与权重"
+    },
+    {
+      "id": "Q5",
+      "type": "方法评价",
+      "rephrased": "讨论优势、限制及校准需求",
+      "section": "8",
+      "evidence": "可解释性、数据和现场适用边界"
+    },
+    {
+      "id": "Q6",
+      "type": "结构迁移",
+      "rephrased": "适配不同大洲的两座保护区",
+      "section": "9",
+      "evidence": "本地输入、规则、数据需求及部署变化"
+    },
+    {
+      "id": "Letter",
+      "type": "非技术沟通",
+      "rephrased": "向IMMC解释方法、建议和关键洞见",
+      "section": "Letter",
+      "evidence": "不超过两页"
+    }
+  ],
+  "data_files": [
+    {
+      "path": "output/2026数模训练.pdf",
+      "sha256": "ecbc875536bd14ab6294e75e69157550b4b9487a4c5e57143a938aebc8008803",
+      "bytes": 4323273
+    },
+    {
+      "path": "output/model1/species_region_counts_2015.json",
+      "sha256": "206d158b1594bc306589a7060ba17b88d5b0159812738036b7d7fae34a4667fd",
+      "bytes": 149579,
+      "keys": [
+        "date",
+        "status",
+        "survey",
+        "law",
+        "strata",
+        "species",
+        "rows",
+        "automated_quality_checks",
+        "illustration",
+        "crosscheck",
+        "limitations"
+      ]
+    },
+    {
+      "path": "output/regions/region_base_data.json",
+      "sha256": "81c3c1d9493f4948e2b64eb11c4bbaff6c94d64c04d0c9c12981efb27d3bb682",
+      "bytes": 27928,
+      "keys": [
+        "generated_at_utc",
+        "status",
+        "regional_rows",
+        "animal_columns",
+        "field_usage",
+        "later_tasks",
+        "quality_checks",
+        "source_hashes"
+      ]
+    },
+    {
+      "path": "data/regions/processed/model_regions.geojson",
+      "sha256": "d665a51f56319afd1b514ecc2fdbfc3989d1be4a0767770e14d6abc238aad55d",
+      "bytes": 2334399,
+      "keys": [
+        "type",
+        "name",
+        "crs",
+        "features"
+      ],
+      "features": 17
+    },
+    {
+      "path": "data/roads/processed/park_nodes.csv",
+      "sha256": "a5dfb4005a763cc640d3c5265bfdbd081fa438d3c5e9f94371e64edc902de52a",
+      "bytes": 155627,
+      "columns": [
+        "node_id",
+        "osm_node_id",
+        "lon",
+        "lat",
+        "x_m",
+        "y_m",
+        "degree",
+        "component_id",
+        "boundary_clip",
+        "barrier",
+        "control_name",
+        "control_access",
+        "control_motor_vehicle"
+      ],
+      "rows": 1447,
+      "missing": {
+        "node_id": 0,
+        "osm_node_id": 27,
+        "lon": 0,
+        "lat": 0,
+        "x_m": 0,
+        "y_m": 0,
+        "degree": 0,
+        "component_id": 0,
+        "boundary_clip": 0,
+        "barrier": 1414,
+        "control_name": 1441,
+        "control_access": 1435,
+        "control_motor_vehicle": 1442
+      }
+    },
+    {
+      "path": "data/roads/processed/park_edges.csv",
+      "sha256": "a3fb0c8927e59f740c8fe658240de1c2e916810a0b7970ce40dffd64f9d84ca6",
+      "bytes": 265089,
+      "columns": [
+        "edge_id",
+        "u",
+        "v",
+        "osm_way_id",
+        "length_m",
+        "name",
+        "ref",
+        "highway",
+        "surface",
+        "tracktype",
+        "smoothness",
+        "width",
+        "maxspeed",
+        "oneway",
+        "junction",
+        "access",
+        "vehicle",
+        "motor_vehicle",
+        "motorcar",
+        "bridge",
+        "tunnel",
+        "layer",
+        "seasonal",
+        "ford",
+        "construction",
+        "allow_forward_by_oneway",
+        "allow_backward_by_oneway",
+        "access_review",
+        "road_group",
+        "original_vertex_segments",
+        "component_id"
+      ],
+      "rows": 1900,
+      "missing": {
+        "edge_id": 0,
+        "u": 0,
+        "v": 0,
+        "osm_way_id": 0,
+        "length_m": 0,
+        "name": 1833,
+        "ref": 1696,
+        "highway": 0,
+        "surface": 658,
+        "tracktype": 975,
+        "smoothness": 1829,
+        "width": 1900,
+        "maxspeed": 1300,
+        "oneway": 1632,
+        "junction": 1892,
+        "access": 1401,
+        "vehicle": 1866,
+        "motor_vehicle": 1563,
+        "motorcar": 1900,
+        "bridge": 1898,
+        "tunnel": 1900,
+        "layer": 1898,
+        "seasonal": 1900,
+        "ford": 1890,
+        "construction": 1900,
+        "allow_forward_by_oneway": 0,
+        "allow_backward_by_oneway": 0,
+        "access_review": 0,
+        "road_group": 0,
+        "original_vertex_segments": 0,
+        "component_id": 0
+      }
+    },
+    {
+      "path": "data/roads/processed/park_edges.geojson",
+      "sha256": "56345cf6d609b21ee75159249cba2ce70e50341bc8e06f6144f37d53437a767e",
+      "bytes": 4826878,
+      "keys": [
+        "type",
+        "features"
+      ],
+      "features": 1900
+    },
+    {
+      "path": "data/modeling/q2_assumptions.json",
+      "sha256": "cc3bfbe27078dce6f25d43d89ab0a19da1b2bb6a1a1a4de390c72920f95b4737",
+      "bytes": 987,
+      "keys": [
+        "status",
+        "parameters"
+      ]
+    },
+    {
+      "path": "data/modeling/q3_assumptions.json",
+      "sha256": "257a3a1a7f25f74e510ed76ec80900be281e7e7bad4a26e1d7ea81f4769bec99",
+      "bytes": 2711,
+      "keys": [
+        "version",
+        "scope",
+        "target_rule",
+        "effective_person_hours_month",
+        "fixed_reference_staff",
+        "staff_reference_rule",
+        "fleet_rule",
+        "standard_month_days",
+        "dry_months",
+        "early_fire_months",
+        "late_fire_months",
+        "water_inventory_rule",
+        "water_team_size",
+        "water_preparation_hours_visit",
+        "water_travel_rule",
+        "fire_rule",
+        "scenarios",
+        "evidence_status"
+      ]
+    },
+    {
+      "path": "data/question3/processed/water_points.json",
+      "sha256": "fd5301984f9832acc90f72fbf7e8ca5252f7ff947df36775360556c2586eb63c",
+      "bytes": 27372,
+      "keys": [
+        "source_doi",
+        "source_year",
+        "table_count",
+        "BH_count",
+        "modelled_BH_count",
+        "complete_park_inventory",
+        "transcription_sha256",
+        "source_image_sha256",
+        "route_rule",
+        "points"
+      ]
+    },
+    {
+      "path": "output/question2/q2_model_inputs.json",
+      "sha256": "8b3f4a69c9db5be0a8c993c0b6b35437cd432d5821b41d69a514521dc576a740",
+      "bytes": 609531,
+      "keys": [
+        "config",
+        "AHP",
+        "management_weight_estimation",
+        "bases",
+        "candidate_entry_count",
+        "graph_nodes",
+        "graph_directed_arcs",
+        "targets",
+        "region_ids",
+        "animal_values_15_regions",
+        "animal_unknown_regions",
+        "human_budget",
+        "response_reserved_hours",
+        "drone_budget",
+        "scope",
+        "checks",
+        "limitations"
+      ]
+    },
+    {
+      "path": "output/question6/q6_results.json",
+      "sha256": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
+      "bytes": 6599788,
+      "keys": [
+        "status",
+        "scope",
+        "config",
+        "parks",
+        "cases",
+        "grid_verification"
+      ]
+    },
+    {
+      "path": "output/revision_feasibility/20261006/yellowstone_wolf_2022_territories.geojson",
+      "sha256": "a4be85f9b63afcb05b2ca2040a407bc0530c6df095d069ca72a05a8831bc4fda",
+      "bytes": 7284,
+      "keys": [
+        "type",
+        "features"
+      ],
+      "features": 10
+    }
+  ],
+  "approval": "Existing model and chapter scope authorized in this session; this is re-verification, not a new selection checkpoint."
+}

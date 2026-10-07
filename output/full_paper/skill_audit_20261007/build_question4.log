@@ -1,0 +1,46 @@
+{
+  "cases": 131,
+  "verified_feasible_cases": 127,
+  "infeasible_cases": 4,
+  "verification_passed": true,
+  "q2_threshold_hours": 5286.114336435483,
+  "q2_threshold_staff": 45,
+  "q3_peak_threshold_hours": 6831.8318212101285,
+  "q3_peak_threshold_staff": 57,
+  "schedule_summary": [
+    {
+      "arrangement": "dispersed",
+      "total_visits": 68,
+      "total_water_hours": 422.33853202080985,
+      "maximum_visit_gap_days": 8.0,
+      "peak_daily_water_hours": 15.482724941182028,
+      "peak_water_crew_lower_bound": 1
+    },
+    {
+      "arrangement": "clustered",
+      "total_visits": 68,
+      "total_water_hours": 422.3385320208099,
+      "maximum_visit_gap_days": 27.0,
+      "peak_daily_water_hours": 105.58463300520248,
+      "peak_water_crew_lower_bound": 7
+    }
+  ],
+  "policy_gains": [
+    {
+      "scenario": "q2_scarce",
+      "gain_points": 13.30512898152758
+    },
+    {
+      "scenario": "peak_N55",
+      "gain_points": 3.983869662593591
+    },
+    {
+      "scenario": "peak_N59_U120",
+      "gain_points": 0.10323717753861672
+    },
+    {
+      "scenario": "drought_N59_U120",
+      "gain_points": 6.83297419094707
+    }
+  ]
+}

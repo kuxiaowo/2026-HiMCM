@@ -1,10 +1,10 @@
 {
   "source_sha256": {
-    "output/question2/q2_model_inputs.json": "28dc7b194d6ca2043b835c319509722d68670549a35b71ce53076dad8c3185ba",
-    "output/question2/q2_results.json": "40b3aac1caa592fabe1a79246488f27e3a9aa3c72ea23ed2ec61f1a66514167b",
-    "output/question3/q3_results.json": "22e42d761d579e165b2856f179b70b4b987f8b7495201ca412a459a160897809",
+    "output/question2/q2_model_inputs.json": "8b3f4a69c9db5be0a8c993c0b6b35437cd432d5821b41d69a514521dc576a740",
+    "output/question2/q2_results.json": "b00a7204922cbec249757da4c242ef4bb1220f266f5e088c927cfcdaef95969a",
+    "output/question3/q3_results.json": "74499f3967b7645a5942b6d9d1095ae633f367e695dfc92d310e745402adbdc4",
     "data/question3/processed/water_points.json": "fd5301984f9832acc90f72fbf7e8ca5252f7ff947df36775360556c2586eb63c",
-    "data/modeling/q3_assumptions.json": "428cf5aa547dd5cf8dca9243448de4c5b5ba19d2aad2dfee1c8c4e0ffe23018b"
+    "data/modeling/q3_assumptions.json": "257a3a1a7f25f74e510ed76ec80900be281e7e7bad4a26e1d7ea81f4769bec99"
   },
   "water_evidence": {
     "sample_count": 17,

@@ -2,6 +2,8 @@
 
 当前正文为同名LaTeX与Markdown。案例为奇特旺与黄石；按用户2026-10-06要求，已用真实发布多边形、道路、位置点与ESA遥感生境替换合成网络。奇特旺主边界为WDPCA2026-10，边界面积一致性未通过，数值仅对应发布范围的有条件试算。原型移入历史备查，不混入正式结果。
 
+当前[正式PDF](../../output/pdf/skill_checked_20261007/question6_adaptation.pdf)为6页，含6个编号公式、3幅图、4张表；源码为[question6_adaptation.tex](question6_adaptation.tex)，同步正文为[question6_adaptation.md](question6_adaptation.md)。本机XeLaTeX已成功编译并逐页检查；记录见[最终核验](../../output/question6/q6_latex_verification.json)。旧7页Markdown阅读预览保留为历史备查。
+
 ## 6.1 模型结构与迁移方法
 ### 6.1.1 共同结构与本地参数
 保留需求、服务、响应与预算关系；当地物种权重需校准。初步验证使用真实陆域面积份额。
