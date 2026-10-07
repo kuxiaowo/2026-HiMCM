@@ -1,0 +1,688 @@
+{
+  "generated_utc": "2026-10-06T13:49:01.766743+00:00",
+  "scope": "Revision feasibility audit; no production model results changed.",
+  "pdf_source_pages_visually_checked_this_round": [
+    8,
+    9
+  ],
+  "species_aggregate_checks": [
+    {
+      "code": "Ab",
+      "name_zh": "红狷羚",
+      "numeric_row_totals": {
+        "no_seen": 247.0,
+        "count_estimate": 889.0,
+        "variance": 35329.0
+      },
+      "individual_table_totals": {
+        "no_seen": 247.0,
+        "count_estimate": 889.0,
+        "variance": 35329.0
+      },
+      "summary_table_totals": {
+        "no_seen": 247.0,
+        "count_estimate": 889.0,
+        "variance": 35329.0
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "blank_count_strata": [
+        "ENP8",
+        "ENP9",
+        "ENP11",
+        "ENP14",
+        "ENP17"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Am",
+      "name_zh": "跳羚",
+      "numeric_row_totals": {
+        "no_seen": 2930.0,
+        "count_estimate": 10317.0,
+        "variance": 1549199.5999999999
+      },
+      "individual_table_totals": {
+        "no_seen": 2930.0,
+        "count_estimate": 10317.0,
+        "variance": 1559199.6
+      },
+      "summary_table_totals": {
+        "no_seen": 2930.0,
+        "count_estimate": 10317.0,
+        "variance": 1549199.6
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 10000.000000000233
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 10000.0
+      },
+      "blank_count_strata": [
+        "ENP9",
+        "ENP14"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Ct",
+      "name_zh": "蓝角马",
+      "numeric_row_totals": {
+        "no_seen": 1247.0,
+        "count_estimate": 4207.0,
+        "variance": 417120.1
+      },
+      "individual_table_totals": {
+        "no_seen": 1247.0,
+        "count_estimate": 4207.0,
+        "variance": 417120.1
+      },
+      "summary_table_totals": {
+        "no_seen": 1247.0,
+        "count_estimate": 4207.0,
+        "variance": 417120.1
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "blank_count_strata": [
+        "ENP8",
+        "ENP9",
+        "ENP14",
+        "ENP17"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Db",
+      "name_zh": "黑犀牛",
+      "numeric_row_totals": {
+        "no_seen": 317.0,
+        "count_estimate": 1107.0,
+        "variance": 7166.7
+      },
+      "individual_table_totals": {
+        "no_seen": 317.0,
+        "count_estimate": 1280.0,
+        "variance": 7166.7
+      },
+      "summary_table_totals": {
+        "no_seen": 317.0,
+        "count_estimate": 1280.0,
+        "variance": 7166.7
+      },
+      "count_gap_individual_minus_rows": 173.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 173.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "blank_count_strata": [
+        "ENP9",
+        "ENP14"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Eb",
+      "name_zh": "平原斑马",
+      "numeric_row_totals": {
+        "no_seen": 4083.0,
+        "count_estimate": 14232.0,
+        "variance": 1820077.6
+      },
+      "individual_table_totals": {
+        "no_seen": 4083.0,
+        "count_estimate": 14232.0,
+        "variance": 1820078.0
+      },
+      "summary_table_totals": {
+        "no_seen": 4083.0,
+        "count_estimate": 14232.0,
+        "variance": 1820077.6
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.39999999990686774
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.39999999990686774
+      },
+      "blank_count_strata": [],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Hz",
+      "name_zh": "哈特曼山斑马",
+      "numeric_row_totals": {
+        "no_seen": 297.0,
+        "count_estimate": 875.0,
+        "variance": 66946.5
+      },
+      "individual_table_totals": {
+        "no_seen": 297.0,
+        "count_estimate": 875.0,
+        "variance": 66946.5
+      },
+      "summary_table_totals": null,
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": null,
+      "blank_count_strata": [
+        "ENP3410",
+        "ENP5",
+        "ENP6",
+        "ENP7",
+        "ENP8",
+        "ENP9",
+        "ENP11",
+        "ENP12",
+        "ENP13",
+        "ENP14",
+        "ENP15",
+        "ENP16",
+        "ENP17"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Gc",
+      "name_zh": "长颈鹿",
+      "numeric_row_totals": {
+        "no_seen": 878.0,
+        "count_estimate": 3172.0,
+        "variance": 62010.7
+      },
+      "individual_table_totals": {
+        "no_seen": 878.0,
+        "count_estimate": 3172.0,
+        "variance": 62010.7
+      },
+      "summary_table_totals": {
+        "no_seen": 878.0,
+        "count_estimate": 3172.0,
+        "variance": 62010.7
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "blank_count_strata": [
+        "ENP6",
+        "ENP9"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "La",
+      "name_zh": "非洲草原象",
+      "numeric_row_totals": {
+        "no_seen": 890.0,
+        "count_estimate": 2911.0,
+        "variance": 105660.2
+      },
+      "individual_table_totals": {
+        "no_seen": 890.0,
+        "count_estimate": 2911.0,
+        "variance": 105660.2
+      },
+      "summary_table_totals": {
+        "no_seen": 890.0,
+        "count_estimate": 2911.0,
+        "variance": 105660.2
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "blank_count_strata": [
+        "ENP3410",
+        "ENP8",
+        "ENP11"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Og",
+      "name_zh": "南非剑羚",
+      "numeric_row_totals": {
+        "no_seen": 886.0,
+        "count_estimate": 4108.0,
+        "variance": 91792.8
+      },
+      "individual_table_totals": {
+        "no_seen": 886.0,
+        "count_estimate": 4108.0,
+        "variance": 91792.8
+      },
+      "summary_table_totals": {
+        "no_seen": 886.0,
+        "count_estimate": 4108.0,
+        "variance": 91792.8
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "blank_count_strata": [],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "Sc",
+      "name_zh": "鸵鸟",
+      "numeric_row_totals": {
+        "no_seen": 783.0,
+        "count_estimate": 3695.0,
+        "variance": 279615.0
+      },
+      "individual_table_totals": {
+        "no_seen": 783.0,
+        "count_estimate": 3695.0,
+        "variance": 279615.0
+      },
+      "summary_table_totals": {
+        "no_seen": 783.0,
+        "count_estimate": 3695.0,
+        "variance": 279615.0
+      },
+      "count_gap_individual_minus_rows": 0.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": 0.0,
+        "count_estimate": 0.0,
+        "variance": 0.0
+      },
+      "blank_count_strata": [],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    },
+    {
+      "code": "To",
+      "name_zh": "大羚羊（Eland）",
+      "numeric_row_totals": {
+        "no_seen": 301.0,
+        "count_estimate": 928.0,
+        "variance": 22944.8
+      },
+      "individual_table_totals": {
+        "no_seen": 301.0,
+        "count_estimate": 1103.0,
+        "variance": 22944.8
+      },
+      "summary_table_totals": {
+        "no_seen": 450.0,
+        "count_estimate": 1321.0,
+        "variance": 32017.0
+      },
+      "count_gap_individual_minus_rows": 175.0,
+      "column_gaps_individual_minus_numeric_rows": {
+        "no_seen": 0.0,
+        "count_estimate": 175.0,
+        "variance": 0.0
+      },
+      "column_gaps_individual_minus_summary": {
+        "no_seen": -149.0,
+        "count_estimate": -218.0,
+        "variance": -9072.2
+      },
+      "blank_count_strata": [
+        "ENP2",
+        "ENP7",
+        "ENP8",
+        "ENP9",
+        "ENP11",
+        "ENP14"
+      ],
+      "blank_handling": "Numeric rows only; blanks are not observed zeros."
+    }
+  ],
+  "species_field_conflicts": {
+    "springbok_ENP6": {
+      "seen": 18.0,
+      "estimate": 11.0,
+      "lower": 18.0,
+      "upper": 236.0,
+      "finding": "Printed estimate is below both seen and lower limit; correct count is unresolved."
+    },
+    "springbok_ENP16": {
+      "estimate": 1027.0,
+      "survey_area_km2": 918.1365,
+      "printed_density": 2.32,
+      "density_derived_from_printed_count_and_area": 1.1185700601163335,
+      "finding": "Density can be recalculated only conditional on the printed count and area."
+    },
+    "wildebeest_ENP15": {
+      "estimate": 903.0,
+      "printed_CI_halfwidth": 571.0,
+      "printed_CI_percent": 6327.0,
+      "CI_percent_from_rounded_printed_fields": 63.23366555924695,
+      "finding": "Percentage field is inconsistent; derived rounded-field ratio is not the unknown unrounded source value."
+    }
+  },
+  "chitwan_boundary_checks": {
+    "published_attributes": {
+      "site_id": 805,
+      "rep_area": 932.0,
+      "gis_area": 1213.00265952,
+      "verif": "State Verified",
+      "metadataid": 1778
+    },
+    "official_reported_park_area_km2": 952.63,
+    "official_reported_buffer_area_km2": 729.37,
+    "WDPCA": {
+      "type": "Polygon",
+      "valid": true,
+      "validity_detail": "Valid Geometry",
+      "bounds": [
+        83.877704978,
+        27.342676657000027,
+        84.742804326,
+        27.68972545600002
+      ],
+      "polygon_components": 1,
+      "interior_rings": 0,
+      "utm45n_area_km2": 1214.0634646073454,
+      "wgs84_geodesic_area_km2": 1213.002628062032
+    },
+    "OSM": {
+      "type": "MultiPolygon",
+      "valid": true,
+      "validity_detail": "Valid Geometry",
+      "bounds": [
+        83.8756767,
+        27.3432843,
+        84.7407463,
+        27.6908177
+      ],
+      "polygon_components": 1,
+      "interior_rings": 0,
+      "utm45n_area_km2": 1208.5784424050728,
+      "wgs84_geodesic_area_km2": 1207.5194951163726
+    },
+    "ICIMOD_park_raw": {
+      "type": "Polygon",
+      "valid": false,
+      "validity_detail": "Ring Self-intersection[84.7202885979887 27.4232046200983]",
+      "bounds": [
+        83.87770497813852,
+        27.342369318752883,
+        84.7425095111874,
+        27.689725455778504
+      ],
+      "polygon_components": 1,
+      "interior_rings": 2,
+      "utm45n_area_km2": 1213.722961552636,
+      "wgs84_geodesic_area_km2": 1212.662755611862
+    },
+    "ICIMOD_park_after_make_valid": {
+      "type": "Polygon",
+      "valid": true,
+      "validity_detail": "Valid Geometry",
+      "bounds": [
+        83.87770497813852,
+        27.342369318752883,
+        84.7425095111874,
+        27.689725455778504
+      ],
+      "polygon_components": 1,
+      "interior_rings": 4,
+      "utm45n_area_km2": 1213.7229615526323,
+      "wgs84_geodesic_area_km2": 1212.662755611862
+    },
+    "ICIMOD_buffer": {
+      "type": "MultiPolygon",
+      "valid": true,
+      "validity_detail": "Valid Geometry",
+      "bounds": [
+        83.84569799980521,
+        27.28234899998273,
+        84.7496260002651,
+        27.703817999956872
+      ],
+      "polygon_components": 3,
+      "interior_rings": 1,
+      "utm45n_area_km2": 730.2339375603992,
+      "wgs84_geodesic_area_km2": 729.5820550468967
+    },
+    "WDPCA_vs_ICIMOD_symmetric_difference": {
+      "type": "MultiPolygon",
+      "valid": true,
+      "validity_detail": "Valid Geometry",
+      "bounds": [
+        83.877704978,
+        27.342369318752883,
+        84.742804326,
+        27.68972545600002
+      ],
+      "polygon_components": 3305,
+      "interior_rings": 1,
+      "utm45n_area_km2": 0.8559162393918579,
+      "wgs84_geodesic_area_km2": 0.855050614095728
+    },
+    "WDPCA_vs_OSM_symmetric_difference": {
+      "type": "MultiPolygon",
+      "valid": true,
+      "validity_detail": "Valid Geometry",
+      "bounds": [
+        83.8756767,
+        27.342676657000027,
+        84.742804326,
+        27.6908177
+      ],
+      "polygon_components": 238,
+      "interior_rings": 0,
+      "utm45n_area_km2": 38.91339641444012,
+      "wgs84_geodesic_area_km2": 38.87599400304668
+    },
+    "WDPCA_overlap_with_ICIMOD_buffer": {
+      "type": "MultiPolygon",
+      "valid": true,
+      "validity_detail": "Valid Geometry",
+      "bounds": [
+        83.877704978,
+        27.34271542414005,
+        84.73727866684746,
+        27.68972545600002
+      ],
+      "polygon_components": 1048,
+      "interior_rings": 0,
+      "utm45n_area_km2": 0.47900676547899473,
+      "wgs84_geodesic_area_km2": 0.4783109699667654
+    },
+    "geodesic_minus_published_gis_km2": -3.1457967907044804e-05,
+    "projection_minus_geodesic_km2": 1.0608365453133501,
+    "geodesic_excess_over_official_percent": 27.33197863410055,
+    "utm_excess_over_official_percent": 27.443337351053977,
+    "scope": "Differences establish a source-level area inconsistency, not which legal boundary or area should be corrected."
+  },
+  "water_inventory_scope": {
+    "all_sample_points": 42,
+    "BH_sample_points": 17,
+    "nonblank_sample_years": [
+      "2013"
+    ],
+    "blank_sample_dates": [
+      {
+        "name": "Arendsnes",
+        "type": "unknown"
+      }
+    ],
+    "finding": "Historical water-chemistry sample, not a complete current maintenance inventory."
+  },
+  "crosspark_new_files": {
+    "yellowstone_2022_wolf_features": 10,
+    "all_wolf_geometries_valid": true,
+    "chitwan_tiger_preview_complete_rows": 48,
+    "chitwan_tiger_complete_csv_obtained": false
+  },
+  "baseline_config_retained": {
+    "grid_km": 10.0,
+    "road_speed_kmh": 30.0,
+    "walking_speed_kmh": 4.0,
+    "entry_decay_hours": 2.0,
+    "drone_speed_kmh": 40.0,
+    "checks_per_month": 8.0,
+    "service_reference_area_km2": 100.0,
+    "team_size": 2.0,
+    "drone_team_size": 2.0,
+    "observation_hours": 0.16666666666666666,
+    "preparation_hours": 0.08333333333333333,
+    "dispatch_hours": 0.16666666666666666,
+    "response_limit_hours": 2.0,
+    "safe_flight_hours": 0.6,
+    "minimum_open_share": 0.6,
+    "minimum_reachable_service": 0.15,
+    "staff_reference": 295,
+    "protection_staff_fraction": 0.6,
+    "effective_hours_month": 120.0,
+    "response_staff_per_site": 2.0,
+    "response_hours_day": 8.0,
+    "days_month": 30.0,
+    "drone_count": 30.0,
+    "flight_hours_per_drone_day": 2.0,
+    "drone_days_month": 20.0,
+    "management_weight_method": "entropy_information"
+  },
+  "input_fingerprints": [
+    {
+      "path": "data/species/raw/etosha_aerial_census_2015.pdf",
+      "bytes": 2003584,
+      "sha256": "623796eaf5501a85891b701cb3f005e02533bea3d0b524a566618fd15d11a9a8"
+    },
+    {
+      "path": "output/model1/species_region_counts_2015.json",
+      "bytes": 149579,
+      "sha256": "206d158b1594bc306589a7060ba17b88d5b0159812738036b7d7fae34a4667fd"
+    },
+    {
+      "path": "data/question6/raw/chitwan_wdpca.json",
+      "bytes": 256788,
+      "sha256": "c945bd4b362587f5ae89f29c9eb1690014cff5381f4f3e6101d8e8ffea97d108"
+    },
+    {
+      "path": "data/question6/processed/chitwan_boundary.geojson",
+      "bytes": 250462,
+      "sha256": "2ad7a23c4b34f23fe6eb3b380c2e7fa3bb64197bd2af8dcced97d9f6a7428864"
+    },
+    {
+      "path": "data/question6/processed/chitwan_osm_boundary.geojson",
+      "bytes": 49179,
+      "sha256": "751844d81a653fdbca7e4129ec949418fe9ae82fea3407fe7a969382fab46c0a"
+    },
+    {
+      "path": "data/question6/raw/icimod_nepal_pa.geojson",
+      "bytes": 5370363,
+      "sha256": "b798981a6e4903bf99e393e7d2f46ef2000fac490b108ab9a95ac7399e4a7a37"
+    },
+    {
+      "path": "data/question3/raw/koedoe_water_points_2013.csv",
+      "bytes": 1829,
+      "sha256": "2fdbe32c5cf79ff94a6349add3225991347bb8cac7054cfc88b7c0eebb3ddc82"
+    },
+    {
+      "path": "output/question2/q2_model_inputs.json",
+      "bytes": 609531,
+      "sha256": "8b3f4a69c9db5be0a8c993c0b6b35437cd432d5821b41d69a514521dc576a740"
+    },
+    {
+      "path": "docs/paper/full_paper.tex",
+      "bytes": 485712,
+      "sha256": "f47720233e44e986c4e392b70264a9182ac8c6e69e07ca93f1c65311d07308ca"
+    },
+    {
+      "path": "output/pdf/full_paper.pdf",
+      "bytes": 336546,
+      "sha256": "4249fa40354db260ad5f2a810415619f292f682bac45ae7a542eef89a66a9340"
+    },
+    {
+      "path": "data/revision_feasibility/20261006/dnpwc_gis_database_final_2020.pdf",
+      "bytes": 1876074,
+      "sha256": "f15dda0971fb10dba9ca518f3c08bd13550787753b8a20de0fb04d09e4aad2aa"
+    },
+    {
+      "path": "data/revision_feasibility/20261006/iucn_traffic_cop20_analyses_v4.pdf",
+      "bytes": 9429008,
+      "sha256": "3d386d95064dc21fa9ae43fc3a9358d8cd53a9552aff528dceb7476e98216895"
+    },
+    {
+      "path": "data/revision_feasibility/20261006/rhino_movement_2019.html",
+      "bytes": 445311,
+      "sha256": "78c73dd2a72c564cfb02b32ce4ab813368a459dc9f4ebdef12d539d64b13e1a6"
+    },
+    {
+      "path": "data/revision_feasibility/20261006/yellowstone_wolf_1995_2022.zip",
+      "bytes": 793419,
+      "sha256": "3836eaeb11eee25e3844a91d0fdee310a5536c9b54fe6a558d65eeaed6748866"
+    },
+    {
+      "path": "data/revision_feasibility/20261006/yellowstone_wolf_cougar_elk_2025.pdf",
+      "bytes": 4538628,
+      "sha256": "02b4c2ee9fa76dfbef115586c61d29144ba13355e43234a4b8a2cae57bc216d9"
+    },
+    {
+      "path": "data/revision_feasibility/20261006/dryad_data_csv_public_preview.txt",
+      "bytes": 33074,
+      "sha256": "2fea54cc7826a6c8aa894bd6fbcfb2f20f595aaf3b483aa81a0777ba2dcee0ae"
+    }
+  ]
+}

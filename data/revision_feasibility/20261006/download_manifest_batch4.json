@@ -1,0 +1,43 @@
+[
+  {
+    "requested_url": "https://datadryad.org/dataset/doi:10.5061/dryad.7h44j1057",
+    "file": "data/revision_feasibility/20261006/chitwan_tiger_dryad.html",
+    "accessed_utc": "2026-10-06T13:36:43.516494+00:00",
+    "status": 200,
+    "final_url": "https://datadryad.org/dataset/doi:10.5061/dryad.7h44j1057",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 47650,
+    "sha256": "8a8ceda6c95ba4cd332618e2269a1877d887aa8d4a3dd89ec7727865c5fcb327",
+    "relevant_links": [
+      "/downloads/file_stream/4813216",
+      "/downloads/file_stream/4813222",
+      "/downloads/file_stream/4813225",
+      "/downloads/file_stream/4813224",
+      "/downloads/file_stream/4813223",
+      "https://www.reddit.com/submit?url=https://datadryad.org%2Fdataset%2Fdoi%3A10.5061%2Fdryad.7h44j1057&title=Dryad+dataset%3A+Data+from%3A+Tiger+habitat+occupancy+in+Chitwan%E2%80%93Parsa+Complex%3A+Implications+for+human%E2%80%93tiger+conflict+management+strategies"
+    ]
+  },
+  {
+    "requested_url": "https://www.nps.gov/yell/learn/nature/wolf-reports.htm",
+    "file": "data/revision_feasibility/20261006/yellowstone_wolf_gis.html",
+    "accessed_utc": "2026-10-06T13:36:43.516494+00:00",
+    "status": 200,
+    "final_url": "https://www.nps.gov/yell/learn/nature/wolf-reports.htm",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 2138,
+    "sha256": "63ee5b5d505ec7eeb3b6c3d6685425190192b5710c8afee5ae71d40e2b54fb74",
+    "relevant_links": [],
+    "content_validation": "NPS Page In-Progress placeholder despite HTTP200; use yellowstone_science_reports.html for real directory."
+  },
+  {
+    "requested_url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm",
+    "file": "data/revision_feasibility/20261006/yellowstone_park_roads_2026.html",
+    "accessed_utc": "2026-10-06T13:36:43.517495+00:00",
+    "status": 200,
+    "final_url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 64059,
+    "sha256": "9dd6a07b15554ba6451167e9333a8441f9e0b0b5bfdead08239085a73ea29f31",
+    "relevant_links": []
+  }
+]

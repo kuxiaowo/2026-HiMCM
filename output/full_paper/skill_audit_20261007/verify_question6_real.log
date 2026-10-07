@@ -1,0 +1,60 @@
+[
+  {
+    "case": "C0",
+    "passed": true,
+    "independent_hours": 1085.1484009583687,
+    "lp_difference": -2.0463630789890885e-12
+  },
+  {
+    "case": "C1",
+    "passed": true,
+    "reason": "analytically infeasible: target above response cap"
+  },
+  {
+    "case": "C2",
+    "passed": true,
+    "independent_hours": 1550.3908246609876,
+    "lp_difference": -1.3642420526593924e-12
+  },
+  {
+    "case": "C3",
+    "passed": true,
+    "independent_hours": 1069.5567558793318,
+    "lp_difference": -1.3642420526593924e-12
+  },
+  {
+    "case": "Y0",
+    "passed": true,
+    "independent_hours": 1541.6290119633736,
+    "lp_difference": 2.2737367544323206e-12
+  },
+  {
+    "case": "Y1",
+    "passed": true,
+    "reason": "analytically infeasible: target above response cap"
+  },
+  {
+    "case": "Y2",
+    "passed": true,
+    "independent_hours": 1973.2284242749029,
+    "lp_difference": 9.094947017729282e-13
+  },
+  {
+    "case": "Y3",
+    "passed": true,
+    "independent_hours": 1467.9709481460475,
+    "lp_difference": 6.821210263296962e-13
+  },
+  {
+    "case": "Cfine",
+    "passed": true,
+    "independent_hours": 1085.0248877523743,
+    "lp_difference": -4.092726157978177e-12
+  },
+  {
+    "case": "Yfine",
+    "passed": true,
+    "independent_hours": 1543.732857937644,
+    "lp_difference": -2.2737367544323206e-12
+  }
+]

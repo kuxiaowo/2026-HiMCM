@@ -1,0 +1,112 @@
+{
+  "source_sha256": {
+    "output/question2/q2_model_inputs.json": "28dc7b194d6ca2043b835c319509722d68670549a35b71ce53076dad8c3185ba",
+    "output/question2/q2_results.json": "40b3aac1caa592fabe1a79246488f27e3a9aa3c72ea23ed2ec61f1a66514167b",
+    "output/question3/q3_results.json": "22e42d761d579e165b2856f179b70b4b987f8b7495201ca412a459a160897809",
+    "data/question3/processed/water_points.json": "fd5301984f9832acc90f72fbf7e8ca5252f7ff947df36775360556c2586eb63c",
+    "data/modeling/q3_assumptions.json": "428cf5aa547dd5cf8dca9243448de4c5b5ba19d2aad2dfee1c8c4e0ffe23018b"
+  },
+  "water_evidence": {
+    "sample_count": 17,
+    "round_travel_hours_sum": 42.87564983593457,
+    "dry_water_hours": 422.3385320208099,
+    "point_rows": [
+      {
+        "name": "Narawandu",
+        "dry_monthly_person_hours": 51.10947851328061
+      },
+      {
+        "name": "Pan Point",
+        "dry_monthly_person_hours": 44.02257681327907
+      },
+      {
+        "name": "Okahakana",
+        "dry_monthly_person_hours": 43.92777006304324
+      },
+      {
+        "name": "Mbari",
+        "dry_monthly_person_hours": 35.529898686002305
+      },
+      {
+        "name": "Sonderkop",
+        "dry_monthly_person_hours": 31.78996863347653
+      },
+      {
+        "name": "Eindpaal",
+        "dry_monthly_person_hours": 31.224282709138254
+      },
+      {
+        "name": "Dolomitepunt",
+        "dry_monthly_person_hours": 29.48513997084828
+      },
+      {
+        "name": "Duivelsvuur",
+        "dry_monthly_person_hours": 29.02498140997525
+      },
+      {
+        "name": "Gruneveld",
+        "dry_monthly_person_hours": 22.003850480712927
+      },
+      {
+        "name": "Duineveld",
+        "dry_monthly_person_hours": 20.48594262281591
+      },
+      {
+        "name": "Olifantsbad",
+        "dry_monthly_person_hours": 17.573048434874895
+      },
+      {
+        "name": "Toespad",
+        "dry_monthly_person_hours": 16.53229832505511
+      },
+      {
+        "name": "Gemsbokvlakte",
+        "dry_monthly_person_hours": 13.318184860779857
+      },
+      {
+        "name": "Nomab",
+        "dry_monthly_person_hours": 10.821421251447502
+      },
+      {
+        "name": "Teobron",
+        "dry_monthly_person_hours": 10.736527262481351
+      },
+      {
+        "name": "Nabrownij",
+        "dry_monthly_person_hours": 9.44548176215068
+      },
+      {
+        "name": "Olifantsrus",
+        "dry_monthly_person_hours": 5.307680221448121
+      }
+    ]
+  },
+  "figures": [
+    {
+      "number": "3-1",
+      "name": "fig1_monthly_model_pipeline"
+    },
+    {
+      "number": "3-2",
+      "name": "fig2_water_points_and_workload"
+    },
+    {
+      "number": "3-3",
+      "name": "fig3_monthly_hours_and_staff"
+    },
+    {
+      "number": "3-4",
+      "name": "fig4_drought_workload_and_service"
+    }
+  ],
+  "formats": [
+    "png",
+    "svg",
+    "tikz"
+  ],
+  "same_primitives_for_all_formats": true,
+  "references": [
+    "PAWS 2016 Figure 5: modular flow",
+    "Community patrol 2025 Figure 3: spatial and budget multipanel comparison"
+  ]
+}

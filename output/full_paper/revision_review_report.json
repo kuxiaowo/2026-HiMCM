@@ -1,0 +1,344 @@
+{
+  "status": "historical_pre_short_caption_internal_review",
+  "review_date_local": "2026-10-07",
+  "reviewed_at_utc": "2026-10-06T19:02:18.584963+00:00",
+  "verdict": "通过（已披露的条件性规划与文稿核验范围）",
+  "scope": "Internal mathematical, numerical, source, manuscript and layout review; not contest ranking, field validation or ecological certification.",
+  "source": "docs/paper/full_paper.tex",
+  "source_sha256": "bc0a2d857f9770315447d9b89ead5c960a548bde8ddefd81c3f93856c4ffc783",
+  "pdf": "output/pdf/skill_checked_20261007/full_paper.pdf",
+  "pdf_sha256": "d34eaff990a194f9dbde25c2f911c73e791074583ce040f612172d2838cfe78a",
+  "dimensions": {
+    "方法选取": {
+      "score": 4,
+      "verdict": "在条件性工作量规划范围内合理",
+      "notes": "路网约束LP与逆向工作量问题相匹配；同预算均衡/需求对照已计算。替代方法是回顾性适用性比较，未伪称完成缺数据的轮班或概率实验。",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/modeling_doc.json",
+        "output/question2/q2_results.json"
+      ]
+    },
+    "题目要求": {
+      "score": 4,
+      "verdict": "六题与非技术信件均有可指认答案",
+      "notes": "逐项对应章节4—9及第22页信。纸张、边距、普通文字字号和页数满足所核对题面；动物代理仅覆盖六类历史调查，迁移与现场执行仍明确附条件。",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/task_package.json",
+        "output/full_paper/full_paper_validation.json"
+      ]
+    },
+    "谬误与矛盾": {
+      "score": 4,
+      "verdict": "本轮发现的文稿和口径不一致已关闭",
+      "notes": "前向最大分数与逆向最少人时一致；地面筛查与地面响应分别列账，Q2报告区底线与Q6单元底线明确区别；19式的量纲、界限及数值交叉核验通过。",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/numerical_data_audit.json",
+        "output/full_paper/revision_delivery_validation.json"
+      ]
+    },
+    "数值合理性": {
+      "score": 4,
+      "verdict": "在声明假设下约束与独立复算通过",
+      "notes": "599个基准单元、84组季节复核、127个可行敏感性解及4个不可行案例、10个两园案例分别核验；有效工时固定120，人数按向上取整解释。参数并非实测。",
+      "evidence": [
+        "output/question3/q3_independent_verification.json",
+        "output/question4/q4_independent_verification.json",
+        "output/question6/q6_verification.json"
+      ]
+    },
+    "创新性": {
+      "score": 4,
+      "verdict": "有具体的检验设计贡献，未声称新算法",
+      "notes": "贡献在验证设计：前向/逆向及可达权重解析上界互证；技术效率与最低地面任务反事实暴露协议敏感性；黄石历史生态权重改变后，仍用原陆域标准评价取舍。不是给常规LP改名。",
+      "evidence": [
+        "output/revision_feasibility/20261006/revision_results.json",
+        "output/revision_feasibility/20261006/yellowstone_historical_priority_scenario.json"
+      ]
+    },
+    "图表位置": {
+      "score": 5,
+      "verdict": "24个真实图表对象的引用距离检查通过",
+      "notes": "全部7图17表有前置正文引用，首次引用在同页或相邻页；编号连续，无孤儿图表。说明长度采用原skill计数函数，均为100—150。",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/english_layout_audit.json"
+      ]
+    },
+    "正文页数": {
+      "score": 5,
+      "verdict": "按本题及用户页数规定合规",
+      "notes": "主体解答18页，不超过题面20页；摘要、目录、主体和信合计21页，不超过题面24页；PDF共24页，不超过用户25页。skill通用21—30页目标服从本题上限。",
+      "evidence": [
+        "output/full_paper/full_paper_validation.json",
+        "output/full_paper/skill_audit_20261007/style_contract.json"
+      ]
+    },
+    "页面布局": {
+      "score": 4,
+      "verdict": "逐页渲染与目视记录通过",
+      "notes": "90页材料均已300dpi渲染，记录绑定当前指纹；英文中间主体页按90pt目标及4pt测量容差通过，独立结束页自然留白；长说明增加阅读密度，仍可继续做编辑性精炼。",
+      "evidence": [
+        "output/full_paper/revision_visual_review.json",
+        "output/full_paper/skill_audit_20261007/whitespace_audit.json"
+      ]
+    },
+    "图片乱码": {
+      "score": 5,
+      "verdict": "三道检查无缺字或乱码迹象",
+      "notes": "当前编译日志无Missing character/Glyph missing，PDF文本层无替换符或豆腐块，已审页图可读；交付字体均嵌入。",
+      "evidence": [
+        "output/full_paper/revision_delivery_validation.json",
+        "output/full_paper/revision_visual_review.json"
+      ]
+    }
+  },
+  "nine_dimension_total": 39,
+  "nine_dimension_max": 45,
+  "score": {
+    "题目合规": 4,
+    "方法选取": 4,
+    "模型正确性": 4,
+    "数值合理性": 4,
+    "创新性": 4,
+    "可解释性": 5,
+    "数据严谨": 4,
+    "论文质量": 4,
+    "版面布局": 4,
+    "可视化": 5
+  },
+  "extended_score_notes": {
+    "可解释性": "容量、单位、响应门槛与任务成本有明确含义，假设和观测分开；服务完成率不写成存活率。",
+    "数据严谨": "来源、版本、空白和质量标记保留，犀牛冲突不混入主输入；历史性和奇特旺面积未校准限制使此项不评满分。",
+    "论文质量": "摘要按问题组织，题目与章节对应，重复和套话减少；人工编辑性判断无法保证任何AI检测器分数。",
+    "可视化": "资源地图完整17区，图内标注12pt，字体、图例、独立颜色尺度及地图比例已核验。"
+  },
+  "extended_total": 42,
+  "extended_max": 50,
+  "issue_resolution": [
+    {
+      "id": "R01",
+      "level": "红线级",
+      "discovered": "题注10pt、符号表11pt低于题面普通文字12pt",
+      "action": "按用户本轮明确决定改为12pt；页眉和封面普通文字同步；保留正文与标题样式",
+      "evidence": [
+        "output/full_paper/full_paper_validation.json",
+        "output/full_paper/skill_audit_20261007/style_contract.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C01",
+      "level": "一致性级",
+      "discovered": "24条图表说明短于skill要求",
+      "action": "补充范围、来源、关键数值及解释，删重复正文；均100—150统计长度",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/english_layout_audit.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C02",
+      "level": "一致性级",
+      "discovered": "资源地图仅显示四个区域名称，易被误读为部分配置",
+      "action": "完整标注17个报告区，3410/P/O另说明，移位标签加引线，星号解释六个固定候选响应点",
+      "evidence": [
+        "output/full_paper/figures/deployment_figure_manifest.json",
+        "output/full_paper/revision_visual_review.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C03",
+      "level": "一致性级",
+      "discovered": "完整优化约束排版缺大括号",
+      "action": "将原LP约束等价排为大括号形式，没有改变计算目标或约束",
+      "evidence": [
+        "docs/paper/full_paper.tex",
+        "output/full_paper/skill_audit_20261007/numerical_data_audit.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C04",
+      "level": "一致性级",
+      "discovered": "迁移的区域/单元服务底线差异易混淆",
+      "action": "正文明确Q2按报告区、Q6按可达单元15%底线及适用原因",
+      "evidence": [
+        "docs/paper/full_paper.tex",
+        "output/full_paper/skill_audit_20261007/modeling_doc.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C05",
+      "level": "一致性级",
+      "discovered": "少数图表与首次引用距离不合适",
+      "action": "将现有相关解释前移并重排；全部真实对象检查为同页或相邻页",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/english_layout_audit.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C06",
+      "level": "一致性级",
+      "discovered": "压缩段落时引入三个不匹配引用键",
+      "action": "统一成已有npsdata引用并重编译；源码与当前日志均无未定义引用",
+      "evidence": [
+        "output/full_paper/revision_delivery_validation.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C07",
+      "level": "一致性级",
+      "discovered": "空白种群表项易被解释为真实不存在",
+      "action": "明确为没有记录的估计；保留源表质量标记，未把六类历史记录写成完整当前种群",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/numerical_data_audit.json",
+        "docs/paper/full_paper.tex"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "A01",
+      "level": "美观级",
+      "discovered": "部分正文中间页有大块留白，总体框架位置和画法不合适",
+      "action": "保留字号与行距重排；总体框架改为引言五层图，完整历史情景表移入相邻补充附录",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/whitespace_audit.json",
+        "output/full_paper/revision_visual_review.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "C08",
+      "level": "一致性级",
+      "discovered": "需能核对附录与交付代码是否为同一份",
+      "action": "filecontents*内嵌真实复现入口，lstinputlisting载入；与交付.py逐字一致并已执行",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/appendix_code_verification.json"
+      ],
+      "status": "closed_after_recheck"
+    },
+    {
+      "id": "T01",
+      "level": "工具误报",
+      "discovered": "原扫描器把同一TikZ图拆成多个绘制带，仍返回7条图挨图",
+      "action": "原退出码1保留；逐条图对象归属与页图核对，增强检查保持原计数和面积阈值",
+      "evidence": [
+        "output/full_paper/skill_audit_20261007/original_layout_final.log",
+        "output/full_paper/skill_audit_20261007/raw_scanner_adjudication.json",
+        "output/full_paper/skill_audit_20261007/english_layout_audit.json"
+      ],
+      "status": "closed_after_recheck"
+    }
+  ],
+  "open_redline_issues": 0,
+  "open_consistency_issues": 0,
+  "remaining_limits": [
+    {
+      "id": "L01",
+      "status": "retained_external_limit",
+      "detail": "六类2015调查及质量标记未被当前全物种调查取代；犀牛1107/1280源冲突仍排除主输入。"
+    },
+    {
+      "id": "L02",
+      "status": "retained_external_limit",
+      "detail": "奇特旺发布多边形与952.63平方千米官方面积未闭合；投影仅约0.087%影响，具体错误边段未定位，试算保留条件性。"
+    },
+    {
+      "id": "L03",
+      "status": "retained_external_limit",
+      "detail": "技术效率、检查频次、通行权限、设施现状和工时是待现场校准的规划条件；月人数不是轮班、并发响应或资格验证。"
+    },
+    {
+      "id": "L04",
+      "status": "retained_external_limit",
+      "detail": "服务完成率及黄石2022历史范围情景未验证动物存活或实际生态改善；不认证当前法定规则的完整性。"
+    },
+    {
+      "id": "L05",
+      "status": "platform_limitation",
+      "detail": "内置编译器仍报Unable to find standard directories for platform；保留编辑器，按用户已有授权使用本机XeLaTeX。"
+    }
+  ],
+  "generic_skill_scanner": {
+    "raw_exit_code": 1,
+    "remaining_raw_messages": 7,
+    "English_reference_recognition": "unsupported by original scanner",
+    "disposition": "all seven are drawing bands inside the same figure; original exit code retained",
+    "evidence": [
+      "output/full_paper/skill_audit_20261007/original_layout_final.log",
+      "output/full_paper/skill_audit_20261007/raw_scanner_adjudication.json"
+    ],
+    "original_checker_copy": "output/full_paper/skill_audit_20261007/original_check_layout.py",
+    "checker_sha256": "975a1b508996f604e24168e4059d32c1ffc651238561944169668aa9e6d7f000"
+  },
+  "applicability_exceptions": [
+    "用户指定的既有article及字体模板保留，不换国赛cumcmthesis类。",
+    "原题主体最多20页，优先于skill通用主体21—30页目标；计入摘要、目录及信后为21页。",
+    "定义/评价问题不机械增加五张冗余图；总体架构一张，实际数据图各有用途。",
+    "无统计预测训练，CV/残差/训练泄露条款不适用；未虚构概率或人口预测。",
+    "CP1/CP2使用本轮已有的用户范围授权；方法备选明确为回顾性复核。",
+    "中文教学稿40页不套用英文参赛页数或英文说明长度。",
+    "结束页自然留白允许；中间主体页用90pt目标及4pt测量容差，没有扩行距凑页。"
+  ],
+  "requirement_crosswalk": [
+    {
+      "id": "Q1",
+      "type": "评价与定义",
+      "rephrased": "识别保护挑战及可量化保护标准",
+      "section": "4",
+      "evidence": "输出范围、历史责任与服务定义"
+    },
+    {
+      "id": "Q2",
+      "type": "约束优化",
+      "rephrased": "配置人力和技术并考虑地理与不确定性",
+      "section": "5",
+      "evidence": "两阶段LP、道路响应、技术及预算情景"
+    },
+    {
+      "id": "Q3",
+      "type": "逆向工作量规划",
+      "rephrased": "分析时间变化并反求维持目标所需人员",
+      "section": "6",
+      "evidence": "季节任务、共享预算、120小时/人月"
+    },
+    {
+      "id": "Q4",
+      "type": "敏感性与情景",
+      "rephrased": "改变资源、标准及巡访日期检验策略",
+      "section": "7",
+      "evidence": "独立约束检验、技术、网格与权重"
+    },
+    {
+      "id": "Q5",
+      "type": "方法评价",
+      "rephrased": "讨论优势、限制及校准需求",
+      "section": "8",
+      "evidence": "可解释性、数据和现场适用边界"
+    },
+    {
+      "id": "Q6",
+      "type": "结构迁移",
+      "rephrased": "适配不同大洲的两座保护区",
+      "section": "9",
+      "evidence": "本地输入、规则、数据需求及部署变化"
+    },
+    {
+      "id": "Letter",
+      "type": "非技术沟通",
+      "rephrased": "向IMMC解释方法、建议和关键洞见",
+      "section": "Letter",
+      "evidence": "不超过两页"
+    }
+  ],
+  "cross_checks": "output/full_paper/revision_delivery_validation.json",
+  "visual_record": "output/full_paper/revision_visual_review.json",
+  "visual_reviewed_pages": 90,
+  "all_applicable_dimensions_at_least_four": true,
+  "superseded_manuscript_validation": "output/full_paper/caption_revision_20261007/caption_revision_validation.json",
+  "source_snapshot": "output/full_paper/caption_revision_20261007/before_caption_revision.zip::docs/paper/full_paper.tex",
+  "subsequent_user_override": "One concise caption sentence; detail in body. Numerical model unchanged."
+}

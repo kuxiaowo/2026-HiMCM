@@ -1,10 +1,35 @@
 {
   "source": "docs/paper/question6_adaptation.tex",
-  "source_sha256": "a4e301299b14e8c479ef6dabc6b7d6a39f48ec1fddd04e4601339f00e54c8ff8",
+  "template": "scripts/modeling/question6_compact_template.tex",
+  "source_sha256": "a88020ad436533903ae80bbb3d89d946c733a9595fe758fb4c5277bc76acd8a8",
   "results_sha256": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
   "equations": 6,
   "figures": 3,
   "tables": 4,
   "figure_geometry_embedded": true,
-  "status": "real spatial inputs; assumptions distinguished; source compilation pending"
+  "page_target": 6,
+  "status": "revision_compiled_and_verified",
+  "pdf": "output/pdf/skill_checked_20261007/question6_adaptation.pdf",
+  "pdf_pages": 6,
+  "pdf_sha256": "e3043cb5be36b90e626b084da20a2ce18261e293a21ebb490d0aad86dee486a1",
+  "validation": "output/full_paper/revision_delivery_validation.json",
+  "visual_review": {
+    "status": "passed",
+    "pdf": "output/pdf/skill_checked_20261007/question6_adaptation.pdf",
+    "pdf_sha256": "e3043cb5be36b90e626b084da20a2ce18261e293a21ebb490d0aad86dee486a1",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "render_dpi": 300,
+    "contact_sheets": "tmp/pdfs/skill_checked_20261007/question6_adaptation",
+    "notes": [
+      "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+      "Standalone chapter byte-identical review retained."
+    ]
+  }
 }

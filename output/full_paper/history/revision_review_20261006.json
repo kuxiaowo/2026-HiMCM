@@ -1,0 +1,63 @@
+{
+  "status": "revision_scope_review_complete",
+  "reviewed_at_utc": "2026-10-06T15:47:06.240484+00:00",
+  "authority": "User-approved multi-species revision; retained historical inputs and planning assumptions; template typography retained.",
+  "dimensions": {
+    "方法选取": {
+      "verdict": "在条件性工作量规划范围内合理",
+      "evidence": "线性任务容量、路网响应门槛、独立人时/机时限制；二阶段保持最优总分后全局最少人工。"
+    },
+    "题目要求": {
+      "verdict": "六题与信件有对应答案，模板版存在已披露字号限制",
+      "evidence": "章节4—9，摘要六段，21页信件；参考和AI另计；不宣称所有动物的完整生态认证。"
+    },
+    "谬误与矛盾": {
+      "verdict": "本轮发现的目标和旧数值矛盾已修复",
+      "evidence": "第二题与第三题无额外任务时5286.11一致；说明文档与正式稿同步。"
+    },
+    "数值合理性": {
+      "verdict": "保存解和关键汇总独立检查通过",
+      "evidence": "Q3 84组、Q4 127可行解/131案例；总量、容量、底线、禁止配置、人员取整可核查。"
+    },
+    "创新性": {
+      "verdict": "贡献主要在任务解释与验证设计，不声称新算法",
+      "evidence": "技术协议反事实、共同权重评价、同分人时交叉复算、黄石本地历史层及原面积评价。"
+    },
+    "图表位置": {
+      "verdict": "英文7图17表有正文引用，目视为同页或相邻页",
+      "evidence": "独立JSON记录，图表编号连续；保留简短题注与正文解释，不机械增加长题注。"
+    },
+    "正文页数": {
+      "verdict": "本轮页数要求满足",
+      "total_pdf_pages": 23,
+      "body_and_letter_end_page": 21,
+      "references_page": 22,
+      "AI_report_page": 23,
+      "chinese_learning_pages": 40
+    },
+    "页面布局": {
+      "verdict": "当前89页渲染目视通过",
+      "evidence": "近空白英文页已消除；英文模型页Underfull间距已目视复核；学习稿节末留白保留。"
+    },
+    "图片乱码": {
+      "verdict": "无缺字或乱码迹象",
+      "evidence": "日志、PDF文本层、300dpi渲染三层检查；全部字体嵌入。"
+    }
+  },
+  "known_limits_not_concealed": [
+    "Planning protocols and technology efficiency remain assumptions",
+    "Six historical surveyed groups do not cover all animals or current abundance",
+    "Chitwan legal boundary and reported-area convention remain uncalibrated",
+    "Monthly personnel equivalents do not certify rosters or ecological effects",
+    "User template uses 10pt captions and 11pt symbols; contest minimum-font conflict remains disclosed"
+  ],
+  "generic_skill_scanner": {
+    "status": "unavailable_missing_PyMuPDF",
+    "exit_code": 2,
+    "log": "output/revision_feasibility/20261006/skill_layout_check.txt",
+    "replacement": "pdfplumber/Poppler source/text/font/geometry checks and manual page inspection"
+  },
+  "cross_checks": "output/full_paper/revision_delivery_validation.json",
+  "visual_record": "output/full_paper/revision_visual_review.json",
+  "issue_resolution": "Computational and textual revision issues closed; field-data limits remain explicitly scoped. This review does not certify contest font compliance or ecological effects."
+}

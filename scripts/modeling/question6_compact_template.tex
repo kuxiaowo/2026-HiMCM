@@ -1,0 +1,152 @@
+\documentclass[UTF8,fontset=fandol,12pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array}
+\usepackage{graphicx,xcolor,tikz,caption,placeins,hyperref}
+\usetikzlibrary{arrows.meta}
+\hypersetup{hidelinks}
+\captionsetup{font=small,labelfont=bf,labelsep=quad}
+\setcounter{secnumdepth}{3}\setcounter{section}{5}
+\renewcommand{\theequation}{6-\arabic{equation}}
+\renewcommand{\thefigure}{6-\arabic{figure}}
+\renewcommand{\thetable}{6-\arabic{table}}
+\allowdisplaybreaks
+\setlength{\parskip}{0.15em}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{7pt plus 2pt minus 2pt}
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.10}
+\emergencystretch=2em
+\begin{document}
+\section{保护资源配置模型的跨大陆适配}
+
+第二、三题的方法如何用于其他大洲？本节选择亚洲的奇特旺国家公园和北美洲的黄石国家公园，保留“任务—通行时间—服务完成—所需人力”的关系，替换当地数据。本次使用真实发布边界、道路、位置点和土地覆盖，先计算陆域巡检任务；速度、频次和驻点配置仍为假设。所得人数只对应这些任务。奇特旺边界校准未通过，其数值仅适用于所用发布多边形。
+
+\textbf{术语说明。}“空间单元”是计算用的网格；“人时”是一人工作一小时，两人一小时为两人时；“服务完成率”是规定检查量的完成比例；“服务分”按权重汇总完成率；“条件响应上限”是按所用地图和作业假设最多能取得的服务分；“人员当量”把任务工时除以120小时后向上取整。服务分不表示动物存活率，人员当量也不表示实际编制。
+
+\subsection{模型结构与迁移方法}
+\subsubsection{共同结构与本地参数}
+
+用 \(j\) 表示单元、\(t\) 表示时期，\(s_{jt}\) 为完成率，\(w_j\) 为园内权重。服务分为
+\begin{equation}
+P_t=100\sum_jw_js_{jt},\qquad \sum_jw_j=1.
+\label{eq:q6score}
+\end{equation}
+物种、生境和管理任务改变时，应重建权重，不能直接套用埃托沙的物种组合和熵权结果。本次不虚构动物分布，先按真实陆域面积赋权：\(w_j=A_j^{\mathrm{land}}/\sum_kA_k^{\mathrm{land}}\)。任务量为 \(C_j=8A_j^{\mathrm{land}}/100\)，面积单位为平方千米。均匀检查频次属于服务假设；永久水体不承担本次陆域任务。不同公园的分数只描述各自任务，不能横向比较生态好坏。
+
+@@FIG1@@
+
+\clearpage
+\subsubsection{可达性、技术与工作量的重建}
+
+道路长度取自地图，通行时间由速度和许可决定。当前道路按双向通行情景计算，过滤明确私人或机动车禁止线路；只连接相距0.5米以内的制图端点，不补建跨河或长距离道路。实际管理通行权限仍需核实。
+
+设道路去返程时间为 \(T_{jt}^{+},T_{jt}^{-}\)，道路外单程时间为 \(v_{jt}\)，派遣延迟为 \(\delta\)。响应资格与每次检查的人时成本为
+\begin{align}
+r_{jt}&=\mathbf{1}\{\delta+T_{jt}^{+}+v_{jt}\leq\overline{T}_j\},\label{eq:q6response}\\
+a_{jt}&=n_j(T_{jt}^{+}+T_{jt}^{-}+2v_{jt}+\tau_j+\pi_j).\label{eq:q6cost}
+\end{align}
+\(n_j\) 是同行人数，\(\tau_j,\pi_j\) 是观察、准备时间。驻点接入道路的距离也计入。道路外距离目前按直线估算，尚未处理坡度、跨河绕行和许可。因此 \(r_{jt}\) 表示模型内能否按时到场，地图缺失造成的不可达不能直接当作现实不可达。
+
+用地面人时 \(x_{jt}\)、无人机机时 \(h_{jt}\) 支持任务。给定服务目标 \(\eta\)，反求最少人时：
+\begin{equation}
+\begin{aligned}
+\min\quad&H_t=H_{0t}+L_t+\sum_j(x_{jt}+\gamma_{jt}h_{jt})\\
+\text{s.t.}\quad&C_{jt}s_{jt}\leq x_{jt}/a_{jt}+h_{jt}/b_{jt},\\
+&0.15r_{jt}\leq s_{jt}\leq r_{jt},\quad x_{jt},h_{jt}\geq0,\\
+&h_{jt}=0\ (m_{jt}=0),\quad\sum_jh_{jt}\leq U_t,\\
+&100\sum_jw_js_{jt}\geq\eta.
+\end{aligned}
+\label{eq:q6constraints}
+\end{equation}
+\(H_{0t}\) 是响应预留，\(L_t\) 是另测的社区、游客管理等工作；\(b_{jt}\) 是每次无人机检查的机时，\(\gamma_{jt}\) 换算配套人工，\(m_{jt}\) 表示授权和任务效果均满足条件。预算给定时，增加 \(H_t\leq H_t^{\max}\) 并最大化服务分即可回到第二题。未校准无人机效果和授权，本节 \(U_t=0\)；未测专属工作也尚未计入。埃托沙30架的设备规模不直接套用于两园。
+
+@@PARAMTABLE@@
+
+有 \(K\) 个候选驻点时，响应预留及人数换算为
+\begin{equation}
+H_0=K\times2\times8\times30=480K,\qquad
+N=\left\lceil H^{\min}/120\right\rceil.
+\label{eq:q6staff}
+\end{equation}
+
+\clearpage
+\subsection{两类保护区的适配方案}
+\subsubsection{奇特旺：重点物种、森林与季风通行}
+
+奇特旺重点对象包括独角犀和虎；森林巡护、河流生境与社区冲突任务需分别确定时效和技能。2013—2017年管理计划记载季风洪水和车辆通行限制\cite{chitwan,cnpplan}。它支持按季节改变路线，但不提供本次20 km/h的依据；该速度只是压力情景。
+
+空间计算采用WDPCA2026年10月发布的site805多边形及OSM道路\cite{wdpca,osm}。Kasara、Sauraha、Amaltari是真实具名位置，作为候选驻点的地理参考；Amaltari来自社区办公室记录，均未证实现有响应值守职责。
+
+\textbf{边界校准未通过。}WDPCA报告面积932平方千米、源GIS与测地面积均约1213；投影结果@@CAREA@@平方千米比官方952.63大@@CADIFF@@\%\cite{cnparea,gis2020}。投影仅使面积变化约0.087\%，不能解释主要差异；官方2020年GIS报告仍列952.63。源几何与报告口径未闭合，尚未定位具体错误边段。故只做发布范围试算，不缩放凑面积；缓冲区另建范围。
+
+WorldCover显示该范围林地占@@CFOREST@@\%\cite{worldcover}。森林和高草下的发现能力、复核时间需现场试验；河流交通、设备维护和社区协作应另记人时。修正边界后，面积、权重和结果均需重算。
+
+\subsubsection{黄石：游客交互、季节交通与技术权限}
+
+黄石应把动物监测、游客与动物交互、道路事件及偏远生境任务分别建模\cite{visitor}。游客数量不直接代替动物价值；需要分时客流、事件位置和处置日志，避免任务重复计算。
+
+本次采用NPS边界、公开道路及位置点\cite{npsboundary,npsroads,npspois}。基准用Norris、Lake护林站位置，增设点采用South Entrance位置；位置真实，但角色和人员配置为方案。道路共2007条记录，核对后使用园内约@@YROAD@@千米；公开图层缺少部分行政及作业道路。
+
+冬季公众封路不等于管理人员无法到达，应另核实雪地装备与管理通行\cite{conditions}。未获园长书面批准，无人机不进入配置\cite{rules}。全园林地占@@YFOREST@@\%，也不能将开阔谷地条件推广到整园。
+
+@@DATATABLE@@
+
+\clearpage
+\subsection{真实空间数据验证与部署变化}
+
+面积和长度在当地米制坐标中计算：奇特旺UTM45N、黄石UTM12N。WorldCover2021的10米原始分类采用最近邻方法采样到100米，保持类别编码；另以50米复核。奇特旺网格边长1千米，黄石2.5千米；边缘按发布边界裁剪。代表点没有被当作实测动物位置。
+
+@@FIG2@@
+
+@@GEOTABLE@@
+
+固定目标取各园双驻点、30 km/h基准响应上限的90\%：
+\begin{equation}
+P_t^{\mathrm{geo}}=100\sum_jw_jr_{jt},\qquad
+\eta=0.90P_{\mathrm{base}}^{\mathrm{geo}}.
+\label{eq:q6cap}
+\end{equation}
+同一园的各情景保持目标不变，因此减速造成的服务损失不会被降低目标掩盖。这是基准可响应部分的90\%，不是全园90分；未响应陆域仍需改善路线或驻点。响应上限表示所用地图和条件下的服务边界，不能称为真实保护率。
+
+\clearpage
+\textbf{速度与驻点的比较结果。}C类为奇特旺发布范围试算，Y类为黄石NPS范围；人时包含巡检和响应预留，未包含未测的专属任务。表\ref{tab:q6results}中“不可达”表示固定目标超过响应上限，不能靠增加普通巡检人时解决。
+
+@@RESULTTABLE@@
+
+@@FIG3@@
+
+奇特旺基准需要@@C0H@@人时，黄石需要@@Y0H@@人时；按120小时换算分别为@@C0N@@、@@Y0N@@人当量。车速降至20 km/h，两园上限均低于各自固定目标。增加第三处候选点扩大响应范围，但每点新增480响应人时；达到相同目标的总人时反而升至@@C2H@@、@@Y2H@@。前置点的作用是改善范围，不能只凭覆盖增加就认定它节省人力。
+
+40 km/h情景下，人时降至@@C3H@@、@@Y3H@@，人数取整为@@C3N@@、@@Y3N@@。此结果只比较速度参数，实际可采用的速度仍应依据路况和安全要求。
+
+\clearpage
+\textbf{数值核验与现实校准。}巡检网格边长减半后，两园响应上限分别变化@@CGDIFF@@、@@YGDIFF@@个百分点，相同目标所需人时为@@CFINEH@@、@@YFINEH@@。土地覆盖采样由100米改为50米，林地比例分别变化@@CRDIFF@@、@@YRDIFF@@个百分点；结果对这两项离散尺度较稳定，但这不能证明源数据分类或现场作业正确。
+
+独立按单位得分成本排序，复算最少人时，并检查服务底线、响应资格和人数取整，@@CHECKCOUNT@@个案例的数值核验通过。奇特旺面积一致性核验仍未通过，单独记录。\textbf{计算正确与数据适用是两项不同要求。}
+
+黄石另用NPS2022年狼群历史活动范围检验本地生态权重\cite{wolf}。与陆域份额各占一半时，61个单元服务改变，原面积权重评分16.85降至15.12，人工为1474.68人时。目标是保留原Y0方案在新权重下的评分；历史范围不是当前密度或偷猎风险，该情景不替换本节面积基准。奇特旺仍须校准边界；黄石还需补作业道路、季节交通及游客任务。
+
+本节已验证真实空间输入可以进入共同计算结构。当前人数仅含所设陆域巡检及响应预留；预留是岗位工时，不代表每人连续工作30天。小数任务量表示月度平均强度，人数不能视为两园实际编制。详细排班、并发事件和生态效果尚未验证。完整数据、来源版本与复现步骤保存在项目计算说明中。
+
+\FloatBarrier
+\begingroup\small
+\begin{thebibliography}{14}
+\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}
+\bibitem{chitwan} UNESCO. \href{https://whc.unesco.org/en/list/284}{Chitwan National Park}.
+\bibitem{cnpplan} Chitwan National Park Office. \href{https://faolex.fao.org/docs/pdf/nep220147.pdf}{Management Plan 2013--2017}，历史季节资料。
+\bibitem{cnparea} DNPWC. \href{https://dnpwc.gov.np/media/files/UNESCO_Report_of_Chitwan_National_Park.pdf}{State of Conservation Report of Chitwan National Park}，2021。
+\bibitem{gis2020} DNPWC/MoFSC. \href{https://giwmscdntwo.gov.np/media/pages/files/Final\%20Report_GIS\%20Database_v4olikj.pdf}{GIS Database Report}，2020，第17页。
+\bibitem{wolf} NPS. \href{https://www.nps.gov/yell/learn/nature/upload/1995_2022-YELL-wolf-data.zip}{Yellowstone wolf-use GIS}，2022年历史范围。
+\bibitem{osm} OpenStreetMap contributors; Geofabrik. \href{https://download.geofabrik.de/asia/nepal.html}{Nepal extract}，2026-10-04快照；ODbL 1.0。
+\bibitem{wdpca} UNEP-WCMC and IUCN. \href{https://data-gis.unep-wcmc.org/server/rest/services/ProtectedPlanet/WDPCA/FeatureServer/1}{Protected Planet: WDPCA, site805}，2026年10月发布。
+\bibitem{worldcover} Zanaga et al. \href{https://doi.org/10.5281/zenodo.7254221}{ESA WorldCover 10m 2021 v200}，2022；CC BY 4.0。
+\bibitem{npsboundary} NPS. \href{https://irma.nps.gov/DataStore/Reference/Profile/2316784}{Yellowstone National Park Tract and Boundary Data}，目录更新2025-12-18。
+\bibitem{npsroads} NPS. \href{https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Roads/MapServer/0}{NPS Public Roads}，2026-10-06下载。
+\bibitem{npspois} NPS. \href{https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0}{NPS Public POIs}，2026-10-06下载。
+\bibitem{visitor} NPS. \href{https://www.nps.gov/yell/learn/management/visitor-use.htm}{Yellowstone: Visitor Use Management}.
+\bibitem{conditions} NPS. \href{https://www.nps.gov/yell/planyourvisit/conditions.htm}{Yellowstone: Current Conditions}.
+\bibitem{rules} NPS. \href{https://www.nps.gov/yell/learn/management/lawsandpolicies.htm}{Yellowstone: Laws and Policies}.
+\end{thebibliography}
+网页访问日期：2026-10-06。地图数据：\copyright\ OpenStreetMap contributors。
+土地覆盖：\copyright\ ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium。
+\endgroup
+\end{document}

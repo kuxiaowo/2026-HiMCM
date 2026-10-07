@@ -25,10 +25,10 @@
     ]
   },
   "source_sha256": {
-    "output\\question2\\q2_model_inputs.json": "28dc7b194d6ca2043b835c319509722d68670549a35b71ce53076dad8c3185ba",
-    "output\\question2\\q2_results.json": "40b3aac1caa592fabe1a79246488f27e3a9aa3c72ea23ed2ec61f1a66514167b"
+    "output\\question2\\q2_model_inputs.json": "8b3f4a69c9db5be0a8c993c0b6b35437cd432d5821b41d69a514521dc576a740",
+    "output\\question2\\q2_results.json": "b00a7204922cbec249757da4c242ef4bb1220f266f5e088c927cfcdaef95969a"
   },
-  "script_sha256": "6ddce7bea52c01e7efb915ccfc7035eb43e7393162311ddbeaa3f55032e0a86d",
+  "script_sha256": "95789dea8f17f8f4cd23e348656a8958ace1f5b23bf07f001730b7d89832aa99",
   "notes": [
     "map outlines simplified only for display; model geometry unchanged",
     "weights remain information weights, not loss probabilities",

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-06T00:56:02.814721</dc:date>
+    <dc:date>2026-10-06T22:42:48.387003</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 150.23622 35.433071
 L 150.23622 9.92126 
 L 5.669291 9.92126 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #235e83"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #235e83"/>
    </g>
    <g id="patch_3">
     <path d="M 5.669291 77.952756 
@@ -43,7 +43,7 @@ L 150.23622 77.952756
 L 150.23622 52.440945 
 L 5.669291 52.440945 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #41988c"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #41988c"/>
    </g>
    <g id="patch_4">
     <path d="M 172.913386 62.362205 
@@ -51,7 +51,7 @@ L 299.055118 62.362205
 L 299.055118 28.346457 
 L 172.913386 28.346457 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #eef3f6"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #eef3f6"/>
    </g>
    <g id="patch_5">
     <path d="M 323.149606 35.433071 
@@ -59,7 +59,7 @@ L 476.220472 35.433071
 L 476.220472 9.92126 
 L 323.149606 9.92126 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #235e83"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #235e83"/>
    </g>
    <g id="patch_6">
     <path d="M 323.149606 89.291339 
@@ -67,47 +67,47 @@ L 476.220472 89.291339
 L 476.220472 63.779528 
 L 323.149606 63.779528 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #d99736"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #d99736"/>
    </g>
    <g id="patch_7">
     <path d="M 163.572343 38.267717 
 Q 166.109139 38.267717 167.527901 38.267717 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
     <path d="M 163.927901 36.467717 
 L 167.527901 38.267717 
 L 163.927901 40.067717 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
    </g>
    <g id="patch_8">
     <path d="M 163.572343 52.440945 
 Q 166.109139 52.440945 167.527901 52.440945 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
     <path d="M 163.927901 50.640945 
 L 167.527901 52.440945 
 L 163.927901 54.240945 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
    </g>
    <g id="patch_9">
     <path d="M 313.244817 22.677165 
 Q 316.20535 22.677165 318.047849 22.677165 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
     <path d="M 314.447849 20.877165 
 L 318.047849 22.677165 
 L 314.447849 24.477165 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
    </g>
    <g id="patch_10">
     <path d="M 313.244817 76.535433 
 Q 316.20535 76.535433 318.047849 76.535433 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: round"/>
     <path d="M 314.447849 74.735433 
 L 318.047849 76.535433 
 L 314.447849 78.335433 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #83919d; stroke: #83919d; stroke-linecap: round"/>
    </g>
    <g id="patch_11">
     <path d="M 323.149606 137.480315 
@@ -115,50 +115,50 @@ L 476.220472 137.480315
 L 476.220472 111.968504 
 L 323.149606 111.968504 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #eef3f6"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #eef3f6"/>
    </g>
    <g id="patch_12">
     <path d="M 399.685039 92.992157 
 Q 399.685039 100.628241 399.685039 107.146291 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #d99736; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #d99736; stroke-linecap: round"/>
     <path d="M 401.485039 103.546291 
 L 399.685039 107.146291 
 L 397.885039 103.546291 
 z
-" clip-path="url(#p52b7807e8f)" style="fill: #d99736; stroke: #d99736; stroke-linecap: round"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: #d99736; stroke: #d99736; stroke-linecap: round"/>
    </g>
    <g id="line2d_1">
     <path d="M 151.653543 22.677165 
 L 161.574803 22.677165 
 L 161.574803 38.267717 
 L 170.645669 38.267717 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 151.653543 65.19685 
 L 161.574803 65.19685 
 L 161.574803 52.440945 
 L 170.645669 52.440945 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 300.472441 39.685039 
 L 311.244094 39.685039 
 L 311.244094 22.677165 
 L 321.165354 22.677165 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
     <path d="M 300.472441 52.440945 
 L 311.244094 52.440945 
 L 311.244094 76.535433 
 L 321.165354 76.535433 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #83919d; stroke-linecap: square"/>
    </g>
    <g id="line2d_5">
     <path d="M 399.685039 90.992126 
 L 399.685039 110.267717 
-" clip-path="url(#p52b7807e8f)" style="fill: none; stroke: #d99736; stroke-linecap: square"/>
+" clip-path="url(#pb49fc57ec7)" style="fill: none; stroke: #d99736; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- 第二题固定基线 -->
@@ -2524,54 +2524,31 @@ z
     </g>
    </g>
    <g id="text_7">
-    <!-- 固定59人 -->
-    <g style="fill: #ffffff" transform="translate(376.401133 20.781239) scale(0.11 -0.11)">
+    <!-- 固定177人 -->
+    <g style="fill: #ffffff" transform="translate(373.00918 20.781239) scale(0.11 -0.11)">
      <defs>
-      <path id="MicrosoftYaHei-Bold-1b" d="M 541 125 
-L 541 997 
-Q 1044 691 1613 691 
-Q 2041 691 2283 902 
-Q 2525 1113 2525 1472 
-Q 2525 2225 1494 2225 
-Q 1113 2225 616 2169 
-L 797 4841 
-L 3359 4841 
-L 3359 4009 
-L 1613 4009 
-L 1544 2991 
-Q 1803 3013 2022 3013 
-Q 2731 3013 3142 2625 
-Q 3553 2238 3553 1575 
-Q 3553 844 3056 380 
-Q 2559 -84 1706 -84 
-Q 1016 -84 541 125 
+      <path id="MicrosoftYaHei-Bold-17" d="M 2716 4947 
+L 2716 0 
+L 1700 0 
+L 1700 3809 
+Q 1513 3647 1188 3517 
+Q 863 3388 591 3356 
+L 591 4222 
+Q 1447 4472 2072 4947 
+L 2716 4947 
 z
 " transform="scale(0.015625)"/>
-      <path id="MicrosoftYaHei-Bold-1f" d="M 544 941 
-Q 931 691 1456 691 
-Q 2628 691 2653 2216 
-L 2634 2222 
-Q 2316 1731 1650 1731 
-Q 1047 1731 658 2154 
-Q 269 2578 269 3222 
-Q 269 3978 737 4450 
-Q 1206 4922 1959 4922 
-Q 2744 4922 3191 4325 
-Q 3638 3728 3638 2659 
-Q 3638 1391 3098 653 
-Q 2559 -84 1547 -84 
-Q 975 -84 544 100 
-L 544 941 
-z
-M 1259 3313 
-Q 1259 2928 1445 2709 
-Q 1631 2491 1953 2491 
-Q 2241 2491 2427 2700 
-Q 2613 2909 2613 3219 
-Q 2613 3591 2427 3869 
-Q 2241 4147 1928 4147 
-Q 1625 4147 1442 3906 
-Q 1259 3666 1259 3313 
+      <path id="MicrosoftYaHei-Bold-1d" d="M 3675 4225 
+Q 3088 3172 2798 2528 
+Q 2509 1884 2328 1275 
+Q 2147 666 2050 0 
+L 966 0 
+Q 1122 947 1517 1917 
+Q 1913 2888 2609 4009 
+L 300 4009 
+L 300 4841 
+L 3675 4841 
+L 3675 4225 
 z
 " transform="scale(0.015625)"/>
       <path id="MicrosoftYaHei-Bold-44a" d="M 2731 5297 
@@ -2589,9 +2566,10 @@ z
      </defs>
      <use xlink:href="#MicrosoftYaHei-Bold-5a0"/>
      <use xlink:href="#MicrosoftYaHei-Bold-613" transform="translate(100 0)"/>
-     <use xlink:href="#MicrosoftYaHei-Bold-1b" transform="translate(200 0)"/>
-     <use xlink:href="#MicrosoftYaHei-Bold-1f" transform="translate(261.671875 0)"/>
-     <use xlink:href="#MicrosoftYaHei-Bold-44a" transform="translate(323.34375 0)"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-17" transform="translate(200 0)"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-1d" transform="translate(261.671875 0)"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-1d" transform="translate(323.34375 0)"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-44a" transform="translate(385.015625 0)"/>
     </g>
    </g>
    <g id="text_8">
@@ -3100,17 +3078,24 @@ z
     <!-- 固定57.26分目标 -->
     <g style="fill: #ffffff" transform="translate(357.046289 74.639506) scale(0.11 -0.11)">
      <defs>
-      <path id="MicrosoftYaHei-Bold-1d" d="M 3675 4225 
-Q 3088 3172 2798 2528 
-Q 2509 1884 2328 1275 
-Q 2147 666 2050 0 
-L 966 0 
-Q 1122 947 1517 1917 
-Q 1913 2888 2609 4009 
-L 300 4009 
-L 300 4841 
-L 3675 4841 
-L 3675 4225 
+      <path id="MicrosoftYaHei-Bold-1b" d="M 541 125 
+L 541 997 
+Q 1044 691 1613 691 
+Q 2041 691 2283 902 
+Q 2525 1113 2525 1472 
+Q 2525 2225 1494 2225 
+Q 1113 2225 616 2169 
+L 797 4841 
+L 3359 4841 
+L 3359 4009 
+L 1613 4009 
+L 1544 2991 
+Q 1803 3013 2022 3013 
+Q 2731 3013 3142 2625 
+Q 3553 2238 3553 1575 
+Q 3553 844 3056 380 
+Q 2559 -84 1706 -84 
+Q 1016 -84 541 125 
 z
 " transform="scale(0.015625)"/>
       <path id="MicrosoftYaHei-Bold-14" d="M 313 453 
@@ -3490,17 +3475,6 @@ Q 2891 444 2761 314
 Q 2631 184 2441 184 
 Q 2253 184 2117 312 
 Q 1981 441 1981 628 
-z
-" transform="scale(0.015625)"/>
-      <path id="MicrosoftYaHei-Bold-17" d="M 2716 4947 
-L 2716 0 
-L 1700 0 
-L 1700 3809 
-Q 1513 3647 1188 3517 
-Q 863 3388 591 3356 
-L 591 4222 
-Q 1447 4472 2072 4947 
-L 2716 4947 
 z
 " transform="scale(0.015625)"/>
       <path id="MicrosoftYaHei-Bold-16" d="M 244 2341 
@@ -5840,7 +5814,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p52b7807e8f">
+  <clipPath id="pb49fc57ec7">
    <rect x="0" y="0" width="481.889764" height="171.496063"/>
   </clipPath>
  </defs>

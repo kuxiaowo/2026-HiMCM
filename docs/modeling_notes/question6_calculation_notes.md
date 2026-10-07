@@ -1,5 +1,7 @@
 # 第六题真实空间数据计算说明
 
+本轮额外完成奇特旺面积溯源和黄石2022年历史范围的独立权重情景；原面积基准结果未替换。当前6页PDF位于output/pdf/revision_20261006/，细节见[实施报告](revision_implementation_20261006.md)。
+
 当前正式正文为 `docs/paper/question6_adaptation.tex` 和同名 `.md`。以前的合成任务网络已退出正式论文，完整备查目录为 `output/question6/archive/synthetic_20261006`。本次模型使用真实空间输入，作业参数仍为明示假设，计算范围为陆域生境服务子模型。
 
 ## 真实资料和口径
@@ -39,7 +41,7 @@
 
 独立按单位服务评分成本排序的分数背包法复算最小人时；核验响应资格、可达底线、固定目标、不可行性和人员当量上取整。共10个情景（含两组细网格）的数值核验通过；奇特旺边界一致性检验未通过，单独列于data_quality_checks，不混同为整体资料有效。另对100米栅格面积与向量面积、50米土地覆盖采样和巡检网格边长减半进行了复核。数值文件见 `output/question6/q6_results.json`、`q6_verification.json`。
 
-LaTeX在原有同名正式文件中修订，图形几何嵌入TikZ，不依赖外部图片路径。内置编译器当前报告“Unable to find standard directories for platform”；现有本地TeX格式也不可用，源码编译未验证。`output/pdf/question6_adaptation_reading.pdf` 是从同步Markdown生成的阅读预览，不能宣称LaTeX成功编译。预览需要逐页视觉检查，核验记录在 `q6_reading_pdf_verification.json`。
+LaTeX在原有同名正式文件中修订，图形几何嵌入TikZ，不依赖外部图片路径。内置编译器仍报告“Unable to find standard directories for platform”；本机既有XeLaTeX（TeX Live 2026）已将当前源码成功编译两遍，正式成果为[6页PDF](../../output/pdf/question6_adaptation.pdf)，含6个编号公式、3幅图与4张表。最终6页均经Poppler渲染和逐页视觉检查，当前源文件与PDF哈希见[q6_latex_verification.json](../../output/question6/q6_latex_verification.json)。旧Markdown阅读预览及其核验记录仅为历史备查，不代表当前正文。
 
 运行环境：Python 3.12.15；{"numpy": "2.5.3", "scipy": "1.18.1", "networkx": "3.7", "shapely": "2.1.2", "pyproj": "3.8.0", "rasterio": "1.5.2", "osmium": "4.3.1", "pyogrio": "0.13.0"}。
 

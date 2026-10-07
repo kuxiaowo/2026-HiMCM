@@ -1,0 +1,10 @@
+{
+  "source": "docs/paper/question6_adaptation.tex",
+  "source_sha256": "a4e301299b14e8c479ef6dabc6b7d6a39f48ec1fddd04e4601339f00e54c8ff8",
+  "results_sha256": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
+  "equations": 6,
+  "figures": 3,
+  "tables": 4,
+  "figure_geometry_embedded": true,
+  "status": "real spatial inputs; assumptions distinguished; source compilation pending"
+}

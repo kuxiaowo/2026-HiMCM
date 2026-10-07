@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-10-06T16:22:37.396600+00:00",
+  "status": "computed_and_independently_checked",
+  "two_stage": {
+    "old_fixed_pattern_person_hours": 5379.015503549726,
+    "new_global_person_hours": 5286.114336435482,
+    "independent_Q3_inverse_person_hours": 5286.114336435483,
+    "hours_saved": 92.90116711424434,
+    "score_unchanged": true,
+    "human_saving_percent": 1.7271035387969582
+  },
+  "technology_scenarios": [
+    {
+      "name": "无人机筛查效率75%",
+      "status": "unmeasured_screening_efficiency_scenario",
+      "score": 57.260161284231835,
+      "total_person_hours": 5786.369957178273,
+      "ground_hours": 1731.548129293783,
+      "drone_flight_hours": 104.26779609632499,
+      "drone_efficiency": 0.75,
+      "minimum_ground_share": 0.0
+    },
+    {
+      "name": "无人机筛查效率50%",
+      "status": "unmeasured_screening_efficiency_scenario",
+      "score": 57.260161284231835,
+      "total_person_hours": 6011.978510148165,
+      "ground_hours": 2964.543825593587,
+      "drone_flight_hours": 33.34642848220111,
+      "drone_efficiency": 0.5,
+      "minimum_ground_share": 0.0
+    },
+    {
+      "name": "必要地面检查占比10%",
+      "status": "assumed_ground_verification_requirement",
+      "score": 57.260161284231835,
+      "total_person_hours": 5366.128344615752,
+      "ground_hours": 320.62544182381873,
+      "drone_flight_hours": 129.9090448984044,
+      "drone_efficiency": 1.0,
+      "minimum_ground_share": 0.1
+    },
+    {
+      "name": "必要地面检查占比25%",
+      "status": "assumed_ground_verification_requirement",
+      "score": 57.260161284231835,
+      "total_person_hours": 5486.149356886159,
+      "ground_hours": 801.5636045595468,
+      "drone_flight_hours": 108.25753741533701,
+      "drone_efficiency": 1.0,
+      "minimum_ground_share": 0.25
+    }
+  ],
+  "pressure_comparisons": [
+    {
+      "name": "Uniform",
+      "score": 16.47265930279058,
+      "total_person_hours": 3599.9999618626434,
+      "drone_flight_hours": 43.73385071044033
+    },
+    {
+      "name": "Demand-based",
+      "score": 19.865024307451534,
+      "total_person_hours": 3599.9999873258807,
+      "drone_flight_hours": 44.28967515987639
+    },
+    {
+      "name": "Optimized",
+      "score": 29.88492523055607,
+      "total_person_hours": 3599.9999999683046,
+      "drone_flight_hours": 61.315786417955046
+    }
+  ],
+  "grid_sensitivity": [
+    {
+      "grid_km": 10.0,
+      "target_count": 599,
+      "score": 57.260161284231835,
+      "total_person_hours": 5286.114336435482
+    },
+    {
+      "grid_km": 5.0,
+      "target_count": 1554,
+      "score": 56.385497785936366,
+      "total_person_hours": 5279.441326653905
+    },
+    {
+      "grid_km": 15.0,
+      "target_count": 392,
+      "score": 59.98518229167197,
+      "total_person_hours": 5340.078121475573
+    }
+  ],
+  "weight_scenario_count": 12,
+  "yellowstone": {
+    "scope": "historical 2022 wolf-use priority scenario, not current density or poaching risk",
+    "source": "output/revision_feasibility/20261006/yellowstone_wolf_2022_territories.geojson",
+    "input_feature_count": 10,
+    "unique_projected_geometries": 9,
+    "clipped_union_area_km2": 4093.874005665855,
+    "land_adjusted_intersection_area_km2": 4063.2040630832844,
+    "cell_land_adjustment": "historical overlap multiplied by the existing cell land fraction",
+    "target_rule": "retain Y0 reference service evaluated under each changed priority rule",
+    "held_fixed": [
+      "roads",
+      "response eligibility",
+      "task frequency",
+      "costs",
+      "readiness",
+      "service floors",
+      "no drones"
+    ],
+    "limitations": [
+      "MCPs describe historical activity extent, not animal density",
+      "land fraction is a within-cell approximation",
+      "shares are team scenario choices, not official priorities",
+      "retaining a rate under new weights permits trade-offs in land-weighted service",
+      "public seasonal road rules do not establish staff emergency permissions"
+    ],
+    "cases": [
+      {
+        "historical_wolf_share": 0.0,
+        "target_under_new_weights": 16.84620474567304,
+        "score_own_weights": 16.846204745673006,
+        "score_original_land_weights": 16.846204745673006,
+        "geographic_cap_own_weights": 18.718005272970064,
+        "total_person_hours": 1541.6290119633695,
+        "conditional_staff_equivalent": 12.84690843302808,
+        "changed_service_units": 0,
+        "checks_passed": true
+      },
+      {
+        "historical_wolf_share": 0.25,
+        "target_under_new_weights": 18.44414208411104,
+        "score_own_weights": 18.444142084111043,
+        "score_original_land_weights": 16.266301554108534,
+        "geographic_cap_own_weights": 20.286356639891835,
+        "total_person_hours": 1518.93480537235,
+        "conditional_staff_equivalent": 12.657790044769582,
+        "changed_service_units": 39,
+        "checks_passed": true
+      },
+      {
+        "historical_wolf_share": 0.5,
+        "target_under_new_weights": 20.04207942254905,
+        "score_own_weights": 20.04207942254904,
+        "score_original_land_weights": 15.119353701065865,
+        "geographic_cap_own_weights": 21.854708006813613,
+        "total_person_hours": 1474.6821422322628,
+        "conditional_staff_equivalent": 12.289017851935522,
+        "changed_service_units": 61,
+        "checks_passed": true
+      },
+      {
+        "historical_wolf_share": 0.75,
+        "target_under_new_weights": 21.64001676098706,
+        "score_own_weights": 21.640016760987066,
+        "score_original_land_weights": 13.040040492894843,
+        "geographic_cap_own_weights": 23.423059373735388,
+        "total_person_hours": 1413.435336938615,
+        "conditional_staff_equivalent": 11.77862780782179,
+        "changed_service_units": 102,
+        "checks_passed": true
+      }
+    ]
+  },
+  "input_sha256": {
+    "output/question2/q2_results.json": "036a376f93e0d5713908c57ebb7ed055dafe88f886ca931acaf7cb859d3662ec",
+    "output/question2/q2_model_inputs.json": "8b3f4a69c9db5be0a8c993c0b6b35437cd432d5821b41d69a514521dc576a740",
+    "output/question3/q3_results.json": "3e8e7f10322aa7792a5d4d550f731ec7fca4db7c72516837d4c995bd4e2abbc2",
+    "output/question4/q4_results.json": "bb57f6f8ea9c126bb64e1cda4b259707109bffef30884624a2baa73a84aba9cb",
+    "output/question6/q6_results.json": "8dd4044111fc3699e4b5c6bbb4d0c3da11d288d084efa3bfc15715fb986867ec",
+    "output/full_paper/weight_sensitivity_supplement.json": "eb95867b1c941dd7bd546cf350eb16683335c52dbf9392cbf4ca136cde284254",
+    "output/revision_feasibility/20261006/data_conflict_audit.json": "fdd059afedc041b6b58a3eb22cb438d321fcd796afc8221ac8ee0018d8076120",
+    "output/revision_feasibility/20261006/yellowstone_wolf_2022_territories.geojson": "a4be85f9b63afcb05b2ca2040a407bc0530c6df095d069ca72a05a8831bc4fda",
+    "data/question6/processed/yellowstone_boundary.geojson": "d617b3b5bcd6d1368bdb7e4a58526b566e7155516ade523a9f329fd8e3c5a324"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "authority": "user-supplied actual paper DOCX; earlier work-outline DOC is not the authority",
+  "reference_path": "C:\\Users\\admin\\Documents\\xwechat_files\\wxid_7rbyh3tw7djr22_d80b\\temp\\RWTemp\\2026-07\\87c8b0d07afdc7c8b7cc36be743bdd44\\庞正心小组论文(1).docx",
+  "reference_sha256": "6706d5f3188ddd85affb9b342fbc081e91dd53165a5620a6a104c2df74ba5b89",
+  "reference_render_pages": 27,
+  "evidence": "tmp/paper_template_20261006/effective_paragraph_format.json",
+  "page": {
+    "format": "A4",
+    "side_margin_bp": 36,
+    "top_bottom_margin_bp": 36
+  },
+  "fonts": {
+    "family": "Times New Roman",
+    "body_pt": 12,
+    "heading_1_pt": 22,
+    "heading_2_pt": 16,
+    "heading_3_pt": 16,
+    "paper_title_pt": 14,
+    "paper_title_bold": false,
+    "cover_labels_pt": 10,
+    "cover_number_pt": 18,
+    "cover_number_color": "FF0000",
+    "cover_year_pt": 14,
+    "caption_pt": 10,
+    "caption_family": "Arial",
+    "symbol_table_pt": 11,
+    "header_pt": 9,
+    "references_heading_pt": 22,
+    "references_heading_bold": false,
+    "AI_heading_pt": 16
+  },
+  "paragraphs": {
+    "alignment": "justified",
+    "first_line_indent_pt": 24,
+    "normal_space_after_pt": 1.2,
+    "normal_line_spacing": "single"
+  },
+  "opening_sections": [
+    "Introduction",
+    "Basic Assumptions and Justifications",
+    "Data Description and Symbol Definitions"
+  ],
+  "preserve": [
+    "team number 510105201001220151",
+    "2026 current problem identity",
+    "current model results",
+    "six existing model chapter names",
+    "two-page letter",
+    "total PDF at most24 pages"
+  ],
+  "interpretation_notes": [
+    "reference has mixed local table reductions; main symbol table uses11pt, existing regular numerical tables keep their12pt normal paragraph style",
+    "caption role uses the reference Caption style Arial10; explicit first-caption Normal12 is a local exception not copied",
+    "no CO2/example problem content or identifiers are transferred"
+  ],
+  "applied_page": {
+    "format": "A4",
+    "margin_cm": 1.5,
+    "reason": "Original problem minimum is 1.5 cm; the reference measures 36bp (1.27 cm)."
+  },
+  "intentional_deviations": [
+    "Margins raised from reference 36bp to problem minimum 1.5cm; user-specified font sizes retained.",
+    "Section number/title gap reduced from 0.6em to 0.55em to fit the preserved long heading at 22pt."
+  ],
+  "submission_font_conflict": {
+    "problem_minimum_pt": 12,
+    "user_requested_reference_sizes_below_minimum": {
+      "caption": 10,
+      "symbol_table": 11,
+      "header": 9,
+      "cover_labels": 10
+    },
+    "status": "disclosed; final PDF is the user-requested template-format edition"
+  }
+}

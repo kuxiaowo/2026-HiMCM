@@ -1,0 +1,1188 @@
+document.getElementById('file_preview_box').innerHTML = `<div class="file_preview preview_csv" role="region" tabindex="0" aria-labelledby="preview_file_name">
+<p role="heading" level="3" id="preview_file_name"><span>Preview: Data.csv</span><button class="o-button__plain-text7" aria-label="Close preview" onclick="close_preview()"><i class="fas fa-times" aria-hidden="true"></i></button></p>
+    <table>
+      <thead><tr>
+          <th>Rep</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Featured_F</th>
+          <th>Terrain</th>
+          <th>Habitat_ty</th>
+          <th>Lattitude</th>
+          <th>Longitude</th>
+          <th>Tiger</th>
+          <th>Leopard</th>
+          <th>other_carni</th>
+          <th>Elephant</th>
+          <th>Spotted Deer</th>
+          <th>Wild Boar</th>
+          <th>Sambar</th>
+          <th>Barking Deer</th>
+          <th>Blue Bull</th>
+          <th>Gaur</th>
+          <th>Other_1</th>
+          <th>Remarks</th>
+          <th>Grid_2_2</th>
+          <th>Grid_10_10</th>
+      </tr></thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53674466</td>
+              <td>84.07498217</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53701457</td>
+              <td>84.07580486</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53644023</td>
+              <td>84.07637668</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53596252</td>
+              <td>84.07682449</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.5352141</td>
+              <td>84.07726935</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53466178</td>
+              <td>84.07717265</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53415126</td>
+              <td>84.07734809</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53376902</td>
+              <td>84.07804635</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino(T)</td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53355034</td>
+              <td>84.078801</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53340188</td>
+              <td>84.07946271</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53358364</td>
+              <td>84.08640007</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53379312</td>
+              <td>84.08735592</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.5341003</td>
+              <td>84.08823836</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53419299</td>
+              <td>84.08921754</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53435781</td>
+              <td>84.09019483</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53446809</td>
+              <td>84.09115331</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g1385</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>6</td>
+              <td>Gundrehidha Kaha CF</td>
+              <td>11-Dec</td>
+              <td>Forest Road</td>
+              <td>Terai</td>
+              <td>RF</td>
+              <td>27.55470061</td>
+              <td>84.11049912</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g538</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Gundrehidha Kaha CF</td>
+              <td>11-Dec</td>
+              <td>Forest Road</td>
+              <td>Terai</td>
+              <td>RF</td>
+              <td>27.55614605</td>
+              <td>84.10713112</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g538</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Gundrehidha Kaha CF</td>
+              <td>11-Dec</td>
+              <td>Forest Road</td>
+              <td>Terai</td>
+              <td>RF</td>
+              <td>27.55638744</td>
+              <td>84.10399709</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g538</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Gundrehidha Kaha CF</td>
+              <td>11-Dec</td>
+              <td>Forest Road</td>
+              <td>Terai</td>
+              <td>RF</td>
+              <td>27.55588258</td>
+              <td>84.10141913</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g538</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Gundrehidha Kaha CF</td>
+              <td>11-Dec</td>
+              <td>Forest Road</td>
+              <td>Terai</td>
+              <td>RF</td>
+              <td>27.55643089</td>
+              <td>84.10002813</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g538</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Gundrehidha Kaha CF</td>
+              <td>11-Dec</td>
+              <td>Forest Road</td>
+              <td>Terai</td>
+              <td>RF</td>
+              <td>27.55690374</td>
+              <td>84.09761679</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g538</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Gundrehidha Kaha CF</td>
+              <td>11-Dec</td>
+              <td>Forest Road</td>
+              <td>Terai</td>
+              <td>RF</td>
+              <td>27.55655898</td>
+              <td>84.09622903</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g538</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53427182</td>
+              <td>84.09211987</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53455988</td>
+              <td>84.09295224</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53491731</td>
+              <td>84.09365122</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53523092</td>
+              <td>84.09441208</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53534914</td>
+              <td>84.09531977</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53546799</td>
+              <td>84.0962578</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.535803</td>
+              <td>84.09718003</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53614619</td>
+              <td>84.09806158</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53610603</td>
+              <td>84.09873056</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53618379</td>
+              <td>84.09986197</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53628436</td>
+              <td>84.10079037</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53729008</td>
+              <td>84.10143189</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53754829</td>
+              <td>84.10213353</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53787299</td>
+              <td>84.10299534</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53803624</td>
+              <td>84.10390189</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino(D)</td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.5384687</td>
+              <td>84.10474065</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.5389995</td>
+              <td>84.10553635</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53957326</td>
+              <td>84.10622974</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53968365</td>
+              <td>84.10719841</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53982172</td>
+              <td>84.10819672</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53990483</td>
+              <td>84.10915598</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.53995146</td>
+              <td>84.11009597</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.54017882</td>
+              <td>84.11105146</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td> </td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Temple Tiger</td>
+              <td>12-Dec</td>
+              <td>Fireline</td>
+              <td>Terai</td>
+              <td>MF</td>
+              <td>27.54034202</td>
+              <td>84.11195804</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino(T)</td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Sailimali</td>
+              <td>12-Dec</td>
+              <td>Animal Track</td>
+              <td>Terai</td>
+              <td>SF</td>
+              <td>27.5353126</td>
+              <td>84.09875141</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Rhino (T)</td>
+              <td> </td>
+              <td>g709</td>
+              <td>G100</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Sailima</td>
+          </tr>
+      </tbody>
+    </table>
+</div>
+`

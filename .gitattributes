@@ -1,4 +1,5 @@
 # Preserve exact bytes referenced by the existing SHA-256 verification records.
+docs/paper/*.tex -text whitespace=cr-at-eol
 docs/paper/question1_protection_definition.tex -text
 docs/paper/question2_framework.tex -text
 output/question2/q2_model_inputs.json -text

@@ -32,9 +32,9 @@ DEFAULT={
     'drone_team_size':2.,'observation_hours':1/6,'preparation_hours':1/12,
     'dispatch_hours':1/6,'response_limit_hours':2.,'safe_flight_hours':.6,
     'minimum_open_share':.6,'minimum_reachable_service':.15,
-    'staff_reference':295,'protection_staff_fraction':.2,'effective_hours_month':120.,
+    'staff_reference':295,'protection_staff_fraction':.6,'effective_hours_month':120.,
     'response_staff_per_site':2.,'response_hours_day':8.,'days_month':30.,
-    'drone_count':6.,'flight_hours_per_drone_day':2.,'drone_days_month':20.,
+    'drone_count':30.,'flight_hours_per_drone_day':2.,'drone_days_month':20.,
     'management_weight_method':'entropy_information',
 }
 # Coordinates read from the project's fixed OSM snapshot. Sites are candidates,
@@ -195,11 +195,17 @@ def prepare(config,sites=None):
     result={'config':config,'AHP':aa,'management_weight_estimation':objective_weights,'bases':bases,'candidate_entry_count':len(entries),'graph_nodes':graph.number_of_nodes(),'graph_directed_arcs':graph.number_of_edges(),'targets':targetrows,'region_ids':[r for r,g in region_geom],'animal_values_15_regions':animals,'animal_unknown_regions':[r['region_id'] for r in base if r['region_kind']!='survey_stratum'],'human_budget':H,'response_reserved_hours':H0,'drone_budget':U,'scope':'daytime strategic monitoring of measured six taxa and fuel habitat; not complete park conservation certification','checks':{'region_area_shares_sum_to_one':True,'animal_values_sum_to_one':True,'objective_weights_sum_to_one':bool(abs(sum(t['objective_weight'] for t in targetrows)-1)<1e-9),'AHP_consistency_pass':True},'limitations':['Historical counts and assumed uniform within-region animal distribution','All management access to candidate roads assumed; signs, gates and seasonal closures need verification','Four camps and two gates are proposed sites, not observed ranger deployment','Area-grid representatives are inspection targets, not complete spatial coverage','Ground sorties independently return to a base; route chaining not optimised','Drone observation protocol is assumed equivalent only for screening; not arrest, firefighting or habitat restoration','Fire baseline assumes uniform exposure on fuel habitat; no multi-year fire probability estimated','Unknown rhino/bird/plant values remain outside measured objective; all reachable regions have a generic service floor','Only specified daytime response window is modelled; no 24-hour protection claim']}
     return result
 
-def solve(data, H=None,U=None,weights=None,fixed_service=None,minimum_person=False,ground_factor=1.,operator_factor=1.):
+def solve(data, H=None,U=None,weights=None,fixed_service=None,minimum_person=False,ground_factor=1.,operator_factor=1.,score_floor=None,drone_efficiency=1.,minimum_ground_share=0.):
     ts=data['targets'];n=len(ts);p=data['config'];F=np.array([t['planned_checks_month'] for t in ts])
     H=data['human_budget'] if H is None else H;U=data['drone_budget'] if U is None else U
     objective=np.zeros(3*n)
-    weights=np.asarray([t['objective_weight'] for t in ts]) if weights is None else weights
+    weights=np.asarray([t['objective_weight'] for t in ts]) if weights is None else np.asarray(weights,dtype=float)
+    if not (0<drone_efficiency<=1 and 0<=minimum_ground_share<=1):
+        raise ValueError('Drone screening efficiency must be in (0,1]; ground-check share in [0,1].')
+    if len(weights)!=n or not np.isfinite(weights).all() or (weights<0).any() or abs(weights.sum()-1)>1e-8:
+        raise ValueError('Evaluation weights must be finite, nonnegative and sum to one.')
+    cap=float(100*weights@np.array([t['response_eligible'] for t in ts],dtype=float))
+    at_cap=score_floor is not None and abs(score_floor-cap)<1e-8
     gh=np.array([t['ground_hours_per_check'] or 1 for t in ts])*ground_factor
     uh=np.array([t['flight_hours_per_check'] or 1 for t in ts])
     gamma_i=np.array([(t['operator_hours_per_check']/t['flight_hours_per_check']) if t['drone_allowed'] else 0 for t in ts])*operator_factor
@@ -209,7 +215,10 @@ def solve(data, H=None,U=None,weights=None,fixed_service=None,minimum_person=Fal
         r=len(rhs)
         for j,v in items:rows.append(r);cols.append(j);vals.append(v)
         rhs.append(b)
-    for j,t in enumerate(ts):row([(j,-1/gh[j]),(n+j,-1/uh[j]),(2*n+j,F[j])],0)
+    for j,t in enumerate(ts):
+        row([(j,-1/gh[j]),(n+j,-drone_efficiency/uh[j]),(2*n+j,F[j])],0)
+        if minimum_ground_share:
+            row([(j,-1/gh[j]),(2*n+j,minimum_ground_share*F[j])],0)
     row([(j,1.) for j in range(n)]+[(n+j,gamma_i[j]) for j in range(n)],H-data['response_reserved_hours'])
     row([(n+j,1.) for j in range(n)],U)
     for rid in data['region_ids']:
@@ -218,24 +227,32 @@ def solve(data, H=None,U=None,weights=None,fixed_service=None,minimum_person=Fal
         row([(2*n+j,-ts[j]['within_region_area_share']) for j in indexes],-p['minimum_reachable_service']*reachable)
     bounds=[]
     for j,t in enumerate(ts):bounds.append((0,F[j]*gh[j] if t['response_eligible'] else 0))
-    for j,t in enumerate(ts):bounds.append((0,F[j]*uh[j] if t['drone_allowed'] else 0))
+    if score_floor is not None and not at_cap:
+        row([(2*n+j,-1e4*weights[j]) for j in range(n)],-1e4*score_floor/100)
+    for j,t in enumerate(ts):bounds.append((0,F[j]*uh[j]/drone_efficiency if t['drone_allowed'] else 0))
     for j,t in enumerate(ts):
         bound=float(t['response_eligible'])
-        bounds.append((float(fixed_service[j]),float(fixed_service[j])) if fixed_service is not None else (0,bound))
+        bounds.append((float(fixed_service[j]),float(fixed_service[j])) if fixed_service is not None else (bound,bound) if at_cap and weights[j]>0 else (0,bound))
     if minimum_person:objective[:n]=1.;objective[n:2*n]=gamma_i
-    else:objective[2*n:]=-weights
+    else:objective[2*n:]=-1e4*weights
     mat=sparse.coo_matrix((vals,(rows,cols)),shape=(len(rhs),3*n)).tocsr()
-    res=linprog(objective,A_ub=mat,b_ub=np.asarray(rhs),bounds=bounds,method='highs')
+    res=linprog(objective,A_ub=mat,b_ub=np.asarray(rhs),bounds=bounds,method='highs',options={'primal_feasibility_tolerance':1e-9,'dual_feasibility_tolerance':1e-9})
     if not res.success:return {'success':False,'status':res.status,'message':res.message}
     raw=res.x.copy();residual=float(np.max(mat@raw-np.asarray(rhs)))
     assert residual<1e-6
     x=raw[:n];h=raw[n:2*n];s=raw[2*n:]
-    # Remove resource slack exactly while preserving the chosen service and
-    # best score. This selects a minimum-human representative of tied optima.
+    # Preserve the optimal SCORE, leaving the service vector free. At the
+    # geographic cap, only positive-weight targets are forced to their upper
+    # bound; zero-weight targets retain their regional service floors.
     if not minimum_person and fixed_service is None:
-        refined=solve(data,H,U,weights,s,True,ground_factor,operator_factor)
-        if refined['success']:return refined
-    return {'success':True,'status':int(res.status),'message':res.message,'score':float(100*weights@s),'ground_hours':float(x.sum()),'drone_flight_hours':float(h.sum()),'drone_operator_hours':float(gamma_i@h),'response_reserved_hours':float(data['response_reserved_hours']),'total_person_hours':float(x.sum()+gamma_i@h+data['response_reserved_hours']),'human_budget':float(H),'drone_budget':float(U),'geographic_score_upper_bound':float(100*sum(w for w,t in zip(weights,ts) if t['response_eligible'])),'constraint_max_residual':residual,'x':x.tolist(),'h':h.tolist(),'s':s.tolist()}
+        first_score=float(100*weights@s)
+        floor=cap if abs(first_score-cap)<1e-8 else first_score-1e-9
+        refined=solve(data,H=H,U=U,weights=weights,minimum_person=True,ground_factor=ground_factor,operator_factor=operator_factor,score_floor=floor,drone_efficiency=drone_efficiency,minimum_ground_share=minimum_ground_share)
+        if not refined['success']:raise RuntimeError('Optimal-score labor refinement failed: '+json.dumps(refined))
+        assert abs(refined['score']-first_score)<1e-6
+        refined['two_stage']={'method':'maximum_score_then_global_minimum_person_hours','first_stage_score':first_score,'second_stage_score':refined['score'],'score_gap_points':refined['score']-first_score,'service_vector_fixed':False,'score_tolerance_points':1e-6}
+        return refined
+    return {'success':True,'status':int(res.status),'message':res.message,'score':float(100*weights@s),'ground_hours':float(x.sum()),'drone_flight_hours':float(h.sum()),'drone_operator_hours':float(gamma_i@h),'response_reserved_hours':float(data['response_reserved_hours']),'total_person_hours':float(x.sum()+gamma_i@h+data['response_reserved_hours']),'human_budget':float(H),'drone_budget':float(U),'geographic_score_upper_bound':cap,'constraint_max_residual':residual,'drone_efficiency':float(drone_efficiency),'minimum_ground_share':float(minimum_ground_share),'x':x.tolist(),'h':h.tolist(),'s':s.tolist()}
 
 def heuristic(data,kind):
     ts=data['targets'];p=data['config'];eligible=np.array([t['response_eligible'] for t in ts],dtype=float)
@@ -269,7 +286,11 @@ def figures(data,result,comparisons,scenarios,rows):
     plt.rcParams['axes.unicode_minus']=False;plt.rcParams['svg.fonttype']='none'
     plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False})
     def save(fig,name):
-        fig.savefig(OUT/(name+'.png'),dpi=240,bbox_inches='tight',facecolor='white');fig.savefig(OUT/(name+'.svg'),bbox_inches='tight');plt.close(fig)
+        for extension in ['png','svg']:
+            temporary=OUT/(name+'.tmp.'+extension)
+            fig.savefig(temporary,dpi=240,bbox_inches='tight',facecolor='white')
+            temporary.replace(OUT/(name+'.'+extension))
+        plt.close(fig)
     geometries=load_geometry();lookup={r['region_id']:r for r in rows}
     fig,axs=plt.subplots(1,2,figsize=(14,5.5),layout='constrained')
     for ax,column,title in zip(axs,['demand_weight','service_completion_fraction'],['已知对象的规划需求权重','优化后的规定监测服务完成率']):
@@ -337,6 +358,10 @@ def main():
         {'name':'无人机停用','result':solve(data,U=0)},
         {'name':'人时减少40%且无人机停用','result':solve(data,H=scarce_H,U=0)},
         {'name':'出行及作业人时增加25%','result':solve(data,ground_factor=1.25,operator_factor=1.25)}]
+    for efficiency in [.75,.5]:
+        scenarios.append({'name':f'无人机筛查效率{efficiency:.0%}','drone_efficiency':efficiency,'status':'unmeasured_screening_efficiency_scenario','result':solve(data,drone_efficiency=efficiency)})
+    for share in [.1,.25]:
+        scenarios.append({'name':f'必要地面检查占比{share:.0%}','minimum_ground_share':share,'status':'assumed_ground_verification_requirement','result':solve(data,minimum_ground_share=share)})
     for share in [.5,.9]:
         weights=np.array([share*t['animal_component_share']+(1-share)*t['habitat_component_share'] for t in data['targets']]);scenarios.append({'name':f'动物管理权重{share:.0%}','result':solve(data,weights=weights),'animal_management_share':share})
     critic_alpha=data['management_weight_estimation']['CRITIC_alternative'][0]

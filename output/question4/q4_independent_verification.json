@@ -1,7 +1,7 @@
 {
   "passed": true,
-  "independently_checked_feasible_solutions": 97,
-  "saved_cases": 101,
+  "independently_checked_feasible_solutions": 127,
+  "saved_cases": 131,
   "source_fingerprints_unchanged": true,
   "policy_profiles_checked": true,
   "water_dates_and_workload_checked": true,

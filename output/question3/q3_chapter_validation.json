@@ -1,67 +1,54 @@
 {
   "passed": true,
   "checks": {
-    "outline_matches_approved_5_sections_13_titles": true,
-    "25_numbered_equations": true,
-    "equation_numbers_sequential": true,
-    "latex_environment_counts_match": true,
-    "unique_labels": true,
-    "all_formula_figure_table_references_resolved": true,
-    "six_valid_source_and_design_references": true,
-    "no_template_tokens": true,
-    "all_local_links_exist": true,
-    "original_scientific_inputs_unchanged": true,
-    "figure_data_fingerprints_match": true,
-    "25_math_blocks_balanced": true,
-    "four_figures_four_tables": true,
-    "all_12_figure_outputs_exist": true,
-    "water_figure_total_matches_saved_solution": true,
-    "key_numbers_present_in_synced_sources": true,
-    "peak_staff_57_and_stress_62": true,
+    "approved_five_sections_thirteen_subsections": true,
+    "twelve_sequential_equations": true,
+    "latex_environments_balanced": true,
+    "unique_labels_and_resolved_references": true,
+    "six_valid_references": true,
+    "two_figures_three_tables": true,
+    "input_and_result_fingerprints_current": true,
+    "figure_fingerprints_current": true,
+    "reference_staff_177_and_fleet_30": true,
     "fixed_120_effective_hours": true,
-    "saved_independent_LP_verification_passed": true,
-    "no_math_render_errors": true,
-    "no_broken_figures_or_horizontal_overflow": true,
-    "PDF_A4_and_10_pages": true,
-    "PDF_key_results_in_prose": true,
-    "all_final_pages_rendered": true
+    "peak_57_and_drought_62": true,
+    "177_staff_retain_target_under_drought": true,
+    "independent_84_solution_audit_passed": true,
+    "six_A4_pages": true,
+    "key_numbers_in_sources_and_pdf": true,
+    "no_overflow_or_unresolved_compile_references": true,
+    "all_six_final_pages_rendered": true,
+    "all_local_links_exist": true,
+    "no_template_tokens": true
   },
-  "missing_local_links": [],
-  "pages": 10,
-  "body_pages": 9,
-  "reference_pages": 1,
+  "missing_links": [],
+  "pages": 6,
   "visual_review": {
+    "status": "passed",
+    "pdf_sha256": "83b57a3dfbff9e1e659785541e58852a1803ef100b218755b4a5380d0e8158b2",
+    "pdf": "output/pdf/revision_20261006/question3_framework.pdf",
     "reviewed_pages": [
       1,
       2,
       3,
       4,
       5,
-      6,
-      7,
-      8,
-      9,
-      10
+      6
     ],
-    "passed": true,
-    "method": "manual full-page images plus final 10-page contact sheet",
-    "corrections": [
-      "display equations rendered as indivisible SVG images",
-      "table and note kept together",
-      "reference list kept together",
-      "formula lead-in kept with its equation",
-      "axis labels and workload legend adjusted"
+    "render_dpi": 300,
+    "contact_sheets": "tmp/pdfs/revision_20261006/question3_framework",
+    "notes": [
+      "No clipped text, overlapping glyphs or missing-glyph boxes observed; figures/tables readable; no orphan heading observed."
     ]
   },
+  "source_model_recomputed": true,
   "latex_compilation": {
-    "status": "platform_error",
-    "diagnostic": "Unable to find standard directories for platform"
+    "built_in": "platform_error: Unable to find standard directories for platform",
+    "local_XeLaTeX": "success; TeX Live 2026; two passes"
   },
-  "pdf_export_method": "Chromium + MathJax 3.2.2 SVG from synchronized Markdown",
-  "source_model_recomputed": false,
   "file_sha256": {
-    "docs/paper/question3_framework.tex": "c519572a0af8db92562d92e06f3415ec53d494783df849bef70b462992a132fa",
-    "docs/paper/question3_seasonal_staffing.md": "174e72519752a934fc0284a328f3dc71e543d5d777db46240e47a25118299542",
-    "output/pdf/question3_framework.pdf": "60f0032936803c7427df837a2247df29702d54daa22d14c4d5a51560a4190efb"
+    "docs/paper/question3_framework.tex": "c111a34d82ef42f6040dab565f54403cc27c0cb94acf10172d60ce3dd8c96f08",
+    "docs/paper/question3_seasonal_staffing.md": "6dbf0dfd4ff7bc34094959d5e26116fabd94dcaf5b4b5bd440c2493b35539702",
+    "output/pdf/revision_20261006/question3_framework.pdf": "83b57a3dfbff9e1e659785541e58852a1803ef100b218755b4a5380d0e8158b2"
   }
 }

@@ -1,10 +1,26 @@
 {
-  "method": "Chromium + MathJax 3.2.2 SVG from synchronized Markdown",
-  "latex_compiler_status": "platform_error",
-  "display_equations": 25,
-  "figures": 4,
-  "tables": 4,
+  "method": "XeLaTeX, TeX Live 2026; Poppler PNG rendering",
+  "pages": 6,
+  "display_equations": 12,
+  "math_errors": [],
   "broken_images": 0,
   "horizontal_overflow": [],
-  "math_errors": []
+  "visual_review": {
+    "status": "passed",
+    "pdf_sha256": "83b57a3dfbff9e1e659785541e58852a1803ef100b218755b4a5380d0e8158b2",
+    "pdf": "output/pdf/revision_20261006/question3_framework.pdf",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "render_dpi": 300,
+    "contact_sheets": "tmp/pdfs/revision_20261006/question3_framework",
+    "notes": [
+      "No clipped text, overlapping glyphs or missing-glyph boxes observed; figures/tables readable; no orphan heading observed."
+    ]
+  }
 }

@@ -1983,8 +1983,8 @@
 \node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (1.1982,1.9300) {50 km};
 \path[fill={rgb,1:red,0.25490;green,0.59608;blue,0.54902},draw=none,line width=0.5pt] (3.0500,2.1300) circle (0.0750);
 \node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (3.2500,2.1300) {17处BH钻井};
-\path[even odd rule,fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=0.1pt] (5.4000,2.2400) -- (5.3728,2.1674) -- (5.2954,2.1640) -- (5.3561,2.1157) -- (5.3353,2.0410) -- (5.4000,2.0838) -- (5.4647,2.0410) -- (5.4439,2.1157) -- (5.5046,2.1640) -- (5.4272,2.1674) -- cycle;
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (5.6200,2.1300) {候选驻点};
+\path[even odd rule,fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=0.1pt] (6.0500,2.2400) -- (6.0228,2.1674) -- (5.9454,2.1640) -- (6.0061,2.1157) -- (5.9853,2.0410) -- (6.0500,2.0838) -- (6.1147,2.0410) -- (6.0939,2.1157) -- (6.1546,2.1640) -- (6.0772,2.1674) -- cycle;
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (6.2800,2.1300) {候选驻点};
 \path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (0.4000,0.7500) rectangle (7.8000,1.4900);
 \node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (4.1000,1.2500) {往返时间合计 42.88 h；每点4次/月};
 \node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont\bfseries}] at (4.1000,0.9400) {两人运维 → 合计 422.34 人时/月};

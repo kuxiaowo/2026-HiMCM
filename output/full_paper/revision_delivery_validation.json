@@ -1,0 +1,342 @@
+{
+  "status": "passed_source_numerical_typography_compilation_and_visual_checks",
+  "verified_at_utc": "2026-10-06T19:02:02.007390+00:00",
+  "documents": {
+    "full_paper": {
+      "source": "docs/paper/full_paper.tex",
+      "source_sha256": "45cbd0d21e7f5d64b3478f3dbdbf5cf5103b99a03c200b605bb54490bb266fa4",
+      "pdf": "output/pdf/caption_revision_20261007/full_paper.pdf",
+      "pdf_sha256": "0cbaa36931ac334130ad35004a91e9e721cb91ee00ae6ff04292320661233b0b",
+      "pages": 22,
+      "figures": 7,
+      "tables": 17,
+      "numbered_equations": 19,
+      "bibliography_entries": 17,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/caption_revision_20261007/full_paper.pdf",
+        "pdf_sha256": "0cbaa36931ac334130ad35004a91e9e721cb91ee00ae6ff04292320661233b0b",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "render_dpi": 300,
+        "reviewed_at_utc": "2026-10-07T03:41:10.949344+00:00",
+        "method": "All 22 pages inspected in six contact sheets; captions, adjacent prose, labels, equations, maps, tables, appendix and letter checked.",
+        "notes": [
+          "Captions are one sentence, with occasional two-line wrapping.",
+          "At most two logical figures/tables on any page; no overflow, overlap or missing glyphs found.",
+          "Final solution, appendix, letter, references and AI pages may end naturally."
+        ]
+      },
+      "captions_one_sentence": true
+    },
+    "full_paper_zh_explained": {
+      "source": "docs/paper/full_paper_zh.tex",
+      "source_sha256": "ae7b56ca49162952f4147d1f6b5eaf3c527cb1ef47a29d7b52858937c78c3237",
+      "pdf": "output/pdf/skill_checked_20261007/full_paper_zh_explained.pdf",
+      "pdf_sha256": "696115f28660194ef719b43d49f6282b6c9fd61294d2f7307bec8b0f4a9b0384",
+      "pages": 40,
+      "figures": 6,
+      "tables": 17,
+      "numbered_equations": 19,
+      "bibliography_entries": 17,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/full_paper_zh_explained.pdf",
+        "pdf_sha256": "696115f28660194ef719b43d49f6282b6c9fd61294d2f7307bec8b0f4a9b0384",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/full_paper_zh_explained",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Final full-paper page inspection at 300 dpi; supplement and listing checked."
+        ]
+      }
+    },
+    "question1_protection_definition": {
+      "source": "docs/paper/question1_protection_definition.tex",
+      "source_sha256": "38dcd8a7365673f320e14dea2342533f55269ad9050efffba5c2dce8b76019eb",
+      "pdf": "output/pdf/skill_checked_20261007/question1_protection_definition.pdf",
+      "pdf_sha256": "b8ef19ff7c661597bfd8aad4f22ee211f62f86670f95e31d45492cf93ed494ba",
+      "pages": 1,
+      "figures": 0,
+      "tables": 0,
+      "numbered_equations": 2,
+      "bibliography_entries": 0,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question1_protection_definition.pdf",
+        "pdf_sha256": "b8ef19ff7c661597bfd8aad4f22ee211f62f86670f95e31d45492cf93ed494ba",
+        "reviewed_pages": [
+          1
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question1_protection_definition",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
+    },
+    "question2_framework": {
+      "source": "docs/paper/question2_framework.tex",
+      "source_sha256": "2c066352893a09206c21e0bd21eb58aa683b6599eeeed702ed8f7635c6aa7a1a",
+      "pdf": "output/pdf/skill_checked_20261007/question2_framework.pdf",
+      "pdf_sha256": "67945c878dd0b0dff3ac89996b84b9f749507735582a50d9757b978d3a0dfc17",
+      "pages": 8,
+      "figures": 2,
+      "tables": 4,
+      "numbered_equations": 20,
+      "bibliography_entries": 4,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question2_framework.pdf",
+        "pdf_sha256": "67945c878dd0b0dff3ac89996b84b9f749507735582a50d9757b978d3a0dfc17",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question2_framework",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
+    },
+    "question3_framework": {
+      "source": "docs/paper/question3_framework.tex",
+      "source_sha256": "c111a34d82ef42f6040dab565f54403cc27c0cb94acf10172d60ce3dd8c96f08",
+      "pdf": "output/pdf/skill_checked_20261007/question3_framework.pdf",
+      "pdf_sha256": "83b57a3dfbff9e1e659785541e58852a1803ef100b218755b4a5380d0e8158b2",
+      "pages": 6,
+      "figures": 2,
+      "tables": 3,
+      "numbered_equations": 12,
+      "bibliography_entries": 6,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question3_framework.pdf",
+        "pdf_sha256": "83b57a3dfbff9e1e659785541e58852a1803ef100b218755b4a5380d0e8158b2",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question3_framework",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
+    },
+    "question4_sensitivity": {
+      "source": "docs/paper/question4_sensitivity.tex",
+      "source_sha256": "79f49b4a7ab04e8eac2643af80449a4f0b8182fa6a91554b878195c40e3310e9",
+      "pdf": "output/pdf/skill_checked_20261007/question4_sensitivity.pdf",
+      "pdf_sha256": "1e2ca978e1b4ced832fb2e932ab7f83f14d820732076f7fc9c24ed837574fb40",
+      "pages": 4,
+      "figures": 2,
+      "tables": 4,
+      "numbered_equations": 3,
+      "bibliography_entries": 0,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question4_sensitivity.pdf",
+        "pdf_sha256": "1e2ca978e1b4ced832fb2e932ab7f83f14d820732076f7fc9c24ed837574fb40",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question4_sensitivity",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
+    },
+    "question5_evaluation": {
+      "source": "docs/paper/question5_evaluation.tex",
+      "source_sha256": "1899173d12ec02ea6a3a5fcc9ceeb8dfb637b102d075775e8da0bffe40cb5c41",
+      "pdf": "output/pdf/skill_checked_20261007/question5_evaluation.pdf",
+      "pdf_sha256": "2a56064b451d0d84c95c3573d95d75c520bfc02a1eff505d803286840fa403bc",
+      "pages": 1,
+      "figures": 0,
+      "tables": 0,
+      "numbered_equations": 0,
+      "bibliography_entries": 0,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question5_evaluation.pdf",
+        "pdf_sha256": "2a56064b451d0d84c95c3573d95d75c520bfc02a1eff505d803286840fa403bc",
+        "reviewed_pages": [
+          1
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question5_evaluation",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
+    },
+    "question6_adaptation": {
+      "source": "docs/paper/question6_adaptation.tex",
+      "source_sha256": "7b9a5fe57056718c3514a0f1c62b8e766a6097cd00590f98e1560acbb6d66561",
+      "pdf": "output/pdf/skill_checked_20261007/question6_adaptation.pdf",
+      "pdf_sha256": "e3043cb5be36b90e626b084da20a2ce18261e293a21ebb490d0aad86dee486a1",
+      "pages": 6,
+      "figures": 3,
+      "tables": 4,
+      "numbered_equations": 6,
+      "bibliography_entries": 14,
+      "cross_references_resolved": true,
+      "all_fonts_embedded": true,
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question6_adaptation.pdf",
+        "pdf_sha256": "e3043cb5be36b90e626b084da20a2ce18261e293a21ebb490d0aad86dee486a1",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question6_adaptation",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
+    }
+  },
+  "results": {
+    "baseline_rate": 57.260161284231835,
+    "minimum_labor_hours": 5286.114336435482,
+    "flight_hours": 144.34338322044937,
+    "normal_peak_staff": 57,
+    "drought_peak_staff": 62,
+    "Q2_Q3_inverse_agree": true,
+    "Q4_feasible_solutions_checked": 127
+  },
+  "limitations": [
+    "Planning protocols and technology efficiency remain assumptions",
+    "Six historical surveyed groups do not cover all animals or current abundance",
+    "Chitwan legal boundary and reported-area convention remain uncalibrated",
+    "Monthly personnel equivalents do not certify rosters or ecological effects",
+    "Mathematical subscript sizes are smaller than prose by standard typesetting; normal body, captions, symbols, headers and cover labels use at least 12pt"
+  ],
+  "compiler": "Existing TeX Live 2026 XeLaTeX, two passes; built-in compiler has a platform-directory error",
+  "current_manuscript_edition": "caption_revision_20261007",
+  "English_current_validation": "output/full_paper/caption_revision_20261007/caption_revision_validation.json",
+  "latest_caption_authority": "User requested one concise sentence per figure/table caption, detailed explanations in adjacent body prose; overrides generic 100--150 caption tokens.",
+  "latest_verification_scope": "Editorial changes only; unchanged numerical results and source inputs rechecked, final English PDF recompiled and all 22 pages inspected."
+}

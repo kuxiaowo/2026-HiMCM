@@ -78,8 +78,9 @@ def main():
     eta = data['eta']; q = data['assumptions']['effective_person_hours_month']
     cases=[]; solutions=[]; checks=[]; regional_rows=[]
 
-    def add(key, per, mode, H=None, U=240, case_data=None, result=None, **parameters):
+    def add(key, per, mode, H=None, U=None, case_data=None, result=None, **parameters):
         d = data if case_data is None else case_data
+        U = d['drone_budget'] if U is None else U
         staff = None if H is None else H/q
         res = solve(d,per,mode,staff=staff,U=U) if result is None else result
         row = {'case_id':key,'mode':mode,'human_budget':H,'drone_budget':U,**parameters,
@@ -101,12 +102,12 @@ def main():
 
     resource=[]
     for scope,per in [('q2_monitoring',baseline),('q3_peak_base',peak)]:
-        for N in [24,30,35,40,44,45,46,50,53,55,56,57,59]:
+        for N in [24,30,35,40,44,45,46,50,53,55,56,57,59,106,177]:
             row,_=add(f'{scope}_N{N}',per,'forward',H=N*q,scope=scope,staff=N)
             resource.append(row)
     technology=[]
     for scope,per in [('q2_monitoring',baseline),('q3_peak_base',peak)]:
-        for U in [0,40,80,120,160,200,240]:
+        for U in [0,40,80,120,160,200,240,600,1200]:
             row,_=add(f'{scope}_inverse_U{U}',per,'inverse',U=U,scope=scope)
             technology.append(row)
 
@@ -123,8 +124,8 @@ def main():
             parameters.append(row)
 
     joint=[]
-    for N in [45,50,55,57,59,62,67]:
-        for U in [0,80,120,160,200,240]:
+    for N in [45,50,55,57,59,62,67,177]:
+        for U in [0,80,120,160,200,240,600,1200]:
             row,_=add(f'joint_N{N}_U{U}',peak,'forward',H=N*q,U=U,scope='q3_peak_base',staff=N)
             joint.append(row)
 
@@ -170,7 +171,7 @@ def main():
         monotone.append(all(b['score']>=a['score']-1e-6 for a,b in zip(rows,rows[1:])))
         rows=[r for r in technology if r['scope']==scope]
         monotone.append(all(b['total_person_hours']<=a['total_person_hours']+1e-6 for a,b in zip(rows,rows[1:])))
-    for U in [0,80,120,160,200,240]:
+    for U in [0,80,120,160,200,240,600,1200]:
         rows=[r for r in joint if r['drone_budget']==U and r['success']]
         monotone.append(all(b['score']>=a['score']-1e-6 for a,b in zip(rows,rows[1:])))
     assert all(monotone)
@@ -181,7 +182,7 @@ def main():
     assert abs(peak_ref['total_person_hours']-max(r['required_person_hours'] for r in old_q3['monthly']))<1e-6
     schedules=schedule_comparison(peak)
     result={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'target_score':eta,
-            'effective_person_hours_month':q,'source_sha256':before,'script_sha256':sha('scripts/modeling/build_question4.py'),
+            'effective_person_hours_month':q,'current_reference_staff':data['assumptions']['fixed_reference_staff'],'current_drone_budget':data['drone_budget'],'source_sha256':before,'script_sha256':sha('scripts/modeling/build_question4.py'),
             'resource_sensitivity':resource,'technology_sensitivity':technology,'single_parameter_sensitivity':parameters,
             'joint_peak_scenarios':joint,'policy_comparisons':policy,'water_schedule_comparison':schedules,
             'service_standard_combinations_from_q3':old_q3['sensitivity'],

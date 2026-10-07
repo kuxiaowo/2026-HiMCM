@@ -1,0 +1,42 @@
+[
+  {
+    "requested_url": "https://datadryad.org/api/v2/files/4813216/download",
+    "file": "data/revision_feasibility/20261006/chitwan_tiger/Data.csv",
+    "accessed_utc": "2026-10-06T13:39:54.305268+00:00",
+    "status": 401,
+    "final_url": "https://datadryad.org/api/v2/files/4813216/download",
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 56,
+    "error": "401 Client Error: Unauthorized for url: https://datadryad.org/api/v2/files/4813216/download"
+  },
+  {
+    "requested_url": "https://datadryad.org/api/v2/files/4813225/download",
+    "file": "data/revision_feasibility/20261006/chitwan_tiger/README.md",
+    "accessed_utc": "2026-10-06T13:39:54.305268+00:00",
+    "status": 401,
+    "final_url": "https://datadryad.org/api/v2/files/4813225/download",
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 56,
+    "error": "401 Client Error: Unauthorized for url: https://datadryad.org/api/v2/files/4813225/download"
+  },
+  {
+    "requested_url": "https://www.nps.gov/yell/learn/nature/upload/1995_2022-YELL-wolf-data.zip",
+    "file": "data/revision_feasibility/20261006/yellowstone_wolf_1995_2022.zip",
+    "accessed_utc": "2026-10-06T13:39:54.305268+00:00",
+    "status": 200,
+    "final_url": "https://www.nps.gov/yell/learn/nature/upload/1995_2022-YELL-wolf-data.zip",
+    "content_type": "application/x-zip-compressed",
+    "bytes": 793419,
+    "sha256": "3836eaeb11eee25e3844a91d0fdee310a5536c9b54fe6a558d65eeaed6748866"
+  },
+  {
+    "requested_url": "https://www.nps.gov/yell/learn/upload/2025-YELL-Wolf-Cougar-Elk-Project-Annual-Report-508.pdf",
+    "file": "data/revision_feasibility/20261006/yellowstone_wolf_cougar_elk_2025.pdf",
+    "accessed_utc": "2026-10-06T13:39:54.306633+00:00",
+    "status": 200,
+    "final_url": "https://www.nps.gov/yell/learn/upload/2025-YELL-Wolf-Cougar-Elk-Project-Annual-Report-508.pdf",
+    "content_type": "application/pdf",
+    "bytes": 4538628,
+    "sha256": "02b4c2ee9fa76dfbef115586c61d29144ba13355e43234a4b8a2cae57bc216d9"
+  }
+]

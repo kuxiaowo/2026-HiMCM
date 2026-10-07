@@ -1,0 +1,646 @@
+{
+  "status": "historical_translation_passed_not_current_explanation",
+  "language": "zh-CN",
+  "source_english": "docs/paper/full_paper.tex",
+  "source_english_sha256": "e104605df64df8b25cda829877abf4423492e388057a455762e341d8c5e5fe2f",
+  "source_chinese": "output/full_paper/history/pre_plain_explanation_20261006/full_paper_zh.tex",
+  "source_chinese_sha256": "d8dbe3320f4382278e1f81aa3cfdac63e607adea92fdc14bb19d0e90c7487183",
+  "all_narrative_blocks_translated": 124,
+  "figures": 6,
+  "tables": 13,
+  "numbered_equations": 19,
+  "references": 15,
+  "equations_unchanged_except_translated_units": true,
+  "labels_and_citations_unchanged": true,
+  "numerical_results_copied_from_verified_english": true,
+  "paragraphs": [
+    {
+      "index": 0,
+      "english": "Protecting a large reserve requires teams to reach important locations and turn observations into action. We develop a monthly planning framework for Etosha National Park that connects conservation priorities, inspection tasks, ground response, personnel and drones. A seasonal extension estimates the workforce needed to maintain a selected service level.",
+      "chinese": "保护大型自然保护区，需要团队能够到达重要地点，并将观测转化为行动。我们为埃托沙国家公园建立了月度规划框架，将保护优先事项、巡检任务、地面响应、人员和无人机联系起来。季节性扩展模型用于估计维持指定服务水平所需的人力。"
+    },
+    {
+      "index": 1,
+      "english": "We use 17 reporting regions and 599 smaller planning units. Historical animal surveys and burnable-habitat areas establish relative inspection priorities. Road routes determine travel time, and a two-hour ground-response limit determines where monitoring can receive effective follow-up. The service score measures weighted completion of prescribed inspections; it is not a survival rate or a measured reduction in wildlife losses.",
+      "chinese": "我们使用17个统计分区和599个较小的规划单元。历史动物调查和可燃生境面积用于确定巡检的相对优先程度。道路路线决定出行时间，地面队伍两小时内到达的限制则决定哪些监测能够得到有效后续处理。服务评分衡量规定巡检任务的加权完成程度，并不表示动物存活率或已测得的野生动物损失减少幅度。"
+    },
+    {
+      "index": 2,
+      "english": "The planning baseline makes 60\\% of the problem's 295 reference employees available to these tasks: 177 person-months at 120 effective hours each, or \\textbf{21240} personnel-hours. Thirty proposed drones provide \\textbf{1200} flight-hours per month. The optimum score is \\textbf{57.26} out of 100. A representative allocation uses \\textbf{5379.02} personnel-hours, including response readiness, and \\textbf{151.82} flight-hours. Unused resources show that the binding obstacle is the response layout. Among three additional-post candidates, the ENP5 candidate raises the score to \\textbf{64.27} under the same total resource limits.",
+      "chinese": "规划基准假设，题目提供的295名参考员工中有60\\%可投入这些任务，即177人月，每人每月有效工作120小时，合计\\textbf{21240}人时。拟配置的30架无人机每月提供\\textbf{1200}机时。最优评分为\\textbf{57.26}分，满分100分。一个代表性配置方案使用\\textbf{5379.02}人时，其中包括响应待命工时，并使用\\textbf{151.82}机时。资源仍有剩余，表明真正起限制作用的是响应驻点布局。在三个新增驻点候选方案中，ENP5候选方案在总资源上限不变的情况下，将评分提高至\\textbf{64.27}分。"
+    },
+    {
+      "index": 3,
+      "english": "Seasonal tasks add fire screening and maintenance of 17 historically documented boreholes. Maintaining the same target requires \\textbf{57} personnel in the busiest normal month and \\textbf{62} under the specified drought-maintenance scenario. These are conditional workload estimates, not the park's verified staffing requirement. The 177-person reference has ample monthly capacity, while 428.45 additional peak fire checks remain outside the assumed response range.",
+      "chinese": "季节性任务增加了火险筛查和17处历史记录钻井的运维。维持相同目标，在常规情景最繁忙的月份需要\\textbf{57}人，在指定的干旱运维情景下需要\\textbf{62}人。这些是依赖假设的工作量估计，并非经过核实的公园实际人员需求。177人的参考配置具有充足的月度容量，但高峰期仍有428.45次额外火险检查处于假设响应范围之外。"
+    },
+    {
+      "index": 4,
+      "english": "Sensitivity tests distinguish workload shortages from access gaps and show why the timing of visits matters. Adaptations for Chitwan in Asia and Yellowstone in North America use real spatial data with explicit operating assumptions. The Chitwan boundary fails an area-consistency check, so its results remain conditional polygon trials. We recommend validating travel, task effectiveness and response-post locations before adopting personnel recommendations.",
+      "chinese": "敏感性测试区分了工作量不足与通达性缺口，并说明了安排巡访时间的重要性。模型向亚洲奇特旺和北美洲黄石国家公园的迁移使用真实空间数据，并明确列出运行假设。奇特旺边界未通过面积一致性检查，因此其结果仍是基于该多边形的条件试算。我们建议，在采用人力建议之前，先核实出行条件、任务效果和响应驻点位置。"
+    },
+    {
+      "index": 5,
+      "english": "\\noindent\\textbf{Keywords:} wildlife protection; resource allocation; ground response; seasonal workforce; Etosha National Park.",
+      "chinese": "\\noindent\\textbf{关键词：}野生动物保护；资源配置；地面响应；季节性人力；埃托沙国家公园。"
+    },
+    {
+      "index": 6,
+      "english": "\\noindent\\textbf{Reading guide.} Sections 4--9 answer Questions 1--6. The letter uses nontechnical language. References and the AI-use report are included within this document's 24-page ceiling.",
+      "chinese": "\\noindent\\textbf{阅读指南。}第4至9节分别回答第1至6题。信件采用非技术性语言。参考文献和AI使用报告也计入本文24页的总页数上限。"
+    },
+    {
+      "index": 7,
+      "english": "Large reserves need inspections that can lead to timely action. Using Etosha as the starting case, we connect conservation priorities, travel routes and ground response to the allocation of personnel and drones. We then estimate seasonal workforce needs, test changing conditions and examine transfer to two other continents.",
+      "chinese": "大型保护区需要能够引发及时行动的巡检。我们以埃托沙为初始案例，将保护优先事项、出行路线和地面响应，与人员及无人机配置联系起来。随后估计季节性人力需求，检验条件变化的影响，并考察模型向其他两个洲的迁移。"
+    },
+    {
+      "index": 8,
+      "english": "The following assumptions define a planning scenario rather than verified park operating rules.",
+      "chinese": "以下假设用于定义规划情景，并非已经核实的公园运行规定。"
+    },
+    {
+      "index": 9,
+      "english": "\\textbf{Assumption 1:} Work is pooled monthly, using 120 effective hours per person, 60\\% personnel availability and 30 drones.",
+      "chinese": "\\textbf{假设1：}按月汇总工作量，单人有效工时为120小时，人员可用比例为60\\%，无人机数量为30架。"
+    },
+    {
+      "index": 10,
+      "english": "\\textbf{Justification:} Declared limits permit comparable deployment tests; monthly feasibility does not prove a daily roster.",
+      "chinese": "\\textbf{理由：}明确资源上限有助于比较不同配置方案；月度总量可行并不能证明每日排班可行。"
+    },
+    {
+      "index": 11,
+      "english": "\\textbf{Assumption 2:} Inspection demand and within-region responsibility are allocated by area, with equal fire exposure on burnable habitat.",
+      "chinese": "\\textbf{假设2：}巡检需求和分区内部的保护责任按面积分配，可燃生境的单位面积火险暴露程度相同。"
+    },
+    {
+      "index": 12,
+      "english": "\\textbf{Justification:} Fine animal locations and multiyear harmful-fire exposure are unavailable; explicit proxies avoid inventing observations.",
+      "chinese": "\\textbf{理由：}目前缺少精细动物位置和多年有害火灾暴露数据；明确采用替代指标，可避免编造观测结果。"
+    },
+    {
+      "index": 13,
+      "english": "\\textbf{Assumption 3:} Ground and drone teams complete the same checklist only where suitable; credited service needs ground arrival within two hours and shared teams handle infrequent alerts.",
+      "chinese": "\\textbf{假设3：}仅在适宜地点，地面队伍和无人机队伍才可完成同一检查清单；计入服务评分需要地面队伍在两小时内到达，共享队伍负责处理低频警报。"
+    },
+    {
+      "index": 14,
+      "english": "\\textbf{Justification:} Observations require follow-up. Task equivalence, service standards and concurrency still need field calibration.",
+      "chinese": "\\textbf{理由：}观测需要后续处置。任务等效性、服务标准和同时发生事件的处理能力，仍需实地校准。"
+    },
+    {
+      "index": 15,
+      "english": "The problem gives an approximate area of 22,935 km$^2$; our projected boundary covers 22897.10 km$^2$. We use 2015 animal surveys, 2021 land cover and a fixed 2026 road snapshot \\cite{problem,survey,worldcover,osm}, organized into 17 reporting regions and 599 inspection units. A representative location supports route calculations, not continuous area coverage. Question 2 excludes water and rainfall; Question 3 separately adds fire screening and maintenance of 17 historical boreholes without forecasting populations or water-delivery volumes.",
+      "chinese": "题目给出的近似面积为22,935平方千米；我们投影后的边界面积为22897.10平方千米。我们使用2015年动物调查、2021年土地覆盖和固定的2026年道路快照\\cite{problem,survey,worldcover,osm}，组织为17个统计分区和599个巡检单元。代表位置用于路线计算，并不表示对整个面积持续覆盖。第二题不纳入水源与降雨；第三题另行增加火险筛查和17处历史钻井运维，不预测种群或运水量。"
+    },
+    {
+      "index": 16,
+      "english": "A personnel-hour is one person's work for one hour; a flight-hour is one aircraft's flight for one hour. The service score measures weighted completion with ground response, separately from ecological outcomes.",
+      "chinese": "一人时表示一人工作一小时；一机时表示一架无人机飞行一小时。服务评分衡量具有地面响应支持的加权任务完成程度，与生态结果分开讨论。"
+    },
+    {
+      "index": 17,
+      "english": "Our provisional priorities use evidence of threats, potential loss, affected extent and the possibility of intervention. They are management judgments rather than a measured ranking of incident probabilities.",
+      "chinese": "我们的暂定优先顺序依据威胁证据、潜在损失、影响范围和干预可能性。它们属于管理判断，并非根据实测事件概率得到的排序。"
+    },
+    {
+      "index": 18,
+      "english": "Human--wildlife conflict, disease, important plants and birds remain data needs. Missing information does not make them low-priority. Black rhinoceros remains a key conservation concern even though the current regional animal score lacks reliable spatial counts for that species. The six measured survey objects are blue wildebeest, plains zebra, giraffe, African savanna elephant, gemsbok and ostrich.",
+      "chinese": "人兽冲突、疾病、重要植物和鸟类仍需要补充数据。信息缺失不意味着这些事项优先程度低。虽然当前分区动物评分缺少黑犀牛可靠的空间数量记录，黑犀牛仍是重点保护对象。六类已有调查数据的对象为蓝角马、平原斑马、长颈鹿、非洲草原象、南非剑羚和鸵鸟。"
+    },
+    {
+      "index": 19,
+      "english": "Historical abundance is first expressed as a regional share within each species. Legal protection categories then provide a basis for relative responsibility. This avoids treating a large number of common animals as automatically more important than a smaller priority population. Burnable grassland, shrubland and forest areas provide a separate habitat responsibility measure. Only a single fire-data sample was quality checked, so the base model assumes equal exposure per unit of burnable habitat rather than estimating a multiyear harmful-fire risk.",
+      "chinese": "首先，将历史数量表示为每个物种在不同分区的数量占比，再用法律保护类别确定相对保护责任。这样可避免自动认为数量较多的常见动物比数量较少的重点种群更重要。可燃草地、灌丛和森林面积形成独立的生境责任指标。目前只对单份火灾数据样本完成质量检查，因此基准模型假设可燃生境单位面积暴露程度相同，不估计多年有害火灾风险。"
+    },
+    {
+      "index": 20,
+      "english": "A target receives effective service when prescribed screening is completed and a qualified ground team can arrive within the selected response limit. Let $d_j\\in[0,1]$ describe screening completion and $r_j\\in\\{0,1\\}$ describe response eligibility. For normalized demand weights $w_j$, define",
+      "chinese": "当规定筛查完成，且合格地面队伍能够在选定时限内到达时，该目标获得有效服务。令$d_j\\in[0,1]$表示筛查完成程度，$r_j\\in\\{0,1\\}$表示是否满足响应条件。对于归一化需求权重$w_j$，定义"
+    },
+    {
+      "index": 21,
+      "english": "The allocation model represents effective completion directly by $s_j\\le r_j$, giving the same weighted score. With fixed weights, increasing $P$ reduces unmet weighted demand $L$. An area service rate and a demand-weighted park score answer different questions and should be reported separately.",
+      "chinese": "配置模型直接用$s_j\\le r_j$表示有效完成程度，得到相同的加权评分。在权重固定时，提高$P$可减少未满足的加权需求$L$。面积服务率与按需求加权的全园评分回答不同问题，应分别报告。"
+    },
+    {
+      "index": 22,
+      "english": "Actual protection needs independent evidence: illegal-loss records with comparable monitoring effort, population surveys, habitat condition and the impact of harmful fires. More detected incidents may reflect better detection. Prescribed burning is not automatically protection failure. A park average cannot certify missing species or replace their dedicated safeguards.",
+      "chinese": "实际保护成效需要独立证据，包括在可比监测投入下的非法损失记录、种群调查、生境状况和有害火灾影响。发现更多事件可能只是检测能力增强。计划性燃烧并不自动意味着保护失败。全园平均值不能证明缺少数据的物种已受保护，也不能代替其专门保护措施。"
+    },
+    {
+      "index": 23,
+      "english": "The 15 survey regions, main salt pan and other survey-external areas form 17 reporting regions $\\mathcal I$. A 10 km grid intersected with each region produces 599 connected inspection units $\\mathcal J$. Each has an interior representative location and support area $A_j$. The location is a route-planning proxy, not proof of continuous coverage of that area.",
+      "chinese": "15个调查分区、主盐沼和其他调查范围外区域组成17个统计分区$\\mathcal I$。将10千米网格与各分区相交，得到599个连通巡检单元$\\mathcal J$。每个单元具有内部代表位置和所代表的面积$A_j$。代表位置是路线规划的替代点，并非对该面积持续覆盖的证明。"
+    },
+    {
+      "index": 24,
+      "english": "Six mapped locations serve as candidate response posts: Okaukuejo, Halali, Namutoni, Olifantsrus, Galton Gate and Nehale Gate. Their coordinates are sourced; their use as staffed response posts is assumed. We model monthly personnel availability, not a limit requiring a particular fraction of employees to be on duty simultaneously.",
+      "chinese": "六个地图位置作为候选响应驻点：Okaukuejo、Halali、Namutoni、Olifantsrus、Galton Gate和Nehale Gate。坐标有来源，将这些位置作为配置人员的响应驻点则属于假设。模型描述月度人员可用量，并不要求某一固定比例的员工同时在岗。"
+    },
+    {
+      "index": 25,
+      "english": "The two resource limits and shared response reservation are",
+      "chinese": "两项资源上限和全园共享响应预留工时为"
+    },
+    {
+      "index": 26,
+      "english": "The available inspection labor before task allocation is $H-H_0=18360$ hours. Response readiness is charged once for the park. Staffing fractions, flight allowances and service standards are explicit planning assumptions; they are not verified operating rules at Etosha.",
+      "chinese": "任务配置前可用于巡检的人工为$H-H_0=18360$小时。全园响应待命工时只计一次。人员比例、飞行额度和服务标准均为明确的规划假设，尚未核实为埃托沙的实际运行规定。"
+    },
+    {
+      "index": 27,
+      "english": "For species $m$, let $N_{im}$ be its surveyed abundance in region $i$, $q_{\\ell(m)}$ its category weight, and $\\mathcal I_S$ the 15 surveyed regions. Let $A_i^F$ denote burnable-habitat area. Define",
+      "chinese": "对于物种$m$，令$N_{im}$表示其在分区$i$的调查数量，$q_{\\ell(m)}$表示所属类别权重，$\\mathcal I_S$表示15个调查分区。令$A_i^F$表示可燃生境面积。定义"
+    },
+    {
+      "index": 28,
+      "english": "Huntable, protected and specially protected categories use the team comparison matrix",
+      "chinese": "可猎、受保护和特别保护三类采用团队设定的比较矩阵"
+    },
+    {
+      "index": 29,
+      "english": "The normalized principal eigenvector gives $\\mathbf q$; $CR=0.007933<0.1$ checks consistency, not ecological truth. The law supplies categories, not these numerical comparisons \\cite{law}.",
+      "chinese": "归一化主特征向量给出$\\mathbf q$；$CR=0.007933<0.1$检验的是比较的一致性，并非生态真实性。法律提供类别，并未提供这些数值比较\\cite{law}。"
+    },
+    {
+      "index": 30,
+      "english": "For unit $j$, the shortest entry time from one of 27 road--boundary intersections is $T_j^E=D_j^E/v_g+d_j^\\perp/v_w$. Its access index is $E_j=\\exp(-T_j^E/2)$ with time in hours. These are potential access sources, not proven poacher entrances. Within a region, $\\mu_j=A_j/A_i$ apportions responsibility by area: $R_j^A=V_i^A\\mu_jE_j$ and $R_j^F=V_i^F\\mu_j$.",
+      "chinese": "对于单元$j$，从27个道路与边界交点之一进入的最短时间为$T_j^E=D_j^E/v_g+d_j^\\perp/v_w$。其进入指数为$E_j=\\exp(-T_j^E/2)$，时间单位为小时。这些点是潜在进入来源，并非已经证实的偷猎者入口。在分区内部，$\\mu_j=A_j/A_i$按面积分摊责任：$R_j^A=V_i^A\\mu_jE_j$，$R_j^F=V_i^F\\mu_j$。"
+    },
+    {
+      "index": 31,
+      "english": "Animal responsibility is unknown outside the survey. Zero coefficients there mean exclusion from the measured-animal component, not zero animal value. The salt pan's zero fuel baseline also does not imply zero ecological value.",
+      "chinese": "调查范围外的动物保护责任未知。该处系数为零表示未纳入已测动物分量，并非动物价值为零。盐沼可燃物基准为零，也不表示其生态价值为零。"
+    },
+    {
+      "index": 32,
+      "english": "We estimate the two component weights over the common 15-region scope. First aggregate $X_{ik}=\\sum_{j\\in\\mathcal J_i}R_j^k$, then calculate",
+      "chinese": "我们在共同的15个分区范围内估计两项分量权重。先汇总$X_{ik}=\\sum_{j\\in\\mathcal J_i}R_j^k$，再计算"
+    },
+    {
+      "index": 33,
+      "english": "With $0\\ln0=0$, $e_A=0.881596$ and $e_F=0.934989$ give $\\alpha_A=0.645551$ and $\\alpha_F=0.354449$. Entropy weights express spatial differences in the chosen data, not observed loss shares. Each component is separately normalized over its observed scope, then $w_j=\\alpha_Aw_j^A+\\alpha_Fw_j^F$ and $W_i=\\sum_{j\\in\\mathcal J_i}w_j$. Thus $\\sum_jw_j=1$.",
+      "chinese": "约定$0\\ln0=0$，由$e_A=0.881596$和$e_F=0.934989$得到$\\alpha_A=0.645551$和$\\alpha_F=0.354449$。熵权表示所选数据的空间差异，并非观测到的损失占比。各分量在各自有数据的范围内分别归一化，再令$w_j=\\alpha_Aw_j^A+\\alpha_Fw_j^F$、$W_i=\\sum_{j\\in\\mathcal J_i}w_j$，因此$\\sum_jw_j=1$。"
+    },
+    {
+      "index": 34,
+      "english": "The directed road graph retains original connections and one-way restrictions. Outbound and return distances are calculated separately. A post qualifies only if its round trip is finite and",
+      "chinese": "有向道路网络保留原始连通关系与单行限制，去程与返程距离分别计算。驻点只有在往返路线有限且满足以下条件时，才具备响应资格："
+    },
+    {
+      "index": 35,
+      "english": "We choose the qualifying post with the shortest road round trip $D_j=d_{b_j^*j}^++d_{jb_j^*}^-$. Response eligibility concerns the outbound journey; task cost also includes the return. Authorized use of candidate roads and straight-line off-road travel are assumptions requiring field checks.",
+      "chinese": "我们选择公路往返距离最短的合格驻点，$D_j=d_{b_j^*j}^++d_{jb_j^*}^-$。响应资格针对去程，任务成本还包括返程。候选道路获准使用以及沿直线离路通行，都是需要实地检查的假设。"
+    },
+    {
+      "index": 36,
+      "english": "Ground cost $a_j$ and drone-support cost $o_j$ are personnel-hours per check; $b_j$ is flight-hours per check. Drone use $h_j$ therefore consumes $\\gamma_jh_j$ personnel-hours. Only response-eligible units meeting endurance and openness conditions enter $\\mathcal J_U$.",
+      "chinese": "地面成本$a_j$和无人机支持成本$o_j$的单位为每次检查所需人时；$b_j$的单位为每次检查所需机时。因此，无人机使用量$h_j$消耗$\\gamma_jh_j$人时。只有满足响应、续航和开阔度条件的单元才进入$\\mathcal J_U$。"
+    },
+    {
+      "index": 37,
+      "english": "Decision variables are ground screening hours $x_j$, drone flight-hours $h_j$, and effective completion $s_j$. The prescribed monthly checks are based on area:",
+      "chinese": "决策变量为地面筛查工时$x_j$、无人机机时$h_j$和有效完成程度$s_j$。规定的月度检查次数按面积计算："
+    },
+    {
+      "index": 38,
+      "english": "Areas are in km$^2$, giving 1831.77 prescribed checks per month. Refining the grid redistributes area without creating additional total demand. A completed check is a task at a representative location. Fractional checks describe planning intensity and require integer dispatches for implementation.",
+      "chinese": "面积单位为平方千米，每月规定检查总量为1831.77次。细化网格只重新分配面积，不会增加总需求。一次完成的检查指在代表位置执行一项任务。非整数检查次数描述规划强度，实际执行时需要转化为整数派遣次数。"
+    },
+    {
+      "index": 39,
+      "english": "Define capacity coefficients $g_j=1/a_j$ for eligible ground tasks, otherwise zero; $u_j=1/b_j$ for eligible drone tasks, otherwise zero. Then $C_js_j\\le g_jx_j+u_jh_j$. This avoids dividing by undefined costs and permits different checks to be shared between technologies without double-counting the same inspection.",
+      "chinese": "对于满足条件的地面任务，定义容量系数$g_j=1/a_j$，否则为零；对于满足条件的无人机任务，定义$u_j=1/b_j$，否则为零。于是$C_js_j\\le g_jx_j+u_jh_j$。这样既避免除以未定义的成本，也允许不同检查由两种技术分担，而不重复计算同一次巡检。"
+    },
+    {
+      "index": 40,
+      "english": "For each region, $Q_i=\\sum_{j\\in\\mathcal J_i}\\mu_jr_j$ is reachable area share and $\\bar s_i=\\sum_{j\\in\\mathcal J_i}\\mu_js_j$ is area-weighted completion. A common floor $\\bar s_i\\ge0.15Q_i$ protects basic service within the reachable part. If only 20\\% of a region is reachable, the full-region floor is 3\\%, not 15\\%.",
+      "chinese": "对于每个分区，$Q_i=\\sum_{j\\in\\mathcal J_i}\\mu_jr_j$为响应可达面积占比，$\\bar s_i=\\sum_{j\\in\\mathcal J_i}\\mu_js_j$为面积加权完成程度。统一下限$\\bar s_i\\ge0.15Q_i$保障可达部分的基本服务。如果一个分区只有20\\%面积可达，则折算到整个分区的下限为3\\%，而不是15\\%。"
+    },
+    {
+      "index": 41,
+      "english": "The fixed coefficients make this a linear program. Completion is capped at one so excess inspections cannot produce unlimited scores. Human and flight budgets have different units and are linked through operator labor, not added together.",
+      "chinese": "系数固定，使该模型成为线性规划。完成程度上限为1，因此超额巡检不能产生无限评分。人工和飞行预算的单位不同，通过操作人员工时联系起来，不能直接相加。"
+    },
+    {
+      "index": 42,
+      "english": "Increasing completion by $\\Delta s_j$ needs $C_ja_j\\Delta s_j$ ground labor or $C_jo_j\\Delta s_j$ drone-support labor plus $C_jb_j\\Delta s_j$ flight time. Hence high demand alone does not determine allocation: workload, access and both budgets also matter.",
+      "chinese": "完成程度提高$\\Delta s_j$，需要$C_ja_j\\Delta s_j$地面人工，或$C_jo_j\\Delta s_j$无人机支持人工加上$C_jb_j\\Delta s_j$飞行时间。因此，需求高低并不能单独决定配置；工作量、通达性和两项预算同样重要。"
+    },
+    {
+      "index": 43,
+      "english": "HiGHS solves 1797 variables. Independent checks recalculate task capacity, response and flight eligibility, both budgets, region floors and totals. Mathematical feasibility does not validate road permissions, observation effectiveness or an actual roster.",
+      "chinese": "HiGHS求解1797个变量。独立检查重新计算任务容量、响应与飞行资格、两项预算、分区下限和汇总量。数学可行性不能证明道路许可、观测有效性或实际排班可行。"
+    },
+    {
+      "index": 44,
+      "english": "After maximizing the score, we fix the returned service vector $\\mathbf s^{(1)}$ and minimize $H_M=\\sum_jx_j+\\sum_{j\\in\\mathcal J_U}\\gamma_jh_j$. This selects the least labor supporting that particular service pattern. It does not search all equal-score service patterns for the global minimum workforce.",
+      "chinese": "最大化评分之后，固定返回的服务向量$\\mathbf s^{(1)}$，并最小化$H_M=\\sum_jx_j+\\sum_{j\\in\\mathcal J_U}\\gamma_jh_j$。这样选出支持这一特定服务格局的最少人工方案，并未在所有同分服务格局中寻找全局最低人力。"
+    },
+    {
+      "index": 45,
+      "english": "The score is 57.26. The selected representative uses 5379.02 personnel-hours and 151.82 flight-hours, including 2880 response hours and 2499.02 drone-support hours. Its ground screening hours are zero; ground operators and response staff are still essential.",
+      "chinese": "评分为57.26分。选定代表方案使用5379.02人时和151.82机时，其中包括2880响应人时和2499.02无人机支持人时。地面筛查工时为零，但地面操作人员和响应人员仍不可缺少。"
+    },
+    {
+      "index": 46,
+      "english": "Demand percentages are $100W_i$; reach and service percentages are $100Q_i$ and $100\\bar s_i$. Regional labor excludes shared response readiness. ENP1 receives 487.89 screening-support hours. ENP11 has 8.05\\% demand weight but only about 0.02\\% reachable area. Additional ordinary inspection resources alone cannot remove this gap.",
+      "chinese": "需求百分比为$100W_i$；可达和服务百分比分别为$100Q_i$与$100\\bar s_i$。分区人工不含共享响应待命。ENP1获得487.89筛查支持工时。ENP11的需求权重为8.05\\%，但可达面积只有约0.02\\%。仅增加普通巡检资源，不能消除这一缺口。"
+    },
+    {
+      "index": 47,
+      "english": "The salt pan's unknown animal value is not filled with zero. Its current score coefficient is zero, while its generic service floor still applies. Equal-score service choices there can change representative labor consumption without changing the park score.",
+      "chinese": "盐沼未知的动物价值并未用零填补。其当前评分系数为零，但通用服务下限仍适用。在该处改变同分服务安排，可改变代表方案的人工消耗，而不改变全园评分。"
+    },
+    {
+      "index": 48,
+      "english": "Since $w_j\\ge0$ and $s_j\\le r_j$, the geographic score bound is",
+      "chinese": "由于$w_j\\ge0$且$s_j\\le r_j$，地理条件决定的评分上界为"
+    },
+    {
+      "index": 49,
+      "english": "The base reaches this bound with 15860.98 personnel-hours and 1048.18 flight-hours unused. Of 599 units, 216 meet the response standard, covering 34.12\\% of projected area. The 57.26 score is demand-weighted, not an area percentage.",
+      "chinese": "基准方案达到这一上界，同时剩余15860.98人时和1048.18机时。在599个单元中，216个满足响应标准，占投影面积的34.12\\%。57.26分是按需求加权的评分，并非面积百分比。"
+    },
+    {
+      "index": 50,
+      "english": "We compare the optimized allocation with uniform completion over reachable units and completion proportional to regional demand density $W_i/A_i$. Costs, resource limits and floors are identical.",
+      "chinese": "我们将优化配置与两种方案比较：对可达单元均匀完成任务，以及按分区需求密度$W_i/A_i$成比例完成任务。成本、资源上限和服务下限保持相同。"
+    },
+    {
+      "index": 51,
+      "english": "All three methods reach the bound even after a 40\\% personnel-budget reduction. Thus this ample-resource comparison provides no score advantage for optimization. Removing drones still achieves 57.26, but the returned ground-only plan uses 6244.08 personnel-hours. Under equal team sizes and checklist times, drones replace slower off-road walking; this saves labor only where the task is technically suitable.",
+      "chinese": "即使人员预算减少40\\%，三种方法仍达到上界。因此，在资源充足的这组比较中，优化方案没有评分优势。停用无人机仍可达到57.26分，但返回的纯地面方案需要6244.08人时。在团队人数和检查清单耗时相同的条件下，无人机替代较慢的离路步行；仅在技术适宜的任务上，这种替代才节约人工。"
+    },
+    {
+      "index": 52,
+      "english": "Each tested additional post adds 480 readiness hours within the same total budgets. Routes and response eligibility are recalculated, with demand weights fixed.",
+      "chinese": "每个接受测试的新增驻点在总预算不变的情况下，增加480响应待命人时。需求权重固定，路线和响应资格重新计算。"
+    },
+    {
+      "index": 53,
+      "english": "The ENP5 candidate improves the score by 7.01 points. It is best among three tested locations, not a global siting optimum. Verify access, permissions and operating conditions before treating the site as a recommendation.",
+      "chinese": "ENP5候选方案提高7.01分，是三个受测位置中最优的方案，并非全局最优选址。在将该地点作为建议之前，应核实通达性、使用许可和运行条件。"
+    },
+    {
+      "index": 54,
+      "english": "Question 3 asks how service changes through time and how many people are needed to maintain a chosen level. We use the same weights, inspection standard, routes, response locations and technical eligibility as Question 2. The target is its achieved optimum, $\\eta=57.26016128$; its ecological sufficiency is not established by being mathematically optimal.",
+      "chinese": "第三题考察服务如何随时间变化，以及维持选定水平需要多少人员。我们沿用第二题的权重、检查标准、路线、响应位置和技术适用条件。目标为第二题已经达到的最优值$\\eta=57.26016128$；数学最优并不证明生态保护已充分。"
+    },
+    {
+      "index": 55,
+      "english": "Each planning month has 30 days and 120 effective personnel-hours per person. Reference availability is 177 people and 1200 monthly flight-hours. Assignments may change between months. Existing equipment, operators and response staff cannot be charged twice for concurrent tasks.",
+      "chinese": "每个规划月按30天计算，每人有效工时为120小时。参考可用量为177人和每月1200机时。各月任务安排可以变化。对同时执行的任务，不能重复计算现有设备、操作人员和响应人员。"
+    },
+    {
+      "index": 56,
+      "english": "The dry-season classification is May--October in the cited study; the official fire strategy distinguishes May--July and August--November operating windows \\cite{season,fire}. These sources support the timing, not the numerical task frequencies. All frequencies below are team service rules.",
+      "chinese": "引用研究将5月至10月划为旱季；官方火管理策略区分5月至7月和8月至11月两个运行时段\\cite{season,fire}。这些来源支持时间划分，并不支持具体任务频次。以下所有频次均为团队设定的服务规则。"
+    },
+    {
+      "index": 57,
+      "english": "Extra fire checks are distinct tasks added to the base checklist. Let $A_j^{\\mathrm{fuel}}$ be the unit's support area multiplied by its region's observed burnable-habitat fraction. Then",
+      "chinese": "额外火险检查是在基本检查清单之外增加的独立任务。令$A_j^{\\mathrm{fuel}}$表示单元所代表的面积乘以该分区观测到的可燃生境比例，则"
+    },
+    {
+      "index": 58,
+      "english": "The same inspection protocol and cost coefficients apply. These are screening tasks, not firefighting or prescribed burning. The factor $r_j$ restricts credited tasks to the existing response range; excluded demand is separately recorded.",
+      "chinese": "沿用相同的检查流程和成本系数。这些属于筛查任务，不是灭火或计划性燃烧。因子$r_j$将计入服务的任务限制在现有响应范围内；范围外需求另行记录。"
+    },
+    {
+      "index": 59,
+      "english": "At the late-fire rate, 275.76 additional checks are supported inside that range, while 428.45 fall outside it. Adding personnel to the same six-post layout cannot guarantee those excluded tasks. We retain this gap rather than claiming park-wide fire coverage.",
+      "chinese": "采用后期火险检查频次时，响应范围内可支持275.76次额外检查，范围外另有428.45次。在同样六个驻点布局下增加人员，无法保障这些范围外任务。因此保留这一缺口，不宣称实现全园火险覆盖。"
+    },
+    {
+      "index": 60,
+      "english": "A published 2013 field table contains 42 water-point records; 17 are classified as boreholes \\cite{water}. We use those 17 mapped points as a historical maintenance sample. It is not a complete current operational inventory. Natural springs are not assigned pumping-equipment work. Ministry records support solar-powered borehole equipment and maintenance as relevant activities \\cite{annual}.",
+      "chinese": "公开的2013年实地表格包含42条水点记录，其中17处归类为钻井\\cite{water}。我们将这17个已定位水点作为历史运维样本，并不将其视为当前完整运行清单。天然泉水不分配抽水设备工作。部门记录表明，太阳能钻井设备及其维护是相关工作内容\\cite{annual}。"
+    },
+    {
+      "index": 61,
+      "english": "Each visit includes a directed road round trip from a candidate post, any required walking, preparation and on-site inspection. We assume two people travel together. Let $T_\\ell^{\\mathrm{rt}}$ be elapsed round-trip travel time, $f_t$ visits per point and $\\tau_t$ on-site time. Monthly personnel work is",
+      "chinese": "每次巡访包括从候选驻点出发的有向道路往返、必要步行、准备和现场检查。假设两人同行。令$T_\\ell^{\\mathrm{rt}}$为往返经过时间，$f_t$为每处水点的巡访次数，$\\tau_t$为现场时间。月度人工为"
+    },
+    {
+      "index": 62,
+      "english": "The $1/12$ hour term is five minutes of preparation. Every route is independently returned; no travel saving is claimed from combining visits. Drone observation does not replace maintenance of physical equipment.",
+      "chinese": "式中的$1/12$小时为5分钟准备时间。每条路线均独立往返，不假定合并巡访会节约出行时间。无人机观测不能代替实体设备维护。"
+    },
+    {
+      "index": 63,
+      "english": "For the 17 points, summed elapsed round-trip travel is 42.87565 hours. The regular dry-month workload is",
+      "chinese": "17处水点的往返经过时间合计42.87565小时。常规旱季月份的工作量为"
+    },
+    {
+      "index": 64,
+      "english": "Wet-month work is 211.17 hours; the specified drought-maintenance rule produces 980.68 hours. These increases are visit and task assumptions, not inferred water shortages or observed fault rates.",
+      "chinese": "湿季月份工作量为211.17小时；指定的干旱运维规则产生980.68小时。这些增加源于巡访次数和任务假设，并非根据缺水情况推算，也不是实测故障率。"
+    },
+    {
+      "index": 65,
+      "english": "No water-hauling volumes, groundwater response or animal-population changes are modeled. Major repairs, emergency pumping, unlisted points and shared-route opportunities need an updated inventory and operational records. The longest modeled regular visit takes about 6.39 elapsed hours, but fitting an eight-hour day for one task does not prove a complete monthly roster.",
+      "chinese": "模型不计算运水量、地下水响应或动物种群变化。重大维修、应急抽水、未列出水点和共用路线的机会，需要更新清单并获取运行记录。模型中最长的常规单次巡访约需6.39小时，但一项任务能放入八小时工作日，并不能证明完整月度排班可行。"
+    },
+    {
+      "index": 66,
+      "english": "For each unit and month, $(x_{jt},h_{jt},s_{jt})$ serve the base inspection protocol. Extra fire work uses ground hours $y_{jt}$ and flight-hours $v_{jt}$. These are separate task quantities with shared personnel and flight budgets. Where a technology is unavailable, its capacity term and investment are zero.",
+      "chinese": "对于每个单元和月份，$(x_{jt},h_{jt},s_{jt})$服务于基本巡检流程。额外火险工作使用地面工时$y_{jt}$和机时$v_{jt}$。它们是独立任务量，但共享人工和飞行预算。某项技术不可用时，其容量项与投入均为零。"
+    },
+    {
+      "index": 67,
+      "english": "The remaining conditions retain $0\\le s_{jt}\\le r_j$, nonnegative investments, technology eligibility and the regional floor",
+      "chinese": "其余条件保留$0\\le s_{jt}\\le r_j$、投入非负、技术适用条件以及分区下限"
+    },
+    {
+      "index": 68,
+      "english": "Only base inspections enter $P_t=100\\sum_jw_js_{jt}$. Required fire and water tasks must also be completed; they do not change the base score's meaning. Readiness and maintenance are charged once, while operators serve both inspection types. Shared budgets prevent double allocation. Monthly totals support strategic planning; daily schedules, crew availability and simultaneous alerts still require checks. Thirty drones do not imply thirty simultaneous flights. Seasonal rules describe workload scenarios, not forecasts of animal abundance or drought.",
+      "chinese": "只有基本巡检计入$P_t=100\\sum_jw_js_{jt}$。规定的火险与水点任务也必须完成，但不改变基本评分含义。待命和运维各计一次，操作人员同时服务于两类巡检。共享预算防止重复配置。月度总量支持战略规划，日程、人员可用性和同时出现的警报仍需检查。30架无人机不等于30架同时飞行。季节规则描述工作量情景，并非动物数量或干旱预测。"
+    },
+    {
+      "index": 69,
+      "english": "Two uses of the same feasible task set answer different questions. With $N$ available people, the forward model finds the best monthly service. With a fixed service target, the inverse model finds the least total personnel work:",
+      "chinese": "同一组可行任务有两种用途，分别回答不同问题。给定可用人数$N$，正向模型求最佳月度服务；给定固定服务目标，反向模型求最少总人工："
+    },
+    {
+      "index": 70,
+      "english": "Here $\\mathbf z_t$ collects all five variable blocks and $\\mathcal F_t(U)$ contains the shared constraints. The inverse model removes the reference labor ceiling so that a shortage can be expressed as a required workforce instead of only returning infeasibility. It allows different equal-score service patterns, unlike the fixed-pattern refinement in Question 2.",
+      "chinese": "其中，$\\mathbf z_t$汇集全部五组变量，$\\mathcal F_t(U)$包含共享约束。反向模型移除参考人工上限，使资源不足能够表示为所需人力，而不只是返回不可行。它允许不同的同分服务格局，与第二题固定格局后的精简不同。"
+    },
+    {
+      "index": 71,
+      "english": "The maximum, rather than the sum, estimates a constant workforce that meets the busiest month's pooled workload. It does not certify qualifications, exact simultaneous coverage or the completeness of the task inventory.",
+      "chinese": "取最大值而非求和，用于估计能够承担最繁忙月份汇总工作量的固定人员规模。它不能证明人员资质、准确的同时覆盖或任务清单完整性。"
+    },
+    {
+      "index": 72,
+      "english": "With no added seasonal work and Question 2's returned service vector fixed, the calculation reproduces 5379.02 hours. Allowing the equal-score pattern to change gives 5286.11 hours, a difference of 92.90. This comparison explains why dividing a single representative allocation by 120 need not yield the globally least personnel demand.",
+      "chinese": "不增加季节工作且固定第二题返回的服务向量时，计算重新得到5379.02小时。允许同分服务格局变化后，得到5286.11小时，相差92.90小时。这解释了为什么将单个代表配置直接除以120，不一定得到全局最少人员需求。"
+    },
+    {
+      "index": 73,
+      "english": "All months maintain the target with the 177-person reference and 1200 flight-hours. The least-work solutions need fewer personnel equivalents because only specified tasks and the existing response range are modeled.",
+      "chinese": "在177人参考配置和1200机时下，所有月份均维持目标。最少工作量方案需要较少的折算人员，因为模型仅包含指定任务和现有响应范围。"
+    },
+    {
+      "index": 74,
+      "english": "The peak occurs in August--October. Its work separates into four parts:",
+      "chinese": "高峰出现在8月至10月，其工作量可分为四部分："
+    },
+    {
+      "index": 75,
+      "english": "These are readiness, base inspection labor, extra fire inspection labor and borehole maintenance. The flight requirement is 210.61 hours, well below 1200. Rounding $H_{\\mathrm{peak}}^{\\min}/120$ gives 57 people. A check with 56 people returns 56.73, below the target, under the same monthly constraints.",
+      "chinese": "四部分分别为待命、基本巡检人工、额外火险巡检人工和钻井运维。飞行需求为210.61小时，显著低于1200。将$H_{\\mathrm{peak}}^{\\min}/120$向上取整得到57人。同一月度约束下，使用56人进行检查得到56.73分，低于目标。"
+    },
+    {
+      "index": 76,
+      "english": "This is a minimum for the selected workload and pooled model. It is not evidence that the real park can reduce its workforce to 57 or that 177 people are currently assigned to protection. The 60\\% fraction is a resource scenario, and omitted threats, night service, specialist tasks and incident concurrency could change the required workforce.",
+      "chinese": "这是所选工作量和月度汇总模型下的最小值，并不能证明实际公园可将人员减至57人，或当前确有177人从事保护。60\\%比例是资源情景；未纳入的威胁、夜间服务、专业任务和同时发生事件，可能改变人员需求。"
+    },
+    {
+      "index": 77,
+      "english": "Numeric checks independently recalculate each task's supported checks, prohibited allocations, both budgets, floors and aggregation. They confirm feasibility of the saved plans. Field calibration is a separate step: check actual task duration, travel permissions, maintenance status and whether drone and ground observations satisfy the same checklist.",
+      "chinese": "数值核验独立重算各任务支持的检查次数、禁止配置、两项预算、下限与汇总，确认保存方案的可行性。实地校准是另一项工作，需要核查实际任务时长、通行许可、维护状态，以及无人机和地面观测是否满足同一检查清单。"
+    },
+    {
+      "index": 78,
+      "english": "The geographic score ceiling remains 57.26 throughout these months. Spare personnel capacity can meet extra tasks, but it cannot enlarge the fixed response range. A decision to raise the target above that ceiling first requires a change in access or response deployment.",
+      "chinese": "这些月份的地理评分上限始终为57.26分。剩余人力可承担额外任务，却不能扩大固定的响应范围。若决定将目标提高到这一上限之上，首先需要改变通达条件或响应部署。"
+    },
+    {
+      "index": 79,
+      "english": "The abnormal-drought case increases maintenance visits during dry months from four to eight and on-site work from 0.5 to one hour. Timing is a defined workload scenario; it is not a forecast of drought, failures or rainfall. The peak becomes 7390.17 hours, or 62 personnel equivalents, with 210.61 flight-hours.",
+      "chinese": "异常干旱情景将旱季每处维护巡访从4次增至8次，现场时间从0.5小时增至1小时。时间安排是设定的工作量情景，并非干旱、故障或降雨预测。高峰达到7390.17小时，折算为62人，并使用210.61机时。"
+    },
+    {
+      "index": 80,
+      "english": "The extra work relative to the normal peak is 558.34 hours, mainly ground-only maintenance. The required workforce rises by 5 people relative to the 57-person normal plan. Both remain below the 177-person reference; no additional personnel gap is inferred from that reference.",
+      "chinese": "相对常规高峰增加558.34小时，主要为只能由地面完成的运维。相对常规57人方案，需求增加5人。两种情景均低于177人参考配置，因此相对于该参考量，不推断存在新增人员缺口。"
+    },
+    {
+      "index": 81,
+      "english": "The low, medium and high rules vary both visit requirements and extra fire checks. Their outcomes are planning alternatives, not confidence intervals. High service rules can use more flight-hours than the previous six-drone planning budget, while the current thirty-drone allowance supports these modeled tasks. A lower required headcount under a relaxed checklist must not be reported as unchanged ecological protection at lower cost.",
+      "chinese": "低、中、高档规则同时改变巡访要求和额外火险检查次数。其结果是可选规划方案，并非置信区间。高档规则可能消耗超过先前六架无人机规划预算的机时，而当前30架无人机额度能够支持这些建模任务。放宽检查清单后得到较少人数，不能表述为以更低成本维持同样的生态保护。"
+    },
+    {
+      "index": 82,
+      "english": "\\textbf{Operational interpretation.} Prepare workload and visit-date records before the busy months. Count response readiness and maintenance separately from screening. Verify whether a constant team can meet each month's work, then check daily task timing, training and specialist needs. Equipment inventory, available operator-hours and simultaneous flights are different quantities.",
+      "chinese": "\\textbf{运行解释。}繁忙月份之前应准备工作量和巡访日期记录。响应待命与运维应和筛查分开计量。先核实固定团队能否承担各月工作，再检查每日任务时序、培训和专业需求。设备库存、可用操作人时和同时飞行数量是不同的量。"
+    },
+    {
+      "index": 83,
+      "english": "The historical 17-point sample is a material limitation. Replicating its workload tests sensitivity to inventory size, but does not establish additional point locations, routes or the actual number of functioning boreholes. Updating that inventory is more informative than adding unsupported water volumes to the equations.",
+      "chinese": "历史17处水点样本是重要限制。复制其工作量可以检验清单规模的敏感性，却不能确定新增水点的位置、路线或实际正常运行钻井数量。更新清单，比在公式中加入没有依据的水量更有价值。"
+    },
+    {
+      "index": 84,
+      "english": "The new baseline has ample resources: reducing its personnel budget by 40\\% still gives 57.26. We also test explicitly lower personnel and equipment budgets, keeping weights and required tasks fixed. 127 feasible saved solutions passed independent checks; four cases were infeasible and are not plotted as zero scores.",
+      "chinese": "新基准资源充足：人员预算减少40\\%后仍达到57.26分。我们还检验了更低的人员和设备预算，同时固定权重及规定任务。127个已保存可行方案通过独立检查；四个案例不可行，不将其绘制为零分。"
+    },
+    {
+      "index": 85,
+      "english": "At the medium peak, 57 people with 200 flight-hours maintain the target; 57 with 160 hours reach 56.97. With no drones, the target needs 67 people. With 59 people and 120 flight-hours, reallocation reaches 57.24, compared with 57.14 under the retained spatial service rule. Under the specified drought-maintenance pressure at the same low budgets, the gain from reallocation is 6.83 points, but the target is still missed.",
+      "chinese": "中档高峰时，57人配合200机时可维持目标；57人配合160机时达到56.97分。不使用无人机时，维持目标需要67人。59人和120机时下，重新配置达到57.24分，而保留原空间服务规则时为57.14分。在同样低预算和指定干旱运维压力下，重新配置提高6.83分，但仍未达到目标。"
+    },
+    {
+      "index": 86,
+      "english": "Time arrangements also matter. The same 68 borehole visits and 422.34 monthly personnel-hours give a maximum gap of 8 days under staggered dates, versus 27 days when visits are concentrated on days 1--4. Daily water-work peaks are 15.48 and 105.58 hours. This water-only construction is not a full roster or proof of a strict 7.5-day rule.",
+      "chinese": "时间安排同样重要。同样68次钻井巡访和每月422.34人时，错开日期时最大间隔为8天；集中在第1至4天时，最大间隔为27天。每日水点工作高峰分别为15.48和105.58小时。这个仅含水点工作的构造不是完整排班，也不能证明满足严格的7.5天规则。"
+    },
+    {
+      "index": 87,
+      "english": "Changing road speed from 30 to 20 km/h lowers the base score ceiling to 35.76; 40 km/h gives 64.69. A three-hour response rule gives 80.64, but allows later arrival and is a changed service standard. These comparisons are conditional scenarios, not measured operating-speed intervals or event probabilities.",
+      "chinese": "道路速度由30降至20千米/小时，会使基准评分上限降至35.76分；40千米/小时对应64.69分。三小时响应规则得到80.64分，但允许更晚到达，已经改变服务标准。这些比较属于条件情景，并非实测运行速度区间或事件概率。"
+    },
+    {
+      "index": 88,
+      "english": "The framework connects explicit tasks to their travel, observation and operator work. It distinguishes a lack of resources from locations that fail the response standard. Ground and drone inputs share personnel capacity while retaining a separate flight limit. The inverse model explains seasonal workforce changes without forecasting animal populations.",
+      "chinese": "框架将明确任务与出行、观测和操作人员工作联系起来，区分资源缺乏和位置不满足响应标准两类问题。地面和无人机投入共享人力容量，同时保留独立飞行上限。反向模型在不预测动物种群的情况下解释季节性人力变化。"
+    },
+    {
+      "index": 89,
+      "english": "All inputs and saved allocations are traceable. Independent checks cover capacity, floors, prohibited technology use, budgets, response gates and totals. A second calculation reproduces the cross-park optimization results. These checks establish computational consistency; they do not establish measured ecological outcomes.",
+      "chinese": "所有输入和保存的配置均可追溯。独立检查包括容量、下限、禁止使用的技术、预算、响应限制和汇总。第二次计算复现跨公园优化结果。这些检查证明计算一致性，并不能证明实测生态结果。"
+    },
+    {
+      "index": 90,
+      "english": "First verify current priority-species and maintenance inventories. Then record actual travel, observation and response times, road permissions and equipment use. Compare ground and drone completion of the same checklist in suitable units. Check visit dates and simultaneous tasks after the monthly workload is feasible.",
+      "chinese": "首先核实当前重点物种和运维清单，再记录实际出行、观测和响应时间、道路许可和设备使用。在适宜单元比较地面与无人机完成同一清单的表现。月度工作量可行之后，再检查巡访日期和同时发生的任务。"
+    },
+    {
+      "index": 91,
+      "english": "For implementation, preserve generic service floors and add dedicated safeguards for priority objects whose distribution is missing from the score. Use comparable ecological and incident records to test outcomes while controlling for observation effort. More data should revise task priorities and costs; it should not be used only to justify a previously chosen equipment count.",
+      "chinese": "实施时，保留通用服务下限，并为评分中缺少空间分布的重点对象增加专门保护。利用可比的生态和事件记录检验结果，同时控制观测投入的影响。新增数据应修正任务优先顺序和成本，而不应仅用于支持预先选定的设备数量。"
+    },
+    {
+      "index": 92,
+      "english": "We examine Chitwan National Park in Asia and Yellowstone National Park in North America. Priority setting, task capacity, response gates, readiness budgets and workforce conversion can remain. Species, habitats, seasonal routes, task protocols, permissions and operating costs must be rebuilt locally. Etosha's animal weights and thirty-drone assumption are not transferred.",
+      "chinese": "我们考察亚洲奇特旺国家公园和北美洲黄石国家公园。优先事项设定、任务容量、响应限制、待命预算和人力换算可以保留；物种、生境、季节路线、任务流程、许可和运行成本必须依据当地条件重建。埃托沙动物权重和30架无人机假设不直接迁移。"
+    },
+    {
+      "index": 93,
+      "english": "The spatial trial uses published boundaries, mapped roads and candidate locations, and WorldCover 2021. It assigns land-area weights $w_j=A_j^{\\mathrm{land}}/\\sum_kA_k^{\\mathrm{land}}$ and $C_j=8A_j^{\\mathrm{land}}/100$. Drones are set to zero because authorization and task equivalence are not calibrated. These choices test spatial service, not a complete species-protection score.",
+      "chinese": "空间试算使用公开边界、已绘制道路、候选位置和WorldCover 2021，采用陆地面积权重$w_j=A_j^{\\mathrm{land}}/\\sum_kA_k^{\\mathrm{land}}$与$C_j=8A_j^{\\mathrm{land}}/100$。由于飞行许可和任务等效性尚未校准，无人机投入设为零。这些选择检验的是空间服务，而非完整物种保护评分。"
+    },
+    {
+      "index": 94,
+      "english": "\\textbf{Boundary restriction.} The Chitwan polygon is 1214.06 km$^2$, versus 952.63 km$^2$ in the official source: a 27.44\\% difference. The published polygon is used only for a conditional trial; it is not accepted as the current legal park boundary. Yellowstone uses the NPS boundary. Both parks still need locally verified emergency access, off-road travel and task costs \\cite{wdpca,npsdata,chitwan,unesco,npsrules}.",
+      "chinese": "\\textbf{边界限制。}奇特旺多边形面积为1214.06平方千米，官方来源为952.63平方千米，相差27.44\\%。公开多边形仅用于条件试算，未被接受为当前法定公园边界。黄石采用美国国家公园管理局（NPS）边界。两地仍需核实当地应急通行、离路通行和任务成本\\cite{wdpca,npsdata,chitwan,unesco,npsrules}。"
+    },
+    {
+      "index": 95,
+      "english": "For each park, fix its target at 90\\% of its own two-post, 30 km/h response-limited ceiling:",
+      "chinese": "对每个公园，将目标固定为其自身在两个驻点、30千米/小时条件下，受响应限制的上限的90\\%："
+    },
+    {
+      "index": 96,
+      "english": "The target stays fixed when routes or speed change. It is not a 90-point whole-park target. Two-person teams, 120 hours/person-month, two-hour response and inspection times remain declared assumptions. A two-post readiness budget is 960 personnel-hours; a third post adds 480. Local incident response, community work and visitor management are not yet quantified in these personnel equivalents.",
+      "chinese": "路线或速度改变时，目标保持不变；这不是全园90分目标。两人小组、每人每月120小时、两小时响应和检查时长仍为明确假设。两个驻点的待命预算为960人时，新增第三个驻点增加480人时。当地事件响应、社区工作和游客管理尚未量化到这些折算人员中。"
+    },
+    {
+      "index": 97,
+      "english": "Both 20 km/h scenarios place the fixed target above the resulting ceiling, so extra labor alone cannot meet it. Additional posts improve eligible area but also increase readiness work. Higher speed is a sensitivity setting, not permission to drive faster than safe operating conditions allow.",
+      "chinese": "两个20千米/小时情景均使固定目标超过新的上限，因此仅增加人工不能达标。新增驻点扩大合格面积，同时增加待命工作。较高速度只是敏感性设定，并不意味着允许超出安全运行条件行驶。"
+    },
+    {
+      "index": 98,
+      "english": "In Chitwan, forest screening, priority-species work, river crossings and monsoon access should shape ground-team tasks and seasonal posts. In Yellowstone, visitor--wildlife interactions, winter routes and specialist transport should change the task list and feasible travel graph. Seasonal closure data for visitors must not automatically be treated as emergency-staff permissions. Drone operations require local authorization.",
+      "chinese": "在奇特旺，应根据森林筛查、重点物种任务、渡河和季风通达条件设计地面队伍任务及季节驻点。在黄石，游客与野生动物互动、冬季路线和专业运输应改变任务清单和可行通行网络。游客季节性封闭数据不能自动视为应急人员通行许可。无人机运行需要当地授权。"
+    },
+    {
+      "index": 99,
+      "english": "Halving unit size changes the two ceilings by about $-0.13$ and $-0.20$ percentage points. Finer land-cover sampling changes forest shares by about $-0.002$ and $-0.056$ points. Ten numerical cases pass independent checks, while Chitwan's boundary-consistency check still fails. These workforce equivalents are neither actual staffing estimates nor grounds for comparing the parks' ecological condition.",
+      "chinese": "将单元尺度减半，两地评分上限分别变化约$-0.13$和$-0.20$个百分点。细化土地覆盖采样，森林占比分别变化约$-0.002$和$-0.056$个百分点。十个数值案例通过独立检查，奇特旺边界一致性检查仍未通过。这些折算人员既不是实际编制估计，也不能作为比较两地生态状况的依据。"
+    },
+    {
+      "index": 100,
+      "english": "\\noindent To the International Mission for Monitoring Conservation\\\\",
+      "chinese": "\\noindent 致国际保护监测任务组织（IMMC）\\\\"
+    },
+    {
+      "index": 101,
+      "english": "\\textbf{Subject: A practical protection plan for Etosha and other large reserves}",
+      "chinese": "\\textbf{主题：面向埃托沙及其他大型保护区的实用保护规划}"
+    },
+    {
+      "index": 102,
+      "english": "Dear IMMC Decision-Makers,",
+      "chinese": "尊敬的IMMC决策者："
+    },
+    {
+      "index": 103,
+      "english": "We recommend improving the connection between monitoring and ground response before adding further monitoring capacity. Our Etosha study shows that personnel and drones can remain unused while important locations are too far from a response team. Observations need qualified people who can reach the location and follow up.",
+      "chinese": "我们建议，在进一步增加监测容量之前，先改善监测与地面响应之间的衔接。埃托沙研究显示，即使人员和无人机尚有余量，重要地点仍可能因距响应队伍过远而得不到支持。观测需要能够到达现场并开展后续处置的合格人员。"
+    },
+    {
+      "index": 104,
+      "english": "Our approach divides the park into planning areas, identifies where inspections matter, and calculates the time needed to complete them. Historical animal surveys and burnable-habitat areas guide priorities. Travel routes and candidate response posts determine which checks can be supported. Ground teams and drone operators share a monthly work plan. Drones save walking time in suitable open locations; personnel still transport and operate them and investigate reported problems.",
+      "chinese": "我们的方法将公园划分为规划区域，识别巡检的重要位置，并计算完成任务所需时间。历史动物调查和可燃生境面积用于确定优先程度。出行路线和候选响应驻点决定哪些检查能够获得支持。地面队伍与无人机操作人员共享月度工作计划。在适宜开阔地点，无人机可节约步行时间，但人员仍需运输、操作设备并调查上报问题。"
+    },
+    {
+      "index": 105,
+      "english": "For planning, we make 60\\% of the reference workforce of 295 available: the monthly working time of 177 people at 120 effective hours each. We assume thirty drones and require ground arrival within two hours. These are proposed resource conditions, not a verified account of current park staffing and equipment.",
+      "chinese": "在规划中，我们假设295名参考员工的60\\%可用于任务，即177人每月各有120小时有效工作时间；配置30架无人机，并要求地面队伍两小时内到达。这些是拟定的资源条件，并非经过核实的当前公园人员与设备状况。"
+    },
+    {
+      "index": 106,
+      "english": "The best inspection-service score under these conditions is 57.26 out of 100. A representative month uses about 5379 personnel-hours, including readiness, and 152 flight-hours. Both are well below the resource limits. The score describes completion of important tasks under the selected response rule. Wildlife losses, population health and habitat conditions need separate evaluation.",
+      "chinese": "在这些条件下，最优巡检服务评分为57.26分，满分100分。代表性月份约使用5379人时，其中包括待命，并使用152机时。二者均显著低于资源上限。评分描述选定响应规则下重要任务的完成程度；野生动物损失、种群健康和生境状况仍需单独评价。"
+    },
+    {
+      "index": 107,
+      "english": "Three additional response-post candidates were compared within the same total budgets. The ENP5 candidate raises the score to 64.27 and performs best among those tested. It is a useful direction for field assessment, rather than a confirmed globally best location. Verify the routes, permissions, site conditions and actual response needs before adopting it.",
+      "chinese": "我们在总预算相同的条件下比较三个新增响应驻点候选方案。ENP5候选方案将评分提高至64.27分，是受测方案中表现最好的。它为实地评估提供方向，并非已经确认的全局最佳位置。采用之前，应核实路线、许可、场地条件和实际响应需求。"
+    },
+    {
+      "index": 108,
+      "english": "Seasonal work also needs preparation. Additional fire checks and borehole maintenance raise the modeled normal peak requirement to 57 people. The specified drought-maintenance scenario raises it to 62. Both fit within the 177-person reference, but cover only the selected daytime tasks, response range and historical maintenance sample.",
+      "chinese": "季节性工作也需要提前准备。额外火险检查和钻井运维，将常规高峰月份的模型需求提高至57人；指定的干旱运维情景提高至62人。两者均处于177人参考配置之内，但只包含选定的日间任务、响应范围和历史运维样本。"
+    },
+    {
+      "index": 109,
+      "english": "Our proposed first step is a limited field trial. Record travel time, inspection duration, drone use and follow-up time. Check whether ground and drone-assisted teams complete the same checklist reliably. Update the maintenance inventory and verify road access. These records can replace broad assumptions and show where a different vehicle, route or response location is more useful.",
+      "chinese": "我们建议的第一步是开展有限实地试验。记录出行时间、巡检时长、无人机使用和后续处置时间，检查地面与无人机辅助队伍能否可靠完成同一清单。更新运维清单，核实道路通行条件。这些记录可替代宽泛假设，并帮助识别何处更适合调整车辆、路线或响应位置。"
+    },
+    {
+      "index": 110,
+      "english": "The monthly plan must then become a practical calendar. The same number of borehole visits can leave long gaps if concentrated early in the month. Stagger visits, check daily capacity and retain qualified response staff. Thirty drones in the inventory do not mean thirty simultaneous flights. Operators, readiness and maintenance need their own time allocations.",
+      "chinese": "月度计划随后必须转化为可执行日程。同样数量的钻井巡访，若集中在月初，可能形成较长服务间隔。应错开巡访、检查每日容量，并保留合格响应人员。库存30架无人机不意味着30架同时飞行。操作、待命和维护均需单独分配时间。"
+    },
+    {
+      "index": 111,
+      "english": "We also tested adaptation in Chitwan and Yellowstone using real spatial records and explicit operating assumptions. The same task-and-response structure can be retained, while local conservation priorities, travel conditions, service tasks and technology permissions must change. Chitwan's published boundary does not agree with the official reported area, so its numerical trial cannot yet support a legal-park staffing recommendation. In Yellowstone, visitor interactions and winter access require specialized task and route information. Neither park's actual personnel requirement has been established by these preliminary trials.",
+      "chinese": "我们还使用真实空间记录和明确运行假设，测试模型向奇特旺和黄石的迁移。相同的任务与响应结构可以保留，但当地保护优先事项、通行条件、服务任务和技术许可必须调整。奇特旺公开边界与官方面积不符，因此其数值试算目前不能支持针对法定公园的编制建议。黄石的游客互动与冬季通行需要专门任务和路线信息。这些初步试算尚未确定两地实际人员需求。"
+    },
+    {
+      "index": 112,
+      "english": "Important uncertainties remain at Etosha. Animal, habitat and road records come from different years. Detailed distributions are missing for some priority species, including black rhinoceros. We assume shared teams can handle occasional alerts without several serious incidents occurring together. Actual protection may require additional specialist and night work. A favorable service score cannot resolve these data gaps.",
+      "chinese": "埃托沙仍存在重要不确定性。动物、生境和道路记录来自不同年份，部分重点物种，包括黑犀牛，缺少精细分布。模型假设共享队伍可处理偶发警报，不会有多起严重事件同时发生。实际保护可能需要更多专业和夜间工作。较高服务评分不能消除这些数据缺口。"
+    },
+    {
+      "index": 113,
+      "english": "We propose three connected actions: validate field assumptions; examine response locations that could close important access gaps; and revise monthly assignments using verified records. Retain basic service in less prominent areas and dedicated safeguards for priority species. Measure progress through completed checks, reliable follow-up and independently observed wildlife and habitat outcomes.",
+      "chinese": "我们提出三个相互衔接的行动：核实实地假设；评估能够缩小重要通达缺口的响应位置；依据核实记录修订月度任务。对不显著区域保留基本服务，并为重点物种配置专门保护。通过已完成检查、可靠后续处置，以及独立观测的野生动物和生境结果衡量进展。"
+    },
+    {
+      "index": 114,
+      "english": "Our central finding is that personnel, equipment and geography must be planned together. Better access to important locations can improve modeled service when the monthly flight allowance already has ample capacity. The framework offers a transparent starting point and a way to revise decisions as evidence improves.",
+      "chinese": "我们的核心发现是，人员、设备和地理条件必须共同规划。当月度飞行额度已充足时，改善重要地点的通达性仍可提高模型服务水平。该框架提供透明的起点，并支持随着证据完善而修订决策。"
+    },
+    {
+      "index": 115,
+      "english": "Yours faithfully,\\\\[5pt]",
+      "chinese": "此致，\\\\[5pt]"
+    },
+    {
+      "index": 116,
+      "english": "The Modeling Team\\\\",
+      "chinese": "建模团队\\\\"
+    },
+    {
+      "index": 117,
+      "english": "Team \\TeamNumber",
+      "chinese": "队伍编号：\\TeamNumber"
+    },
+    {
+      "index": 118,
+      "english": "\\textbf{Tool and identification.} OpenAI Codex, based on the GPT-6 model family, was used in this work session \\cite{codex}. The exact deployed model version was not exposed in the session metadata. Python/SciPy and XeLaTeX performed numerical optimization and document compilation; those outputs were checked separately from generated prose.",
+      "chinese": "\\textbf{工具与标识。}本次工作使用了基于GPT-6模型系列的OpenAI Codex\\cite{codex}。会话元数据未显示准确的部署版本。Python/SciPy和XeLaTeX分别执行数值优化及文档编译，这些输出与生成文字分开核查。"
+    },
+    {
+      "index": 119,
+      "english": "\\textbf{Uses.} The assistant helped explain existing formulas, distinguish sourced records from planning assumptions, revise resource parameters specified by the team, synchronize seasonal calculations, shorten chapter drafts, translate the integrated manuscript into English, draft the nontechnical letter and produce numbered figures and tables. Parallel assistants worked on bounded chapter, data-synchronization and visualization tasks.",
+      "chinese": "\\textbf{使用方式。}助手协助解释既有公式，区分有来源记录与规划假设，修改团队指定资源参数，同步季节计算，精简章节草稿，将整合稿翻译为英文，起草非技术性信件，并制作带编号的图表。并行助手承担了范围明确的章节、数据同步和可视化任务。"
+    },
+    {
+      "index": 120,
+      "english": "\\textbf{Representative instructions.} The team requested: (1) explain each stage and formula in the existing Question 2 document; (2) keep other parameters unchanged, make 60\\% of personnel available and use thirty drones, then shorten Question 2 to eight pages with simple terminology; (3) retrieve remote updates, revise Question 3 to six pages, revise Question 6 similarly, and integrate Questions 1--6, the template sections and a letter into an English paper of at most 24 pages. The team supplied the control number used here.",
+      "chinese": "\\textbf{代表性指令。}团队要求：（1）解释既有第二题文档各阶段和公式；（2）其他参数保持不变，将人员可用比例改为60\\%、无人机改为30架，再将第二题精简到八页并使用简单术语；（3）取回远端更新，将第三题精简至六页，第六题作类似修订，再把第1至6题、模板内容及信件整合为不超过24页的英文论文。团队提供了本文使用的控制编号。"
+    },
+    {
+      "index": 121,
+      "english": "\\textbf{Verification.} Reported Question 2--4 allocations were recomputed or checked against saved inputs and explicit constraints. The cross-park chapter uses the retrieved real-space results and retains its failed Chitwan boundary check. Scripts verify units, capacities, budgets, prohibitions, floors, totals, references, figure/table labels and final page count. Rendered pages were visually reviewed. A computational check is not a validation of real ecological outcomes or a detailed roster.",
+      "chinese": "\\textbf{核验。}文中第二至四题配置已重新计算，或依据保存输入及明确约束检查。跨公园章节使用取回的真实空间结果，并保留奇特旺边界检查未通过的限制。脚本检查单位、容量、预算、禁止配置、下限、汇总、引用、图表标签和最终页数。渲染页面已经目视审阅。计算核验并非真实生态结果或详细排班的验证。"
+    },
+    {
+      "index": 122,
+      "english": "\\textbf{Limits and responsibility.} Generated wording and model choices require team review. The manuscript identifies historical data, scenario assumptions and uncalibrated inputs; it makes no claim that AI supplied current animal distributions, verified staffing inventories, ecological-loss effects or authorized access permissions. Sources are cited separately from the team's calculations. The team remains responsible for accuracy, originality and compliance with the competition's disclosure rules.",
+      "chinese": "\\textbf{限制与责任。}生成的表述和模型选择需要团队复核。论文明确指出历史数据、情景假设和未校准输入；不宣称AI提供了当前动物分布、已核实人员清单、生态减损效果或获准通行权限。资料来源与团队计算分开引用。团队仍对准确性、原创性和竞赛披露规则的遵守负责。"
+    },
+    {
+      "index": 123,
+      "english": "The uploaded template's obsolete year, example notation, sample identifiers and unfinished claims were replaced with the current problem, confirmed team number and verified results. The project retains source data, model inputs, allocation arrays, code, provenance and numerical/layout audit records for review.",
+      "chinese": "上传模板中过时的年份、示例符号、示例标识和未完成结论，已替换为当前题目、确认的队伍编号和已核验结果。项目保留源数据、模型输入、配置数组、代码、来源及数值与版式核验记录，供审阅。"
+    }
+  ],
+  "pdf": "output/pdf/full_paper_zh.pdf",
+  "actual_pages": 24,
+  "pdf_sha256": "2a5a9642984961662d781804c333e355fe666fc998f0036e8506938d31a7f7a8",
+  "validation": "output/full_paper/full_paper_zh_validation.json",
+  "historical_status": "passed_compilation_and_visual_review",
+  "applies_to_chinese_source": "output/full_paper/history/pre_plain_explanation_20261006/full_paper_zh.tex",
+  "current_explanation_audit": "output/full_paper/full_paper_zh_explanation_validation.json",
+  "note": "24-page translation validation is historical; the current open Chinese source contains added explanations with unverified pagination."
+}

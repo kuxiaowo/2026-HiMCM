@@ -1,0 +1,27 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\path[use as bounding box] (0,0) rectangle (16.8,4.6);
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (0.2000,2.8000) rectangle (5.0000,3.9500);
+\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (2.6000,3.5800) {Priorities};
+\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont}] at (2.6000,3.1200) {Animals + habitat};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (5.9000,2.8000) rectangle (10.7000,3.9500);
+\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (8.3000,3.5800) {Routes + response};
+\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont}] at (8.3000,3.1200) {Travel time};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (11.6000,2.8000) rectangle (16.6000,3.9500);
+\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (14.1000,3.5800) {Deployment};
+\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont}] at (14.1000,3.1200) {People + drones};
+\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=1.2pt,-{Latex[length=1.7mm]}] (5.0500,3.3700) -- (5.8000,3.3700);
+\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=1.2pt,-{Latex[length=1.7mm]}] (10.7500,3.3700) -- (11.5000,3.3700);
+\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (0.2000,0.7500) rectangle (5.0000,1.7500);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (2.6000,1.4600) {Seasonal tasks};
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (2.6000,0.9400) {Fire + water tasks};
+\path[fill={rgb,1:red,0.96471;green,0.90588;blue,0.81176},draw=none,line width=0.6pt] (5.9000,0.7500) rectangle (10.7000,1.7500);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (8.3000,1.4600) {Inspection target};
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (8.3000,0.9400) {57.26\%};
+\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (11.6000,0.7500) rectangle (16.6000,1.7500);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (14.1000,1.4600) {Monthly staff};
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont}] at (14.1000,0.9400) {Minimum hours / 120};
+\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=1.2pt,-{Latex[length=1.7mm]}] (5.0500,1.2500) -- (5.8000,1.2500);
+\draw[draw={rgb,1:red,0.85098;green,0.59216;blue,0.21176},line width=1.2pt,-{Latex[length=1.7mm]}] (10.7500,1.2500) -- (11.5000,1.2500);
+\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=1.2pt,-{Latex[length=1.7mm]}] (14.1000,2.7500) -- (14.1000,1.8000);
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{12}{14.16}\selectfont}] at (8.4000,0.2200) {Checks receive service credit only where a ground team can respond.};
+\end{tikzpicture}

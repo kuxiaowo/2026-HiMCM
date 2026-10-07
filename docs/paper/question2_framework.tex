@@ -2,9 +2,10 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath,amssymb,booktabs,tabularx,array}
 \usepackage{graphicx,xcolor,tikz,caption,placeins,hyperref}
+\usepackage{float}
 \usetikzlibrary{arrows.meta}
 \hypersetup{hidelinks}
-\captionsetup{font=small,labelfont=bf,labelsep=quad}
+\captionsetup{font=normalsize,labelfont=bf,labelsep=quad}
 \setcounter{secnumdepth}{3}
 \setcounter{section}{1}
 \renewcommand{\theequation}{2-\arabic{equation}}
@@ -12,348 +13,305 @@
 \renewcommand{\thetable}{2-\arabic{table}}
 \allowdisplaybreaks
 \setlength{\parskip}{0.25em}
-\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
-\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{8pt}
+\setlength{\intextsep}{8pt}
 \setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.15}
+\renewcommand{\arraystretch}{1.08}
 \emergencystretch=2em
 \title{第二部分：有限资源下的人机协同保护资源配置模型}
 \author{}
 \date{}
 \begin{document}
-\maketitle
-\vspace{-1.5em}
+\pagestyle{plain}
+\linespread{1.05}\selectfont
+\ctexset{section={format=\Large\bfseries,beforeskip=6pt,afterskip=5pt},
+subsection={format=\large\bfseries,beforeskip=6pt,afterskip=3pt},
+subsubsection={format=\normalsize\bfseries,beforeskip=4pt,afterskip=2pt}}
+\setlength{\abovedisplayskip}{6pt}\setlength{\belowdisplayskip}{6pt}
+\setlength{\abovedisplayshortskip}{4pt}\setlength{\belowdisplayshortskip}{4pt}
+\setlength{\parskip}{2pt}
 
 \section{有限资源下的人机协同保护资源配置模型}
 
-第一题确定了保护对象及其区域责任，第二题进一步回答：在人员与无人机资源有限的条件下，如何配置监测投入，才能完成更多重要区域的规定服务？为此，先把动物与生境资料转化为需求权重，再由有向道路网络计算每次作业成本和响应范围，最后建立地面人时与无人机机时共同约束的线性规划。图\ref{fig:pipeline}展示从数据到部署方案的计算关系。
+第二题研究：有限人员和无人机应投入哪些地方，才能完成更多重要区域的检查？我们先确定各地的重要程度，再计算到场条件和作业时间，最后在资源上限内选择配置。
 
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[x=1cm,y=1cm]
-\path[use as bounding box] (0,0) rectangle (17,5.9);
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (0.3000,4.6000) rectangle (5.0000,5.5500);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (2.6500,5.2500) {空间与对象数据};
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (2.6500,4.8100) {17父区 · 599检查单元};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (6.1500,4.6000) rectangle (10.8500,5.5500);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (8.5000,5.2500) {需求与作业参数};
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (8.5000,4.8100) {权重、成本、响应门槛};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (12.0000,4.6000) rectangle (16.7000,5.5500);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (14.3500,5.2500) {配置与核验};
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (14.3500,4.8100) {人时、机时、服务完成率};
-\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=1pt,-{Latex[length=1.7mm]}] (5.0500,5.1000) -- (6.0500,5.1000);
-\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=1pt,-{Latex[length=1.7mm]}] (10.9000,5.1000) -- (11.9000,5.1000);
-\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (0.3000,3.0500) rectangle (5.0000,3.8000);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (2.6500,3.4250) {动物 / 生境责任数据};
-\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (0.3000,1.9000) rectangle (5.0000,2.6500);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (2.6500,2.2750) {道路与技术适用数据};
-\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (6.1500,3.0500) rectangle (10.8500,3.8000);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (8.5000,3.4250) {责任 × 进入条件 → 熵权};
-\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (6.1500,1.9000) rectangle (10.8500,2.6500);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (8.5000,2.2750) {路线 → 人时 / 机时成本};
-\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=0.85pt,-{Latex[length=1.7mm]}] (5.0500,3.4250) -- (6.0500,3.4250);
-\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=0.85pt,-{Latex[length=1.7mm]}] (5.0500,2.2750) -- (6.0500,2.2750);
-\path[fill={rgb,1:red,0.96471;green,0.90588;blue,0.81176},draw=none,line width=0.6pt] (12.0000,2.4800) rectangle (16.7000,3.5300);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont\bfseries}] at (14.3500,3.0100) {线性规划：最大化服务分};
-\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw=none,line width=0.6pt] (12.0000,0.8500) rectangle (16.7000,1.6500);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (14.3500,1.2500) {资源上限 + 区域服务底线};
-\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=0.85pt,-{Latex[length=1.7mm]}] (10.8500,3.4250) -- (11.4000,3.4250) -- (11.4000,3.2000) -- (11.9000,3.2000);
-\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=0.85pt,-{Latex[length=1.7mm]}] (10.8500,2.2750) -- (11.4000,2.2750) -- (11.4000,2.8000) -- (11.9000,2.8000);
-\draw[draw={rgb,1:red,0.85098;green,0.59216;blue,0.21176},line width=0.9pt,-{Latex[length=1.7mm]}] (14.3500,1.7000) -- (14.3500,2.4300);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{10}{11.8}\selectfont}] at (8.5000,0.3200) {目标：有限资源下的战略部署；服务评分需要地面响应支持};
-\end{tikzpicture}
-}
-\caption{数据、需求、作业成本与资源配置的计算流程}
-\label{fig:pipeline}
-\end{figure}
+\noindent\textbf{术语速读。}“父区”是报告结果的大区；“检查单元”是大区内用于计算路线的小片区域。“点次”指对一个代表点完成一次规定检查。“人时”指人数乘工作小时，“机时”指单架累计飞行小时。“响应”指地面人员接到任务后到场；“需求权重”表示检查的重要程度；“完成率”表示规定点次完成的比例。“服务分”是按重要程度加权的完成率，不能当作动物存活率。\textbf{层次分析（AHP）}用成对比较确定类别权重；\textbf{熵权法}按各区数据的差异确定指标的组合比例。
 
 \subsection{配置目标、研究单元与基本假设}
-
 \subsubsection{区域、检查单元与规划时期}
-
-承接第一题的空间划分，将15个动物调查区、主盐沼及其他调查外区域作为17个父区，记为集合\(\mathcal I\)。为计算区域内部的道路差异，以10 km格网与父区相交后的每个连通片作为检查单元，得到集合\(\mathcal J\)，共599个单元；属于父区\(i\)的单元组成\(\mathcal J_i\)。每片取一个内部代表点用于计算接近路线，片面积\(A_j\)用于分配规定检查量。该点是战略规划的空间代理，其完成一次检查不表示整个连通片已被连续覆盖。
-
-采用月度规划期，并仅分析规定日间窗口。全部作业支持面积在本模型的UTM投影下为22897.10 \(\mathrm{km}^2\)；需求、服务和分区汇总均使用同一面积口径。动物、土地覆盖、道路资料分别来自2015年、2021年和2026年快照\cite{survey,worldcover,osm}，用于构成固定规划基线。
+沿用15个动物调查区，加主盐沼和其他调查外区域，共17个父区，记为\(\mathcal I\)。用10 km格网切分后得到\(\mathcal J\)中的599个检查单元；区\(i\)内的单元组成\(\mathcal J_i\)。面积\(A_j\)分配任务，内部代表点计算路线；一次检查不表示整片连续覆盖。按月规划，仅考察规定日间窗口。
 
 \subsubsection{地面人员与无人机的服务职责}
-
-一次合格检查采用统一记录清单，对选定动物异常和可燃生境异常进行筛查。假设地面与无人机在技术适用区域内均能完成该清单，因此可以按完成点次相加；无人机不能完成的隐蔽目标筛查不作等价折算。人员还承担设备运输、准备、飞行操作及现场响应，故机时投入必须同时占用配套人时。
-
-设置Okaukuejo、Halali、Namutoni、Olifantsrus、Galton Gate及Nehale Gate六处候选驻点，记为\(\mathcal B\)。其位置来自已有地点资料，但驻点用途是本研究的规划假设。每个驻点预留日间响应人力，并假设事件较稀疏，使共享响应队伍可在该窗口内承担临时核查；本题不建立事件并发或详细轮班模型。
+两种方式在适用区域完成同一动物及可燃生境异常筛查清单，不同检查点次可以相加。无人机仍需运输、准备和操作人员，现场核查依靠地面队伍。六处候选驻点为Okaukuejo、Halali、Namutoni、Olifantsrus、Galton Gate、Nehale Gate；地点有来源，驻点用途是假设。假设事件较少，可共享响应人员。
 
 \subsubsection{资源统计口径与规划假设}
+295人为原题部门工作人员参考数。设60\%的人员资源用于模型任务，相当于177人的月工时，\textbf{不是同时在岗人数限制}。动物、土地覆盖、道路分别来自2015、2021、2026年资料\cite{survey,worldcover,osm}；其余参数为规划假设，保持表\ref{tab:parameters}的口径。
 
-人员资源以人时计：两人共同工作一小时消耗两个人时；无人机资源以单架累计飞行小时计。原题给出的295人为部门工作人员参考数，不能直接视为保护岗位人数。保护岗位参与比例、有效工时及设备规模等采用表\ref{tab:parameters}的显式规划假设。通过保留较少、含义明确的参数，把数据缺口集中在服务标准与作业条件上，而不假定未经观测的真实减损率。
-
-\begin{table}[htbp]
-\centering\small
-\caption{主要参数、单位与规划口径}
+\begin{table}[H]
+\centering\normalsize
+\caption{主要规划参数}
 \label{tab:parameters}
-\begin{tabularx}{\linewidth}{p{3.2cm}Xp{3.0cm}}
+\begin{tabularx}{\linewidth}{p{3.1cm}X}
 \toprule
-参数组 & 数值 & 用途 \\
+项目 & 数值与口径 \\
 \midrule
-空间尺度 & 10 km；17父区、599单元 & 计算及区域报告 \\
-移动速度 & 道路30、步行4、飞行40 \(\mathrm{km/h}\) & 路径与成本 \\
-观察、准备、调度 & 10、5、10 min & 单次作业与响应 \\
-响应期限及窗口 & 2 h；8 h/日，30日/月 & 可达性与预留 \\
-作业队伍 & 地面2人、无人机2人 & 人时换算 \\
-飞行安全与开阔程度 & 单次0.6 h；父区开阔比例至少0.6 & 无人机适用性 \\
-服务频次 & 每100 \(\mathrm{km}^2\)每月8点次 & 规定需求 \\
-进入衰减与区域底线 & \(\tau_E=2\) h；\(\beta=0.15\) & 需求及最低服务 \\
-人员预算 & 295人参考；20\%参与；120 h/人/月 & 7080人时/月 \\
-响应驻点 & 6处；各2人 & 2880人时/月 \\
-设备预算 & 6架；2 h/架/日；20日/月 & 240机时/月 \\
+空间及频次 & 10 km格网；每100 km\(^2\)每月8点次 \\
+移动速度 & 道路30、步行4、飞行40 km/h \\
+作业时长 & 观察10、准备5、调度10分钟；两类队伍各2人 \\
+响应安排 & 2小时内到场；六处各2人，每日8小时、每月30天 \\
+无人机适用 & 单次飞行不超过0.6小时；父区开阔比例至少60\% \\
+需求及底线 & 进入衰减尺度2小时；可响应部分最低服务15\% \\
+人员资源 & 295人参考，60\%可用；120小时/人月 \\
+无人机资源 & 30架；每架每日2小时，每月20个可飞行日 \\
 \bottomrule
 \end{tabularx}
-\par\smallskip\begin{minipage}{\linewidth}\footnotesize 注：295人为原题参考数；空间离散、参与比例、作业时间、队伍、服务标准及新增设备规模均为团队规划设定，不作为公园现行制度。\end{minipage}
 \end{table}
+\clearpage
 
 \subsection{区域保护需求与配置权重}
-
 \subsubsection{动物保护责任与可燃生境责任}
-
-动物数量差异较大，直接相加会使数量多的物种支配指标。因此先在同一物种内部求区域份额，再按保护类别加权。设\(\mathcal M\)为已采用的六类调查对象，\(N_{im}\)为区域\(i\)内对象\(m\)的历史数量，\(q_{\ell(m)}\)为其保护类别权重，定义
+对六类调查对象，先计算同一物种在各区的数量份额，再按保护类别加权，避免数量多的物种支配结果。设\(N_{im}\)为区\(i\)对象\(m\)的历史数量，\(q_{\ell(m)}\)为类别权重；\(\mathcal I_S\)为15个有动物资料的区，\(A_i^F\)为区内草、灌、林可燃面积。定义
 \begin{equation}
-V_i^A=
-\frac{\displaystyle\sum_{m\in\mathcal M}q_{\ell(m)}
-\frac{N_{im}}{\sum_{k\in\mathcal I_S}N_{km}}}
-{\displaystyle\sum_{m\in\mathcal M}q_{\ell(m)}},
-\qquad i\in\mathcal I_S.
-\label{eq:animal}
+V_i^A=\frac{\sum_{m\in\mathcal M}q_{\ell(m)}(N_{im}/\sum_{v\in\mathcal I_S}N_{vm})}{\sum_{m\in\mathcal M}q_{\ell(m)}},
+\qquad V_i^F=\frac{A_i^F}{\sum_{v\in\mathcal I}A_v^F}.
+\label{eq:responsibility}
 \end{equation}
-其中\(\mathcal I_S\)为15个有动物调查数据的父区。六类对象为蓝角马、平原斑马、长颈鹿、非洲草原象、南非剑羚及鸵鸟；数量与密度提供同源信息，因此不再重复加入密度项。式\eqref{eq:animal}满足\(\sum_{i\in\mathcal I_S}V_i^A=1\)，表示区域承担的已测对象保护责任。
-
-依据法规类别\cite{law}，按可猎、保护、特别保护的顺序建立AHP判断矩阵
+六类对象为蓝角马、平原斑马、长颈鹿、非洲草原象、南非剑羚和鸵鸟。两类责任分别合计为1。依据法规类别\cite{law}，按可猎、保护、特别保护顺序作团队判断：
 \begin{equation}
-\mathbf A=
-\begin{pmatrix}
-1&1/2&1/3\\
-2&1&1/2\\
-3&2&1
-\end{pmatrix},\qquad
-\mathbf q=(0.163424,0.296961,0.539615)^{\mathsf T}.
+\mathbf A=\begin{pmatrix}1&1/2&1/3\\2&1&1/2\\3&2&1\end{pmatrix},
+\qquad\mathbf q=(0.163424,0.296961,0.539615)^{\mathsf T}.
 \label{eq:ahp}
 \end{equation}
-取最大特征值对应的正特征向量并归一化，得到\(\mathbf q\)。一致性比率为
-\begin{equation}
-CR=\frac{(\lambda_{\max}-3)/2}{0.58}=0.007933<0.1.
-\label{eq:consistency}
-\end{equation}
-矩阵中的比较数值由团队设定；法规提供类别依据，并未规定这些数值。主盐沼和其他调查外区域的动物责任保持未知，不对其外推数量，也不以零替代真实动物价值。
-
-生境分项采用第一题经过盐沼掩膜后的林地、灌丛和草地面积\(A_i^F\)，定义
-\begin{equation}
-V_i^F=\frac{A_i^F}{\sum_{k\in\mathcal I}A_k^F}.
-\label{eq:habitat}
-\end{equation}
-该指标给出可燃生境的区域责任。由于目前仅核验了单月过火样例，尚不足以估计多年有害火暴露，本模型对可燃生境采用等暴露假设。因而\(V_i^F\)既不是火灾概率，也不是火灾损失率；主盐沼燃料基准为零，也不能推断其生态价值为零。
+权重取最大特征值对应的正特征向量并归一化；一致性比率\(CR=(\lambda_{\max}-3)/(2\times0.58)=0.007933<0.1\)。比较倍数不是法定值。火侧缺少多年暴露资料，暂按可燃面积分责任；它不是火灾概率。主盐沼燃料设为零，不代表生态价值为零。
 
 \subsubsection{道路进入便利度与监测需求修正}
-
-动物责任较高且较易从外部进入的单元，应获得较高反偷猎筛查优先级。为把这一判断量化，将道路与公园边界的27个交点作为进入候选源，在有向路网上采用多源Dijkstra算法计算到单元最近道路接入点的最短路距离\(D_j^E\)，并加上道路外接近时间：
+将道路与边界的27个交点作为进入候选源，求最短道路距离\(D_j^E\)，再加道路外接近距离\(d_j^\perp\)对应的步行时间：
 \begin{equation}
-T_j^E=\frac{D_j^E}{v_g}+\frac{d_j^{\perp}}{v_w},
-\qquad
-E_j=\exp\!\left(-\frac{T_j^E}{\tau_E}\right).
+T_j^E=\frac{D_j^E}{v_g}+\frac{d_j^\perp}{v_w},\qquad
+E_j=\exp(-T_j^E/\tau_E),\quad\tau_E=2\ \mathrm h.
 \label{eq:entry}
 \end{equation}
-其中\(v_g,v_w\)分别为道路和步行速度，\(d_j^{\perp}\)为代表点到最近候选道路的距离。指数形式使进入时间增加时权重平滑下降，且\(0\le E_j\le1\)。取\(\tau_E=2\) h；该尺度是规划假设。无有限进入路径时令\(E_j=0\)。道路边界交点并非已证实的偷猎入口，因此\(E_j\)只作为进入便利度代理。
-
-父区资料需要下分到检查单元。缺少更细动物分布时，假设同一父区内动物责任按面积均匀分布；生境责任亦按父区面积份额分摊，不宣称已获得逐格网实际燃料量。于是
+\(v_g,v_w\)为道路、步行速度；进入越快，\(E_j\)越大。交点并非已证实的偷猎入口。缺少区内细分布时，按面积分摊责任，得到原始监测需求：
 \begin{equation}
-\mu_j=\frac{A_j}{A_i},\quad
-\sum_{j\in\mathcal J_i}\mu_j=1,\qquad
-R_j^A=V_i^A\mu_jE_j,\quad
-R_j^F=V_i^F\mu_j.
+\mu_j=\frac{A_j}{A_i},\quad\sum_{j\in\mathcal J_i}\mu_j=1,
+\qquad R_j^A=V_i^A\mu_jE_j,\quad R_j^F=V_i^F\mu_j.
 \label{eq:raw}
 \end{equation}
-动物分项同时包含责任与进入条件；生境分项包含可燃面积责任。二者均为非负规划需求，进入条件只修正动物分项。
 
 \subsubsection{基于共同数据范围的熵权计算}
-
-两分项的组合权重采用熵权法确定。先将单元需求汇总到父区：\(X_{ik}=\sum_{j\in\mathcal J_i}R_j^k\)，\(k\in\{A,F\}\)。在15个共同有数据的父区上组成\(15\times2\)矩阵，而不直接对599个单元赋权，避免不同区域的切片数量影响信息差异。
-
-两列均为非负责任量，故按列合计作比例归一化：
+先按父区汇总\(X_{ik}=\sum_{j\in\mathcal J_i}R_j^k\)，在共同有资料的15区计算，\(k\in\{A,F\}\)：
 \begin{equation}
-p_{ik}=\frac{X_{ik}}{\sum_{v\in\mathcal I_S}X_{vk}},
-\qquad
-\sum_{i\in\mathcal I_S}p_{ik}=1.
-\label{eq:entropy_normalisation}
-\end{equation}
-不进行极差拉伸，以免把最小正责任人为变成零。接着计算信息熵和差异度：
-\begin{equation}
-e_k=-\frac{1}{\ln15}\sum_{i\in\mathcal I_S}p_{ik}\ln p_{ik},
-\qquad d_k=1-e_k,
+p_{ik}=\frac{X_{ik}}{\sum_{v\in\mathcal I_S}X_{vk}},\quad
+e_k=-\frac{\sum_i p_{ik}\ln p_{ik}}{\ln15},\quad
+\alpha_k=\frac{1-e_k}{(1-e_A)+(1-e_F)}.
 \label{eq:entropy}
 \end{equation}
-并约定\(0\ln0=0\)。当一列在所有区域的比例相等时，\(e_k=1\)，其区分能力为零；越集中于部分区域，熵越低，差异度越大。最终取
-\begin{equation}
-\alpha_k=\frac{d_k}{d_A+d_F},\qquad
-\alpha_A+\alpha_F=1.
-\label{eq:alpha}
-\end{equation}
-列总量为零或两列差异度总和为零时，该赋权不可识别，应返回数据不足，不能继续除法。主盐沼及其他调查外区域的动物资料未知，因此不参加权重估计。实际计算如表\ref{tab:entropy}所示，得到\(\alpha_A=0.645551\)、\(\alpha_F=0.354449\)，由所选数据的区域差异确定组合比例。
-
-\begin{table}[htbp]
-\centering\small
-\caption{共同15区数据的熵权计算}
-\label{tab:entropy}
-\begin{tabular}{lrrr}
-\toprule
-需求分项 & 信息熵 \(e_k\) & 差异度 \(d_k\) & 组合权重 \(\alpha_k\) \\
-\midrule
-动物责任与进入条件 & 0.881596 & 0.118404 & 0.645551 \\
-可燃生境责任 & 0.934989 & 0.065011 & 0.354449 \\
-\bottomrule
-\end{tabular}
-\par\smallskip\begin{minipage}{\linewidth}\footnotesize 注：按父区汇总、按列比例归一化；未知动物区不填零、不参加熵权估计。\end{minipage}
-\end{table}
-
-熵权说明所选数据在区域之间的差异程度，不表示动物损失与火灾损失的真实占比。动物类别判断及等火暴露假设仍保留各自的判断成分，因此这里的“数据赋权”不能解释成全部参数已客观观测。
+约定\(0\ln0=0\)。分布越均匀，熵\(e_k\)越高，区分能力越低。当前\(e_A=0.881596,e_F=0.934989\)，得到\(\alpha_A=0.645551,\alpha_F=0.354449\)。这些比例反映数据差异，不是真实损失占比；列总量或差异度总和为零时停止赋权。
 
 \subsubsection{检查单元权重与区域汇总}
-
-熵权是在共同范围上估计的组合系数；实际部署中，各分项仍按自身有评价数据的范围归一化。动物分项只统计\(\mathcal J_S=\bigcup_{i\in\mathcal I_S}\mathcal J_i\)，生境分项覆盖全体单元：
-\begin{equation}
-w_j^A=\begin{cases}
-R_j^A/\displaystyle\sum_{\ell\in\mathcal J_S}R_\ell^A,&j\in\mathcal J_S,\\
-0,&j\notin\mathcal J_S,
-\end{cases}
-\qquad
-w_j^F=\frac{R_j^F}{\sum_{\ell\in\mathcal J}R_\ell^F}.
-\label{eq:shares}
-\end{equation}
-调查外的零系数仅表示未纳入已测动物分项，其原始动物值仍为未知。将两个归一化分项组合为
-\begin{equation}
-w_j=\alpha_Aw_j^A+\alpha_Fw_j^F,
-\qquad W_i=\sum_{j\in\mathcal J_i}w_j.
-\label{eq:weights}
-\end{equation}
-因为两分项各自合计为1，故\(\sum_jw_j=\alpha_A+\alpha_F=1\)，\(W_i\)可以解释为父区在当前目标内的需求份额。图\ref{fig:weights}展示其分项构成：ENP1、ENP12和ENP15需求权重分别为19.06\%、11.02\%和9.96\%。权重给出服务的重要程度；实际分配还取决于完成服务所需的时间和响应可达性，不能直接将\(W_i\)当作人员分配比例。
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[x=1cm,y=1cm]
-\path[use as bounding box] (0,0) rectangle (17,10.1);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (8.5000,9.7300) {各区域需求权重的两分项构成};
-\draw[draw={rgb,1:red,0.87843;green,0.89804;blue,0.91373},line width=0.4pt] (3.1000,0.9300) -- (3.1000,9.0500);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (3.1000,0.5800) {0};
-\draw[draw={rgb,1:red,0.87843;green,0.89804;blue,0.91373},line width=0.4pt] (5.8045,0.9300) -- (5.8045,9.0500);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (5.8045,0.5800) {5};
-\draw[draw={rgb,1:red,0.87843;green,0.89804;blue,0.91373},line width=0.4pt] (8.5091,0.9300) -- (8.5091,9.0500);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (8.5091,0.5800) {10};
-\draw[draw={rgb,1:red,0.87843;green,0.89804;blue,0.91373},line width=0.4pt] (11.2136,0.9300) -- (11.2136,9.0500);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (11.2136,0.5800) {15};
-\draw[draw={rgb,1:red,0.87843;green,0.89804;blue,0.91373},line width=0.4pt] (13.9182,0.9300) -- (13.9182,9.0500);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (13.9182,0.5800) {20};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,8.9000) {ENP1};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,8.7600) rectangle (11.5321,9.0400);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (11.5321,8.7600) rectangle (13.4108,9.0400);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (13.5908,8.9000) {19.06};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,8.4400) {ENP12};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,8.3000) rectangle (7.5664,8.5800);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (7.5664,8.3000) rectangle (9.0608,8.5800);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (9.2408,8.4400) {11.02};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,7.9800) {ENP15};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,7.8400) rectangle (6.3588,8.1200);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (6.3588,7.8400) rectangle (8.4862,8.1200);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (8.6662,7.9800) {9.96};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,7.5200) {ENP17};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,7.3800) rectangle (7.0505,7.6600);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (7.0505,7.3800) rectangle (7.8821,7.6600);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (8.0621,7.5200) {8.84};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,7.0600) {ENP3410};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,6.9200) rectangle (5.2851,7.2000);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (5.2851,6.9200) rectangle (7.8095,7.2000);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (7.9895,7.0600) {8.71};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,6.6000) {ENP11};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,6.4600) rectangle (4.6952,6.7400);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.6952,6.4600) rectangle (7.4529,6.7400);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (7.6329,6.6000) {8.05};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,6.1400) {ENP16};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,6.0000) rectangle (5.5985,6.2800);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (5.5985,6.0000) rectangle (6.3100,6.2800);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (6.4900,6.1400) {5.93};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,5.6800) {ENP13};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,5.5400) rectangle (4.7563,5.8200);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.7563,5.5400) rectangle (6.2791,5.8200);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (6.4591,5.6800) {5.88};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,5.2200) {ENP2};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,5.0800) rectangle (5.2430,5.3600);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (5.2430,5.0800) rectangle (5.5358,5.3600);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (5.7158,5.2200) {4.50};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,4.7600) {ENP5};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,4.6200) rectangle (4.3972,4.9000);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.3972,4.6200) rectangle (5.4758,4.9000);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (5.6558,4.7600) {4.39};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,4.3000) {ENP7};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,4.1600) rectangle (4.3013,4.4400);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.3013,4.1600) rectangle (4.8922,4.4400);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (5.0722,4.3000) {3.31};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,3.8400) {ENP9};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,3.7000) rectangle (4.1000,3.9800);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.1000,3.7000) rectangle (4.6682,3.9800);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (4.8482,3.8400) {2.90};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,3.3800) {ENP14};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,3.2400) rectangle (3.3189,3.5200);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (3.3189,3.2400) rectangle (4.5231,3.5200);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (4.7031,3.3800) {2.63};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,2.9200) {ENP6};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,2.7800) rectangle (3.6948,3.0600);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (3.6948,2.7800) rectangle (4.4783,3.0600);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (4.6583,2.9200) {2.55};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,2.4600) {ENP8};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,2.3200) rectangle (3.5203,2.6000);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (3.5203,2.3200) rectangle (3.9347,2.6000);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (4.1147,2.4600) {1.54};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,2.0000) {调查外其他*};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,1.8600) rectangle (3.1000,2.1400);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (3.1000,1.8600) rectangle (3.4914,2.1400);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (3.6714,2.0000) {0.72};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (2.8700,1.5400) {盐沼*};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,1.4000) rectangle (3.1000,1.6800);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (3.1000,1.4000) rectangle (3.1000,1.6800);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (3.2800,1.5400) {0.00};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,9.1200) rectangle (3.3700,9.2900);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (3.5000,9.2050) {动物责任 × 进入条件};
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (9.2000,9.1200) rectangle (9.4700,9.2900);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (9.6000,9.2050) {可燃生境责任};
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (8.5000,0.2700) {需求权重 / \%；*动物资料未知，未纳入动物分项};
-\end{tikzpicture}
-}
-\caption{父区需求权重的动物与可燃生境分项构成。颜色为组合权重加权后的份额，合计100\%；未知动物区以*标记。}
-\label{fig:weights}
-\end{figure}
-
-\subsection{地理可达性与单位作业成本}
-
-\subsubsection{有向路网、最短路径与响应门槛}
-
-将道路构成有向图\(G=(\mathcal V,\mathcal E)\)，保留原道路节点连接和单行方向。本模型包含1447个节点、3611条有向弧。代表点投影到最近候选道路，接入距离按路段长度分摊至两端，再分别求去程与返程最短路径，不用直线补齐不连通道路。假设管理车辆可使用候选道路，并以道路外直线步行近似最后接近过程。
-
-记驻点\(b\)至单元道路接入点的去返距离为\(d_{bj}^+\)、\(d_{jb}^-\)。若驻点本身距道路有微小偏移，代码将该段步行时间换算为等效道路距离并计入这两个量。定义满足响应期限且能有限往返的驻点集合
+动物分项只在有调查资料的单元集合\(\mathcal J_S\)中归一化，生境分项覆盖全体单元：
 \begin{equation}
 \begin{aligned}
-\mathcal B_j^R&=\left\{b\in\mathcal B:
-t_d+\frac{d_{bj}^+}{v_g}+\frac{d_j^\perp}{v_w}\le T_{\max},\ 
-d_{bj}^+,d_{jb}^-<\infty\right\},\\
-r_j&=\mathbf1\{\mathcal B_j^R\ne\varnothing\}.
+w_j^A&=R_j^A/\sum_{\ell\in\mathcal J_S}R_\ell^A\ (j\in\mathcal J_S),
+&w_j^F&=R_j^F/\sum_{\ell\in\mathcal J}R_\ell^F,\\
+w_j&=\alpha_Aw_j^A+\alpha_Fw_j^F,
+&W_i&=\sum_{j\in\mathcal J_i}w_j.
+\end{aligned}
+\label{eq:weights}
+\end{equation}
+调查外令动物评分系数为零，但原始动物值保留未知。由两分项各自合计为1，得\(\sum_jw_j=1\)。\(W_i\)是区的重要性份额；配置还取决于作业成本和响应条件。
+\clearpage
+
+\subsection{地理可达性与单位作业成本}
+\subsubsection{有向路网、最短路径与响应门槛}
+道路保留真实连接和单行方向，去程、返程分别求最短路。假设管理车辆可通行候选道路，道路外按直线步行估计；道路权限及障碍尚需现场核查。驻点集合为\(\mathcal B\)，驻点\(b\)到目标道路接入点的去返距离为\(d_{bj}^+,d_{jb}^-\)。合格驻点及响应指示为
+\begin{equation}
+\begin{aligned}
+\mathcal B_j^R&=\{b\in\mathcal B:t_d+d_{bj}^+/v_g+d_j^\perp/v_w\le T_{\max},\
+d_{bj}^+,d_{jb}^-<\infty\},\\
+r_j&=\mathbf1\{\mathcal B_j^R\ne\varnothing\},\qquad t_d=10\ \mathrm{min},\quad T_{\max}=2\ \mathrm h.
 \end{aligned}
 \label{eq:response}
 \end{equation}
-其中\(t_d=10\) min为调度时间，\(T_{\max}=2\) h为到场期限。\(r_j=1\)表示当前驻点和假设速度下具备规划响应条件。对合格单元选择往返总时间最小的驻点
-\begin{equation}
-b_j^*=\mathop{\arg\min}_{b\in\mathcal B_j^R}
-\frac{d_{bj}^++d_{jb}^-}{v_g},\qquad
-\mathcal J_R=\{j:r_j=1\}.
-\label{eq:base_choice}
-\end{equation}
-后文成本均按\(b_j^*\)计算。216个单元具备响应条件，其支持面积为7812.24 \(\mathrm{km}^2\)，占总面积34.12\%。图\ref{fig:maps}将需求分布与响应限制并列，说明需求较高的区域也可能因地面接近时间过长而难以获得有效服务。
+在合格驻点中选往返时间最短者\(b_j^*\)，记可响应集合\(\mathcal J_R=\{j:r_j=1\}\)。后文\(D_j=d_{b_j^*j}^++d_{jb_j^*}^-\)。响应期限只限制到场时间，成本另计返程。基准可响应216个单元，面积7812.24 km\(^2\)，占34.12\%；\(r_j\)不表示处置成功概率。
 
-\begin{figure}[htbp]
+\subsubsection{地面检查的路线与人时计算}
+一次检查包含道路往返、道路外步行往返、观察和准备；用距离除以速度得到时长，再乘队伍人数：
+\begin{equation}
+a_j=n_g\left(\frac{D_j}{v_g}+\frac{2d_j^\perp}{v_w}+t_o+t_p\right),\quad j\in\mathcal J_R.
+\label{eq:ground}
+\end{equation}
+\(a_j\)单位为人时/点次，\(n_g=2\)，\(t_o=10\)分钟、\(t_p=5\)分钟均换算为小时。各目标独立往返，未做串点路线优化。
+
+\subsubsection{无人机机时与配套人工计算}
+人员沿道路把设备运到部署点，无人机替代道路外步行。一次检查的飞行机时\(b_j\)、配套人时\(o_j\)及换算系数为
+\begin{equation}
+b_j=\frac{2d_j^\perp}{v_u}+t_o,\qquad
+o_j=n_u\left(\frac{D_j}{v_g}+t_p+b_j\right),\qquad\gamma_j=\frac{o_j}{b_j}.
+\label{eq:drone}
+\end{equation}
+\(n_u=2\)。投入\(h_j\)机时支持\(h_j/b_j\)点次，消耗\(\gamma_jh_j\)人时。无人机适用集合为\(\mathcal J_U=\{j\in\mathcal J_R:b_j\le0.6\ \mathrm h,\ O_{i(j)}\ge0.6\}\)，\(O_i\)为父区开阔程度。216个可响应单元均满足该条件；起降条件仍需核查。
+
+\begin{figure}[H]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[x=1cm,y=1cm]
+\path[use as bounding box] (0,0) rectangle (17,6.15);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (4.2500,5.7000) {(a) 人员与无人机作业结构};
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (12.9000,5.7000) {(b) 同一单元的单次人时};
+\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=0.6pt] (0.6000,3.2000) rectangle (1.3000,4.0500);
+\draw[draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=1pt] (0.4800,4.0500) -- (0.9500,4.4500) -- (1.4200,4.0500);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (0.9500,2.8500) {驻点};
+\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=2pt,-{Latex[length=1.7mm]}] (1.5000,3.6500) -- (2.5500,3.6500) -- (3.0500,4.1000) -- (4.2000,4.1000);
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (2.7000,4.8000) {道路往返};
+\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.2200,3.8200) rectangle (4.7700,4.3700);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (4.5000,3.4500) {部署点};
+\path[fill={rgb,1:red,0.63922;green,0.23137;blue,0.20392},draw=none,line width=0.5pt] (7.2000,4.1000) circle (0.1000);
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (7.2000,2.9500) {检查点 j};
+\draw[draw={rgb,1:red,0.85098;green,0.59216;blue,0.21176},line width=1pt,dashed,-{Latex[length=1.7mm]}] (4.8700,4.1000) -- (7.0300,4.1000);
+\node[anchor=center,align=center,text={rgb,1:red,0.85098;green,0.59216;blue,0.21176},font={\fontsize{9}{10.62}\selectfont}] at (5.9500,3.7200) {道路外步行};
+\draw[draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=1pt,-{Latex[length=1.7mm]}] (4.5000,4.5000) -- (5.5500,5.1000) -- (6.3500,5.1000) -- (7.2000,4.4500);
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.5000,5.0500) circle (0.0600);
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.8000,5.0500) circle (0.0600);
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.5000,5.3200) circle (0.0600);
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.8000,5.3200) circle (0.0600);
+\node[anchor=center,align=center,text={rgb,1:red,0.13725;green,0.36863;blue,0.51373},font={\fontsize{9}{10.62}\selectfont}] at (6.7000,5.2000) {飞行};
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (4.1000,1.7300) {人员始终承担出行、准备、操作与响应};
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (4.1000,1.1000) {示意图不代表实际巡护轨迹};
+\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (9.8200,4.5500) {地面检查};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (10.0000,4.3500) rectangle (13.8935,4.7500);
+\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (13.8935,4.3500) rectangle (14.7258,4.7500);
+\path[fill={rgb,1:red,0.46275;green,0.64706;blue,0.76471},draw=none,line width=0.6pt] (14.7258,4.3500) rectangle (15.0773,4.7500);
+\path[fill={rgb,1:red,0.72549;green,0.77255;blue,0.81176},draw=none,line width=0.6pt] (15.0773,4.3500) rectangle (15.2530,4.7500);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (15.4030,4.5500) {4.981};
+\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (9.8200,3.3800) {无人机配套};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (10.0000,3.1800) rectangle (13.8935,3.5800);
+\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (13.8935,3.1800) rectangle (13.8935,3.5800);
+\path[fill={rgb,1:red,0.46275;green,0.64706;blue,0.76471},draw=none,line width=0.6pt] (13.8935,3.1800) rectangle (14.3283,3.5800);
+\path[fill={rgb,1:red,0.72549;green,0.77255;blue,0.81176},draw=none,line width=0.6pt] (14.3283,3.1800) rectangle (14.5040,3.5800);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (14.6540,3.3800) {4.271};
+\draw[draw={rgb,1:red,0.86275;green,0.89020;blue,0.91373},line width=0.25pt] (10.0000,2.7500) -- (10.0000,4.9300);
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (10.0000,2.5100) {0};
+\draw[draw={rgb,1:red,0.86275;green,0.89020;blue,0.91373},line width=0.25pt] (12.1091,2.7500) -- (12.1091,4.9300);
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (12.1091,2.5100) {2};
+\draw[draw={rgb,1:red,0.86275;green,0.89020;blue,0.91373},line width=0.25pt] (14.2182,2.7500) -- (14.2182,4.9300);
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (14.2182,2.5100) {4};
+\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (12.9000,2.1000) {人时 / 点次（2人作业组）};
+\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (9.1000,1.3800) rectangle (9.3200,1.5200);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (9.4300,1.4500) {道路往返};
+\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (12.7000,1.3800) rectangle (12.9200,1.5200);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (13.0300,1.4500) {道路外步行};
+\path[fill={rgb,1:red,0.46275;green,0.64706;blue,0.76471},draw=none,line width=0.6pt] (9.1000,0.9300) rectangle (9.3200,1.0700);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (9.4300,1.0000) {观察 / 飞行操作};
+\path[fill={rgb,1:red,0.72549;green,0.77255;blue,0.81176},draw=none,line width=0.6pt] (12.7000,0.9300) rectangle (12.9200,1.0700);
+\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (13.0300,1.0000) {准备};
+\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (12.9000,0.3800) {ENP1\_0000：另消耗 0.206 机时/点次};
+\end{tikzpicture}
+}
+\caption{检查路线与单次人时；机时单独核算。}
+\label{fig:costs}
+\end{figure}
+同一单元ENP1\_0000，地面需4.981人时/点次，无人机需4.271配套人时和0.206机时/点次，数值由路线计算，非实测作业日志。
+\clearpage
+
+\subsection{人机协同资源配置的线性规划模型}
+\subsubsection{决策变量与需求加权目标函数}
+求解器选择单元\(j\)的地面监测人时\(x_j\)、无人机机时\(h_j\)和服务完成率\(s_j\)。前两项单位为人时/月、机时/月；\(s_j=0.5\)表示完成一半规定点次。目标为
+\begin{equation}
+\max P=100\sum_{j\in\mathcal J}w_js_j.
+\label{eq:objective}
+\end{equation}
+因\(\sum_jw_j=1\)，服务分在0至100之间。权重0.02的单元完成一半服务，贡献1分。比较配置时保持权重和服务标准相同；该分值不直接衡量事故减少或完整生态成效。
+
+\subsubsection{单位面积需求与服务容量约束}
+按每100 km\(^2\)每月8点次规定任务：
+\begin{equation}
+C_j=\kappa A_j/A_{\mathrm{ref}},\quad\kappa=8,\quad A_{\mathrm{ref}}=100\ \mathrm{km}^2,
+\qquad\sum_jC_j=\frac\kappa{A_{\mathrm{ref}}}\sum_jA_j.
+\label{eq:demand}
+\end{equation}
+总规定量为1831.77点次/月。50 km\(^2\)单元需4点次/月。改格网只重新分摊面积，不改变总任务量。连续点次是规划近似，实际执行需安排整数次数。
+
+可响应时令\(g_j=1/a_j\)，否则\(g_j=0\)；无人机适用时令\(u_j=1/b_j\)，否则\(u_j=0\)。资源支持的点次必须不少于计划完成量：
+\begin{equation}
+C_js_j\le g_jx_j+u_jh_j.
+\label{eq:capacity}
+\end{equation}
+两种方式可分担不同检查点次，同一次重复检查不重复记分。完全采用地面方式，提高完成率\(\Delta s_j\)需\(C_ja_j\Delta s_j\)人时；无人机需\(C_jo_j\Delta s_j\)人时和\(C_jb_j\Delta s_j\)机时。每人时得分效率分别为\(100w_j/(C_ja_j)\)、\(100w_j/(C_jo_j)\)，因此不能只按区域权重比例分人。
+
+\subsubsection{人员预算、机时预算与响应预留}
+设60\%人员资源可用于保护，配置30架无人机。单人有效工时为120小时；每架每日2机时、每月20个可飞行日；六个响应驻点各2人、每日8小时、每月30天：
+\begin{equation}
+\begin{aligned}
+H&=295\times0.6\times120=21240\quad\text{人时/月},\\
+U&=30\times2\times20=1200\quad\text{机时/月},\\
+H_0&=6\times2\times8\times30=2880\quad\text{人时/月}.
+\end{aligned}
+\label{eq:budgets_values}
+\end{equation}
+总人工包括监测、无人机配套及固定响应；机时另设上限：
+\begin{equation}
+\sum_jx_j+\sum_{j\in\mathcal J_U}\gamma_jh_j+H_0\le H,
+\qquad\sum_jh_j\le U.
+\label{eq:budgets}
+\end{equation}
+响应预留全园只扣一次，人时不能与机时直接相加。监测人工可用上限为18360人时。60\%和30架均为规划设定，不称公园现有编制或设备清单。
+\clearpage
+
+\subsubsection{区域服务底线与技术适用性约束}
+为避免低权重区完全没有检查，令\(Q_i=\sum_{j\in\mathcal J_i}\mu_jr_j\)为可响应面积比例，\(\bar s_i=\sum_{j\in\mathcal J_i}\mu_js_j\)为全区面积加权完成率，要求
+\begin{equation}
+\bar s_i\ge\beta Q_i,\qquad\beta=0.15,\quad i\in\mathcal I.
+\label{eq:floor}
+\end{equation}
+它保障可响应部分的15\%服务。若某区仅20\%面积可响应，全区底线为3\%；若完全不可响应，现有布局无法保障该区。这是通用检查要求，不能代替重点物种专项保护。
+
+参数固定后，完整模型为
+\begin{equation}
+\boxed{\begin{aligned}
+\max_{\mathbf x,\mathbf h,\mathbf s}\quad &100\sum_jw_js_j\\
+\text{s.t.}\quad&C_js_j\le g_jx_j+u_jh_j,&&j\in\mathcal J,\\
+&\sum_jx_j+\sum_{j\in\mathcal J_U}\gamma_jh_j\le H-H_0,\\
+&\sum_jh_j\le U,\\
+&\sum_{j\in\mathcal J_i}\mu_js_j\ge\beta\sum_{j\in\mathcal J_i}\mu_jr_j,&&i\in\mathcal I,\\
+&0\le s_j\le r_j,\quad x_j,h_j\ge0,&&j\in\mathcal J,\\
+&x_j=0\ (j\notin\mathcal J_R),\quad h_j=0\ (j\notin\mathcal J_U).
+\end{aligned}}
+\label{eq:lp}
+\end{equation}
+目标与约束都按投入成比例变化，构成线性规划。\(s_j\le1\)使完成全部要求后不再加分；不可响应单元不计服务。代码另限单种投入不超过完成该单元全部任务所需的资源，去掉无收益的超额投入。
+
+\subsection{模型求解与可行性分析}
+\subsubsection{模型求解与约束核验}
+将1797个变量和上述约束交给SciPy的HiGHS求解器。随后独立复算逐点容量、响应及飞行条件、预算、各区底线和汇总。基准与减员方案均求得最优解，最大约束正残差小于\(10^{-6}\)，未知动物值仍为空。这证明解满足模型，不证明真实作业或生态结果已验证。
+
+\subsubsection{同分方案选择与人工消耗核算}
+同一最高分可能有不同配置。第一阶段求得最高服务分\(P^*\)，第二阶段保留该分数并重新选择全部完成率及投入：
+\begin{equation}
+\min_{\mathbf x,\mathbf h,\mathbf s}H_M=\sum_jx_j+\sum_{j\in\mathcal J_U}\gamma_jh_j,
+\qquad100\sum_jw_js_j\ge P^*.
+\label{eq:tie}
+\end{equation}
+其余约束不变，因此得到模型内所有最优同分方案中的全局最少人工。达到地理上限时，正权重可响应单元必须完成全部检查；零权重单元仍按区域底线配置。正文人时采用这一统一口径，真实人员编制还取决于任务清单和实际作业条件。
+\clearpage
+
+\subsubsection{地理上限、预算不足与替代机制}
+由\(w_j\ge0\)和\(s_j\le r_j\)，有
+\begin{equation}
+P\le P_{\mathrm{geo}}=100\sum_jw_jr_j.
+\label{eq:geo}
+\end{equation}
+这就是固定响应布局的评分上限：再多人员或飞行小时，也不能让地面响应不到的单元获得有效服务。若\(H<H_0\)，连响应预留都不足，模型必无解；\(H\ge H_0\)仍需额外人工满足检查底线。
+
+两类队伍人数、准备和观察协议相同，单次人工差为
+\begin{equation}
+a_j-o_j=2n_gd_j^\perp\left(\frac1{v_w}-\frac1{v_u}\right)>0
+\quad(d_j^\perp>0).
+\label{eq:substitution}
+\end{equation}
+在当前假设下，飞行替代较慢的道路外步行，节省人工但占用机时。改变人数或检查协议后须重新比较；本模型不把这种替代外推到执法、消防等现场处置。
+
+\begin{figure}[H]
 \centering
 \resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[x=1cm,y=1cm]
@@ -2824,617 +2782,107 @@ b_j^*=\mathop{\arg\min}_{b\in\mathcal B_j^R}
 \node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (8.5000,0.3200) {星号：六处候选驻点；红点：2小时响应不可达目标；道路/边界用于规划};
 \end{tikzpicture}
 }
-\caption{需求与基准服务的空间对照。左图颜色表示父区需求权重，右图颜色表示全区面积加权服务率；红点表示2小时内无法支持地面响应的单元。星形为候选驻点，区内数字省略ENP前缀；轮廓仅为显示作简化。}
+\caption{需求与服务地图。星形为驻点，红点为2小时内不可响应单元；图形仅作显示简化。}
 \label{fig:maps}
 \end{figure}
+图\ref{fig:maps}将重要程度与实际可提供的服务并列。需求较高并不意味着到场容易：ENP11权重8.05\%，可响应面积却仅约0.02\%。反之，靠近驻点和道路的区域，更容易用较少时间完成检查。\textbf{地图右侧的面积完成率与全园加权服务分采用不同权重，不能互换。}
 
-\subsubsection{地面检查的路线与人时计算}
-
-一次地面检查依次包含道路往返、道路外步行往返、观察和准备。路长除以速度得到队伍占用小时，再乘队伍人数得到人时，因此
-\begin{equation}
-a_j=n_g\left[
-\frac{d_{b_j^*j}^++d_{jb_j^*}^-}{v_g}
-+\frac{2d_j^\perp}{v_w}+t_o+t_p\right],\qquad j\in\mathcal J_R.
-\label{eq:ground_cost}
-\end{equation}
-\(a_j\)的单位为人时/点次；\(t_o=10\) min、\(t_p=5\) min分别为观察和准备时间，计算时统一换算为小时。每个代表点采用独立往返，未进行串点巡查路线优化。这一成本来源于路线和作业时间的加总，不需要用真实事故减损数据拟合。
-
-\subsubsection{无人机机时与配套人工计算}
-
-无人机由人员沿道路运至接近目标的部署点，再完成道路外往返飞行及观察。单次机时和配套人时分别为
-\begin{equation}
-\begin{aligned}
-b_j&=\frac{2d_j^\perp}{v_u}+t_o,\\
-o_j&=n_u\left[
-\frac{d_{b_j^*j}^++d_{jb_j^*}^-}{v_g}+t_p+b_j\right],\\
-\gamma_j&=\frac{o_j}{b_j}.
-\end{aligned}
-\label{eq:drone_cost}
-\end{equation}
-其中\(b_j\)为机时/点次，\(o_j\)为人时/点次，\(\gamma_j\)为人时/机时。若投入\(h_j\)机时，完成点次为\(h_j/b_j\)，并占用\(\gamma_jh_j\)配套人时；运输和操作人工因此不会遗漏。
-
-令\(O_i\)为父区草地、灌丛和裸地稀疏植被在有效分类面积中的比例，用作开阔程度代理。飞行作业必须同时满足响应、续航和开阔条件：
-\begin{equation}
-\mathcal J_U=\{j\in\mathcal J_R:b_j\le0.6\ \mathrm h,\ O_{i(j)}\ge0.6\}.
-\label{eq:drone_set}
-\end{equation}
-本基准中216个可响应单元均符合该判据，单次机时为0.167--0.511 h。\(O_i\)是父区统计近似，具体起降与观测条件仍需作业前核查。
-
-图\ref{fig:costs}给出同一单元\texttt{ENP1\_0000}的成本拆分：地面检查需要4.981人时/点次，无人机需要4.271配套人时与0.206机时/点次。这些数值由模型路线计算，而非实测巡护日志。无人机节省道路外步行时间，但道路运输和操作人员仍然存在。
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[x=1cm,y=1cm]
-\path[use as bounding box] (0,0) rectangle (17,6.15);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (4.2500,5.7000) {(a) 人员与无人机作业结构};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (12.9000,5.7000) {(b) 同一单元的单次人时};
-\path[fill={rgb,1:red,0.93333;green,0.95294;blue,0.96471},draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=0.6pt] (0.6000,3.2000) rectangle (1.3000,4.0500);
-\draw[draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=1pt] (0.4800,4.0500) -- (0.9500,4.4500) -- (1.4200,4.0500);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (0.9500,2.8500) {驻点};
-\draw[draw={rgb,1:red,0.51373;green,0.56863;blue,0.61569},line width=2pt,-{Latex[length=1.7mm]}] (1.5000,3.6500) -- (2.5500,3.6500) -- (3.0500,4.1000) -- (4.2000,4.1000);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (2.7000,4.8000) {道路往返};
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.2200,3.8200) rectangle (4.7700,4.3700);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (4.5000,3.4500) {部署点};
-\path[fill={rgb,1:red,0.63922;green,0.23137;blue,0.20392},draw=none,line width=0.5pt] (7.2000,4.1000) circle (0.1000);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (7.2000,2.9500) {检查点 j};
-\draw[draw={rgb,1:red,0.85098;green,0.59216;blue,0.21176},line width=1pt,dashed,-{Latex[length=1.7mm]}] (4.8700,4.1000) -- (7.0300,4.1000);
-\node[anchor=center,align=center,text={rgb,1:red,0.85098;green,0.59216;blue,0.21176},font={\fontsize{9}{10.62}\selectfont}] at (5.9500,3.7200) {道路外步行};
-\draw[draw={rgb,1:red,0.13725;green,0.36863;blue,0.51373},line width=1pt,-{Latex[length=1.7mm]}] (4.5000,4.5000) -- (5.5500,5.1000) -- (6.3500,5.1000) -- (7.2000,4.4500);
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.5000,5.0500) circle (0.0600);
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.8000,5.0500) circle (0.0600);
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.5000,5.3200) circle (0.0600);
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.5pt] (5.8000,5.3200) circle (0.0600);
-\node[anchor=center,align=center,text={rgb,1:red,0.13725;green,0.36863;blue,0.51373},font={\fontsize{9}{10.62}\selectfont}] at (6.7000,5.2000) {飞行};
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (4.1000,1.7300) {人员始终承担出行、准备、操作与响应};
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (4.1000,1.1000) {示意图不代表实际巡护轨迹};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (9.8200,4.5500) {地面检查};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (10.0000,4.3500) rectangle (13.8935,4.7500);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (13.8935,4.3500) rectangle (14.7258,4.7500);
-\path[fill={rgb,1:red,0.46275;green,0.64706;blue,0.76471},draw=none,line width=0.6pt] (14.7258,4.3500) rectangle (15.0773,4.7500);
-\path[fill={rgb,1:red,0.72549;green,0.77255;blue,0.81176},draw=none,line width=0.6pt] (15.0773,4.3500) rectangle (15.2530,4.7500);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (15.4030,4.5500) {4.981};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont}] at (9.8200,3.3800) {无人机配套};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (10.0000,3.1800) rectangle (13.8935,3.5800);
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (13.8935,3.1800) rectangle (13.8935,3.5800);
-\path[fill={rgb,1:red,0.46275;green,0.64706;blue,0.76471},draw=none,line width=0.6pt] (13.8935,3.1800) rectangle (14.3283,3.5800);
-\path[fill={rgb,1:red,0.72549;green,0.77255;blue,0.81176},draw=none,line width=0.6pt] (14.3283,3.1800) rectangle (14.5040,3.5800);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (14.6540,3.3800) {4.271};
-\draw[draw={rgb,1:red,0.86275;green,0.89020;blue,0.91373},line width=0.25pt] (10.0000,2.7500) -- (10.0000,4.9300);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (10.0000,2.5100) {0};
-\draw[draw={rgb,1:red,0.86275;green,0.89020;blue,0.91373},line width=0.25pt] (12.1091,2.7500) -- (12.1091,4.9300);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (12.1091,2.5100) {2};
-\draw[draw={rgb,1:red,0.86275;green,0.89020;blue,0.91373},line width=0.25pt] (14.2182,2.7500) -- (14.2182,4.9300);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (14.2182,2.5100) {4};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (12.9000,2.1000) {人时 / 点次（2人作业组）};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (9.1000,1.3800) rectangle (9.3200,1.5200);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (9.4300,1.4500) {道路往返};
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (12.7000,1.3800) rectangle (12.9200,1.5200);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (13.0300,1.4500) {道路外步行};
-\path[fill={rgb,1:red,0.46275;green,0.64706;blue,0.76471},draw=none,line width=0.6pt] (9.1000,0.9300) rectangle (9.3200,1.0700);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (9.4300,1.0000) {观察 / 飞行操作};
-\path[fill={rgb,1:red,0.72549;green,0.77255;blue,0.81176},draw=none,line width=0.6pt] (12.7000,0.9300) rectangle (12.9200,1.0700);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{8.5}{10.03}\selectfont}] at (13.0300,1.0000) {准备};
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (12.9000,0.3800) {ENP1\_0000：另消耗 0.206 机时/点次};
-\end{tikzpicture}
-}
-\caption{人机协同作业示意及同一单元的模型成本。堆叠条形均为人时；无人机机时另列，示意路线不代表实际巡护轨迹。}
-\label{fig:costs}
-\end{figure}
-
-\subsection{人机协同资源配置的线性规划模型}
-
-\subsubsection{决策变量与需求加权目标函数}
-
-将前述权重、成本和适用条件固定为模型输入，决策变量见表\ref{tab:variables}。\(x_j\)与\(h_j\)控制两种资源投入，\(s_j\)连接投入与所完成的规定服务，因此\(s_j\)是模型求得的服务结果变量。
-
-\begin{table}[htbp]
-\centering\small
-\caption{优化变量与主要固定输入}
-\label{tab:variables}
-\begin{tabularx}{\linewidth}{p{2.0cm}p{2.5cm}X}
-\toprule
-类型 & 符号 & 定义及单位 \\
-\midrule
-决策变量 & \(x_j\) & 地面例行监测人时，单位：人时/月 \\
-决策变量 & \(h_j\) & 无人机飞行机时，单位：机时/月 \\
-决策变量 & \(s_j\) & 规定检查点次的完成率，无量纲 \\
-固定输入 & \(w_j,C_j\) & 需求权重、月规定点次 \\
-固定输入 & \(a_j,b_j,o_j\) & 地面人时/点次、机时/点次、配套人时/点次 \\
-固定输入 & \(r_j,\mathcal J_U\) & 响应条件指示及无人机适用集合 \\
-固定输入 & \(H,U,H_0\) & 总人时、总机时、固定响应人时 \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-若单元完成全部规定检查，记\(s_j=1\)；若只完成一半，记\(s_j=0.5\)。为使重要区域的服务获得更高贡献，建立需求加权目标
-\begin{equation}
-\max P=100\sum_{j\in\mathcal J}w_js_j.
-\label{eq:objective}
-\end{equation}
-由于\(\sum_jw_j=1\)，\(P\)在0--100之间：每增加\(\Delta s_j\)服务完成率，得分增加\(100w_j\Delta s_j\)。该分值衡量已选对象的规定监测服务完成程度，不能直接解释为动物存活率、真实损失减少率或全园保护认证。比较方案时保持\(w_j\)不变，才具有同一评分口径。
-
-\subsubsection{单位面积需求与服务容量约束}
-
-服务标准按面积确定，而不按格网个数确定。设每\(A_{\mathrm{ref}}=100\ \mathrm{km}^2\)每月规定\(\kappa=8\)个检查点次，则
-\begin{equation}
-C_j=\kappa\frac{A_j}{A_{\mathrm{ref}}},\qquad
-\sum_j C_j=\frac{\kappa}{A_{\mathrm{ref}}}\sum_j A_j.
-\label{eq:demand}
-\end{equation}
-全体单元的规定量合计为1831.77点次/月。改变格网尺度只会重新分摊面积，不会凭空增加服务总量；代表点成本仍可能随尺度改变。连续点次表示月度服务强度，实际执行需要再转化为整数检查安排。
-
-投入\(x_j\)人时可以完成\(x_j/a_j\)地面点次，投入\(h_j\)机时可以完成\(h_j/b_j\)无人机点次。为避免对不适用单元使用无定义成本，定义零容量系数
-\begin{equation}
-g_j=\begin{cases}1/a_j,&j\in\mathcal J_R,\\0,&j\notin\mathcal J_R,\end{cases}
-\qquad
-u_j=\begin{cases}1/b_j,&j\in\mathcal J_U,\\0,&j\notin\mathcal J_U.\end{cases}
-\label{eq:capacity_coefficients}
-\end{equation}
-于是所有单元统一满足
-\begin{equation}
-C_js_j\le g_jx_j+u_jh_j.
-\label{eq:capacity}
-\end{equation}
-左侧是模型声称完成的检查点次，右侧是投入能够支持的点次，故必须不超过。两种方式可以共同承担不同点次，但同一次重复检查不重复记分；通过\(s_j\le1\)封顶，避免向一个区域投入过量资源无限提高评分。
-
-进一步看，若完全采用地面方式，增加\(\Delta s_j\)需要\(C_ja_j\Delta s_j\)人时；采用无人机则需要\(C_jo_j\Delta s_j\)人时和\(C_jb_j\Delta s_j\)机时。在暂不考虑机时及区域约束时，单位人工的边际贡献为
-\begin{equation}
-\eta_j^g=\frac{100w_j}{C_ja_j},\qquad
-\eta_j^u=\frac{100w_j}{C_jo_j}.
-\label{eq:efficiency}
-\end{equation}
-因此，同一需求权重可以对应不同作业成本；按区域权重直接分人会忽略这一差异。实际最优解还必须同时满足有限机时和服务底线，不能仅靠\(\eta_j\)逐点排序代替求解。
-
-\subsubsection{人员预算、机时预算与响应预留}
-
-设部门参考人员为\(N_0=295\)，保护岗位参与比例为\(f=0.2\)，每人月有效工时为\(L=120\) h，则本规划可用人时为
-\begin{equation}
-H=N_0fL=7080\quad\text{人时/月}.
-\label{eq:human_budget}
-\end{equation}
-该式构成预算情景，并非推断了实际保护编制。假设6架无人机，每架每个可飞行日允许2机时、每月20个可飞行日，则
-\begin{equation}
-U=6\times2\times20=240\quad\text{机时/月}.
-\label{eq:drone_budget}
-\end{equation}
-六个候选驻点各预留2人、每日8小时、每月30日响应，固定占用
-\begin{equation}
-H_0=6\times2\times8\times30=2880\quad\text{人时/月}.
-\label{eq:reserve}
-\end{equation}
-响应预留从总人员预算中扣除一次，不能再给每个区域重复加上\(H_0\)。监测投入受两类独立资源约束：
-\begin{equation}
-\sum_{j\in\mathcal J}x_j+
-\sum_{j\in\mathcal J_U}\gamma_jh_j+H_0\le H,
-\qquad
-\sum_{j\in\mathcal J}h_j\le U.
-\label{eq:budgets}
-\end{equation}
-人时与机时具有不同单位，不相加成一个总预算；它们通过\(\gamma_jh_j\)建立配套关系。人机投入比例由上述约束和目标共同确定。
-
-\subsubsection{区域服务底线与技术适用性约束}
-
-只最大化加权总分可能使低权重区域完全得不到检查。因此，对每个父区设置可响应范围内的通用服务底线。令
-\(Q_i=\sum_{j\in\mathcal J_i}\mu_jr_j\)为可响应面积比例，
-\(\bar s_i=\sum_{j\in\mathcal J_i}\mu_js_j\)为全区面积加权服务完成率，则
-\begin{equation}
-\bar s_i\ge\beta Q_i,\qquad i\in\mathcal I,\qquad \beta=0.15.
-\label{eq:floor}
-\end{equation}
-当\(Q_i>0\)时，该式等价于\(\bar s_i/Q_i\ge15\%\)。例如某区仅20\%面积可响应，其全区服务底线为3\%，而非全区15\%。当\(Q_i=0\)时右侧为零，只表示既定响应布局无法支持该区服务。此约束保障通用检查，不能替代缺少位置资料的重点物种专项保障。
-
-有效服务还必须满足\(0\le s_j\le r_j\)。不可响应单元令\(x_j=h_j=s_j=0\)，无人机不适用单元令\(h_j=0\)。由此得到完整线性规划：
-\begin{equation}
-\boxed{\begin{aligned}
-\max_{\mathbf x,\mathbf h,\mathbf s}\quad&
-P=100\sum_{j\in\mathcal J}w_js_j\\
-\text{s.t.}\quad& C_js_j\le g_jx_j+u_jh_j,
-&&j\in\mathcal J,\\
-&\sum_{j\in\mathcal J}x_j+
-\sum_{j\in\mathcal J_U}\gamma_jh_j\le H-H_0,\\
-&\sum_{j\in\mathcal J}h_j\le U,\\
-&\sum_{j\in\mathcal J_i}\mu_js_j\ge
-\beta\sum_{j\in\mathcal J_i}\mu_jr_j,
-&&i\in\mathcal I,\\
-&0\le s_j\le r_j,\quad x_j,h_j\ge0,
-&&j\in\mathcal J,\\
-&x_j=0,&&j\notin\mathcal J_R,\\
-&h_j=0,&&j\notin\mathcal J_U.
-\end{aligned}}
-\label{eq:lp}
-\end{equation}
-模型输入由数据处理、路径计算和少量规划假设给出，求解器选择\(x_j,h_j,s_j\)。代码另设置\(x_j\le C_ja_j\)（可响应单元）和\(h_j\le C_jb_j\)（无人机适用单元）来排除单种资源超过全部规定量的冗余投入。这些界限不损失最优服务分，因为\(s_j\le1\)，超过全部需求的投入可以直接削减。
-
-\subsection{模型求解与可行性分析}
-
-\subsubsection{模型求解与约束核验}
-
-参数固定后，式\eqref{eq:lp}的目标和约束均为决策变量的线性函数。按\((\mathbf x,\mathbf h,\mathbf s)\)排列1797个变量，将逐点容量、区域底线及总预算构造成稀疏矩阵，调用SciPy的HiGHS线性规划求解器。独立核验脚本从保存的投入重新计算容量、响应条件、飞行适用性、预算和区域合计，而非只检查求解器状态。
-
-基准与紧缺主方案均返回最优解。容量和区域约束的最大正残差分别不超过\(8.9\times10^{-16}\)和\(2.3\times10^{-13}\)，小于设定核验容差\(10^{-6}\)；人时、机时及分区汇总检查通过，未知动物值仍保留为空值。以上确认计算方案满足所建模型，实际执行仍需把连续点次排成整数作业，并核查真实道路权限和作业条件。
-
-\subsubsection{同分方案选择与人工消耗核算}
-
-第一阶段可能返回多个具有相同最优总分的配置。为消除不必要的资源占用，固定其返回的服务向量\(\mathbf s^{(1)}\)，再求解
-\begin{equation}
-\min_{\mathbf x,\mathbf h}\ H_M=
-\sum_jx_j+\sum_{j\in\mathcal J_U}\gamma_jh_j,
-\qquad \mathbf s=\mathbf s^{(1)},
-\label{eq:tie_break}
-\end{equation}
-其余约束保持不变。得到的是该最优服务向量下的最省人工代表方案；当前计算没有在所有同分服务向量之间再搜索全局最小人工。本文人员消耗和机时均报告这一代表方案。
-
-\subsubsection{地理上限、预算不足与替代机制}
-
-由\(s_j\le r_j\)且\(w_j\ge0\)，立即得到
-\begin{equation}
-P\le P_{\mathrm{geo}}=100\sum_jw_jr_j.
-\label{eq:geographic_limit}
-\end{equation}
-该上限仅由固定需求权重和响应布局决定。预算足够时，继续增加机时不能使不可响应区域获得有效服务。此外，若\(H<H_0\)，连固定响应预留都无法满足，模型必不可行；\(H\ge H_0\)也仅是必要条件，监测服务底线仍需额外人时。
-
-在本基准的两类作业组人数相同、观察与准备协议相同的条件下，有
-\begin{equation}
-a_j-o_j=2n_gd_j^\perp
-\left(\frac1{v_w}-\frac1{v_u}\right)>0
-\quad(d_j^\perp>0).
-\label{eq:substitution}
-\end{equation}
-无人机由较快飞行替代道路外步行，使单次配套人工较少，同时消耗有限机时；这解释了本情景中的替代机制。若队伍人数、技术适用性或观测协议改变，不保证这一成本关系仍成立。
+需要核实的主要条件是道路权限、实际行驶和步行时间、无人机筛查能力、当前重点物种分布以及事件并发。当前动物历史调查、区内按面积分摊和等火暴露只支持条件性规划；黑犀牛等缺资料对象仍需专门调查。水源和降雨不纳入本题。
+\clearpage
 
 \subsection{配置结果与战略部署解释}
-
 \subsubsection{基准预算下的分区资源配置}
+在21240人时和1200机时预算下，服务分为57.26，等于地理上限。最优同分方案中的最少人工配置使用144.34机时、2406.11无人机配套人时及2880响应人时，总计5286.11人时；剩余15953.89人时和1055.66机时。地面例行检查为0，\textbf{但部署、操作和响应仍由地面人员承担}。
 
-在\(H=7080\)人时、\(U=240\)机时条件下，优化服务分为57.26，等于固定地理上限。所选代表方案使用144.57机时、2408.37无人机配套人时，加上2880响应人时后共5288.37人时，剩余1791.63人时及95.43机时。各父区的需求、可响应范围和投入见表\ref{tab:regions}；图\ref{fig:regional}进一步显示紧缺前后的对应变化。
-
-\begin{table}[htbp]
-\centering\small
-\caption{父区需求与基准配置（按需求权重排序）}
+各区投入由单元相加，共享响应预留不重复分摊：
+\begin{equation}
+H_i^M=\sum_{j\in\mathcal J_i}x_j+
+\sum_{j\in\mathcal J_i\cap\mathcal J_U}\gamma_jh_j,
+\qquad U_i=\sum_{j\in\mathcal J_i}h_j.
+\label{eq:regional}
+\end{equation}
+\begin{table}[H]
+\centering\normalsize
+\caption{17区需求与基准配置}
 \label{tab:regions}
-\begin{tabular}{lrrrrrr}
-\toprule
-父区 & \(100W_i\) & \(100Q_i\) & \(100\bar s_i\) & \(H_i^M\) & \(U_i\) & \(100\bar s_i^-\) \\
-\midrule
-ENP1 & 19.06 & 87.87 & 87.87 & 487.89 & 29.31 & 87.87 \\
-ENP12 & 11.02 & 92.49 & 92.49 & 385.64 & 26.87 & 76.68 \\
-ENP15 & 9.96 & 52.33 & 52.33 & 352.52 & 19.90 & 19.59 \\
-ENP17 & 8.84 & 77.60 & 77.60 & 214.11 & 15.58 & 72.00 \\
-ENP3410 & 8.71 & 19.21 & 19.21 & 155.98 & 8.38 & 2.88 \\
-ENP11 & 8.05 & 0.02 & 0.02 & 0.26 & 0.01 & <0.01 \\
-ENP16 & 5.93 & 84.63 & 84.63 & 183.34 & 14.00 & 75.84 \\
-ENP13 & 5.88 & 49.87 & 49.87 & 282.75 & 13.08 & 7.48 \\
-ENP2 & 4.50 & 76.71 & 76.71 & 92.86 & 4.44 & 76.71 \\
-ENP5 & 4.39 & 5.94 & 5.94 & 30.79 & 0.80 & 0.89 \\
-ENP7 & 3.31 & 0.19 & 0.19 & 0.52 & 0.02 & 0.03 \\
-ENP9 & 2.90 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
-ENP14 & 2.63 & 11.67 & 11.67 & 72.40 & 2.06 & 1.75 \\
-ENP6 & 2.55 & 20.57 & 20.57 & 60.50 & 3.62 & 3.08 \\
-ENP8 & 1.54 & 8.55 & 8.55 & 14.93 & 0.75 & 1.28 \\
-调查外其他* & 0.72 & 61.81 & 61.81 & 62.52 & 4.19 & 9.70 \\
-主盐沼* & 0.00 & 9.05 & 1.36 & 11.37 & 1.57 & 1.36 \\
-\bottomrule
-\end{tabular}
-\par\smallskip\begin{minipage}{\linewidth}\footnotesize 注：需求、可响应比例和服务率单位均为\%；\(H_i^M\)为区域监测人时，\(U_i\)为机时，不分摊共享响应预留。\(H_i^M\)仅对适用的两种作业投入求和；上标\(-\)表示4248人时情景。*动物资料未知；小正值低于显示精度时用“<0.01”标记。\end{minipage}
-\end{table}
-
-基准解的地面例行筛查投入\(\sum_jx_j=0\)，是当前技术条件下无人机成本较低且机时足够的结果。2408.37配套人时和2880响应人时仍由地面人员承担。ENP1和ENP12分别获得487.89、385.64监测人时；ENP11虽有8.05\%需求权重，其可响应面积仅约0.02\%，因此扩大资源预算也难以直接改善该区服务。主盐沼当前目标权重为零，但仍通过区域底线获得通用检查，说明缺失对象的生态价值并未由该评分刻画。
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[x=1cm,y=1cm]
-\path[use as bounding box] (0,0) rectangle (17,10.5);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{12}{14.16}\selectfont\bfseries}] at (8.5000,10.1300) {分区需求、服务和监测人工的对应关系};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont\bfseries}] at (4.6250,9.5300) {需求权重\\\%};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont\bfseries}] at (7.0750,9.5300) {基准服务\\\%};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont\bfseries}] at (9.5250,9.5300) {紧缺服务\\\%};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont\bfseries}] at (11.9750,9.5300) {基准人工\\人时};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.5}{11.21}\selectfont\bfseries}] at (14.4250,9.5300) {紧缺人工\\人时};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,8.8800) {ENP1};
-\path[fill={rgb,1:red,0.25882;green,0.45490;blue,0.58039},draw=none,line width=0.6pt] (3.4000,8.6750) rectangle (5.7700,9.0850);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,8.8800) {19.06};
-\path[fill={rgb,1:red,0.30980;green,0.49804;blue,0.61176},draw=none,line width=0.6pt] (5.8500,8.6750) rectangle (8.2200,9.0850);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,8.8800) {87.9};
-\path[fill={rgb,1:red,0.88235;green,0.67451;blue,0.37255},draw=none,line width=0.6pt] (8.3000,8.6750) rectangle (10.6700,9.0850);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,8.8800) {87.9};
-\path[fill={rgb,1:red,0.23922;green,0.44314;blue,0.57255},draw=none,line width=0.6pt] (10.7500,8.6750) rectangle (13.1200,9.0850);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,8.8800) {487.9};
-\path[fill={rgb,1:red,0.87059;green,0.64314;blue,0.30588},draw=none,line width=0.6pt] (13.2000,8.6750) rectangle (15.5700,9.0850);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,8.8800) {487.9};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,8.4200) {ENP12};
-\path[fill={rgb,1:red,0.54902;green,0.67059;blue,0.74510},draw=none,line width=0.6pt] (3.4000,8.2150) rectangle (5.7700,8.6250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,8.4200) {11.02};
-\path[fill={rgb,1:red,0.27843;green,0.47059;blue,0.59216},draw=none,line width=0.6pt] (5.8500,8.2150) rectangle (8.2200,8.6250);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,8.4200) {92.5};
-\path[fill={rgb,1:red,0.89412;green,0.71373;blue,0.44314},draw=none,line width=0.6pt] (8.3000,8.2150) rectangle (10.6700,8.6250);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,8.4200) {76.7};
-\path[fill={rgb,1:red,0.38824;green,0.55294;blue,0.65490},draw=none,line width=0.6pt] (10.7500,8.2150) rectangle (13.1200,8.6250);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,8.4200) {385.6};
-\path[fill={rgb,1:red,0.91765;green,0.78039;blue,0.57255},draw=none,line width=0.6pt] (13.2000,8.2150) rectangle (15.5700,8.6250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,8.4200) {287.5};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,7.9600) {ENP15};
-\path[fill={rgb,1:red,0.58824;green,0.69804;blue,0.76863},draw=none,line width=0.6pt] (3.4000,7.7550) rectangle (5.7700,8.1650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,7.9600) {9.96};
-\path[fill={rgb,1:red,0.56863;green,0.68627;blue,0.75686},draw=none,line width=0.6pt] (5.8500,7.7550) rectangle (8.2200,8.1650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,7.9600) {52.3};
-\path[fill={rgb,1:red,0.96471;green,0.90980;blue,0.82353},draw=none,line width=0.6pt] (8.3000,7.7550) rectangle (10.6700,8.1650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,7.9600) {19.6};
-\path[fill={rgb,1:red,0.43922;green,0.58824;blue,0.68235},draw=none,line width=0.6pt] (10.7500,7.7550) rectangle (13.1200,8.1650);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,7.9600) {352.5};
-\path[fill={rgb,1:red,0.97255;green,0.92157;blue,0.84706},draw=none,line width=0.6pt] (13.2000,7.7550) rectangle (15.5700,8.1650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,7.9600) {78.5};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,7.5000) {ENP17};
-\path[fill={rgb,1:red,0.62745;green,0.72941;blue,0.79216},draw=none,line width=0.6pt] (3.4000,7.2950) rectangle (5.7700,7.7050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,7.5000) {8.84};
-\path[fill={rgb,1:red,0.38431;green,0.54902;blue,0.65490},draw=none,line width=0.6pt] (5.8500,7.2950) rectangle (8.2200,7.7050);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,7.5000) {77.6};
-\path[fill={rgb,1:red,0.90196;green,0.72941;blue,0.47451},draw=none,line width=0.6pt] (8.3000,7.2950) rectangle (10.6700,7.7050);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,7.5000) {72.0};
-\path[fill={rgb,1:red,0.63922;green,0.73333;blue,0.79608},draw=none,line width=0.6pt] (10.7500,7.2950) rectangle (13.1200,7.7050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,7.5000) {214.1};
-\path[fill={rgb,1:red,0.94510;green,0.84706;blue,0.70588},draw=none,line width=0.6pt] (13.2000,7.2950) rectangle (15.5700,7.7050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,7.5000) {187.3};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,7.0400) {ENP3410};
-\path[fill={rgb,1:red,0.63137;green,0.72941;blue,0.79216},draw=none,line width=0.6pt] (3.4000,6.8350) rectangle (5.7700,7.2450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,7.0400) {8.71};
-\path[fill={rgb,1:red,0.80784;green,0.85882;blue,0.89412},draw=none,line width=0.6pt] (5.8500,6.8350) rectangle (8.2200,7.2450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,7.0400) {19.2};
-\path[fill={rgb,1:red,0.98824;green,0.96471;blue,0.93333},draw=none,line width=0.6pt] (8.3000,6.8350) rectangle (10.6700,7.2450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,7.0400) {2.9};
-\path[fill={rgb,1:red,0.72157;green,0.79608;blue,0.84314},draw=none,line width=0.6pt] (10.7500,6.8350) rectangle (13.1200,7.2450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,7.0400) {156.0};
-\path[fill={rgb,1:red,0.98824;green,0.96078;blue,0.92941},draw=none,line width=0.6pt] (13.2000,6.8350) rectangle (15.5700,7.2450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,7.0400) {18.7};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,6.5800) {ENP11};
-\path[fill={rgb,1:red,0.65490;green,0.74902;blue,0.80784},draw=none,line width=0.6pt] (3.4000,6.3750) rectangle (5.7700,6.7850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,6.5800) {8.05};
-\path[fill={rgb,1:red,0.94902;green,0.96078;blue,0.97255},draw=none,line width=0.6pt] (5.8500,6.3750) rectangle (8.2200,6.7850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,6.5800) {<0.1};
-\path[fill={rgb,1:red,0.99216;green,0.97647;blue,0.95294},draw=none,line width=0.6pt] (8.3000,6.3750) rectangle (10.6700,6.7850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,6.5800) {<0.1};
-\path[fill={rgb,1:red,0.94902;green,0.96078;blue,0.97255},draw=none,line width=0.6pt] (10.7500,6.3750) rectangle (13.1200,6.7850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,6.5800) {0.3};
-\path[fill={rgb,1:red,0.99216;green,0.97647;blue,0.95294},draw=none,line width=0.6pt] (13.2000,6.3750) rectangle (15.5700,6.7850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,6.5800) {<0.1};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,6.1200) {ENP16};
-\path[fill={rgb,1:red,0.73333;green,0.80392;blue,0.85098},draw=none,line width=0.6pt] (3.4000,5.9150) rectangle (5.7700,6.3250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,6.1200) {5.93};
-\path[fill={rgb,1:red,0.33333;green,0.51373;blue,0.62353},draw=none,line width=0.6pt] (5.8500,5.9150) rectangle (8.2200,6.3250);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,6.1200) {84.6};
-\path[fill={rgb,1:red,0.89804;green,0.71765;blue,0.45098},draw=none,line width=0.6pt] (8.3000,5.9150) rectangle (10.6700,6.3250);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,6.1200) {75.8};
-\path[fill={rgb,1:red,0.68235;green,0.76863;blue,0.81961},draw=none,line width=0.6pt] (10.7500,5.9150) rectangle (13.1200,6.3250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,6.1200) {183.3};
-\path[fill={rgb,1:red,0.95294;green,0.87451;blue,0.75686},draw=none,line width=0.6pt] (13.2000,5.9150) rectangle (15.5700,6.3250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,6.1200) {148.9};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,5.6600) {ENP13};
-\path[fill={rgb,1:red,0.73333;green,0.80784;blue,0.85098},draw=none,line width=0.6pt] (3.4000,5.4550) rectangle (5.7700,5.8650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,5.6600) {5.88};
-\path[fill={rgb,1:red,0.58824;green,0.69804;blue,0.76863},draw=none,line width=0.6pt] (5.8500,5.4550) rectangle (8.2200,5.8650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,5.6600) {49.9};
-\path[fill={rgb,1:red,0.98039;green,0.94902;blue,0.90196},draw=none,line width=0.6pt] (8.3000,5.4550) rectangle (10.6700,5.8650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,5.6600) {7.5};
-\path[fill={rgb,1:red,0.53725;green,0.66275;blue,0.74118},draw=none,line width=0.6pt] (10.7500,5.4550) rectangle (13.1200,5.8650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,5.6600) {282.7};
-\path[fill={rgb,1:red,0.98431;green,0.95294;blue,0.90980},draw=none,line width=0.6pt] (13.2000,5.4550) rectangle (15.5700,5.8650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,5.6600) {31.1};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,5.2000) {ENP2};
-\path[fill={rgb,1:red,0.78431;green,0.84314;blue,0.87843},draw=none,line width=0.6pt] (3.4000,4.9950) rectangle (5.7700,5.4050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,5.2000) {4.50};
-\path[fill={rgb,1:red,0.39216;green,0.55686;blue,0.65882},draw=none,line width=0.6pt] (5.8500,4.9950) rectangle (8.2200,5.4050);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,5.2000) {76.7};
-\path[fill={rgb,1:red,0.89412;green,0.71373;blue,0.44314},draw=none,line width=0.6pt] (8.3000,4.9950) rectangle (10.6700,5.4050);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,5.2000) {76.7};
-\path[fill={rgb,1:red,0.81176;green,0.86275;blue,0.89412},draw=none,line width=0.6pt] (10.7500,4.9950) rectangle (13.1200,5.4050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,5.2000) {92.9};
-\path[fill={rgb,1:red,0.96863;green,0.91373;blue,0.83137},draw=none,line width=0.6pt] (13.2000,4.9950) rectangle (15.5700,5.4050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,5.2000) {92.9};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,4.7400) {ENP5};
-\path[fill={rgb,1:red,0.78824;green,0.84706;blue,0.88235},draw=none,line width=0.6pt] (3.4000,4.5350) rectangle (5.7700,4.9450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,4.7400) {4.39};
-\path[fill={rgb,1:red,0.90588;green,0.92941;blue,0.94510},draw=none,line width=0.6pt] (5.8500,4.5350) rectangle (8.2200,4.9450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,4.7400) {5.9};
-\path[fill={rgb,1:red,0.98824;green,0.97255;blue,0.94510},draw=none,line width=0.6pt] (8.3000,4.5350) rectangle (10.6700,4.9450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,4.7400) {0.9};
-\path[fill={rgb,1:red,0.90196;green,0.92941;blue,0.94510},draw=none,line width=0.6pt] (10.7500,4.5350) rectangle (13.1200,4.9450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,4.7400) {30.8};
-\path[fill={rgb,1:red,0.98824;green,0.97255;blue,0.94510},draw=none,line width=0.6pt] (13.2000,4.5350) rectangle (15.5700,4.9450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,4.7400) {4.5};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,4.2800) {ENP7};
-\path[fill={rgb,1:red,0.82745;green,0.87451;blue,0.90196},draw=none,line width=0.6pt] (3.4000,4.0750) rectangle (5.7700,4.4850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,4.2800) {3.31};
-\path[fill={rgb,1:red,0.94510;green,0.96078;blue,0.96863},draw=none,line width=0.6pt] (5.8500,4.0750) rectangle (8.2200,4.4850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,4.2800) {0.2};
-\path[fill={rgb,1:red,0.99216;green,0.97647;blue,0.95294},draw=none,line width=0.6pt] (8.3000,4.0750) rectangle (10.6700,4.4850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,4.2800) {<0.1};
-\path[fill={rgb,1:red,0.94902;green,0.96078;blue,0.96863},draw=none,line width=0.6pt] (10.7500,4.0750) rectangle (13.1200,4.4850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,4.2800) {0.5};
-\path[fill={rgb,1:red,0.99216;green,0.97647;blue,0.95294},draw=none,line width=0.6pt] (13.2000,4.0750) rectangle (15.5700,4.4850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,4.2800) {0.1};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,3.8200) {ENP9};
-\path[fill={rgb,1:red,0.84314;green,0.88627;blue,0.90980},draw=none,line width=0.6pt] (3.4000,3.6150) rectangle (5.7700,4.0250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,3.8200) {2.90};
-\path[fill={rgb,1:red,0.94902;green,0.96078;blue,0.97255},draw=none,line width=0.6pt] (5.8500,3.6150) rectangle (8.2200,4.0250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,3.8200) {0.0};
-\path[fill={rgb,1:red,0.99216;green,0.97647;blue,0.95294},draw=none,line width=0.6pt] (8.3000,3.6150) rectangle (10.6700,4.0250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,3.8200) {0.0};
-\path[fill={rgb,1:red,0.94902;green,0.96078;blue,0.97255},draw=none,line width=0.6pt] (10.7500,3.6150) rectangle (13.1200,4.0250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,3.8200) {0.0};
-\path[fill={rgb,1:red,0.99216;green,0.97647;blue,0.95294},draw=none,line width=0.6pt] (13.2000,3.6150) rectangle (15.5700,4.0250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,3.8200) {0.0};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,3.3600) {ENP14};
-\path[fill={rgb,1:red,0.85098;green,0.89412;blue,0.91765},draw=none,line width=0.6pt] (3.4000,3.1550) rectangle (5.7700,3.5650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,3.3600) {2.63};
-\path[fill={rgb,1:red,0.86275;green,0.90196;blue,0.92157},draw=none,line width=0.6pt] (5.8500,3.1550) rectangle (8.2200,3.5650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,3.3600) {11.7};
-\path[fill={rgb,1:red,0.98824;green,0.96863;blue,0.94118},draw=none,line width=0.6pt] (8.3000,3.1550) rectangle (10.6700,3.5650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,3.3600) {1.8};
-\path[fill={rgb,1:red,0.84314;green,0.88627;blue,0.90980},draw=none,line width=0.6pt] (10.7500,3.1550) rectangle (13.1200,3.5650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,3.3600) {72.4};
-\path[fill={rgb,1:red,0.98824;green,0.96863;blue,0.94118},draw=none,line width=0.6pt] (13.2000,3.1550) rectangle (15.5700,3.5650);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,3.3600) {9.6};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,2.9000) {ENP6};
-\path[fill={rgb,1:red,0.85490;green,0.89412;blue,0.91765},draw=none,line width=0.6pt] (3.4000,2.6950) rectangle (5.7700,3.1050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,2.9000) {2.55};
-\path[fill={rgb,1:red,0.80000;green,0.85490;blue,0.88627},draw=none,line width=0.6pt] (5.8500,2.6950) rectangle (8.2200,3.1050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,2.9000) {20.6};
-\path[fill={rgb,1:red,0.98824;green,0.96471;blue,0.93333},draw=none,line width=0.6pt] (8.3000,2.6950) rectangle (10.6700,3.1050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,2.9000) {3.1};
-\path[fill={rgb,1:red,0.85882;green,0.89804;blue,0.92157},draw=none,line width=0.6pt] (10.7500,2.6950) rectangle (13.1200,3.1050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,2.9000) {60.5};
-\path[fill={rgb,1:red,0.98824;green,0.97255;blue,0.94510},draw=none,line width=0.6pt] (13.2000,2.6950) rectangle (15.5700,3.1050);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,2.9000) {6.9};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,2.4400) {ENP8};
-\path[fill={rgb,1:red,0.89412;green,0.92157;blue,0.94118},draw=none,line width=0.6pt] (3.4000,2.2350) rectangle (5.7700,2.6450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,2.4400) {1.54};
-\path[fill={rgb,1:red,0.88627;green,0.91765;blue,0.93725},draw=none,line width=0.6pt] (5.8500,2.2350) rectangle (8.2200,2.6450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,2.4400) {8.6};
-\path[fill={rgb,1:red,0.98824;green,0.97255;blue,0.94510},draw=none,line width=0.6pt] (8.3000,2.2350) rectangle (10.6700,2.6450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,2.4400) {1.3};
-\path[fill={rgb,1:red,0.92549;green,0.94510;blue,0.95686},draw=none,line width=0.6pt] (10.7500,2.2350) rectangle (13.1200,2.6450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,2.4400) {14.9};
-\path[fill={rgb,1:red,0.99216;green,0.97255;blue,0.94902},draw=none,line width=0.6pt] (13.2000,2.2350) rectangle (15.5700,2.6450);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,2.4400) {2.2};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,1.9800) {调查外其他*};
-\path[fill={rgb,1:red,0.92157;green,0.94118;blue,0.95686},draw=none,line width=0.6pt] (3.4000,1.7750) rectangle (5.7700,2.1850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,1.9800) {0.72};
-\path[fill={rgb,1:red,0.50196;green,0.63529;blue,0.71765},draw=none,line width=0.6pt] (5.8500,1.7750) rectangle (8.2200,2.1850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,1.9800) {61.8};
-\path[fill={rgb,1:red,0.98039;green,0.94118;blue,0.89020},draw=none,line width=0.6pt] (8.3000,1.7750) rectangle (10.6700,2.1850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,1.9800) {9.7};
-\path[fill={rgb,1:red,0.85882;green,0.89412;blue,0.92157},draw=none,line width=0.6pt] (10.7500,1.7750) rectangle (13.1200,2.1850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,1.9800) {62.5};
-\path[fill={rgb,1:red,0.99216;green,0.97255;blue,0.94902},draw=none,line width=0.6pt] (13.2000,1.7750) rectangle (15.5700,2.1850);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,1.9800) {2.7};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.3}{10.974}\selectfont}] at (3.2000,1.5200) {盐沼*};
-\path[fill={rgb,1:red,0.94902;green,0.96078;blue,0.97255},draw=none,line width=0.6pt] (3.4000,1.3150) rectangle (5.7700,1.7250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (4.5850,1.5200) {0.00};
-\path[fill={rgb,1:red,0.93725;green,0.95686;blue,0.96471},draw=none,line width=0.6pt] (5.8500,1.3150) rectangle (8.2200,1.7250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (7.0350,1.5200) {1.4};
-\path[fill={rgb,1:red,0.98824;green,0.97255;blue,0.94510},draw=none,line width=0.6pt] (8.3000,1.3150) rectangle (10.6700,1.7250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (9.4850,1.5200) {1.4};
-\path[fill={rgb,1:red,0.93333;green,0.94902;blue,0.96078},draw=none,line width=0.6pt] (10.7500,1.3150) rectangle (13.1200,1.7250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (11.9350,1.5200) {11.4};
-\path[fill={rgb,1:red,0.98824;green,0.96863;blue,0.94118},draw=none,line width=0.6pt] (13.2000,1.3150) rectangle (15.5700,1.7250);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9.1}{10.738}\selectfont}] at (14.3850,1.5200) {9.1};
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.8}{10.384}\selectfont}] at (8.5000,0.6200) {颜色在各列内表示相对强度；数值保留原单位。人工不含共享响应预留。};
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.8}{10.384}\selectfont}] at (8.5000,0.2000) {*动物资料未知，未加入动物分项；区域通用服务仍按可响应面积要求。};
-\end{tikzpicture}
-}
-\caption{需求、服务率及监测人工的分区对照。颜色仅在各列内编码相对强度，数值保留原单位；人工不含共享响应预留。}
-\label{fig:regional}
-\end{figure}
-
-\subsubsection{资源紧缺下的同预算方案比较}
-
-为说明优化对有限预算的作用，构造两种对照。面积均衡方案令所有可响应单元采用相同完成率；需求比例方案使同一父区的完成率随\(W_i/A_i\)成比例，并设置相同15\%底线和100\%上限。两种方案均通过可行性搜索选择最大比例系数，再在固定服务向量下最小化人工。其成本、机时上限、区域底线及评分均沿用主模型，形成同口径对照。
-
-图\ref{fig:comparison}表明，基准预算下三种方案均为57.26分，已经达到地理上限。将人时预算减少40\%至4248后，面积均衡为31.30分，需求比例为38.24分，优化达到45.77分，分别增加14.47和7.53分。紧缺优化使用96.24机时，监测配套人时为1368，与2880响应预留合计恰为4248人时。固定响应占用不随预算同比缩减，所以真正可用的监测人时下降得更快。
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[x=1cm,y=1cm]
-\path[use as bounding box] (0,0) rectangle (17,7.8);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (4.4000,7.3500) {(a) 同预算部署的服务分};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (12.7000,7.3500) {(b) 代表优化解的人时构成};
-\draw[draw={rgb,1:red,0.87059;green,0.89804;blue,0.92157},line width=0.4pt] (1.0000,1.4500) -- (7.8500,1.4500);
-\node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (0.8000,1.4500) {0};
-\draw[draw={rgb,1:red,0.87059;green,0.89804;blue,0.92157},line width=0.4pt] (1.0000,2.8214) -- (7.8500,2.8214);
-\node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (0.8000,2.8214) {20};
-\draw[draw={rgb,1:red,0.87059;green,0.89804;blue,0.92157},line width=0.4pt] (1.0000,4.1929) -- (7.8500,4.1929);
-\node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (0.8000,4.1929) {40};
-\draw[draw={rgb,1:red,0.87059;green,0.89804;blue,0.92157},line width=0.4pt] (1.0000,5.5643) -- (7.8500,5.5643);
-\node[anchor=east,align=right,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (0.8000,5.5643) {60};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (1.0500,1.4500) rectangle (1.5500,5.3764);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (1.3000,5.5764) {57.26};
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (1.7500,1.4500) rectangle (2.2500,3.5962);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (2.0000,3.7962) {31.30};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (1.6500,1.0700) {面积均衡};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (3.1000,1.4500) rectangle (3.6000,5.3764);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (3.3500,5.5764) {57.26};
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (3.8000,1.4500) rectangle (4.3000,4.0720);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (4.0500,4.2720) {38.24};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (3.7000,1.0700) {需求比例};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (5.1500,1.4500) rectangle (5.6500,5.3764);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (5.4000,5.5764) {57.26};
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (5.8500,1.4500) rectangle (6.3500,4.5883);
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (6.1000,4.7883) {45.77};
-\node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (5.7500,1.0700) {优化部署};
-\draw[draw={rgb,1:red,0.63922;green,0.23137;blue,0.20392},line width=0.9pt,dashed] (1.0000,5.3764) -- (7.8500,5.3764);
-\node[anchor=center,align=center,text={rgb,1:red,0.63922;green,0.23137;blue,0.20392},font={\fontsize{9}{10.62}\selectfont}] at (4.4300,6.7000) {固定响应条件上限 57.26};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (1.5000,0.4600) rectangle (1.7500,0.6200);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (1.8500,0.5400) {基准7080人时};
-\path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (4.7000,0.4600) rectangle (4.9500,0.6200);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (5.0500,0.5400) {紧缺4248人时};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (9.5500,5.3000) {基准};
-\path[fill={rgb,1:red,0.51373;green,0.56863;blue,0.61569},draw=none,line width=0.6pt] (9.7500,5.0200) rectangle (12.3534,5.5800);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (11.0517,5.3000) {2880};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (12.3534,5.0200) rectangle (14.5305,5.5800);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (13.4419,5.3000) {2408};
-\path[fill={rgb,1:red,0.89412;green,0.91765;blue,0.94118},draw=none,line width=0.6pt] (14.5305,5.0200) rectangle (16.1500,5.5800);
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (15.3402,5.3000) {1792};
-\node[anchor=west,align=left,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.5}{10.03}\selectfont}] at (9.7500,4.6400) {总预算 7080；使用 5288.4 人时};
-\node[anchor=east,align=right,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{10}{11.8}\selectfont}] at (9.5500,3.6700) {紧缺};
-\path[fill={rgb,1:red,0.51373;green,0.56863;blue,0.61569},draw=none,line width=0.6pt] (9.7500,3.3900) rectangle (12.3534,3.9500);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (11.0517,3.6700) {2880};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (12.3534,3.3900) rectangle (13.5900,3.9500);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (12.9717,3.6700) {1368};
-\path[fill={rgb,1:red,0.89412;green,0.91765;blue,0.94118},draw=none,line width=0.6pt] (13.5900,3.3900) rectangle (13.5900,3.9500);
-\node[anchor=west,align=left,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{8.5}{10.03}\selectfont}] at (9.7500,3.0100) {总预算 4248；使用 4248.0 人时};
-\path[fill={rgb,1:red,0.51373;green,0.56863;blue,0.61569},draw=none,line width=0.6pt] (10.1000,1.9700) rectangle (10.3500,2.1300);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (10.5000,2.0500) {响应预留};
-\path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (10.1000,1.5300) rectangle (10.3500,1.6900);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (10.5000,1.6100) {监测配套人工};
-\path[fill={rgb,1:red,0.89412;green,0.91765;blue,0.94118},draw=none,line width=0.6pt] (10.1000,1.0900) rectangle (10.3500,1.2500);
-\node[anchor=west,align=left,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (10.5000,1.1700) {未使用预算};
-\node[anchor=center,align=center,text={rgb,1:red,0.51373;green,0.56863;blue,0.61569},font={\fontsize{9}{10.62}\selectfont}] at (13.0000,0.7200) {机时单独核算，不与人时相加};
-\end{tikzpicture}
-}
-\caption{相同资源约束下的服务分与代表解人时构成。两类预算分别比较，固定响应预留、人机监测配套和未用预算分项显示。}
-\label{fig:comparison}
-\end{figure}
-
-在同一紧缺预算下停用无人机，最优服务分为37.93，低于协同方案7.84分。基准预算下停用无人机仍可达到57.26分，但使用6244.08人时，比协同代表方案多955.70人时，即减少约15.31\%人工消耗。这些变化反映服务能力与作业成本，未估计真实生态减损。
-
-\subsubsection{响应范围瓶颈与前置驻点情景}
-
-基准方案尚有资源余额却已达到地理上限，因而优先改善地面响应范围比单纯增加飞行预算更有意义。在ENP11、ENP3410和ENP5各选一个道路节点作为新增前置点候选，保持原需求权重与总预算不变，分别重新计算响应和作业成本。每增加一处前置点需额外预留\(2\times8\times30=480\)响应人时，该消耗已进入优化约束。结果见表\ref{tab:forward}。
-
-\begin{table}[htbp]
-\centering\small
-\caption{固定7080人时与240机时预算的前置点候选比较}
-\label{tab:forward}
 \begin{tabular}{lrrrrr}
 \toprule
-布局 & 新增预留人时 & 总预留人时 & 服务分 & 总使用人时 & 使用机时 \\
+父区 & 需求/\% & 可响应/\% & 服务/\% & 人工/人时 & 飞行/机时 \\
 \midrule
-原六处布局 & 0 & 2880 & 57.26 & 5288.37 & 144.57 \\
-新增：ENP11 & 480 & 3360 & 58.86 & 5890.06 & 154.02 \\
-新增：ENP3410 & 480 & 3360 & 58.95 & 5825.11 & 151.03 \\
-新增：ENP5 & 480 & 3360 & 64.27 & 6204.70 & 181.66 \\
+ENP1 & 19.06 & 87.87 & 87.87 & 487.89 & 29.31 \\
+ENP12 & 11.02 & 92.49 & 92.49 & 385.64 & 26.87 \\
+ENP15 & 9.96 & 52.33 & 52.33 & 352.52 & 19.90 \\
+ENP17 & 8.84 & 77.60 & 77.60 & 214.11 & 15.58 \\
+ENP3410 & 8.71 & 19.21 & 19.21 & 155.98 & 8.38 \\
+ENP11 & 8.05 & 0.02 & 0.02 & 0.26 & 0.01 \\
+ENP16 & 5.93 & 84.63 & 84.63 & 183.34 & 14.00 \\
+ENP13 & 5.88 & 49.87 & 49.87 & 282.75 & 13.08 \\
+ENP2 & 4.50 & 76.71 & 76.71 & 92.86 & 4.44 \\
+ENP5 & 4.39 & 5.94 & 5.94 & 30.79 & 0.80 \\
+ENP7 & 3.31 & 0.19 & 0.19 & 0.52 & 0.02 \\
+ENP9 & 2.90 & 0.00 & 0.00 & 0.00 & 0.00 \\
+ENP14 & 2.63 & 11.67 & 11.67 & 72.40 & 2.06 \\
+ENP6 & 2.55 & 20.57 & 20.57 & 60.50 & 3.62 \\
+ENP8 & 1.54 & 8.55 & 8.55 & 14.93 & 0.75 \\
+调查外其他* & 0.72 & 61.81 & 61.81 & 62.52 & 4.19 \\
+主盐沼* & 0.00 & 9.05 & 1.36 & 9.11 & 1.35 \\
 \bottomrule
 \end{tabular}
-\par\smallskip\begin{minipage}{\linewidth}\footnotesize 注：原权重保持不变，新增驻点后的响应范围及成本重新计算；候选位置为假设道路节点。\end{minipage}
+\par\smallskip\begin{minipage}{\linewidth}\normalsize 注：人工不含共享响应预留。*动物资料未知；低于显示精度的小正值写作“<0.01”。\end{minipage}
 \end{table}
+表\ref{tab:regions}前三个百分数分别为需求权重、可响应面积比例和面积加权服务率。人工是监测及配套人工，另加全园2880响应人时才得到总消耗。
 
-三个新增候选中，面向ENP5的方案达到64.27分，比原布局增加7.01分；使用6204.70人时和181.66机时。建议据此优先核查这一候选方向的驻点权限、实际通行条件及响应需求。该结果仅是已枚举候选中的比较，未构成全园连续选址最优解。
+ENP1需求占19.06\%，投入487.89监测人时；ENP12投入385.64人时。ENP11虽然需求较高，响应限制使投入很少，不能按需求比例机械分人。主盐沼动物未知、可燃责任为零，当前评分未表达其完整价值，但区域底线仍要求通用检查。
 
-第二题向第三题传递\(w_j,C_j,a_j,b_j,\gamma_j,r_j,H_0,U\)。第三题在相同服务定义下给定目标，重新优化所需最小人时，再按有效工时换算规划人员需求；本题尚未计算这一人数。完整参数敏感性集中在第四题，模型优缺点与适用条件集中在第五题。
+最少人工方案在主盐沼提供1.36\%面积加权服务，满足该区可响应部分的15\%通用底线。第二阶段允许同分方案重新选择；这里的人工最低限于当前任务清单和共享响应模型，换算岗位仍需检查日期、资格和实际作业条件。
+\clearpage
 
-\FloatBarrier
-图件由本项目输入与求解结果原创绘制；PAWS的流程图和社区巡护研究的多面板结果图仅提供表达参考，不复制其图片或引入其博弈模型。\cite{paws,community}
+\subsubsection{资源紧缺下的同预算方案比较}
+面积均衡方案让可响应单元完成率相同；需求比例方案按区内需求密度\(W_i/A_i\)安排；两者与优化方案采用相同成本、底线和上限。两类预算下的结果为：
+
+\begin{table}[H]
+\centering\normalsize
+\caption{同预算配置的服务分}
+\label{tab:comparison}
+\begin{tabular}{lrrrr}
+\toprule
+情景 & 人时上限 & 面积均衡 & 需求比例 & 优化 \\
+\midrule
+基准 & 21240 & 57.26 & 57.26 & 57.26 \\
+人员减少40\% & 12744 & 57.26 & 57.26 & 57.26 \\
+\bottomrule
+\end{tabular}
+\end{table}
+人时减少40\%至12744后仍有资源余量，三种方案均达到地理上限，当前对照未显示优化的分数优势。停用无人机仍达57.26分，使用6084.98人时；技术作用主要体现为作业人工差异。在同一最优服务分下，两种方案均全局最小化人时，协同方案少798.87人时；该差异限于当前任务与技术等效假设。
+
+\subsubsection{响应范围瓶颈与前置驻点情景}
+预算仍有余额，应优先核查响应范围的改善。在ENP11、ENP3410、ENP5各选一个新增道路节点，保持权重和总预算不变；每点增加\(2\times8\times30=480\)响应人时，再计算路线和配置。
+
+\begin{table}[H]
+\centering\normalsize
+\caption{相同总预算下的新增驻点比较}
+\label{tab:forward}
+\begin{tabular}{lrrrr}
+\toprule
+布局 & 响应人时 & 服务分 & 总人时 & 机时 \\
+\midrule
+原布局 & 2880 & 57.26 & 5286.11 & 144.34 \\
+新增ENP11 & 3360 & 58.86 & 5888.64 & 154.05 \\
+新增ENP3410 & 3360 & 58.95 & 5825.11 & 151.03 \\
+新增ENP5 & 3360 & 64.27 & 6202.08 & 181.77 \\
+\bottomrule
+\end{tabular}
+\end{table}
+三个候选中，ENP5方向最高为64.27分，比原布局增加7.01分。它仅是已枚举候选中的最好方案，实际使用前需核实权限和通行条件。
+
+第二题向第三题传递权重、服务量、作业成本、响应条件及设备预算。第三题给定目标后重新求最少人时，再换算人数；本题不直接估计人员需求。完整敏感性分析和局限讨论分别放第四、五题。
 
 \begin{thebibliography}{9}
-\raggedright
-\bibitem{survey} 2015年埃托沙航空动物调查报告（本项目数量来源）。\url{https://rhinoresourcecenter.com/wp-content/uploads/2022/01/1642693511.pdf}。
-\bibitem{law} Nature Conservation Ordinance 4 of 1975，法规汇编。\url{https://namibiatradeportal.gov.na/application/files/3617/2986/2681/Nature_Conservation_Ordinance_4_of_1975.pdf}。
-\bibitem{worldcover} ESA WorldCover 2021，v200，数据与分类说明。\url{https://esa-worldcover.org/en/data-access}。
-\bibitem{osm} OpenStreetMap / Geofabrik，Namibia数据下载入口（使用项目固定快照）。\url{https://download.geofabrik.de/africa/namibia.html}。
-\bibitem{paws} Deploying PAWS: Field Optimization of the Protection Assistant for Wildlife Security，2016（图表表达参考）。\url{https://doi.org/10.1609/aaai.v30i2.19070}。
-\bibitem{community} Improving Community-Participated Patrol for Anti-Poaching，2025（图表表达参考）。\url{https://doi.org/10.1609/aaai.v39i27.35072}。
+\raggedright\setlength{\itemsep}{0pt}
+\bibitem{survey} 埃托沙航空动物调查，2015。\url{https://rhinoresourcecenter.com/wp-content/uploads/2022/01/1642693511.pdf}
+\bibitem{law} Nature Conservation Ordinance 4 of 1975，法规汇编。\url{https://namibiatradeportal.gov.na/application/files/3617/2986/2681/Nature_Conservation_Ordinance_4_of_1975.pdf}
+\bibitem{worldcover} ESA WorldCover 2021，v200。\url{https://esa-worldcover.org/en/data-access}
+\bibitem{osm} OpenStreetMap / Geofabrik，Namibia固定快照。\url{https://download.geofabrik.de/africa/namibia.html}
 \end{thebibliography}
 
 \end{document}

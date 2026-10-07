@@ -30,20 +30,20 @@ def figures(data,result):
     colors=['#8fa4b4','#24638c','#e19b43','#48a8a1'];bottom=np.zeros(12)
     for key,label,color in zip(['response_hours','base_monitoring_person_hours','extra_fire_person_hours','water_hours'],['驻点响应','基准监测','新增火险检查','17处水点运维'],colors):
         values=np.array([r[key] for r in rows]);axs[0].bar(months,values,bottom=bottom,label=label,color=color,width=.65);bottom+=values
-    axs[0].axhline(59*120,color='#a83236',linestyle='--',linewidth=1.3,label='59人 × 120小时')
+    axs[0].axhline(result['fixed_reference_staff']*120,color='#a83236',linestyle='--',linewidth=1.3,label='177人 × 120小时')
     for m,h in zip(months,bottom):axs[0].text(m,h+90,f'{h:.0f}',ha='center',fontsize=8)
     axs[0].set_ylim(0,8450);axs[0].set_ylabel('维持目标所需人时 / 月');axs[0].legend(ncol=3,loc='upper left',fontsize=8,frameon=False)
     axs[1].step(months,[r['required_staff'] for r in rows],where='mid',color='#24638c',linewidth=2,label='中档季节方案');axs[1].scatter(months,[r['required_staff'] for r in rows],color='#24638c',s=22)
     axs[1].step(months,stress_staff,where='mid',color='#a83236',linewidth=1.8,linestyle='--',label='异常干旱运维加密情景')
-    axs[1].axhline(59,color='#777777',linestyle=':',label='第二题59人假设');axs[1].set_ylim(42,66);axs[1].set_ylabel('规划人数');axs[1].legend(ncol=3,loc='upper left',fontsize=8,frameon=False)
-    axs[2].plot(months,[r['fixed_reference_score'] for r in rows],color='#24638c',marker='o',markersize=3,label='59人：中档季节方案')
-    axs[2].plot(months,stress_score,color='#a83236',marker='s',markersize=3,label='59人：异常干旱情景')
+    axs[1].axhline(177,color='#777777',linestyle=':',label='第二题177人假设');axs[1].set_ylim(42,66);axs[1].set_ylabel('规划人数');axs[1].legend(ncol=3,loc='upper left',fontsize=8,frameon=False)
+    axs[2].plot(months,[r['fixed_reference_score'] for r in rows],color='#24638c',marker='o',markersize=3,label='177人：中档季节方案')
+    axs[2].plot(months,stress_score,color='#a83236',marker='s',markersize=3,label='177人：异常干旱情景')
     axs[2].axhline(eta,color='#444444',linestyle=':',linewidth=1,label=f'全年目标 {eta:.2f}分')
     axs[2].set_ylim(53,59);axs[2].set_ylabel('基准服务分');axs[2].set_xlabel('规划月份（每月标准化为30天）');axs[2].legend(ncol=3,loc='lower left',fontsize=8,frameon=False)
     axs[2].set_xticks(months,[f'{m}月' for m in months])
     for ax in axs:
         ax.grid(axis='y',alpha=.15);ax.set_xlim(.4,12.6)
-    fig.suptitle('第三题初算：季节工作量、人员需求与固定59人的服务水平\n条件：六处候选驻点、120小时/人月、17处历史钻井样本；频次为规划假设',fontsize=13)
+    fig.suptitle('第三题更新：季节工作量、人员需求与固定177人的服务水平\n条件：六处候选驻点、120小时/人月、17处历史钻井样本；频次为规划假设',fontsize=13)
     save(fig,'q3_monthly_staff_and_service')
     fig,axs=plt.subplots(1,2,figsize=(11.6,4.8),layout='constrained');xx=np.arange(3);ss=result['sensitivity']
     regular=[next(r['annual_fixed_staff'] for r in ss if r['scenario']==name and not r['abnormal_drought']) for name in ['low','base','high']]
@@ -51,7 +51,7 @@ def figures(data,result):
     for offset,values,label,color in [(-.18,regular,'季节方案','#24638c'),(.18,stress,'异常干旱运维加密','#e19b43')]:
         bars=axs[0].bar(xx+offset,values,width=.34,label=label,color=color)
         for b,v in zip(bars,values):axs[0].text(b.get_x()+b.get_width()/2,v+1,str(v),ha='center')
-    axs[0].set_xticks(xx,['低档','中档','高档']);axs[0].set_ylim(0,90);axs[0].axhline(59,color='#a83236',linestyle=':',linewidth=1);axs[0].set_ylabel('全年峰值规划人数');axs[0].legend(loc='upper left',frameon=False,fontsize=8)
+    axs[0].set_xticks(xx,['低档','中档','高档']);axs[0].set_ylim(0,90);axs[0].axhline(177,color='#a83236',linestyle=':',linewidth=1);axs[0].set_ylabel('全年峰值规划人数');axs[0].legend(loc='upper left',frameon=False,fontsize=8)
     inv=result['water_inventory_workload_sensitivity'];bars=axs[1].bar(range(3),[r['required_staff'] for r in inv],color=['#24638c','#7b9eaf','#a6bdc6'])
     for b,r in zip(bars,inv):axs[1].text(b.get_x()+b.get_width()/2,b.get_height()+1,str(r['required_staff']),ha='center')
     axs[1].set_xticks(range(3),['已知样本工作量','水点工作量×2','水点工作量×3']);axs[1].set_ylim(0,90);axs[1].set_ylabel('中档方案峰值规划人数');axs[1].set_title('清单不全的工时压力检验',fontsize=11)
@@ -85,7 +85,7 @@ def report(data,result):
 
 2026-10-05，讨论用初算；模型、数据、核验和图表已完成，尚未扩写正式论文。
 
-**当前结论：中档季节方案全年需57名保护岗位人员；若旱季出现所设的异常干旱运维压力，需62人。** 人数针对第二题的监测/日间响应任务及17处历史钻井水点样本，不是公园全体工作人员的真实最低编制。第二题假设的59名保护人员足以完成中档季节工作。
+**当前结论：中档季节方案全年需57名保护岗位人员；若旱季出现所设的异常干旱运维压力，需62人。** 人数针对第二题的监测/日间响应任务及17处历史钻井水点样本，不是公园全体工作人员的真实最低编制。第二题假设的177名保护人员足以完成中档季节工作。
 
 ## 数据与假设怎么分
 
@@ -135,10 +135,10 @@ $A_j^{{fuel}}$由区域可燃生境比例乘检查单元真实面积计算。中
 \[
 \frac{{x_{{jt}}}}{{a_j}}+\frac{{h_{{jt}}}}{{b_j}}\ge C_js_{{jt}},\quad
 \frac{{y_{{jt}}}}{{a_j}}+\frac{{v_{{jt}}}}{{b_j}}\ge D_{{jt}},\quad
-\sum_j(h_{{jt}}+v_{{jt}})\le240.
+\sum_j(h_{{jt}}+v_{{jt}})\le1200.
 \]
 
-同时保留$0\le s_{{jt}}\le r_j$、原区域底线和无人机适用条件。$H_0=2880$人时每月，只预留一次。逆向求解移除7080人时上限；固定资源分析则加入$H_t\le59\times120$并最大化同一$P_t$。全年人数为$\max_t\lceil H_t/120\rceil$。
+同时保留$0\le s_{{jt}}\le r_j$、原区域底线和无人机适用条件。$H_0=2880$人时每月，只预留一次。逆向求解移除21240人时上限；固定资源分析则加入$H_t\le177\times120$并最大化同一$P_t$。全年人数为$\max_t\lceil H_t/120\rceil$。
 
 固定驻点可响应的可燃生境约{rfuel:.1f}km²，占模型可燃生境{rfuel/fuel:.1%}。峰值新增任务可履行275.76点次，另428.45点次位于原响应不可达范围，单独记录未保障；**增加人员不能修复这个地理缺口，本次不称全园火管理已全部达标。**
 
@@ -158,13 +158,13 @@ a_\ell^W=2\left(T_\ell^{{round}}+\tau_t+\frac1{{12}}\right),\qquad W_t=\sum_\ell
 
 ## 求解结果与图表
 
-|时期|需要人时/月|需要人数|使用机时/月|固定59人服务分|
+|时期|需要人时/月|需要人数|使用机时/月|固定177人服务分|
 |---|---:|---:|---:|---:|
 {table}
 
-8—10月：$2880+2406.11+1123.38+422.34=6831.83$人时，除以120向上取整为57人。全年固定57人可维持同一目标；56人在峰值月只能得到{v['one_fewer_peak_staff_forward_score']:.2f}分。59人是第二题的295×20%假设保护岗位数，不能解释为实际已有59名巡护人员，也不据此建议现实裁员。
+8—10月：$2880+2406.11+1123.38+422.34=6831.83$人时，除以120向上取整为57人。全年固定57人可维持同一目标；56人在峰值月只能得到{v['one_fewer_peak_staff_forward_score']:.2f}分。177人是第二题的295×60%假设保护岗位数，不能解释为实际已有177名巡护人员，也不据此建议现实裁员。
 
-异常干旱运维加密时，峰值7390.17人时，即62人；固定59人峰值服务54.97分，比目标低2.29分。需要比参考配置增加3个同口径保护岗位，或先调整已验证的作业方案。
+异常干旱运维加密时，峰值7390.17人时，即62人；固定177人峰值服务57.26分，仍达到目标。相对常规57人的月度容量需求增加5人，但177人的参考配置无需追加。
 
 ![月份工作量、人员与服务](../output/question3/q3_monthly_staff_and_service.png)
 
@@ -181,10 +181,10 @@ a_\ell^W=2\left(T_\ell^{{round}}+\tau_t+\frac1{{12}}\right),\qquad W_t=\sum_\ell
 ## 核验及本轮微调
 
 - 36个月份/求解模式组合均通过逐点容量、火险额外任务、区域底线、机时、人时、评分和取整核验；低中高情景另查。独立脚本直接读取保存的Q2输入与Q3解，核对新增需求、全部保存的可行解、分区CSV和指纹。比地理上限高的目标正确拒绝，响应预算不足正确无解。
-- 锁定第二题原$s_j$可复现5288.3749人时，误差小于$10^{{-9}}$。第三题让同分方案自由重新选择后，无新增工作时最省5286.1143人时：主盐沼零评分权重单元的通用底线配置改变，节省2.26人时，不改变评分或第二题保存结果。
+- 无新增工作时，第三题独立反求模型最少使用{v['free_equal_score_baseline_person_hours']:.2f}人时，与修订后第二题的全局最少人工一致；两题都保留最优分数并允许服务向量重新选择，零权重单元仍满足通用底线。
 - 可燃生境需求统一为“面积×同口径比例”，避免混用投影后的面积分母；极小权重做数值缩放。达到地理上限时固定所有正权重可达点完成率为1，这是原评分约束的等价处理。
 - 新水点路由补入同一条道路上的直接通行，避免不必要地绕行道路端点；Q2成本与结果原样保留。
-- 六点各2人响应、六机各2人、一支2人水点队的同时人员数为26，小于规划57人；最长中档水点出行及作业6.39小时。但月均连续LP仍不证明详细排班、每次派遣的整数性或每驻点并发任务可行。
+- 30架是设备库存，不要求30组同时出动；每次无人机任务的两人配套人工已计入成本。最长中档水点出行及作业6.39小时，月度连续LP仍不能证明详细排班、整数派遣或每驻点并发任务可行。
 
 正式写作前优先校准：当前完整人工水点清单及岗位归属、到场频次与耗时、季节火险筛查定额。当前结果足以讨论模型结构和参数方向；没有真实作业日志，不给人数精确到个位的现实承诺。
 

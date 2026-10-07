@@ -1,0 +1,37 @@
+{
+  "python": "D:\\Python\\Conda\\envs\\himcn-roads\\python.exe",
+  "python_version": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:14:50) [MSC v.1942 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "shapely": "2.1.2",
+    "pyproj": "3.8.0",
+    "rasterio": "1.5.2",
+    "pymupdf": null
+  },
+  "workspace": "D:\\Python\\programs\\GitHub\\2026-HiMCM",
+  "TeX_executable": "D:/texlive/2026/bin/windows/xelatex.exe",
+  "text_editor_source": "docs/paper/full_paper.tex",
+  "saved_input_reproduction_packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "networkx": "3.7",
+    "shapely": "2.1.2",
+    "pyproj": "3.8.0",
+    "rasterio": "1.5.2",
+    "matplotlib": "3.11.2",
+    "pandas": "3.0.6"
+  },
+  "effective_audit_PyMuPDF": {
+    "version": "1.28.2",
+    "installation": "tmp/skill_audit_20261007/python_packages; available only in the original workspace, not bundled"
+  },
+  "original_checker_copy_sha256": "975a1b508996f604e24168e4059d32c1ffc651238561944169668aa9e6d7f000",
+  "builtin_compile_last_check": {
+    "kind": "compile-failed",
+    "diagnostic": "Unable to find standard directories for platform",
+    "export": "User-authorized installed XeLaTeX succeeded, original editor remains open"
+  }
+}

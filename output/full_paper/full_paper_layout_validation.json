@@ -1,0 +1,503 @@
+{
+  "status": "passed_visual_review",
+  "current_pdf": "output/pdf/caption_revision_20261007/full_paper.pdf",
+  "pdf_sha256": "0cbaa36931ac334130ad35004a91e9e721cb91ee00ae6ff04292320661233b0b",
+  "total_pages": 22,
+  "measurements": [
+    {
+      "page": 1,
+      "characters": 2071,
+      "body_text_bottom_bp": 627.62,
+      "text_bottom_gap_mm": 60.59,
+      "first_lines": [
+        "Team#510105201001220151 Page1of22",
+        "TeamControlNumber",
+        "510105201001220151",
+        "ProblemChosen",
+        "WildlifeProtection"
+      ],
+      "last_lines": [
+        "recommendations.",
+        "Keywords: wildlifeprotection;resourceallocation;groundresponse;seasonalworkforce;EtoshaNational",
+        "Park."
+      ],
+      "caption_lines": []
+    },
+    {
+      "page": 2,
+      "characters": 1968,
+      "body_text_bottom_bp": 801.95,
+      "text_bottom_gap_mm": -0.91,
+      "first_lines": [
+        "Team#510105201001220151 Page2of22",
+        "Contents",
+        "1 Introduction 3",
+        "2 BasicAssumptionsandJustifications 3",
+        "3 DataDescriptionandSymbolDefinitions 4"
+      ],
+      "last_lines": [
+        "ReportonUseofAI 22",
+        "Reading guide. Sections 4–9 answer Questions 1–6. The letter uses nontechnical language. References",
+        "andtheAI-usereportareincludedwithinthisdocument’s25-pageceiling."
+      ],
+      "caption_lines": []
+    },
+    {
+      "page": 3,
+      "characters": 3037,
+      "body_text_bottom_bp": 801.95,
+      "text_bottom_gap_mm": -0.91,
+      "first_lines": [
+        "Team#510105201001220151 Page3of22",
+        "1. Introduction",
+        "Large wildlife reserves are difficult to protect because important areas are spread over a very large",
+        "space, while staff, equipment and travel time are limited. Observations are useful only when qualified",
+        "teams can reach the location and respond in time. We use Etosha National Park as our main case, with a"
+      ],
+      "last_lines": [
+        "proxiesavoidinventingobservations.",
+        "Assumption 3: Ground and drone teams complete the same checklist only where suitable; credited",
+        "serviceneedsgroundarrivalwithintwohoursandsharedteamshandleinfrequentalerts."
+      ],
+      "caption_lines": [
+        "Figure 1: Overview of the data, models, checks and recommendations."
+      ]
+    },
+    {
+      "page": 4,
+      "characters": 2670,
+      "body_text_bottom_bp": 782.95,
+      "text_bottom_gap_mm": 5.79,
+      "first_lines": [
+        "Team#510105201001220151 Page4of22",
+        "Justification: Observations require follow-up. Task equivalence, service standards and concurrency",
+        "stillneedfieldcalibration.",
+        "3. Data Description and Symbol Definitions",
+        "Theproblemgivesanapproximateareaof22,935km2;ourprojectedboundarycovers22897.10km2."
+      ],
+      "last_lines": [
+        "andostrich. Weretainsourcequalityflagsandexcludeunresolvedcounttables. Surveyblankscontributeno",
+        "recordedabundance,ratherthanconfirmedzeropopulations. Thesehistoricalrecordssupportadeployment",
+        "demonstration, not current abundance for all wildlife. Rhinoceros poaching remains a qualitative concern;"
+      ],
+      "caption_lines": [
+        "Table 1: Main symbols and units used in the protection-planning model.",
+        "Table 2: Conservation priorities used to define the Etosha inspection tasks."
+      ]
+    },
+    {
+      "page": 5,
+      "characters": 2644,
+      "body_text_bottom_bp": 791.92,
+      "text_bottom_gap_mm": 2.63,
+      "first_lines": [
+        "Team#510105201001220151 Page5of22",
+        "its conflicting counts are not required by this multi-species model. Human–wildlife conflict, disease and",
+        "species-specificinterventionsremainoutsidethequantifiedtasklist.",
+        "Historical abundance is converted to within-species regional shares, then category preferences deter-",
+        "mineresponsibility. Burnable-habitatareaformsaseparatecomponent. Equalbaselinefireexposureavoids"
+      ],
+      "last_lines": [
+        "Personnel 295referenceemployees;60%availability;120hours/person-month.",
+        "Drones 30aircraft;2flight-hours/dayfor20flyabledays/month.",
+        "Readiness Sixcandidateposts,twopeopleeach,8hours/dayfor30days."
+      ],
+      "caption_lines": [
+        "Table 3: Baseline operating assumptions for the Etosha allocation model."
+      ]
+    },
+    {
+      "page": 6,
+      "characters": 1880,
+      "body_text_bottom_bp": 801.95,
+      "text_bottom_gap_mm": -0.91,
+      "first_lines": [
+        "Team#510105201001220151 Page6of22",
+        "Thetworesourcelimitsandsharedresponsereservationare",
+        "H = 295(0.60)(120) = 21240 personnel-hours/month,",
+        "U = 30(2)(20) = 1200 flight-hours/month, (5.1)",
+        "H = 6(2)(8)(30) = 2880 personnel-hours/month."
+      ],
+      "last_lines": [
+        "response posts, and red points fail the two-hour response rule. Priority-weighted completion and area ser-",
+        "vice have different denominators. Outside-survey animal responsibility remains unknown; zero measured",
+        "coefficientsandzerosalt-panfueldonotimplyzeroecologicalvalue."
+      ],
+      "caption_lines": [
+        "Figure 2: Regional responsibility and response-supported area service in Etosha."
+      ]
+    },
+    {
+      "page": 7,
+      "characters": 1867,
+      "body_text_bottom_bp": 771.14,
+      "text_bottom_gap_mm": 9.96,
+      "first_lines": [
+        "Team#510105201001220151 Page7of22",
+        "5.3 Weights, routes and response eligibility",
+        "∑ We estimate the two component weights over the common 15-region scope. First aggregate X ik =",
+        "Rk,thencalculate",
+        "j∈J"
+      ],
+      "last_lines": [
+        "Two-personteams;droneflightadds0.206flight-hourspercheck.",
+        "Person-hoursandflight-hoursuseseparatebudgets.",
+        "Figure 3: Modeled personnel-hours for ground and drone-assisted inspection at ENP1_0000."
+      ],
+      "caption_lines": [
+        "Figure 3: Modeled personnel-hours for ground and drone-assisted inspection at ENP1_0000."
+      ]
+    },
+    {
+      "page": 8,
+      "characters": 2323,
+      "body_text_bottom_bp": 801.65,
+      "text_bottom_gap_mm": -0.81,
+      "first_lines": [
+        "Team#510105201001220151 Page8of22",
+        "5.4 Service capacity and the allocation model",
+        "Decision variables are ground screening hours x , drone flight-hours h , and effective completion s .",
+        "j j j",
+        "Theprescribedmonthlychecksarebasedonarea:"
+      ],
+      "last_lines": [
+        "denotessurvey-externalareas. Leadersconnectdisplacedlabelstotheirregions. Thesixstarsmarkassumed",
+        "response posts, each reserving 480 personnel-hours outside the regional shading. The maps show pooled",
+        "monthlywork,ratherthanwhereemployeesoraircraftarepermanentlystationed."
+      ],
+      "caption_lines": []
+    },
+    {
+      "page": 9,
+      "characters": 1791,
+      "body_text_bottom_bp": 801.95,
+      "text_bottom_gap_mm": -0.91,
+      "first_lines": [
+        "Team#510105201001220151 Page9of22",
+        "(a)Monitoringlabor(h/month) (b)Droneflight(h/month)",
+        "N N",
+        "O O",
+        "3410 11 17 3410 11 17"
+      ],
+      "last_lines": [
+        "The base reaches this bound with 15953.89 personnel-hours and 1055.66 flight-hours unused. Of 599",
+        "units,216meettheresponsestandard,covering34.12%ofprojectedarea. The57.26%effectiveinspection",
+        "completionrateusespriorityweights;the34.12%figuremeasuresresponse-eligiblearea."
+      ],
+      "caption_lines": [
+        "Figure 4: Monthly monitoring-support personnel-hours and drone flight-hours across Etosha's 17",
+        "Table 4: Regional demand, response reach and minimum-labor allocation at the optimal comple-"
+      ]
+    },
+    {
+      "page": 10,
+      "characters": 2887,
+      "body_text_bottom_bp": 794.13,
+      "text_bottom_gap_mm": 1.85,
+      "first_lines": [
+        "Team#510105201001220151 Page10of22",
+        "We compare the optimized allocation with uniform completion over reachable units and completion",
+        "proportionaltoregionaldemanddensityW /A . Costs,resourcelimitsandfloorsareidentical.",
+        "i i",
+        "Table5comparesthe three rulesunder identical tasks, weights, response gatesand budgets. Allreach"
+      ],
+      "last_lines": [
+        "per point and dry months use four; extra fire screening rises from zero to two and then four checks per 100",
+        "km2 of burnable habitat. November combines wet maintenance with the late-fire rule. These additional",
+        "tasksusethesharedresourceswithoutredefiningthebaseinspectionscore."
+      ],
+      "caption_lines": [
+        "Table 5: Completion rates under uniform, demand-based and optimized allocation with identical",
+        "Table 6: Additional response-post candidates tested within the original resource budgets."
+      ]
+    },
+    {
+      "page": 11,
+      "characters": 2394,
+      "body_text_bottom_bp": 801.95,
+      "text_bottom_gap_mm": -0.91,
+      "first_lines": [
+        "Team#510105201001220151 Page11of22",
+        "Table 7: Seasonal visit frequencies and extra fire checks under the medium service rules.",
+        "Months Watervisits/point Extrafirechecks∗",
+        "Jan–Apr,Dec 2 0",
+        "May–Jul 4 2"
+      ],
+      "last_lines": [
+        "ruleassumeseightvisitsandonehouronsite,giving980.68personnel-hours. Eachvisitisaseparateround",
+        "trip,sothecalculationclaimsnocombined-routesavings;theincreasesreflectassumedservicerules,rather",
+        "thanrecordedfaultsormeasuredshortages."
+      ],
+      "caption_lines": [
+        "Table 7: Seasonal visit frequencies and extra fire checks under the medium service rules."
+      ]
+    },
+    {
+      "page": 12,
+      "characters": 1918,
+      "body_text_bottom_bp": 738.04,
+      "text_bottom_gap_mm": 21.63,
+      "first_lines": [
+        "Team#510105201001220151 Page12of22",
+        "6.3 Shared monthly constraints",
+        "Foreachunitandmonth,(x ,h ,s )servethebaseinspectionprotocol. Extrafireworkusesground",
+        "jt jt jt",
+        "hours y and flight-hours v . These are separate task quantities with shared personnel and flight budgets."
+      ],
+      "last_lines": [
+        "requirement, rather than the sum of monthly headcounts, estimates a constant workforce for the busiest",
+        "month. It does not certify qualifications, exact simultaneous coverage or the completeness of the task in-",
+        "ventory."
+      ],
+      "caption_lines": []
+    },
+    {
+      "page": 13,
+      "characters": 1855,
+      "body_text_bottom_bp": 719.89,
+      "text_bottom_gap_mm": 28.04,
+      "first_lines": [
+        "Team#510105201001220151 Page13of22",
+        "Monthlyworkat57.26%inspectioncompletion",
+        "Response Monitoring Firechecks Waterpoints",
+        "Person-hours/month 6832 6832 6832",
+        "6621"
+      ],
+      "last_lines": [
+        "6.6 Drought work and service-standard sensitivity",
+        "The drought-maintenance case doubles dry-month visits and on-site time. Its peak is 7390.17",
+        "personnel-hours,or62equivalents,with210.61flight-hours. Table10comparesalternativerules."
+      ],
+      "caption_lines": [
+        "Figure 5: Monthly workload by task for maintaining the baseline inspection target."
+      ]
+    },
+    {
+      "page": 14,
+      "characters": 2587,
+      "body_text_bottom_bp": 801.95,
+      "text_bottom_gap_mm": -0.91,
+      "first_lines": [
+        "Team#510105201001220151 Page14of22",
+        "Table 10: Peak personnel requirements under alternative seasonal and drought-maintenance",
+        "rules.",
+        "Rule Normalpeople Normalhours Droughtpeople Droughthours",
+        "Low 51 6041.97 53 6270.14"
+      ],
+      "last_lines": [
+        "baseline has e = 1 and p = 0. Table11 tests these assumed protocols, rather than measured detection",
+        "g",
+        "probabilities."
+      ],
+      "caption_lines": [
+        "Table 10: Peak personnel requirements under alternative seasonal and drought-maintenance",
+        "Figure 6: Peak-month completion rates under joint personnel and drone-flight budgets."
+      ]
+    },
+    {
+      "page": 15,
+      "characters": 2624,
+      "body_text_bottom_bp": 752.72,
+      "text_bottom_gap_mm": 16.46,
+      "first_lines": [
+        "Team#510105201001220151 Page15of22",
+        "Table 11: Technology allocation under alternative drone-efficiency and minimum-ground-share",
+        "assumptions.",
+        "Protocol Rate(%) Totallabor(h) Ground(h) Flight(h)",
+        "Equivalentchecklist 57.26 5286.11 0.00 144.34"
+      ],
+      "last_lines": [
+        "culated weights, preserves matrix consistency and base deployment. Tight-budget completion-rate losses",
+        "stay below 0.002 percentage points. All cases pass independent capacity, eligibility, regional-floor and",
+        "budgetchecks;robustnessappliestothesetestedchoices."
+      ],
+      "caption_lines": [
+        "Table 11: Technology allocation under alternative drone-efficiency and minimum-ground-share",
+        "Table 12: Sensitivity of completion rates and workload to inspection-grid size."
+      ]
+    },
+    {
+      "page": 16,
+      "characters": 2362,
+      "body_text_bottom_bp": 741.73,
+      "text_bottom_gap_mm": 20.33,
+      "first_lines": [
+        "Team#510105201001220151 Page16of22",
+        "Table 13: Allocation scores under alternative responsibility weights and the common reference",
+        "weights.",
+        "Weightchoice Animal(%) Ownweights Originalweights Tightbudget",
+        "Entropybaseline 64.56 57.26 57.26 29.88"
+      ],
+      "last_lines": [
+        "ecologicaloutcomes doesnotproveadequateprotection.",
+        "Beforedeployment,verifyaccessandtaskeffectiveness,updaterecords,retainsafeguardsformissing",
+        "objects,andvalidateecologicaloutcomesindependently."
+      ],
+      "caption_lines": [
+        "Table 13: Allocation scores under alternative responsibility weights and the common reference",
+        "Table 14: Operational limitations and the evidence required for field validation."
+      ]
+    },
+    {
+      "page": 17,
+      "characters": 2140,
+      "body_text_bottom_bp": 805.35,
+      "text_bottom_gap_mm": -2.11,
+      "first_lines": [
+        "Team#510105201001220151 Page17of22",
+        "9. Adaptation to Parks on Other Continents",
+        "WeexamineChitwanNationalParkinAsiaandYellowstoneNationalParkinNorthAmerica,rebuild-",
+        "inglocalgeographyandtestinghowprioritiesaffectdeployment.",
+        "9.1 Shared structure and local data"
+      ],
+      "last_lines": [
+        "j (9.1)",
+        "η(p) = 0.90P(p) .",
+        "geo,base"
+      ],
+      "caption_lines": [
+        "Figure 7: Published geography and candidate response posts for Chitwan and Yellowstone.",
+        "Table 15: Spatial inputs used in the Chitwan and Yellowstone land-inspection trials."
+      ]
+    },
+    {
+      "page": 18,
+      "characters": 1825,
+      "body_text_bottom_bp": 537.37,
+      "text_bottom_gap_mm": 92.43,
+      "first_lines": [
+        "Team#510105201001220151 Page18of22",
+        "Table16retainsfixedtargets. Twopostsreserve960personnel-hours;athirdadds480. Localspecialist",
+        "tasksremainunmeasured.",
+        "Table 16: Conditional land-inspection workloads under local speed and response-post scenarios.",
+        "Case Setting Ceiling Target Labor(h) People"
+      ],
+      "last_lines": [
+        "minimizeslaborwithroads,tasksandservicefloorsunchanged. Ata50%historicalshare,61unitschange,",
+        "labor is 1474.68 hours, and land-weight service falls from 16.85% to 15.12%. This is a priority trade-off,",
+        "ratherthananecologicalgain. Theadjacentappendixgivesthecompletecomparison."
+      ],
+      "caption_lines": [
+        "Table 16: Conditional land-inspection workloads under local speed and response-post scenarios."
+      ]
+    },
+    {
+      "page": 19,
+      "characters": 1029,
+      "body_text_bottom_bp": 466.92,
+      "text_bottom_gap_mm": 117.28,
+      "first_lines": [
+        "Team#510105201001220151 Page19of22",
+        "Appendix: supplementary results",
+        "Table17 supplies the complete historical-priority comparison discussed in Section 9.3. All road, task",
+        "andresponseinputsareheldfixed;theprioritiesandretainedtargetsaredeclaredscenariochoices.",
+        "Table 17: Yellowstone historical-priority scenarios with roads and inspection tasks held fixed."
+      ],
+      "last_lines": [
+        "assert result['success']",
+        "for name in ['score', 'total_person_hours', 'drone_flight_hours']:",
+        "print(name, round(result[name], 2))"
+      ],
+      "caption_lines": [
+        "Table 17: Yellowstone historical-priority scenarios with roads and inspection tasks held fixed."
+      ]
+    },
+    {
+      "page": 20,
+      "characters": 3347,
+      "body_text_bottom_bp": 765.23,
+      "text_bottom_gap_mm": 12.04,
+      "first_lines": [
+        "Team#510105201001220151 Page20of22",
+        "Letter to IMMC",
+        "TotheInternationalMissionforMonitoringConservation",
+        "Subject: ApracticalprotectionplanforEtoshaandotherlargereserves",
+        "DearIMMCDecision-Makers,"
+      ],
+      "last_lines": [
+        "Yoursfaithfully,",
+        "TheModelingTeam",
+        "Team510105201001220151"
+      ],
+      "caption_lines": []
+    },
+    {
+      "page": 21,
+      "characters": 1896,
+      "body_text_bottom_bp": 574.33,
+      "text_bottom_gap_mm": 79.39,
+      "first_lines": [
+        "Team#510105201001220151 Page21of22",
+        "References",
+        "[1] IM2C.ProtectingWildlifeatScale,2026problemstatementandsubmissionrulessuppliedtothe",
+        "team.",
+        "[2] Etoshaaerialwildlifesurveyreport,2015.Regionalabundancesource.Onlinesource."
+      ],
+      "last_lines": [
+        "report.",
+        "[17] USNationalParkService.Yellowstonewolfterritories,1995–2022;202295%MCPfiles.Official",
+        "GISarchive."
+      ],
+      "caption_lines": []
+    },
+    {
+      "page": 22,
+      "characters": 2479,
+      "body_text_bottom_bp": 509.39,
+      "text_bottom_gap_mm": 102.3,
+      "first_lines": [
+        "Team#510105201001220151 Page22of22",
+        "Report on Use of AI",
+        "Tool and identification. OpenAI Codex, based on the GPT-6 model family, was used in this work",
+        "session [15]. The exact deployed model version was not exposed in the session metadata. Python/SciPy",
+        "and XeLaTeX performed numerical optimization and document compilation; those outputs were checked"
+      ],
+      "last_lines": [
+        "Theuploadedtemplate’sobsoleteyear,examplenotation,sampleidentifiersandunfinishedclaimswere",
+        "replaced with the current problem, confirmed team number and verified results. The project retains source",
+        "data,modelinputs,allocationarrays,code,provenanceandnumerical/layoutauditrecordsforreview."
+      ],
+      "caption_lines": []
+    }
+  ],
+  "visual_review": {
+    "status": "passed",
+    "pdf": "output/pdf/caption_revision_20261007/full_paper.pdf",
+    "pdf_sha256": "0cbaa36931ac334130ad35004a91e9e721cb91ee00ae6ff04292320661233b0b",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "render_dpi": 300,
+    "reviewed_at_utc": "2026-10-07T03:41:10.949344+00:00",
+    "method": "All 22 pages inspected in six contact sheets; captions, adjacent prose, labels, equations, maps, tables, appendix and letter checked.",
+    "notes": [
+      "Captions are one sentence, with occasional two-line wrapping.",
+      "At most two logical figures/tables on any page; no overflow, overlap or missing glyphs found.",
+      "Final solution, appendix, letter, references and AI pages may end naturally."
+    ]
+  },
+  "caption_policy": "User requested one concise sentence per figure/table caption, detailed explanations in adjacent body prose; overrides generic 100--150 caption tokens.",
+  "logical_float_check": "output/full_paper/caption_revision_20261007/english_layout_audit.json",
+  "whitespace_check": "output/full_paper/caption_revision_20261007/whitespace_audit.json"
+}

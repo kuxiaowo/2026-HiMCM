@@ -1,0 +1,59 @@
+[
+  {
+    "requested_url": "https://geoportal.ntnc.org.np/layers/ntnc:Chitwan_National_Park/",
+    "file": "data\\revision_feasibility\\20261006\\ntnc_park.html",
+    "accessed_utc": "2026-10-06T13:20:39.725079+00:00",
+    "error": "HTTPSConnectionPool(host='geoportal.ntnc.org.np', port=443): Max retries exceeded with url: /layers/ntnc:Chitwan_National_Park/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'geoportal.ntnc.org.np'. (_ssl.c:1010)\")))"
+  },
+  {
+    "requested_url": "https://dnpwc.gov.np/content/26/chitwan-national-park/",
+    "file": "data\\revision_feasibility\\20261006\\chitwan_dnpwc.html",
+    "accessed_utc": "2026-10-06T13:20:39.725079+00:00",
+    "status": 200,
+    "final_url": "https://dnpwc.gov.np/content/26/chitwan-national-park/",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 189252,
+    "sha256": "2d4399e86318075976dbbbd4dcaf61635683d03069192f822cfb4dc5679c128a",
+    "relevant_links": [
+      "/category/downloads",
+      "/category/downloads"
+    ]
+  },
+  {
+    "requested_url": "https://giwmscdntwo.gov.np/media/pages/files/Final%20Report_GIS%20Database_v4olikj.pdf",
+    "file": "data/revision_feasibility/20261006/dnpwc_gis_database_final_2020.pdf",
+    "accessed_utc": "2026-10-06T13:20:39.725079+00:00",
+    "status": 200,
+    "final_url": "https://giwmscdntwo.gov.np/media/pages/files/Final%20Report_GIS%20Database_v4olikj.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1876074,
+    "sha256": "f15dda0971fb10dba9ca518f3c08bd13550787753b8a20de0fb04d09e4aad2aa",
+    "year_identification": "The downloaded report is dated Bhadra24,2077 and cites DNPWC/MoFSC2020; it is not the separately indexed CNP infrastructure report2022."
+  },
+  {
+    "requested_url": "https://whc.unesco.org/en/list/284/maps/",
+    "file": "data\\revision_feasibility\\20261006\\whc_maps.html",
+    "accessed_utc": "2026-10-06T13:20:39.726086+00:00",
+    "status": 403,
+    "final_url": "https://whc.unesco.org/en/list/284/maps/",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 5477,
+    "error": "403 Client Error: Forbidden for url: https://whc.unesco.org/en/list/284/maps/"
+  },
+  {
+    "requested_url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf",
+    "file": "data\\revision_feasibility\\20261006\\cites_cop20_prop13.pdf",
+    "accessed_utc": "2026-10-06T13:20:39.727084+00:00",
+    "status": 403,
+    "final_url": "https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 5625,
+    "error": "403 Client Error: Forbidden for url: https://cites.org/sites/default/files/documents/COP/20/prop/E-CoP20-Prop-13.pdf"
+  },
+  {
+    "requested_url": "https://the-eis.com/elibrary/search-resources?a=Kilian+JW+%28120270%29",
+    "file": "data\\revision_feasibility\\20261006\\eis_kilian_search.html",
+    "accessed_utc": "2026-10-06T13:20:39.727084+00:00",
+    "error": "HTTPSConnectionPool(host='the-eis.com', port=443): Read timed out. (read timeout=8)"
+  }
+]

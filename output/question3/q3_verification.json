@@ -844,6 +844,7 @@
   ],
   "behavior_checks": {
     "recover_Q2_when_its_service_pattern_is_fixed": true,
+    "independent_inverse_LP_matches_Q2_global_minimum": true,
     "free_equal_score_baseline_no_more_labor": true,
     "unreachable_target_rejected": true,
     "insufficient_fixed_response_budget_infeasible": true,
@@ -858,7 +859,7 @@
     "effective_hours_fixed_120": true,
     "response_counted_once": true,
     "year_uses_month_max_not_sum": true,
-    "basic_simultaneous_crew_count": true,
+    "reference_staff_matches_Q2_monthly_availability": true,
     "response_only_staff_equivalent": true
   },
   "baseline_recovery_person_hour_error": 9.094947017729282e-13,
@@ -867,12 +868,13 @@
   "lower_target_90percent_staff": 52,
   "longest_water_visit_elapsed_hours": 6.388684814160076,
   "water_visits_fit_8h_window": true,
-  "simultaneous_staff_screen": {
-    "response_people": 12,
-    "six_UAV_crews_people": 12.0,
-    "one_water_crew_people": 2,
-    "total": 26.0,
-    "interpretation": "count screen only; monthly pooled LP cannot prove a detailed roster or every-site concurrency"
+  "concurrency_scope": {
+    "response_posts_people_in_daytime_window": 12.0,
+    "aircraft_inventory": 30.0,
+    "UAV_people_per_active_crew": 2.0,
+    "water_people_per_active_crew": 2,
+    "simultaneously_active_UAV_crews": null,
+    "interpretation": "Inventory is not concurrent sorties. Monthly hours determine task labor; no detailed roster or every-site concurrency is proved, and all aircraft are not required to fly at once."
   },
   "limitations": [
     "Historical sample of 17 boreholes, not complete current inventory",
@@ -882,5 +884,5 @@
     "No measured ecological improvement, prescribed burning, suppression, water volumes, emergency pumping or multi-day repair model"
   ],
   "free_equal_score_baseline_person_hours": 5286.114336435483,
-  "free_equal_score_reallocation_saves_person_hours": 2.2605478896139175
+  "free_equal_score_reallocation_saves_person_hours": -9.094947017729282e-13
 }

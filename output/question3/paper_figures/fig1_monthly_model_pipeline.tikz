@@ -10,7 +10,7 @@
 \node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (8.3250,4.6900) {共同可行范围};
 \node[anchor=center,align=center,text={rgb,1:red,0.14902;green,0.21569;blue,0.27451},font={\fontsize{9}{10.62}\selectfont}] at (8.3250,4.1380) {容量、机时与区域底线};
 \path[fill={rgb,1:red,0.13725;green,0.36863;blue,0.51373},draw=none,line width=0.6pt] (11.4000,4.8000) rectangle (16.8000,5.7000);
-\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (14.1000,5.4300) {固定59人};
+\node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (14.1000,5.4300) {固定177人};
 \node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{9}{10.62}\selectfont}] at (14.1000,5.0160) {每月最高基准服务分};
 \path[fill={rgb,1:red,0.85098;green,0.59216;blue,0.21176},draw=none,line width=0.6pt] (11.4000,2.9000) rectangle (16.8000,3.8000);
 \node[anchor=center,align=center,text={rgb,1:red,1.00000;green,1.00000;blue,1.00000},font={\fontsize{11}{12.98}\selectfont\bfseries}] at (14.1000,3.5300) {固定57.26分目标};

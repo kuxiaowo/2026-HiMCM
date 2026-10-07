@@ -1,0 +1,7 @@
+﻿scenario,abnormal_drought,peak_month_example,peak_person_hours,annual_fixed_staff,peak_water_hours,peak_flight_hours,interpretation
+low,False,8,6041.973078822806,51,194.16926601040495,177.47590997961652,"assumed service standards, not confidence bounds or observed drought"
+low,True,8,6270.142344833211,53,422.3385320208099,177.47590997961652,"assumed service standards, not confidence bounds or observed drought"
+base,False,8,6831.8318212101285,57,422.3385320208099,210.6084367387837,"assumed service standards, not confidence bounds or observed drought"
+base,True,8,7390.170353230938,62,980.6770640416197,210.6084367387837,"assumed service standards, not confidence bounds or observed drought"
+high,False,8,8546.057382462257,72,980.6770640416197,240.0,"assumed service standards, not confidence bounds or observed drought"
+high,True,8,9240.395914483066,78,1675.0155960624297,240.0,"assumed service standards, not confidence bounds or observed drought"

@@ -13450,7 +13450,7 @@
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
         "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "service_completion": -0.0
       }
     },
     {
@@ -13526,7 +13526,7 @@
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
         "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "service_completion": -0.0
       }
     },
     {
@@ -13564,7 +13564,7 @@
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
         "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "service_completion": -0.0
       }
     },
     {
@@ -13753,8 +13753,8 @@
         "habitat_component_share": 0.0,
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
-        "drone_flight_hours": 1.4172891972956945,
-        "service_completion": 1.0
+        "drone_flight_hours": 0.5801776874492831,
+        "service_completion": 0.40935730587399544
       }
     },
     {
@@ -15198,7 +15198,7 @@
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
         "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "service_completion": -0.0
       }
     },
     {
@@ -15236,7 +15236,7 @@
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
         "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "service_completion": -0.0
       }
     },
     {
@@ -15426,7 +15426,7 @@
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
         "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "service_completion": -0.0
       }
     },
     {
@@ -15653,8 +15653,8 @@
         "habitat_component_share": 0.0,
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
-        "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "drone_flight_hours": 0.7515421200271439,
+        "service_completion": 1.0
       }
     },
     {
@@ -15767,8 +15767,8 @@
         "habitat_component_share": 0.0,
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
-        "drone_flight_hours": 0.1538082712092942,
-        "service_completion": 0.7551256723285251
+        "drone_flight_hours": 0.0,
+        "service_completion": -0.0
       }
     },
     {
@@ -15843,8 +15843,8 @@
         "habitat_component_share": 0.0,
         "objective_weight": 0.0,
         "ground_person_hours": 0.0,
-        "drone_flight_hours": 0.0,
-        "service_completion": 0.0
+        "drone_flight_hours": 0.013604067815053205,
+        "service_completion": 1.0
       }
     },
     {

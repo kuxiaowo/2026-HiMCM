@@ -1,0 +1,14 @@
+[
+  {
+    "requested_url": "https://pubmed.ncbi.nlm.nih.gov/41426648/",
+    "status": 203,
+    "bytes": 5590,
+    "accessed_utc": "2026-10-06T13:57:25.797300+00:00",
+    "file": "data/revision_feasibility/20261006/chitwan_tiger_pubmed.html",
+    "sha256": "010b5dd8eea471166082aeef046a0f697e3bc72b6cc2fb6393e7bebfb92ab25c",
+    "content_validation": "Browser-check/challenge response; article abstract not retrieved locally. Year statement is supported by the indexed abstract, pending full-source reconciliation.",
+    "page_title": [
+      "pubmed.ncbi.nlm.nih.gov"
+    ]
+  }
+]

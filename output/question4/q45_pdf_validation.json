@@ -1,31 +1,66 @@
 {
-  "method": "Chromium + MathJax SVG reading copy from synchronized Markdown",
-  "latex_compilation_confirmed": false,
-  "documents": [
-    {
-      "chapter": 4,
-      "pdf": "output\\pdf\\question4_sensitivity.pdf",
+  "status": "passed_numerical_source_compilation_and_visual_checks",
+  "chapters": {
+    "question4_sensitivity": {
+      "source": "docs/paper/question4_sensitivity.tex",
+      "source_sha256": "79f49b4a7ab04e8eac2643af80449a4f0b8182fa6a91554b878195c40e3310e9",
+      "pdf": "output/pdf/skill_checked_20261007/question4_sensitivity.pdf",
+      "pdf_sha256": "1e2ca978e1b4ced832fb2e932ab7f83f14d820732076f7fc9c24ed837574fb40",
       "pages": 4,
-      "pdf_sha256": "e3b9294799aadb50ad0b6e0533f05d024e2e4ea2c92897c6a9447948b1893c46",
-      "md_sha256": "41b6b01d5668e03a2413149c0d0b9bc70ae5eea81957591cf533a6aea818d063",
-      "chinese_text_extractable": true,
+      "figures": 2,
+      "tables": 4,
+      "numbered_equations": 3,
+      "bibliography_entries": 0,
+      "cross_references_resolved": true,
       "all_fonts_embedded": true,
-      "font_count": 47,
-      "visual_review": "passed_all_final_pages",
-      "rendered_pages_visually_reviewed": 4
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question4_sensitivity.pdf",
+        "pdf_sha256": "1e2ca978e1b4ced832fb2e932ab7f83f14d820732076f7fc9c24ed837574fb40",
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question4_sensitivity",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
     },
-    {
-      "chapter": 5,
-      "pdf": "output\\pdf\\question5_evaluation.pdf",
+    "question5_evaluation": {
+      "source": "docs/paper/question5_evaluation.tex",
+      "source_sha256": "1899173d12ec02ea6a3a5fcc9ceeb8dfb637b102d075775e8da0bffe40cb5c41",
+      "pdf": "output/pdf/skill_checked_20261007/question5_evaluation.pdf",
+      "pdf_sha256": "2a56064b451d0d84c95c3573d95d75c520bfc02a1eff505d803286840fa403bc",
       "pages": 1,
-      "pdf_sha256": "f75fd6ed074f603c69e7f0724cc65e8f6ce544f35e5d41c7d50cf987b508c86d",
-      "md_sha256": "fb51bdb53fbd14a300b72897aa553a9ce527ce57575fa33588cd893afd09a2a6",
-      "chinese_text_extractable": true,
+      "figures": 0,
+      "tables": 0,
+      "numbered_equations": 0,
+      "bibliography_entries": 0,
+      "cross_references_resolved": true,
       "all_fonts_embedded": true,
-      "font_count": 3,
-      "visual_review": "passed_all_final_pages",
-      "rendered_pages_visually_reviewed": 1
+      "overflow_warnings": 0,
+      "underfull_warnings": 0,
+      "visual_review": {
+        "status": "passed",
+        "pdf": "output/pdf/skill_checked_20261007/question5_evaluation.pdf",
+        "pdf_sha256": "2a56064b451d0d84c95c3573d95d75c520bfc02a1eff505d803286840fa403bc",
+        "reviewed_pages": [
+          1
+        ],
+        "render_dpi": 300,
+        "contact_sheets": "tmp/pdfs/skill_checked_20261007/question5_evaluation",
+        "notes": [
+          "Current page content inspected; no clipping, overlapping labels or missing glyphs.",
+          "Standalone chapter byte-identical review retained."
+        ]
+      }
     }
-  ],
-  "passed": true
+  }
 }

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "scripts": [
+    {
+      "file": "scripts/modeling/build_question2.py",
+      "random_generation": false,
+      "reads_real_files": true,
+      "sha256": "dfad4ee6e7ce2b2c95690520c976b300a6cc121a4b6194f7c6d9434f057bb260"
+    },
+    {
+      "file": "scripts/modeling/build_question3.py",
+      "random_generation": false,
+      "reads_real_files": true,
+      "sha256": "a4b0b1757b9e03e22110ab435e19ce4201b32c4ac114c6e225ccbf9bf47338f6"
+    },
+    {
+      "file": "scripts/modeling/build_question4.py",
+      "random_generation": false,
+      "reads_real_files": true,
+      "sha256": "60eebb976ed5828b85fd8f4853f35e19cdce650216f07c8848a467330dc6e073"
+    },
+    {
+      "file": "scripts/modeling/build_question6_real.py",
+      "random_generation": false,
+      "reads_real_files": true,
+      "sha256": "9126643b00f042de90d03e900662c09e794116ef296e149e48a169f04974177c"
+    },
+    {
+      "file": "scripts/modeling/build_revision_supplement.py",
+      "random_generation": false,
+      "reads_real_files": true,
+      "sha256": "49069a4f13ef82b905a6535ad7029f2c95989f552af9bdcad7c5a334a37172e7"
+    }
+  ],
+  "statistical_data_leakage": "not applicable: no learned predictive model",
+  "all_real_inputs_preserved": true
+}

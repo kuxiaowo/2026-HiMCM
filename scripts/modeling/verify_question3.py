@@ -36,11 +36,11 @@ def main():
     for item in result['full_monthly_solutions']:
         p=item['period'];m=p['month']
         audit(f'month{m}_inverse',p,item['inverse'],needs_target=True)
-        audit(f'month{m}_fixed59',p,item['fixed_reference'],staff=59)
+        audit(f'month{m}_fixed{ass["fixed_reference_staff"]}',p,item['fixed_reference'],staff=ass['fixed_reference_staff'])
         audit(f'month{m}_fixed_plan',p,item['fixed_plan'],staff=result['annual_fixed_staff_base_scenario'],needs_target=True)
     for group in result['full_sensitivity_solutions']:
         for item in group['solutions']:
-            p=item['period'];audit(f'{group["name"]}_month{p["month"]}_inverse',p,item['inverse'],needs_target=True);audit(f'{group["name"]}_month{p["month"]}_fixed59',p,item['fixed_reference'],staff=59)
+            p=item['period'];audit(f'{group["name"]}_month{p["month"]}_inverse',p,item['inverse'],needs_target=True);audit(f'{group["name"]}_month{p["month"]}_fixed{ass["fixed_reference_staff"]}',p,item['fixed_reference'],staff=ass['fixed_reference_staff'])
     regionrows=list(csv.DictReader((out/'q3_regions_by_month.csv').open(encoding='utf-8-sig')))
     for row in result['monthly']:
         Hreg=sum(float(r['total_field_person_hours']) for r in regionrows if int(r['month'])==row['month'])

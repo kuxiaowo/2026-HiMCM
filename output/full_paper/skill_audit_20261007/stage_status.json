@@ -1,0 +1,57 @@
+{
+  "audit_date_local": "2026-10-07",
+  "stages": {
+    "0_environment": "completed; versions and compiler limitation recorded; project-local PyMuPDF available",
+    "1_parsing": "completed; full problem reread, seven deliverables and source inventory checked",
+    "2_method_choice": "completed; suitability and retrospective alternatives reviewed within prior user authorization",
+    "3_code_solution": "completed; Q2/Q3/Q4/Q6 and supplement rerun, independent cases and baseline cross-checks passed",
+    "4_visualization": "completed; 17-region map, layered architecture, logical float checks and current page reviews passed",
+    "5_manuscript": "completed; prose minimum 12pt, 24 descriptions 100--150 tokens, references/formulas/page constraints checked",
+    "6_review": "completed; nine dimensions scored, issue-resolution evidence and 90-page visual record checked",
+    "7_delivery": "completed if referenced archive validation passes; source/PDF/input fingerprints and extracted replay verified"
+  },
+  "input_files": 13,
+  "numerical_passed": true,
+  "layout_passed": true,
+  "status": "completed_applicable_workflow",
+  "review": "output/full_paper/skill_audit_20261007/scored_review.json",
+  "support_archive": "output/full_paper/skill_audit_20261007/review_support.zip",
+  "support_validation": "output/full_paper/skill_audit_20261007/support_archive_validation.json",
+  "implementation_report": "docs/modeling_notes/skill_full_audit_20261007.md",
+  "limits_remain": [
+    {
+      "id": "L01",
+      "status": "retained_external_limit",
+      "detail": "六类2015调查及质量标记未被当前全物种调查取代；犀牛1107/1280源冲突仍排除主输入。"
+    },
+    {
+      "id": "L02",
+      "status": "retained_external_limit",
+      "detail": "奇特旺发布多边形与952.63平方千米官方面积未闭合；投影仅约0.087%影响，具体错误边段未定位，试算保留条件性。"
+    },
+    {
+      "id": "L03",
+      "status": "retained_external_limit",
+      "detail": "技术效率、检查频次、通行权限、设施现状和工时是待现场校准的规划条件；月人数不是轮班、并发响应或资格验证。"
+    },
+    {
+      "id": "L04",
+      "status": "retained_external_limit",
+      "detail": "服务完成率及黄石2022历史范围情景未验证动物存活或实际生态改善；不认证当前法定规则的完整性。"
+    },
+    {
+      "id": "L05",
+      "status": "platform_limitation",
+      "detail": "内置编译器仍报Unable to find standard directories for platform；保留编辑器，按用户已有授权使用本机XeLaTeX。"
+    }
+  ],
+  "applicability_exceptions": [
+    "用户指定的既有article及字体模板保留，不换国赛cumcmthesis类。",
+    "原题主体最多20页，优先于skill通用主体21—30页目标；计入摘要、目录及信后为21页。",
+    "定义/评价问题不机械增加五张冗余图；总体架构一张，实际数据图各有用途。",
+    "无统计预测训练，CV/残差/训练泄露条款不适用；未虚构概率或人口预测。",
+    "CP1/CP2使用本轮已有的用户范围授权；方法备选明确为回顾性复核。",
+    "中文教学稿40页不套用英文参赛页数或英文说明长度。",
+    "结束页自然留白允许；中间主体页用90pt目标及4pt测量容差，没有扩行距凑页。"
+  ]
+}
